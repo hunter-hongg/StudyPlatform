@@ -48,6 +48,12 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
     if(!exists(FilePathXianDan,ec)) {
         bool res = create_directory(FilePathXianDan, ec);
     }
+    if(!exists(FilePathLiHeBool,ec)) {
+      bool res = create_directory(FilePathLiHeBool, ec);
+    }
+    if(!exists(FilePathLiHe,ec)){
+      bool res = create_directory(FilePathLiHe, ec);
+    }
 
     nowtime = new wxStaticText(panel,wxID_ANY,wxT("测试"));
     this -> showtime();

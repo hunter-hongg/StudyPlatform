@@ -33,6 +33,7 @@ const std::string FilePathAncient = FilePath + "adirspfm/";
 const std::string FilePathXianJi = FilePath + "xjccdir.fjdo/";
 const std::string FilePathXianDan = FilePath + "xdccdir.fdso.so12/";
 const std::string FilePathLiHe = FilePathBase + "礼盒储存/";
+const std::string FilePathLiHeBool = FilePath + "lhccc.dir.sdo/";
 
 namespace Files
 {
@@ -204,9 +205,11 @@ static CheckFile JinBiCheck(FilePathThingsSquare+"sdogh.dogck",2035,1);
 
 namespace LiHe
 {
-enum class Types{
-  XianBiBasic,
-};
+  enum class Types{
+    XianBiBasic,
+  };
+  namespace IsUsed{
+    static BoolFile XianBiBasic("~/
 }
 
 // 简单符号
