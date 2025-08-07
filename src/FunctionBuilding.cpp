@@ -19,8 +19,8 @@ void MyFrame::lihe(WXBTNEVT&){
       vbox -> Add(button,FLAG_CENTER);
     } else {
       for(const auto& i : alllihe){
-        wxBoxSizer* hbox;
-        wxButton* buttoninner1;
+        wxBoxSizer *hbox;
+        wxButton *buttoninner1, *buttonuse1;
         switch(i){
         case LiHe::Types::XianBiBasic:
           hbox = new wxBoxSizer(wxHORIZONTAL);
@@ -28,6 +28,18 @@ void MyFrame::lihe(WXBTNEVT&){
           buttoninner1 -> SetForegroundColour(MyBlue);
           buttoninner1 -> SetFont(font17);
           hbox -> Add(buttoninner1, FLAG_CENTER);
+          buttonuse1 = new wxButton(panel, wxID_ANY, wxT("使用礼盒"));
+          if(LiHe::IsUsed::XianBiBasic.CheckOk()){
+            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
+              
+            });
+          } else {
+            buttoninner1 -> SetForegroundColour(MyOrange);
+            buttonuse1 -> SetLabel(wxT("已使用"));
+          }
+          buttonuse1 -> SetFont(font17);
+          buttonuse1 -> SetForegroundColour(MyGrey);
+          hbox -> Add(buttonuse1, FLAG_CENTER);
           vbox -> Add(hbox, FLAG_CENTER);
           break;
         default:

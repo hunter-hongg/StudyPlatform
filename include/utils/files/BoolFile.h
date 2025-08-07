@@ -2,6 +2,7 @@
 #define boolfile_H
 #include <string>
 #include <fstream>
+#include <filesystem>
 
 using std::string;
 using std::ifstream;
@@ -14,13 +15,15 @@ public:
         Start(start),
         End(end){}
     bool IsOk() {
-        ifstream tmp(File);
-        if(!tmp.is_open()){
+        if(!std::filesystem::exists(File)){
             ofstream tmp(File);
             tmp << Start << "isis" << End;
             return true;
         }
         return false;
+    }
+    bool CheckOk() {
+        return (!std::filesystem::exists(File));
     }
 private: 
     string File, Start, End; 

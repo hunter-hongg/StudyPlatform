@@ -4,6 +4,7 @@
 #include <utils/files/PasswordFile.hpp>
 #include <utils/files/Cards.hpp>
 #include <utils/files/CheckFile.hpp>
+#include <utils/files/BoolFile.h>
 #include <functions/xianbi/sword.hpp>
 #include <functions/ancient/sword.hpp>
 #include <functions/ancient/pao.hpp>
@@ -209,7 +210,8 @@ namespace LiHe
     XianBiBasic,
   };
   namespace IsUsed{
-    static BoolFile XianBiBasic("~/
+    static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");
+  }
 }
 
 // 简单符号
