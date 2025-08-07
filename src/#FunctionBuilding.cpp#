@@ -1,0 +1,19 @@
+#include <headers.hpp>
+
+void MyFrame::lihe(WXBTNEVT&){
+    MYINIT();
+
+    MYTITLE("我的礼盒");
+
+    std::vector<LiHe::Types> alllihe;
+    if(exists(FilePathLiHe+"xianbibasic_lihe.lihe")){
+        alllihe.push_back(LiHe::Types::XianBiBasic);
+    }
+
+    if(allihe.empty()){
+        
+    
+    MYADDSPACER();
+
+    MYLAST(&MyFrame::mine);
+}
