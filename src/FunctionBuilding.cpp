@@ -31,7 +31,10 @@ void MyFrame::lihe(WXBTNEVT&){
           buttonuse1 = new wxButton(panel, wxID_ANY, wxT("使用礼盒"));
           if(LiHe::IsUsed::XianBiBasic.CheckOk()){
             buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-              
+              (void)LiHe::IsUsed::XianBiBasic.IsOk();
+              XianBiReader.addnum(1500);
+              MYMESSAGE("恭喜获得1500仙币");
+              this -> lihe(evt);
             });
           } else {
             buttoninner1 -> SetForegroundColour(MyOrange);
