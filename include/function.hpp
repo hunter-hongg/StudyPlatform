@@ -64,6 +64,7 @@ private:
     void xianqi_change(WXBTNEVT&) oldblock; // 仙器更换板块
     void xianqi_fali(WXBTNEVT&);
     void xianqi_fali_xianbi(WXBTNEVT&);
+    void xianqi_liandan(WXBTNEVT&);
 
     void xianji(WXBTNEVT&);
     void xianji_get(WXBTNEVT&);

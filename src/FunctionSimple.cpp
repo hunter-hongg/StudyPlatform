@@ -380,6 +380,7 @@ void MyFrame::xianqi(WXBTNEVT& evt)
 
     MYBUTTON(btn1,&MyFrame::xianqi_change,"仙器更换");
     MYBUTTON(btn2,&MyFrame::xianqi_fali,"仙器法力");
+    MYBUTTON(btn3,&MyFrame::xianqi_liandan,"仙器炼丹");
 
     MYADDSPACER();
 
