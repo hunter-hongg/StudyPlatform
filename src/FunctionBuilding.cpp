@@ -25,6 +25,24 @@ void MyFrame::xianqi_liandan(WXBTNEVT&){
   });
   grid -> Add(btn1, FLAG_CENTER);
   
+  auto btn2 = new wxButton(panel,wxID_ANY,wxT("15仙器法力+2碧丹\n1青丹"));
+  MYSHOPBUTTON(btn2, MyDarkOrange);
+  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    if(!XianQiFaLiReader.high(15)){
+      MYMESSAGE("仙器法力不足");
+      return;
+    }
+    if(!Xian::Dan::Bi.high(2)){
+      MYMESSAGE("普通丹不足");
+      return;
+    }
+    XianQiFaLiReader.minusnum(15);
+    Xian::Dan::Bi.minusnum(2);
+    Xian::Dan::Qing.addnum(1);
+    MYMESSAGE("炼制成功");
+  });
+  grid -> Add(btn2, FLAG_CENTER);
+  
   vbox -> Add(grid, FLAG_CENTER);
 
   MYADDSPACER();
