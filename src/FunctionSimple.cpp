@@ -395,6 +395,7 @@ void MyFrame::xianqi_fali(WXBTNEVT& _)
     MYSHOW(wxT("仙器法力：")+XianQiFaLiReader.read_str());
 
     MYBUTTON(btn1,&MyFrame::xianqi_fali_xianbi,"仙币增强");
+    // MYBUTTON(btn2,&MyFrame::xianqi_fali_jisuanbi,"计算币增强");
 
     MYADDSPACER();
 
