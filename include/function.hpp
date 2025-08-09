@@ -71,6 +71,7 @@ private:
     void xianji_use(WXBTNEVT&);
     void xianji_use_fali(WXBTNEVT&);
     void xianji_use_xianqi(WXBTNEVT&);
+    void xianji_liandan(WXBTNEVT&);
 
     void xiandan(WXBTNEVT&);
     void xiandan_show(WXBTNEVT&);
