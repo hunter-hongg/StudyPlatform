@@ -43,6 +43,24 @@ void MyFrame::xianji_liandan(WXBTNEVT&){
   });
   grid -> Add(btn2, FLAG_CENTER);
 
+  auto btn3 = new wxButton(panel,wxID_ANY,wxT("35仙籍+8银丹\n4金丹"));
+  MYSHOPBUTTON(btn3, MyOrange);
+  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    if(!XianJi::Reader.high(35)){
+      MYMESSAGE("仙籍不足");
+      return;
+    }
+    if(!Xian::Dan::Yin.high(8)){
+      MYMESSAGE("银丹不足");
+      return;
+    }
+    XianJi::Reader.minusnum(35);
+    Xian::Dan::Yin.minusnum(8);
+    Xian::Dan::Jin.addnum(4);
+    MYMESSAGE("炼制成功");
+  });
+  grid -> Add(btn3, FLAG_CENTER);
+
   vbox -> Add(grid, FLAG_CENTER);
 
   MYADDSPACER();
