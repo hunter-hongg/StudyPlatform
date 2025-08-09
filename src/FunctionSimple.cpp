@@ -608,6 +608,7 @@ void MyFrame::xianji(WXBTNEVT&){
 
     MYBUTTON(btn1,&MyFrame::xianji_get,"仙籍购买");
     MYBUTTON(btn2,&MyFrame::xianji_use,"仙籍使用");
+    MYBUTTON(btn3,&MyFrame::xianji_liandan,"仙籍炼丹");
 
     MYADDSPACER();
 
