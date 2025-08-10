@@ -82,6 +82,9 @@
 // 类定义
 #include <function.hpp> // 类MyApp以及MyFrame
 
+// EasyCoding
+#include <EasyCoding.hpp>
+
 // namespace
 using namespace ShengGuanSpace;
 using namespace Files;

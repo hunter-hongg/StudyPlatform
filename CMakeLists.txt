@@ -37,6 +37,17 @@ target_link_libraries(studyplatform
     ${SOLIBS}
 )
 
+# 链接EasyCoding
+target_include_directories(studyplatform PRIVATE
+    /home/coding/library/Cpp/EasyCoding/stable/current/include/
+)
+target_link_directories(studyplatform PRIVATE
+    /home/coding/library/Cpp/EasyCoding/stable/current/lib/
+)
+target_link_libraries(studyplatform
+    libeasycoding.so
+)
+
 target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
 set(CMAKECXXFLAGS "${CMAKECXXFLAGS} -march=x86-64 -mtune=generic -mno-avx512f -DRELEASE")
 
