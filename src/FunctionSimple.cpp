@@ -633,6 +633,7 @@ void MyFrame::xiandan(WXBTNEVT&){
     MYTITLE("我的仙丹");
 
     MYBUTTON(btn1,&MyFrame::xiandan_show,"仙丹查看");
+    MYBUTTON(btn2,&MyFrame::xiandan_he,"仙丹召鹤");
 
     MYADDSPACER();
 
