@@ -122,4 +122,3 @@ void MyFrame::xianji_liandan(WXBTNEVT&){
   MYLAST(&MyFrame::xianji);
 }
 
-
