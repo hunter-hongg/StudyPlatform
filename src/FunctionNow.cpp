@@ -16,6 +16,12 @@ void MyFrame::xiandan_he_yindan(WXBTNEVT&){
 
     MYTITLE("银丹召鹤");
 
+    auto btn1 = new wxButton(panel,wxID_ANY,wxT("1银丹召鹤"));
+    MYSHOPBUTTON(btn1, MyDarkBlue);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){
+    });
+    vbox -> Add(btn1, FLAG_CENTER);
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::xiandan_he);
