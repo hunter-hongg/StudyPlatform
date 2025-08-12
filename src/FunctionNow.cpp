@@ -6,6 +6,7 @@ void MyFrame::xiandan_he(WXBTNEVT&){
     MYTITLE("仙丹召鹤");
 
     MYBUTTON(btn1, &MyFrame::xiandan_he_yindan, "银丹召鹤");
+    MYBUTTON(btn2, &MyFrame::xiandan_he_jindan, "金丹召鹤");
   
     MYADDSPACER();
   
