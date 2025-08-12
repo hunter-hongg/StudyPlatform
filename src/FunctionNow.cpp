@@ -71,6 +71,20 @@ void MyFrame::xiandan_he_jindan(WXBTNEVT&){
   });
   vbox -> Add(btn3, FLAG_CENTER);
 
+  auto btn4 = new wxButton(panel, wxID_ANY, wxT("10金丹召鹤"));
+  MYSHOPBUTTON(btn4, MyDarkOrange);
+  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    if ( !Xian::Dan::Jin.canminus(10) ) {
+      MYMESSAGE("金丹不足");
+      return;
+    }
+    int luck = getrnd(0,100);
+    MYMESSAGE("召鹤成功，获得2700积分+220金币");
+    JiFenReader.addnum(2700);
+    JinBiReader.addnum(220);
+  });
+  vbox -> Add(btn4, FLAG_CENTER);
+
   MYADDSPACER();
 
   MYLAST(&MyFrame::xiandan_he);
