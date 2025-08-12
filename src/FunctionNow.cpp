@@ -12,4 +12,12 @@ void MyFrame::xiandan_he(WXBTNEVT&){
   
     MYLAST(&MyFrame::xiandan);
 }
+void MyFrame::xiandan_he_jindan(WXBTNEVT&){
+  MYINIT();
 
+  MYTITLE("金丹召鹤");
+
+  MYADDSPACER();
+
+  MYLAST(&MyFrame::xiandan_he);
+}
