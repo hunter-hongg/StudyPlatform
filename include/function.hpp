@@ -78,6 +78,7 @@ private:
     void xiandan_he(WXBTNEVT&);
     void xiandan_he_yindan(WXBTNEVT&);
     void xiandan_he_jindan(WXBTNEVT&);
+    void xiandan_he_shendan(WXBTNEVT&);
 
     void ancient_square(WXBTNEVT&);
 
