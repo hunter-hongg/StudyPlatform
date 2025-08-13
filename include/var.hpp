@@ -208,9 +208,11 @@ namespace LiHe
 {
   enum class Types{
     XianBiBasic,
+    XianDanBasic, 
   };
   namespace IsUsed{
     static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");
+    static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE");
   }
 }
 

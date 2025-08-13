@@ -200,6 +200,9 @@ void MyFrame::lihe(WXBTNEVT&){
     if(exists(FilePathLiHe+"xianbibasic_lihe.lihe")){
         alllihe.push_back(LiHe::Types::XianBiBasic);
     }
+    if(exists(FilePathLiHe+"xiandanbasic_lihe.lihe")){
+        alllihe.push_back(LiHe::Types::XianDanBasic);
+    }
 
     if(alllihe.empty()){
       auto button = new wxButton(panel, wxID_ANY, wxT("未发现任何礼盒"));
@@ -234,6 +237,30 @@ void MyFrame::lihe(WXBTNEVT&){
           hbox -> Add(buttonuse1, FLAG_CENTER);
           vbox -> Add(hbox, FLAG_CENTER);
           break;
+        case LiHe::Types::XianDanBasic:
+          hbox = new wxBoxSizer(wxHORIZONTAL);
+          buttoninner1 = new wxButton(panel, wxID_ANY, wxT("礼盒 - 仙丹基础礼盒"));
+          buttoninner1 -> SetForegroundColour(MyBlue);
+          buttoninner1 -> SetFont(font17);
+          hbox -> Add(buttoninner1, FLAG_CENTER);
+          buttonuse1 = new wxButton(panel, wxID_ANY, wxT("使用礼盒"));
+          if(LiHe::IsUsed::XianDanBasic.CheckOk()){
+            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
+              (void)LiHe::IsUsed::XianDanBasic.IsOk();
+              Xian::Dan::PuTong.addnum(60);
+              MYMESSAGE("恭喜获得60普通丹");
+              this -> lihe(evt);
+            });
+          } else {
+            buttoninner1 -> SetForegroundColour(MyOrange);
+            buttonuse1 -> SetLabel(wxT("已使用"));
+          }
+          buttonuse1 -> SetFont(font17);
+          buttonuse1 -> SetForegroundColour(MyGrey);
+          hbox -> Add(buttonuse1, FLAG_CENTER);
+          vbox -> Add(hbox, FLAG_CENTER);
+          break;
+ 
         default:
           break;
         }
