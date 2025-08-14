@@ -235,7 +235,7 @@ void MyFrame::lihe(WXBTNEVT&){
           buttonuse1 -> SetFont(font17);
           buttonuse1 -> SetForegroundColour(MyGrey);
           hbox -> Add(buttonuse1, FLAG_CENTER);
-          vbox -> Add(hbox, FLAG_CENTER);
+          vbox -> Add(hbox, FLAG_CENTER_NOBORDER);
           break;
         case LiHe::Types::XianDanBasic:
           hbox = new wxBoxSizer(wxHORIZONTAL);
@@ -258,7 +258,7 @@ void MyFrame::lihe(WXBTNEVT&){
           buttonuse1 -> SetFont(font17);
           buttonuse1 -> SetForegroundColour(MyGrey);
           hbox -> Add(buttonuse1, FLAG_CENTER);
-          vbox -> Add(hbox, FLAG_CENTER);
+          vbox -> Add(hbox, FLAG_CENTER_NOBORDER);
           break;
  
         default:
