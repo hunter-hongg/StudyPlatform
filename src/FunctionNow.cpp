@@ -13,4 +13,6 @@ void MyFrame::xiandan_he(WXBTNEVT&){
   
     MYLAST(&MyFrame::xiandan);
 }
-
+void MyFrame::xiandan_he_shendan(){
+    
+}
