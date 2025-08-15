@@ -81,6 +81,7 @@ private:
     void xiandan_he_shendan(WXBTNEVT&);
 
     void xianlu(WXBTNEVT&);
+    void xianlu_next(WXBTNEVT&);
 
     void ancient_square(WXBTNEVT&);
 
