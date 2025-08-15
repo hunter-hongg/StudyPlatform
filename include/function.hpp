@@ -80,6 +80,8 @@ private:
     void xiandan_he_jindan(WXBTNEVT&);
     void xiandan_he_shendan(WXBTNEVT&);
 
+    void xianlu(WXBTNEVT&);
+
     void ancient_square(WXBTNEVT&);
 
     void ancient_shopa(WXBTNEVT&); // 总板块
