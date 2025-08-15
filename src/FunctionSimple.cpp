@@ -281,6 +281,7 @@ void MyFrame::xianbi_square(WXBTNEVT& evt)
     MYBUTTON(btn2,&MyFrame::xianqi,"我的仙器");
     MYBUTTON(btn3,&MyFrame::xianji,"我的仙籍");
     MYBUTTON(btn4,&MyFrame::xiandan,"我的仙丹");
+    MYBUTTON(btn5,&MyFrame::xianlu, "我的仙禄");
     
     MYADDSPACER();
 
