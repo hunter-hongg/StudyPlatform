@@ -33,6 +33,7 @@ const std::string FilePathTongYong = FilePath + "tyhbdirapbb/";
 const std::string FilePathAncient = FilePath + "adirspfm/";
 const std::string FilePathXianJi = FilePath + "xjccdir.fjdo/";
 const std::string FilePathXianDan = FilePath + "xdccdir.fdso.so12/";
+const std::string FilePathXianLu = FilePath + "xlccf.gfd.ew0/";
 const std::string FilePathLiHe = FilePathBase + "礼盒储存/";
 const std::string FilePathLiHeBool = FilePath + "lhccc.dir.sdo/";
 
@@ -59,6 +60,9 @@ static PasswordFile WuSe(FilePathXianDan+"ws.cd.gfgoi.xdcc", "dsoi23w105");
 static PasswordFile Yin(FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214");
 static PasswordFile Jin(FilePathXianDan+"jd.cc.xdcc.23dsj", "adogfn2104");
 static PasswordFile Shen(FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810");
+}
+namespace Lu{
+static PasswordFile Ji(FilePathXianLu+"xlj.ds.cc.o239", "done20596w");
 }
 }
 namespace BookShelf
