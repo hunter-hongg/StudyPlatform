@@ -3,8 +3,8 @@
 #include <type.hpp>
 
 namespace lambda {
-auto xianlu_get_need = [Xian::Lu::Ji](){
-    int now = Xian::Lu::Ji.read_int();
+auto xianlu_get_need = [Files::Xian::Lu::Ji](){
+    int now = Files::Xian::Lu::Ji.read_int();
     if(now <= 0) {
         return 0;
     } else if (now <= 20) {
