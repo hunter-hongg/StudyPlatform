@@ -12,7 +12,7 @@ auto xianlu_get_need = [=](){
     } else if (now <= 40) {
         return 70 + now * 50;
     } else {
-        return 70 + 40 * 50; // 待扩展
+        return 70 + 40 * 50; // 待扩展 
     }
 }
 }
