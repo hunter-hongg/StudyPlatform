@@ -82,6 +82,9 @@
 // 类定义
 #include <function.hpp> // 类MyApp以及MyFrame
 
+// 不稳定回调函数定义
+#include <lambda.hpp>
+
 // EasyCoding
 #include <EasyCoding.hpp>
 
