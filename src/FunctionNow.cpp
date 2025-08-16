@@ -19,6 +19,16 @@ void MyFrame::xianlu_get(WXBTNEVT&){
     MYTITLENS("仙禄领取");
     MYSHOW(wxString(wxT("每日仙禄："))+TOSTR(lambda::xianlu_get_need())+wxT("仙币"));
 
+    auto callback = [=](WXBTNEVT&){
+        if(!Xian::Lu::CanLingQu.CheckTimes()){
+            MYMESSAGE("今日已领取");
+            return;
+        }
+        XianBiReader.addnum(lambda::xianlu_get_need());
+        MYMESSAGE("领取成功");
+    };
+    MYBUTTONLAMBDA(btn1, callback, "领取仙禄");
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::xianlu);
