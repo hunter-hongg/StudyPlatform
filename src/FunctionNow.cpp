@@ -14,4 +14,11 @@ void MyFrame::xianlu(WXBTNEVT&){
     MYLAST(&MyFrame::xianbi_square);
 }
 void MyFrame::xianlu_get(WXBTNEVT&){
+    MYINIT();
+
+    MYTITLENS("仙禄领取");
+
+    MYADDSPACER();
+
+    MYLAST(&MyFrame::xianlu);
 }
