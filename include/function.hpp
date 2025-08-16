@@ -82,6 +82,7 @@ private:
 
     void xianlu(WXBTNEVT&);
     void xianlu_next(WXBTNEVT&);
+    void xianlu_get(WXBTNEVT&);
 
     void ancient_square(WXBTNEVT&);
 
