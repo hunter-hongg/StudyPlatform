@@ -63,6 +63,7 @@ static PasswordFile Shen(FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810");
 }
 namespace Lu{
 static PasswordFile Ji(FilePathXianLu+"xlj.ds.cc.o239", "done20596w");
+static CheckFile CanLingQu(FilePathXianLu+"ck.clq.cc.3", 4091, 1);
 }
 }
 namespace BookShelf
