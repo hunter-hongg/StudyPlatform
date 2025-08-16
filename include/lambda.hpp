@@ -3,7 +3,7 @@
 #include <type.hpp>
 
 namespace lambda {
-auto xianlu_get_need = [Files::Xian::Lu::Ji](){
+static auto xianlu_get_need = [](){
     int now = Files::Xian::Lu::Ji.read_int();
     if(now <= 0) {
         return 0;
