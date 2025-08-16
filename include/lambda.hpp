@@ -3,7 +3,7 @@
 #include <type.hpp>
 
 namespace lambda {
-auto xianlu_get_need = [=](){
+auto xianlu_get_need = [Xian::Lu::Ji](){
     int now = Xian::Lu::Ji.read_int();
     if(now <= 0) {
         return 0;
@@ -14,5 +14,5 @@ auto xianlu_get_need = [=](){
     } else {
         return 70 + 40 * 50; // 待扩展 
     }
-}
+};
 }
