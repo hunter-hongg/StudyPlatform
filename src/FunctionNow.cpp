@@ -17,6 +17,7 @@ void MyFrame::xianlu_get(WXBTNEVT&){
     MYINIT();
 
     MYTITLENS("仙禄领取");
+    MYSHOW(wxString(wxT("每日仙禄："))+TOSTR(lambda::xianlu_get_need()));
 
     MYADDSPACER();
 
