@@ -5,7 +5,5 @@ void ancient_guan(WXBTNEVT&){
 
     MYTITLE("我的官职");
 
-    MYADDSPACER();
-
-    MYLAST
+    MYEND(&MyFrame::ancient_square);
 }
