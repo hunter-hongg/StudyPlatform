@@ -49,7 +49,7 @@ static void emptything() {;}
                 panel -> Layout(); \
                 emptything()
 #define MYEND(function) \
-                vbox -> AddStretchSpacer();
+                vbox -> AddStretchSpacer(); \
                 auto back_button = new wxButton(panel,wxID_ANY,wxT("返回")); \
                 back_button -> SetFont(font15); \
                 back_button -> Bind(wxEVT_BUTTON,function,this); \
