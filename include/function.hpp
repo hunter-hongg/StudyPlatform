@@ -57,6 +57,7 @@ private:
     void xianbi_square(WXBTNEVT&);
     void xianbi_square_1(WXBTNEVT&);
     void xianbi_square_2(WXBTNEVT&);
+    void xianbi_square_3(WXBTNEVT&);
 
     void fali(WXBTNEVT&);
     void fali_xianbi(WXBTNEVT&);
