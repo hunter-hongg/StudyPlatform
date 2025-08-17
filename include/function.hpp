@@ -110,6 +110,7 @@ private:
     void ancient_things_bookshelf(WXBTNEVT&);
 
     void ancient_guan(WXBTNEVT&);
+
     void ancient_wenguan(WXBTNEVT&);
     void ancient_wenguan_fenglu(WXBTNEVT&);
     void ancient_wenguan_zhengji(WXBTNEVT&);
@@ -118,6 +119,8 @@ private:
     void ancient_zhengji_zhenji(WXBTNEVT&);
     void ancient_zhengji_huilu(WXBTNEVT&);
     void ancient_zhengji_miansheng(WXBTNEVT&);
+    
+    void ancient_wuguan(WXBTNEVT&);
 
     void ancient_juanzeng(WXBTNEVT&);
     void ancient_juanzeng_lingqu(WXBTNEVT&);
