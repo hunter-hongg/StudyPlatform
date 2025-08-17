@@ -200,6 +200,9 @@ namespace LiLiang
 {
 static PasswordFile Xin(FilePathAncientWuGuan+"wgll.xawg.cc.43", "fm5o3kd104");
 static PasswordFile PuTong(FilePathAncientWuGuan+"wgll.pt.cc.ro3", "fivn310694");
+static PasswordFile ChuJi(FilePathAncientWuGuan+"wgll.eo.cj.cc.30", "form30296l");
+static PasswordFile ZhongJi(FilePathAncientWuGuan+"wgll.eo.zhj.39c.cc", "domt53p210");
+static PasswordFile GaoJi(FilePathAncientWuGuan+"wgll.em.gaoj.do3.cc", "dmei45103k");
 }
 }
 namespace JuanZeng
