@@ -280,7 +280,7 @@ void MyFrame::xianbi_square(WXBTNEVT& evt)
     MYBUTTON(btn_1, &MyFrame::xianbi_square_1, "我的物品");
     MYBUTTON(btn_2, &MyFrame::xianbi_square_2, "我的能力");
     MYBUTTON(btn_3, &MyFrame::xianbi_square_3, "我的待遇");
-    
+     
     MYADDSPACER();
 
     MYBACKTOMAIN();
