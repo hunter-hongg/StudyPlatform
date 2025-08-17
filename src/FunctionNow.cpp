@@ -29,6 +29,8 @@ void MyFrame::xianbi_square_3(WXBTNEVT&){
 
     MYTITLE("我的待遇");
 
+    MYBUTTON(btn5,&MyFrame::xianlu, "我的仙禄");
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::xianbi_square);
