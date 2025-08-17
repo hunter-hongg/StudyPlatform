@@ -277,6 +277,7 @@ void MyFrame::xianbi_square(WXBTNEVT& evt)
     MYTITLENS("中国神话传说");
     MYSHOW(wxString(wxT("仙币："))+XianBiReader.read_str());
 
+    MYBUTTON(btn_1, &MyFrame::xianbi_square_1, "我的物品");
     MYBUTTON(btn1,&MyFrame::fali,"我的法力");
     MYBUTTON(btn5,&MyFrame::xianlu, "我的仙禄");
     
