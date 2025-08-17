@@ -32,7 +32,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
             return;
         }
         AncientVar::WuGuan::LiLiang::PuTong.addnum(1);
-        MYMESSAGE("聚集成功");
+        MYMESSAGE("征召成功");
     });
     vbox -> Add(btn1, FLAG_CENTER);
 
