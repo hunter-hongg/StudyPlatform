@@ -265,7 +265,7 @@ void MyFrame::fali(WXBTNEVT& evt)
 
     MYADDSPACER();
 
-    MYBACK(&MyFrame::xianbi_square,1);
+    MYBACK(&MyFrame::xianbi_square_2,1);
 
     MYUSE();
 }

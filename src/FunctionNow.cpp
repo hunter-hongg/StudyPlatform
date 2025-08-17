@@ -24,3 +24,12 @@ void MyFrame::xianbi_square_2(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianbi_square);
 }
+void MyFrame::xianbi_square_3(WXBTNEVT&){
+    MYINIT();
+
+    MYTITLE("我的待遇");
+
+    MYADDSPACER();
+
+    MYLAST(&MyFrame::xianbi_square);
+}
