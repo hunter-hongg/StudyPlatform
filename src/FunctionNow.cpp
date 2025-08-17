@@ -17,6 +17,12 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     auto btn0 = new wxButton(panel, wxID_ANY, wxT("1两白银\n1新兵"));
     MYSHOPBUTTON(btn0, MyYellow);
     btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        if(!AncientVar::BaiYinReader.canminus(1)){
+            MYMESSAGE("白银不足");
+            return;
+        }
+        AncientVar::WuGuan::LiLiang::Xin.addnum(1);
+        MYMESSAGE("征召成功");
     });
     vbox -> Add(btn0, FLAG_CENTER);
 
