@@ -18,6 +18,8 @@ void MyFrame::xianbi_square_2(WXBTNEVT&){
 
     MYTITLE("我的能力");
 
+    MYBUTTON(btn1,&MyFrame::fali,"我的法力");
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::xianbi_square);
