@@ -109,6 +109,7 @@ private:
     void ancient_things_baowu_maichu(WXBTNEVT&);
     void ancient_things_bookshelf(WXBTNEVT&);
 
+    void ancient_guan(WXBTNEVT&);
     void ancient_wenguan(WXBTNEVT&);
     void ancient_wenguan_fenglu(WXBTNEVT&);
     void ancient_wenguan_zhengji(WXBTNEVT&);
