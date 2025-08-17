@@ -13,3 +13,12 @@ void MyFrame::xianbi_square_1(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianbi_square);
 }
+void MyFrame::xianbi_square_2(WXBTNEVT&){
+    MYINIT();
+
+    MYTITLE("我的能力");
+
+    MYADDSPACER();
+
+    MYLAST(&MyFrame::xianbi_square);
+}
