@@ -198,6 +198,7 @@ namespace WuGuan
 {
 namespace LiLiang
 {
+static PasswordFile Xin(FilePathAncientWuGuan+"wgll.xawg.cc.43", "fm5o3kd104");
 static PasswordFile PuTong(FilePathAncientWuGuan+"wgll.pt.cc.ro3", "fivn310694");
 }
 }
