@@ -278,9 +278,6 @@ void MyFrame::xianbi_square(WXBTNEVT& evt)
     MYSHOW(wxString(wxT("仙币："))+XianBiReader.read_str());
 
     MYBUTTON(btn1,&MyFrame::fali,"我的法力");
-    MYBUTTON(btn2,&MyFrame::xianqi,"我的仙器");
-    MYBUTTON(btn3,&MyFrame::xianji,"我的仙籍");
-    MYBUTTON(btn4,&MyFrame::xiandan,"我的仙丹");
     MYBUTTON(btn5,&MyFrame::xianlu, "我的仙禄");
     
     MYADDSPACER();
@@ -385,7 +382,7 @@ void MyFrame::xianqi(WXBTNEVT& evt)
 
     MYADDSPACER();
 
-    MYBACK(&MyFrame::xianbi_square,1);
+    MYBACK(&MyFrame::xianbi_square_1,1);
 
     MYUSE();
 }
@@ -613,7 +610,7 @@ void MyFrame::xianji(WXBTNEVT&){
 
     MYADDSPACER();
 
-    MYLAST(&MyFrame::xianbi_square);
+    MYLAST(&MyFrame::xianbi_square_1);
 }
 void MyFrame::xianji_use(WXBTNEVT&){
     MYINIT();
@@ -638,7 +635,7 @@ void MyFrame::xiandan(WXBTNEVT&){
 
     MYADDSPACER();
 
-    MYLAST(&MyFrame::xianbi_square);
+    MYLAST(&MyFrame::xianbi_square_1);
 }
 void MyFrame::xianlu(WXBTNEVT&){
     MYINIT();
