@@ -31,6 +31,7 @@ const std::string FilePathBaoShi = FilePath + "baosdirfos/";
 const std::string FilePathBookShelf = FilePath + "sjdirspf/";
 const std::string FilePathTongYong = FilePath + "tyhbdirapbb/";
 const std::string FilePathAncient = FilePath + "adirspfm/";
+const std::string FilePathAncientWuGuan = FilePathAncient+"fpawg.4of/";
 const std::string FilePathXianJi = FilePath + "xjccdir.fjdo/";
 const std::string FilePathXianDan = FilePath + "xdccdir.fdso.so12/";
 const std::string FilePathXianLu = FilePath + "xlccf.gfd.ew0/";
@@ -191,6 +192,13 @@ namespace MianSheng
 {
 static CheckFile Check(FilePathAncient+"msmsck.ckawgcc.dsi.1234",2125,1);
 }
+}
+}
+namespace WuGuan
+{
+namespace LiLiang
+{
+static PasswordFile PuTong(FilePathAncientWuGuan+"wgll.pt.cc.ro3", "fivn310694");
 }
 }
 namespace JuanZeng

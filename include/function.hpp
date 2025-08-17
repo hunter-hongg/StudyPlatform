@@ -121,6 +121,7 @@ private:
     void ancient_zhengji_miansheng(WXBTNEVT&);
     
     void ancient_wuguan(WXBTNEVT&);
+    void ancient_wuguan_zhaomu(WXBTNEVT&);
 
     void ancient_juanzeng(WXBTNEVT&);
     void ancient_juanzeng_lingqu(WXBTNEVT&);
