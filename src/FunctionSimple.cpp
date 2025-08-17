@@ -433,7 +433,7 @@ void MyFrame::ancient_wenguan(WXBTNEVT& _)
 
     MYADDSPACER();
 
-    MYBACK(&MyFrame::ancient_square,1);
+    MYBACK(&MyFrame::ancient_guan, 1);
 
     MYUSE();
 }

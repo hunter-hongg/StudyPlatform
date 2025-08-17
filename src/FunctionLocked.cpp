@@ -222,7 +222,7 @@ void MyFrame::ancient_square(WXBTNEVT& evt)
 
     MYBUTTON(btn1,&MyFrame::ancient_shopa,"古代店铺");
     MYBUTTON(btn3,&MyFrame::ancient_things,"我的物品");
-    MYBUTTON(btn4,&MyFrame::ancient_wenguan,"我的官位");
+    MYBUTTON(btn4,&MyFrame::ancient_guan,"我的官职");
     MYBUTTON(btn5,&MyFrame::ancient_juanzeng,"我的捐赠");
 
     MYADDSPACER();
