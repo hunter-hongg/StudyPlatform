@@ -48,6 +48,16 @@ static void emptything() {;}
                 panel -> SetSizer(vbox); \
                 panel -> Layout(); \
                 emptything()
+#define MYEND(function) \
+                vbox -> AddStretchSpacer();
+                auto back_button = new wxButton(panel,wxID_ANY,wxT("返回")); \
+                back_button -> SetFont(font15); \
+                back_button -> Bind(wxEVT_BUTTON,function,this); \
+                vbox -> Add(back_button, FLAG_RIGHT); \
+                vbox -> AddStretchSpacer(); \
+                panel -> SetSizer(vbox); \
+                panel -> Layout(); \
+                emptything()
 #define MYBACKTOMAIN() \
                 auto back_button = new wxButton(panel,wxID_ANY,wxT("返回")); \
                 back_button -> SetFont(font15); \
