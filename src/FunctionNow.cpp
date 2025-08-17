@@ -14,7 +14,13 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
 
     MYTITLE("征召士兵");
 
-    auto btn1 = new wxButton(panel, wxID_ANY, wxT("10白银\n1普通兵"));
+    auto btn0 = new wxButton(panel, wxID_ANY, wxT("1两白银\n1新兵"));
+    MYSHOPBUTTON(btn0, MyYellow);
+    btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    });
+    vbox -> Add(btn0, FLAG_CENTER);
+
+    auto btn1 = new wxButton(panel, wxID_ANY, wxT("10两白银\n1普通兵"));
     MYSHOPBUTTON(btn1, MyYellow);
     btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         if(!AncientVar::BaiYinReader.canminus(10)){
