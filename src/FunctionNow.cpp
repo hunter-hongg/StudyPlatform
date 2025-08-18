@@ -58,6 +58,18 @@ void MyFrame::ancient_wuguan_show(WXBTNEVT&){
     );
     grid -> Add(btn0);
 
+    MYSHOWNSNBM(
+        wxString(wxT("普通兵："))+AncientVar::WuGuan::LiLiang::PuTong.read_str()+wxT("人"), 
+        btn1, MyDarkRed
+    );
+    grid -> Add(btn1);
+
+    MYSHOWNSNBM(
+        wxString(wxT("初级兵："))+AncientVar::WuGuan::LiLiang::ChuJi.read_str()+wxT("人"), 
+        btn2, MyDarkRed
+    );
+    grid -> Add(btn2);
+
     vbox -> Add(grid, FLAG_CENTER);
 
     MYEND(&MyFrame::ancient_wuguan);
