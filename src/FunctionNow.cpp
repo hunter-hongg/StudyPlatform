@@ -15,7 +15,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
 
     MYTITLE("征召士兵");
 
-    auto grid = new wxGridSizer(3,3,3,3);
+    auto grid = new wxGridSizer(3,3,5,5);
 
     auto btn0 = new wxButton(panel, wxID_ANY, wxT("1两白银\n1新兵"));
     MYSHOPBUTTON(btn0, MyYellow);
@@ -50,7 +50,7 @@ void MyFrame::ancient_wuguan_show(WXBTNEVT&){
 
     MYTITLE("查看兵力");
 
-    auto grid = new wxGridSizer(3,3,3,3);
+    auto grid = new wxGridSizer(3,3,5,5);
 
     MYSHOWNSNBM(
         wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str()+wxT("人"), 
