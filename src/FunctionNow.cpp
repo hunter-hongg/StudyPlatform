@@ -50,5 +50,10 @@ void MyFrame::ancient_wuguan_show(WXBTNEVT&){
 
     MYTITLE("查看兵力");
 
+    auto grid = new wxGridSizer(3,3,3,3);
+
+    MYSHOWNSNBM(wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str(), btn0, MyDarkRed);
+    grid -> Add(btn0);
+
     MYEND(&MyFrame::ancient_wuguan);
 }
