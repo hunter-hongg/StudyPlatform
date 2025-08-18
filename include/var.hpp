@@ -203,6 +203,9 @@ static PasswordFile PuTong(FilePathAncientWuGuan+"wgll.pt.cc.ro3", "fivn310694")
 static PasswordFile ChuJi(FilePathAncientWuGuan+"wgll.eo.cj.cc.30", "form30296l");
 static PasswordFile ZhongJi(FilePathAncientWuGuan+"wgll.eo.zhj.39c.cc", "domt53p210");
 static PasswordFile GaoJi(FilePathAncientWuGuan+"wgll.em.gaoj.do3.cc", "dmei45103k");
+static PasswordFile JingRui(FilePathAncientWuGuan+"wgll.emf.ro.jingr.di.cc", "1094nfmwl2");
+static PasswordFile WangPai(FilePathAncientWuGuan+"wgll.od.wap.cc..e", "efoidm2590");
+static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt3960");
 }
 }
 namespace JuanZeng
