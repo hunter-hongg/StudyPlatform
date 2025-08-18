@@ -15,6 +15,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
 
     MYTITLE("征召士兵");
 
+    auto grid = new wxGridSizer(3,3,3,3);
+
     auto btn0 = new wxButton(panel, wxID_ANY, wxT("1两白银\n1新兵"));
     MYSHOPBUTTON(btn0, MyYellow);
     btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
@@ -25,7 +27,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
         AncientVar::WuGuan::LiLiang::Xin.addnum(1);
         MYMESSAGE("征召成功");
     });
-    vbox -> Add(btn0, FLAG_CENTER);
+    grid -> Add(btn0, FLAG_CENTER);
 
     auto btn1 = new wxButton(panel, wxID_ANY, wxT("10两白银\n1普通兵"));
     MYSHOPBUTTON(btn1, MyYellow);
@@ -37,7 +39,9 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
         AncientVar::WuGuan::LiLiang::PuTong.addnum(1);
         MYMESSAGE("征召成功");
     });
-    vbox -> Add(btn1, FLAG_CENTER);
+    grid -> Add(btn1, FLAG_CENTER);
+
+    vbox -> Add(grid, FLAG_CENTER);
 
     MYEND(&MyFrame::ancient_wuguan);
 }
