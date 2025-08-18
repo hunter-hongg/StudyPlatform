@@ -6,7 +6,7 @@ void MyFrame::ancient_wuguan(WXBTNEVT&){
     MYTITLE("我的官位");
 
     MYBUTTON(btn0, &MyFrame::ancient_wuguan_zhaomu, "征召士兵");
-    MYBUTTON(btn1, &MyFrame::ancient_wuguan_show, "查看士兵");
+    MYBUTTON(btn1, &MyFrame::ancient_wuguan_show, "查看兵力");
 
     MYEND(&MyFrame::ancient_guan);
 }
@@ -42,4 +42,9 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     MYEND(&MyFrame::ancient_wuguan);
 }
 void MyFrame::ancient_wuguan_show(WXBTNEVT&){
+    MYINIT();
+
+    MYTITLE("查看兵力");
+
+    MYEND(&MyFrame::ancient_wuguan);
 }
