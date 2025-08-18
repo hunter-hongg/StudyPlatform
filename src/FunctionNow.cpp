@@ -6,6 +6,7 @@ void MyFrame::ancient_wuguan(WXBTNEVT&){
     MYTITLE("我的官位");
 
     MYBUTTON(btn0, &MyFrame::ancient_wuguan_zhaomu, "征召士兵");
+    MYBUTTON(btn1, &MyFrame::ancient_wuguan_show, "查看士兵");
 
     MYEND(&MyFrame::ancient_guan);
 }
@@ -39,4 +40,6 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     vbox -> Add(btn1, FLAG_CENTER);
 
     MYEND(&MyFrame::ancient_wuguan);
+}
+void MyFrame::ancient_wuguan_show(WXBTNEVT&){
 }
