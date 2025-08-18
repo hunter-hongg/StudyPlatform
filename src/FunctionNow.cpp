@@ -52,8 +52,13 @@ void MyFrame::ancient_wuguan_show(WXBTNEVT&){
 
     auto grid = new wxGridSizer(3,3,3,3);
 
-    MYSHOWNSNBM(wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str(), btn0, MyDarkRed);
+    MYSHOWNSNBM(
+        wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str()+wxT("人"), 
+        btn0, MyDarkRed
+    );
     grid -> Add(btn0);
+
+    vbox -> Add(grid, FLAG_CENTER);
 
     MYEND(&MyFrame::ancient_wuguan);
 }
