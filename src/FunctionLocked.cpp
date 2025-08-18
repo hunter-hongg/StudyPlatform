@@ -183,4 +183,62 @@ void MyFrame::xiandan_he(WXBTNEVT&){
   
     MYLAST(&MyFrame::xiandan);
 }
+void MyFrame::ancient_wuguan_show(WXBTNEVT&){
+    MYINIT();
 
+    MYTITLE("查看兵力");
+
+    auto grid = new wxGridSizer(3,3,5,5);
+
+    MYSHOWNSNBM(
+        wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str()+wxT("人"), 
+        btn0, MyDarkRed
+    );
+    grid -> Add(btn0);
+
+    MYSHOWNSNBM(
+        wxString(wxT("普通兵："))+AncientVar::WuGuan::LiLiang::PuTong.read_str()+wxT("人"), 
+        btn1, MyDarkRed
+    );
+    grid -> Add(btn1);
+
+    MYSHOWNSNBM(
+        wxString(wxT("初级兵："))+AncientVar::WuGuan::LiLiang::ChuJi.read_str()+wxT("人"), 
+        btn2, MyDarkRed
+    );
+    grid -> Add(btn2);
+
+    MYSHOWNSNBM(
+        wxString(wxT("中级兵："))+AncientVar::WuGuan::LiLiang::ZhongJi.read_str()+wxT("人"), 
+        btn3, MyDarkRed
+    );
+    grid -> Add(btn3);
+
+    MYSHOWNSNBM(
+        wxString(wxT("高级兵："))+AncientVar::WuGuan::LiLiang::GaoJi.read_str()+wxT("人"), 
+        btn4, MyDarkRed
+    );
+    grid -> Add(btn4);
+
+    MYSHOWNSNBM(
+        wxString(wxT("精锐兵："))+AncientVar::WuGuan::LiLiang::JingRui.read_str()+wxT("人"), 
+        btn5, MyDarkRed
+    );
+    grid -> Add(btn5);
+
+    MYSHOWNSNBM(
+        wxString(wxT("王牌兵："))+AncientVar::WuGuan::LiLiang::WangPai.read_str()+wxT("人"), 
+        btn6, MyDarkRed
+    );
+    grid -> Add(btn6);
+
+    MYSHOWNSNBM(
+        wxString(wxT("神级兵："))+AncientVar::WuGuan::LiLiang::ShenJi.read_str()+wxT("人"), 
+        btn7, MyDarkRed
+    );
+    grid -> Add(btn7);
+
+    vbox -> Add(grid, FLAG_CENTER);
+
+    MYEND(&MyFrame::ancient_wuguan);
+}
