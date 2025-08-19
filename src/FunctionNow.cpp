@@ -5,7 +5,8 @@ void MyFrame::ancient_wuguan(WXBTNEVT&){
 
     MYTITLE("我的官位");
 
-    MYBUTTON(btn0, &MyFrame::ancient_wuguan_zhaomu, "征召士兵");
+    auto btn0 = Simple::Button(&MyFrame::ancient_wuguan_zhaomu, "征召士兵",
+                               panel, vbox, this);
     MYBUTTON(btn1, &MyFrame::ancient_wuguan_show, "查看兵力");
 
     MYEND(&MyFrame::ancient_guan);
