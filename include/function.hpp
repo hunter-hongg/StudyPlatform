@@ -14,6 +14,9 @@ class MyFrame : public wxFrame
 {
 public:
     MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
+  
+    void clean_panel();
+  
 private:
     void start();
 
@@ -148,8 +151,6 @@ private:
     void tsquare_jinbimh_ancient(WXBTNEVT&);
 
 private:
-
-    void clean_panel();
 
     wxPanel* panel;
     wxStaticText* nowtime;

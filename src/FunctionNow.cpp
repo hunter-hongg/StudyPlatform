@@ -1,13 +1,13 @@
 #include <headers.hpp>
 
-void MyFrame::ancient_wuguan(WXBTNEVT&){
-    MYINIT();
+void MyFrame::ancient_wuguan(WXBTNEVT&)
+{
+    auto vbox = Simple::Init(panel, this);
 
     MYTITLE("我的官位");
 
-    auto btn0 = Simple::Button(&MyFrame::ancient_wuguan_zhaomu, "征召士兵",
-                               panel, vbox, this);
-    MYBUTTON(btn1, &MyFrame::ancient_wuguan_show, "查看兵力");
+    Simple::Button(&MyFrame::ancient_wuguan_zhaomu, "征召士兵", panel, vbox, this);
+    Simple::Button(&MyFrame::ancient_wuguan_show, "查看兵力", panel, vbox, this);
 
     MYEND(&MyFrame::ancient_guan);
 }

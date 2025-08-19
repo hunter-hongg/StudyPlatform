@@ -21,5 +21,10 @@ namespace Simple{
     btn -> SetFont(font17);
     return btn;
   }
+  template<typename T>
+  static fn Init(wxPanel* panel, T* self) -> wxBoxSizer* {
+    self->clean_panel(); 
+    return new wxBoxSizer(wxVERTICAL); 
+  }
 }
     
