@@ -53,6 +53,18 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     });
     grid -> Add(btn2, FLAG_CENTER);
 
+    auto btn3 = new wxButton(panel, wxID_ANY, wxT("60两白银\n1中级兵"));
+    MYSHOPBUTTON(btn3, MyYellow);
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        if(!AncientVar::BaiYinReader.canminus(60)){
+            MYMESSAGE("白银不足");
+            return;
+        }
+        AncientVar::WuGuan::LiLiang::ZhongJi.addnum(1);
+        MYMESSAGE("征召成功");
+    });
+    grid -> Add(btn3, FLAG_CENTER);
+
     vbox -> Add(grid, FLAG_CENTER);
 
     MYEND(&MyFrame::ancient_wuguan);
