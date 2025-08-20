@@ -29,8 +29,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     });
     grid -> Add(btn0, FLAG_CENTER);
 
-    auto btn1 = new wxButton(panel, wxID_ANY, wxT("10两白银\n1普通兵"));
-    MYSHOPBUTTON(btn1, MyYellow);
+    auto btn1 = Simple::ShopButton("10两白银\n1普通兵", panel, MyYellow);
     btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         if(!AncientVar::BaiYinReader.canminus(10)){
             MYMESSAGE("白银不足");
@@ -41,8 +40,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     });
     grid -> Add(btn1, FLAG_CENTER);
 
-    auto btn2 = new wxButton(panel, wxID_ANY, wxT("30两白银\n1初级兵"));
-    MYSHOPBUTTON(btn2, MyYellow);
+    auto btn2 = Simple::ShopButton("30两白银\n1初级兵", panel, MyYellow);
     btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         if(!AncientVar::BaiYinReader.canminus(30)){
             MYMESSAGE("白银不足");
@@ -53,8 +51,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     });
     grid -> Add(btn2, FLAG_CENTER);
 
-    auto btn3 = new wxButton(panel, wxID_ANY, wxT("60两白银\n1中级兵"));
-    MYSHOPBUTTON(btn3, MyYellow);
+    auto btn3 = Simple::ShopButton("60两白银\n1中级兵", panel, MyYellow);
     btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         if(!AncientVar::BaiYinReader.canminus(60)){
             MYMESSAGE("白银不足");
@@ -65,8 +62,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     });
     grid -> Add(btn3, FLAG_CENTER);
 
-    auto btn4 = new wxButton(panel, wxID_ANY, wxT("150两白银\n1高级兵"));
-    MYSHOPBUTTON(btn4, MyYellow);
+    auto btn4 = Simple::ShopButton("150两白银\n1高级兵", panel, MyYellow);
     btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         if(!AncientVar::BaiYinReader.canminus(150)){
             MYMESSAGE("白银不足");
