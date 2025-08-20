@@ -45,5 +45,8 @@ namespace Simple{
     panel -> SetSizer(vbox); 
     panel -> Layout();
   }
+  static fn Message(std::string msg) -> void {
+    wxMessageBox(wxString::FromUTF8(msg));
+  }
 }
     
