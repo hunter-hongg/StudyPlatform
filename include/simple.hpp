@@ -33,5 +33,17 @@ namespace Simple{
     vbox -> Add(title,FLAG_CENTER); 
     vbox -> AddStretchSpacer();
   }
+  template<typename T>
+  static fn BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,
+                       wxBoxSizer* vbox, T* self) -> void {
+    vbox -> AddStretchSpacer(); 
+    auto back_button = new wxButton(panel,wxID_ANY,wxT("返回")); 
+    back_button -> SetFont(font15); 
+    back_button -> Bind(wxEVT_BUTTON,fptr,self); 
+    vbox -> Add(back_button, FLAG_RIGHT); 
+    vbox -> AddStretchSpacer(); 
+    panel -> SetSizer(vbox); 
+    panel -> Layout();
+  }
 }
     

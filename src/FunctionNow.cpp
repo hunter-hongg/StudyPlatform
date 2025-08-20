@@ -9,7 +9,7 @@ void MyFrame::ancient_wuguan(WXBTNEVT&)
     Simple::Button(&MyFrame::ancient_wuguan_zhaomu, "征召士兵", panel, vbox, this);
     Simple::Button(&MyFrame::ancient_wuguan_show, "查看兵力", panel, vbox, this);
 
-    MYEND(&MyFrame::ancient_guan);
+    Simple::BackButton(&MyFrame::ancient_guan, panel, vbox, this);
 }
 void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     auto vbox = Simple::Init(panel, this);
@@ -75,6 +75,6 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
 
     vbox -> Add(grid, FLAG_CENTER);
 
-    MYEND(&MyFrame::ancient_wuguan);
+    Simple::BackButton(&MyFrame::ancient_wuguan, panel, vbox, this);
 }
 
