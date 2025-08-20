@@ -711,3 +711,4 @@
 - **7:05**：开始实现simple.hpp代替macro.hpp
 - **7:40**：继续实现simple.hpp
 - **8:20**：使用simple.hpp重写古代武官-征召兵力
+- **10:12**：实现simple.hpp基本函数
