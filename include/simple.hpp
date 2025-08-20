@@ -26,5 +26,12 @@ namespace Simple{
     self->clean_panel(); 
     return new wxBoxSizer(wxVERTICAL); 
   }
+  static fn Title(std::string titlea, wxPanel* panel,
+                  wxBoxSizer* vbox) -> void {
+    auto title = new wxStaticText(panel,wxID_ANY,wxString::FromUTF8(titlea)); 
+    title -> SetFont(font25);
+    vbox -> Add(title,FLAG_CENTER); 
+    vbox -> AddStretchSpacer();
+  }
 }
     

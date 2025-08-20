@@ -4,7 +4,7 @@ void MyFrame::ancient_wuguan(WXBTNEVT&)
 {
     auto vbox = Simple::Init(panel, this);
 
-    MYTITLE("我的官位");
+    Simple::Title("我的官位", panel, vbox);
 
     Simple::Button(&MyFrame::ancient_wuguan_zhaomu, "征召士兵", panel, vbox, this);
     Simple::Button(&MyFrame::ancient_wuguan_show, "查看兵力", panel, vbox, this);
@@ -12,9 +12,9 @@ void MyFrame::ancient_wuguan(WXBTNEVT&)
     MYEND(&MyFrame::ancient_guan);
 }
 void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
-    MYINIT();
+    auto vbox = Simple::Init(panel, this);
 
-    MYTITLE("征召士兵");
+    Simple::Title("征召士兵", panel, vbox);
 
     auto grid = new wxGridSizer(3,3,5,5);
 
