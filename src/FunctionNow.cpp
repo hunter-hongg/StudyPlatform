@@ -18,8 +18,7 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
 
     auto grid = new wxGridSizer(3,3,5,5);
 
-    auto btn0 = new wxButton(panel, wxID_ANY, wxT("1两白银\n1新兵"));
-    MYSHOPBUTTON(btn0, MyYellow);
+    auto btn0 = Simple::ShopButton("1两白银\n1新兵", panel, MyYellow);
     btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         if(!AncientVar::BaiYinReader.canminus(1)){
             MYMESSAGE("白银不足");
