@@ -95,6 +95,17 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     });
     grid -> Add(btn6, FLAG_CENTER);
 
+    auto btn7 = Simple::ShopButton("2000两白银\n2神级兵", panel, MyYellow);
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        if(!AncientVar::BaiYinReader.canminus(2000)){
+            Simple::Message("白银不足");
+            return;
+        }
+        AncientVar::WuGuan::LiLiang::ShenJi.addnum(2);
+        Simple::Message("征召成功");
+    });
+    grid -> Add(btn7, FLAG_CENTER);
+
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_wuguan, panel, vbox, this);
