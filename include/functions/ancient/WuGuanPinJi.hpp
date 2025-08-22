@@ -1,6 +1,6 @@
 #pragma once
 #include <sstream>
-#include <PasswordFile.hpp>
+#include <utils/files/PasswordFile.hpp>
 
 namespace Ancient {
 class WuGuanPinJi : protected PasswordFile {

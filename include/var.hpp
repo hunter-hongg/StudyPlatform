@@ -8,6 +8,7 @@
 #include <functions/xianbi/sword.hpp>
 #include <functions/ancient/sword.hpp>
 #include <functions/ancient/pao.hpp>
+#include <functions/ancient/WuGuanPinJi.hpp>
 #include <ffi/zig/AncientWenGuan/AncientWenGuanCpp.hpp>
 #include <ffi/zig/AncientBaoWu/AncientBaoWuCpp.hpp>
 #include <ffi/zig/BookShelf/BookShelfCpp.hpp>
@@ -207,6 +208,9 @@ static PasswordFile JingRui(FilePathAncientWuGuan+"wgll.emf.ro.jingr.di.cc", "10
 static PasswordFile WangPai(FilePathAncientWuGuan+"wgll.od.wap.cc..e", "efoidm2590");
 static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt3960");
 }
+namespace Pin
+{
+static Ancient::WuGuanPinJi Get(FilePathAncientWuGuan+"wgpj.cc.dfo..", "diof204k58");
 }
 namespace JuanZeng
 {
