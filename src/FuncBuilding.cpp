@@ -4,7 +4,7 @@ void MyFrame::ancient_wuguan(WXBTNEVT&)
 {
     auto vbox = Simple::Init(panel, this);
 
-    Simple::Title("我的官位", panel, vbox);
+    Simple::TitleNoSpacer("我的官位", panel, vbox);
     Simple::ShowButton(
         "我的类别：武官\n我的品级：",
         panel, vbox
