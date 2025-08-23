@@ -212,6 +212,7 @@ namespace Pin
 {
 static Ancient::WuGuanPinJi Get(FilePathAncientWuGuan+"wgpj.cc.dfo..", "diof204k58");
 }
+}
 namespace JuanZeng
 {
 static PasswordFile Reader(FilePathAncient+"jzrd.conc","dfpwm13058");

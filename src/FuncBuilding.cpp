@@ -6,7 +6,7 @@ void MyFrame::ancient_wuguan(WXBTNEVT&)
 
     Simple::TitleNoSpacer("我的官位", panel, vbox);
     Simple::ShowButton(
-        "我的类别：武官\n我的品级："+,
+        "我的类别：武官\n我的品级："+AncientVar::WuGuan::Pin::Get.ReadStr(),
         panel, vbox
     );
 
