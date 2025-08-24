@@ -240,5 +240,5 @@ void MyFrame::ancient_wuguan_show(WXBTNEVT&){
 
     vbox -> Add(grid, FLAG_CENTER);
 
-    MYEND(&MyFrame::ancient_wuguan);
+    MYEND(&MyFrame::ancient_wuguan_1);
 }

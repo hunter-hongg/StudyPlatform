@@ -97,5 +97,5 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
 
     vbox -> Add(grid, FLAG_CENTER);
 
-    Simple::BackButton(&MyFrame::ancient_wuguan, panel, vbox, this);
+    Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }

@@ -124,6 +124,8 @@ private:
     void ancient_zhengji_miansheng(WXBTNEVT&);
     
     void ancient_wuguan(WXBTNEVT&);
+    void ancient_wuguan_1(WXBTNEVT&);
+
     void ancient_wuguan_zhaomu(WXBTNEVT&);
     void ancient_wuguan_show(WXBTNEVT&);
     void ancient_wuguan_chuzheng(WXBTNEVT&);
