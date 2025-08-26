@@ -15,7 +15,6 @@
 #include <var.hpp> // 定义文件变量等
 #include <type.hpp> // 定义类型别名等
 #include <macro.hpp> // 定义宏等
-#include <simple.hpp> // 定义宏替代品
 #include <mine/MyFonts.h> // 定义字体等
 #include <mine/MyFlags.h> // 定义对齐方式等
 #include <mine/MyColour.h> // 定义颜色等
@@ -26,11 +25,15 @@
 #include <utils/new/timer/timer.hpp> // 早期实现学习计时使用的Timer
 
 // 辅助函数
-#include <func/ancient/jinjian.hpp> // 古代文官-直言进谏 结果判断模块
-#include <func/ancient/shengguan.hpp> // 古代文官-政绩升官 判断模块
-#include <func/jifen/jifen.hpp> // 早期积分处理函数
-#include <func/xianbi/sword.hpp> // 神话传说-仙器 佩剑选择模块
-#include <func/xianbi/fali.hpp> // 神话传说-法力 判断模块
+#include <clibs/ancient/jinjian.hpp> // 古代文官-直言进谏 结果判断模块
+#include <clibs/ancient/shengguan.hpp> // 古代文官-政绩升官 判断模块
+#include <clibs/jifen/jifen.hpp> // 早期积分处理函数
+#include <clibs/xianbi/sword.hpp> // 神话传说-仙器 佩剑选择模块
+#include <clibs/xianbi/fali.hpp> // 神话传说-法力 判断模块
+
+// func下头文件 
+#include <simple.hpp> // 定义宏替代品
+#include <lambda.hpp> // 定义lambda函数
 
 // FFI(Zig)
 
@@ -82,9 +85,6 @@
 
 // 类定义
 #include <function.hpp> // 类MyApp以及MyFrame
-
-// 不稳定回调函数定义
-#include <lambda.hpp>
 
 // EasyCoding
 #include <EasyCoding.hpp>
