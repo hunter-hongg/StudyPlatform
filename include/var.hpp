@@ -208,6 +208,13 @@ static PasswordFile JingRui(FilePathAncientWuGuan+"wgll.emf.ro.jingr.di.cc", "10
 static PasswordFile WangPai(FilePathAncientWuGuan+"wgll.od.wap.cc..e", "efoidm2590");
 static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt3960");
 }
+namespace BingLi
+{
+static PasswordFile Xin(FilePathAncientWuGuan+"wgllbl.regio.xb.cc..x", "2309fj4i5p", 1);
+static PasswordFile PuTong(FilePathAncientWuGuan+"wgllbl.ptcc.eoi..xdd", "doirm19840", 3);
+static PasswordFile ChuJi(FilePathAncientWuGuan+"wgllbl.dsoi.cjcc..do", "sdoi4960al", 6);
+static PasswordFile ZhongJi(FilePathAncientWuGuan+"e.wgllbl.dso.cjcc.zj..d", "sdoim39501", 10);
+}
 namespace Pin
 {
 static Ancient::WuGuanPinJi Get(FilePathAncientWuGuan+"wgpj.cc.dfo..", "diof204k58");
