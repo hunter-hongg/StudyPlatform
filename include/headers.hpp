@@ -26,11 +26,11 @@
 #include <utils/new/timer/timer.hpp> // 早期实现学习计时使用的Timer
 
 // 辅助函数
-#include <functions/ancient/jinjian.hpp> // 古代文官-直言进谏 结果判断模块
-#include <functions/ancient/shengguan.hpp> // 古代文官-政绩升官 判断模块
-#include <functions/jifen/jifen.hpp> // 早期积分处理函数
-#include <functions/xianbi/sword.hpp> // 神话传说-仙器 佩剑选择模块
-#include <functions/xianbi/fali.hpp> // 神话传说-法力 判断模块
+#include <fn/ancient/jinjian.hpp> // 古代文官-直言进谏 结果判断模块
+#include <fn/ancient/shengguan.hpp> // 古代文官-政绩升官 判断模块
+#include <fn/jifen/jifen.hpp> // 早期积分处理函数
+#include <fn/xianbi/sword.hpp> // 神话传说-仙器 佩剑选择模块
+#include <fn/xianbi/fali.hpp> // 神话传说-法力 判断模块
 
 // FFI(Zig)
 
