@@ -214,6 +214,10 @@ static PasswordFile Xin(FilePathAncientWuGuan+"wgllbl.regio.xb.cc..x", "2309fj4i
 static PasswordFile PuTong(FilePathAncientWuGuan+"wgllbl.ptcc.eoi..xdd", "doirm19840", 3);
 static PasswordFile ChuJi(FilePathAncientWuGuan+"wgllbl.dsoi.cjcc..do", "sdoi4960al", 6);
 static PasswordFile ZhongJi(FilePathAncientWuGuan+"e.wgllbl.dso.cjcc.zj..d", "sdoim39501", 10);
+static PasswordFile GaoJi(FilePathAncientWuGuan+"r.wgllbl.d.dui.gj.dc", "sdiu38901l", 20);
+static PasswordFile JingRui(FilePathAncientWuGuan+"wgllbl.df.d.jrcc.c.d", "dsorm28901", 40);
+static PasswordFile WangPai(FilePathAncientWuGuan+"wgllbl.eo.eo.wp.d", "12984jfrkw", 90);
+static PasswordFile ShenJi(FilePathAncientWuGuan+"wgllbl.eo.df.shjcc.", "eufmrl3029", 200);
 }
 namespace Pin
 {
