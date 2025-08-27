@@ -32,8 +32,8 @@
 #include <clibs/xianbi/fali.hpp> // 神话传说-法力 判断模块
 
 // func下头文件 
-#include <simple.hpp> // 定义宏替代品
-#include <lambda.hpp> // 定义lambda函数
+#include <func/simple.hpp> // 定义宏替代品
+#include <func/lambda.hpp> // 定义lambda函数
 
 // FFI(Zig)
 

@@ -5,10 +5,10 @@
 #include <utils/files/Cards.hpp>
 #include <utils/files/CheckFile.hpp>
 #include <utils/files/BoolFile.h>
-#include <functions/xianbi/sword.hpp>
-#include <functions/ancient/sword.hpp>
-#include <functions/ancient/pao.hpp>
-#include <functions/ancient/WuGuanPinJi.hpp>
+#include <clibs/xianbi/sword.hpp>
+#include <clibs/ancient/sword.hpp>
+#include <clibs/ancient/pao.hpp>
+#include <clibs/ancient/WuGuanPinJi.hpp>
 #include <ffi/zig/AncientWenGuan/AncientWenGuanCpp.hpp>
 #include <ffi/zig/AncientBaoWu/AncientBaoWuCpp.hpp>
 #include <ffi/zig/BookShelf/BookShelfCpp.hpp>
