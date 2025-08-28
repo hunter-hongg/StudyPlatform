@@ -6,7 +6,11 @@ class PasswordFile: protected file_password
 {
 public:
     PasswordFile(const std::string& fn, const std::string& p):file_password(fn,p) {}
-    PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) { this -> add(d) ; }
+    PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) { 
+        if ((this->read_password()).find("Failed to") != std::string::npos) {
+            this -> add(d) ; 
+        }
+    }
     std::string read_str()
     {
         auto tmp = this->read_real();
