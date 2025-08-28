@@ -67,6 +67,5 @@ namespace Simple{
   static fn Message(std::string msg) -> void {
     wxMessageBox(wxString::FromUTF8(msg));
   }
-  
 }
-    
+
