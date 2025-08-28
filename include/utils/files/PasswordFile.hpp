@@ -7,8 +7,9 @@ class PasswordFile: protected file_password
 public:
     PasswordFile(const std::string& fn, const std::string& p):file_password(fn,p) {}
     PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) { 
-        if ((this->read_password()).find("Failed to") != std::string::npos) {
-            this -> add(d) ; 
+        std::error_code ec;
+        if (!std::filesystem::exists(fn, ec)) {
+            this -> write(d) ; 
         }
     }
     std::string read_str()
