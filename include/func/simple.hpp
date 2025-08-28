@@ -68,4 +68,4 @@ namespace Simple{
     wxMessageBox(wxString::FromUTF8(msg));
   }
 }
-
+    
