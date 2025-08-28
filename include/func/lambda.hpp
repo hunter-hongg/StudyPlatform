@@ -26,5 +26,5 @@ static auto anc_wu_bingli_get = [](){
         LiLiang::JingRui.read_int() * BingLi::JingRui.read_int() +    
         LiLiang::WangPai.read_int() * BingLi::WangPai.read_int() +    
         LiLiang::ShenJi.read_int() * BingLi::ShenJi.read_int();    
-}
+};
 }
