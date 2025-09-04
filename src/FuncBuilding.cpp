@@ -47,9 +47,14 @@ void MyFrame::ancient_wubingli_get(WXBTNEVT&)
         "王牌兵兵力: ", 
         "神级兵兵力: ", 
     });
+    int vti = 0;
 
     for(const auto& i: v){
-        auto btn = new wxButton(panel, wxID_ANY, 
+        auto btn = new wxButton(panel, wxID_ANY, wxString::FromUTF8(vt[vti]));
+        btn -> SetForegroundColour(MyDarkBlue);
+        btn -> SetFont(font17);
+        grid -> Add(btn, FLAG_CENTER);
+        vti++;
     }
 
     vbox -> Add(grid, FLAG_CENTER);
