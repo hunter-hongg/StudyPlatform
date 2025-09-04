@@ -27,7 +27,7 @@ void MyFrame::ancient_wubingli_get(WXBTNEVT&)
 
     auto grid = new wxGridSizer(3,3,4,4);
 
-    std::vector<FilePassword> v({
+    std::vector<PasswordFile> v({
         AncientVar::WuGuan::BingLi::Xin,
         AncientVar::WuGuan::BingLi::PuTong,
         AncientVar::WuGuan::BingLi::ChuJi,
