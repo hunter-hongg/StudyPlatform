@@ -49,7 +49,7 @@ void MyFrame::ancient_wubingli_get(WXBTNEVT&)
     });
     int vti = 0;
 
-    for(const auto& i: v){
+    for(auto& i: v){
         auto btn = new wxButton(panel, wxID_ANY, wxString::FromUTF8(vt[vti]+i.read_str()));
         btn -> SetForegroundColour(MyOrange);
         btn -> SetFont(font17);
