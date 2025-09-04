@@ -37,6 +37,20 @@ void MyFrame::ancient_wubingli_get(WXBTNEVT&)
         AncientVar::WuGuan::BingLi::WangPai,
         AncientVar::WuGuan::BingLi::ShenJi,
     });
+    std::vector<std::string> vt({
+        "新兵兵力: ", 
+        "普通兵兵力: ", 
+        "初级兵兵力: ", 
+        "中级兵兵力: ", 
+        "高级兵兵力: ", 
+        "精锐兵兵力: ", 
+        "王牌兵兵力: ", 
+        "神级兵兵力: ", 
+    });
+
+    for(const auto& i: v){
+        auto btn = new wxButton(panel, wxID_ANY, 
+    }
 
     vbox -> Add(grid, FLAG_CENTER);
 
