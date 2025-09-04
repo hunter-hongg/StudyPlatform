@@ -27,6 +27,17 @@ void MyFrame::ancient_wubingli_get(WXBTNEVT&)
 
     auto grid = new wxGridSizer(3,3,4,4);
 
+    std::vector<FilePassword> v({
+        AncientVar::WuGuan::BingLi::Xin,
+        AncientVar::WuGuan::BingLi::PuTong,
+        AncientVar::WuGuan::BingLi::ChuJi,
+        AncientVar::WuGuan::BingLi::ZhongJi,
+        AncientVar::WuGuan::BingLi::GaoJi,
+        AncientVar::WuGuan::BingLi::JingRui,
+        AncientVar::WuGuan::BingLi::WangPai,
+        AncientVar::WuGuan::BingLi::ShenJi,
+    });
+
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_wuguan_bingli, panel, vbox, this);
