@@ -32,6 +32,12 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT&)
         "新兵兵力 "+AncientVar::WuGuan::BingLi::Xin.read_str(), 
         panel, MyRed  
     );
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        int need = lambda::anc_wu_bingp_need(
+            AncientVar::WuGuan::BingLi::Xin.read_int(), 
+            AncientVar::WuGuan::BingLi::XinMin
+        );
+    });
     grid -> Add(btn1, FLAG_CENTER);
 
     vbox -> Add(grid, FLAG_CENTER);
