@@ -29,4 +29,5 @@ static auto anc_wu_bingli_get = [](){
 };
 static auto anc_wu_bingp_need = [](int now, int min){
     return ((now - min)/5)*10+7;
+};
 }
