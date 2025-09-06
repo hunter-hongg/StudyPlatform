@@ -210,14 +210,24 @@ static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt396
 }
 namespace BingLi
 {
-static PasswordFile Xin(FilePathAncientWuGuan+"wgllbl.regio.xb.cc..x", "2309fj4i5p", 1);
-static PasswordFile PuTong(FilePathAncientWuGuan+"wgllbl.ptcc.eoi..xdd", "doirm19840", 3);
-static PasswordFile ChuJi(FilePathAncientWuGuan+"wgllbl.dsoi.cjcc..do", "sdoi4960al", 6);
-static PasswordFile ZhongJi(FilePathAncientWuGuan+"e.wgllbl.dso.cjcc.zj..d", "sdoim39501", 10);
-static PasswordFile GaoJi(FilePathAncientWuGuan+"r.wgllbl.d.dui.gj.dc", "sdiu38901l", 20);
-static PasswordFile JingRui(FilePathAncientWuGuan+"wgllbl.df.d.jrcc.c.d", "dsorm28901", 40);
-static PasswordFile WangPai(FilePathAncientWuGuan+"wgllbl.eo.eo.wp.d", "12984jfrkw", 90);
-static PasswordFile ShenJi(FilePathAncientWuGuan+"wgllbl.eo.df.shjcc.", "eufmrl3029", 200);
+static const int 
+    XinMin = 1, 
+    PuTongMin = 3, 
+    ChuJiMin = 6,
+    ZhongJiMin = 10, 
+    GaoJiMin = 20, 
+    JingRuiMin = 40, 
+    WangPaiMin = 90, 
+    ShenJiMin = 200
+;
+static PasswordFile Xin(FilePathAncientWuGuan+"wgllbl.regio.xb.cc..x", "2309fj4i5p", XinMin);
+static PasswordFile PuTong(FilePathAncientWuGuan+"wgllbl.ptcc.eoi..xdd", "doirm19840", PuTongMin);
+static PasswordFile ChuJi(FilePathAncientWuGuan+"wgllbl.dsoi.cjcc..do", "sdoi4960al", ChuJiMin);
+static PasswordFile ZhongJi(FilePathAncientWuGuan+"e.wgllbl.dso.cjcc.zj..d", "sdoim39501", ZhongJiMin);
+static PasswordFile GaoJi(FilePathAncientWuGuan+"r.wgllbl.d.dui.gj.dc", "sdiu38901l", GaoJiMin);
+static PasswordFile JingRui(FilePathAncientWuGuan+"wgllbl.df.d.jrcc.c.d", "dsorm28901", JingRuiMin);
+static PasswordFile WangPai(FilePathAncientWuGuan+"wgllbl.eo.eo.wp.d", "12984jfrkw", WangPaiMin);
+static PasswordFile ShenJi(FilePathAncientWuGuan+"wgllbl.eo.df.shjcc.", "eufmrl3029", ShenJiMin);
 }
 namespace Pin
 {
