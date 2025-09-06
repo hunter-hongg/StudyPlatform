@@ -27,4 +27,6 @@ static auto anc_wu_bingli_get = [](){
         LiLiang::WangPai.read_int() * BingLi::WangPai.read_int() +    
         LiLiang::ShenJi.read_int() * BingLi::ShenJi.read_int();    
 };
+static auto anc_wu_bingp_need = [](int now, int min){
+    return ((now - min)/5)*10+7;
 }
