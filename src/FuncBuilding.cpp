@@ -26,5 +26,9 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT&)
 
     Simple::Title("增强兵力", panel, vbox);
 
+    auto grid = new wxGridSizer(3,3,4,4);
+
+    vbox -> Add(grid, FLAG_CENTER);
+
     Simple::BackButton(&MyFrame::ancient_wuguan_bingli, panel, vbox, this);
 }
