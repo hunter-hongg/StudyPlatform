@@ -37,6 +37,17 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT&)
             AncientVar::WuGuan::BingLi::Xin.read_int(), 
             AncientVar::WuGuan::BingLi::XinMin
         );
+        if ( wxMessageBox(
+                wxString::FromUTF8(std::string("需要黄金")+TOSTR(need)+"两"), 
+                "info", wxYES_NO | wxICON_QUESTION
+            ) == wxYES ) {
+            if ( ! AncientVar::HuangJinReader.canminus(need) ) {
+                Simple::Message("黄金不足");
+                return;
+            }
+            AncientVar::WuGuan::BingLi::Xin.addnum(5);
+            Simple::Message("增强兵力成功");
+        }
     });
     grid -> Add(btn1, FLAG_CENTER);
 
