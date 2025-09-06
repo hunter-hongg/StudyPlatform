@@ -28,6 +28,10 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT&)
 
     auto grid = new wxGridSizer(3,3,4,4);
 
+    auto btn1 = new wxButton(panel, wxID_ANY, 
+        wxString::FromUTF8("新兵兵力 "+AncientVar::WuGuan::BingLi::Xin.read_str())
+    );
+
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_wuguan_bingli, panel, vbox, this);
