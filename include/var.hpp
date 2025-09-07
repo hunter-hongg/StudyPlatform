@@ -271,3 +271,6 @@ namespace LiHe
 namespace AncientZhengJi = AncientVar::WenGuan::ZhengJi;
 #define AncientZhengJiReader AncientZhengJi::ZhengJiReader
 #define BaoShiReader Files::BaoShi::Reader
+
+// 常量
+static wxCommandEvent EmptyEvent;

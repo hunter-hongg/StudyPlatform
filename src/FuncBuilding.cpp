@@ -20,7 +20,7 @@ void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }
-void MyFrame::ancient_wubingli_plus(WXBTNEVT&)
+void MyFrame::ancient_wubingli_plus(WXBTNEVT& evt)
 {
     auto vbox = Simple::Init(panel, this);
 
@@ -47,6 +47,7 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT&)
             }
             AncientVar::WuGuan::BingLi::Xin.addnum(5);
             Simple::Message("增强兵力成功");
+            this -> ancient_wubingli_plus(EmptyEvent);
         }
     });
     grid -> Add(btn1, FLAG_CENTER);
