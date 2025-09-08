@@ -58,8 +58,8 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT& evt)
     );
     btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         int need = lambda::anc_wu_bingp_need(
-            AncientVar::WuGuan::BingLi::Xin.read_int(), 
-            AncientVar::WuGuan::BingLi::XinMin
+            AncientVar::WuGuan::BingLi::PuTong.read_int(), 
+            AncientVar::WuGuan::BingLi::PuTongMin
         );
         if ( wxMessageBox(
                 wxString::FromUTF8(std::string("需要黄金")+TOSTR(need)+"两"), 
@@ -69,8 +69,9 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT& evt)
                 Simple::Message("黄金不足");
                 return;
             }
-            AncientVar::WuGuan::BingLi::Xin.addnum(5);
+            AncientVar::WuGuan::BingLi::PuTong.addnum(5);
             Simple::Message("增强兵力成功");
+            this -> ancient_wubingli_plus(EmptyEvent);
         }
     });
     grid -> Add(btn2, FLAG_CENTER);
