@@ -125,6 +125,54 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT& evt)
     });
     grid -> Add(btn4, FLAG_CENTER);
 
+    auto btn5 = Simple::ShopButton(
+        "高级兵兵力 "+AncientVar::WuGuan::BingLi::GaoJi.read_str(), 
+        panel, MyRed  
+    );
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        int need = lambda::anc_wu_bingp_need(
+            AncientVar::WuGuan::BingLi::GaoJi.read_int(), 
+            AncientVar::WuGuan::BingLi::GaoJiMin
+        );
+        if ( wxMessageBox(
+                wxString::FromUTF8(std::string("需要黄金")+TOSTR(need)+"两"), 
+                "info", wxYES_NO | wxICON_QUESTION
+            ) == wxYES ) {
+            if ( ! AncientVar::HuangJinReader.canminus(need) ) {
+                Simple::Message("黄金不足");
+                return;
+            }
+            AncientVar::WuGuan::BingLi::GaoJi.addnum(5);
+            Simple::Message("增强兵力成功");
+            this -> ancient_wubingli_plus(EmptyEvent);
+        }
+    });
+    grid -> Add(btn5, FLAG_CENTER);
+
+    auto btn6 = Simple::ShopButton(
+        "精锐兵兵力 "+AncientVar::WuGuan::BingLi::JingRui.read_str(), 
+        panel, MyRed  
+    );
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        int need = lambda::anc_wu_bingp_need(
+            AncientVar::WuGuan::BingLi::JingRui.read_int(), 
+            AncientVar::WuGuan::BingLi::JingRuiMin
+        );
+        if ( wxMessageBox(
+                wxString::FromUTF8(std::string("需要黄金")+TOSTR(need)+"两"), 
+                "info", wxYES_NO | wxICON_QUESTION
+            ) == wxYES ) {
+            if ( ! AncientVar::HuangJinReader.canminus(need) ) {
+                Simple::Message("黄金不足");
+                return;
+            }
+            AncientVar::WuGuan::BingLi::JingRui.addnum(5);
+            Simple::Message("增强兵力成功");
+            this -> ancient_wubingli_plus(EmptyEvent);
+        }
+    });
+    grid -> Add(btn6, FLAG_CENTER);
+
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_wuguan_bingli, panel, vbox, this);
