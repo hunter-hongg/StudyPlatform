@@ -4,7 +4,9 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
 {
     auto vbox = Simple::Init(panel, this);
 
-    Simple::Title("领兵出征", panel, vbox);
+    Simple::TitleNoSpacer("领兵出征", panel, vbox);
+    Simple::ShowButton(
+        "我的兵力："+TOSTR(lambda::anc_wu_bingli_get()), panel, vbox);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }
