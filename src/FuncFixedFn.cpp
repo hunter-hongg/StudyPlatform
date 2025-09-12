@@ -244,5 +244,5 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT& evt)
 
     vbox -> Add(grid, FLAG_CENTER);
 
-    Simple::BackButton(&MyFrame::ancient_wuguan_bingli, panel, vbox, this);
+    Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }

@@ -186,7 +186,7 @@ void MyFrame::xiandan_he(WXBTNEVT&){
 void MyFrame::ancient_wuguan_show(WXBTNEVT&){
     MYINIT();
 
-    MYTITLE("查看兵力");
+    MYTITLE("查看士兵");
 
     auto grid = new wxGridSizer(3,3,5,5);
 
