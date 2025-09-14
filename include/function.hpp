@@ -165,6 +165,7 @@ private:
 
     void showtime();
     void onclickys1(poly,wxTextCtrl*,wxTextCtrl*,WXEVT,wxButton*) oldblock;
+    void empfunc(WXBTNEVT&){};
 
     poly ys1User[6] oldblock;
     int count oldblock;
