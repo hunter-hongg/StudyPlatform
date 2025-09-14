@@ -9,7 +9,7 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
         "我的兵力："+TOSTR(lambda::anc_wu_bingli_get()), panel, vbox);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
-}
+}  
 void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
 {
     auto vbox = Simple::Init(panel, this);
