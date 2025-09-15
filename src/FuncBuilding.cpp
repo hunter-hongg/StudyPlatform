@@ -27,5 +27,5 @@ void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
         &MyFrame::ancient_wubingli_plus, "增强兵力", panel, vbox, this);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
-}
-
+} 
+ 
