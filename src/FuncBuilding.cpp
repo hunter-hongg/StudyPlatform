@@ -13,11 +13,10 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
     if ( add_or_sub_max <= 1 ) {
         add_or_sub_max = 2;
     }
-    auto otbingl = 0;
-//    auto otbingl = mybingl + getrnd(
-//       add_or_sub_max, 
-//       add_or_sub_max*(-1)
-//   );
+    auto otbingl = mybingl + getrnd(
+       add_or_sub_max*(-1),
+       add_or_sub_max 
+    );
 
     Simple::Button(
         &MyFrame::empfunc,
