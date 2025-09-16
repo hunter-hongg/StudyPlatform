@@ -8,8 +8,20 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
     Simple::ShowButton(
         "我的兵力："+TOSTR(lambda::anc_wu_bingli_get()), panel, vbox);
 
+    auto mybingl = lambda::anc_wu_bingli_get();
+    int add_or_sub_max = mybingl / 50;
+    if ( add_or_sub_max <= 1 ) {
+        add_or_sub_max = 2;
+    }
+    auto otbingl = mybingl + getrnd(
+       add_or_sub_max*(-1),
+       add_or_sub_max 
+    );
+
     Simple::Button(
-        &MyFrame::empfunc, "对方兵力", panel, vbox, this);
+        &MyFrame::empfunc,
+        "对方兵力："+TOSTR(otbingl), 
+        panel, vbox, this);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }  
@@ -28,4 +40,4 @@ void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }
-
+ 

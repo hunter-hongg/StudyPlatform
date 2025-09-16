@@ -6,3 +6,4 @@
 2. 进入目录：cd StudyPlatform
 3. 编译项目：make
 4. 手动复制：cp target/学习平台 /usr/local/bin/ 
+
