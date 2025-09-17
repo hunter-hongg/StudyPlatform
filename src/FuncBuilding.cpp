@@ -27,7 +27,7 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }  
 void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
-{
+{ 
     auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("查看兵力", panel, vbox);
