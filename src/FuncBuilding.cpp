@@ -23,6 +23,10 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
         &MyFrame::empfunc,
         "对方兵力："+TOSTR(otbingl), 
         panel, vbox, this);
+    Simple::Button(
+        &MyFrame::ancinet_wuguan_chuzheng_1, 
+        "率军出征", 
+        panel, vbox, this);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }  
