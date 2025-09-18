@@ -29,7 +29,7 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
         panel, vbox, this);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
-}  
+}   
 void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
 { 
     auto vbox = Simple::Init(panel, this);
