@@ -132,6 +132,7 @@ private:
     void ancient_wubingli_get(WXBTNEVT&);
     void ancient_wubingli_plus(WXBTNEVT&);
     void ancient_wuguan_chuzheng(WXBTNEVT&);
+    void ancient_wuguan_chuzheng_1(WXBTNEVT&);
 
     void ancient_juanzeng(WXBTNEVT&);
     void ancient_juanzeng_lingqu(WXBTNEVT&);
