@@ -30,4 +30,10 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }   
+void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
+    auto vbox = Simple::Init(panel, this);
 
+    Simple::Title("率军出征", panel, vbox);
+
+    Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
+}
