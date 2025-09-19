@@ -37,3 +37,4 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
 
     Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
 }
+
