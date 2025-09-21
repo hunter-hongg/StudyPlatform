@@ -18,6 +18,7 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
        add_or_sub_max 
     );
     Global::AncientWuGuanChuZheng::bingl_ot = otbingl;
+    Global::AncientWuGuanChuZheng::bingl_sf = mybingl;
 
     Simple::Button(
         &MyFrame::empfunc,
