@@ -25,13 +25,21 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
         "对方兵力："+TOSTR(otbingl), 
         panel, vbox, this);
     Simple::Button(
-        &MyFrame::ancinet_wuguan_chuzheng_1, 
+        &MyFrame::ancient_wuguan_chuzheng_1, 
         "率军出征", 
         panel, vbox, this);
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }   
 void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
+    using Global::AncientWuGuanChuZheng::bingl_ot;
+    using Global::AncientWuGuanChuZheng::bingl_sf;
+
+    Simple::MessageErr("test");
+
+    if ( ( bingl_sf < 0 ) || ( bingl_ot < 0 ) ) {
+    }
+        
     auto vbox = Simple::Init(panel, this);
 
     Simple::Title("率军出征", panel, vbox);
