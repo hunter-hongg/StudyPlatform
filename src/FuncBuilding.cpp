@@ -35,8 +35,6 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
     using Global::AncientWuGuanChuZheng::bingl_ot;
     using Global::AncientWuGuanChuZheng::bingl_sf;
 
-    Simple::MessageErr("test");
-
     if ( ( bingl_sf < 0 ) || ( bingl_ot < 0 ) ) {
     }
         
