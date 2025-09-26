@@ -27,6 +27,8 @@ void MyFrame::start()
     button5 -> SetFont(font19);
     MYBUTTON(button6,&MyFrame::things_square,"物品领取");
     button6 -> SetFont(font19);
+    MYBUTTON(button7,&MyFrame::bank_square,"积分银行");
+    button7 -> SetFont(font19);
 
     MYADDSPACER();
 
