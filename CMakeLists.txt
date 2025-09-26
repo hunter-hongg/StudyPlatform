@@ -48,6 +48,17 @@ target_link_libraries(studyplatform
     libeasycoding.so
 )
 
+# 链接BigInt
+target_include_directories(studyplatform PRIVATE
+    /localapp/library/BigInt/stable/current/include/
+)
+target_link_directories(studyplatform PRIVATE
+    /localapp/library/BigInt/stable/current/lib/
+)
+target_link_libraries(studyplatform 
+    libBigInt.so 
+)
+
 target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
 set(CMAKECXXFLAGS "${CMAKECXXFLAGS} -march=x86-64 -mtune=generic -mno-avx512f -DRELEASE")
 
