@@ -67,7 +67,7 @@ set(EXECUTABLE_OUTPUT_PATH ../target/)
 
 add_custom_target( AfterAll ALL
     DEPENDS studyplatform 
-    COMMAND bash ../.scripts/move.sh
+    COMMAND bash ../shell/move.sh
     WORKING_DIRECTORY ../target
 )
 
@@ -75,3 +75,5 @@ add_custom_target( AfterAll ALL
 #     COMMAND bash ../scripts/run.sh
 #     WORKING_DIRECTORY ../target
 # )
+
+install( TARGETS studyplatform DESTINATION bin )
