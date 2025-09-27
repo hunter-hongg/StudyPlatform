@@ -1,3 +1,4 @@
+#pragma once
 #define fn auto
 #define let const auto 
 #define lmut auto

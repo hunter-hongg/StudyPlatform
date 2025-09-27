@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <fstream>
 #include <BigInt.hpp>
@@ -16,6 +17,13 @@ public:
         filename_check = filename_c;
     }
     BigInt Read() {
+        std::ifstream fcs(filename_check);
+        if ( ! fcs.is_open() ) {
+            fcs.close();
+            std::ofstream fcso(filename_check);
+            fcso << "1";
+            fcso.close();
+        }
         return BigInt(0);
     }
     int Write(BigInt num) {
