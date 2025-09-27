@@ -1,7 +1,7 @@
 #include <headers.hpp>
 
-void MyFrame::bank_square(WXBTNEVT&) {
-    auto vbox = Simple::Init(panel, this);
+fn MyFrame::bank_square(WXBTNEVT&) -> void {
+    lmut vbox = Simple::Init(panel, this);
 
     Simple::Title("积分银行", panel, vbox);
 

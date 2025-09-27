@@ -5,6 +5,7 @@
 #include <utils/files/Cards.hpp>
 #include <utils/files/CheckFile.hpp>
 #include <utils/files/BoolFile.h>
+#include <utils/files/NumberFile.hpp>
 #include <clibs/xianbi/sword.hpp>
 #include <clibs/ancient/sword.hpp>
 #include <clibs/ancient/pao.hpp>

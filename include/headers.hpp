@@ -36,6 +36,7 @@
 #include <func/simple.hpp> // 定义宏替代品
 #include <func/lambda.hpp> // 定义lambda函数
 
+
 // FFI(Zig)
 
 // BookShelf
@@ -95,3 +96,6 @@ using namespace ShengGuanSpace;
 using namespace Files;
 using namespace Card;
 using namespace Check;
+
+// lang头文件
+#include <lang/macro.hpp>
