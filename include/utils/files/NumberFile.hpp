@@ -22,9 +22,31 @@ public:
             fcs.close();
             std::ofstream fcso(filename_check);
             fcso << "1";
+            std::ofstream fcsi(filename_real);
+            fcsi << "0";
             fcso.close();
+            fcsi.close();
+            return BigInt(0);
         }
-        return BigInt(0);
+        std::string fi;
+        fcs >> fi ; fcs.close() ; 
+        std::ifstream frs(filename_check);
+        if ( ! frs.is_open() ) { 
+            frs.close();
+            std::ofstream fcso(filename_check);
+            fcso << "1";
+            std::ofstream fcsi(filename_real);
+            fcsi << "0";
+            fcso.close();
+            fcsi.close();
+            return BigInt(0);
+        }
+        std::string ri;
+        frs >> ri ; frs.close() ;
+        if ( BigInt(ri.length()).toString() != BigInt(fi).toString() ) {
+            return BigInt(0);
+        }
+        return BigInt(ri);
     }
     int Write(BigInt num) {
         return 0;

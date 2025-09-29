@@ -39,6 +39,7 @@ const std::string FilePathXianDan = FilePath + "xdccdir.fdso.so12/";
 const std::string FilePathXianLu = FilePath + "xlccf.gfd.ew0/";
 const std::string FilePathLiHe = FilePathBase + "礼盒储存/";
 const std::string FilePathLiHeBool = FilePath + "lhccc.dir.sdo/";
+const std::string FilePathBank = FilePath + "cc.bnkaac.c.io/";
 
 namespace Files
 {
@@ -269,6 +270,9 @@ namespace LiHe
     static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");
     static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE");
   }
+}
+namespace Bank {
+static NumberFile BankStore(FilePathBank+"fhubasr", FilePathBank+"fhubascc");
 }
 
 // 简单符号
