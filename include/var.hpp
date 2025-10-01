@@ -5,7 +5,7 @@
 #include <utils/files/Cards.hpp>
 #include <utils/files/CheckFile.hpp>
 #include <utils/files/BoolFile.h>
-#include <utils/files/NumberFile.hpp>
+#include <utils/files/BigIntFile.hpp>
 #include <clibs/xianbi/sword.hpp>
 #include <clibs/ancient/sword.hpp>
 #include <clibs/ancient/pao.hpp>
@@ -272,7 +272,7 @@ namespace LiHe
   }
 }
 namespace Bank {
-static NumberFile BankStore(FilePathBank+"fhubasr", FilePathBank+"fhubascc");
+static BigIntFile BankStore(FilePathBank+"fhubasr");
 }
 
 // 简单符号
