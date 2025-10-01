@@ -7,7 +7,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF
 # 设置C++标准为C++23
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_LIBRARY_PATH $HOME/学习平台/lib)
+set(CMAKE_LIBRARY_PATH $HOME/学习平台/lib) # 自行更改
 
 # 查找所有源文件
 file(GLOB_RECURSE SRC_FILES "src/*.cpp")
@@ -67,13 +67,8 @@ set(EXECUTABLE_OUTPUT_PATH ../target/)
 
 add_custom_target( AfterAll ALL
     DEPENDS studyplatform 
-    COMMAND bash ../shell/move.sh
+    COMMAND bash ~/学习平台/shell/move.sh # 自行更改
     WORKING_DIRECTORY ../target
 )
-
-# add_custom_command(TARGET AfterAll POST_BUILD
-#     COMMAND bash ../scripts/run.sh
-#     WORKING_DIRECTORY ../target
-# )
 
 install( TARGETS studyplatform DESTINATION bin )

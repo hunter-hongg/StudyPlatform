@@ -2,6 +2,7 @@
 
 void MyFrame::start()
 {
+    Bank::BankStore.Add("24");
     Simple::Message(Bank::BankStore.Read());
     MYINIT();
 
