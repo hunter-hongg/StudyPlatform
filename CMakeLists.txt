@@ -48,6 +48,17 @@ target_link_libraries(studyplatform
     libeasycoding.so
 )
 
+# 链接BigInt
+target_include_directories(studyplatform PRIVATE
+    /localapp/library/BigInt/stable/current/include/
+)
+target_link_directories(studyplatform PRIVATE
+    /localapp/library/BigInt/stable/current/lib/
+)
+target_link_libraries(studyplatform 
+    libBigInt.so 
+)
+
 target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
 set(CMAKECXXFLAGS "${CMAKECXXFLAGS} -march=x86-64 -mtune=generic -mno-avx512f -DRELEASE")
 
@@ -56,7 +67,7 @@ set(EXECUTABLE_OUTPUT_PATH ../target/)
 
 add_custom_target( AfterAll ALL
     DEPENDS studyplatform 
-    COMMAND bash ../.scripts/move.sh
+    COMMAND bash ../shell/move.sh
     WORKING_DIRECTORY ../target
 )
 
@@ -64,3 +75,5 @@ add_custom_target( AfterAll ALL
 #     COMMAND bash ../scripts/run.sh
 #     WORKING_DIRECTORY ../target
 # )
+
+install( TARGETS studyplatform DESTINATION bin )

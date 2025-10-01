@@ -2,6 +2,7 @@
 
 void MyFrame::start()
 {
+    Simple::Message(Bank::BankStore.Read());
     MYINIT();
 
     auto title = new wxStaticText(panel,wxID_ANY,wxString::FromUTF8("欢迎"+User+"来到学习平台"));
@@ -27,6 +28,8 @@ void MyFrame::start()
     button5 -> SetFont(font19);
     MYBUTTON(button6,&MyFrame::things_square,"物品领取");
     button6 -> SetFont(font19);
+    MYBUTTON(button7,&MyFrame::bank_square,"积分银行");
+    button7 -> SetFont(font19);
 
     MYADDSPACER();
 
