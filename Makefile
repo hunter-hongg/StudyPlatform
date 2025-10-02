@@ -1,18 +1,14 @@
-BUILD_DIR = ./.build
+BUILD_DIR = ./build
+NPROC = `nproc`
 
-.PHONY: build
 all: 
-	@cd $(BUILD_DIR) && make 
+	@cd $(BUILD_DIR) && make -j$(NPROC) 
 	@target/学习平台
 	@rm -f log.log
-build:
-	@make -C build
 fresh: 
 	@cd $(BUILD_DIR) && rm -rf * && cmake ..
-refresh:
-	@cd $(BUILD_DIR) && rm -rf * && cmake ..
-# run:
-# 	@target/学习平台
 launch:
 	@target/学习平台
 	@rm -f log.log
+install:
+	cp target/学习平台 /usr/local/bin
