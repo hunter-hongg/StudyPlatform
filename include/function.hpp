@@ -158,6 +158,7 @@ private:
     void tsquare_jinbimh_ancient(WXBTNEVT&);
 
     void bank_square(WXBTNEVT&);
+    void bank_store(WXBTNEVT&);
 
 private:
 
