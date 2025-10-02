@@ -27,11 +27,6 @@ public:
         f << n;
         f.close();
     }
-    void Add(std::string nn){
-        BigInt t(Read());
-        t.Add(BigInt(nn));
-        Write(t.toString());
-    }
 protected: 
     std::string file;
 };
