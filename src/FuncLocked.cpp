@@ -2,7 +2,6 @@
 
 void MyFrame::start()
 {
-    Simple::Message(Bank::BankStore.Read());
     MYINIT();
 
     auto title = new wxStaticText(panel,wxID_ANY,wxString::FromUTF8("欢迎"+User+"来到学习平台"));
