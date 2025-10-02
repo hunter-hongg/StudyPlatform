@@ -157,6 +157,8 @@ private:
     void tsquare_jinbimh_simple(WXBTNEVT&);
     void tsquare_jinbimh_ancient(WXBTNEVT&);
 
+    void bank_square(WXBTNEVT&);
+
 private:
 
     wxPanel* panel;
@@ -165,8 +167,10 @@ private:
     wxTimer TimeTimer;
 
     void showtime();
-    void onclickys1(poly,wxTextCtrl*,wxTextCtrl*,WXEVT,wxButton*) oldblock;
     void empfunc(WXBTNEVT&){};
+    void main_func(WXBTNEVT&) { this -> start() ; } 
+
+    void onclickys1(poly,wxTextCtrl*,wxTextCtrl*,WXEVT,wxButton*) oldblock;
 
     poly ys1User[6] oldblock;
     int count oldblock;
