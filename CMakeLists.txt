@@ -37,6 +37,8 @@ target_link_libraries(studyplatform
     ${SOLIBS}
 )
 
+# 以下部分自行更改
+
 # 链接EasyCoding
 target_include_directories(studyplatform PRIVATE
     /localapp/library/EasyCoding/stable/current/include/
@@ -58,6 +60,9 @@ target_link_directories(studyplatform PRIVATE
 target_link_libraries(studyplatform 
     libBigInt.so 
 )
+
+# 链接cding 
+target_include_directories(studyplatform PRIVATE /home/coding/cding/include)
 
 target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
 set(CMAKECXXFLAGS "${CMAKECXXFLAGS} -march=x86-64 -mtune=generic -mno-avx512f -DRELEASE")
