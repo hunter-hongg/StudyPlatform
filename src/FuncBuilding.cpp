@@ -10,3 +10,6 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
+fn MyFrame::bank_store(WXBTNEVT&) -> void {
+
+}
