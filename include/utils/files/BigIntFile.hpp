@@ -1,6 +1,7 @@
 #pragma once
 #include <fstream>
 #include <string>
+#include <iostream>
 
 class BigIntFile { 
 public: 
@@ -25,6 +26,11 @@ public:
         std::ofstream f(file);
         f << n;
         f.close();
+    }
+    std::string Add(int nn){
+        BigInt t = BigInt(Read());
+        t.Add(BigInt(nn));
+        Write(t.toString());
     }
 protected: 
     std::string file;
