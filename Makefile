@@ -12,3 +12,4 @@ launch:
 	@rm -f log.log
 install:
 	cp target/学习平台 /usr/local/bin
+	# 同时复制依赖
