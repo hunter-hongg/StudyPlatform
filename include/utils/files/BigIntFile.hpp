@@ -27,8 +27,8 @@ public:
         f << n;
         f.close();
     }
-    void Add(std::string nn){
-        BigInt t(Read());
+    std::string Add(int nn){
+        BigInt t = BigInt(Read());
         t.Add(BigInt(nn));
         Write(t.toString());
     }

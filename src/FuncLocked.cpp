@@ -2,7 +2,10 @@
 
 void MyFrame::start()
 {
-    Bank::BankStore.Add("24");
+    // lmut t = BigInt(Bank::BankStore.Read());
+    // t.Add(BigInt(5));
+    // Bank::BankStore.Write(t.toString());
+    Bank::BankStore.Add(5);
     Simple::Message(Bank::BankStore.Read());
     MYINIT();
 
