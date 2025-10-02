@@ -15,6 +15,7 @@
 #include <var.hpp> // 定义文件变量等
 #include <type.hpp> // 定义类型别名等
 #include <macro.hpp> // 定义宏等
+#include <global.hpp> // 定义全局变量
 #include <mine/MyFonts.h> // 定义字体等
 #include <mine/MyFlags.h> // 定义对齐方式等
 #include <mine/MyColour.h> // 定义颜色等
@@ -34,6 +35,7 @@
 // func下头文件 
 #include <func/simple.hpp> // 定义宏替代品
 #include <func/lambda.hpp> // 定义lambda函数
+
 
 // FFI(Zig)
 
@@ -94,3 +96,6 @@ using namespace ShengGuanSpace;
 using namespace Files;
 using namespace Card;
 using namespace Check;
+
+// lang头文件
+#include <lang/macro.hpp>
