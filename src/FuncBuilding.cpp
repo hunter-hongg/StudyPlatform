@@ -11,5 +11,9 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
 fn MyFrame::bank_store(WXBTNEVT&) -> void {
+    lmut vbox = Simple::Init(panel, this);
 
+    Simple::Title("存储积分",panel, vbox);
+
+    Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 }
