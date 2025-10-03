@@ -13,7 +13,12 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
 fn MyFrame::bank_store(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
-    Simple::Title("存储积分",panel, vbox);
+    Simple::TitleNoSpacer("存储积分",panel, vbox);
+    Simple::ShowButton(
+        "当前积分："+JiFenReader.read_str()+"\n"+
+        "已存积分："+Bank::BankStore.Read(), 
+        panel, vbox
+    );
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 }
