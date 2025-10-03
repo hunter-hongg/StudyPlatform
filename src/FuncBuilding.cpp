@@ -30,5 +30,8 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
     reader -> SetFont(font15);
     vbox -> Add(reader, FLAG_LEFT);
 
+    auto button_submit = new wxButton(panel, wxID_ANY, 
+                                      wxT("存储"));
+
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 }
