@@ -26,7 +26,7 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
     button_fuzhu1 -> SetFont(font15);
     vbox -> Add(button_fuzhu1, FLAG_LEFT);
 
-    auto reader = new wxTextCtrl(panel, wxID_ANY, "请输入...");
+    auto reader = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
     reader -> SetFont(font15);
     vbox -> Add(reader, FLAG_LEFT);
 
