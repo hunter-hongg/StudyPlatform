@@ -11,5 +11,19 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
 fn MyFrame::bank_store(WXBTNEVT&) -> void {
+    lmut vbox = Simple::Init(panel, this);
 
+    Simple::TitleNoSpacer("存储积分",panel, vbox);
+    Simple::ShowButton(
+        "当前积分："+JiFenReader.read_str()+"\n"+
+        "已存积分："+Bank::BankStore.Read(), 
+        panel, vbox
+    );
+
+    auto button_fuzhu1 = new wxButton(panel, wxID_ANY, "请输入存储积分数：");
+    button_fuzhu1 -> SetForegroundColour(MyBlue);
+    button_fuzhu1 -> SetFont(font13);
+    vbox -> Add(button_fuzhu1, FLAG_LEFT);
+
+    Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 }
