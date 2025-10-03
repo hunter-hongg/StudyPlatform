@@ -20,7 +20,7 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
         panel, vbox
     );
 
-    auto button_fuzhu1 = wxButton(panel, wxID_ANY, "请输入存储积分数：");
+    auto button_fuzhu1 = new wxButton(panel, wxID_ANY, "请输入存储积分数：");
     button_fuzhu1 -> SetForegroundColour(MyBlue);
     button_fuzhu1 -> SetFont(font13);
     vbox -> Add(button_fuzhu1, FLAG_LEFT);
