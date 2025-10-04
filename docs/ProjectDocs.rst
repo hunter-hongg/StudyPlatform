@@ -11,8 +11,8 @@ wxWidgets的wxTextCtrl的使用方法
 2. 读取: 
 .. code-block:: cpp 
     :linenos:
-    auto rawa = var.GetValue(); //此处rawa是wxString类型 
-    auto rawb = rawa.toStdString(); //此处rawb是std::string类型
+    auto rawa = var -> GetValue(); //此处rawa是wxString类型 
+    auto rawb = rawa.ToStdString(); //此处rawb是std::string类型
 
 lambda函数定义
 ---------------------------
@@ -29,4 +29,13 @@ lambda函数定义
     auto lambdafunc2 = [=](/*同上*/){
         /*同上*/
     };
+
+stoi函数
+---------------------------
+1. 使用方法: 
+.. code-block:: cpp 
+    :linenos:
+    int res = std::stoi(stringvar);
+
+2. 注意事项: stoi可能会抛出异常，建议在try-catch块使用
 

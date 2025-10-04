@@ -34,7 +34,14 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
                                       wxT("存储"));
     button_submit -> SetFont(font15);
     button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        std::string raw = reader.GetValue().toStdString();
+        std::string raw = reader -> GetValue().ToStdString();
+        int used;
+        try {
+            used = std::stoi(raw);
+        } catch (...) {
+            used = 0;
+        }
+        bool ans = Simple::MessageQues("你将要存储"+TOSTR(used)+"积分");
     });
     vbox -> Add(button_submit, FLAG_LEFT);
 

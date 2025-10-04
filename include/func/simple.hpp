@@ -70,5 +70,11 @@ namespace Simple{
   static fn MessageErr(std::string msg) -> void {
     wxMessageBox(wxString::FromUTF8(msg), "err", wxOK | wxICON_ERROR );
   }
+  static fn MessageQues(std::string msg) -> bool {
+    return (
+        wxMessageBox(wxString::FromUTF8(msg), "question",
+                     wxYES_NO | wxICON_QUESTION) == wxYes
+    );
+  }
 }
     
