@@ -1,12 +1,13 @@
 #pragma once
 
-// std
+// 标准库(std)
 #include <sstream> // 字符串流
 #include <deque> // 双向队列
 #include <vector> // 动态数组
 #include <chrono> // 高精度时间
 #include <ctime> // C时间处理库
 #include <filesystem> // 文件夹创建
+#include <string> // 字符串
 
 // wxWidgets
 #include <wx/wx.h> // wxWidgets头文件
