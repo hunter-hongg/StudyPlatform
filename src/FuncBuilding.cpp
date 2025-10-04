@@ -48,6 +48,12 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
             );
             return;
         }
+        if ( JiFenReader.read_int() < used ) {
+            Simple::MessageErr(
+                "积分不足"
+            );
+            return;
+        }
     });
     vbox -> Add(button_submit, FLAG_LEFT);
 
