@@ -57,6 +57,8 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
         lmut t = BigInt(Bank::BankStore.Read());
         t.Add(BigInt(used));
         Bank::BankStore.Write(t.toString());
+        JiFenReader.minusnum(used);
+        this -> 
     });
     vbox -> Add(button_submit, FLAG_LEFT);
 

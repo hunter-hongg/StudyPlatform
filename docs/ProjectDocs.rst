@@ -39,3 +39,8 @@ stoi函数
 
 2. 注意事项: stoi可能会抛出异常，建议在try-catch块使用
 
+wxWidgets的空wxCommandEvent
+---------------------------
+1. 定义位置: var.hpp
+2. 名称: EmptyEvent
+
