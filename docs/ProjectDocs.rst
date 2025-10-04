@@ -44,7 +44,7 @@ wxWidgets的空wxCommandEvent
 1. 定义位置: var.hpp
 2. 名称: EmptyEvent
 
-自定义的BigIntFile的Add函数
+BigIntFile的Add函数
 ---------------------------
 1. 模板: 
 .. code-block:: cpp 
@@ -64,4 +64,17 @@ PasswordFile的增加与减少
 .. code-block:: cpp 
     :linenos:
     var.minusnum(intv);
+
+Rust的函数getrnd与getrnds的使用
+---------------------------
+1. getrnd的使用
+.. code-block:: cpp 
+    :linenos: 
+    int ans = getrnd(min_value, max_value + 1);//左闭右开
+
+2. getrnds的使用
+.. code-block:: cpp 
+    :linenos:
+    int* ans = getrnds(min_value, max_value + 1, num);//左闭右开
+    delete ans;//记得释放内存
 
