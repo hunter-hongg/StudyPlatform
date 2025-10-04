@@ -73,7 +73,7 @@ namespace Simple{
   static fn MessageQues(std::string msg) -> bool {
     return (
         wxMessageBox(wxString::FromUTF8(msg), "question",
-                     wxYES_NO | wxICON_QUESTION) == wxYes
+                     wxYES_NO | wxICON_QUESTION) == wxYES 
     );
   }
 }
