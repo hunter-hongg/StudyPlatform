@@ -152,4 +152,5 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
     vbox -> Add(button_submit, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
-}
+} 
+
