@@ -44,3 +44,24 @@ wxWidgets的空wxCommandEvent
 1. 定义位置: var.hpp
 2. 名称: EmptyEvent
 
+自定义的BigIntFile的Add函数
+---------------------------
+1. 模板: 
+.. code-block:: cpp 
+   :linenos:
+   auto t = BigInt(Bank::BankStore.Read());
+   t.Add(BigInt(5));
+   Bank::BankStore.Write(t.toString());
+
+PasswordFile的增加与减少
+---------------------------
+1. 增加: 
+.. code-block:: cpp 
+    :linenos:
+    var.addnum(intv);
+
+2. 减少: 
+.. code-block:: cpp 
+    :linenos:
+    var.minusnum(intv);
+
