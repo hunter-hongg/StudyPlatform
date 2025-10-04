@@ -3,14 +3,6 @@
  */
 
 /*
- * extern "C"{
- *     int getrnd(int,int)
- * }
- *
- * 左闭右开原则
- */
-
-/*
  * void MyFrame::ancient_shop_guwan(WXBTNEVT& _)
  *
  * 普通古玩：黄金5两
