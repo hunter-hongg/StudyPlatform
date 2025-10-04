@@ -72,7 +72,7 @@ set(EXECUTABLE_OUTPUT_PATH ../target/)
 
 add_custom_target( AfterAll ALL
     DEPENDS studyplatform 
-    COMMAND bash ~/学习平台/shell/move.sh # 自行更改
+    COMMAND bash ~/学习平台/shell/copy.sh # 自行更改
     WORKING_DIRECTORY ../target
 )
 

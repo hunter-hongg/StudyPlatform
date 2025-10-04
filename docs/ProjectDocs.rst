@@ -39,3 +39,42 @@ stoi函数
 
 2. 注意事项: stoi可能会抛出异常，建议在try-catch块使用
 
+wxWidgets的空wxCommandEvent
+---------------------------
+1. 定义位置: var.hpp
+2. 名称: EmptyEvent
+
+BigIntFile的Add函数
+---------------------------
+1. 模板: 
+.. code-block:: cpp 
+   :linenos:
+   auto t = BigInt(Bank::BankStore.Read());
+   t.Add(BigInt(5));
+   Bank::BankStore.Write(t.toString());
+
+PasswordFile的增加与减少
+---------------------------
+1. 增加: 
+.. code-block:: cpp 
+    :linenos:
+    var.addnum(intv);
+
+2. 减少: 
+.. code-block:: cpp 
+    :linenos:
+    var.minusnum(intv);
+
+Rust的函数getrnd与getrnds的使用
+---------------------------
+1. getrnd的使用
+.. code-block:: cpp 
+    :linenos: 
+    int ans = getrnd(min_value, max_value + 1);//左闭右开
+
+2. getrnds的使用
+.. code-block:: cpp 
+    :linenos:
+    int* ans = getrnds(min_value, max_value + 1, num);//左闭右开
+    delete ans;//记得释放内存
+

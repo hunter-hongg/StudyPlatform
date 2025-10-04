@@ -48,6 +48,17 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
             );
             return;
         }
+        if ( JiFenReader.read_int() < used ) {
+            Simple::MessageErr(
+                "积分不足"
+            );
+            return;
+        }
+        lmut t = BigInt(Bank::BankStore.Read());
+        t.Add(BigInt(used));
+        Bank::BankStore.Write(t.toString());
+        JiFenReader.minusnum(used);
+        this -> bank_store(EmptyEvent);
     });
     vbox -> Add(button_submit, FLAG_LEFT);
 
