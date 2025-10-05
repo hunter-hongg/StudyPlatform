@@ -35,3 +35,7 @@ sudo apt install tmux
 ------------
 1. tmux ls列出
 
+注意事项
+------------
+1. tmux的命令可以只写前缀，但必须只匹配一个命令，例: tmux kill-s是不可以的，有两个匹配命令，而tmux kill-ses是可以的，仅匹配tmux kill-session
+
