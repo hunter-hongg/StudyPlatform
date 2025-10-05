@@ -12,6 +12,7 @@ sudo apt install tmux
 删除会话
 ------------
 1. tmux kill-session删除会话
+2. tmux kill-session -t <session_name>删除指定会话
 
 会话内新建窗口
 ------------
