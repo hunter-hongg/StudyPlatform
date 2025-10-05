@@ -3,6 +3,7 @@
 
 1. onelight
 2. tokyonight-day
+3. leaf
 
 推荐Neovim暗色主题
 ==================
