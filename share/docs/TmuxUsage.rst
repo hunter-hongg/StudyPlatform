@@ -9,6 +9,10 @@ sudo apt install tmux
 ------------
 1. tmux new -s <session_name>
 
+删除会话
+------------
+1. tmux kill-session删除会话
+
 会话内新建窗口
 ------------
 1. <C-b><C>新建
@@ -16,6 +20,10 @@ sudo apt install tmux
 脱离会话
 ------------
 1. <C-b><D>脱离
+
+连接会话
+------------
+1. tmux a连接
 
 切换窗口
 ------------
