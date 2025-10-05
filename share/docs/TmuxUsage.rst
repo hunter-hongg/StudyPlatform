@@ -30,3 +30,7 @@ sudo apt install tmux
 1. <C-b><W>切换
 2. <C-b><NUM>在当前会话内切换，NUM可以是0-9
 
+列出会话
+------------
+1. tmux ls列出
+
