@@ -36,11 +36,11 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
     button_submit -> SetFont(font15);
     button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         std::string raw = reader -> GetValue().ToStdString();
-        int used;
+        cgstdOption::Option<int> used;
         try {
             used = cgstdOption::Option(std::stoi(raw));
         } catch (...) {
-            used = cgstdOption::Option();
+            used = cgstdOption::Option<int>();
         }
         bool ans = Simple::MessageQues("你将要领取"+TOSTR(
             used.unwrap_or(0)
@@ -52,17 +52,27 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
             );
             return;
         }
-        if ( BigInt(Bank::BankStore.Read())
-            .Comp(BigInt(used.unwrap())) < 0 ) {
+        cgstdOption::Option<int> bstr;
+        try {
+            bstr = cgstdOption::Option(std::stoi(Bank::BankStore.Read()));
+        } catch (...) {
+            bstr = cgstdOption::Option<int>();
+        }
+        if ( bstr.is_none() ) {
+            Simple::MessageErr (
+                "读入失败"
+            );
+            return;
+        }
+        if ( bstr.unwrap() < used.unwrap() ) {
             Simple::MessageErr(
                 "积分不足"
             );
             return;
         }
-        lmut t = BigInt(Bank::BankStore.Read());
-        t.Sub(BigInt(used.unwrap()));
+        lmut t = BigInt(bstr.unwrap() - used.unwrap());
         Bank::BankStore.Write(t.toString());
-        JiFenReader.addnum(used);
+        JiFenReader.addnum(used.unwrap());
         this -> bank_get(EmptyEvent);
     });
     vbox -> Add(button_submit, FLAG_LEFT);
