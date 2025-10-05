@@ -159,6 +159,7 @@ private:
 
     void bank_square(WXBTNEVT&);
     void bank_store(WXBTNEVT&);
+    void bank_get(WXBTNEVT&);
 
 private:
 

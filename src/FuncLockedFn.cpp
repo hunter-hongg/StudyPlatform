@@ -131,6 +131,7 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
             used = 0;
         }
         bool ans = Simple::MessageQues("你将要存储"+TOSTR(used)+"积分");
+        if ( ! ans ) { return ; }
         if ( used <= 0 ) {
             Simple:: MessageErr(
                 "无法存储0积分及以下"
