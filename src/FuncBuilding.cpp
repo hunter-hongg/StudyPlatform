@@ -14,7 +14,7 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
 fn MyFrame::tongy_all(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
-    Simple::TitleNoSpacer("通用货币");
+    Simple::TitleNoSpacer("通用货币", panel, vbox);
     Simple::ShowButton("通用货币: "+TongYongReal::Reader.read_str(), 
                        panel, vbox);
 
