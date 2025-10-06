@@ -163,6 +163,7 @@ private:
 
     void tongy_all(WXBTNEVT&);
     void tongy(WXBTNEVT&);
+    void tongy_show(WXBTNEVT&);
 
 private:
 

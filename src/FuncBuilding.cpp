@@ -18,6 +18,8 @@ fn MyFrame::tongy_all(WXBTNEVT&) -> void {
     Simple::ShowButton("通用货币: "+TongYongReal::Reader.read_str(), 
                        panel, vbox);
 
+    Simple::Button(&MyFrame::tongy, "积分兑换", panel, vbox, this);
+
     Simple::BackButton(&MyFrame::mine, panel, vbox, this);
 }
 
