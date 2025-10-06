@@ -15,7 +15,10 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
     Simple::Title("通用货币", panel, vbox);
-    Simple::ShowButton("通用货币: ", panel, vbox);
+    Simple::ShowButton(
+        "通用货币: "+TongYongReal::Reader.read_str()+"\n"+
+        "当前积分: "+JiFenReader.read_str()
+        , panel, vbox);
 
     auto button_fuzhu1 = new wxButton(panel, wxID_ANY, 
                                       wxT("请输入兑换通用货币数："));
@@ -28,7 +31,7 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
     vbox -> Add(reader, FLAG_LEFT);
 
     auto button_submit = new wxButton(panel, wxID_ANY, 
-                                      wxT("领取"));
+                                      wxT("兑换"));
     button_submit -> SetFont(font15);
     button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
         std::string raw = reader -> GetValue().ToStdString();
@@ -40,7 +43,7 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
         }
         bool ans = Simple::MessageQues("你将要兑换"+TOSTR(
             used.unwrap_or(0)
-        )+"通用积分");
+        )+"通用货币");
         if ( ! ans ) { return ; }
         if ( used.is_none() ) {
             Simple:: MessageErr(
@@ -48,24 +51,16 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
             );
             return;
         }
-        int bstr;
-        
-        if ( bstr.is_none() ) {
-            Simple::MessageErr (
-                "读入失败"
-            );
-            return;
-        }
-        if ( bstr.unwrap() < used.unwrap() ) {
+        int bstr = JiFenReader.read_int();
+        if ( bstr/1000 < used.unwrap() ) {
             Simple::MessageErr(
                 "积分不足"
             );
             return;
         }
-        lmut t = BigInt(bstr.unwrap() - used.unwrap());
-        Bank::BankStore.Write(t.toString());
-        JiFenReader.addnum(used.unwrap());
-        this -> bank_get(EmptyEvent);
+        JiFenReader.minusnum((used.unwrap())*1000);
+        TongYongReal::Reader.addnum(used.unwrap());
+        this -> tongy(EmptyEvent);
     });
     vbox -> Add(button_submit, FLAG_LEFT);
 
