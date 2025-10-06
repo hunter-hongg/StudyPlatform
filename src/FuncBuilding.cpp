@@ -19,6 +19,7 @@ fn MyFrame::tongy_all(WXBTNEVT&) -> void {
                        panel, vbox);
 
     Simple::Button(&MyFrame::tongy, "积分兑换", panel, vbox, this);
+    Simple::Button(&MyFrame::tongy_show, "兑换规则", panel, vbox, this);
 
     Simple::BackButton(&MyFrame::mine, panel, vbox, this);
 }
