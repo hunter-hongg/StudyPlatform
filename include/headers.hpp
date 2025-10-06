@@ -37,6 +37,9 @@
 #include <func/simple.hpp> // 定义宏替代品
 #include <func/lambda.hpp> // 定义lambda函数
 
+// cding头文件
+#include <cding/cgstdErr.hpp>
+#include <cding/cgstdOption.hpp>
 
 // FFI(Zig)
 
@@ -79,7 +82,7 @@
 
 // BookShelfShouCang
 #include <ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp> 
-                                            // 符号链接指向项目根目录下的.headers_go下的文件
+                                // 符号链接指向项目根目录下的.headers_go下的文件
 
 // FFI(D)
 
@@ -97,6 +100,8 @@ using namespace ShengGuanSpace;
 using namespace Files;
 using namespace Card;
 using namespace Check;
+namespace cgstdErr = cding::Err;
+namespace cgstdOption = cding::Option;
 
 // lang头文件
 #include <lang/macro.hpp>
