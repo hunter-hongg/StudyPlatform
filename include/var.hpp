@@ -276,7 +276,7 @@ namespace Bank {
 static BigIntFile BankStore(FilePathBank+"fhubasr");
 }
 namespace TongYongReal {
-static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860")
+static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860");
 }
 
 // 简单符号
