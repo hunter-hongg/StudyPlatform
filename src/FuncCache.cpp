@@ -44,4 +44,10 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
 
     Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
 }
+fn MyFrame::tongy_show(WXBTNEVT&) -> void {
+    Simple::Message(
+        "通用货币兑换规则: \n"
+        "1000积分 1通用货币\n"
+    );
+}
 

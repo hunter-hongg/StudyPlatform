@@ -23,10 +23,3 @@ fn MyFrame::tongy_all(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::mine, panel, vbox, this);
 }
-fn MyFrame::tongy_show(WXBTNEVT&) -> void {
-    Simple::Message(
-        "通用货币兑换规则: \n"
-        "1000积分 1通用货币\n"
-    );
-}
-
