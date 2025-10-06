@@ -15,6 +15,7 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
     Simple::Title("通用货币", panel, vbox);
+    Simple::ShowButton("通用货币: ", panel, vbox);
 
     Simple::BackButton(&MyFrame::mine, panel, vbox, this);
 }
