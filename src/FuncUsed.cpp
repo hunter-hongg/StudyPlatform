@@ -63,6 +63,9 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
     if(!exists(FilePathBank,ec)){
         (void)create_directory(FilePathBank, ec);
     }
+    if(!exists(FilePathTongYongReal,ec)){
+        (void)create_directory(FilePathTongYongReal, ec);
+    }
 
     nowtime = new wxStaticText(panel,wxID_ANY,wxT("测试"));
     this -> showtime();
