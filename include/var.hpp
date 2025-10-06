@@ -40,6 +40,7 @@ const std::string FilePathXianLu = FilePath + "xlccf.gfd.ew0/";
 const std::string FilePathLiHe = FilePathBase + "礼盒储存/";
 const std::string FilePathLiHeBool = FilePath + "lhccc.dir.sdo/";
 const std::string FilePathBank = FilePath + "cc.bnkaac.c.io/";
+const std::string FilePathTongYongReal = FilePathTongYong + "fptyr/";
 
 namespace Files
 {
@@ -273,6 +274,9 @@ namespace LiHe
 }
 namespace Bank {
 static BigIntFile BankStore(FilePathBank+"fhubasr");
+}
+namespace TongYongReal {
+static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860");
 }
 
 // 简单符号
