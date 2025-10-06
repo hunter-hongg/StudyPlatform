@@ -161,6 +161,8 @@ private:
     void bank_store(WXBTNEVT&);
     void bank_get(WXBTNEVT&);
 
+    void tongy(WXBTNEVT&);
+
 private:
 
     wxPanel* panel;
