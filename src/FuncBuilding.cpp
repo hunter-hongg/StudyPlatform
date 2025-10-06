@@ -11,4 +11,13 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
+fn MyFrame::tongy_all(WXBTNEVT&) -> void {
+    lmut vbox = Simple::Init(panel, this);
+
+    Simple::TitleNoSpacer("通用货币");
+    Simple::ShowButton("通用货币: "+TongYongReal::Reader.read_str(), 
+                       panel, vbox);
+
+    Simple::BackButton(&MyFrame::mine, panel, vbox, this);
+}
 

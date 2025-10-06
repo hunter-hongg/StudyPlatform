@@ -161,6 +161,7 @@ private:
     void bank_store(WXBTNEVT&);
     void bank_get(WXBTNEVT&);
 
+    void tongy_all(WXBTNEVT&);
     void tongy(WXBTNEVT&);
 
 private:
