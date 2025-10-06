@@ -57,7 +57,7 @@ void MyFrame::mine(WXBTNEVT& evt)
     MYBUTTON(button1,&MyFrame::all_thing_all,"所有物品");
     MYBUTTON(button2,&MyFrame::time_clock,"学习计时");
     MYBUTTON(button3,&MyFrame::lihe,"我的礼盒");
-    MYBUTTON(button4,&MyFrame::tongy, "通用货币");
+    MYBUTTON(button4,&MyFrame::tongy_all, "通用货币");
     
     MYADDSPACER();
 

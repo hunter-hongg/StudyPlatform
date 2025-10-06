@@ -225,7 +225,7 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
 fn MyFrame::tongy(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
-    Simple::Title("通用货币", panel, vbox);
+    Simple::TitleNoSpacer("通用货币", panel, vbox);
     Simple::ShowButton(
         "通用货币: "+TongYongReal::Reader.read_str()+"\n"+
         "当前积分: "+JiFenReader.read_str()
@@ -275,6 +275,6 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
     });
     vbox -> Add(button_submit, FLAG_LEFT);
 
-    Simple::BackButton(&MyFrame::mine, panel, vbox, this);
+    Simple::BackButton(&MyFrame::tongy_all, panel, vbox, this);
 }
 
