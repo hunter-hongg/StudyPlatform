@@ -19,6 +19,8 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
     );
     Global::AncientWuGuanChuZheng::bingl_ot = otbingl;
     Global::AncientWuGuanChuZheng::bingl_sf = mybingl;
+    Global::AncientWuGuanChuZhengReal::bingl_ot_now = -1;
+    Global::AncientWuGuanChuZhengReal::bingl_sf_now = -1;
 
     Simple::Button(
         &MyFrame::empfunc,
@@ -36,17 +38,28 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
     using Global::AncientWuGuanChuZheng::bingl_sf;
     using Global::AncientWuGuanChuZhengReal::bingl_ot_now;
     using Global::AncientWuGuanChuZhengReal::bingl_sf_now;
+    if ( (bingl_ot_now == -1) && (bingl_sf_now == -1) ) {
+        bingl_ot_now = bingl_ot;
+        bingl_sf_now = bingl_sf;
+    }
 
     if ( ( bingl_sf < 0 ) || ( bingl_ot < 0 ) ) {
         Simple::MessageErr("运行错误");
         throw cgstdErr::RuntimeErr();
     }
-    bingl_ot_now = bingl_ot;
-    bingl_sf_now = bingl_sf;
         
     auto vbox = Simple::Init(panel, this);
 
     Simple::Title("率军出征", panel, vbox);
+
+    Simple::Button(
+        &MyFrame::empfunc,
+        "对方当前兵力："+TOSTR(bingl_ot_now), 
+        panel, vbox, this);
+    Simple::Button(
+        &MyFrame::empfunc,
+        "我方当前兵力："+TOSTR(bingl_sf_now), 
+        panel, vbox, this);
 
     Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
 }
