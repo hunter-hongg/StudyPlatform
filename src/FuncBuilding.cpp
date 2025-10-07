@@ -36,6 +36,8 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
     using Global::AncientWuGuanChuZheng::bingl_sf;
 
     if ( ( bingl_sf < 0 ) || ( bingl_ot < 0 ) ) {
+        Simple::MessageErr("运行错误");
+        throw cgstdErr::RuntimeErr();
     }
         
     auto vbox = Simple::Init(panel, this);
