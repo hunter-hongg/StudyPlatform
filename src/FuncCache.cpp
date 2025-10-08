@@ -1,53 +1,31 @@
 #include <headers.hpp>
 
-void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
-{
-    auto vbox = Simple::Init(panel, this);
-
-    Simple::TitleNoSpacer("领兵出征", panel, vbox);
-    Simple::ShowButton(
-        "我的兵力："+TOSTR(lambda::anc_wu_bingli_get()), panel, vbox);
-
-    auto mybingl = lambda::anc_wu_bingli_get();
-    int add_or_sub_max = mybingl / 50;
-    if ( add_or_sub_max <= 1 ) {
-        add_or_sub_max = 2;
-    }
-    auto otbingl = mybingl + getrnd(
-       add_or_sub_max*(-1),
-       add_or_sub_max 
-    );
-    Global::AncientWuGuanChuZheng::bingl_ot = otbingl;
-    Global::AncientWuGuanChuZheng::bingl_sf = mybingl;
-
-    Simple::Button(
-        &MyFrame::empfunc,
-        "对方兵力："+TOSTR(otbingl), 
-        panel, vbox, this);
-    Simple::Button(
-        &MyFrame::ancient_wuguan_chuzheng_1, 
-        "率军出征", 
-        panel, vbox, this);
-    
-    Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
-}   
-void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
-    using Global::AncientWuGuanChuZheng::bingl_ot;
-    using Global::AncientWuGuanChuZheng::bingl_sf;
-
-    if ( ( bingl_sf < 0 ) || ( bingl_ot < 0 ) ) {
-    }
-        
-    auto vbox = Simple::Init(panel, this);
-
-    Simple::Title("率军出征", panel, vbox);
-
-    Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
-}
 fn MyFrame::tongy_show(WXBTNEVT&) -> void {
     Simple::Message(
         "通用货币兑换规则: \n"
         "1000积分 1通用货币\n"
     );
 }
+fn MyFrame::bank_square(WXBTNEVT&) -> void {
+    lmut vbox = Simple::Init(panel, this);
 
+    Simple::TitleNoSpacer("积分银行", panel, vbox);
+    Simple::ShowButton("已存积分: "+Bank::BankStore.Read(), panel, vbox);
+
+    Simple::Button(&MyFrame::bank_store, "存储积分", panel, vbox, this);
+    Simple::Button(&MyFrame::bank_get, "领取积分", panel, vbox, this);
+
+    Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
+}
+fn MyFrame::tongy_all(WXBTNEVT&) -> void {
+    lmut vbox = Simple::Init(panel, this);
+
+    Simple::TitleNoSpacer("通用货币", panel, vbox);
+    Simple::ShowButton("通用货币: "+TongYongReal::Reader.read_str(), 
+                       panel, vbox);
+
+    Simple::Button(&MyFrame::tongy, "积分兑换", panel, vbox, this);
+    Simple::Button(&MyFrame::tongy_show, "兑换规则", panel, vbox, this);
+
+    Simple::BackButton(&MyFrame::mine, panel, vbox, this);
+}
