@@ -61,5 +61,25 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
         "我方当前兵力："+TOSTR(bingl_sf_now), 
         panel, vbox, this);
 
+    auto grid = new wxGridSizer(2,2,4,4); 
+
+    auto btn1 = new wxButton(panel, wxID_ANY, wxT("进攻敌军"));
+    btn1 -> SetFont(font17);
+    grid -> Add(btn1, FLAG_CENTER);
+
+    auto btn2 = new wxButton(panel, wxID_ANY, wxT("休整兵马"));
+    btn2 -> SetFont(font17);
+    grid -> Add(btn2, FLAG_CENTER);
+
+    auto btn3 = new wxButton(panel, wxID_ANY, wxT("防守敌军"));
+    btn3 -> SetFont(font17);
+    grid -> Add(btn3, FLAG_CENTER);
+
+    auto btn4 = new wxButton(panel, wxID_ANY, wxT("趁其不备"));
+    btn4 -> SetFont(font17);
+    grid -> Add(btn4, FLAG_CENTER);
+
+    vbox -> Add(grid, FLAG_CENTER);
+
     Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
 }
