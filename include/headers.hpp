@@ -32,6 +32,7 @@
 #include <clibs/jifen/jifen.hpp> // 早期积分处理函数
 #include <clibs/xianbi/sword.hpp> // 神话传说-仙器 佩剑选择模块
 #include <clibs/xianbi/fali.hpp> // 神话传说-法力 判断模块
+#include <clibs/ancient/ChuZheng.hpp> // 古代武官-领兵出征 判断模块
 
 // func下头文件 
 #include <func/simple.hpp> // 定义宏替代品

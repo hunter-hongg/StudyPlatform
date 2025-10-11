@@ -1,4 +1,7 @@
 #pragma once 
-namespace gfunc {
+#include <func/simple.hpp>
+#include <clibs/ancient/ChuZheng.hpp>
 
+namespace gfunc {
+void WuGuanChuZheng
 }
