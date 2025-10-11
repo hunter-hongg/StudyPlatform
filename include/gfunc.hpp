@@ -3,5 +3,8 @@
 #include <clibs/ancient/ChuZheng.hpp>
 
 namespace gfunc {
-void WuGuanChuZheng
+void WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho){
+    using namespace WuGuanChuZheng;
+
+}
 }
