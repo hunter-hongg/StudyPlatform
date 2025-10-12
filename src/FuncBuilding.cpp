@@ -87,14 +87,68 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
 
     auto btn2 = new wxButton(panel, wxID_ANY, wxT("休整兵马"));
     btn2 -> SetFont(font17);
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        using namespace WuGuanChuZheng;
+        gfunc::WuGuanChuZhengFunc(Choices::XiuZheng, 
+                                  bingl_sf_now, bingl_ot_now);
+        if ( bingl_sf_now < 0 ) {
+            Simple::Message("出征结束，你输了");
+            bingl_sf_now = -1;
+            bingl_ot_now = -1;
+            this -> ancient_wuguan_chuzheng(EmptyEvent);
+        } else if ( bingl_ot_now < 0 ) {
+            Simple::Message("出征结束，你赢了");
+            bingl_sf_now = -1;
+            bingl_ot_now = -1;
+            this -> ancient_wuguan_chuzheng(EmptyEvent);
+        } else {
+            this -> ancient_wuguan_chuzheng_1(EmptyEvent);
+        }
+    });
     grid -> Add(btn2, FLAG_CENTER);
 
     auto btn3 = new wxButton(panel, wxID_ANY, wxT("防守敌军"));
     btn3 -> SetFont(font17);
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        using namespace WuGuanChuZheng;
+        gfunc::WuGuanChuZhengFunc(Choices::FangShou, 
+                                  bingl_sf_now, bingl_ot_now);
+        if ( bingl_sf_now < 0 ) {
+            Simple::Message("出征结束，你输了");
+            bingl_sf_now = -1;
+            bingl_ot_now = -1;
+            this -> ancient_wuguan_chuzheng(EmptyEvent);
+        } else if ( bingl_ot_now < 0 ) {
+            Simple::Message("出征结束，你赢了");
+            bingl_sf_now = -1;
+            bingl_ot_now = -1;
+            this -> ancient_wuguan_chuzheng(EmptyEvent);
+        } else {
+            this -> ancient_wuguan_chuzheng_1(EmptyEvent);
+        }
+    });
     grid -> Add(btn3, FLAG_CENTER);
 
     auto btn4 = new wxButton(panel, wxID_ANY, wxT("趁其不备"));
     btn4 -> SetFont(font17);
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        using namespace WuGuanChuZheng;
+        gfunc::WuGuanChuZhengFunc(Choices::TouXi, 
+                                  bingl_sf_now, bingl_ot_now);
+        if ( bingl_sf_now < 0 ) {
+            Simple::Message("出征结束，你输了");
+            bingl_sf_now = -1;
+            bingl_ot_now = -1;
+            this -> ancient_wuguan_chuzheng(EmptyEvent);
+        } else if ( bingl_ot_now < 0 ) {
+            Simple::Message("出征结束，你赢了");
+            bingl_sf_now = -1;
+            bingl_ot_now = -1;
+            this -> ancient_wuguan_chuzheng(EmptyEvent);
+        } else {
+            this -> ancient_wuguan_chuzheng_1(EmptyEvent);
+        }
+    });
     grid -> Add(btn4, FLAG_CENTER);
 
     vbox -> Add(grid, FLAG_CENTER);
