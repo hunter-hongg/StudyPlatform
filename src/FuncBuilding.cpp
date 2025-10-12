@@ -65,6 +65,12 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
 
     auto btn1 = new wxButton(panel, wxID_ANY, wxT("进攻敌军"));
     btn1 -> SetFont(font17);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        using namespace WuGuanChuZheng;
+        gfunc::WuGuanChuZhengFunc(Choices::JinGong, 
+                                  bingl_sf_now, bingl_ot_now);
+        this -> ancient_wuguan_chuzheng_1(EmptyEvent);
+    });
     grid -> Add(btn1, FLAG_CENTER);
 
     auto btn2 = new wxButton(panel, wxID_ANY, wxT("休整兵马"));

@@ -1,6 +1,7 @@
 #pragma once 
 #include <vector>
 #include <string>
+#include <global.hpp>
 #include <func/simple.hpp>
 #include <clibs/ancient/ChuZheng.hpp>
 
@@ -14,7 +15,8 @@ std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t){
         default: return "趁其不备"; break; 
     }
 }
-std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho, int bingls, int binglo){
+std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho, 
+                                    int bingls, int binglo){
     using namespace WuGuanChuZheng;
     Choices ComputerChoice = GetChoice(binglo, bingls);
     Choices UserChoice = cho;
