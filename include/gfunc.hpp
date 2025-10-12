@@ -6,7 +6,7 @@
 #include <clibs/ancient/ChuZheng.hpp>
 
 namespace gfunc {
-std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t){
+static std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t){
     using namespace WuGuanChuZheng;
     switch(t) {
         case Choices::JinGong: return "进攻敌方"; break; 
@@ -15,7 +15,7 @@ std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t){
         default: return "趁其不备"; break; 
     }
 }
-std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho, 
+static std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho, 
                                     int bingls, int binglo){
     using namespace WuGuanChuZheng;
     Choices ComputerChoice = GetChoice(binglo, bingls);
