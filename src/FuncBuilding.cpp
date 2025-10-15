@@ -13,10 +13,12 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
     if ( add_or_sub_max <= 1 ) {
         add_or_sub_max = 2;
     }
+    int jd = getrnd(-10, 10);
+    if ( (jd > -10) && (jd < 10) ) { jd = 0 ; }
     auto otbingl = mybingl + getrnd(
        add_or_sub_max*(-1),
        add_or_sub_max 
-    );
+    )+jd*getrnd(9, 13)-1;
     Global::AncientWuGuanChuZheng::bingl_ot = otbingl;
     Global::AncientWuGuanChuZheng::bingl_sf = mybingl;
     Global::AncientWuGuanChuZhengReal::bingl_ot_now = -1;
@@ -153,5 +155,5 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
 
     vbox -> Add(grid, FLAG_CENTER);
 
-    Simple::BackButton(&MyFrame::ancient_wuguan_chuzheng, panel, vbox, this);
+    Simple::BackButton(&MyFrame::CallBack1, panel, vbox, this);
 }

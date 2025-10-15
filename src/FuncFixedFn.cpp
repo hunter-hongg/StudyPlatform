@@ -246,3 +246,6 @@ void MyFrame::ancient_wubingli_plus(WXBTNEVT& evt)
 
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }
+void MyFrame::CallBack1(WXBTNEVT&){
+    Simple::Message("临阵脱逃，绝不可行！\n死战到底，宁死不屈！");
+}
