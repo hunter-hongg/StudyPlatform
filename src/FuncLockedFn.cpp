@@ -277,4 +277,3 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::tongy_all, panel, vbox, this);
 }
-
