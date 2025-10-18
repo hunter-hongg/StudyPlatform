@@ -286,6 +286,7 @@ void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
         "我的兵力："+TOSTR(lambda::anc_wu_bingli_get()), panel, vbox);
 
     auto mybingl = lambda::anc_wu_bingli_get();
+    Simple::Message(TOSTR(mybingl))
     int add_or_sub_max = mybingl / 20;
     if ( add_or_sub_max <= 1 ) {
         add_or_sub_max = 2;

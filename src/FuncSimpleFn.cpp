@@ -48,14 +48,18 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
     using Global::AncientWuGuanChuZheng::bingl_sf;
     using Global::AncientWuGuanChuZhengReal::bingl_ot_now;
     using Global::AncientWuGuanChuZhengReal::bingl_sf_now;
-    if ( (bingl_ot_now == -1) && (bingl_sf_now == -1) ) {
-        bingl_ot_now = bingl_ot;
-        bingl_sf_now = bingl_sf;
-    }
 
     if ( ( bingl_sf < 0 ) || ( bingl_ot < 0 ) ) {
         Simple::MessageErr("运行错误");
-        throw cgstdErr::RuntimeErr();
+        Simple::MessageErr(TOSTR(bingl_sf));
+       // throw cgstdErr::RuntimeErr();
+        bingl_ot_now = bingl_ot; 
+        bingl_sf_now = bingl_sf;
+    }
+
+    if ( (bingl_ot_now <= -1) && (bingl_sf_now <= -1) ) {
+        bingl_ot_now = bingl_ot;
+        bingl_sf_now = bingl_sf;
     }
         
     auto vbox = Simple::Init(panel, this);
