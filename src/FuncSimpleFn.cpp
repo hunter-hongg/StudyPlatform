@@ -43,4 +43,4 @@ void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)
     
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }
- 
+
