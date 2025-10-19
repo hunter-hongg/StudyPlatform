@@ -178,6 +178,8 @@ private:
 
     void onclickys1(poly,wxTextCtrl*,wxTextCtrl*,WXEVT,wxButton*) oldblock;
 
+    void CallBack1(WXBTNEVT&);
+
     poly ys1User[6] oldblock;
     int count oldblock;
 
