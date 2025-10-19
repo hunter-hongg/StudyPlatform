@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include <ChuZheng.hpp>
+#include <clibs/ancient/ChuZheng.hpp>
 namespace Global {
 namespace AncientWuGuanChuZheng {
 static int bingl_ot = -1;
