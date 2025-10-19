@@ -277,40 +277,4 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::tongy_all, panel, vbox, this);
 }
-void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)
-{
-    auto vbox = Simple::Init(panel, this);
-
-    Simple::TitleNoSpacer("领兵出征", panel, vbox);
-    Simple::ShowButton(
-        "我的兵力："+TOSTR(lambda::anc_wu_bingli_get()), panel, vbox);
-
-    auto mybingl = lambda::anc_wu_bingli_get();
-    Simple::Message(TOSTR(mybingl))
-    int add_or_sub_max = mybingl / 20;
-    if ( add_or_sub_max <= 1 ) {
-        add_or_sub_max = 2;
-    }
-    int jd = getrnd(-10, 10);
-    if ( (jd > -10) && (jd < 10) ) { jd = 0 ; }
-    auto otbingl = mybingl + getrnd(
-       add_or_sub_max*(-1),
-       add_or_sub_max 
-    )+jd*getrnd(9, 13)-1;
-    Global::AncientWuGuanChuZheng::bingl_ot = otbingl;
-    Global::AncientWuGuanChuZheng::bingl_sf = mybingl;
-    Global::AncientWuGuanChuZhengReal::bingl_ot_now = -1;
-    Global::AncientWuGuanChuZhengReal::bingl_sf_now = -1;
-
-    Simple::Button(
-        &MyFrame::empfunc,
-        "对方兵力："+TOSTR(otbingl), 
-        panel, vbox, this);
-    Simple::Button(
-        &MyFrame::ancient_wuguan_chuzheng_1, 
-        "率军出征", 
-        panel, vbox, this);
-    
-    Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
-}   
 
