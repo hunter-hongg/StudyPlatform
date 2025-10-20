@@ -1,45 +1,43 @@
+# 部分内容请自行更改
 cmake_minimum_required(VERSION 3.10)
 project(Proj LANGUAGES CXX)
 
-# 强制使用UTF-8编码
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
-
-# 设置C++标准为C++23
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_LIBRARY_PATH $HOME/学习平台/lib) # 自行更改
 
-# 查找所有源文件
 file(GLOB_RECURSE SRC_FILES "src/*.cpp")
 file(GLOB_RECURSE STATICLIBS "lib/*/*.a")
 file(GLOB_RECURSE SOLIBS "lib/*/*.so")
-
-# 获取wxWidgets编译标志
 find_package(wxWidgets REQUIRED)
 include(${wxWidgets_USE_FILE})
 
-# 添加可执行文件
+set(EXECUTABLE_OUTPUT_PATH ../target/)
 add_executable(studyplatform ${SRC_FILES})
 
-# 设置包含目录
+add_custom_target( AfterAll ALL
+    DEPENDS studyplatform 
+    COMMAND bash ~/学习平台/shell/copy.sh # 自行更改
+    WORKING_DIRECTORY ../target
+)
+
+install( TARGETS studyplatform DESTINATION bin )
+
 target_include_directories(studyplatform PRIVATE include)
 
-# 设置链接库
 target_link_directories(studyplatform PRIVATE 
     lib/ancient
     lib/ffi
     lib/other
     lib/utils
 )
+
 target_link_libraries(studyplatform
     ${wxWidgets_LIBRARIES}
     ${STATICLIBS}
     ${SOLIBS}
 )
 
-# 以下部分自行更改
-
-# 链接EasyCoding
 target_include_directories(studyplatform PRIVATE
     /localapp/library/EasyCoding/stable/current/include/
 )
@@ -50,7 +48,6 @@ target_link_libraries(studyplatform
     libeasycoding.so
 )
 
-# 链接BigInt
 target_include_directories(studyplatform PRIVATE
     /localapp/library/BigInt/stable/current/include/
 )
@@ -61,19 +58,7 @@ target_link_libraries(studyplatform
     libBigInt.so 
 )
 
-# 链接cding 
 target_include_directories(studyplatform PRIVATE /home/coding/cding/include)
 
 target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
-set(CMAKECXXFLAGS "${CMAKECXXFLAGS} -march=x86-64 -mtune=generic -mno-avx512f -DRELEASE")
 
-# 设置输出目录
-set(EXECUTABLE_OUTPUT_PATH ../target/)
-
-add_custom_target( AfterAll ALL
-    DEPENDS studyplatform 
-    COMMAND bash ~/学习平台/shell/copy.sh # 自行更改
-    WORKING_DIRECTORY ../target
-)
-
-install( TARGETS studyplatform DESTINATION bin )
