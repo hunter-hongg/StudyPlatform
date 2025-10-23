@@ -14,7 +14,7 @@ void MyFrame::acz_win(){
         "神级兵+"+TOSTR(p3)+"\n"
     );
     AncientVar::HuangJinReader.addnum(20);
-    AncientVar::WuGuan::BingLi::ZhongJi.addnum(p1);
+    AncientVar::WuGuan::LiLiang::ZhongJi.addnum(p1);
 }
 void MyFrame::acz_lose(){
     int p1 = getrnd(20, 100); // 中级兵
