@@ -23,8 +23,8 @@ void MyFrame::acz_lose(){
     Simple::Message(
         "此战结果：\n"
         "黄金-70两\n"
-        "中级兵"+TOSTR(p1)+"\n"
-        "高级兵"+TOSTR(p2)+"\n"
-        "神级兵"+TOSTR(p3)+"\n"
+        "中级兵-"+TOSTR(p1)+"\n"
+        "高级兵-"+TOSTR(p2)+"\n"
+        "神级兵-"+TOSTR(p3)+"\n"
     );
 }
