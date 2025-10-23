@@ -180,6 +180,9 @@ private:
 
     void CallBack1(WXBTNEVT&);
 
+    void acz_win();
+    void acz_lose();
+
     poly ys1User[6] oldblock;
     int count oldblock;
 

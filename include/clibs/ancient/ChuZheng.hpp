@@ -7,7 +7,7 @@ enum class Choices {
     FangShou, 
     TouXi, 
 };
-Choices GetChoice(int Other, int Self);
+Choices GetChoice(int Other, int Self, std::vector<Choices> usrchoices);
 std::vector<int> GetResult(Choices a, Choices b);
 }
 
