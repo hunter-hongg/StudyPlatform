@@ -49,13 +49,7 @@ target_link_libraries(studyplatform
 )
 
 target_include_directories(studyplatform PRIVATE
-    /localapp/library/BigInt/stable/current/include/
-)
-target_link_directories(studyplatform PRIVATE
-    /localapp/library/BigInt/stable/current/lib/
-)
-target_link_libraries(studyplatform 
-    libBigInt.so 
+    /usr/local/include
 )
 
 target_include_directories(studyplatform PRIVATE /home/coding/cding/include)
