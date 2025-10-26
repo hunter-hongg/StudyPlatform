@@ -13,4 +13,7 @@ void MyFrame::acz_lose(){
         "高级兵-"+TOSTR(p2)+"\n"
         "神级兵-"+TOSTR(p3)+"\n"
     );
+    if(AncientVar::HuangJinReader.high(70)){
+
+    }
 }
