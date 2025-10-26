@@ -39,16 +39,6 @@ target_link_libraries(studyplatform
 )
 
 target_include_directories(studyplatform PRIVATE
-    /localapp/library/EasyCoding/stable/current/include/
-)
-target_link_directories(studyplatform PRIVATE
-    /localapp/library/EasyCoding/stable/current/lib/
-)
-target_link_libraries(studyplatform
-    libeasycoding.so
-)
-
-target_include_directories(studyplatform PRIVATE
     /usr/local/include
 )
 
