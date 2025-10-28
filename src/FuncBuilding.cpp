@@ -1,6 +1,6 @@
 #include <headers.hpp>
 
-void MyFrame::acz_lose(){
+void MyFrame::acz_lose() {
     int p1 = getrnd(20, 100); // 中级兵
     int p2 = getrnd(10, 40); // 高级兵
     int p3 = getrnd(10, 40); // 神级兵
@@ -13,7 +13,7 @@ void MyFrame::acz_lose(){
         "高级兵-"+TOSTR(p2)+"\n"
         "神级兵-"+TOSTR(p3)+"\n"
     );
-    if(AncientVar::HuangJinReader.high(70)){
+    if(AncientVar::HuangJinReader.high(70)) {
 
     }
 }
