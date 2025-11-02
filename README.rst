@@ -10,6 +10,7 @@
    添加`--branch master` 参数克隆 **稳定版**
    添加`--branch dev` 参数克隆 **较稳定版**
    添加`--branch feature` 参数克隆 **最新版**
+   尽量不要 **使用其他分支**
 2. 进入目录：**cd StudyPlatform**
 3. 编译项目：**make**
 4. 安装项目：**make install**
