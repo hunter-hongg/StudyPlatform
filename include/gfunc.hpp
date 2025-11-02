@@ -18,7 +18,9 @@ static std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t){
 static std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho, 
                                     int bingls, int binglo){
     using namespace WuGuanChuZheng;
-    Choices ComputerChoice = GetChoice(binglo, bingls);
+    using Global::AncientWuGuanChuZhengReal::usr_cho;
+    usr_cho.push_back(cho);
+    Choices ComputerChoice = GetChoice(binglo, bingls, usr_cho);
     Choices UserChoice = cho;
     Simple::Message(
         "你的选择: "+WuGuanChuZhengTrans(UserChoice)+"\n"+

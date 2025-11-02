@@ -41,11 +41,13 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
             Simple::Message("出征结束，你输了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_lose();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else if ( bingl_ot_now < 0 ) {
             Simple::Message("出征结束，你赢了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_win();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else {
             this -> ancient_wuguan_chuzheng_1(EmptyEvent);
@@ -63,11 +65,13 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
             Simple::Message("出征结束，你输了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_lose();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else if ( bingl_ot_now < 0 ) {
             Simple::Message("出征结束，你赢了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_win();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else {
             this -> ancient_wuguan_chuzheng_1(EmptyEvent);
@@ -85,11 +89,13 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
             Simple::Message("出征结束，你输了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_lose();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else if ( bingl_ot_now < 0 ) {
             Simple::Message("出征结束，你赢了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_win();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else {
             this -> ancient_wuguan_chuzheng_1(EmptyEvent);
@@ -107,11 +113,13 @@ void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){
             Simple::Message("出征结束，你输了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_lose();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else if ( bingl_ot_now < 0 ) {
             Simple::Message("出征结束，你赢了");
             bingl_sf_now = -1;
             bingl_ot_now = -1;
+            this -> acz_win();
             this -> ancient_wuguan_chuzheng(EmptyEvent);
         } else {
             this -> ancient_wuguan_chuzheng_1(EmptyEvent);
