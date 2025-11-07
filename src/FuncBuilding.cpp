@@ -14,6 +14,6 @@ void MyFrame::acz_lose() {
         "神级兵-"+TOSTR(p3)+"\n"
     );
     if(AncientVar::HuangJinReader.high(70)) {
-
+        AncientVar::HuangJinReader.minusnum(70);
     }
 }
