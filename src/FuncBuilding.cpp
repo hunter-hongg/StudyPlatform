@@ -1,3 +1,4 @@
+#include "var.hpp"
 #include <headers.hpp>
 
 void MyFrame::acz_lose() {
