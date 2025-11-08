@@ -34,6 +34,15 @@ public:
         if(a<0) return;
         this->add(-a);
     }
+    void minusnum_if(int a) {
+        if(a<0) return;
+        if(this->high(a)) {
+            this -> minusnum(a);
+        }
+        else {
+            this -> minusnum(this -> read_int());
+        }
+    }
     bool high(int a)
     {
         return (read_int() >= a);
