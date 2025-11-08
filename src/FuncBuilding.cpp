@@ -1,3 +1,4 @@
+#include "var.hpp"
 #include <headers.hpp>
 
 void MyFrame::acz_lose() {
@@ -14,6 +15,16 @@ void MyFrame::acz_lose() {
         "神级兵-"+TOSTR(p3)+"\n"
     );
     if(AncientVar::HuangJinReader.high(70)) {
-
+        AncientVar::HuangJinReader.minusnum(70);
+    } else {
+        AncientVar::HuangJinReader.minusnum(AncientVar::HuangJinReader.read_int());
     }
+    AncientVar::WuGuan::LiLiang::ZhongJi.minusnum_if(p1);
+    // if (AncientVar::WuGuan::LiLiang::ZhongJi.high(p1)) {
+    //     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(p1);
+    // } else {
+    //     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(
+    //         AncientVar::WuGuan::LiLiang::ZhongJi.read_int()
+    //     );
+    // }
 }
