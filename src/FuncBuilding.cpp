@@ -18,4 +18,11 @@ void MyFrame::acz_lose() {
     } else {
         AncientVar::HuangJinReader.minusnum(AncientVar::HuangJinReader.read_int());
     }
+    if (AncientVar::WuGuan::LiLiang::ZhongJi.high(p1)) {
+        AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(p1);
+    } else {
+        AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(
+            AncientVar::WuGuan::LiLiang::ZhongJi.read_int()
+        );
+    }
 }
