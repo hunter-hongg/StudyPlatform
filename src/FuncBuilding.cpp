@@ -21,6 +21,7 @@ void MyFrame::acz_lose() {
     }
     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum_if(p1);
     AncientVar::WuGuan::LiLiang::GaoJi.minusnum_if(p2);
+    AncientVar::WuGuan::LiLiang::ShenJi.minusnum_if(p3);
     // if (AncientVar::WuGuan::LiLiang::ZhongJi.high(p1)) {
     //     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(p1);
     // } else {
