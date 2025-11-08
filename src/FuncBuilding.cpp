@@ -15,6 +15,7 @@ void MyFrame::acz_lose() {
     );
     if(AncientVar::HuangJinReader.high(70)) {
         AncientVar::HuangJinReader.minusnum(70);
-        // AncientVar;
+    } else {
+        AncientVar::HuangJinReader.minusnum(AncientVar::HuangJinReader.read_int());
     }
 }
