@@ -20,6 +20,7 @@ void MyFrame::acz_lose() {
         AncientVar::HuangJinReader.minusnum(AncientVar::HuangJinReader.read_int());
     }
     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum_if(p1);
+    AncientVar::WuGuan::LiLiang::GaoJi.minusnum_if(p2);
     // if (AncientVar::WuGuan::LiLiang::ZhongJi.high(p1)) {
     //     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(p1);
     // } else {
