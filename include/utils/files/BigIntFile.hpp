@@ -1,16 +1,19 @@
 #pragma once
 #include <fstream>
 #include <string>
-#include <iostream>
 
-class BigIntFile { 
-public: 
+class BigIntFile {
+public:
     BigIntFile() = delete;
-    BigIntFile(std::string f) { file = f ; }
-    std::string GetFile() { return file ; }
+    BigIntFile(std::string f) {
+        file = f ;
+    }
+    std::string GetFile() {
+        return file ;
+    }
     std::string Read() {
         std::ifstream f(file);
-        if(!f.is_open()){
+        if(!f.is_open()) {
             f.close();
             std::ofstream t(file);
             t << "0";
@@ -27,6 +30,6 @@ public:
         f << n;
         f.close();
     }
-protected: 
+protected:
     std::string file;
 };
