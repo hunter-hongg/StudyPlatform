@@ -10,4 +10,9 @@ void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
 
     Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
 }
+void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {
+    wxBoxSizer* vbox = Simple::Init(panel, this);
+
+    Simple::Title("兑换白银", panel, vbox);
+}
 
