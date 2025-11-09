@@ -1,5 +1,9 @@
 #include "headers.hpp"
+#include "mine/MyFlags.h"
+#include "mine/MyFonts.h"
 #include <wx/event.h>
+#include <wx/gtk/stattext.h>
+#include <wx/wx.h>
 
 void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
     wxBoxSizer* vbox = Simple::Init(panel, this);
@@ -20,6 +24,13 @@ void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {
     wxBoxSizer* vbox = Simple::Init(panel, this);
 
     Simple::Title("兑换白银", panel, vbox);
+
+    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少白银"));
+    label->SetFont(font17);
+    vbox -> Add(label, FLAG_LEFT);
+
+    auto ReadTo = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
+    vbox -> Add(ReadTo, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::ancient_shop_bianli, panel, vbox, this);
 }
