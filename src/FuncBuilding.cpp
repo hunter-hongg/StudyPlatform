@@ -1,7 +1,4 @@
-#include "func/simple.hpp"
-#include "type.hpp"
-#include "function.hpp"
-#include <wx/sizer.h>
+#include "headers.hpp"
 
 void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
     wxBoxSizer* vbox = Simple::Init(panel, this);
