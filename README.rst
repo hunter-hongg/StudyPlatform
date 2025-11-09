@@ -7,7 +7,7 @@
 安装
 ------
 1. 克隆仓库：**git clone https://github.com/hunter-hongg/StudyPlatform**
-   添加`--branch master` 参数克隆 **稳定版**
+   添加`--branch main` 参数克隆 **稳定版**
    添加`--branch dev` 参数克隆 **较稳定版**
    添加`--branch feature` 参数克隆 **最新版**
    尽量不要 **使用其他分支**
