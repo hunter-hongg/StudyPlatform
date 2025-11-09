@@ -1,6 +1,6 @@
 #include <headers.hpp>
 
-void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
+void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&) {
     auto vbox = Simple::Init(panel, this);
 
     Simple::Title("征召士兵", panel, vbox);
@@ -8,8 +8,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     auto grid = new wxGridSizer(3,3,5,5);
 
     auto btn0 = Simple::ShopButton("1两白银\n1新兵", panel, MyYellow);
-    btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(1)){
+    btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(1)) {
             Simple::Message("白银不足");
             return;
         }
@@ -19,8 +19,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn0, FLAG_CENTER);
 
     auto btn1 = Simple::ShopButton("10两白银\n1普通兵", panel, MyYellow);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(10)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(10)) {
             Simple::Message("白银不足");
             return;
         }
@@ -30,8 +30,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn1, FLAG_CENTER);
 
     auto btn2 = Simple::ShopButton("30两白银\n1初级兵", panel, MyYellow);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(30)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(30)) {
             Simple::Message("白银不足");
             return;
         }
@@ -41,8 +41,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn2, FLAG_CENTER);
 
     auto btn3 = Simple::ShopButton("60两白银\n1中级兵", panel, MyYellow);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(60)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(60)) {
             Simple::Message("白银不足");
             return;
         }
@@ -52,8 +52,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn3, FLAG_CENTER);
 
     auto btn4 = Simple::ShopButton("150两白银\n1高级兵", panel, MyYellow);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(150)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(150)) {
             Simple::Message("白银不足");
             return;
         }
@@ -63,8 +63,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn4, FLAG_CENTER);
 
     auto btn5 = Simple::ShopButton("350两白银\n1精锐兵", panel, MyYellow);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(350)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(350)) {
             Simple::Message("白银不足");
             return;
         }
@@ -74,8 +74,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn5, FLAG_CENTER);
 
     auto btn6 = Simple::ShopButton("750两白银\n1王牌兵", panel, MyYellow);
-    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(750)){
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(750)) {
             Simple::Message("白银不足");
             return;
         }
@@ -85,8 +85,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){
     grid -> Add(btn6, FLAG_CENTER);
 
     auto btn7 = Simple::ShopButton("2000两白银\n2神级兵", panel, MyYellow);
-    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!AncientVar::BaiYinReader.canminus(2000)){
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!AncientVar::BaiYinReader.canminus(2000)) {
             Simple::Message("白银不足");
             return;
         }
@@ -105,11 +105,11 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
     Simple::TitleNoSpacer("存储积分",panel, vbox);
     Simple::ShowButton(
         "当前积分："+JiFenReader.read_str()+"\n"+
-        "已存积分："+Bank::BankStore.Read(), 
+        "已存积分："+Bank::BankStore.Read(),
         panel, vbox
     );
- 
-    auto button_fuzhu1 = new wxButton(panel, wxID_ANY, 
+
+    auto button_fuzhu1 = new wxButton(panel, wxID_ANY,
                                       wxT("请输入存储积分数："));
     button_fuzhu1 -> SetForegroundColour(MyBlue);
     button_fuzhu1 -> SetFont(font15);
@@ -119,10 +119,10 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
     reader -> SetFont(font15);
     vbox -> Add(reader, FLAG_LEFT);
 
-    auto button_submit = new wxButton(panel, wxID_ANY, 
+    auto button_submit = new wxButton(panel, wxID_ANY,
                                       wxT("存储"));
     button_submit -> SetFont(font15);
-    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
         std::string raw = reader -> GetValue().ToStdString();
         int used;
         try {
@@ -131,7 +131,9 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
             used = 0;
         }
         bool ans = Simple::MessageQues("你将要存储"+TOSTR(used)+"积分");
-        if ( ! ans ) { return ; }
+        if ( ! ans ) {
+            return ;
+        }
         if ( used <= 0 ) {
             Simple:: MessageErr(
                 "无法存储0积分及以下"
@@ -153,18 +155,18 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
     vbox -> Add(button_submit, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
-} 
+}
 fn MyFrame::bank_get(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("领取积分",panel, vbox);
     Simple::ShowButton(
         "当前积分："+JiFenReader.read_str()+"\n"+
-        "已存积分："+Bank::BankStore.Read(), 
+        "已存积分："+Bank::BankStore.Read(),
         panel, vbox
     );
- 
-    auto button_fuzhu1 = new wxButton(panel, wxID_ANY, 
+
+    auto button_fuzhu1 = new wxButton(panel, wxID_ANY,
                                       wxT("请输入领取积分数："));
     button_fuzhu1 -> SetForegroundColour(MyBlue);
     button_fuzhu1 -> SetFont(font15);
@@ -174,10 +176,10 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
     reader -> SetFont(font15);
     vbox -> Add(reader, FLAG_LEFT);
 
-    auto button_submit = new wxButton(panel, wxID_ANY, 
+    auto button_submit = new wxButton(panel, wxID_ANY,
                                       wxT("领取"));
     button_submit -> SetFont(font15);
-    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
         std::string raw = reader -> GetValue().ToStdString();
         cgstdOption::Option<int> used;
         try {
@@ -186,9 +188,11 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
             used = cgstdOption::Option<int>();
         }
         bool ans = Simple::MessageQues("你将要领取"+TOSTR(
-            used.unwrap_or(0)
-        )+"积分");
-        if ( ! ans ) { return ; }
+                                           used.unwrap_or(0)
+                                       )+"积分");
+        if ( ! ans ) {
+            return ;
+        }
         if ( used.is_none() ) {
             Simple:: MessageErr(
                 "无法领取积分"
@@ -221,7 +225,7 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
     vbox -> Add(button_submit, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
-} 
+}
 fn MyFrame::tongy(WXBTNEVT&) -> void {
     lmut vbox = Simple::Init(panel, this);
 
@@ -231,7 +235,7 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
         "当前积分: "+JiFenReader.read_str()
         , panel, vbox);
 
-    auto button_fuzhu1 = new wxButton(panel, wxID_ANY, 
+    auto button_fuzhu1 = new wxButton(panel, wxID_ANY,
                                       wxT("请输入兑换通用货币数："));
     button_fuzhu1 -> SetForegroundColour(MyBlue);
     button_fuzhu1 -> SetFont(font15);
@@ -241,10 +245,10 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
     reader -> SetFont(font15);
     vbox -> Add(reader, FLAG_LEFT);
 
-    auto button_submit = new wxButton(panel, wxID_ANY, 
+    auto button_submit = new wxButton(panel, wxID_ANY,
                                       wxT("兑换"));
     button_submit -> SetFont(font15);
-    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
         std::string raw = reader -> GetValue().ToStdString();
         cgstdOption::Option<int> used;
         try {
@@ -253,9 +257,11 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
             used = cgstdOption::Option<int>();
         }
         bool ans = Simple::MessageQues("你将要兑换"+TOSTR(
-            used.unwrap_or(0)
-        )+"通用货币");
-        if ( ! ans ) { return ; }
+                                           used.unwrap_or(0)
+                                       )+"通用货币");
+        if ( ! ans ) {
+            return ;
+        }
         if ( used.is_none() ) {
             Simple:: MessageErr(
                 "无法兑换通用货币"
@@ -277,7 +283,7 @@ fn MyFrame::tongy(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::tongy_all, panel, vbox, this);
 }
-void MyFrame::acz_win(){
+void MyFrame::acz_win() {
     int p1 = getrnd(20, 40); // 中级兵
     int p2 = getrnd(5, 10); // 高级兵
     int p3 = getrnd(0, 3); // 神级兵
@@ -294,5 +300,34 @@ void MyFrame::acz_win(){
     AncientVar::WuGuan::LiLiang::ZhongJi.addnum(p1);
     AncientVar::WuGuan::LiLiang::GaoJi.addnum(p2);
     AncientVar::WuGuan::LiLiang::ShenJi.addnum(p3);
+}
+void MyFrame::acz_lose() {
+    int p1 = getrnd(20, 100); // 中级兵
+    int p2 = getrnd(10, 40); // 高级兵
+    int p3 = getrnd(10, 40); // 神级兵
+    Simple::Message("很遗憾，这次出征以失利告终");
+    Simple::Message("胜败乃兵家常事");
+    Simple::Message(
+        "此战结果：\n"
+        "黄金-70两\n"
+        "中级兵-"+TOSTR(p1)+"\n"
+        "高级兵-"+TOSTR(p2)+"\n"
+        "神级兵-"+TOSTR(p3)+"\n"
+    );
+    if(AncientVar::HuangJinReader.high(70)) {
+        AncientVar::HuangJinReader.minusnum(70);
+    } else {
+        AncientVar::HuangJinReader.minusnum(AncientVar::HuangJinReader.read_int());
+    }
+    AncientVar::WuGuan::LiLiang::ZhongJi.minusnum_if(p1);
+    AncientVar::WuGuan::LiLiang::GaoJi.minusnum_if(p2);
+    AncientVar::WuGuan::LiLiang::ShenJi.minusnum_if(p3);
+    // if (AncientVar::WuGuan::LiLiang::ZhongJi.high(p1)) {
+    //     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(p1);
+    // } else {
+    //     AncientVar::WuGuan::LiLiang::ZhongJi.minusnum(
+    //         AncientVar::WuGuan::LiLiang::ZhongJi.read_int()
+    //     );
+    // }
 }
 
