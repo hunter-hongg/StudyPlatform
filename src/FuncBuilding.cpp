@@ -10,3 +10,4 @@ void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
 
     Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
 }
+
