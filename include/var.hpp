@@ -17,7 +17,6 @@
 #include <ffi/zig/AncientJinYinZhu/AncientJinYinZhuCpp.hpp>
 #include <ffi/zig/AncientBaoWuCha/AncientBaoWuChaCpp.hpp>
 #include <ffi/zig/AncientGuWanCha/AncientGuWanChaCpp.hpp>
-
 const std::string User = getenv("USER");
 
 // 文件
@@ -55,8 +54,8 @@ namespace XianJi
 {
 static PasswordFile Reader(FilePathXianJi+"xjrd.dso.349fern.cc", "sdoih14853");
 }
-namespace Xian{
-namespace Dan{
+namespace Xian {
+namespace Dan {
 static PasswordFile PuTong(FilePathXianDan+"pt.cc.xdcc.1304", "sdpf24j109");
 static PasswordFile Bi(FilePathXianDan+"bd.c.xdccm.eo4", "fqoeirm124");
 static PasswordFile Qing(FilePathXianDan+"qd.c.xdcc.ej.e", "fdoiem2401");
@@ -66,7 +65,7 @@ static PasswordFile Yin(FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214");
 static PasswordFile Jin(FilePathXianDan+"jd.cc.xdcc.23dsj", "adogfn2104");
 static PasswordFile Shen(FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810");
 }
-namespace Lu{
+namespace Lu {
 static PasswordFile Ji(FilePathXianLu+"xlj.ds.cc.o239", "done20596w");
 static CheckFile CanLingQu(FilePathXianLu+"ck.clq.cc.3", 4091, 1);
 }
@@ -147,19 +146,19 @@ static AncientBaoWuStruct* BaoWuStruct = AncientBaoWuStruct_Create(
             2109
         );
 static YuZhan* YuZhanReader = YuZhan_Create(
-            (char*)(FilePathBaoWu+"baoyzex.bacce").c_str(),
-            2024
-);
+                                  (char*)(FilePathBaoWu+"baoyzex.bacce").c_str(),
+                                  2024
+                              );
 static AncientJinYinZhu* JinYinZhuReader = AncientJinYinZhu_New(
-            (char*)(FilePathBaoWu+"jzcc.conc").c_str(), 
+            (char*)(FilePathBaoWu+"jzcc.conc").c_str(),
             (char*)(FilePathBaoWu+"yzcc.conc").c_str(),
             1657
         );
 static BaoWuChaFiles* BaoWuChaReader = BaoWuChaFiles_Make(
-            (char*)(FilePathBaoWu+"bwcrdc1.onc").c_str(),
-            (char*)(FilePathBaoWu+"bwcrd2.onc").c_str(),
-            2017
-        );
+        (char*)(FilePathBaoWu+"bwcrdc1.onc").c_str(),
+        (char*)(FilePathBaoWu+"bwcrd2.onc").c_str(),
+        2017
+                                       );
 
 static PasswordFile TongBiReader(FilePath+"tb.avc","hifo356sjl");
 static PasswordFile BaiYinReader(FilePath+"bay.avc","3ifnyl1042");
@@ -171,10 +170,10 @@ static PasswordFile CiQiReader(FilePath+"cq.avgwc","so3pfm10a2");
 static PasswordFile ShiBeiReader(FilePath+"shb.avgwc","sudo1048qp");
 static PasswordFile YuPeiReader(FilePath+"yup.avgwc","sofp194327");
 static GuWanChaFiles* ChaReader = GuWanChaFiles_Make(
-    (char*)(FilePathAncient+"apdfn.gwcc1.conc").c_str(),
-    (char*)(FilePathAncient+"asofn.gwcc2.conc").c_str(),
-    2353
-);
+                                      (char*)(FilePathAncient+"apdfn.gwcc1.conc").c_str(),
+                                      (char*)(FilePathAncient+"asofn.gwcc2.conc").c_str(),
+                                      2353
+                                  );
 }
 
 namespace WenGuan
@@ -213,16 +212,16 @@ static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt396
 }
 namespace BingLi
 {
-static const int 
-    XinMin = 1, 
-    PuTongMin = 3, 
-    ChuJiMin = 6,
-    ZhongJiMin = 10, 
-    GaoJiMin = 20, 
-    JingRuiMin = 40, 
-    WangPaiMin = 90, 
-    ShenJiMin = 200
-;
+static const int
+XinMin = 1,
+PuTongMin = 3,
+ChuJiMin = 6,
+ZhongJiMin = 10,
+GaoJiMin = 20,
+JingRuiMin = 40,
+WangPaiMin = 90,
+ShenJiMin = 200
+            ;
 static PasswordFile Xin(
     FilePathAncientWuGuan+"wgllbl.regio.xb.cc..x", "2309fj4i5p", XinMin);
 static PasswordFile PuTong(
@@ -263,14 +262,14 @@ static CheckFile JinBiCheck(FilePathThingsSquare+"sdogh.dogck",2035,1);
 
 namespace LiHe
 {
-  enum class Types{
+enum class Types {
     XianBiBasic,
-    XianDanBasic, 
-  };
-  namespace IsUsed{
-    static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");
-    static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE");
-  }
+    XianDanBasic,
+};
+namespace IsUsed {
+static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");
+static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE");
+}
 }
 namespace Bank {
 static BigIntFile BankStore(FilePathBank+"fhubasr");
