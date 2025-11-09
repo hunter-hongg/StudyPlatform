@@ -16,6 +16,20 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 %	build/Makefile	/^% : RCS\/%,v$/;"	t
 %	build/Makefile	/^% : SCCS\/s.%$/;"	t
 %	build/Makefile	/^% : s.%$/;"	t
+0	build/compile_commands.json	/^{$/;"	o
+0	compile_commands.json	/^{$/;"	o
+1	build/compile_commands.json	/^{$/;"	o
+1	compile_commands.json	/^{$/;"	o
+10	build/compile_commands.json	/^{$/;"	o
+10	compile_commands.json	/^{$/;"	o
+11	build/compile_commands.json	/^{$/;"	o
+11	compile_commands.json	/^{$/;"	o
+12	build/compile_commands.json	/^{$/;"	o
+12	compile_commands.json	/^{$/;"	o
+13	build/compile_commands.json	/^{$/;"	o
+13	compile_commands.json	/^{$/;"	o
+2	build/compile_commands.json	/^{$/;"	o
+2	compile_commands.json	/^{$/;"	o
 2025-1-28	docs/ProjectHistory.md	/^## 2025-1-28$/;"	s	chapter:项目历史
 2025-1-28	docs/ProjectHistory.rst	/^2025-1-28$/;"	s	chapter:项目历史 25国庆
 2025-1-29	docs/ProjectHistory.md	/^## 2025-1-29$/;"	s	chapter:项目历史
@@ -42,6 +56,11 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 2025-11-1	docs/ProjectLog.rst	/^2025-11-1$/;"	s	chapter:项目日志新 25国庆
 2025-11-2	docs/ProjectLog.rst	/^2025-11-2$/;"	s	chapter:项目日志新 25国庆
 2025-11-3	docs/ProjectLog.rst	/^2025-11-3$/;"	s	chapter:项目日志新 25国庆
+2025-11-4	docs/ProjectLog.rst	/^2025-11-4$/;"	s	chapter:项目日志新 25国庆
+2025-11-5	docs/ProjectLog.rst	/^2025-11-5$/;"	s	chapter:项目日志新 25国庆
+2025-11-6	docs/ProjectLog.rst	/^2025-11-6$/;"	s	chapter:项目日志新 25国庆
+2025-11-8	docs/ProjectLog.rst	/^2025-11-8$/;"	s	chapter:项目日志新 25国庆
+2025-11-9	docs/ProjectLog.rst	/^2025-11-9$/;"	s	chapter:项目日志新 25国庆
 2025-5-10	docs/ProjectHistory.md	/^## 2025-5-10$/;"	s	chapter:项目历史
 2025-5-10	docs/ProjectHistory.rst	/^2025-5-10$/;"	s	chapter:项目历史 25国庆
 2025-5-11	docs/ProjectLog.md	/^## 2025-5-11$/;"	s	chapter:项目日志
@@ -198,6 +217,20 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 2025-9-9	docs/ProjectLog.md	/^## 2025-9-9$/;"	s	chapter:项目日志
 20250908周进度	docs/20250908周进度.md	/^# 20250908周进度$/;"	c
 20250915周计划	docs/20250915周计划.md	/^# 20250915周计划$/;"	c
+3	build/compile_commands.json	/^{$/;"	o
+3	compile_commands.json	/^{$/;"	o
+4	build/compile_commands.json	/^{$/;"	o
+4	compile_commands.json	/^{$/;"	o
+5	build/compile_commands.json	/^{$/;"	o
+5	compile_commands.json	/^{$/;"	o
+6	build/compile_commands.json	/^{$/;"	o
+6	compile_commands.json	/^{$/;"	o
+7	build/compile_commands.json	/^{$/;"	o
+7	compile_commands.json	/^{$/;"	o
+8	build/compile_commands.json	/^{$/;"	o
+8	compile_commands.json	/^{$/;"	o
+9	build/compile_commands.json	/^{$/;"	o
+9	compile_commands.json	/^{$/;"	o
 ALGO_HPP	include/utils/algo.hpp	/^#define ALGO_HPP$/;"	d
 ARCHITECTURE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
 ARCHITECTURE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
@@ -259,7 +292,7 @@ BaoWuStruct	include/var.hpp	/^static AncientBaoWuStruct* BaoWuStruct = AncientBa
 Bi	include/var.hpp	/^static PasswordFile Bi(FilePathXianDan+"bd.c.xdccm.eo4", "fqoeirm124");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 BigIntFile	include/utils/files/BigIntFile.hpp	/^    BigIntFile(std::string f) { file = f ; }$/;"	f	class:BigIntFile
 BigIntFile	include/utils/files/BigIntFile.hpp	/^class BigIntFile { $/;"	c
-BigIntFile的Add函数	docs/ProjectDocs.rst	/^BigIntFile的Add函数$/;"	s	chapter:项目部分技术说明文档 25国庆
+BigIntFile的Add函数	docs/ProjectDocsLang.rst	/^BigIntFile的Add函数$/;"	s	chapter:项目部分技术说明文档 25国庆
 BingLi	include/var.hpp	/^namespace BingLi$/;"	n	namespace:AncientVar::WuGuan
 Black	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Black	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
@@ -607,7 +640,7 @@ MYBUTTONLAMBDA	include/macro.hpp	/^#define MYBUTTONLAMBDA(/;"	d
 MYEND	include/macro.hpp	/^#define MYEND(/;"	d
 MYINIT	include/macro.hpp	/^#define MYINIT(/;"	d
 MYLAST	include/macro.hpp	/^#define MYLAST(/;"	d
-MYLAST宏的用处	docs/ProjectDocs.rst	/^MYLAST宏的用处$/;"	s	chapter:项目部分技术说明文档 25国庆
+MYLAST宏的用处	docs/ProjectDocsSimple.rst	/^MYLAST宏的用处$/;"	c
 MYMESSAGE	include/macro.hpp	/^#define MYMESSAGE(/;"	d
 MYSHOPBUTTON	include/macro.hpp	/^#define MYSHOPBUTTON(/;"	d
 MYSHOW	include/macro.hpp	/^#define MYSHOW(/;"	d
@@ -648,10 +681,9 @@ POLY_HXX	include/utils/poly.hpp	/^#define POLY_HXX$/;"	d
 Pao	include/clibs/ancient/pao.hpp	/^enum class Pao {$/;"	g	namespace:Ancient
 Pao	include/var.hpp	/^static Ancient::AncientPao Pao(FilePathPao+"paon.paoc",FilePathPao+"paoa.paoac");$/;"	v	namespace:AncientVar	typeref:typename:Ancient::AncientPao
 PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& fn, const std::string& p):file_password(fn,p) {}$/;"	f	class:PasswordFile
-PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) { $/;"	f	class:PasswordFile
+PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) {$/;"	f	class:PasswordFile
 PasswordFile	include/utils/files/PasswordFile.hpp	/^class PasswordFile: protected file_password$/;"	c
-PasswordFile的增加与减少	docs/ProjectDocs.rst	/^PasswordFile的增加与减少$/;"	s	chapter:项目部分技术说明文档 25国庆
-Perl正则表达式基本	share/docs/PerlReBasic.rst	/^Perl正则表达式基本$/;"	c
+PasswordFile的增加与减少	docs/ProjectDocsLang.rst	/^PasswordFile的增加与减少$/;"	s	chapter:项目部分技术说明文档 25国庆
 Pin	include/var.hpp	/^namespace Pin$/;"	n	namespace:AncientVar::WuGuan
 Proj	CMakeLists.txt	/^project(Proj LANGUAGES CXX)$/;"	p
 PuTong	include/var.hpp	/^static PasswordFile PuTong($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
@@ -676,7 +708,7 @@ RealRed	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed
 RealRed	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
 Red	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Red	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
-Rust的函数getrnd与getrnds的使用	docs/ProjectDocs.rst	/^Rust的函数getrnd与getrnds的使用$/;"	s	chapter:项目部分技术说明文档 25国庆
+Rust的函数getrnd与getrnds的使用	docs/ProjectDocsLang.rst	/^Rust的函数getrnd与getrnds的使用$/;"	s	chapter:项目部分技术说明文档 25国庆
 SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SIMULATE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
 SIMULATE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
@@ -960,17 +992,17 @@ __anon9e6c4b298a02	src/FuncFixed.cpp	/^    auto getneed = [=](int dj){$/;"	f	fun
 __anon9e6c4b298b02	src/FuncFixed.cpp	/^    auto callback = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianlu_next	file:
 __anonb19fc00b0102	src/FuncLocked.cpp	/^    quitButton -> Bind(wxEVT_BUTTON,[](WXBTNEVT& evt) {$/;"	f	function:MyFrame::start	file:
 __anoncc75521a0108	include/ffi/zig/AncientGuWanCha/AncientGuWanCha.h	/^typedef struct {$/;"	s
-__anond12e71ff0102	src/FuncLockedFn.cpp	/^    btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0202	src/FuncLockedFn.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0302	src/FuncLockedFn.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0402	src/FuncLockedFn.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0502	src/FuncLockedFn.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0602	src/FuncLockedFn.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0702	src/FuncLockedFn.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0802	src/FuncLockedFn.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
-__anond12e71ff0902	src/FuncLockedFn.cpp	/^    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::bank_store	file:
-__anond12e71ff0a02	src/FuncLockedFn.cpp	/^    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::bank_get	file:
-__anond12e71ff0b02	src/FuncLockedFn.cpp	/^    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::tongy	file:
+__anond12e71ff0102	src/FuncLockedFn.cpp	/^    btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0202	src/FuncLockedFn.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0302	src/FuncLockedFn.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0402	src/FuncLockedFn.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0502	src/FuncLockedFn.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0602	src/FuncLockedFn.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0702	src/FuncLockedFn.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0802	src/FuncLockedFn.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
+__anond12e71ff0902	src/FuncLockedFn.cpp	/^    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::bank_store	file:
+__anond12e71ff0a02	src/FuncLockedFn.cpp	/^    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::bank_get	file:
+__anond12e71ff0b02	src/FuncLockedFn.cpp	/^    button_submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::tongy	file:
 __anond9b77c320108	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	s
 __anond9b77c320208	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *t; void *v; } GoInterface;$/;"	s
 __anond9b77c320308	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	s
@@ -988,8 +1020,8 @@ __has_include	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  
 _check_for_64_bit_pointer_matching_GoInt	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef char _check_for_64_bit_pointer_matching_GoInt[sizeof(void*)==64\/8 ? 1:-1];$/;"	t	typeref:typename:char[sizeof (void *)==64/8?1:-1]
 _check_for_64_bit_pointer_matching_GoInt	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef char _check_for_64_bit_pointer_matching_GoInt[sizeof(void*)==64\/8 ? 1:-1];$/;"	t	typeref:typename:char[sizeof (void *)==64/8?1:-1]
 _check_for_64_bit_pointer_matching_GoInt	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef char _check_for_64_bit_pointer_matching_GoInt[sizeof(void*)==64\/8 ? 1:-1];$/;"	t	typeref:typename:char[sizeof (void *)==64/8?1:-1]
-acz_lose	src/FuncBuilding.cpp	/^void MyFrame::acz_lose() {$/;"	f	class:MyFrame	typeref:typename:void
-acz_win	src/FuncLockedFn.cpp	/^void MyFrame::acz_win(){$/;"	f	class:MyFrame	typeref:typename:void
+acz_lose	src/FuncLockedFn.cpp	/^void MyFrame::acz_lose() {$/;"	f	class:MyFrame	typeref:typename:void
+acz_win	src/FuncLockedFn.cpp	/^void MyFrame::acz_win() {$/;"	f	class:MyFrame	typeref:typename:void
 add	include/utils/old/file_password.h	/^    std::string add(int num)$/;"	f	class:file_password	typeref:typename:std::string
 add_num	include/utils/old/datecheck.h	/^    int add_num;$/;"	m	class:DateCheck	typeref:typename:int
 addnum	include/ffi/zig/AncientWenGuan/AncientWenGuan.h	/^    int32_t addnum;$/;"	m	struct:__anone9bda7e80108	typeref:typename:int32_t
@@ -1007,14 +1039,15 @@ anc_wu_bingp_need	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](i
 ancient_clothes	src/FuncSimple.cpp	/^void MyFrame::ancient_clothes(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_clothes_pao	src/FuncFixed.cpp	/^void MyFrame::ancient_clothes_pao(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_clothes_sword	src/FuncFixed.cpp	/^void MyFrame::ancient_clothes_sword(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
-ancient_guan	src/FuncSimple.cpp	/^void MyFrame::ancient_guan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-ancient_juanzeng	src/FuncSimple.cpp	/^void MyFrame::ancient_juanzeng(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_guan	src/FuncSimple.cpp	/^void MyFrame::ancient_guan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_juanzeng	src/FuncSimple.cpp	/^void MyFrame::ancient_juanzeng(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_juanzeng_juanxian	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 ancient_juanzeng_lingqu	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_lingqu(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop	src/FuncFixed.cpp	/^void MyFrame::ancient_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_baowu	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_baowu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_guwan	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_guwan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
-ancient_shop_guwan的概率	docs/ProjectDocs.rst	/^ancient_shop_guwan的概率$/;"	s	chapter:项目部分技术说明文档 25国庆
+ancient_shop_guwan的概率	docs/ProjectDocsSimple.rst	/^ancient_shop_guwan的概率$/;"	c
 ancient_shop_nianjiu	src/FuncSimple.cpp	/^void MyFrame::ancient_shop_nianjiu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_nianjiu1	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_nianjiu1(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_nianjiu2	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_nianjiu2(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1038,7 +1071,7 @@ ancient_wuguan_bingli	src/FuncSimpleFn.cpp	/^void MyFrame::ancient_wuguan_bingli
 ancient_wuguan_chuzheng	src/FuncPair1.cpp	/^void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_chuzheng_1	src/FuncPair1.cpp	/^void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_show	src/FuncLocked.cpp	/^void MyFrame::ancient_wuguan_show(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-ancient_wuguan_zhaomu	src/FuncLockedFn.cpp	/^void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_wuguan_zhaomu	src/FuncLockedFn.cpp	/^void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_huilu	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt){$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_jinjian	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_jinjian(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_miansheng	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_miansheng(WXBTNEVT& evt){$/;"	f	class:MyFrame	typeref:typename:void
@@ -1063,7 +1096,7 @@ bank_store	src/FuncLockedFn.cpp	/^fn MyFrame::bank_store(WXBTNEVT&) -> void {$/;
 baoshi_all	src/FuncSimple.cpp	/^void MyFrame::baoshi_all(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_choujiang	src/FuncSimple.cpp	/^void MyFrame::baoshi_choujiang(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_choujiang1	src/FuncFixed.cpp	/^void MyFrame::baoshi_choujiang1(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
-baoshi_choujiang1函数	docs/ProjectDocs.rst	/^baoshi_choujiang1函数$/;"	s	chapter:项目部分技术说明文档 25国庆
+baoshi_choujiang1函数	docs/ProjectDocsSimple.rst	/^baoshi_choujiang1函数$/;"	c
 baoshi_get	src/FuncFixed.cpp	/^void MyFrame::baoshi_get(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 begin	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_iterator begin() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:const_iterator
 begin	include/utils/cstyle/cstyle_array.hpp	/^    constexpr iterator begin() noexcept$/;"	f	struct:cstyle::array	typeref:typename:iterator
@@ -1109,6 +1142,34 @@ clock	include/utils/new/timer/timer.hpp	/^    typedef std::chrono::high_resoluti
 cmake_check_build_system	build/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_force	build/Makefile	/^cmake_force:$/;"	t
 coeffs	include/utils/poly.hpp	/^    std::vector<double> coeffs;$/;"	m	class:poly	typeref:typename:std::vector<double>
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:0
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:1
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:10
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:11
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:12
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:13
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:2
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:3
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:4
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:5
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:6
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:7
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:8
+command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:9
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:0
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:1
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:10
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:11
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:12
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:13
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:2
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:3
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:4
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:5
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:6
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:7
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:8
+command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:9
 const_cast_expr	include/utils/cstyle/cstyle_cast.hpp	/^constexpr To const_cast_expr(From value) noexcept$/;"	f	namespace:cstyle	typeref:typename:To
 const_e	include/lang/macro.hpp	/^#define const_e /;"	d
 const_iterator	include/utils/cstyle/cstyle_array.hpp	/^    using const_iterator = const T*;$/;"	t	struct:cstyle::array	typeref:typename:const T *
@@ -1138,12 +1199,40 @@ degree	include/utils/poly.hpp	/^    size_t degree() const$/;"	f	class:poly	typer
 depend	build/Makefile	/^depend:$/;"	t
 destroy_at	include/utils/cstyle/cstyle_memory.hpp	/^void destroy_at(T* location) noexcept$/;"	f	namespace:cstyle	typeref:typename:void
 difference_type	include/utils/cstyle/cstyle_array.hpp	/^    using difference_type = std::ptrdiff_t;$/;"	t	struct:cstyle::array	typeref:typename:std::ptrdiff_t
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:0
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:1
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:10
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:11
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:12
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:13
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:2
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:3
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:4
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:5
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:6
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:7
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:8
+directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:9
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:0
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:1
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:10
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:11
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:12
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:13
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:2
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:3
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:4
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:5
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:6
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:7
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:8
+directory	compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:9
 duration	include/utils/new/timer/timer.hpp	/^    typedef clock::duration duration;$/;"	t	class:timer	typeref:typename:clock::duration
 edit_cache	build/Makefile	/^edit_cache:$/;"	t
 edit_cache/fast	build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 element_type	include/utils/cstyle/cstyle_memory.hpp	/^        using element_type = std::remove_extent_t<T>;$/;"	t	function:cstyle::make_unique	typeref:typename:std::remove_extent_t<T>
 element_type	include/utils/cstyle/cstyle_memory.hpp	/^        using element_type = std::remove_extent_t<T>;$/;"	t	function:cstyle::make_unique_aligned	typeref:typename:std::remove_extent_t<T>
-empfunc	include/function.hpp	/^    void empfunc(WXBTNEVT&){};$/;"	f	class:MyFrame	typeref:typename:void
+empfunc	include/function.hpp	/^    void empfunc(WXBTNEVT&) {};$/;"	f	class:MyFrame	typeref:typename:void
 empty	include/utils/cstyle/cstyle_array.hpp	/^    [[nodiscard]] constexpr bool empty() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:bool
 empty	include/utils/cstyle/cstyle_string.hpp	/^    bool empty() const noexcept$/;"	f	class:cstyle::string	typeref:typename:bool
 emptyVec	include/utils/files/Cards.hpp	/^static std::vector<std::string> emptyVec;$/;"	v	typeref:typename:std::vector<std::string>
@@ -1154,6 +1243,34 @@ end	include/utils/cstyle/cstyle_array.hpp	/^    constexpr iterator end() noexcep
 fali	src/FuncSimple.cpp	/^void MyFrame::fali(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 fali_xianbi	src/FuncFixed.cpp	/^void MyFrame::fali_xianbi(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 fali_xiandan	src/FuncFixed.cpp	/^void MyFrame::fali_xiandan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncBuilding.cpp",$/;"	s	object:0
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncCache.cpp",$/;"	s	object:1
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncFixed.cpp",$/;"	s	object:2
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncFixedFn.cpp",$/;"	s	object:3
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncLocked.cpp",$/;"	s	object:4
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncLockedFn.cpp",$/;"	s	object:5
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncOld.cpp",$/;"	s	object:6
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncOldFn.cpp",$/;"	s	object:7
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncPair1.cpp",$/;"	s	object:8
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncSimple.cpp",$/;"	s	object:9
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncSimpleFn.cpp",$/;"	s	object:10
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncUsed.cpp",$/;"	s	object:11
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncUsedFn.cpp",$/;"	s	object:12
+file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/Main.cpp",$/;"	s	object:13
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncBuilding.cpp",$/;"	s	object:0
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncCache.cpp",$/;"	s	object:1
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncFixed.cpp",$/;"	s	object:2
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncFixedFn.cpp",$/;"	s	object:3
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncLocked.cpp",$/;"	s	object:4
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncLockedFn.cpp",$/;"	s	object:5
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncOld.cpp",$/;"	s	object:6
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncOldFn.cpp",$/;"	s	object:7
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncPair1.cpp",$/;"	s	object:8
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncSimple.cpp",$/;"	s	object:9
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncSimpleFn.cpp",$/;"	s	object:10
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncUsed.cpp",$/;"	s	object:11
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncUsedFn.cpp",$/;"	s	object:12
+file	compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/Main.cpp",$/;"	s	object:13
 file	include/clibs/xianbi/sword.hpp	/^    string file;$/;"	m	class:functions::SwordInFile	typeref:typename:string
 file	include/ffi/zig/AncientWenGuan/AncientWenGuan.h	/^    char* file;$/;"	m	struct:__anone9bda7e80108	typeref:typename:char *
 file	include/ffi/zig/AncientYuZhan/AncientYuZhan.h	/^    char* file;$/;"	m	struct:YuZhan	typeref:typename:char *
@@ -1190,7 +1307,7 @@ generateSingle	include/utils/old/randgen.hpp	/^    int generateSingle(int min, i
 get	include/clibs/xianbi/sword.hpp	/^    SwordEnum get()$/;"	f	class:functions::SwordInFile	typeref:typename:SwordEnum
 get	include/utils/smartptr.hpp	/^    T* get() const noexcept$/;"	f	class:SmartPtr	typeref:typename:T *
 gfunc	include/gfunc.hpp	/^namespace gfunc {$/;"	n
-global.hpp使用方法	docs/ProjectDocs.rst	/^global.hpp使用方法$/;"	s	chapter:项目部分技术说明文档 25国庆
+global.hpp使用方法	docs/ProjectDocsSimple.rst	/^global.hpp使用方法$/;"	c
 gold	include/clibs/xianbi/sword.hpp	/^enum class SwordEnum { gold,wood,water,fire,soil };$/;"	e	enum:functions::SwordEnum
 handle_	include/utils/cstyle/cstyle_stdio.hpp	/^    std::unique_ptr<FILE, file_deleter> handle_;$/;"	m	class:cstyle::file	typeref:typename:std::unique_ptr<FILE,file_deleter>
 help	build/Makefile	/^help:$/;"	t
@@ -1223,7 +1340,7 @@ iterator	include/utils/cstyle/cstyle_array.hpp	/^    using iterator = T*;$/;"	t	
 jifen	include/clibs/jifen/jifen.hpp	/^namespace jifen$/;"	n
 jinjian_H	include/clibs/ancient/jinjian.hpp	/^#define jinjian_H$/;"	d
 lambda	include/func/lambda.hpp	/^namespace lambda {$/;"	n
-lambda函数定义	docs/ProjectDocs.rst	/^lambda函数定义$/;"	s	chapter:项目部分技术说明文档 25国庆
+lambda函数定义	docs/ProjectDocsLang.rst	/^lambda函数定义$/;"	s	chapter:项目部分技术说明文档 25国庆
 launch	Makefile	/^launch:$/;"	t
 len	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anon2b8a6a530408	typeref:typename:GoInt
 len	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anon75f481fe0308	typeref:typename:GoInt
@@ -1244,7 +1361,7 @@ loger	include/utils/new/loger/loger.hpp	/^class loger$/;"	c
 logfile	include/utils/new/loger/loger.hpp	/^#define logfile /;"	d
 logfile	include/utils/new/loger/loger.hpp	/^static loger logfile("log.log");$/;"	v	typeref:typename:loger
 main	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
-main_func	include/function.hpp	/^    void main_func(WXBTNEVT&) { this -> start() ; } $/;"	f	class:MyFrame	typeref:typename:void
+main_func	include/function.hpp	/^    void main_func(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 make_unique	include/utils/cstyle/cstyle_memory.hpp	/^unique_ptr<T> make_unique(size_t count = 1)$/;"	f	namespace:cstyle	typeref:typename:unique_ptr<T>
 make_unique_aligned	include/utils/cstyle/cstyle_memory.hpp	/^unique_ptr<T> make_unique_aligned(size_t alignment, size_t count = 1)$/;"	f	namespace:cstyle	typeref:typename:unique_ptr<T>
 mask_	include/utils/cstyle/cstyle_bitset.hpp	/^        unsigned char mask_;$/;"	m	class:cstyle::bitset::reference	typeref:typename:unsigned char
@@ -1255,6 +1372,7 @@ memory_move	include/utils/cstyle/cstyle_memory.hpp	/^memory_move(T* dest, const 
 memory_set	include/utils/cstyle/cstyle_memory.hpp	/^memory_set(T* dest, int value, size_t count) noexcept$/;"	f	namespace:cstyle	typeref:typename:std::enable_if_t<std::is_trivially_copyable<T>::value>
 mine	src/FuncLocked.cpp	/^void MyFrame::mine(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 minusnum	include/utils/files/PasswordFile.hpp	/^    void minusnum(int a)$/;"	f	class:PasswordFile	typeref:typename:void
+minusnum_if	include/utils/files/PasswordFile.hpp	/^    void minusnum_if(int a) {$/;"	f	class:PasswordFile	typeref:typename:void
 mode	include/utils/cstyle/cstyle_stdio.hpp	/^    enum class mode {$/;"	g	class:cstyle::file
 msg	include/clibs/xianbi/sword.hpp	/^    string msg;$/;"	m	class:functions::SwordException	typeref:typename:string
 n	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anon2b8a6a530108	typeref:typename:ptrdiff_t
@@ -1313,6 +1431,34 @@ operator [] 	include/utils/files/Cards.hpp	/^    std::string operator[] (int ind
 operator bool	include/utils/cstyle/cstyle_bitset.hpp	/^        operator bool() const noexcept$/;"	f	class:cstyle::bitset::reference
 operator bool	include/utils/smartptr.hpp	/^    explicit operator bool() const noexcept$/;"	f	class:SmartPtr
 original	include/utils/old/file_password.h	/^const std::string original = "0123456789";$/;"	v	typeref:typename:const std::string
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncBuilding.cpp.o"$/;"	s	object:0
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncCache.cpp.o"$/;"	s	object:1
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncFixed.cpp.o"$/;"	s	object:2
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncFixedFn.cpp.o"$/;"	s	object:3
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncLocked.cpp.o"$/;"	s	object:4
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncLockedFn.cpp.o"$/;"	s	object:5
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncOld.cpp.o"$/;"	s	object:6
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncOldFn.cpp.o"$/;"	s	object:7
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncPair1.cpp.o"$/;"	s	object:8
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncSimple.cpp.o"$/;"	s	object:9
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncSimpleFn.cpp.o"$/;"	s	object:10
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncUsed.cpp.o"$/;"	s	object:11
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncUsedFn.cpp.o"$/;"	s	object:12
+output	build/compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/Main.cpp.o"$/;"	s	object:13
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncBuilding.cpp.o"$/;"	s	object:0
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncCache.cpp.o"$/;"	s	object:1
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncFixed.cpp.o"$/;"	s	object:2
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncFixedFn.cpp.o"$/;"	s	object:3
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncLocked.cpp.o"$/;"	s	object:4
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncLockedFn.cpp.o"$/;"	s	object:5
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncOld.cpp.o"$/;"	s	object:6
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncOldFn.cpp.o"$/;"	s	object:7
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncPair1.cpp.o"$/;"	s	object:8
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncSimple.cpp.o"$/;"	s	object:9
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncSimpleFn.cpp.o"$/;"	s	object:10
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncUsed.cpp.o"$/;"	s	object:11
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncUsedFn.cpp.o"$/;"	s	object:12
+output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/Main.cpp.o"$/;"	s	object:13
 p	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anon2b8a6a530108	typeref:typename:const char *
 p	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anon75f481fe0108	typeref:typename:const char *
 p	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anond9b77c320108	typeref:typename:const char *
@@ -1467,7 +1613,7 @@ src/Main.s	build/Makefile	/^src\/Main.s: src\/Main.cpp.s$/;"	t
 sscanf	include/utils/cstyle/cstyle_io.hpp	/^int sscanf(const char* str, const char* fmt, Args... args)$/;"	f	namespace:cstyle	typeref:typename:int
 start	src/FuncLocked.cpp	/^void MyFrame::start()$/;"	f	class:MyFrame	typeref:typename:void
 start_time	include/utils/new/timer/timer.hpp	/^    point start_time;$/;"	m	class:timer	typeref:typename:point
-stoi函数	docs/ProjectDocs.rst	/^stoi函数$/;"	s	chapter:项目部分技术说明文档 25国庆
+stoi函数	docs/ProjectDocsLang.rst	/^stoi函数$/;"	s	chapter:项目部分技术说明文档 25国庆
 string	include/utils/cstyle/cstyle_string.hpp	/^    explicit string(const char* str)$/;"	f	class:cstyle::string
 string	include/utils/cstyle/cstyle_string.hpp	/^    string() noexcept : data_(nullptr), size_(0), capacity_(0) {}$/;"	f	class:cstyle::string
 string	include/utils/cstyle/cstyle_string.hpp	/^    string(const string& other) : string(other.data_) {}$/;"	f	class:cstyle::string
@@ -1510,12 +1656,12 @@ tsquare_free_baoshi	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_baoshi(WXBTNE
 tsquare_free_jifen	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_jifen(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_free_jinbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_jinbi(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_free_tongqian	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_tongqian(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbi	src/FuncSimple.cpp	/^void MyFrame::tsquare_jinbi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbi	src/FuncSimple.cpp	/^void MyFrame::tsquare_jinbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbi_baoshi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbi_tongqian	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbi_xianbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbi_yinbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbimh	src/FuncSimple.cpp	/^void MyFrame::tsquare_jinbimh(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbimh	src/FuncSimple.cpp	/^void MyFrame::tsquare_jinbimh(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbimh_ancient	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbimh_simple	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 uid	include/utils/rand.hpp	/^    typedef std::uniform_int_distribution<int> uid;$/;"	t	class:Rand	typeref:typename:std::uniform_int_distribution<int>
@@ -1537,25 +1683,25 @@ write	include/utils/cstyle/cstyle_stdio.hpp	/^    size_t write(const void* buf, 
 write	include/utils/old/file_password.h	/^    std::string write(int new_num)$/;"	f	class:file_password	typeref:typename:std::string
 write_file	include/utils/cstyle/cstyle_stdio.hpp	/^inline void write_file(const std::string& path, const std::string& content)$/;"	f	namespace:cstyle	typeref:typename:void
 write_update	include/utils/cstyle/cstyle_stdio.hpp	/^        write_update,  \/\/ "w+"$/;"	e	enum:cstyle::file::mode
-wxWidgets的wxTextCtrl的使用方法	docs/ProjectDocs.rst	/^wxWidgets的wxTextCtrl的使用方法$/;"	s	chapter:项目部分技术说明文档 25国庆
-wxWidgets的空wxCommandEvent	docs/ProjectDocs.rst	/^wxWidgets的空wxCommandEvent$/;"	s	chapter:项目部分技术说明文档 25国庆
+wxWidgets的wxTextCtrl的使用方法	docs/ProjectDocsLang.rst	/^wxWidgets的wxTextCtrl的使用方法$/;"	s	chapter:项目部分技术说明文档 25国庆
+wxWidgets的空wxCommandEvent	docs/ProjectDocsLang.rst	/^wxWidgets的空wxCommandEvent$/;"	s	chapter:项目部分技术说明文档 25国庆
 xianbi_square	src/FuncSimple.cpp	/^void MyFrame::xianbi_square(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 xianbi_square_1	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_1(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianbi_square_2	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_2(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianbi_square_3	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_3(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xiandan	src/FuncSimple.cpp	/^void MyFrame::xiandan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xiandan	src/FuncSimple.cpp	/^void MyFrame::xiandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he	src/FuncLocked.cpp	/^void MyFrame::xiandan_he(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he_jindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_jindan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he_shendan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_shendan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he_yindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_yindan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_show	src/FuncFixed.cpp	/^void MyFrame::xiandan_show(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xianji	src/FuncSimple.cpp	/^void MyFrame::xianji(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianji	src/FuncSimple.cpp	/^void MyFrame::xianji(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianji_get	src/FuncFixed.cpp	/^void MyFrame::xianji_get(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianji_liandan	src/FuncFixed.cpp	/^void MyFrame::xianji_liandan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xianji_use	src/FuncSimple.cpp	/^void MyFrame::xianji_use(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianji_use	src/FuncSimple.cpp	/^void MyFrame::xianji_use(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianji_use_fali	src/FuncFixed.cpp	/^void MyFrame::xianji_use_fali(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianji_use_xianqi	src/FuncFixed.cpp	/^void MyFrame::xianji_use_xianqi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xianlu	src/FuncSimple.cpp	/^void MyFrame::xianlu(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianlu	src/FuncSimple.cpp	/^void MyFrame::xianlu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianlu_get	src/FuncFixed.cpp	/^void MyFrame::xianlu_get(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianlu_get_need	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	v	namespace:lambda	typeref:typename:auto
 xianlu_next	src/FuncFixed.cpp	/^void MyFrame::xianlu_next(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
@@ -1574,30 +1720,39 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 三角形	share/docs/UTF8SomeChar.rst	/^三角形$/;"	s	chapter:部分UTF8编码的字符
 二级标题	share/docs/RSTSyntaxBasic.rst	/^二级标题$/;"	s	chapter:RST基本语法 25国庆
 作弊算法	note/ProjectNote-20251019-15:45.rst	/^作弊算法$/;"	s	chapter:领兵出征算法
-元字符*	share/docs/PerlReBasic.rst	/^元字符*$/;"	s	chapter:Perl正则表达式基本
-元字符+	share/docs/PerlReBasic.rst	/^元字符+$/;"	s	chapter:Perl正则表达式基本
-元字符.	share/docs/PerlReBasic.rst	/^元字符.$/;"	s	chapter:Perl正则表达式基本
-元字符?	share/docs/PerlReBasic.rst	/^元字符?$/;"	s	chapter:Perl正则表达式基本
-元字符\\	share/docs/PerlReBasic.rst	/^元字符\\$/;"	s	chapter:Perl正则表达式基本
 其他情况	note/ProjectNote-20251012-21:53.rst	/^其他情况$/;"	s	chapter:领兵出征电脑判断算法
 具体安排	todo/day/20251101.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/day/20251105.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/day/20251107.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/day/20251108.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/day/20251109.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/month/20251105.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/template.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 内嵌代码	share/docs/RSTSyntaxBasic.rst	/^内嵌代码$/;"	s	chapter:RST基本语法 25国庆
 半圆形	share/docs/UTF8SomeChar.rst	/^半圆形$/;"	s	chapter:部分UTF8编码的字符
-反向引用\\g{}	share/docs/PerlReBasic.rst	/^反向引用\\g{}$/;"	s	chapter:Perl正则表达式基本
 失败	note/ProjectNote-20251019-12:08.rst	/^失败$/;"	s	chapter:领兵出征奖惩
-字符集[]	share/docs/PerlReBasic.rst	/^字符集[]$/;"	s	chapter:Perl正则表达式基本
 学习平台	README.rst	/^学习平台$/;"	c
 安装	README.rst	/^安装$/;"	s	chapter:学习平台
 完成时间	todo/day/20251101.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251104.md	/^## 完成时间$/;"	s	chapter:待办事件列表
+完成时间	todo/day/20251105.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/day/20251107.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/day/20251108.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/day/20251109.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/template.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 对钩	share/docs/UTF8SomeChar.rst	/^对钩$/;"	s	chapter:部分UTF8编码的字符
-小括号对()	share/docs/PerlReBasic.rst	/^小括号对()$/;"	s	chapter:Perl正则表达式基本
+开始规划时间	todo/month/20251105.md	/^## 开始规划时间 $/;"	s	chapter:待办事件列表
 强调a	share/docs/RSTSyntaxBasic.rst	/^强调a$/;"	s	chapter:RST基本语法 25国庆
 待办事件列表	todo/day/20251101.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251104.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/day/20251105.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/day/20251107.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/day/20251108.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/day/20251109.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/month/20251105.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/template.md	/^# 待办事件列表$/;"	c
 我推荐的Neovim亮色主题	share/docs/NeovimColorschemes.rst	/^我推荐的Neovim亮色主题$/;"	c
 我推荐的Neovim暗色主题	share/docs/NeovimColorschemes.rst	/^我推荐的Neovim暗色主题$/;"	c
-择一匹配|	share/docs/PerlReBasic.rst	/^择一匹配|$/;"	s	chapter:Perl正则表达式基本
 提示	share/docs/UTF8SomeChar.rst	/^提示$/;"	s	chapter:部分UTF8编码的字符
 敌方-自己兵力<90时	note/ProjectNote-20251012-21:53.rst	/^敌方-自己兵力<90时$/;"	s	chapter:领兵出征电脑判断算法
 无序列表a	share/docs/RSTSyntaxBasic.rst	/^无序列表a$/;"	s	chapter:RST基本语法 25国庆
@@ -1605,9 +1760,6 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 有序列表	share/docs/RSTSyntaxBasic.rst	/^有序列表$/;"	s	chapter:RST基本语法 25国庆
 注意事项	README.rst	/^注意事项$/;"	s	chapter:学习平台
 特殊处理	note/ProjectNote-20251019-15:45.rst	/^特殊处理$/;"	s	chapter:领兵出征算法
-特殊字符集1	share/docs/PerlReBasic.rst	/^特殊字符集1$/;"	s	chapter:Perl正则表达式基本
-特殊字符集2	share/docs/PerlReBasic.rst	/^特殊字符集2$/;"	s	chapter:Perl正则表达式基本
-特殊字符集3	share/docs/PerlReBasic.rst	/^特殊字符集3$/;"	s	chapter:Perl正则表达式基本
 积分	note/ProjectNote-20251006-10:33.rst	/^积分$/;"	s	chapter:通用货币兑换 20251006 10:33
 第一块	note/ProjectNote-20251008-18:15.rst	/^第一块$/;"	s	chapter:领兵出征方案
 第一块	note/ProjectNote-20251012-22:00.rst	/^第一块$/;"	s	chapter:领兵出征方案修正
@@ -1624,20 +1776,24 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 简介	README.rst	/^简介$/;"	s	chapter:学习平台
 胜利	note/ProjectNote-20251019-12:08.rst	/^胜利$/;"	s	chapter:领兵出征奖惩
 自己兵力更多时	note/ProjectNote-20251012-21:53.rst	/^自己兵力更多时$/;"	s	chapter:领兵出征电脑判断算法
-花括号对{}	share/docs/PerlReBasic.rst	/^花括号对{}$/;"	s	chapter:Perl正则表达式基本
 计划内容	todo/day/20251104.md	/^## 计划内容$/;"	s	chapter:待办事件列表
 计划时间	todo/day/20251101.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/day/20251104.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/day/20251105.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/day/20251107.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/day/20251108.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/day/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/month/20251105.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/template.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 通用货币兑换 20251006 10:33	note/ProjectNote-20251006-10:33.rst	/^通用货币兑换 20251006 10:33$/;"	c
 部分UTF8编码的字符	share/docs/UTF8SomeChar.rst	/^部分UTF8编码的字符$/;"	c
-锚位	share/docs/PerlReBasic.rst	/^锚位$/;"	s	chapter:Perl正则表达式基本
 长方形	share/docs/UTF8SomeChar.rst	/^长方形$/;"	s	chapter:部分UTF8编码的字符
 项目历史	docs/ProjectHistory.md	/^# 项目历史$/;"	c
 项目历史 25国庆	docs/ProjectHistory.rst	/^项目历史 25国庆$/;"	c
 项目日志	docs/ProjectLog.md	/^# 项目日志$/;"	c
 项目日志新 25国庆	docs/ProjectLog.rst	/^项目日志新 25国庆$/;"	c
 项目日志新 25国庆	docs/ProjectLog20251007.rst	/^项目日志新 25国庆$/;"	c
-项目部分技术说明文档 25国庆	docs/ProjectDocs.rst	/^项目部分技术说明文档 25国庆$/;"	c
+项目部分技术说明文档 25国庆	docs/ProjectDocsLang.rst	/^项目部分技术说明文档 25国庆$/;"	c
 领兵出征奖惩	note/ProjectNote-20251019-12:08.rst	/^领兵出征奖惩$/;"	c
 领兵出征方案	note/ProjectNote-20251008-18:15.rst	/^领兵出征方案$/;"	c
 领兵出征方案修正	note/ProjectNote-20251012-22:00.rst	/^领兵出征方案修正$/;"	c
