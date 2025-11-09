@@ -14,9 +14,9 @@ class MyFrame : public wxFrame
 {
 public:
     MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
-  
+
     void clean_panel();
-  
+
 private:
     void start();
 
@@ -96,6 +96,7 @@ private:
     void ancient_shop(WXBTNEVT&);
     void ancient_shop_guwan(WXBTNEVT&);
     void ancient_shop_baowu(WXBTNEVT&);
+    void ancient_shop_bianli(WXBTNEVT&);
     void ancient_shop_nianjiu(WXBTNEVT&);
     void ancient_shop_nianjiu1(WXBTNEVT&);
     void ancient_shop_nianjiu2(WXBTNEVT&);
@@ -122,7 +123,7 @@ private:
     void ancient_zhengji_zhenji(WXBTNEVT&);
     void ancient_zhengji_huilu(WXBTNEVT&);
     void ancient_zhengji_miansheng(WXBTNEVT&);
-    
+
     void ancient_wuguan(WXBTNEVT&);
     void ancient_wuguan_1(WXBTNEVT&);
 
@@ -173,8 +174,10 @@ private:
     wxTimer TimeTimer;
 
     void showtime();
-    void empfunc(WXBTNEVT&){};
-    void main_func(WXBTNEVT&) { this -> start() ; } 
+    void empfunc(WXBTNEVT&) {};
+    void main_func(WXBTNEVT&) {
+        this -> start() ;
+    }
 
     void onclickys1(poly,wxTextCtrl*,wxTextCtrl*,WXEVT,wxButton*) oldblock;
 

@@ -1,3 +1,4 @@
+#include "macro.hpp"
 #include <headers.hpp>
 
 void MyFrame::all_thing_all(WXBTNEVT& evt)
@@ -280,13 +281,13 @@ void MyFrame::xianbi_square(WXBTNEVT& evt)
     MYBUTTON(btn_1, &MyFrame::xianbi_square_1, "我的物品");
     MYBUTTON(btn_2, &MyFrame::xianbi_square_2, "我的能力");
     MYBUTTON(btn_3, &MyFrame::xianbi_square_3, "我的待遇");
-    
+
     MYADDSPACER();
 
     MYBACKTOMAIN();
 
     MYUSE();
-} 
+}
 void MyFrame::ancient_clothes(WXBTNEVT& evt)
 {
     (void)evt;
@@ -472,7 +473,7 @@ void MyFrame::things_other(WXBTNEVT&)
     MYBUTTON(btn2,&MyFrame::baoshi_all,"我的宝石");
     MYBUTTON(btn3,&MyFrame::yinbi_all, "我的银币");
     MYBUTTON(btn1,&MyFrame::card_all,"我的卡牌");
-    
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::all_thing_all);
@@ -503,15 +504,15 @@ void MyFrame::ancient_shop_nianjiu(WXBTNEVT&)
 
     MYLAST(&MyFrame::ancient_shopa);
 }
-void MyFrame::ancient_juanzeng(WXBTNEVT&){
+void MyFrame::ancient_juanzeng(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("我的捐赠");
     MYSHOW(wxString(wxT("捐赠值："))+AncientVar::JuanZeng::Reader.read_str()+NEWLINE+
-            wxT("捐赠等级：")+TOSTR(AncientJuanZeng_GetLevel(
-                AncientVar::JuanZeng::Reader.read_int()
-            ))
-    );
+           wxT("捐赠等级：")+TOSTR(AncientJuanZeng_GetLevel(
+                                            AncientVar::JuanZeng::Reader.read_int()
+                                        ))
+          );
 
     MYBUTTON(btn2,&MyFrame::ancient_juanzeng_juanxian,"捐献古玩");
     MYBUTTON(btn1,&MyFrame::ancient_juanzeng_lingqu,"领取资助");
@@ -547,6 +548,7 @@ void MyFrame::ancient_shopa(WXBTNEVT& evt)
     MYBUTTON(btn2,&MyFrame::ancient_shop_guwan,"古玩店铺");
     MYBUTTON(btn3,&MyFrame::ancient_shop_baowu,"宝物店铺");
     MYBUTTON(btn4,&MyFrame::ancient_shop_nianjiu,"拈阄店铺");
+    MYBUTTON(btn5,&MyFrame::ancient_shop_bianli,"便利店铺");
 
     MYADDSPACER();
 
@@ -565,14 +567,14 @@ void MyFrame::ancient_things(WXBTNEVT& _)
     MYBUTTON(btn2,&MyFrame::ancient_things_guwan,"我的古玩");
     MYBUTTON(btn3,&MyFrame::ancient_things_baowu,"我的宝物");
     MYBUTTON(btn4,&MyFrame::ancient_things_bookshelf,"我的书籍");
-    
+
     MYADDSPACER();
 
     MYBACK(&MyFrame::ancient_square,1);
 
     MYUSE();
 }
-void MyFrame::tsquare_jinbi(WXBTNEVT&){
+void MyFrame::tsquare_jinbi(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("金币领取");
@@ -587,7 +589,7 @@ void MyFrame::tsquare_jinbi(WXBTNEVT&){
 
     MYLAST(&MyFrame::things_square);
 }
-void MyFrame::tsquare_jinbimh(WXBTNEVT&){
+void MyFrame::tsquare_jinbimh(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("金币盲盒");
@@ -600,7 +602,7 @@ void MyFrame::tsquare_jinbimh(WXBTNEVT&){
 
     MYLAST(&MyFrame::things_square);
 }
-void MyFrame::xianji(WXBTNEVT&){
+void MyFrame::xianji(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("我的仙籍");
@@ -614,7 +616,7 @@ void MyFrame::xianji(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianbi_square_1);
 }
-void MyFrame::xianji_use(WXBTNEVT&){
+void MyFrame::xianji_use(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("仙籍使用");
@@ -627,7 +629,7 @@ void MyFrame::xianji_use(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianji);
 }
-void MyFrame::xiandan(WXBTNEVT&){
+void MyFrame::xiandan(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("我的仙丹");
@@ -639,9 +641,9 @@ void MyFrame::xiandan(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianbi_square_1);
 }
-void MyFrame::xianlu(WXBTNEVT&){
+void MyFrame::xianlu(WXBTNEVT&) {
     MYINIT();
-    
+
     MYTITLENS("我的仙禄");
     MYSHOW(wxString(wxT("仙禄等级："))+Xian::Lu::Ji.read_str());
 
@@ -652,7 +654,7 @@ void MyFrame::xianlu(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianbi_square_3);
 }
-void MyFrame::ancient_guan(WXBTNEVT&){
+void MyFrame::ancient_guan(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("我的官职");
