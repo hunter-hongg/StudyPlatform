@@ -32,7 +32,7 @@ void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {
     vbox -> Add(label, FLAG_LEFT);
 
     auto ReadTo = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
-    ReadTo -> SetFont(font17);
+    ReadTo -> SetFont(font15);
     vbox -> Add(ReadTo, FLAG_LEFT);
 
     auto Submit = new wxButton(panel, wxID_ANY, wxT("兑换"));
@@ -40,7 +40,7 @@ void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {
     Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
 
     });
-    vbox -> Add(Submit, FLAG_CENTER);
+    vbox -> Add(Submit, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::ancient_shop_bianli, panel, vbox, this);
 }
