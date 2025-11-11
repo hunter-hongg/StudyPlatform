@@ -53,6 +53,7 @@ void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {
             Simple::MessageErr("输入格式错误");
             return;
         }
+        int need = t*10;
     });
     vbox -> Add(Submit, FLAG_LEFT);
 
