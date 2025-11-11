@@ -4,6 +4,7 @@
 #include "mine/MyFlags.h"
 #include "mine/MyFonts.h"
 #include "type.hpp"
+#include "var.hpp"
 #include <string>
 #include <wx/event.h>
 #include <wx/gtk/button.h>
@@ -54,6 +55,13 @@ void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {
             return;
         }
         int need = t*10;
+        if(!AncientVar::TongBiReader.canminus(need)) {
+            Simple::Message("铜钱不足");
+            return;
+        } else {
+            AncientVar::BaiYinReader.addnum(t);
+            Simple::Message("兑换成功");
+        }
     });
     vbox -> Add(Submit, FLAG_LEFT);
 
