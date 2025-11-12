@@ -11,6 +11,10 @@ void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
     btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_baiyin, this);
     grid -> Add(btn1, FLAG_CENTER);
 
+    auto btn2 = Simple::ShopButton("兑换黄金", panel, MyOrange);
+    btn2 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_baiyin, this);
+    grid -> Add(btn2, FLAG_CENTER);
+
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
