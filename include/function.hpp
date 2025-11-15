@@ -99,6 +99,7 @@ private:
     void ancient_shop_bianli(WXBTNEVT&);
     void ancient_shop_bianli_baiyin(WXBTNEVT&);
     void ancient_shop_bianli_huangjin(WXBTNEVT&);
+    void ancient_shop_bianli_tongbi(WXBTNEVT&);
     void ancient_shop_nianjiu(WXBTNEVT&);
     void ancient_shop_nianjiu1(WXBTNEVT&);
     void ancient_shop_nianjiu2(WXBTNEVT&);
