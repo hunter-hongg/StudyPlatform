@@ -545,10 +545,10 @@ void MyFrame::ancient_shopa(WXBTNEVT& evt)
     MYTITLE("古代店铺");
 
     MYBUTTON(btn1,&MyFrame::ancient_shop,"普通店铺");
+    MYBUTTON(btn5,&MyFrame::ancient_shop_bianli_all,"便利店铺");
     MYBUTTON(btn2,&MyFrame::ancient_shop_guwan,"古玩店铺");
     MYBUTTON(btn3,&MyFrame::ancient_shop_baowu,"宝物店铺");
     MYBUTTON(btn4,&MyFrame::ancient_shop_nianjiu,"拈阄店铺");
-    MYBUTTON(btn5,&MyFrame::ancient_shop_bianli,"便利店铺");
 
     MYADDSPACER();
 
