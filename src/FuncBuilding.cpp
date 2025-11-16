@@ -1,3 +1,4 @@
+#include "func/simple.hpp"
 #include "headers.hpp"
 #include "var.hpp"
 
@@ -16,16 +17,20 @@ void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
     btn2 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_huangjin, this);
     grid -> Add(btn2, FLAG_CENTER);
 
+    auto btn3 = Simple::ShopButton("兑换铜钱", panel, MyOrange);
+    btn3 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_tongbi, this);
+    grid -> Add(btn3, FLAG_CENTER);
+
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
 }
-void MyFrame::ancient_shop_bianli_huangjin(WXBTNEVT&) {
+void MyFrame::ancient_shop_bianli_tongbi(WXBTNEVT&) {
     wxBoxSizer* vbox = Simple::Init(panel, this);
 
-    Simple::Title("兑换黄金", panel, vbox);
+    Simple::Title("兑换铜钱", panel, vbox);
 
-    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少黄金"));
+    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少铜钱"));
     label->SetFont(font17);
     vbox -> Add(label, FLAG_LEFT);
 
@@ -47,12 +52,16 @@ void MyFrame::ancient_shop_bianli_huangjin(WXBTNEVT&) {
             Simple::MessageErr("输入格式错误");
             return;
         }
-        int need = t*10;
-        if(!AncientVar::BaiYinReader.canminus(need)) {
-            Simple::Message("白银不足");
+        if(t % 100 != 0) {
+            Simple::MessageErr("铜钱需要以100个为单位");
+            return;
+        }
+        int need = t/100;
+        if(!AncientVar::HuangJinReader.canminus(need)) {
+            Simple::Message("黄金不足");
             return;
         } else {
-            AncientVar::HuangJinReader.addnum(t);
+            AncientVar::TongBiReader.addnum(t);
             Simple::Message("兑换成功");
         }
     });

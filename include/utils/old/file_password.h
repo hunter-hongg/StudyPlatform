@@ -14,7 +14,7 @@ class file_password
 {
 public:
     // 构造函数，检查密码是否包含重复字符
-    file_password(const std::string& fn, const std::string& p) : file_name(fn)
+    file_password(const std::string& filename_, const std::string& p) : file_name(filename_)
     {
         std::unordered_set<char> charSet;
         bool validPassword = true;

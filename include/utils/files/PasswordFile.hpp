@@ -6,10 +6,10 @@
 class PasswordFile: protected file_password
 {
 public:
-    PasswordFile(const std::string& fn, const std::string& p):file_password(fn,p) {}
-    PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) {
+    PasswordFile(const std::string& filename_, const std::string& p):file_password(filename_,p) {}
+    PasswordFile(const std::string& filename_, const std::string& p, int d):file_password(filename_,p) {
         std::error_code ec;
-        if (!std::filesystem::exists(fn, ec)) {
+        if (!std::filesystem::exists(filename_, ec)) {
             this -> write(d) ;
         }
     }
