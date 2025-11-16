@@ -1,5 +1,6 @@
 #include "func/simple.hpp"
 #include "headers.hpp"
+#include "mine/MyColour.h"
 #include "type.hpp"
 #include <wx/sizer.h>
 
@@ -31,5 +32,8 @@ void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
 
     Simple::Title("便利店铺", panel, vbox);
 
-    auto btn1 = Simple::Button(&MyFrame::ancient_shop_bianli, "货币便利店铺", wxPanel *panel, wxBoxSizer *vbox, T *self)
+    auto btn1 = Simple::Button(&MyFrame::ancient_shop_bianli, "货币便利店铺", panel, vbox, this);
+    btn1 -> SetForegroundColour(MyDarkRed);
+
+    Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
 }
