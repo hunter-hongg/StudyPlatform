@@ -13,11 +13,13 @@ public:
 class MyFrame : public wxFrame
 {
 public:
+
     MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
 
     void clean_panel();
 
-private:
+protected:
+
     void start();
 
     void time_clock(WXBTNEVT&);
@@ -96,6 +98,7 @@ private:
     void ancient_shop(WXBTNEVT&);
     void ancient_shop_guwan(WXBTNEVT&);
     void ancient_shop_baowu(WXBTNEVT&);
+    void ancient_shop_bianli_all(WXBTNEVT&); // 新总板块
     void ancient_shop_bianli(WXBTNEVT&);
     void ancient_shop_bianli_baiyin(WXBTNEVT&);
     void ancient_shop_bianli_huangjin(WXBTNEVT&);
