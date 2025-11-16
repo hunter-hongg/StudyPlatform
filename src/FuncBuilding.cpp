@@ -54,6 +54,7 @@ void MyFrame::ancient_shop_bianli_tongbi(WXBTNEVT&) {
         }
         if(t % 100 != 0) {
             Simple::MessageErr("铜钱需要以100个为单位");
+            return;
         }
         int need = t/100;
         if(!AncientVar::HuangJinReader.canminus(need)) {
