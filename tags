@@ -30,17 +30,11 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 13	compile_commands.json	/^{$/;"	o
 2	build/compile_commands.json	/^{$/;"	o
 2	compile_commands.json	/^{$/;"	o
-2025-1-28	docs/ProjectHistory.md	/^## 2025-1-28$/;"	s	chapter:项目历史
 2025-1-28	docs/ProjectHistory.rst	/^2025-1-28$/;"	s	chapter:项目历史 25国庆
-2025-1-29	docs/ProjectHistory.md	/^## 2025-1-29$/;"	s	chapter:项目历史
 2025-1-29	docs/ProjectHistory.rst	/^2025-1-29$/;"	s	chapter:项目历史 25国庆
-2025-1-30	docs/ProjectHistory.md	/^## 2025-1-30$/;"	s	chapter:项目历史
 2025-1-30	docs/ProjectHistory.rst	/^2025-1-30$/;"	s	chapter:项目历史 25国庆
-2025-10-1	docs/ProjectLog.md	/^## 2025-10-1 $/;"	s	chapter:项目日志
 2025-10-1	docs/ProjectLog.rst	/^2025-10-1$/;"	s	chapter:项目日志新 25国庆
 2025-10-1	docs/ProjectLog20251007.rst	/^2025-10-1$/;"	s	chapter:项目日志新 25国庆
-2025-10-2	docs/ProjectLog.md	/^## 2025-10-2 $/;"	s	chapter:项目日志
-2025-10-3	docs/ProjectLog.md	/^## 2025-10-3$/;"	s	chapter:项目日志
 2025-10-3	docs/ProjectLog.rst	/^2025-10-3$/;"	s	chapter:项目日志新 25国庆
 2025-10-3	docs/ProjectLog20251007.rst	/^2025-10-3$/;"	s	chapter:项目日志新 25国庆
 2025-10-4	docs/ProjectLog.rst	/^2025-10-4$/;"	s	chapter:项目日志新 25国庆
@@ -61,162 +55,11 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 2025-11-6	docs/ProjectLog.rst	/^2025-11-6$/;"	s	chapter:项目日志新 25国庆
 2025-11-8	docs/ProjectLog.rst	/^2025-11-8$/;"	s	chapter:项目日志新 25国庆
 2025-11-9	docs/ProjectLog.rst	/^2025-11-9$/;"	s	chapter:项目日志新 25国庆
-2025-5-10	docs/ProjectHistory.md	/^## 2025-5-10$/;"	s	chapter:项目历史
 2025-5-10	docs/ProjectHistory.rst	/^2025-5-10$/;"	s	chapter:项目历史 25国庆
-2025-5-11	docs/ProjectLog.md	/^## 2025-5-11$/;"	s	chapter:项目日志
-2025-5-12	docs/ProjectLog.md	/^## 2025-5-12$/;"	s	chapter:项目日志
-2025-5-13	docs/ProjectLog.md	/^## 2025-5-13$/;"	s	chapter:项目日志
-2025-5-14	docs/ProjectLog.md	/^## 2025-5-14$/;"	s	chapter:项目日志
-2025-5-15	docs/ProjectLog.md	/^## 2025-5-15$/;"	s	chapter:项目日志
-2025-5-16	docs/ProjectLog.md	/^## 2025-5-16$/;"	s	chapter:项目日志
-2025-5-17	docs/ProjectLog.md	/^## 2025-5-17$/;"	s	chapter:项目日志
-2025-5-18	docs/ProjectLog.md	/^## 2025-5-18$/;"	s	chapter:项目日志
-2025-5-19	docs/ProjectLog.md	/^## 2025-5-19$/;"	s	chapter:项目日志
-2025-5-20	docs/ProjectLog.md	/^## 2025-5-20$/;"	s	chapter:项目日志
-2025-5-21	docs/ProjectLog.md	/^## 2025-5-21$/;"	s	chapter:项目日志
-2025-5-22	docs/ProjectLog.md	/^## 2025-5-22$/;"	s	chapter:项目日志
-2025-5-23	docs/ProjectLog.md	/^## 2025-5-23$/;"	s	chapter:项目日志
-2025-5-24	docs/ProjectLog.md	/^## 2025-5-24$/;"	s	chapter:项目日志
-2025-5-25	docs/ProjectLog.md	/^## 2025-5-25$/;"	s	chapter:项目日志
-2025-5-26	docs/ProjectLog.md	/^## 2025-5-26$/;"	s	chapter:项目日志
-2025-5-27	docs/ProjectLog.md	/^## 2025-5-27$/;"	s	chapter:项目日志
-2025-5-28	docs/ProjectLog.md	/^## 2025-5-28$/;"	s	chapter:项目日志
-2025-5-29	docs/ProjectLog.md	/^## 2025-5-29$/;"	s	chapter:项目日志
-2025-5-30	docs/ProjectLog.md	/^## 2025-5-30$/;"	s	chapter:项目日志
-2025-5-31	docs/ProjectLog.md	/^## 2025-5-31$/;"	s	chapter:项目日志
-2025-5-6	docs/ProjectHistory.md	/^## 2025-5-6$/;"	s	chapter:项目历史
 2025-5-6	docs/ProjectHistory.rst	/^2025-5-6$/;"	s	chapter:项目历史 25国庆
-2025-5-7	docs/ProjectHistory.md	/^## 2025-5-7$/;"	s	chapter:项目历史
 2025-5-7	docs/ProjectHistory.rst	/^2025-5-7$/;"	s	chapter:项目历史 25国庆
-2025-5-8	docs/ProjectHistory.md	/^## 2025-5-8$/;"	s	chapter:项目历史
 2025-5-8	docs/ProjectHistory.rst	/^2025-5-8$/;"	s	chapter:项目历史 25国庆
-2025-5-9	docs/ProjectHistory.md	/^## 2025-5-9$/;"	s	chapter:项目历史
 2025-5-9	docs/ProjectHistory.rst	/^2025-5-9$/;"	s	chapter:项目历史 25国庆
-2025-6-1	docs/ProjectLog.md	/^## 2025-6-1$/;"	s	chapter:项目日志
-2025-6-10	docs/ProjectLog.md	/^## 2025-6-10$/;"	s	chapter:项目日志
-2025-6-11	docs/ProjectLog.md	/^## 2025-6-11$/;"	s	chapter:项目日志
-2025-6-12	docs/ProjectLog.md	/^## 2025-6-12$/;"	s	chapter:项目日志
-2025-6-13	docs/ProjectLog.md	/^## 2025-6-13$/;"	s	chapter:项目日志
-2025-6-14	docs/ProjectLog.md	/^## 2025-6-14$/;"	s	chapter:项目日志
-2025-6-15	docs/ProjectLog.md	/^## 2025-6-15$/;"	s	chapter:项目日志
-2025-6-16	docs/ProjectLog.md	/^## 2025-6-16$/;"	s	chapter:项目日志
-2025-6-17	docs/ProjectLog.md	/^## 2025-6-17$/;"	s	chapter:项目日志
-2025-6-18	docs/ProjectLog.md	/^## 2025-6-18$/;"	s	chapter:项目日志
-2025-6-19	docs/ProjectLog.md	/^## 2025-6-19$/;"	s	chapter:项目日志
-2025-6-2	docs/ProjectLog.md	/^## 2025-6-2$/;"	s	chapter:项目日志
-2025-6-20	docs/ProjectLog.md	/^## 2025-6-20$/;"	s	chapter:项目日志
-2025-6-21	docs/ProjectLog.md	/^## 2025-6-21$/;"	s	chapter:项目日志
-2025-6-22	docs/ProjectLog.md	/^## 2025-6-22$/;"	s	chapter:项目日志
-2025-6-23	docs/ProjectLog.md	/^## 2025-6-23$/;"	s	chapter:项目日志
-2025-6-24	docs/ProjectLog.md	/^## 2025-6-24$/;"	s	chapter:项目日志
-2025-6-25	docs/ProjectLog.md	/^## 2025-6-25$/;"	s	chapter:项目日志
-2025-6-26	docs/ProjectLog.md	/^## 2025-6-26$/;"	s	chapter:项目日志
-2025-6-27	docs/ProjectLog.md	/^## 2025-6-27$/;"	s	chapter:项目日志
-2025-6-28	docs/ProjectLog.md	/^## 2025-6-28$/;"	s	chapter:项目日志
-2025-6-29	docs/ProjectLog.md	/^## 2025-6-29$/;"	s	chapter:项目日志
-2025-6-3	docs/ProjectLog.md	/^## 2025-6-3$/;"	s	chapter:项目日志
-2025-6-30	docs/ProjectLog.md	/^## 2025-6-30$/;"	s	chapter:项目日志
-2025-6-4	docs/ProjectLog.md	/^## 2025-6-4$/;"	s	chapter:项目日志
-2025-6-5	docs/ProjectLog.md	/^## 2025-6-5$/;"	s	chapter:项目日志
-2025-6-6	docs/ProjectLog.md	/^## 2025-6-6$/;"	s	chapter:项目日志
-2025-6-7	docs/ProjectLog.md	/^## 2025-6-7$/;"	s	chapter:项目日志
-2025-6-8	docs/ProjectLog.md	/^## 2025-6-8$/;"	s	chapter:项目日志
-2025-6-9	docs/ProjectLog.md	/^## 2025-6-9$/;"	s	chapter:项目日志
-2025-7-1	docs/ProjectLog.md	/^## 2025-7-1$/;"	s	chapter:项目日志
-2025-7-10	docs/ProjectLog.md	/^## 2025-7-10$/;"	s	chapter:项目日志
-2025-7-11	docs/ProjectLog.md	/^## 2025-7-11$/;"	s	chapter:项目日志
-2025-7-12	docs/ProjectLog.md	/^## 2025-7-12$/;"	s	chapter:项目日志
-2025-7-13	docs/ProjectLog.md	/^## 2025-7-13$/;"	s	chapter:项目日志
-2025-7-14	docs/ProjectLog.md	/^## 2025-7-14$/;"	s	chapter:项目日志
-2025-7-15	docs/ProjectLog.md	/^## 2025-7-15$/;"	s	chapter:项目日志
-2025-7-16	docs/ProjectLog.md	/^## 2025-7-16$/;"	s	chapter:项目日志
-2025-7-17	docs/ProjectLog.md	/^## 2025-7-17$/;"	s	chapter:项目日志
-2025-7-18	docs/ProjectLog.md	/^## 2025-7-18$/;"	s	chapter:项目日志
-2025-7-19	docs/ProjectLog.md	/^## 2025-7-19$/;"	s	chapter:项目日志
-2025-7-2	docs/ProjectLog.md	/^## 2025-7-2$/;"	s	chapter:项目日志
-2025-7-20	docs/ProjectLog.md	/^## 2025-7-20$/;"	s	chapter:项目日志
-2025-7-21	docs/ProjectLog.md	/^## 2025-7-21$/;"	s	chapter:项目日志
-2025-7-22	docs/ProjectLog.md	/^## 2025-7-22$/;"	s	chapter:项目日志
-2025-7-23	docs/ProjectLog.md	/^## 2025-7-23$/;"	s	chapter:项目日志
-2025-7-24	docs/ProjectLog.md	/^## 2025-7-24$/;"	s	chapter:项目日志
-2025-7-25	docs/ProjectLog.md	/^## 2025-7-25$/;"	s	chapter:项目日志
-2025-7-26	docs/ProjectLog.md	/^## 2025-7-26$/;"	s	chapter:项目日志
-2025-7-27	docs/ProjectLog.md	/^## 2025-7-27$/;"	s	chapter:项目日志
-2025-7-28	docs/ProjectLog.md	/^## 2025-7-28$/;"	s	chapter:项目日志
-2025-7-29	docs/ProjectLog.md	/^## 2025-7-29$/;"	s	chapter:项目日志
-2025-7-3	docs/ProjectLog.md	/^## 2025-7-3$/;"	s	chapter:项目日志
-2025-7-30	docs/ProjectLog.md	/^## 2025-7-30$/;"	s	chapter:项目日志
-2025-7-31	docs/ProjectLog.md	/^## 2025-7-31$/;"	s	chapter:项目日志
-2025-7-4	docs/ProjectLog.md	/^## 2025-7-4$/;"	s	chapter:项目日志
-2025-7-5	docs/ProjectLog.md	/^## 2025-7-5$/;"	s	chapter:项目日志
-2025-7-6	docs/ProjectLog.md	/^## 2025-7-6$/;"	s	chapter:项目日志
-2025-7-7	docs/ProjectLog.md	/^## 2025-7-7$/;"	s	chapter:项目日志
-2025-7-8	docs/ProjectLog.md	/^## 2025-7-8$/;"	s	chapter:项目日志
-2025-7-9	docs/ProjectLog.md	/^## 2025-7-9$/;"	s	chapter:项目日志
-2025-8-1	docs/ProjectLog.md	/^## 2025-8-1$/;"	s	chapter:项目日志
-2025-8-10	docs/ProjectLog.md	/^## 2025-8-10$/;"	s	chapter:项目日志
-2025-8-11	docs/ProjectLog.md	/^## 2025-8-11 $/;"	s	chapter:项目日志
-2025-8-12	docs/ProjectLog.md	/^## 2025-8-12$/;"	s	chapter:项目日志
-2025-8-13	docs/ProjectLog.md	/^## 2025-8-13$/;"	s	chapter:项目日志
-2025-8-14	docs/ProjectLog.md	/^## 2025-8-14$/;"	s	chapter:项目日志
-2025-8-15	docs/ProjectLog.md	/^## 2025-8-15$/;"	s	chapter:项目日志
-2025-8-16	docs/ProjectLog.md	/^## 2025-8-16$/;"	s	chapter:项目日志
-2025-8-17	docs/ProjectLog.md	/^## 2025-8-17$/;"	s	chapter:项目日志
-2025-8-18	docs/ProjectLog.md	/^## 2025-8-18 $/;"	s	chapter:项目日志
-2025-8-19	docs/ProjectLog.md	/^## 2025-8-19$/;"	s	chapter:项目日志
-2025-8-2	docs/ProjectLog.md	/^## 2025-8-2$/;"	s	chapter:项目日志
-2025-8-20	docs/ProjectLog.md	/^## 2025-8-20$/;"	s	chapter:项目日志
-2025-8-21	docs/ProjectLog.md	/^## 2025-8-21$/;"	s	chapter:项目日志
-2025-8-22	docs/ProjectLog.md	/^## 2025-8-22$/;"	s	chapter:项目日志
-2025-8-23	docs/ProjectLog.md	/^## 2025-8-23$/;"	s	chapter:项目日志
-2025-8-24	docs/ProjectLog.md	/^## 2025-8-24$/;"	s	chapter:项目日志
-2025-8-25	docs/ProjectLog.md	/^## 2025-8-25$/;"	s	chapter:项目日志
-2025-8-26	docs/ProjectLog.md	/^## 2025-8-26$/;"	s	chapter:项目日志
-2025-8-27	docs/ProjectLog.md	/^## 2025-8-27$/;"	s	chapter:项目日志
-2025-8-28	docs/ProjectLog.md	/^## 2025-8-28$/;"	s	chapter:项目日志
-2025-8-29	docs/ProjectLog.md	/^## 2025-8-29$/;"	s	chapter:项目日志
-2025-8-3	docs/ProjectLog.md	/^## 2025-8-3$/;"	s	chapter:项目日志
-2025-8-30	docs/ProjectLog.md	/^## 2025-8-30$/;"	s	chapter:项目日志
-2025-8-31	docs/ProjectLog.md	/^## 2025-8-31$/;"	s	chapter:项目日志
-2025-8-4	docs/ProjectLog.md	/^## 2025-8-4$/;"	s	chapter:项目日志
-2025-8-5	docs/ProjectLog.md	/^## 2025-8-5$/;"	s	chapter:项目日志
-2025-8-6	docs/ProjectLog.md	/^## 2025-8-6$/;"	s	chapter:项目日志
-2025-8-7	docs/ProjectLog.md	/^## 2025-8-7$/;"	s	chapter:项目日志
-2025-8-8	docs/ProjectLog.md	/^## 2025-8-8$/;"	s	chapter:项目日志
-2025-8-9	docs/ProjectLog.md	/^## 2025-8-9$/;"	s	chapter:项目日志
-2025-9-1	docs/ProjectLog.md	/^## 2025-9-1$/;"	s	chapter:项目日志
-2025-9-10	docs/ProjectLog.md	/^## 2025-9-10$/;"	s	chapter:项目日志
-2025-9-11	docs/ProjectLog.md	/^## 2025-9-11$/;"	s	chapter:项目日志
-2025-9-12	docs/ProjectLog.md	/^## 2025-9-12$/;"	s	chapter:项目日志
-2025-9-13	docs/ProjectLog.md	/^## 2025-9-13$/;"	s	chapter:项目日志
-2025-9-14	docs/ProjectLog.md	/^## 2025-9-14$/;"	s	chapter:项目日志
-2025-9-15	docs/ProjectLog.md	/^## 2025-9-15$/;"	s	chapter:项目日志
-2025-9-16	docs/ProjectLog.md	/^## 2025-9-16$/;"	s	chapter:项目日志
-2025-9-17	docs/ProjectLog.md	/^## 2025-9-17$/;"	s	chapter:项目日志
-2025-9-18	docs/ProjectLog.md	/^## 2025-9-18$/;"	s	chapter:项目日志
-2025-9-19	docs/ProjectLog.md	/^## 2025-9-19$/;"	s	chapter:项目日志
-2025-9-2	docs/ProjectLog.md	/^## 2025-9-2$/;"	s	chapter:项目日志
-2025-9-20	docs/ProjectLog.md	/^## 2025-9-20$/;"	s	chapter:项目日志
-2025-9-21	docs/ProjectLog.md	/^## 2025-9-21$/;"	s	chapter:项目日志
-2025-9-22	docs/ProjectLog.md	/^## 2025-9-22 $/;"	s	chapter:项目日志
-2025-9-23	docs/ProjectLog.md	/^## 2025-9-23$/;"	s	chapter:项目日志
-2025-9-24	docs/ProjectLog.md	/^## 2025-9-24 $/;"	s	chapter:项目日志
-2025-9-25	docs/ProjectLog.md	/^## 2025-9-25 $/;"	s	chapter:项目日志
-2025-9-26	docs/ProjectLog.md	/^## 2025-9-26 $/;"	s	chapter:项目日志
-2025-9-27	docs/ProjectLog.md	/^## 2025-9-27 $/;"	s	chapter:项目日志
-2025-9-28	docs/ProjectLog.md	/^## 2025-9-28$/;"	s	chapter:项目日志
-2025-9-29	docs/ProjectLog.md	/^## 2025-9-29 $/;"	s	chapter:项目日志
-2025-9-3	docs/ProjectLog.md	/^## 2025-9-3$/;"	s	chapter:项目日志
-2025-9-30	docs/ProjectLog.md	/^## 2025-9-30$/;"	s	chapter:项目日志
-2025-9-4	docs/ProjectLog.md	/^## 2025-9-4$/;"	s	chapter:项目日志
-2025-9-5	docs/ProjectLog.md	/^## 2025-9-5$/;"	s	chapter:项目日志
-2025-9-6	docs/ProjectLog.md	/^## 2025-9-6$/;"	s	chapter:项目日志
-2025-9-7	docs/ProjectLog.md	/^## 2025-9-7$/;"	s	chapter:项目日志
-2025-9-8	docs/ProjectLog.md	/^## 2025-9-8$/;"	s	chapter:项目日志
-2025-9-8 周计划	docs/20250908周计划.md	/^# 2025-9-8 周计划$/;"	c
-2025-9-9	docs/ProjectLog.md	/^## 2025-9-9$/;"	s	chapter:项目日志
-20250908周进度	docs/20250908周进度.md	/^# 20250908周进度$/;"	c
-20250915周计划	docs/20250915周计划.md	/^# 20250915周计划$/;"	c
 3	build/compile_commands.json	/^{$/;"	o
 3	compile_commands.json	/^{$/;"	o
 4	build/compile_commands.json	/^{$/;"	o
@@ -290,9 +133,9 @@ BaoWuChaFiles	include/ffi/zig/AncientBaoWuCha/AncientBaoWuCha.h	/^} BaoWuChaFile
 BaoWuChaReader	include/var.hpp	/^static BaoWuChaFiles* BaoWuChaReader = BaoWuChaFiles_Make($/;"	v	namespace:AncientVar	typeref:typename:BaoWuChaFiles *
 BaoWuStruct	include/var.hpp	/^static AncientBaoWuStruct* BaoWuStruct = AncientBaoWuStruct_Create($/;"	v	namespace:AncientVar	typeref:typename:AncientBaoWuStruct *
 Bi	include/var.hpp	/^static PasswordFile Bi(FilePathXianDan+"bd.c.xdccm.eo4", "fqoeirm124");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
-BigIntFile	include/utils/files/BigIntFile.hpp	/^    BigIntFile(std::string f) { file = f ; }$/;"	f	class:BigIntFile
-BigIntFile	include/utils/files/BigIntFile.hpp	/^class BigIntFile { $/;"	c
-BigIntFile的Add函数	docs/ProjectDocsLang.rst	/^BigIntFile的Add函数$/;"	s	chapter:项目部分技术说明文档 25国庆
+BigIntFile	include/utils/files/BigIntFile.hpp	/^    BigIntFile(std::string f) {$/;"	f	class:BigIntFile
+BigIntFile	include/utils/files/BigIntFile.hpp	/^class BigIntFile {$/;"	c
+BigIntFile的Add函数	docs/ProjectDocsLang.rst	/^BigIntFile的Add函数$/;"	s	chapter:项目说明文档 技术篇
 BingLi	include/var.hpp	/^namespace BingLi$/;"	n	namespace:AncientVar::WuGuan
 Black	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Black	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
@@ -446,7 +289,7 @@ CXX_STD_17	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#defin
 CXX_STD_20	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_20 /;"	d	file:
 CXX_STD_23	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_23 /;"	d	file:
 CXX_STD_98	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_98 /;"	d	file:
-CallBack1	src/FuncFixedFn.cpp	/^void MyFrame::CallBack1(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+CallBack1	src/FuncFixedFn.cpp	/^void MyFrame::CallBack1(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 CanLingQu	include/var.hpp	/^static CheckFile CanLingQu(FilePathXianLu+"ck.clq.cc.3", 4091, 1);$/;"	v	namespace:Files::Xian::Lu	typeref:typename:CheckFile
 Card	include/var.hpp	/^namespace Card$/;"	n
 CardHan1	include/var.hpp	/^static Cards CardHan1(FilePathCard+"h1cac1.cac",Han1Vec,7184);$/;"	v	namespace:Card	typeref:typename:Cards
@@ -471,11 +314,11 @@ ChouDuan	include/ffi/zig/AncientBaoWu/AncientBaoWu.h	/^    char* ChouDuan;$/;"	m
 ChouDuan	include/ffi/zig/AncientBaoWu/AncientBaoWu.h	/^    int32_t ChouDuan;$/;"	m	struct:__anon67df359a0208	typeref:typename:int32_t
 ChuJi	include/var.hpp	/^static PasswordFile ChuJi($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 ChuJi	include/var.hpp	/^static PasswordFile ChuJi(FilePathAncientWuGuan+"wgll.eo.cj.cc.30", "form30296l");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-ChuJiMin	include/var.hpp	/^    ChuJiMin = 6,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+ChuJiMin	include/var.hpp	/^ChuJiMin = 6,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 CiQiReader	include/var.hpp	/^static PasswordFile CiQiReader(FilePath+"cq.avgwc","so3pfm10a2");$/;"	v	namespace:AncientVar::Guwan	typeref:typename:PasswordFile
 DATECHECK_H	include/utils/old/datecheck.h	/^#define DATECHECK_H$/;"	d
 DEC	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
-Dan	include/var.hpp	/^namespace Dan{$/;"	n	namespace:Files::Xian
+Dan	include/var.hpp	/^namespace Dan {$/;"	n	namespace:Files::Xian
 DateCheck	include/utils/old/datecheck.h	/^    DateCheck(string file1,int add)$/;"	f	class:DateCheck
 DateCheck	include/utils/old/datecheck.h	/^class DateCheck$/;"	c
 EQUALS	build/Makefile	/^EQUALS = =$/;"	m
@@ -519,10 +362,10 @@ GO_CGO_PROLOGUE_H	.headers_go/libFFI_Go_BookShelfShouCang.h	/^#define GO_CGO_PRO
 GO_CGO_PROLOGUE_H	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^#define GO_CGO_PROLOGUE_H$/;"	d
 GaoJi	include/var.hpp	/^static PasswordFile GaoJi($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 GaoJi	include/var.hpp	/^static PasswordFile GaoJi(FilePathAncientWuGuan+"wgll.em.gaoj.do3.cc", "dmei45103k");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-GaoJiMin	include/var.hpp	/^    GaoJiMin = 20, $/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+GaoJiMin	include/var.hpp	/^GaoJiMin = 20,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 Get	include/utils/files/Cards.hpp	/^    std::vector<std::string> Get()$/;"	f	class:Cards	typeref:typename:std::vector<std::string>
 Get	include/var.hpp	/^static Ancient::WuGuanPinJi Get(FilePathAncientWuGuan+"wgpj.cc.dfo..", "diof204k58");$/;"	v	namespace:AncientVar::WuGuan::Pin	typeref:typename:Ancient::WuGuanPinJi
-GetFile	include/utils/files/BigIntFile.hpp	/^    std::string GetFile() { return file ; }$/;"	f	class:BigIntFile	typeref:typename:std::string
+GetFile	include/utils/files/BigIntFile.hpp	/^    std::string GetFile() {$/;"	f	class:BigIntFile	typeref:typename:std::string
 GetRandom	include/utils/rand.hpp	/^static Rand GetRandom;$/;"	v	typeref:typename:Rand
 Global	include/global.hpp	/^namespace Global {$/;"	n
 GoChan	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef void *GoChan;$/;"	t	typeref:typename:void *
@@ -600,7 +443,7 @@ Han1Vec	include/var.hpp	/^static std::vector<std::string> Han1Vec( {$/;"	v	names
 HuangJinReader	include/var.hpp	/^static PasswordFile HuangJinReader(FilePath+"huaj.avc","dgp395sk10");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
 Init	include/func/simple.hpp	/^  static fn Init(wxPanel* panel, T* self) -> wxBoxSizer* {$/;"	f	namespace:Simple	typeref:typename:fn
 IsOk	include/utils/files/BoolFile.h	/^    bool IsOk() {$/;"	f	class:BoolFile	typeref:typename:bool
-IsUsed	include/var.hpp	/^  namespace IsUsed{$/;"	n	namespace:LiHe
+IsUsed	include/var.hpp	/^namespace IsUsed {$/;"	n	namespace:LiHe
 Ji	include/var.hpp	/^static PasswordFile Ji(FilePathXianLu+"xlj.ds.cc.o239", "done20596w");$/;"	v	namespace:Files::Xian::Lu	typeref:typename:PasswordFile
 JiFenCheck	include/var.hpp	/^static CheckFile JiFenCheck(FilePathThingsSquare+"tsjfcc.ck",6402,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
 JiFenReader	include/var.hpp	/^static PasswordFile JiFenReader(FilePath+"jifc.txt","hsiep10475");$/;"	v	namespace:Files	typeref:typename:PasswordFile
@@ -620,7 +463,7 @@ JinZhu	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^	char* JinZhu;$/;"	m	struct:__
 JinZhu	include/ffi/zig/AncientJinYinZhu/AncientJinYinZhu.h	/^    char* JinZhu;$/;"	m	struct:__anon6cd0582e0108	typeref:typename:char *
 JingRui	include/var.hpp	/^static PasswordFile JingRui($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 JingRui	include/var.hpp	/^static PasswordFile JingRui(FilePathAncientWuGuan+"wgll.emf.ro.jingr.di.cc", "1094nfmwl2");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-JingRuiMin	include/var.hpp	/^    JingRuiMin = 40, $/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+JingRuiMin	include/var.hpp	/^JingRuiMin = 40,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 JuanZeng	include/var.hpp	/^namespace JuanZeng$/;"	n	namespace:AncientVar
 Level1	include/ffi/zig/BookShelf/BookShelf.h	/^    char* Level1;$/;"	m	struct:__anon457ac8740108	typeref:typename:char *
 Level1	include/ffi/zig/BookShelf/BookShelf.h	/^    int32_t Level1;$/;"	m	struct:__anon457ac8740208	typeref:typename:int32_t
@@ -631,7 +474,7 @@ Level3	include/ffi/zig/BookShelf/BookShelf.h	/^    int32_t Level3;$/;"	m	struct:
 LiHe	include/var.hpp	/^namespace LiHe$/;"	n
 LiLiang	include/var.hpp	/^namespace LiLiang$/;"	n	namespace:AncientVar::WuGuan
 LingQuCheck	include/var.hpp	/^static CheckFile LingQuCheck(FilePathAncient+"jzrd.conc.lqck.conc",1250,1);$/;"	v	namespace:AncientVar::JuanZeng	typeref:typename:CheckFile
-Lu	include/var.hpp	/^namespace Lu{$/;"	n	namespace:Files::Xian
+Lu	include/var.hpp	/^namespace Lu {$/;"	n	namespace:Files::Xian
 MYADDSPACER	include/macro.hpp	/^#define MYADDSPACER(/;"	d
 MYBACK	include/macro.hpp	/^#define MYBACK(/;"	d
 MYBACKTOMAIN	include/macro.hpp	/^#define MYBACKTOMAIN(/;"	d
@@ -640,7 +483,7 @@ MYBUTTONLAMBDA	include/macro.hpp	/^#define MYBUTTONLAMBDA(/;"	d
 MYEND	include/macro.hpp	/^#define MYEND(/;"	d
 MYINIT	include/macro.hpp	/^#define MYINIT(/;"	d
 MYLAST	include/macro.hpp	/^#define MYLAST(/;"	d
-MYLAST宏的用处	docs/ProjectDocsSimple.rst	/^MYLAST宏的用处$/;"	c
+MYLAST宏的用处	docs/ProjectDocsSimple.rst	/^MYLAST宏的用处$/;"	s	chapter:项目说明文档 实际篇
 MYMESSAGE	include/macro.hpp	/^#define MYMESSAGE(/;"	d
 MYSHOPBUTTON	include/macro.hpp	/^#define MYSHOPBUTTON(/;"	d
 MYSHOW	include/macro.hpp	/^#define MYSHOW(/;"	d
@@ -680,22 +523,21 @@ PLATFORM_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# def
 POLY_HXX	include/utils/poly.hpp	/^#define POLY_HXX$/;"	d
 Pao	include/clibs/ancient/pao.hpp	/^enum class Pao {$/;"	g	namespace:Ancient
 Pao	include/var.hpp	/^static Ancient::AncientPao Pao(FilePathPao+"paon.paoc",FilePathPao+"paoa.paoac");$/;"	v	namespace:AncientVar	typeref:typename:Ancient::AncientPao
-PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& fn, const std::string& p):file_password(fn,p) {}$/;"	f	class:PasswordFile
-PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& fn, const std::string& p, int d):file_password(fn,p) {$/;"	f	class:PasswordFile
+PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& filename_, const std::string& p):file_password(filename_,p) /;"	f	class:PasswordFile
+PasswordFile	include/utils/files/PasswordFile.hpp	/^    PasswordFile(const std::string& filename_, const std::string& p, int d):file_password(filena/;"	f	class:PasswordFile
 PasswordFile	include/utils/files/PasswordFile.hpp	/^class PasswordFile: protected file_password$/;"	c
-PasswordFile的增加与减少	docs/ProjectDocsLang.rst	/^PasswordFile的增加与减少$/;"	s	chapter:项目部分技术说明文档 25国庆
+PasswordFile的增加与减少	docs/ProjectDocsLang.rst	/^PasswordFile的增加与减少$/;"	s	chapter:项目说明文档 技术篇
 Pin	include/var.hpp	/^namespace Pin$/;"	n	namespace:AncientVar::WuGuan
 Proj	CMakeLists.txt	/^project(Proj LANGUAGES CXX)$/;"	p
 PuTong	include/var.hpp	/^static PasswordFile PuTong($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 PuTong	include/var.hpp	/^static PasswordFile PuTong(FilePathAncientWuGuan+"wgll.pt.cc.ro3", "fivn310694");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
 PuTong	include/var.hpp	/^static PasswordFile PuTong(FilePathXianDan+"pt.cc.xdcc.1304", "sdpf24j109");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
-PuTongMin	include/var.hpp	/^    PuTongMin = 3, $/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+PuTongMin	include/var.hpp	/^PuTongMin = 3,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 Purple	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Purple	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
 Qing	include/var.hpp	/^static PasswordFile Qing(FilePathXianDan+"qd.c.xdcc.ej.e", "fdoiem2401");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 RANDGEN_HPP	include/utils/old/randgen.hpp	/^#define RANDGEN_HPP$/;"	d
 RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
-RST基本语法 25国庆	share/docs/RSTSyntaxBasic.rst	/^RST基本语法 25国庆$/;"	c
 Rand	include/utils/rand.hpp	/^class Rand$/;"	c
 RandGen	include/utils/old/randgen.hpp	/^class RandGen$/;"	c
 Read	include/utils/files/BigIntFile.hpp	/^    std::string Read() {$/;"	f	class:BigIntFile	typeref:typename:std::string
@@ -708,7 +550,7 @@ RealRed	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed
 RealRed	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
 Red	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Red	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
-Rust的函数getrnd与getrnds的使用	docs/ProjectDocsLang.rst	/^Rust的函数getrnd与getrnds的使用$/;"	s	chapter:项目部分技术说明文档 25国庆
+Rust的函数getrnd与getrnds的使用	docs/ProjectDocsLang.rst	/^Rust的函数getrnd与getrnds的使用$/;"	s	chapter:项目说明文档 技术篇
 SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SIMULATE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
 SIMULATE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
@@ -728,7 +570,7 @@ SanGuo1Vec	include/var.hpp	/^static std::vector<std::string> SanGuo1Vec( {$/;"	v
 Shen	include/var.hpp	/^static PasswordFile Shen(FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 ShenJi	include/var.hpp	/^static PasswordFile ShenJi($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 ShenJi	include/var.hpp	/^static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt3960");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-ShenJiMin	include/var.hpp	/^    ShenJiMin = 200$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+ShenJiMin	include/var.hpp	/^ShenJiMin = 200$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 ShengGuanSpace	include/clibs/ancient/shengguan.hpp	/^namespace ShengGuanSpace$/;"	n
 ShiBeiReader	include/var.hpp	/^static PasswordFile ShiBeiReader(FilePath+"shb.avgwc","sudo1048qp");$/;"	v	namespace:AncientVar::Guwan	typeref:typename:PasswordFile
 ShopButton	include/func/simple.hpp	/^  static fn ShopButton(std::string value, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:fn
@@ -762,14 +604,14 @@ TongBiReader	include/var.hpp	/^static PasswordFile TongBiReader(FilePath+"tb.avc
 TongQianCheck	include/var.hpp	/^static CheckFile TongQianCheck(FilePathThingsSquare+"tqchk.ck",2212,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
 TongYongReal	include/var.hpp	/^namespace TongYongReal {$/;"	n
 TouXi	include/clibs/ancient/ChuZheng.hpp	/^    TouXi, $/;"	e	enum:WuGuanChuZheng::Choices
-Types	include/var.hpp	/^  enum class Types{$/;"	g	namespace:LiHe
+Types	include/var.hpp	/^enum class Types {$/;"	g	namespace:LiHe
 User	include/var.hpp	/^const std::string User = getenv("USER");$/;"	v	typeref:typename:const std::string
 WXBTNEVT	include/type.hpp	/^typedef wxCommandEvent WXBTNEVT;$/;"	t	typeref:typename:wxCommandEvent
 WXCMDEVT	include/type.hpp	/^typedef WXEVT WXCMDEVT;$/;"	t	typeref:typename:WXEVT
 WXEVT	include/type.hpp	/^typedef WXBTNEVT WXEVT;$/;"	t	typeref:typename:WXBTNEVT
 WangPai	include/var.hpp	/^static PasswordFile WangPai($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 WangPai	include/var.hpp	/^static PasswordFile WangPai(FilePathAncientWuGuan+"wgll.od.wap.cc..e", "efoidm2590");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-WangPaiMin	include/var.hpp	/^    WangPaiMin = 90, $/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+WangPaiMin	include/var.hpp	/^WangPaiMin = 90,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 WenGuan	include/var.hpp	/^namespace WenGuan$/;"	n	namespace:AncientVar
 WenGuanConf	include/var.hpp	/^static AncientWenGuanConfig* WenGuanConf = AncientWenGuanConfig_Create((FilePath+"awcfg.awgcc")./;"	v	namespace:AncientVar::WenGuan	typeref:typename:AncientWenGuanConfig *
 White	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
@@ -783,18 +625,18 @@ WuGuanChuZhengTrans	include/gfunc.hpp	/^static std::string WuGuanChuZhengTrans(W
 WuGuanPinJi	include/clibs/ancient/WuGuanPinJi.hpp	/^    WuGuanPinJi(std::string file, std::string pwd): PasswordFile(file, pwd) {}$/;"	f	class:Ancient::WuGuanPinJi
 WuGuanPinJi	include/clibs/ancient/WuGuanPinJi.hpp	/^class WuGuanPinJi : protected PasswordFile {$/;"	c	namespace:Ancient
 WuSe	include/var.hpp	/^static PasswordFile WuSe(FilePathXianDan+"ws.cd.gfgoi.xdcc", "dsoi23w105");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
-Xian	include/var.hpp	/^namespace Xian{$/;"	n	namespace:Files
+Xian	include/var.hpp	/^namespace Xian {$/;"	n	namespace:Files
 XianBiBasic	include/var.hpp	/^    XianBiBasic,$/;"	e	enum:LiHe::Types
-XianBiBasic	include/var.hpp	/^    static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");$/;"	v	namespace:LiHe::IsUsed	typeref:typename:BoolFile
+XianBiBasic	include/var.hpp	/^static BoolFile XianBiBasic(FilePathLiHeBool+"xbbsc.cc.sdo", "pedifs", "SDogSd");$/;"	v	namespace:LiHe::IsUsed	typeref:typename:BoolFile
 XianBiCheck	include/var.hpp	/^static CheckFile XianBiCheck(FilePathThingsSquare+"tsxbcc.ck",2202,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
 XianBiReader	include/var.hpp	/^static PasswordFile XianBiReader(FilePath+"xianbc.conc","woapf20sl1");$/;"	v	namespace:Files	typeref:typename:PasswordFile
-XianDanBasic	include/var.hpp	/^    XianDanBasic, $/;"	e	enum:LiHe::Types
-XianDanBasic	include/var.hpp	/^    static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE");$/;"	v	namespace:LiHe::IsUsed	typeref:typename:BoolFile
+XianDanBasic	include/var.hpp	/^    XianDanBasic,$/;"	e	enum:LiHe::Types
+XianDanBasic	include/var.hpp	/^static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE");$/;"	v	namespace:LiHe::IsUsed	typeref:typename:BoolFile
 XianJi	include/var.hpp	/^namespace XianJi$/;"	n	namespace:Files
 XianQiFaLiReader	include/var.hpp	/^static PasswordFile XianQiFaLiReader(FilePathXianQi+"xqfl.conc","hjq40tp586");$/;"	v	namespace:Files	typeref:typename:PasswordFile
 Xin	include/var.hpp	/^static PasswordFile Xin($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 Xin	include/var.hpp	/^static PasswordFile Xin(FilePathAncientWuGuan+"wgll.xawg.cc.43", "fm5o3kd104");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-XinMin	include/var.hpp	/^    XinMin = 1, $/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+XinMin	include/var.hpp	/^XinMin = 1,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 XiuZheng	include/clibs/ancient/ChuZheng.hpp	/^    XiuZheng, $/;"	e	enum:WuGuanChuZheng::Choices
 Yin	include/var.hpp	/^static PasswordFile Yin(FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 YinBiReader	include/var.hpp	/^static PasswordFile YinBiReader(FilePathTongYong+"yb.conc.sdpg.1659", "apfjr12409");$/;"	v	namespace:Files	typeref:typename:PasswordFile
@@ -812,19 +654,22 @@ ZhengJi	include/var.hpp	/^namespace ZhengJi$/;"	n	namespace:AncientVar::WenGuan
 ZhengJiReader	include/var.hpp	/^static PasswordFile ZhengJiReader(FilePath+"zhejrder.awgcc","eso1pam360");$/;"	v	namespace:AncientVar::WenGuan::ZhengJi	typeref:typename:PasswordFile
 ZhongJi	include/var.hpp	/^static PasswordFile ZhongJi($/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:PasswordFile
 ZhongJi	include/var.hpp	/^static PasswordFile ZhongJi(FilePathAncientWuGuan+"wgll.eo.zhj.39c.cc", "domt53p210");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
-ZhongJiMin	include/var.hpp	/^    ZhongJiMin = 10, $/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
+ZhongJiMin	include/var.hpp	/^ZhongJiMin = 10,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 Zi	include/var.hpp	/^static PasswordFile Zi(FilePathXianDan+"zd.c.xdcc.edos", "zdgofe2405");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 _GoString_	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	t	typeref:struct:__anon2b8a6a530108
 _GoString_	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	t	typeref:struct:__anon75f481fe0108
 _GoString_	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	t	typeref:struct:__anond9b77c320108
-__anon234a3c9d0102	src/FuncFixedFn.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0202	src/FuncFixedFn.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0302	src/FuncFixedFn.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0402	src/FuncFixedFn.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0502	src/FuncFixedFn.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0602	src/FuncFixedFn.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0702	src/FuncFixedFn.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
-__anon234a3c9d0802	src/FuncFixedFn.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0102	src/FuncFixedFn.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0202	src/FuncFixedFn.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0302	src/FuncFixedFn.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0402	src/FuncFixedFn.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0502	src/FuncFixedFn.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0602	src/FuncFixedFn.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0702	src/FuncFixedFn.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0802	src/FuncFixedFn.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wubingli_plus	file:
+__anon234a3c9d0902	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_baiyin	file:
+__anon234a3c9d0a02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_huangjin	file:
+__anon234a3c9d0b02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_tongbi	file:
 __anon2b8a6a530108	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	s
 __anon2b8a6a530208	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct {$/;"	s
 __anon2b8a6a530308	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	s
@@ -1046,8 +891,12 @@ ancient_juanzeng_lingqu	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_lingq
 ancient_shop	src/FuncFixed.cpp	/^void MyFrame::ancient_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_baowu	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_baowu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_all	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_baiyin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_huangjin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_huangjin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_tongbi	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_tongbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_guwan	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_guwan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
-ancient_shop_guwan的概率	docs/ProjectDocsSimple.rst	/^ancient_shop_guwan的概率$/;"	c
+ancient_shop_guwan的概率	docs/ProjectDocsSimple.rst	/^ancient_shop_guwan的概率$/;"	s	chapter:项目说明文档 实际篇
 ancient_shop_nianjiu	src/FuncSimple.cpp	/^void MyFrame::ancient_shop_nianjiu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_nianjiu1	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_nianjiu1(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_nianjiu2	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_nianjiu2(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1096,7 +945,7 @@ bank_store	src/FuncLockedFn.cpp	/^fn MyFrame::bank_store(WXBTNEVT&) -> void {$/;
 baoshi_all	src/FuncSimple.cpp	/^void MyFrame::baoshi_all(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_choujiang	src/FuncSimple.cpp	/^void MyFrame::baoshi_choujiang(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_choujiang1	src/FuncFixed.cpp	/^void MyFrame::baoshi_choujiang1(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
-baoshi_choujiang1函数	docs/ProjectDocsSimple.rst	/^baoshi_choujiang1函数$/;"	c
+baoshi_choujiang1函数	docs/ProjectDocsSimple.rst	/^baoshi_choujiang1函数$/;"	s	chapter:项目说明文档 实际篇
 baoshi_get	src/FuncFixed.cpp	/^void MyFrame::baoshi_get(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 begin	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_iterator begin() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:const_iterator
 begin	include/utils/cstyle/cstyle_array.hpp	/^    constexpr iterator begin() noexcept$/;"	f	struct:cstyle::array	typeref:typename:iterator
@@ -1280,7 +1129,7 @@ file	include/utils/files/BigIntFile.hpp	/^    std::string file;$/;"	m	class:BigI
 file	include/utils/old/datecheck.h	/^    string file;$/;"	m	class:DateCheck	typeref:typename:string
 file_deleter	include/utils/cstyle/cstyle_stdio.hpp	/^    struct file_deleter {$/;"	s	class:cstyle::file
 file_name	include/utils/old/file_password.h	/^    std::string file_name;$/;"	m	class:file_password	typeref:typename:std::string
-file_password	include/utils/old/file_password.h	/^    file_password(const std::string& fn, const std::string& p) : file_name(fn)$/;"	f	class:file_password
+file_password	include/utils/old/file_password.h	/^    file_password(const std::string& filename_, const std::string& p) : file_name(filename_)$/;"	f	class:file_password
 file_password	include/utils/old/file_password.h	/^class file_password$/;"	c
 filename	include/utils/files/Cards.hpp	/^    std::string filename;$/;"	m	class:Cards	typeref:typename:std::string
 fill	include/utils/cstyle/cstyle_array.hpp	/^    constexpr void fill(const T& value)$/;"	f	struct:cstyle::array	typeref:typename:void
@@ -1307,7 +1156,7 @@ generateSingle	include/utils/old/randgen.hpp	/^    int generateSingle(int min, i
 get	include/clibs/xianbi/sword.hpp	/^    SwordEnum get()$/;"	f	class:functions::SwordInFile	typeref:typename:SwordEnum
 get	include/utils/smartptr.hpp	/^    T* get() const noexcept$/;"	f	class:SmartPtr	typeref:typename:T *
 gfunc	include/gfunc.hpp	/^namespace gfunc {$/;"	n
-global.hpp使用方法	docs/ProjectDocsSimple.rst	/^global.hpp使用方法$/;"	c
+global.hpp使用方法	docs/ProjectDocsSimple.rst	/^global.hpp使用方法$/;"	s	chapter:项目说明文档 实际篇
 gold	include/clibs/xianbi/sword.hpp	/^enum class SwordEnum { gold,wood,water,fire,soil };$/;"	e	enum:functions::SwordEnum
 handle_	include/utils/cstyle/cstyle_stdio.hpp	/^    std::unique_ptr<FILE, file_deleter> handle_;$/;"	m	class:cstyle::file	typeref:typename:std::unique_ptr<FILE,file_deleter>
 help	build/Makefile	/^help:$/;"	t
@@ -1340,7 +1189,7 @@ iterator	include/utils/cstyle/cstyle_array.hpp	/^    using iterator = T*;$/;"	t	
 jifen	include/clibs/jifen/jifen.hpp	/^namespace jifen$/;"	n
 jinjian_H	include/clibs/ancient/jinjian.hpp	/^#define jinjian_H$/;"	d
 lambda	include/func/lambda.hpp	/^namespace lambda {$/;"	n
-lambda函数定义	docs/ProjectDocsLang.rst	/^lambda函数定义$/;"	s	chapter:项目部分技术说明文档 25国庆
+lambda函数定义	docs/ProjectDocsLang.rst	/^lambda函数定义$/;"	s	chapter:项目说明文档 技术篇
 launch	Makefile	/^launch:$/;"	t
 len	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anon2b8a6a530408	typeref:typename:GoInt
 len	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anon75f481fe0308	typeref:typename:GoInt
@@ -1613,7 +1462,7 @@ src/Main.s	build/Makefile	/^src\/Main.s: src\/Main.cpp.s$/;"	t
 sscanf	include/utils/cstyle/cstyle_io.hpp	/^int sscanf(const char* str, const char* fmt, Args... args)$/;"	f	namespace:cstyle	typeref:typename:int
 start	src/FuncLocked.cpp	/^void MyFrame::start()$/;"	f	class:MyFrame	typeref:typename:void
 start_time	include/utils/new/timer/timer.hpp	/^    point start_time;$/;"	m	class:timer	typeref:typename:point
-stoi函数	docs/ProjectDocsLang.rst	/^stoi函数$/;"	s	chapter:项目部分技术说明文档 25国庆
+stoi函数	docs/ProjectDocsLang.rst	/^stoi函数$/;"	s	chapter:项目说明文档 技术篇
 string	include/utils/cstyle/cstyle_string.hpp	/^    explicit string(const char* str)$/;"	f	class:cstyle::string
 string	include/utils/cstyle/cstyle_string.hpp	/^    string() noexcept : data_(nullptr), size_(0), capacity_(0) {}$/;"	f	class:cstyle::string
 string	include/utils/cstyle/cstyle_string.hpp	/^    string(const string& other) : string(other.data_) {}$/;"	f	class:cstyle::string
@@ -1683,8 +1532,8 @@ write	include/utils/cstyle/cstyle_stdio.hpp	/^    size_t write(const void* buf, 
 write	include/utils/old/file_password.h	/^    std::string write(int new_num)$/;"	f	class:file_password	typeref:typename:std::string
 write_file	include/utils/cstyle/cstyle_stdio.hpp	/^inline void write_file(const std::string& path, const std::string& content)$/;"	f	namespace:cstyle	typeref:typename:void
 write_update	include/utils/cstyle/cstyle_stdio.hpp	/^        write_update,  \/\/ "w+"$/;"	e	enum:cstyle::file::mode
-wxWidgets的wxTextCtrl的使用方法	docs/ProjectDocsLang.rst	/^wxWidgets的wxTextCtrl的使用方法$/;"	s	chapter:项目部分技术说明文档 25国庆
-wxWidgets的空wxCommandEvent	docs/ProjectDocsLang.rst	/^wxWidgets的空wxCommandEvent$/;"	s	chapter:项目部分技术说明文档 25国庆
+wxWidgets的wxTextCtrl的使用方法	docs/ProjectDocsLang.rst	/^wxWidgets的wxTextCtrl的使用方法$/;"	s	chapter:项目说明文档 技术篇
+wxWidgets的空wxCommandEvent	docs/ProjectDocsLang.rst	/^wxWidgets的空wxCommandEvent$/;"	s	chapter:项目说明文档 技术篇
 xianbi_square	src/FuncSimple.cpp	/^void MyFrame::xianbi_square(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 xianbi_square_1	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_1(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianbi_square_2	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_2(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
@@ -1716,9 +1565,6 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 ~SmartPtr	include/utils/smartptr.hpp	/^    ~SmartPtr()$/;"	f	class:SmartPtr
 ~bitset	include/utils/cstyle/cstyle_bitset.hpp	/^    ~bitset() noexcept$/;"	f	class:cstyle::bitset
 ~string	include/utils/cstyle/cstyle_string.hpp	/^    ~string() noexcept$/;"	f	class:cstyle::string
-一级标题	share/docs/RSTSyntaxBasic.rst	/^一级标题$/;"	s	chapter:RST基本语法 25国庆
-三角形	share/docs/UTF8SomeChar.rst	/^三角形$/;"	s	chapter:部分UTF8编码的字符
-二级标题	share/docs/RSTSyntaxBasic.rst	/^二级标题$/;"	s	chapter:RST基本语法 25国庆
 作弊算法	note/ProjectNote-20251019-15:45.rst	/^作弊算法$/;"	s	chapter:领兵出征算法
 其他情况	note/ProjectNote-20251012-21:53.rst	/^其他情况$/;"	s	chapter:领兵出征电脑判断算法
 具体安排	todo/day/20251101.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
@@ -1726,39 +1572,38 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 具体安排	todo/day/20251107.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/day/20251108.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/day/20251109.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/day/20251110.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/month/20251105.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/template.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
-内嵌代码	share/docs/RSTSyntaxBasic.rst	/^内嵌代码$/;"	s	chapter:RST基本语法 25国庆
-半圆形	share/docs/UTF8SomeChar.rst	/^半圆形$/;"	s	chapter:部分UTF8编码的字符
+具体安排	todo/week/20251109.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/week/20251116.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 失败	note/ProjectNote-20251019-12:08.rst	/^失败$/;"	s	chapter:领兵出征奖惩
-学习平台	README.rst	/^学习平台$/;"	c
-安装	README.rst	/^安装$/;"	s	chapter:学习平台
+学习平台	README.md	/^# 学习平台$/;"	c
+安装	README.md	/^## 安装$/;"	s	chapter:学习平台
 完成时间	todo/day/20251101.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251104.md	/^## 完成时间$/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251105.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251107.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251108.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251109.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/day/20251110.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/template.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
-对钩	share/docs/UTF8SomeChar.rst	/^对钩$/;"	s	chapter:部分UTF8编码的字符
+完成时间	todo/week/20251109.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/week/20251116.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 开始规划时间	todo/month/20251105.md	/^## 开始规划时间 $/;"	s	chapter:待办事件列表
-强调a	share/docs/RSTSyntaxBasic.rst	/^强调a$/;"	s	chapter:RST基本语法 25国庆
 待办事件列表	todo/day/20251101.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251104.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251105.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251107.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251108.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251109.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/day/20251110.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/month/20251105.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/template.md	/^# 待办事件列表$/;"	c
-我推荐的Neovim亮色主题	share/docs/NeovimColorschemes.rst	/^我推荐的Neovim亮色主题$/;"	c
-我推荐的Neovim暗色主题	share/docs/NeovimColorschemes.rst	/^我推荐的Neovim暗色主题$/;"	c
-提示	share/docs/UTF8SomeChar.rst	/^提示$/;"	s	chapter:部分UTF8编码的字符
+待办事件列表	todo/week/20251109.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/week/20251116.md	/^# 待办事件列表$/;"	c
 敌方-自己兵力<90时	note/ProjectNote-20251012-21:53.rst	/^敌方-自己兵力<90时$/;"	s	chapter:领兵出征电脑判断算法
-无序列表a	share/docs/RSTSyntaxBasic.rst	/^无序列表a$/;"	s	chapter:RST基本语法 25国庆
-无序列表b	share/docs/RSTSyntaxBasic.rst	/^无序列表b$/;"	s	chapter:RST基本语法 25国庆
-有序列表	share/docs/RSTSyntaxBasic.rst	/^有序列表$/;"	s	chapter:RST基本语法 25国庆
-注意事项	README.rst	/^注意事项$/;"	s	chapter:学习平台
+注意事项	README.md	/^## 注意事项$/;"	s	chapter:学习平台
 特殊处理	note/ProjectNote-20251019-15:45.rst	/^特殊处理$/;"	s	chapter:领兵出征算法
 积分	note/ProjectNote-20251006-10:33.rst	/^积分$/;"	s	chapter:通用货币兑换 20251006 10:33
 第一块	note/ProjectNote-20251008-18:15.rst	/^第一块$/;"	s	chapter:领兵出征方案
@@ -1773,7 +1618,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 第四块	note/ProjectNote-20251008-18:15.rst	/^第四块$/;"	s	chapter:领兵出征方案
 第四块	note/ProjectNote-20251012-22:00.rst	/^第四块$/;"	s	chapter:领兵出征方案修正
 第四块	note/ProjectNote-20251014-20:38.rst	/^第四块$/;"	s	chapter:领兵出征方案修正
-简介	README.rst	/^简介$/;"	s	chapter:学习平台
+简介	README.md	/^## 简介$/;"	s	chapter:学习平台
 胜利	note/ProjectNote-20251019-12:08.rst	/^胜利$/;"	s	chapter:领兵出征奖惩
 自己兵力更多时	note/ProjectNote-20251012-21:53.rst	/^自己兵力更多时$/;"	s	chapter:领兵出征电脑判断算法
 计划内容	todo/day/20251104.md	/^## 计划内容$/;"	s	chapter:待办事件列表
@@ -1783,17 +1628,17 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 计划时间	todo/day/20251107.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/day/20251108.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/day/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/day/20251110.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/month/20251105.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/template.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/week/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/week/20251116.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 通用货币兑换 20251006 10:33	note/ProjectNote-20251006-10:33.rst	/^通用货币兑换 20251006 10:33$/;"	c
-部分UTF8编码的字符	share/docs/UTF8SomeChar.rst	/^部分UTF8编码的字符$/;"	c
-长方形	share/docs/UTF8SomeChar.rst	/^长方形$/;"	s	chapter:部分UTF8编码的字符
-项目历史	docs/ProjectHistory.md	/^# 项目历史$/;"	c
 项目历史 25国庆	docs/ProjectHistory.rst	/^项目历史 25国庆$/;"	c
-项目日志	docs/ProjectLog.md	/^# 项目日志$/;"	c
 项目日志新 25国庆	docs/ProjectLog.rst	/^项目日志新 25国庆$/;"	c
 项目日志新 25国庆	docs/ProjectLog20251007.rst	/^项目日志新 25国庆$/;"	c
-项目部分技术说明文档 25国庆	docs/ProjectDocsLang.rst	/^项目部分技术说明文档 25国庆$/;"	c
+项目说明文档 实际篇	docs/ProjectDocsSimple.rst	/^项目说明文档 实际篇$/;"	c
+项目说明文档 技术篇	docs/ProjectDocsLang.rst	/^项目说明文档 技术篇$/;"	c
 领兵出征奖惩	note/ProjectNote-20251019-12:08.rst	/^领兵出征奖惩$/;"	c
 领兵出征方案	note/ProjectNote-20251008-18:15.rst	/^领兵出征方案$/;"	c
 领兵出征方案修正	note/ProjectNote-20251012-22:00.rst	/^领兵出征方案修正$/;"	c
