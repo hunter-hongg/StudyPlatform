@@ -226,10 +226,10 @@ CMAKE_Fortran_TARGET_LINKED_INFO_FILES	build/CMakeFiles/AfterAll.dir/DependInfo.
 CMAKE_Fortran_TARGET_LINKED_INFO_FILES	build/CMakeFiles/studyplatform.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES$/;"	v
 CMAKE_Fortran_TARGET_MODULE_DIR	build/CMakeFiles/AfterAll.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
 CMAKE_Fortran_TARGET_MODULE_DIR	build/CMakeFiles/studyplatform.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
-CMAKE_HOST_SYSTEM	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-6.17.0-5-generic")$/;"	v
+CMAKE_HOST_SYSTEM	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-6.17.0-6-generic")$/;"	v
 CMAKE_HOST_SYSTEM_NAME	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
 CMAKE_HOST_SYSTEM_PROCESSOR	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
-CMAKE_HOST_SYSTEM_VERSION	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "6.17.0-5-generic")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "6.17.0-6-generic")$/;"	v
 CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
 CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
 CMAKE_INSTALL_CONFIG_NAME	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
@@ -254,11 +254,11 @@ CMAKE_RELATIVE_PATH_TOP_BINARY	build/CMakeFiles/CMakeDirectoryInformation.cmake	
 CMAKE_RELATIVE_PATH_TOP_SOURCE	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/coding\/学习平台Linux\/学习平台")$/;"	v
 CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
 CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/coding\/学习平台Linux\/学习平台$/;"	m
-CMAKE_SYSTEM	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-6.17.0-5-generic")$/;"	v
+CMAKE_SYSTEM	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-6.17.0-6-generic")$/;"	v
 CMAKE_SYSTEM_LOADED	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
 CMAKE_SYSTEM_NAME	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
 CMAKE_SYSTEM_PROCESSOR	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
-CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "6.17.0-5-generic")$/;"	v
+CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.31.6/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "6.17.0-6-generic")$/;"	v
 CMAKE_TAPI	build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake	/^set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")$/;"	v
 COMPILER_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
 COMPILER_VERSION	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
@@ -706,7 +706,7 @@ __anon9e6c4b290702	src/FuncFixed.cpp	/^        tmp -> Bind(wxEVT_BUTTON,[this, i
 __anon9e6c4b290802	src/FuncFixed.cpp	/^                j -> Bind(wxEVT_BUTTON, [](WXBTNEVT&) {});$/;"	f	function:MyFrame::ancient_shop_nianjiu1::__anon9e6c4b290702	file:
 __anon9e6c4b290902	src/FuncFixed.cpp	/^        tmp -> Bind(wxEVT_BUTTON,[this, i, buttons, showbtn](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_nianjiu2	file:
 __anon9e6c4b290a02	src/FuncFixed.cpp	/^                j -> Bind(wxEVT_BUTTON, [](WXBTNEVT&) {});$/;"	f	function:MyFrame::ancient_shop_nianjiu2::__anon9e6c4b290902	file:
-__anon9e6c4b290b02	src/FuncFixed.cpp	/^    auto callback = [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianlu_get	file:
+__anon9e6c4b290b02	src/FuncFixed.cpp	/^    auto callback = [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianlu_get	file:
 __anon9e6c4b290c02	src/FuncFixed.cpp	/^    btn1->Bind(wxEVT_BUTTON,[this](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop	file:
 __anon9e6c4b290d02	src/FuncFixed.cpp	/^    btn2->Bind(wxEVT_BUTTON,[this](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop	file:
 __anon9e6c4b290e02	src/FuncFixed.cpp	/^    btn3->Bind(wxEVT_BUTTON,[this](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop	file:
@@ -723,29 +723,29 @@ __anon9e6c4b291802	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON,[=](WXBTNEV
 __anon9e6c4b291902	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_baowu	file:
 __anon9e6c4b291a02	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_baowu	file:
 __anon9e6c4b291b02	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_baowu	file:
-__anon9e6c4b291c02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [MingZhu, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b291d02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [YuDiao, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b291e02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [YuBi, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b291f02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b292002	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b292102	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [YuZhan, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b292202	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [ChaHu, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b292302	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [ChaZhan, this](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
-__anon9e6c4b292402	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
-__anon9e6c4b292502	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
-__anon9e6c4b292602	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
-__anon9e6c4b292702	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
-__anon9e6c4b292802	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
-__anon9e6c4b292902	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
-__anon9e6c4b292a02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
-__anon9e6c4b292b02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
-__anon9e6c4b292c02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
-__anon9e6c4b292d02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
-__anon9e6c4b292e02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
-__anon9e6c4b292f02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
-__anon9e6c4b293002	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
-__anon9e6c4b293102	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
-__anon9e6c4b293202	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
+__anon9e6c4b291c02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [MingZhu, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b291d02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [YuDiao, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b291e02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [YuBi, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b291f02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b292002	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b292102	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [YuZhan, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b292202	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [ChaHu, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b292302	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [ChaZhan, this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_things_baowu_maichu	file:
+__anon9e6c4b292402	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
+__anon9e6c4b292502	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
+__anon9e6c4b292602	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
+__anon9e6c4b292702	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
+__anon9e6c4b292802	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_tongqian	file:
+__anon9e6c4b292902	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
+__anon9e6c4b292a02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
+__anon9e6c4b292b02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
+__anon9e6c4b292c02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
+__anon9e6c4b292d02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_baoshi	file:
+__anon9e6c4b292e02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
+__anon9e6c4b292f02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
+__anon9e6c4b293002	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
+__anon9e6c4b293102	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
+__anon9e6c4b293202	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_yinbi	file:
 __anon9e6c4b293302	src/FuncFixed.cpp	/^    btn1->Bind(wxEVT_BUTTON,[=](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop_guwan	file:
 __anon9e6c4b293402	src/FuncFixed.cpp	/^    btn2->Bind(wxEVT_BUTTON,[=](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop_guwan	file:
 __anon9e6c4b293502	src/FuncFixed.cpp	/^    btn3->Bind(wxEVT_BUTTON,[=](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop_guwan	file:
@@ -754,87 +754,87 @@ __anon9e6c4b293702	src/FuncFixed.cpp	/^    btn5->Bind(wxEVT_BUTTON,[=](WXBTNEVT&
 __anon9e6c4b293802	src/FuncFixed.cpp	/^    btn6->Bind(wxEVT_BUTTON,[=](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop_guwan	file:
 __anon9e6c4b293902	src/FuncFixed.cpp	/^    btn7->Bind(wxEVT_BUTTON,[=](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop_guwan	file:
 __anon9e6c4b293a02	src/FuncFixed.cpp	/^    btn8->Bind(wxEVT_BUTTON,[=](WXBTNEVT& _) {$/;"	f	function:MyFrame::ancient_shop_guwan	file:
-__anon9e6c4b293b02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
-__anon9e6c4b293c02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
-__anon9e6c4b293d02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
-__anon9e6c4b293e02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
-__anon9e6c4b293f02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
+__anon9e6c4b293b02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
+__anon9e6c4b293c02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
+__anon9e6c4b293d02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
+__anon9e6c4b293e02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
+__anon9e6c4b293f02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::ancient_juanzeng_juanxian	file:
 __anon9e6c4b294002	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::baoshi_get	file:
 __anon9e6c4b294102	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::baoshi_get	file:
 __anon9e6c4b294202	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::baoshi_get	file:
 __anon9e6c4b294302	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::baoshi_get	file:
 __anon9e6c4b294402	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT&) {$/;"	f	function:MyFrame::baoshi_get	file:
-__anon9e6c4b294502	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbimh_simple	file:
-__anon9e6c4b294602	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbimh_simple	file:
-__anon9e6c4b294702	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbimh_simple	file:
-__anon9e6c4b294802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbimh_ancient	file:
-__anon9e6c4b294902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbimh_ancient	file:
-__anon9e6c4b294a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbimh_ancient	file:
-__anon9e6c4b294b02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
-__anon9e6c4b294c02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
-__anon9e6c4b294d02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
-__anon9e6c4b294e02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
-__anon9e6c4b294f02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
-__anon9e6c4b295002	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295102	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295202	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295302	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295402	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295502	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295602	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295702	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_get	file:
-__anon9e6c4b295802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295b02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295c02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295d02	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295e02	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b295f02	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_fali	file:
-__anon9e6c4b296002	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296102	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296202	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296302	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296402	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296502	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296602	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296702	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianji_use_xianqi	file:
-__anon9e6c4b296802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296b02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296c02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296d02	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296e02	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b296f02	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b297002	src/FuncFixed.cpp	/^    btn9 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::fali_xiandan	file:
-__anon9e6c4b297102	src/FuncFixed.cpp	/^  btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297202	src/FuncFixed.cpp	/^  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297302	src/FuncFixed.cpp	/^  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297402	src/FuncFixed.cpp	/^  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297502	src/FuncFixed.cpp	/^  btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297602	src/FuncFixed.cpp	/^  btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297702	src/FuncFixed.cpp	/^  btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianqi_liandan	file:
-__anon9e6c4b297802	src/FuncFixed.cpp	/^  btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianji_liandan	file:
-__anon9e6c4b297902	src/FuncFixed.cpp	/^  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianji_liandan	file:
-__anon9e6c4b297a02	src/FuncFixed.cpp	/^  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianji_liandan	file:
-__anon9e6c4b297b02	src/FuncFixed.cpp	/^  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianji_liandan	file:
-__anon9e6c4b297c02	src/FuncFixed.cpp	/^  btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianji_liandan	file:
-__anon9e6c4b297d02	src/FuncFixed.cpp	/^  btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xianji_liandan	file:
-__anon9e6c4b297e02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){$/;"	f	function:MyFrame::xiandan_he_yindan	file:
-__anon9e6c4b297f02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){$/;"	f	function:MyFrame::xiandan_he_yindan	file:
-__anon9e6c4b298002	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){$/;"	f	function:MyFrame::xiandan_he_yindan	file:
-__anon9e6c4b298102	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){$/;"	f	function:MyFrame::xiandan_he_yindan	file:
-__anon9e6c4b298202	src/FuncFixed.cpp	/^  btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_jindan	file:
-__anon9e6c4b298302	src/FuncFixed.cpp	/^  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_jindan	file:
-__anon9e6c4b298402	src/FuncFixed.cpp	/^  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_jindan	file:
-__anon9e6c4b298502	src/FuncFixed.cpp	/^  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_jindan	file:
-__anon9e6c4b298602	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_shendan	file:
-__anon9e6c4b298702	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_shendan	file:
-__anon9e6c4b298802	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_shendan	file:
-__anon9e6c4b298902	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){$/;"	f	function:MyFrame::xiandan_he_shendan	file:
-__anon9e6c4b298a02	src/FuncFixed.cpp	/^    auto getneed = [=](int dj){$/;"	f	function:MyFrame::xianlu_next	file:
-__anon9e6c4b298b02	src/FuncFixed.cpp	/^    auto callback = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::xianlu_next	file:
+__anon9e6c4b294502	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbimh_simple	file:
+__anon9e6c4b294602	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbimh_simple	file:
+__anon9e6c4b294702	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbimh_simple	file:
+__anon9e6c4b294802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbimh_ancient	file:
+__anon9e6c4b294902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbimh_ancient	file:
+__anon9e6c4b294a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbimh_ancient	file:
+__anon9e6c4b294b02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
+__anon9e6c4b294c02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
+__anon9e6c4b294d02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
+__anon9e6c4b294e02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
+__anon9e6c4b294f02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::tsquare_jinbi_xianbi	file:
+__anon9e6c4b295002	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295102	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295202	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295302	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295402	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295502	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295602	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295702	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_get	file:
+__anon9e6c4b295802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295b02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295c02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295d02	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295e02	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b295f02	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_fali	file:
+__anon9e6c4b296002	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296102	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296202	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296302	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296402	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296502	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296602	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296702	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianji_use_xianqi	file:
+__anon9e6c4b296802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296b02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296c02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296d02	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296e02	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b296f02	src/FuncFixed.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b297002	src/FuncFixed.cpp	/^    btn9 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::fali_xiandan	file:
+__anon9e6c4b297102	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297202	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297302	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297402	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297502	src/FuncFixed.cpp	/^    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297602	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297702	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianqi_liandan	file:
+__anon9e6c4b297802	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianji_liandan	file:
+__anon9e6c4b297902	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianji_liandan	file:
+__anon9e6c4b297a02	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianji_liandan	file:
+__anon9e6c4b297b02	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianji_liandan	file:
+__anon9e6c4b297c02	src/FuncFixed.cpp	/^    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianji_liandan	file:
+__anon9e6c4b297d02	src/FuncFixed.cpp	/^    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xianji_liandan	file:
+__anon9e6c4b297e02	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {$/;"	f	function:MyFrame::xiandan_he_yindan	file:
+__anon9e6c4b297f02	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {$/;"	f	function:MyFrame::xiandan_he_yindan	file:
+__anon9e6c4b298002	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {$/;"	f	function:MyFrame::xiandan_he_yindan	file:
+__anon9e6c4b298102	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {$/;"	f	function:MyFrame::xiandan_he_yindan	file:
+__anon9e6c4b298202	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_jindan	file:
+__anon9e6c4b298302	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_jindan	file:
+__anon9e6c4b298402	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_jindan	file:
+__anon9e6c4b298502	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_jindan	file:
+__anon9e6c4b298602	src/FuncFixed.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_shendan	file:
+__anon9e6c4b298702	src/FuncFixed.cpp	/^    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_shendan	file:
+__anon9e6c4b298802	src/FuncFixed.cpp	/^    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_shendan	file:
+__anon9e6c4b298902	src/FuncFixed.cpp	/^    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::xiandan_he_shendan	file:
+__anon9e6c4b298a02	src/FuncFixed.cpp	/^    auto getneed = [=](int dj) {$/;"	f	function:MyFrame::xianlu_next	file:
+__anon9e6c4b298b02	src/FuncFixed.cpp	/^    auto callback = [=](WXBTNEVT& evt) {$/;"	f	function:MyFrame::xianlu_next	file:
 __anonb19fc00b0102	src/FuncLocked.cpp	/^    quitButton -> Bind(wxEVT_BUTTON,[](WXBTNEVT& evt) {$/;"	f	function:MyFrame::start	file:
 __anoncc75521a0108	include/ffi/zig/AncientGuWanCha/AncientGuWanCha.h	/^typedef struct {$/;"	s
 __anond12e71ff0102	src/FuncLockedFn.cpp	/^    btn0 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_wuguan_zhaomu	file:
@@ -886,8 +886,8 @@ ancient_clothes_pao	src/FuncFixed.cpp	/^void MyFrame::ancient_clothes_pao(WXBTNE
 ancient_clothes_sword	src/FuncFixed.cpp	/^void MyFrame::ancient_clothes_sword(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_guan	src/FuncSimple.cpp	/^void MyFrame::ancient_guan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_juanzeng	src/FuncSimple.cpp	/^void MyFrame::ancient_juanzeng(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-ancient_juanzeng_juanxian	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-ancient_juanzeng_lingqu	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_lingqu(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_juanzeng_juanxian	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_juanzeng_lingqu	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_lingqu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop	src/FuncFixed.cpp	/^void MyFrame::ancient_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_baowu	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_baowu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
@@ -904,7 +904,7 @@ ancient_shopa	src/FuncSimple.cpp	/^void MyFrame::ancient_shopa(WXBTNEVT& evt)$/;
 ancient_square	src/FuncLocked.cpp	/^void MyFrame::ancient_square(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_things	src/FuncSimple.cpp	/^void MyFrame::ancient_things(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_things_baowu	src/FuncSimple.cpp	/^void MyFrame::ancient_things_baowu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
-ancient_things_baowu_maichu	src/FuncFixed.cpp	/^void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_things_baowu_maichu	src/FuncFixed.cpp	/^void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_things_baowu_show	src/FuncLocked.cpp	/^void MyFrame::ancient_things_baowu_show(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_things_bookshelf	src/FuncFixed.cpp	/^void MyFrame::ancient_things_bookshelf(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_things_guwan	src/FuncSimple.cpp	/^void MyFrame::ancient_things_guwan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
@@ -921,9 +921,9 @@ ancient_wuguan_chuzheng	src/FuncPair1.cpp	/^void MyFrame::ancient_wuguan_chuzhen
 ancient_wuguan_chuzheng_1	src/FuncPair1.cpp	/^void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_show	src/FuncLocked.cpp	/^void MyFrame::ancient_wuguan_show(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_zhaomu	src/FuncLockedFn.cpp	/^void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-ancient_zhengji_huilu	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_zhengji_huilu	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_jinjian	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_jinjian(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
-ancient_zhengji_miansheng	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_miansheng(WXBTNEVT& evt){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_zhengji_miansheng	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_miansheng(WXBTNEVT& evt) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_shengguan	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_shengguan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_zhenji	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_zhenji(WXBTNEVT& evt) {$/;"	f	class:MyFrame	typeref:typename:void
 append	include/utils/cstyle/cstyle_stdio.hpp	/^        append,        \/\/ "a"$/;"	e	enum:cstyle::file::mode
@@ -1091,7 +1091,7 @@ end	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_iterator end() c
 end	include/utils/cstyle/cstyle_array.hpp	/^    constexpr iterator end() noexcept$/;"	f	struct:cstyle::array	typeref:typename:iterator
 fali	src/FuncSimple.cpp	/^void MyFrame::fali(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 fali_xianbi	src/FuncFixed.cpp	/^void MyFrame::fali_xianbi(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
-fali_xiandan	src/FuncFixed.cpp	/^void MyFrame::fali_xiandan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+fali_xiandan	src/FuncFixed.cpp	/^void MyFrame::fali_xiandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncBuilding.cpp",$/;"	s	object:0
 file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncCache.cpp",$/;"	s	object:1
 file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncFixed.cpp",$/;"	s	object:2
@@ -1506,13 +1506,13 @@ tsquare_free_jifen	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_jifen(WXBTNEVT
 tsquare_free_jinbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_jinbi(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_free_tongqian	src/FuncFixed.cpp	/^void MyFrame::tsquare_free_tongqian(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbi	src/FuncSimple.cpp	/^void MyFrame::tsquare_jinbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbi_baoshi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbi_tongqian	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbi_xianbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbi_yinbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbi_baoshi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbi_tongqian	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbi_xianbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbi_yinbi	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 tsquare_jinbimh	src/FuncSimple.cpp	/^void MyFrame::tsquare_jinbimh(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbimh_ancient	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-tsquare_jinbimh_simple	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbimh_ancient	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+tsquare_jinbimh_simple	src/FuncFixed.cpp	/^void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 uid	include/utils/rand.hpp	/^    typedef std::uniform_int_distribution<int> uid;$/;"	t	class:Rand	typeref:typename:std::uniform_int_distribution<int>
 unique_ptr	include/utils/cstyle/cstyle_memory.hpp	/^using unique_ptr = std::unique_ptr<T, void(*)(void*)>;$/;"	t	namespace:cstyle
 usr_cho	include/global.hpp	/^static std::vector<WuGuanChuZheng::Choices> usr_cho({});$/;"	v	namespace:Global::AncientWuGuanChuZhengReal	typeref:typename:std::vector<WuGuanChuZheng::Choices>
@@ -1540,25 +1540,25 @@ xianbi_square_2	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_2(WXBTNEVT&){$/;"
 xianbi_square_3	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_3(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xiandan	src/FuncSimple.cpp	/^void MyFrame::xiandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he	src/FuncLocked.cpp	/^void MyFrame::xiandan_he(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xiandan_he_jindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_jindan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xiandan_he_shendan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_shendan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xiandan_he_yindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_yindan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xiandan_show	src/FuncFixed.cpp	/^void MyFrame::xiandan_show(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xiandan_he_jindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_jindan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+xiandan_he_shendan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_shendan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+xiandan_he_yindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_yindan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+xiandan_show	src/FuncFixed.cpp	/^void MyFrame::xiandan_show(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianji	src/FuncSimple.cpp	/^void MyFrame::xianji(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-xianji_get	src/FuncFixed.cpp	/^void MyFrame::xianji_get(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xianji_liandan	src/FuncFixed.cpp	/^void MyFrame::xianji_liandan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianji_get	src/FuncFixed.cpp	/^void MyFrame::xianji_get(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+xianji_liandan	src/FuncFixed.cpp	/^void MyFrame::xianji_liandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianji_use	src/FuncSimple.cpp	/^void MyFrame::xianji_use(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-xianji_use_fali	src/FuncFixed.cpp	/^void MyFrame::xianji_use_fali(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-xianji_use_xianqi	src/FuncFixed.cpp	/^void MyFrame::xianji_use_xianqi(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianji_use_fali	src/FuncFixed.cpp	/^void MyFrame::xianji_use_fali(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+xianji_use_xianqi	src/FuncFixed.cpp	/^void MyFrame::xianji_use_xianqi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianlu	src/FuncSimple.cpp	/^void MyFrame::xianlu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-xianlu_get	src/FuncFixed.cpp	/^void MyFrame::xianlu_get(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianlu_get	src/FuncFixed.cpp	/^void MyFrame::xianlu_get(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianlu_get_need	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	v	namespace:lambda	typeref:typename:auto
-xianlu_next	src/FuncFixed.cpp	/^void MyFrame::xianlu_next(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianlu_next	src/FuncFixed.cpp	/^void MyFrame::xianlu_next(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xianqi	src/FuncSimple.cpp	/^void MyFrame::xianqi(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 xianqi_change	src/FuncOld.cpp	/^void oldblock MyFrame::xianqi_change\/*j225_h1*\/(WXEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void oldblock
 xianqi_fali	src/FuncSimple.cpp	/^void MyFrame::xianqi_fali(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
 xianqi_fali_xianbi	src/FuncFixed.cpp	/^void MyFrame::xianqi_fali_xianbi(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
-xianqi_liandan	src/FuncFixed.cpp	/^void MyFrame::xianqi_liandan(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xianqi_liandan	src/FuncFixed.cpp	/^void MyFrame::xianqi_liandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 yinbi_all	src/FuncUsed.cpp	/^void MyFrame::yinbi_all(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame	typeref:typename:poly[6]oldblock
 ~SmartArray	include/utils/smartarray.hpp	/^    ~SmartArray()$/;"	f	class:SmartArray
