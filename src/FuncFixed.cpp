@@ -39,11 +39,11 @@ void MyFrame::study_start(WXBTNEVT& evt)
     (void)evt;
     if(study_timer.start()) {
         MYMESSAGE("开始计时失败");
-        logfile << "ERROR: 开始计时失败" << Endline;
+        // logfile << "开始计时失败" << Endline;
         return;
     }
     MYMESSAGE("开始计时成功");
-    logfile << "INFO: 成功开始计时" << Endline;
+    // logfile << "成功开始计时" << Endline;
 }
 
 void MyFrame::study_end(WXBTNEVT& evt)
@@ -51,7 +51,7 @@ void MyFrame::study_end(WXBTNEVT& evt)
     (void)evt;
     if(study_timer.stop()) {
         MYMESSAGE("结束计时失败");
-        logfile << "ERROR: 结束计时失败" << Endline;
+        // logfile << "结束计时失败" << Endline;
         return;
     }
     long long spend = study_timer.get_seconds();
@@ -618,18 +618,18 @@ void MyFrame::ancient_things_bookshelf(WXBTNEVT&)
     MYTITLE("我的书籍");
 
     MYSHOWNSNCM(wxString(wxT(""))+
-           wxT("普通书籍：")+TOSTR(Level1)+wxT("本")+NEWLINE+
-           wxT("珍贵书籍：")+TOSTR(Level2)+wxT("本")+NEWLINE+
-           wxT("典藏书籍：")+TOSTR(Level3)+wxT("本"), 
-           btn1);
+                wxT("普通书籍：")+TOSTR(Level1)+wxT("本")+NEWLINE+
+                wxT("珍贵书籍：")+TOSTR(Level2)+wxT("本")+NEWLINE+
+                wxT("典藏书籍：")+TOSTR(Level3)+wxT("本"),
+                btn1);
     btn1 -> SetForegroundColour(MyBlue);
 
     MYSHOWNSNCM(wxString(wxT(""))+
-           wxT("珍藏值：")+TOSTR(ShouCangZhi)+NEWLINE+
-           wxT("珍藏等级：")+TOSTR(Level), 
-           btn2);
+                wxT("珍藏值：")+TOSTR(ShouCangZhi)+NEWLINE+
+                wxT("珍藏等级：")+TOSTR(Level),
+                btn2);
     btn2 -> SetForegroundColour(MyBlue);
- 
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::ancient_things);
@@ -660,14 +660,14 @@ void MyFrame::ancient_zhengji_zhenji(WXBTNEVT& evt) {
     }
     this -> ancient_wenguan_zhengji(evt);
 }
-void MyFrame::ancient_juanzeng_lingqu(WXBTNEVT&){
-    if(!AncientVar::JuanZeng::LingQuCheck.CheckTimes()){
+void MyFrame::ancient_juanzeng_lingqu(WXBTNEVT&) {
+    if(!AncientVar::JuanZeng::LingQuCheck.CheckTimes()) {
         MYMESSAGE("今日已领取过资助");
         return;
     }
     int level = AncientJuanZeng_GetLevel(
-        AncientVar::JuanZeng::Reader.read_int()
-    );
+                    AncientVar::JuanZeng::Reader.read_int()
+                );
     int res = AncientJuanZeng_GetHuangJin(level);
     AncientVar::HuangJinReader.addnum(res);
     MYSTRMESSAGE(wxString(wxT("成功领取"))+TOSTR(res)+wxT("两黄金"));
@@ -711,7 +711,7 @@ void MyFrame::ancient_shop_nianjiu2(WXBTNEVT&)
             MYSTRMESSAGE(wxString(wxT("现有白银"))+AncientVar::BaiYinReader.read_str()+wxT("两"));
             int result1 = getrnd(0,15);
             int result2 = getrnd(0,15);
-            while(result2 == result1){
+            while(result2 == result1) {
                 result2 = getrnd(0,15);
             }
             int z = 0;
@@ -738,12 +738,12 @@ void MyFrame::ancient_shop_nianjiu2(WXBTNEVT&)
 
     MYLAST(&MyFrame::ancient_shop_nianjiu);
 }
-void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt){
+void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt) {
     int jinzhu_need = getrnd(4,7);
     AncientJinYinZhu_Get(AncientVar::JinYinZhuReader);
     MYSTRMESSAGE(wxString(wxT("今需"))+TOSTR(jinzhu_need)+wxT("颗金珠"));
-    if(wxMessageBox(wxT("是否给出？"), "msg", wxYES_NO | wxICON_QUESTION) == wxYES){
-        if(JinZhu < jinzhu_need){
+    if(wxMessageBox(wxT("是否给出？"), "msg", wxYES_NO | wxICON_QUESTION) == wxYES) {
+        if(JinZhu < jinzhu_need) {
             MYMESSAGE("金珠不足，贿赂失败");
             return;
         }
@@ -753,13 +753,13 @@ void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt){
         this -> ancient_wenguan_zhengji(evt);
     }
 }
-void MyFrame::ancient_zhengji_miansheng(WXBTNEVT& evt){
+void MyFrame::ancient_zhengji_miansheng(WXBTNEVT& evt) {
     AncientJinYinZhu_Get(AncientVar::JinYinZhuReader);
-    if(YinZhu < 10){
+    if(YinZhu < 10) {
         MYMESSAGE("银珠不足");
         return;
     }
-    if(!AncientZhengJi::MianSheng::Check.CheckTimes()){
+    if(!AncientZhengJi::MianSheng::Check.CheckTimes()) {
         MYMESSAGE("今日已进行面圣");
         return;
     }
@@ -768,7 +768,7 @@ void MyFrame::ancient_zhengji_miansheng(WXBTNEVT& evt){
     MYMESSAGE("面圣成功，政绩+25");
     this -> ancient_wenguan_zhengji(evt);
 }
-void MyFrame::xiandan_show(WXBTNEVT&){
+void MyFrame::xiandan_show(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("仙丹查看");
@@ -776,49 +776,49 @@ void MyFrame::xiandan_show(WXBTNEVT&){
     auto grid = new wxGridSizer(3,3,4,4);
 
     MYSHOWNSNBM(
-        wxString(wxT("普通丹："))+Xian::Dan::PuTong.read_str()+wxT("粒"), 
+        wxString(wxT("普通丹："))+Xian::Dan::PuTong.read_str()+wxT("粒"),
         btn1, MyDarkRed
     );
     grid -> Add(btn1, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("碧丹："))+Xian::Dan::Bi.read_str()+wxT("粒"), 
+        wxString(wxT("碧丹："))+Xian::Dan::Bi.read_str()+wxT("粒"),
         btn2, MyDarkRed
     );
     grid -> Add(btn2, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("青丹："))+Xian::Dan::Qing.read_str()+wxT("粒"), 
+        wxString(wxT("青丹："))+Xian::Dan::Qing.read_str()+wxT("粒"),
         btn3, MyDarkRed
     );
     grid -> Add(btn3, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("紫丹："))+Xian::Dan::Zi.read_str()+wxT("粒"), 
+        wxString(wxT("紫丹："))+Xian::Dan::Zi.read_str()+wxT("粒"),
         btn4, MyDarkRed
     );
     grid -> Add(btn4, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("五色丹："))+Xian::Dan::WuSe.read_str()+wxT("粒"), 
+        wxString(wxT("五色丹："))+Xian::Dan::WuSe.read_str()+wxT("粒"),
         btn5, MyDarkRed
     );
     grid -> Add(btn5, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("银丹："))+Xian::Dan::Yin.read_str()+wxT("粒"), 
+        wxString(wxT("银丹："))+Xian::Dan::Yin.read_str()+wxT("粒"),
         btn6, MyDarkRed
     );
     grid -> Add(btn6, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("金丹："))+Xian::Dan::Jin.read_str()+wxT("粒"), 
+        wxString(wxT("金丹："))+Xian::Dan::Jin.read_str()+wxT("粒"),
         btn7, MyDarkRed
     );
     grid -> Add(btn7, FLAG_CENTER);
 
     MYSHOWNSNBM(
-        wxString(wxT("神丹："))+Xian::Dan::Shen.read_str()+wxT("粒"), 
+        wxString(wxT("神丹："))+Xian::Dan::Shen.read_str()+wxT("粒"),
         btn8, MyDarkRed
     );
     grid -> Add(btn8, FLAG_CENTER);
@@ -829,14 +829,14 @@ void MyFrame::xiandan_show(WXBTNEVT&){
 
     MYLAST(&MyFrame::xiandan);
 }
-void MyFrame::xianlu_get(WXBTNEVT&){
+void MyFrame::xianlu_get(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("仙禄领取");
     MYSHOW(wxString(wxT("每日仙禄："))+TOSTR(lambda::xianlu_get_need())+wxT("仙币"));
 
-    auto callback = [=](WXBTNEVT&){
-        if(!Xian::Lu::CanLingQu.CheckTimes()){
+    auto callback = [=](WXBTNEVT&) {
+        if(!Xian::Lu::CanLingQu.CheckTimes()) {
             MYMESSAGE("今日已领取");
             return;
         }
@@ -936,7 +936,7 @@ void MyFrame::ancient_shop(WXBTNEVT& evt)
     btn6 -> SetFont(font17);
     btn6 -> SetForegroundColour(MyRed);
     btn6 -> Bind(wxEVT_BUTTON,[this](WXBTNEVT&) {
-        if(!AncientVar::BaiYinReader.canminus(50)){
+        if(!AncientVar::BaiYinReader.canminus(50)) {
             MYMESSAGE("白银不足");
             return;
         }
@@ -949,7 +949,7 @@ void MyFrame::ancient_shop(WXBTNEVT& evt)
     btn7 -> SetFont(font17);
     btn7 -> SetForegroundColour(MyRed);
     btn7 -> Bind(wxEVT_BUTTON,[this](WXBTNEVT&) {
-        if(!AncientVar::BaiYinReader.canminus(75)){
+        if(!AncientVar::BaiYinReader.canminus(75)) {
             MYMESSAGE("白银不足");
             return;
         }
@@ -962,7 +962,7 @@ void MyFrame::ancient_shop(WXBTNEVT& evt)
     btn8 -> SetFont(font17);
     btn8 -> SetForegroundColour(MyRed);
     btn8 -> Bind(wxEVT_BUTTON,[this](WXBTNEVT&) {
-        if(!AncientVar::BaiYinReader.canminus(100)){
+        if(!AncientVar::BaiYinReader.canminus(100)) {
             MYMESSAGE("白银不足");
             return;
         }
@@ -1101,7 +1101,7 @@ void MyFrame::ancient_shop_baowu(WXBTNEVT&)
 
     MYLAST(&MyFrame::ancient_shopa);
 }
-void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
+void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&) {
     MYINIT();
 
     AncientJinYinZhu_Get(AncientVar::JinYinZhuReader);
@@ -1111,17 +1111,17 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
 
     MYTITLENS("宝物卖出");
     MYSHOW(wxString(wxT(""))+
-        wxT("金珠：")+TOSTR(JinZhu)+wxT("颗\n")+
-        wxT("银珠：")+TOSTR(YinZhu)+wxT("颗")
-    );
+           wxT("金珠：")+TOSTR(JinZhu)+wxT("颗\n")+
+           wxT("银珠：")+TOSTR(YinZhu)+wxT("颗")
+          );
 
     auto grid = new wxGridSizer(3,3,3,3);
 
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("1明珠\n10银珠"));
     btn1 -> SetForegroundColour(MyOrange);
     btn1 -> SetFont(font17);
-    btn1 -> Bind(wxEVT_BUTTON, [MingZhu, this](WXBTNEVT& evt){
-        if(MingZhu < 1){
+    btn1 -> Bind(wxEVT_BUTTON, [MingZhu, this](WXBTNEVT& evt) {
+        if(MingZhu < 1) {
             MYMESSAGE("明珠不足");
             return;
         }
@@ -1135,8 +1135,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("1玉雕\n15银珠"));
     btn2 -> SetForegroundColour(MyOrange);
     btn2 -> SetFont(font17);
-    btn2 -> Bind(wxEVT_BUTTON, [YuDiao, this](WXBTNEVT& evt){
-        if(YuDiao < 1){
+    btn2 -> Bind(wxEVT_BUTTON, [YuDiao, this](WXBTNEVT& evt) {
+        if(YuDiao < 1) {
             MYMESSAGE("玉雕不足");
             return;
         }
@@ -1150,8 +1150,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("1玉璧\n5金珠"));
     btn3 -> SetForegroundColour(MyOrange);
     btn3 -> SetFont(font17);
-    btn3 -> Bind(wxEVT_BUTTON, [YuBi, this](WXBTNEVT& evt){
-        if(YuBi < 1){
+    btn3 -> Bind(wxEVT_BUTTON, [YuBi, this](WXBTNEVT& evt) {
+        if(YuBi < 1) {
             MYMESSAGE("玉璧不足");
             return;
         }
@@ -1165,8 +1165,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("1绸缎\n1金珠"));
     btn4 -> SetForegroundColour(MyOrange);
     btn4 -> SetFont(font17);
-    btn4 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt){
-        if(ChouDuan < 1){
+    btn4 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt) {
+        if(ChouDuan < 1) {
             MYMESSAGE("绸缎不足");
             return;
         }
@@ -1180,8 +1180,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("5绸缎\n7金珠"));
     btn5 -> SetForegroundColour(MyOrange);
     btn5 -> SetFont(font17);
-    btn5 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt){
-        if(ChouDuan < 5){
+    btn5 -> Bind(wxEVT_BUTTON, [ChouDuan, this](WXBTNEVT& evt) {
+        if(ChouDuan < 5) {
             MYMESSAGE("绸缎不足");
             return;
         }
@@ -1195,8 +1195,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn6 = new wxButton(panel,wxID_ANY,wxT("1玉盏\n4金珠"));
     btn6 -> SetForegroundColour(MyOrange);
     btn6 -> SetFont(font17);
-    btn6 -> Bind(wxEVT_BUTTON, [YuZhan, this](WXBTNEVT& evt){
-        if(YuZhan < 1){
+    btn6 -> Bind(wxEVT_BUTTON, [YuZhan, this](WXBTNEVT& evt) {
+        if(YuZhan < 1) {
             MYMESSAGE("玉盏不足");
             return;
         }
@@ -1210,8 +1210,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn7 = new wxButton(panel,wxID_ANY,wxT("1玉壶\n7金珠"));
     btn7 -> SetForegroundColour(MyOrange);
     btn7 -> SetFont(font17);
-    btn7 -> Bind(wxEVT_BUTTON, [ChaHu, this](WXBTNEVT& evt){
-        if(ChaHu < 1){
+    btn7 -> Bind(wxEVT_BUTTON, [ChaHu, this](WXBTNEVT& evt) {
+        if(ChaHu < 1) {
             MYMESSAGE("玉壶不足");
             return;
         }
@@ -1225,8 +1225,8 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     auto btn8 = new wxButton(panel,wxID_ANY,wxT("4玉杯\n9金珠"));
     btn8 -> SetForegroundColour(MyOrange);
     btn8 -> SetFont(font17);
-    btn8 -> Bind(wxEVT_BUTTON, [ChaZhan, this](WXBTNEVT& evt){
-        if(ChaZhan < 4){
+    btn8 -> Bind(wxEVT_BUTTON, [ChaZhan, this](WXBTNEVT& evt) {
+        if(ChaZhan < 4) {
             MYMESSAGE("玉杯不足");
             return;
         }
@@ -1238,12 +1238,12 @@ void MyFrame::ancient_things_baowu_maichu(WXBTNEVT&){
     grid -> Add(btn8, FLAG_CENTER);
 
     vbox -> Add(grid, FLAG_CENTER);
-    
+
     MYADDSPACER();
 
     MYLAST(&MyFrame::ancient_things_baowu);
 }
-void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
+void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("铜钱领取");
@@ -1254,8 +1254,8 @@ void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("1金币\n20铜钱"));
     btn1 -> SetFont(font17);
     btn1 -> SetForegroundColour(MyDarkRed);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(1)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(1)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1268,8 +1268,8 @@ void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("3金币\n65铜钱"));
     btn2 -> SetFont(font17);
     btn2 -> SetForegroundColour(MyDarkRed);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(3)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(3)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1282,8 +1282,8 @@ void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("6金币\n140铜钱"));
     btn3 -> SetFont(font17);
     btn3 -> SetForegroundColour(MyDarkRed);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(6)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(6)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1296,8 +1296,8 @@ void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("12金币\n300铜钱"));
     btn4 -> SetFont(font17);
     btn4 -> SetForegroundColour(MyDarkRed);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(12)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(12)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1310,8 +1310,8 @@ void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("24金币\n620铜钱"));
     btn5 -> SetFont(font17);
     btn5 -> SetForegroundColour(MyDarkRed);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(24)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(24)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1327,7 +1327,7 @@ void MyFrame::tsquare_jinbi_tongqian(WXBTNEVT&){
 
     MYLAST(&MyFrame::tsquare_jinbi);
 }
-void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
+void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("宝石领取");
@@ -1338,8 +1338,8 @@ void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("1金币\n5宝石"));
     btn1 -> SetFont(font17);
     btn1 -> SetForegroundColour(MyDarkRed);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(1)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(1)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1352,8 +1352,8 @@ void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("3金币\n15宝石"));
     btn2 -> SetFont(font17);
     btn2 -> SetForegroundColour(MyDarkRed);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(3)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(3)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1366,8 +1366,8 @@ void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("6金币\n35宝石"));
     btn3 -> SetFont(font17);
     btn3 -> SetForegroundColour(MyDarkRed);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(6)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(6)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1380,8 +1380,8 @@ void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("12金币\n75宝石"));
     btn4 -> SetFont(font17);
     btn4 -> SetForegroundColour(MyDarkRed);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(12)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(12)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1394,8 +1394,8 @@ void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("24金币\n155宝石"));
     btn5 -> SetFont(font17);
     btn5 -> SetForegroundColour(MyDarkRed);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(24)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(24)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1411,7 +1411,7 @@ void MyFrame::tsquare_jinbi_baoshi(WXBTNEVT&){
 
     MYLAST(&MyFrame::tsquare_jinbi);
 }
-void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){
+void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("银币领取");
@@ -1422,8 +1422,8 @@ void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("3金币\n10银币"));
     btn1 -> SetFont(font17);
     btn1 -> SetForegroundColour(MyDarkRed);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(3)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(3)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1436,8 +1436,8 @@ void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("6金币\n25银币"));
     btn2 -> SetFont(font17);
     btn2 -> SetForegroundColour(MyDarkRed);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(6)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(6)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1450,8 +1450,8 @@ void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("12金币\n55银币"));
     btn3 -> SetFont(font17);
     btn3 -> SetForegroundColour(MyDarkRed);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(12)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(12)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1464,8 +1464,8 @@ void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("24金币\n115银币"));
     btn4 -> SetFont(font17);
     btn4 -> SetForegroundColour(MyDarkRed);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(24)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(24)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1478,8 +1478,8 @@ void MyFrame::tsquare_jinbi_yinbi(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("36金币\n175银币"));
     btn5 -> SetFont(font17);
     btn5 -> SetForegroundColour(MyDarkRed);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(36)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(36)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1697,25 +1697,25 @@ void MyFrame::ancient_shop_guwan(WXBTNEVT& _)
 
     MYUSE();
 }
-void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){
+void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&) {
     MYINIT();
 
     AncientGuWanCha_Get(AncientVar::Guwan::ChaReader);
 
     MYTITLENS("古玩捐献");
     MYSHOW(wxString(wxT("捐赠值："))+AncientVar::JuanZeng::Reader.read_str()+NEWLINE+
-            wxT("捐赠等级：")+TOSTR(AncientJuanZeng_GetLevel(
-                AncientVar::JuanZeng::Reader.read_int()
-            ))
-    );
+           wxT("捐赠等级：")+TOSTR(AncientJuanZeng_GetLevel(
+                                            AncientVar::JuanZeng::Reader.read_int()
+                                        ))
+          );
 
     auto grid = new wxGridSizer(2,3,5,5);
 
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("1玉佩\n10捐献值+15白银"));
     btn1 -> SetForegroundColour(MyDarkBlue);
     btn1 -> SetFont(font17);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(AncientVar::Guwan::YuPeiReader.read_int() < 1){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(AncientVar::Guwan::YuPeiReader.read_int() < 1) {
             MYMESSAGE("玉佩不足");
             return;
         }
@@ -1730,8 +1730,8 @@ void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("1瓷器\n15捐献值+20白银"));
     btn2 -> SetForegroundColour(MyDarkBlue);
     btn2 -> SetFont(font17);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(AncientVar::Guwan::CiQiReader.read_int() < 1){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(AncientVar::Guwan::CiQiReader.read_int() < 1) {
             MYMESSAGE("瓷器不足");
             return;
         }
@@ -1746,8 +1746,8 @@ void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("1碑刻\n25捐献值+30白银"));
     btn3 -> SetForegroundColour(MyDarkBlue);
     btn3 -> SetFont(font17);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(AncientVar::Guwan::ShiBeiReader.read_int() < 1){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(AncientVar::Guwan::ShiBeiReader.read_int() < 1) {
             MYMESSAGE("碑刻不足");
             return;
         }
@@ -1762,8 +1762,8 @@ void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("1茶壶\n20捐献值+30白银"));
     btn4 -> SetForegroundColour(MyDarkBlue);
     btn4 -> SetFont(font17);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(ChaHu < 1){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(ChaHu < 1) {
             MYMESSAGE("茶壶不足");
             return;
         }
@@ -1778,8 +1778,8 @@ void MyFrame::ancient_juanzeng_juanxian(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("1茶盏\n5捐献值+5白银"));
     btn5 -> SetForegroundColour(MyDarkBlue);
     btn5 -> SetFont(font17);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(ChaZhan < 1){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(ChaZhan < 1) {
             MYMESSAGE("茶盏不足");
             return;
         }
@@ -1876,7 +1876,7 @@ void MyFrame::baoshi_get(WXBTNEVT&)
 
     MYLAST(&MyFrame::baoshi_all);
 }
-void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){
+void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("普通盲盒");
@@ -1887,8 +1887,8 @@ void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("基础盲盒\n10金币"));
     btn1 -> SetForegroundColour(MyDarkOrange);
     btn1 -> SetFont(font17);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(10)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(10)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1909,8 +1909,8 @@ void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("高阶盲盒\n20金币"));
     btn2 -> SetForegroundColour(MyDarkOrange);
     btn2 -> SetFont(font17);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(20)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(20)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1931,8 +1931,8 @@ void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("豪华盲盒\n40金币"));
     btn3 -> SetForegroundColour(MyDarkOrange);
     btn3 -> SetFont(font17);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(40)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(40)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1959,7 +1959,7 @@ void MyFrame::tsquare_jinbimh_simple(WXBTNEVT&){
 
     MYLAST(&MyFrame::tsquare_jinbimh);
 }
-void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){
+void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("古代盲盒");
@@ -1970,8 +1970,8 @@ void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("基础盲盒\n10金币"));
     btn1 -> SetForegroundColour(MyDarkOrange);
     btn1 -> SetFont(font17);
-    btn1 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(10)){
+    btn1 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(10)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -1991,8 +1991,8 @@ void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("高级盲盒\n20金币"));
     btn2 -> SetForegroundColour(MyDarkOrange);
     btn2 -> SetFont(font17);
-    btn2 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(20)){
+    btn2 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(20)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2012,8 +2012,8 @@ void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("豪华盲盒\n40金币"));
     btn3 -> SetForegroundColour(MyDarkOrange);
     btn3 -> SetFont(font17);
-    btn3 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(40)){
+    btn3 -> Bind(wxEVT_BUTTON,[=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(40)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2032,14 +2032,14 @@ void MyFrame::tsquare_jinbimh_ancient(WXBTNEVT&){
         this -> tsquare_jinbimh_ancient(evt);
     });
     grid -> Add(btn3, FLAG_CENTER);
-    
+
     vbox -> Add(grid, FLAG_CENTER);
 
     MYADDSPACER();
 
     MYLAST(&MyFrame::tsquare_jinbimh);
 }
-void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
+void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("仙币领取");
@@ -2050,8 +2050,8 @@ void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("1金币\n10仙币"));
     btn1 -> SetForegroundColour(MyOrange);
     btn1 -> SetFont(font17);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(1)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(1)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2064,8 +2064,8 @@ void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("3金币\n35仙币"));
     btn2 -> SetForegroundColour(MyOrange);
     btn2 -> SetFont(font17);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(3)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(3)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2078,8 +2078,8 @@ void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("6金币\n75仙币"));
     btn3 -> SetForegroundColour(MyOrange);
     btn3 -> SetFont(font17);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(6)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(6)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2092,8 +2092,8 @@ void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("12金币\n155仙币"));
     btn4 -> SetForegroundColour(MyOrange);
     btn4 -> SetFont(font17);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(12)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(12)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2106,8 +2106,8 @@ void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("24金币\n305仙币"));
     btn5 -> SetForegroundColour(MyOrange);
     btn5 -> SetFont(font17);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!JinBiReader.canminus(24)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!JinBiReader.canminus(24)) {
             MYMESSAGE("金币不足");
             return;
         }
@@ -2123,7 +2123,7 @@ void MyFrame::tsquare_jinbi_xianbi(WXBTNEVT&){
 
     MYLAST(&MyFrame::tsquare_jinbi);
 }
-void MyFrame::xianji_get(WXBTNEVT&){
+void MyFrame::xianji_get(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("仙籍购买");
@@ -2134,8 +2134,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("5仙籍\n2仙币"));
     btn1 -> SetForegroundColour(MyDarkRed);
     btn1 -> SetFont(font17);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(2)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(2)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2148,8 +2148,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("12仙籍\n4仙币"));
     btn2 -> SetForegroundColour(MyDarkRed);
     btn2 -> SetFont(font17);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(4)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(4)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2162,8 +2162,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("25仙籍\n8仙币"));
     btn3 -> SetForegroundColour(MyDarkRed);
     btn3 -> SetFont(font17);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(8)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(8)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2176,8 +2176,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("55仙籍\n16仙币"));
     btn4 -> SetForegroundColour(MyDarkRed);
     btn4 -> SetFont(font17);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(16)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(16)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2190,8 +2190,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("110仙籍\n30仙币"));
     btn5 -> SetForegroundColour(MyDarkRed);
     btn5 -> SetFont(font17);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(30)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(30)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2204,8 +2204,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn6 = new wxButton(panel,wxID_ANY,wxT("225仙籍\n60仙币"));
     btn6 -> SetForegroundColour(MyDarkRed);
     btn6 -> SetFont(font17);
-    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(60)){
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(60)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2218,8 +2218,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn7 = new wxButton(panel,wxID_ANY,wxT("340仙籍\n90仙币"));
     btn7 -> SetForegroundColour(MyDarkRed);
     btn7 -> SetFont(font17);
-    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(90)){
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(90)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2232,8 +2232,8 @@ void MyFrame::xianji_get(WXBTNEVT&){
     auto btn8 = new wxButton(panel,wxID_ANY,wxT("455仙籍\n120仙币"));
     btn8 -> SetForegroundColour(MyDarkRed);
     btn8 -> SetFont(font17);
-    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianBiReader.canminus(120)){
+    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianBiReader.canminus(120)) {
             MYMESSAGE("仙币不足");
             return;
         }
@@ -2249,7 +2249,7 @@ void MyFrame::xianji_get(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianji);
 }
-void MyFrame::xianji_use_fali(WXBTNEVT&){
+void MyFrame::xianji_use_fali(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("增强法力");
@@ -2259,8 +2259,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("2仙籍\n15法力"));
     MYSHOPBUTTON(btn1,MyOrange);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(2)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(2)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2272,8 +2272,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("4仙籍\n35法力"));
     MYSHOPBUTTON(btn2,MyOrange);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(4)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(4)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2285,8 +2285,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("8仙籍\n75法力"));
     MYSHOPBUTTON(btn3,MyOrange);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(8)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(8)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2298,8 +2298,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("16仙籍\n155法力"));
     MYSHOPBUTTON(btn4,MyOrange);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(16)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(16)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2311,8 +2311,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("24仙籍\n235法力"));
     MYSHOPBUTTON(btn5,MyOrange);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(24)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(24)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2324,8 +2324,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn6 = new wxButton(panel,wxID_ANY,wxT("32仙籍\n415法力"));
     MYSHOPBUTTON(btn6,MyOrange);
-    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(32)){
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(32)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2337,8 +2337,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn7 = new wxButton(panel,wxID_ANY,wxT("48仙籍\n575法力"));
     MYSHOPBUTTON(btn7,MyOrange);
-    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(48)){
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(48)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2350,8 +2350,8 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     auto btn8 = new wxButton(panel,wxID_ANY,wxT("64仙籍\n835法力"));
     MYSHOPBUTTON(btn8,MyOrange);
-    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(64)){
+    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(64)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2367,7 +2367,7 @@ void MyFrame::xianji_use_fali(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianji_use);
 }
-void MyFrame::xianji_use_xianqi(WXBTNEVT&){
+void MyFrame::xianji_use_xianqi(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("增强仙器");
@@ -2377,8 +2377,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("2仙籍\n10仙器法力"));
     MYSHOPBUTTON(btn1,MyDarkOrange);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(2)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(2)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2390,8 +2390,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("4仙籍\n25仙器法力"));
     MYSHOPBUTTON(btn2,MyDarkOrange);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(4)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(4)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2403,8 +2403,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("8仙籍\n55仙器法力"));
     MYSHOPBUTTON(btn3,MyDarkOrange);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(8)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(8)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2416,8 +2416,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("15仙籍\n110仙器法力"));
     MYSHOPBUTTON(btn4,MyDarkOrange);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(15)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(15)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2429,8 +2429,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("30仙籍\n225仙器法力"));
     MYSHOPBUTTON(btn5,MyDarkOrange);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(30)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(30)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2442,8 +2442,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn6 = new wxButton(panel,wxID_ANY,wxT("60仙籍\n555仙器法力"));
     MYSHOPBUTTON(btn6,MyDarkOrange);
-    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(60)){
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(60)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2455,8 +2455,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn7 = new wxButton(panel,wxID_ANY,wxT("90仙籍\n785仙器法力"));
     MYSHOPBUTTON(btn7,MyDarkOrange);
-    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(90)){
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(90)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2468,8 +2468,8 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     auto btn8 = new wxButton(panel,wxID_ANY,wxT("90仙籍\n785仙器法力"));
     MYSHOPBUTTON(btn8,MyDarkOrange);
-    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!XianJi::Reader.canminus(90)){
+    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!XianJi::Reader.canminus(90)) {
             MYMESSAGE("仙籍不足");
             return;
         }
@@ -2485,7 +2485,7 @@ void MyFrame::xianji_use_xianqi(WXBTNEVT&){
 
     MYLAST(&MyFrame::xianji_use);
 }
-void MyFrame::fali_xiandan(WXBTNEVT&){
+void MyFrame::fali_xiandan(WXBTNEVT&) {
     MYINIT();
 
     MYTITLENS("炼制仙丹");
@@ -2495,8 +2495,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("20法力\n1粒普通丹"));
     MYSHOPBUTTON(btn1,MyDarkBlue);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(20)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(20)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2508,8 +2508,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("60法力\n3粒普通丹"));
     MYSHOPBUTTON(btn2,MyDarkBlue);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(60)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(60)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2521,8 +2521,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("130法力\n7粒普通丹"));
     MYSHOPBUTTON(btn3,MyDarkBlue);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(130)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(130)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2534,8 +2534,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("45法力\n1粒碧丹"));
     MYSHOPBUTTON(btn4,MyDarkBlue);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(45)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(45)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2547,8 +2547,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn5 = new wxButton(panel,wxID_ANY,wxT("135法力\n3粒碧丹"));
     MYSHOPBUTTON(btn5,MyDarkBlue);
-    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(135)){
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(135)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2560,8 +2560,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn6 = new wxButton(panel,wxID_ANY,wxT("300法力\n7粒碧丹"));
     MYSHOPBUTTON(btn6,MyDarkBlue);
-    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(300)){
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(300)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2573,8 +2573,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn7 = new wxButton(panel,wxID_ANY,wxT("100法力\n1粒青丹"));
     MYSHOPBUTTON(btn7,MyDarkBlue);
-    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(100)){
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(100)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2586,8 +2586,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn8 = new wxButton(panel,wxID_ANY,wxT("300法力\n3粒青丹"));
     MYSHOPBUTTON(btn8,MyDarkBlue);
-    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(300)){
+    btn8 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(300)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2599,8 +2599,8 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     auto btn9 = new wxButton(panel,wxID_ANY,wxT("680法力\n7粒青丹"));
     MYSHOPBUTTON(btn9,MyDarkBlue);
-    btn9 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){
-        if(!FaLiReader.canminus(680)){
+    btn9 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt) {
+        if(!FaLiReader.canminus(680)) {
             MYMESSAGE("法力不足");
             return;
         }
@@ -2616,280 +2616,280 @@ void MyFrame::fali_xiandan(WXBTNEVT&){
 
     MYLAST(&MyFrame::fali);
 }
-void MyFrame::xianqi_liandan(WXBTNEVT&){
-  MYINIT();
+void MyFrame::xianqi_liandan(WXBTNEVT&) {
+    MYINIT();
 
-  MYTITLE("仙器炼丹");
+    MYTITLE("仙器炼丹");
 
-  auto grid = new wxGridSizer(3,3,4,4);
+    auto grid = new wxGridSizer(3,3,4,4);
 
-  auto btn1 = new wxButton(panel,wxID_ANY,wxT("10仙器法力+2普通丹\n1碧丹"));
-  MYSHOPBUTTON(btn1, MyDarkOrange);
-  btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(10)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::PuTong.high(2)){
-      MYMESSAGE("普通丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(10);
-    Xian::Dan::PuTong.minusnum(2);
-    Xian::Dan::Bi.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn1, FLAG_CENTER);
-  
-  auto btn2 = new wxButton(panel,wxID_ANY,wxT("15仙器法力+2碧丹\n1青丹"));
-  MYSHOPBUTTON(btn2, MyDarkOrange);
-  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(15)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::Bi.high(2)){
-      MYMESSAGE("碧丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(15);
-    Xian::Dan::Bi.minusnum(2);
-    Xian::Dan::Qing.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn2, FLAG_CENTER);
+    auto btn1 = new wxButton(panel,wxID_ANY,wxT("10仙器法力+2普通丹\n1碧丹"));
+    MYSHOPBUTTON(btn1, MyDarkOrange);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(10)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::PuTong.high(2)) {
+            MYMESSAGE("普通丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(10);
+        Xian::Dan::PuTong.minusnum(2);
+        Xian::Dan::Bi.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn1, FLAG_CENTER);
 
-  auto btn3 = new wxButton(panel,wxID_ANY,wxT("20仙器法力+2青丹\n1紫丹"));
-  MYSHOPBUTTON(btn3, MyDarkOrange);
-  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(20)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::Qing.high(2)){
-      MYMESSAGE("青丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(20);
-    Xian::Dan::Qing.minusnum(2);
-    Xian::Dan::Zi.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn3, FLAG_CENTER);
-  
-  auto btn4 = new wxButton(panel,wxID_ANY,wxT("25仙器法力+2紫丹\n1五色丹"));
-  MYSHOPBUTTON(btn4, MyDarkOrange);
-  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(25)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::Zi.high(2)){
-      MYMESSAGE("紫丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(25);
-    Xian::Dan::Zi.minusnum(2);
-    Xian::Dan::WuSe.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn4, FLAG_CENTER);
+    auto btn2 = new wxButton(panel,wxID_ANY,wxT("15仙器法力+2碧丹\n1青丹"));
+    MYSHOPBUTTON(btn2, MyDarkOrange);
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(15)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::Bi.high(2)) {
+            MYMESSAGE("碧丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(15);
+        Xian::Dan::Bi.minusnum(2);
+        Xian::Dan::Qing.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn2, FLAG_CENTER);
 
-  auto btn7 = new wxButton(panel,wxID_ANY,wxT("40仙器法力+4紫丹\n2五色丹"));
-  MYSHOPBUTTON(btn7, MyDarkOrange);
-  btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(40)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::Zi.high(4)){
-      MYMESSAGE("紫丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(40);
-    Xian::Dan::Zi.minusnum(4);
-    Xian::Dan::WuSe.addnum(2);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn7, FLAG_CENTER);
+    auto btn3 = new wxButton(panel,wxID_ANY,wxT("20仙器法力+2青丹\n1紫丹"));
+    MYSHOPBUTTON(btn3, MyDarkOrange);
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(20)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::Qing.high(2)) {
+            MYMESSAGE("青丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(20);
+        Xian::Dan::Qing.minusnum(2);
+        Xian::Dan::Zi.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn3, FLAG_CENTER);
 
-  auto btn5 = new wxButton(panel,wxID_ANY,wxT("30仙器法力+2五色丹\n1银丹"));
-  MYSHOPBUTTON(btn5, MyDarkOrange);
-  btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(30)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::WuSe.high(2)){
-      MYMESSAGE("五色丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(30);
-    Xian::Dan::WuSe.minusnum(2);
-    Xian::Dan::Yin.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn5, FLAG_CENTER);
-  
-  auto btn6 = new wxButton(panel,wxID_ANY,wxT("50仙器法力+4五色丹\n2银丹"));
-  MYSHOPBUTTON(btn6, MyDarkOrange);
-  btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianQiFaLiReader.high(50)){
-      MYMESSAGE("仙器法力不足");
-      return;
-    }
-    if(!Xian::Dan::WuSe.high(4)){
-      MYMESSAGE("五色丹不足");
-      return;
-    }
-    XianQiFaLiReader.minusnum(50);
-    Xian::Dan::WuSe.minusnum(4);
-    Xian::Dan::Yin.addnum(2);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn6, FLAG_CENTER);  
-  
-  vbox -> Add(grid, FLAG_CENTER);
+    auto btn4 = new wxButton(panel,wxID_ANY,wxT("25仙器法力+2紫丹\n1五色丹"));
+    MYSHOPBUTTON(btn4, MyDarkOrange);
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(25)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::Zi.high(2)) {
+            MYMESSAGE("紫丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(25);
+        Xian::Dan::Zi.minusnum(2);
+        Xian::Dan::WuSe.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn4, FLAG_CENTER);
 
-  MYADDSPACER();
+    auto btn7 = new wxButton(panel,wxID_ANY,wxT("40仙器法力+4紫丹\n2五色丹"));
+    MYSHOPBUTTON(btn7, MyDarkOrange);
+    btn7 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(40)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::Zi.high(4)) {
+            MYMESSAGE("紫丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(40);
+        Xian::Dan::Zi.minusnum(4);
+        Xian::Dan::WuSe.addnum(2);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn7, FLAG_CENTER);
 
-  MYLAST(&MyFrame::xianqi);
+    auto btn5 = new wxButton(panel,wxID_ANY,wxT("30仙器法力+2五色丹\n1银丹"));
+    MYSHOPBUTTON(btn5, MyDarkOrange);
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(30)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::WuSe.high(2)) {
+            MYMESSAGE("五色丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(30);
+        Xian::Dan::WuSe.minusnum(2);
+        Xian::Dan::Yin.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn5, FLAG_CENTER);
+
+    auto btn6 = new wxButton(panel,wxID_ANY,wxT("50仙器法力+4五色丹\n2银丹"));
+    MYSHOPBUTTON(btn6, MyDarkOrange);
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianQiFaLiReader.high(50)) {
+            MYMESSAGE("仙器法力不足");
+            return;
+        }
+        if(!Xian::Dan::WuSe.high(4)) {
+            MYMESSAGE("五色丹不足");
+            return;
+        }
+        XianQiFaLiReader.minusnum(50);
+        Xian::Dan::WuSe.minusnum(4);
+        Xian::Dan::Yin.addnum(2);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn6, FLAG_CENTER);
+
+    vbox -> Add(grid, FLAG_CENTER);
+
+    MYADDSPACER();
+
+    MYLAST(&MyFrame::xianqi);
 }
-void MyFrame::xianji_liandan(WXBTNEVT&){
-  MYINIT();
+void MyFrame::xianji_liandan(WXBTNEVT&) {
+    MYINIT();
 
-  MYTITLE("仙籍炼丹");
+    MYTITLE("仙籍炼丹");
 
-  auto grid = new wxGridSizer(2,3,4,4);
+    auto grid = new wxGridSizer(2,3,4,4);
 
-  auto btn1 = new wxButton(panel,wxID_ANY,wxT("10仙籍+2银丹\n1金丹"));
-  MYSHOPBUTTON(btn1, MyOrange);
-  btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianJi::Reader.high(10)){
-      MYMESSAGE("仙籍不足");
-      return;
-    }
-    if(!Xian::Dan::Yin.high(2)){
-      MYMESSAGE("银丹不足");
-      return;
-    }
-    XianJi::Reader.minusnum(10);
-    Xian::Dan::Yin.minusnum(2);
-    Xian::Dan::Jin.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn1, FLAG_CENTER);
+    auto btn1 = new wxButton(panel,wxID_ANY,wxT("10仙籍+2银丹\n1金丹"));
+    MYSHOPBUTTON(btn1, MyOrange);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianJi::Reader.high(10)) {
+            MYMESSAGE("仙籍不足");
+            return;
+        }
+        if(!Xian::Dan::Yin.high(2)) {
+            MYMESSAGE("银丹不足");
+            return;
+        }
+        XianJi::Reader.minusnum(10);
+        Xian::Dan::Yin.minusnum(2);
+        Xian::Dan::Jin.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn1, FLAG_CENTER);
 
-  auto btn2 = new wxButton(panel,wxID_ANY,wxT("20仙籍+4银丹\n2金丹"));
-  MYSHOPBUTTON(btn2, MyOrange);
-  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianJi::Reader.high(20)){
-      MYMESSAGE("仙籍不足");
-      return;
-    }
-    if(!Xian::Dan::Yin.high(4)){
-      MYMESSAGE("银丹不足");
-      return;
-    }
-    XianJi::Reader.minusnum(20);
-    Xian::Dan::Yin.minusnum(4);
-    Xian::Dan::Jin.addnum(2);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn2, FLAG_CENTER);
+    auto btn2 = new wxButton(panel,wxID_ANY,wxT("20仙籍+4银丹\n2金丹"));
+    MYSHOPBUTTON(btn2, MyOrange);
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianJi::Reader.high(20)) {
+            MYMESSAGE("仙籍不足");
+            return;
+        }
+        if(!Xian::Dan::Yin.high(4)) {
+            MYMESSAGE("银丹不足");
+            return;
+        }
+        XianJi::Reader.minusnum(20);
+        Xian::Dan::Yin.minusnum(4);
+        Xian::Dan::Jin.addnum(2);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn2, FLAG_CENTER);
 
-  auto btn3 = new wxButton(panel,wxID_ANY,wxT("35仙籍+8银丹\n4金丹"));
-  MYSHOPBUTTON(btn3, MyOrange);
-  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianJi::Reader.high(35)){
-      MYMESSAGE("仙籍不足");
-      return;
-    }
-    if(!Xian::Dan::Yin.high(8)){
-      MYMESSAGE("银丹不足");
-      return;
-    }
-    XianJi::Reader.minusnum(35);
-    Xian::Dan::Yin.minusnum(8);
-    Xian::Dan::Jin.addnum(4);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn3, FLAG_CENTER);
+    auto btn3 = new wxButton(panel,wxID_ANY,wxT("35仙籍+8银丹\n4金丹"));
+    MYSHOPBUTTON(btn3, MyOrange);
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianJi::Reader.high(35)) {
+            MYMESSAGE("仙籍不足");
+            return;
+        }
+        if(!Xian::Dan::Yin.high(8)) {
+            MYMESSAGE("银丹不足");
+            return;
+        }
+        XianJi::Reader.minusnum(35);
+        Xian::Dan::Yin.minusnum(8);
+        Xian::Dan::Jin.addnum(4);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn3, FLAG_CENTER);
 
-  auto btn4 = new wxButton(panel,wxID_ANY,wxT("60仙籍+16银丹\n8金丹"));
-  MYSHOPBUTTON(btn4, MyOrange);
-  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianJi::Reader.high(60)){
-      MYMESSAGE("仙籍不足");
-      return;
-    }
-    if(!Xian::Dan::Yin.high(16)){
-      MYMESSAGE("银丹不足");
-      return;
-    }
-    XianJi::Reader.minusnum(60);
-    Xian::Dan::Yin.minusnum(16);
-    Xian::Dan::Jin.addnum(8);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn4, FLAG_CENTER);
+    auto btn4 = new wxButton(panel,wxID_ANY,wxT("60仙籍+16银丹\n8金丹"));
+    MYSHOPBUTTON(btn4, MyOrange);
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianJi::Reader.high(60)) {
+            MYMESSAGE("仙籍不足");
+            return;
+        }
+        if(!Xian::Dan::Yin.high(16)) {
+            MYMESSAGE("银丹不足");
+            return;
+        }
+        XianJi::Reader.minusnum(60);
+        Xian::Dan::Yin.minusnum(16);
+        Xian::Dan::Jin.addnum(8);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn4, FLAG_CENTER);
 
-  auto btn5 = new wxButton(panel,wxID_ANY,wxT("20仙籍+2金丹\n1神丹"));
-  MYSHOPBUTTON(btn5, MyOrange);
-  btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianJi::Reader.high(20)){
-      MYMESSAGE("仙籍不足");
-      return;
-    }
-    if(!Xian::Dan::Jin.high(2)){
-      MYMESSAGE("金丹不足");
-      return;
-    }
-    XianJi::Reader.minusnum(20);
-    Xian::Dan::Jin.minusnum(2);
-    Xian::Dan::Shen.addnum(1);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn5, FLAG_CENTER);
+    auto btn5 = new wxButton(panel,wxID_ANY,wxT("20仙籍+2金丹\n1神丹"));
+    MYSHOPBUTTON(btn5, MyOrange);
+    btn5 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianJi::Reader.high(20)) {
+            MYMESSAGE("仙籍不足");
+            return;
+        }
+        if(!Xian::Dan::Jin.high(2)) {
+            MYMESSAGE("金丹不足");
+            return;
+        }
+        XianJi::Reader.minusnum(20);
+        Xian::Dan::Jin.minusnum(2);
+        Xian::Dan::Shen.addnum(1);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn5, FLAG_CENTER);
 
-  auto btn6 = new wxButton(panel,wxID_ANY,wxT("55仙籍+6金丹\n3神丹"));
-  MYSHOPBUTTON(btn6, MyOrange);
-  btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if(!XianJi::Reader.high(55)){
-      MYMESSAGE("仙籍不足");
-      return;
-    }
-    if(!Xian::Dan::Jin.high(6)){
-      MYMESSAGE("金丹不足");
-      return;
-    }
-    XianJi::Reader.minusnum(55);
-    Xian::Dan::Jin.minusnum(6);
-    Xian::Dan::Shen.addnum(3);
-    MYMESSAGE("炼制成功");
-  });
-  grid -> Add(btn6, FLAG_CENTER);
+    auto btn6 = new wxButton(panel,wxID_ANY,wxT("55仙籍+6金丹\n3神丹"));
+    MYSHOPBUTTON(btn6, MyOrange);
+    btn6 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!XianJi::Reader.high(55)) {
+            MYMESSAGE("仙籍不足");
+            return;
+        }
+        if(!Xian::Dan::Jin.high(6)) {
+            MYMESSAGE("金丹不足");
+            return;
+        }
+        XianJi::Reader.minusnum(55);
+        Xian::Dan::Jin.minusnum(6);
+        Xian::Dan::Shen.addnum(3);
+        MYMESSAGE("炼制成功");
+    });
+    grid -> Add(btn6, FLAG_CENTER);
 
-  vbox -> Add(grid, FLAG_CENTER);
+    vbox -> Add(grid, FLAG_CENTER);
 
-  MYADDSPACER();
+    MYADDSPACER();
 
-  MYLAST(&MyFrame::xianji);
+    MYLAST(&MyFrame::xianji);
 }
-void MyFrame::xiandan_he_yindan(WXBTNEVT&){
+void MyFrame::xiandan_he_yindan(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("银丹召鹤");
 
     auto btn1 = new wxButton(panel,wxID_ANY,wxT("1银丹召鹤"));
     MYSHOPBUTTON(btn1, MyDarkBlue);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){
-        if(!Xian::Dan::Yin.canminus(1)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {
+        if(!Xian::Dan::Yin.canminus(1)) {
             MYMESSAGE("银丹不足");
             return;
         }
         int luck = getrnd(0,100);
-        if(luck < 20){
+        if(luck < 20) {
             MYMESSAGE("召鹤成功，获得650积分+80金币");
             JiFenReader.addnum(650);
             JinBiReader.addnum(80);
@@ -2903,13 +2903,13 @@ void MyFrame::xiandan_he_yindan(WXBTNEVT&){
 
     auto btn2 = new wxButton(panel,wxID_ANY,wxT("3银丹召鹤"));
     MYSHOPBUTTON(btn2, MyDarkBlue);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){
-        if(!Xian::Dan::Yin.canminus(3)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {
+        if(!Xian::Dan::Yin.canminus(3)) {
             MYMESSAGE("银丹不足");
             return;
         }
         int luck = getrnd(0,100);
-        if(luck < 40){
+        if(luck < 40) {
             MYMESSAGE("召鹤成功，获得700积分+90金币");
             JiFenReader.addnum(700);
             JinBiReader.addnum(90);
@@ -2923,13 +2923,13 @@ void MyFrame::xiandan_he_yindan(WXBTNEVT&){
 
     auto btn3 = new wxButton(panel,wxID_ANY,wxT("5银丹召鹤"));
     MYSHOPBUTTON(btn3, MyDarkBlue);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){
-        if(!Xian::Dan::Yin.canminus(5)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {
+        if(!Xian::Dan::Yin.canminus(5)) {
             MYMESSAGE("银丹不足");
             return;
         }
         int luck = getrnd(0,100);
-        if(luck < 70){
+        if(luck < 70) {
             MYMESSAGE("召鹤成功，获得750积分+100金币");
             JiFenReader.addnum(750);
             JinBiReader.addnum(100);
@@ -2943,8 +2943,8 @@ void MyFrame::xiandan_he_yindan(WXBTNEVT&){
 
     auto btn4 = new wxButton(panel,wxID_ANY,wxT("10银丹召鹤"));
     MYSHOPBUTTON(btn4, MyDarkBlue);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ){
-        if(!Xian::Dan::Yin.canminus(10)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& ) {
+        if(!Xian::Dan::Yin.canminus(10)) {
             MYMESSAGE("银丹不足");
             return;
         }
@@ -2958,92 +2958,92 @@ void MyFrame::xiandan_he_yindan(WXBTNEVT&){
 
     MYLAST(&MyFrame::xiandan_he);
 }
-void MyFrame::xiandan_he_jindan(WXBTNEVT&){
-  MYINIT();
+void MyFrame::xiandan_he_jindan(WXBTNEVT&) {
+    MYINIT();
 
-  MYTITLE("金丹召鹤");
+    MYTITLE("金丹召鹤");
 
-  auto btn1 = new wxButton(panel, wxID_ANY, wxT("1金丹召鹤"));
-  MYSHOPBUTTON(btn1, MyDarkOrange);
-  btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if ( !Xian::Dan::Jin.canminus(1) ) {
-      MYMESSAGE("金丹不足");
-      return;
-    }
-    int luck = getrnd(0,100);
-    if(luck < 40) {
-      MYMESSAGE("召鹤成功，获得1000积分+50金币");
-      JiFenReader.addnum(1000);
-      JinBiReader.addnum(50);
-    } else {
-      MYMESSAGE("召鹤成功，获得900积分+40金币");
-      JiFenReader.addnum(900);
-      JinBiReader.addnum(40);
-    }
-  });
-  vbox -> Add(btn1, FLAG_CENTER);
+    auto btn1 = new wxButton(panel, wxID_ANY, wxT("1金丹召鹤"));
+    MYSHOPBUTTON(btn1, MyDarkOrange);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if ( !Xian::Dan::Jin.canminus(1) ) {
+            MYMESSAGE("金丹不足");
+            return;
+        }
+        int luck = getrnd(0,100);
+        if(luck < 40) {
+            MYMESSAGE("召鹤成功，获得1000积分+50金币");
+            JiFenReader.addnum(1000);
+            JinBiReader.addnum(50);
+        } else {
+            MYMESSAGE("召鹤成功，获得900积分+40金币");
+            JiFenReader.addnum(900);
+            JinBiReader.addnum(40);
+        }
+    });
+    vbox -> Add(btn1, FLAG_CENTER);
 
-  auto btn2 = new wxButton(panel, wxID_ANY, wxT("3金丹召鹤"));
-  MYSHOPBUTTON(btn2, MyDarkOrange);
-  btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if ( !Xian::Dan::Jin.canminus(3) ) {
-      MYMESSAGE("金丹不足");
-      return;
-    }
-    int luck = getrnd(0,100);
-    if(luck < 60) {
-      MYMESSAGE("召鹤成功，获得1100积分+80金币");
-      JiFenReader.addnum(1100);
-      JinBiReader.addnum(80);
-    } else {
-      MYMESSAGE("召鹤成功，获得1000积分+60金币");
-      JiFenReader.addnum(1000);
-      JinBiReader.addnum(60);
-    }
-  });
-  vbox -> Add(btn2, FLAG_CENTER);
+    auto btn2 = new wxButton(panel, wxID_ANY, wxT("3金丹召鹤"));
+    MYSHOPBUTTON(btn2, MyDarkOrange);
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if ( !Xian::Dan::Jin.canminus(3) ) {
+            MYMESSAGE("金丹不足");
+            return;
+        }
+        int luck = getrnd(0,100);
+        if(luck < 60) {
+            MYMESSAGE("召鹤成功，获得1100积分+80金币");
+            JiFenReader.addnum(1100);
+            JinBiReader.addnum(80);
+        } else {
+            MYMESSAGE("召鹤成功，获得1000积分+60金币");
+            JiFenReader.addnum(1000);
+            JinBiReader.addnum(60);
+        }
+    });
+    vbox -> Add(btn2, FLAG_CENTER);
 
-  auto btn3 = new wxButton(panel, wxID_ANY, wxT("5金丹召鹤"));
-  MYSHOPBUTTON(btn3, MyDarkOrange);
-  btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if ( !Xian::Dan::Jin.canminus(5) ) {
-      MYMESSAGE("金丹不足");
-      return;
-    }
-    int luck = getrnd(0,100);
-    MYMESSAGE("召鹤成功，获得1300积分+100金币");
-    JiFenReader.addnum(1300);
-    JinBiReader.addnum(100);
-  });
-  vbox -> Add(btn3, FLAG_CENTER);
+    auto btn3 = new wxButton(panel, wxID_ANY, wxT("5金丹召鹤"));
+    MYSHOPBUTTON(btn3, MyDarkOrange);
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if ( !Xian::Dan::Jin.canminus(5) ) {
+            MYMESSAGE("金丹不足");
+            return;
+        }
+        int luck = getrnd(0,100);
+        MYMESSAGE("召鹤成功，获得1300积分+100金币");
+        JiFenReader.addnum(1300);
+        JinBiReader.addnum(100);
+    });
+    vbox -> Add(btn3, FLAG_CENTER);
 
-  auto btn4 = new wxButton(panel, wxID_ANY, wxT("10金丹召鹤"));
-  MYSHOPBUTTON(btn4, MyDarkOrange);
-  btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-    if ( !Xian::Dan::Jin.canminus(10) ) {
-      MYMESSAGE("金丹不足");
-      return;
-    }
-    int luck = getrnd(0,100);
-    MYMESSAGE("召鹤成功，获得2700积分+220金币");
-    JiFenReader.addnum(2700);
-    JinBiReader.addnum(220);
-  });
-  vbox -> Add(btn4, FLAG_CENTER);
+    auto btn4 = new wxButton(panel, wxID_ANY, wxT("10金丹召鹤"));
+    MYSHOPBUTTON(btn4, MyDarkOrange);
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if ( !Xian::Dan::Jin.canminus(10) ) {
+            MYMESSAGE("金丹不足");
+            return;
+        }
+        int luck = getrnd(0,100);
+        MYMESSAGE("召鹤成功，获得2700积分+220金币");
+        JiFenReader.addnum(2700);
+        JinBiReader.addnum(220);
+    });
+    vbox -> Add(btn4, FLAG_CENTER);
 
-  MYADDSPACER();
+    MYADDSPACER();
 
-  MYLAST(&MyFrame::xiandan_he);
+    MYLAST(&MyFrame::xiandan_he);
 }
-void MyFrame::xiandan_he_shendan(WXBTNEVT&){
+void MyFrame::xiandan_he_shendan(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("神丹召鹤");
 
     auto btn1 = new wxButton(panel, wxID_ANY, wxT("1神丹召鹤"));
     MYSHOPBUTTON(btn1, MyRed);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!Xian::Dan::Shen.canminus(1)){
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!Xian::Dan::Shen.canminus(1)) {
             MYMESSAGE("神丹不足");
             return;
         }
@@ -3056,8 +3056,8 @@ void MyFrame::xiandan_he_shendan(WXBTNEVT&){
 
     auto btn2 = new wxButton(panel, wxID_ANY, wxT("2神丹召鹤"));
     MYSHOPBUTTON(btn2, MyRed);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!Xian::Dan::Shen.canminus(2)){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!Xian::Dan::Shen.canminus(2)) {
             MYMESSAGE("神丹不足");
             return;
         }
@@ -3070,8 +3070,8 @@ void MyFrame::xiandan_he_shendan(WXBTNEVT&){
 
     auto btn3 = new wxButton(panel, wxID_ANY, wxT("3神丹召鹤"));
     MYSHOPBUTTON(btn3, MyRed);
-    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!Xian::Dan::Shen.canminus(3)){
+    btn3 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!Xian::Dan::Shen.canminus(3)) {
             MYMESSAGE("神丹不足");
             return;
         }
@@ -3084,8 +3084,8 @@ void MyFrame::xiandan_he_shendan(WXBTNEVT&){
 
     auto btn4 = new wxButton(panel, wxID_ANY, wxT("6神丹召鹤"));
     MYSHOPBUTTON(btn4, MyRed);
-    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-        if(!Xian::Dan::Shen.canminus(6)){
+    btn4 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        if(!Xian::Dan::Shen.canminus(6)) {
             MYMESSAGE("神丹不足");
             return;
         }
@@ -3100,21 +3100,21 @@ void MyFrame::xiandan_he_shendan(WXBTNEVT&){
 
     MYLAST(&MyFrame::xiandan_he);
 }
-void MyFrame::xianlu_next(WXBTNEVT&){
+void MyFrame::xianlu_next(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("仙禄升级");
 
-    auto getneed = [=](int dj){
+    auto getneed = [=](int dj) {
         return 1500 + dj * 100;
     };
 
     MYSHOWNSNCM(wxString(wxT("需要仙币："))+TOSTR(getneed(Xian::Lu::Ji.read_int())), btn1);
     btn1 -> SetForegroundColour(MyDarkBlue);
-    
-    auto callback = [=](WXBTNEVT& evt){
+
+    auto callback = [=](WXBTNEVT& evt) {
         int need = getneed(Xian::Lu::Ji.read_int());
-        if(!Files::XianBiReader.canminus(need)){
+        if(!Files::XianBiReader.canminus(need)) {
             MYMESSAGE("仙币不足");
             return;
         }
