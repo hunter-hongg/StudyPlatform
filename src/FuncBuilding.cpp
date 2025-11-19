@@ -1,3 +1,4 @@
+#include "clog.h"
 #include "func/simple.hpp"
 #include "headers.hpp"
 #include "mine/MyColour.h"
@@ -36,4 +37,6 @@ void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
     btn1 -> SetForegroundColour(MyDarkRed);
 
     Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
+
+    CLogger_log(Logfile, CLogger_DEBUG, "便利店铺=>货币便利店铺: 正常启动");
 }

@@ -25,6 +25,7 @@
 // 自定义工具
 #include <utils/rand.hpp> // 旧随机数生成，现使用ffi/rust/Rand/RandCpp.hpp
 #include <utils/new/timer/timer.hpp> // 早期实现学习计时使用的Timer
+#include <clibs/utils/CLogger.hpp> // 20251118新实现的日志库，Github仓库hunter-hongg/clog
 
 // 辅助函数
 #include <clibs/ancient/jinjian.hpp> // 古代文官-直言进谏 结果判断模块
