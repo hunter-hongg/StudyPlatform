@@ -9,7 +9,7 @@ void MyFrame::ancient_shop_bianli(WXBTNEVT&) {
 
     Simple::Title("货币便利店铺", panel, vbox);
 
-    wxGridSizer* grid = new wxGridSizer(3, 3, 4, 4);
+    wxGridSizer* grid = new wxGridSizer(3, 1, 4, 4);
 
     auto btn1 = Simple::ShopButton("兑换白银", panel, MyOrange);
     btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_baiyin, this);

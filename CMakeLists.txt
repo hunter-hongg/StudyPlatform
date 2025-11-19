@@ -42,7 +42,11 @@ target_include_directories(studyplatform PRIVATE
     /usr/local/include
 )
 
-target_include_directories(studyplatform PRIVATE /home/coding/cding/include)
+target_include_directories(studyplatform PRIVATE $ENV{HOME}/cding/include)
 
 target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
 
+# hunter-hongg/clog
+target_include_directories(studyplatform PRIVATE $ENV{HOME}/clog/include)
+target_link_directories(studyplatform PRIVATE $ENV{HOME}/clog/lib/)
+target_link_libraries(studyplatform libCLogger.so)

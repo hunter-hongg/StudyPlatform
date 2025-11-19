@@ -24,7 +24,6 @@
 
 // 自定义工具
 #include <utils/rand.hpp> // 旧随机数生成，现使用ffi/rust/Rand/RandCpp.hpp
-#include <utils/new/loger/loger.hpp> // 早期loger，现在已不使用
 #include <utils/new/timer/timer.hpp> // 早期实现学习计时使用的Timer
 
 // 辅助函数
@@ -35,7 +34,7 @@
 #include <clibs/xianbi/fali.hpp> // 神话传说-法力 判断模块
 #include <clibs/ancient/ChuZheng.hpp> // 古代武官-领兵出征 判断模块
 
-// func下头文件 
+// func下头文件
 #include <func/simple.hpp> // 定义宏替代品
 #include <func/lambda.hpp> // 定义lambda函数
 
@@ -83,8 +82,8 @@
 // FFI(Golang)
 
 // BookShelfShouCang
-#include <ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp> 
-                                // 符号链接指向项目根目录下的.headers_go下的文件
+#include <ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp>
+// 符号链接指向项目根目录下的.headers_go下的文件
 
 // FFI(D)
 
