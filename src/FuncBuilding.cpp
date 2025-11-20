@@ -3,6 +3,7 @@
 #include "headers.hpp"
 #include "mine/MyColour.h"
 #include "type.hpp"
+#include "var.hpp"
 #include <wx/sizer.h>
 
 void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
@@ -27,7 +28,7 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
 
     wxGridSizer* grid = new wxGridSizer(3, 1, 4, 4);
 
-    auto btn1 = Simple::ShopButton("兑换书籍", panel, MyOrange);
+    auto btn1 = Simple::ShopButton("兑换普通书籍", panel, MyOrange);
     btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_simple, this);
     grid -> Add(btn1, FLAG_CENTER);
 
@@ -44,6 +45,8 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
     Simple::BackButton(&MyFrame::ancient_shop_bianli_all, panel, vbox, this);
 }
 void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
+    CLogger_log(Logfile, CLogger_DEBUG, "便利商店=>书籍商店=>普通书籍: 正常启动");
+
     wxBoxSizer* vbox = Simple::Init(panel, this);
 
     Simple::Title("兑换白银", panel, vbox);
