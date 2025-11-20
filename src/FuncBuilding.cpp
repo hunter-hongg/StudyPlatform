@@ -49,9 +49,9 @@ void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
 
     wxBoxSizer* vbox = Simple::Init(panel, this);
 
-    Simple::Title("兑换白银", panel, vbox);
+    Simple::Title("兑换普通书籍", panel, vbox);
 
-    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少白银"));
+    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少普通书籍"));
     label->SetFont(font17);
     vbox -> Add(label, FLAG_LEFT);
 
