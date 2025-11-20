@@ -892,6 +892,7 @@ ancient_shop_baowu	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_baowu(WXBTNEVT
 ancient_shop_bianli	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_all	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_baiyin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_book	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_huangjin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_huangjin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_tongbi	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_tongbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_guwan	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_guwan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
