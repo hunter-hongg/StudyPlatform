@@ -1,4 +1,5 @@
 #pragma once
+#include "glib.h"
 #include <string>
 #include <cstdlib>
 #include <utils/files/PasswordFile.hpp>
@@ -10,6 +11,7 @@
 #include <clibs/ancient/sword.hpp>
 #include <clibs/ancient/pao.hpp>
 #include <clibs/ancient/WuGuanPinJi.hpp>
+#include <clibs/utils/CLogger.hpp>
 #include <ffi/zig/AncientWenGuan/AncientWenGuanCpp.hpp>
 #include <ffi/zig/AncientBaoWu/AncientBaoWuCpp.hpp>
 #include <ffi/zig/BookShelf/BookShelfCpp.hpp>
@@ -277,6 +279,9 @@ static BigIntFile BankStore(FilePathBank+"fhubasr");
 namespace TongYongReal {
 static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860");
 }
+
+// 日志文件
+static CLogger* Logfile = CLogger_new_with_logfile(g_string_new(".学习平台.log"));
 
 // 简单符号
 
