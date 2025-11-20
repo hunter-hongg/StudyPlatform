@@ -325,7 +325,6 @@ EQUALS	build/Makefile	/^EQUALS = =$/;"	m
 EXECUTABLE_OUTPUT_PATH	CMakeLists.txt	/^set(EXECUTABLE_OUTPUT_PATH ..\/target\/)$/;"	v
 EmptyEvent	include/var.hpp	/^static wxCommandEvent EmptyEvent;$/;"	v	typeref:typename:wxCommandEvent
 End	include/utils/files/BoolFile.h	/^    string File, Start, End; $/;"	m	class:BoolFile	typeref:typename:string
-Endline	include/utils/new/loger/loger.hpp	/^#define Endline /;"	d
 FLAG_CENTER	include/mine/MyFlags.h	/^static const auto FLAG_CENTER=wxSizerFlags(0).Border(wxALL, 10).Align(wxALIGN_CENTER);$/;"	v	typeref:typename:const auto
 FLAG_CENTER_NOBORDER	include/mine/MyFlags.h	/^static const auto FLAG_CENTER_NOBORDER=wxSizerFlags(0).Border(wxALL, 0).Align(wxALIGN_CENTER);$/;"	v	typeref:typename:const auto
 FLAG_LEFT	include/mine/MyFlags.h	/^static const auto FLAG_LEFT=wxSizerFlags(0).Border(wxALL, 10).Align(wxALIGN_LEFT);$/;"	v	typeref:typename:const auto
@@ -474,6 +473,7 @@ Level3	include/ffi/zig/BookShelf/BookShelf.h	/^    int32_t Level3;$/;"	m	struct:
 LiHe	include/var.hpp	/^namespace LiHe$/;"	n
 LiLiang	include/var.hpp	/^namespace LiLiang$/;"	n	namespace:AncientVar::WuGuan
 LingQuCheck	include/var.hpp	/^static CheckFile LingQuCheck(FilePathAncient+"jzrd.conc.lqck.conc",1250,1);$/;"	v	namespace:AncientVar::JuanZeng	typeref:typename:CheckFile
+Logfile	include/var.hpp	/^static CLogger* Logfile = CLogger_new_with_logfile(g_string_new(".学习平台.log"));$/;"	v	typeref:typename:CLogger *
 Lu	include/var.hpp	/^namespace Lu {$/;"	n	namespace:Files::Xian
 MYADDSPACER	include/macro.hpp	/^#define MYADDSPACER(/;"	d
 MYBACK	include/macro.hpp	/^#define MYBACK(/;"	d
@@ -515,7 +515,6 @@ NEWLINE	include/var.hpp	/^#define NEWLINE /;"	d
 NPROC	Makefile	/^NPROC = `nproc`$/;"	m
 OnInit	src/FuncFixed.cpp	/^bool MyApp::OnInit()$/;"	f	class:MyApp	typeref:typename:bool
 Other	include/var.hpp	/^namespace Other$/;"	n
-PEndlFunction	include/utils/new/loger/loger.hpp	/^typedef loger & ( * PEndlFunction)(loger&);$/;"	t	typeref:typename:loger & (*)(loger &)
 PLATFORM_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
 PLATFORM_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
 PLATFORM_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
@@ -890,9 +889,10 @@ ancient_juanzeng_juanxian	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_jua
 ancient_juanzeng_lingqu	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_lingqu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop	src/FuncFixed.cpp	/^void MyFrame::ancient_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_baowu	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_baowu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
-ancient_shop_bianli	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_all	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_baiyin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_book	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_huangjin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_huangjin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_tongbi	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_tongbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_guwan	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_guwan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
@@ -961,7 +961,6 @@ bitset	include/utils/cstyle/cstyle_bitset.hpp	/^class bitset$/;"	c	namespace:cst
 block_	include/utils/cstyle/cstyle_bitset.hpp	/^        unsigned char& block_;$/;"	m	class:cstyle::bitset::reference	typeref:typename:unsigned char &
 block_count_	include/utils/cstyle/cstyle_bitset.hpp	/^    size_t block_count_;  \/\/ 字节块数量$/;"	m	class:cstyle::bitset	typeref:typename:size_t
 boolfile_H	include/utils/files/BoolFile.h	/^#define boolfile_H$/;"	d
-buffer	include/utils/new/loger/loger.hpp	/^    std::stringstream buffer;$/;"	m	class:loger	typeref:typename:std::stringstream
 c_str	include/utils/cstyle/cstyle_string.hpp	/^    const char* c_str() const noexcept$/;"	f	class:cstyle::string	typeref:typename:const char *
 calc_square	src/FuncSimple.cpp	/^void MyFrame::calc_square(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 calcs_normal	src/FuncSimple.cpp	/^void MyFrame::calcs_normal(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1206,9 +1205,6 @@ lihe	src/FuncUsed.cpp	/^void MyFrame::lihe(WXBTNEVT&){$/;"	f	class:MyFrame	typer
 list_install_components	build/Makefile	/^list_install_components:$/;"	t
 list_install_components/fast	build/Makefile	/^list_install_components\/fast: list_install_components$/;"	t
 lmut	include/lang/macro.hpp	/^#define lmut /;"	d
-loger	include/utils/new/loger/loger.hpp	/^class loger$/;"	c
-logfile	include/utils/new/loger/loger.hpp	/^#define logfile /;"	d
-logfile	include/utils/new/loger/loger.hpp	/^static loger logfile("log.log");$/;"	v	typeref:typename:loger
 main	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main_func	include/function.hpp	/^    void main_func(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 make_unique	include/utils/cstyle/cstyle_memory.hpp	/^unique_ptr<T> make_unique(size_t count = 1)$/;"	f	namespace:cstyle	typeref:typename:unique_ptr<T>
@@ -1231,7 +1227,6 @@ native_handle	include/utils/cstyle/cstyle_stdio.hpp	/^    FILE* native_handle() 
 nowtime	include/function.hpp	/^    wxStaticText* nowtime;$/;"	m	class:MyFrame	typeref:typename:wxStaticText *
 numeric_cast	include/utils/cstyle/cstyle_cast.hpp	/^numeric_cast(From value)$/;"	f	namespace:cstyle	typeref:typename:std::enable_if_t<std::is_arithmetic_v<To> && std::is_arithmetic_v<From>,To>
 object_to_void	include/utils/cstyle/cstyle_cast.hpp	/^object_to_void(T& obj) noexcept$/;"	f	namespace:cstyle	typeref:typename:std::enable_if_t<!std::is_pointer_v<T>,void * >
-ofs	include/utils/new/loger/loger.hpp	/^    std::ofstream ofs;$/;"	m	class:loger	typeref:typename:std::ofstream
 oldblock	include/function.hpp	/^    int count oldblock;$/;"	m	class:MyFrame	typeref:typename:int count
 oldblock	include/macro.hpp	/^#define oldblock$/;"	d
 onclickys1	src/FuncOld.cpp	/^void oldblock MyFrame::onclickys1(poly product,wxTextCtrl* tc,wxTextCtrl*tc2,$/;"	f	class:MyFrame	typeref:typename:void oldblock
@@ -1252,7 +1247,6 @@ operator -=	include/utils/poly.hpp	/^    poly& operator-=(const poly& other)$/;"
 operator ->	include/utils/smartptr.hpp	/^    T* operator->() const noexcept$/;"	f	class:SmartPtr	typeref:typename:T *
 operator <	include/utils/cstyle/cstyle_array.hpp	/^    friend constexpr bool operator<(const array& lhs, const array& rhs)$/;"	f	namespace:cstyle	typeref:typename:bool
 operator <<	include/clibs/xianbi/sword.hpp	/^static ostream& operator<<(ostream& stream,const functions::SwordEnum& enumA)$/;"	f	typeref:typename:ostream &
-operator <<	include/utils/new/loger/loger.hpp	/^    loger& operator<< (T const& t)$/;"	f	class:loger	typeref:typename:loger &
 operator <=	include/utils/cstyle/cstyle_array.hpp	/^    friend constexpr bool operator<=(const array& lhs, const array& rhs)$/;"	f	namespace:cstyle	typeref:typename:bool
 operator =	include/utils/cstyle/cstyle_bitset.hpp	/^        reference& operator=(bool val) noexcept$/;"	f	class:cstyle::bitset::reference	typeref:typename:reference &
 operator =	include/utils/cstyle/cstyle_bitset.hpp	/^    bitset& operator=(bitset&& other) noexcept$/;"	f	class:cstyle::bitset	typeref:typename:bitset &
