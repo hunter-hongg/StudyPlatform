@@ -28,7 +28,7 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
     wxGridSizer* grid = new wxGridSizer(3, 1, 4, 4);
 
     auto btn1 = Simple::ShopButton("兑换书籍", panel, MyOrange);
-    // btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_simple, this);
+    btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_simple, this);
     grid -> Add(btn1, FLAG_CENTER);
 
     // auto btn2 = Simple::ShopButton("兑换黄金", panel, MyOrange);
@@ -81,5 +81,5 @@ void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
     });
     vbox -> Add(Submit, FLAG_LEFT);
 
-    Simple::BackButton(&MyFrame::ancient_shop_bianli, panel, vbox, this);
+    Simple::BackButton(&MyFrame::ancient_shop_bianli_book, panel, vbox, this);
 }
