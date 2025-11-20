@@ -42,5 +42,44 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
     vbox -> Add(grid, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_shop_bianli_all, panel, vbox, this);
+}
+void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
+    wxBoxSizer* vbox = Simple::Init(panel, this);
 
+    Simple::Title("兑换白银", panel, vbox);
+
+    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少白银"));
+    label->SetFont(font17);
+    vbox -> Add(label, FLAG_LEFT);
+
+    auto ReadTo = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
+    ReadTo -> SetFont(font15);
+    vbox -> Add(ReadTo, FLAG_LEFT);
+
+    auto Submit = new wxButton(panel, wxID_ANY, wxT("兑换"));
+    Submit -> SetFont(font17);
+    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        std::string ans = (ReadTo -> GetValue()).ToStdString();
+        int t = -1;
+        try {
+            t = std::stoi(ans);
+        } catch(...) {
+            t = -1;
+        }
+        if(t <= 0) {
+            Simple::MessageErr("输入格式错误");
+            return;
+        }
+        int need = t*10;
+        if(!AncientVar::TongBiReader.canminus(need)) {
+            Simple::Message("铜钱不足");
+            return;
+        } else {
+            AncientVar::BaiYinReader.addnum(t);
+            Simple::Message("兑换成功");
+        }
+    });
+    vbox -> Add(Submit, FLAG_LEFT);
+
+    Simple::BackButton(&MyFrame::ancient_shop_bianli, panel, vbox, this);
 }
