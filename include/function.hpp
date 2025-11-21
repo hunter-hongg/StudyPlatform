@@ -104,6 +104,7 @@ protected:
     void ancient_shop_bianli_huangjin(WXBTNEVT&);
     void ancient_shop_bianli_tongbi(WXBTNEVT&);
     void ancient_shop_bianli_book(WXBTNEVT&);
+    void ancient_shop_bianli_book_simple(WXBTNEVT&);
     void ancient_shop_nianjiu(WXBTNEVT&);
     void ancient_shop_nianjiu1(WXBTNEVT&);
     void ancient_shop_nianjiu2(WXBTNEVT&);
