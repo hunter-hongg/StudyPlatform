@@ -1629,6 +1629,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 计划时间	todo/template.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/week/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/week/20251116.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+许可证	README.md	/^## 许可证$/;"	s	chapter:学习平台
 通用货币兑换 20251006 10:33	note/ProjectNote-20251006-10:33.rst	/^通用货币兑换 20251006 10:33$/;"	c
 项目历史 25国庆	docs/ProjectHistory.rst	/^项目历史 25国庆$/;"	c
 项目日志新 25国庆	docs/ProjectLog.rst	/^项目日志新 25国庆$/;"	c

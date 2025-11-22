@@ -71,14 +71,15 @@ void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
         }
         if(t <= 0) {
             Simple::MessageErr("输入格式错误");
+            CLogger_log(Logfile, CLogger_WARNING, "便利商店=>书籍商店=>普通书籍: 输入格式错误");
             return;
         }
         int need = t*10;
-        if(!AncientVar::TongBiReader.canminus(need)) {
-            Simple::Message("铜钱不足");
+        if(!AncientVar::BaiYinReader.canminus(need)) {
+            Simple::Message("白银不足");
             return;
         } else {
-            AncientVar::BaiYinReader.addnum(t);
+            BookShelfFiles_WriteLevel1(BookShelf::Reader, t);
             Simple::Message("兑换成功");
         }
     });
