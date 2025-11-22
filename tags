@@ -669,6 +669,7 @@ __anon234a3c9d0802	src/FuncFixedFn.cpp	/^    btn8 -> Bind(wxEVT_BUTTON, [=](WXBT
 __anon234a3c9d0902	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_baiyin	file:
 __anon234a3c9d0a02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_huangjin	file:
 __anon234a3c9d0b02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_tongbi	file:
+__anon234a3c9d0c02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_book_simple	file:
 __anon2b8a6a530108	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	s
 __anon2b8a6a530208	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct {$/;"	s
 __anon2b8a6a530308	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	s
@@ -692,7 +693,6 @@ __anon83625a8a0102	src/FuncUsed.cpp	/^    TimeTimer.Bind(wxEVT_TIMER,[this](wxTi
 __anon83625a8a0202	src/FuncUsed.cpp	/^    auto call = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::yinbi_all	file:
 __anon83625a8a0302	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
 __anon83625a8a0402	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
-__anon8605ec070102	src/FuncBuilding.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_book_simple	file:
 __anon8f823baa0102	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0202	include/func/lambda.hpp	/^static auto anc_wu_bingli_get = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0302	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](int now, int min){$/;"	f	namespace:lambda	file:
@@ -894,7 +894,7 @@ ancient_shop_bianli	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli(WXBT
 ancient_shop_bianli_all	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_baiyin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_book	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-ancient_shop_bianli_book_simple	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_book_simple	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_huangjin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_huangjin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_tongbi	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_tongbi(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_guwan	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_guwan(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
