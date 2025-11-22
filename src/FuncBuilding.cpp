@@ -32,6 +32,10 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
     btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_simple, this);
     grid -> Add(btn1, FLAG_CENTER);
 
+    auto btn2 = Simple::ShopButton("兑换珍贵书籍", panel, MyOrange);
+    btn2 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_zhengui, this);
+    grid -> Add(btn2, FLAG_CENTER);
+
     // auto btn2 = Simple::ShopButton("兑换黄金", panel, MyOrange);
     // btn2 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_huangjin, this);
     // grid -> Add(btn2, FLAG_CENTER);
