@@ -6,7 +6,9 @@
 #include "var.hpp"
 #include <boost/format/format_fwd.hpp>
 #include <boost/format.hpp>
+#include <wx/gtk/stattext.h>
 #include <wx/sizer.h>
+#include <wx/wx.h>
 
 void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
     wxBoxSizer* vbox = Simple::Init(panel, this);
@@ -45,6 +47,12 @@ void MyFrame::bank_juan_juan(WXBTNEVT&) {
 
     Simple::TitleNoSpacer("捐献积分", panel, vbox);
     Simple::ShowButton(ShowString.str(), panel, vbox);
+
+    auto Tip1 = new wxStaticText(panel, wxID_ANY, wxT("请输入捐献积分数"));
+    Tip1 -> SetFont(font17);
+
+    auto TextRead = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
+    TextRead->SetFont(font17);
 
     Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
 
