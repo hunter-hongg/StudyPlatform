@@ -42,9 +42,8 @@ target_include_directories(studyplatform PRIVATE
     /usr/local/include
 )
 
+# hunter-hongg/cding
 target_include_directories(studyplatform PRIVATE $ENV{HOME}/cding/include)
-
-target_compile_options(studyplatform PRIVATE -w -Wnarrowing )
 
 # GLib GObject
 find_package(PkgConfig REQUIRED)
@@ -57,3 +56,4 @@ target_include_directories(studyplatform PRIVATE $ENV{HOME}/clog/include)
 target_link_directories(studyplatform PRIVATE $ENV{HOME}/clog/lib/)
 target_link_libraries(studyplatform libCLogger.so)
 
+target_compile_options(studyplatform PRIVATE -w)
