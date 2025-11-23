@@ -401,9 +401,9 @@ void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
 
     wxBoxSizer* vbox = Simple::Init(panel, this);
 
-    Simple::Title("兑换普通书籍", panel, vbox);
+    Simple::Title("购买普通书籍", panel, vbox);
 
-    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少普通书籍"));
+    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要购买多少普通书籍"));
     label->SetFont(font17);
     vbox -> Add(label, FLAG_LEFT);
 
@@ -411,7 +411,7 @@ void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
     ReadTo -> SetFont(font15);
     vbox -> Add(ReadTo, FLAG_LEFT);
 
-    auto Submit = new wxButton(panel, wxID_ANY, wxT("兑换"));
+    auto Submit = new wxButton(panel, wxID_ANY, wxT("购买"));
     Submit -> SetFont(font17);
     Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
         std::string ans = (ReadTo -> GetValue()).ToStdString();
@@ -432,7 +432,7 @@ void MyFrame::ancient_shop_bianli_book_simple(WXBTNEVT&) {
             return;
         } else {
             BookShelfFiles_WriteLevel1(BookShelf::Reader, t);
-            Simple::Message("兑换成功");
+            Simple::Message("购买成功");
         }
     });
     vbox -> Add(Submit, FLAG_LEFT);
