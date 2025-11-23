@@ -275,6 +275,7 @@ static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE")
 }
 namespace Bank {
 static BigIntFile BankStore(FilePathBank+"fhubasr");
+static PasswordFile BankJuanQuan(FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156");
 }
 namespace TongYongReal {
 static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860");

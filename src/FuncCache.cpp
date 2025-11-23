@@ -1,14 +1,14 @@
 #include "func/simple.hpp"
 #include <headers.hpp>
 
-fn MyFrame::tongy_show(WXBTNEVT&) -> void {
+auto MyFrame::tongy_show(WXBTNEVT&) -> void {
     Simple::Message(
         "通用货币兑换规则: \n"
         "1000积分 1通用货币\n"
     );
 }
-fn MyFrame::bank_square(WXBTNEVT&) -> void {
-    lmut vbox = Simple::Init(panel, this);
+auto MyFrame::bank_square(WXBTNEVT&) -> void {
+    auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("积分银行", panel, vbox);
     Simple::ShowButton("已存积分: "+Bank::BankStore.Read(), panel, vbox);
@@ -19,8 +19,8 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
-fn MyFrame::tongy_all(WXBTNEVT&) -> void {
-    lmut vbox = Simple::Init(panel, this);
+auto MyFrame::tongy_all(WXBTNEVT&) -> void {
+    auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("通用货币", panel, vbox);
     Simple::ShowButton("通用货币: "+TongYongReal::Reader.read_str(),
