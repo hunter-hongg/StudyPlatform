@@ -99,8 +99,8 @@ void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&) {
 
     Simple::BackButton(&MyFrame::ancient_wuguan_1, panel, vbox, this);
 }
-fn MyFrame::bank_store(WXBTNEVT&) -> void {
-    lmut vbox = Simple::Init(panel, this);
+auto MyFrame::bank_store(WXBTNEVT&) -> void {
+    auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("存储积分",panel, vbox);
     Simple::ShowButton(
@@ -146,7 +146,7 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
             );
             return;
         }
-        lmut t = BigInt(Bank::BankStore.Read());
+        auto t = BigInt(Bank::BankStore.Read());
         t.Add(BigInt(used));
         Bank::BankStore.Write(t.toString());
         JiFenReader.minusnum(used);
@@ -156,8 +156,8 @@ fn MyFrame::bank_store(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 }
-fn MyFrame::bank_get(WXBTNEVT&) -> void {
-    lmut vbox = Simple::Init(panel, this);
+auto MyFrame::bank_get(WXBTNEVT&) -> void {
+    auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("领取积分",panel, vbox);
     Simple::ShowButton(
@@ -217,7 +217,7 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
             );
             return;
         }
-        lmut t = BigInt(bstr.unwrap() - used.unwrap());
+        auto t = BigInt(bstr.unwrap() - used.unwrap());
         Bank::BankStore.Write(t.toString());
         JiFenReader.addnum(used.unwrap());
         this -> bank_get(EmptyEvent);
@@ -226,8 +226,8 @@ fn MyFrame::bank_get(WXBTNEVT&) -> void {
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 }
-fn MyFrame::tongy(WXBTNEVT&) -> void {
-    lmut vbox = Simple::Init(panel, this);
+auto MyFrame::tongy(WXBTNEVT&) -> void {
+    auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("通用货币", panel, vbox);
     Simple::ShowButton(
