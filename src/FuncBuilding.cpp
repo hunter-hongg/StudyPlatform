@@ -48,3 +48,47 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
 
     Simple::BackButton(&MyFrame::ancient_shop_bianli_all, panel, vbox, this);
 }
+void MyFrame::ancient_shop_bianli_book_zhengui(WXBTNEVT&) {
+    CLogger_log(Logfile, CLogger_DEBUG, "便利商店=>书籍商店=>珍贵书籍: 正常启动");
+
+    wxBoxSizer* vbox = Simple::Init(panel, this);
+
+    Simple::Title("兑换珍贵书籍", panel, vbox);
+
+    auto label = new wxStaticText(panel, wxID_ANY, wxT("请输入需要兑换多少珍贵书籍"));
+    label->SetFont(font17);
+    vbox -> Add(label, FLAG_LEFT);
+
+    auto ReadTo = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
+    ReadTo -> SetFont(font15);
+    vbox -> Add(ReadTo, FLAG_LEFT);
+
+    auto Submit = new wxButton(panel, wxID_ANY, wxT("兑换"));
+    Submit -> SetFont(font17);
+    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        std::string ans = (ReadTo -> GetValue()).ToStdString();
+        int t = -1;
+        try {
+            t = std::stoi(ans);
+        } catch(...) {
+            t = -1;
+        }
+        if(t <= 0) {
+            Simple::MessageErr("输入格式错误");
+            CLogger_log(Logfile, CLogger_WARNING, "便利商店=>书籍商店=>珍贵书籍: 输入格式错误");
+            return;
+        }
+        int need = t*25;
+        if(!AncientVar::BaiYinReader.canminus(need)) {
+            Simple::Message("白银不足");
+            return;
+        } else {
+            BookShelfFiles_WriteLevel2(BookShelf::Reader, t);
+            Simple::Message("兑换成功");
+            CLogger_log(Logfile, CLogger_DEBUG, "便利商店=>书籍商店=>珍贵书籍: 兑换成功");
+        }
+    });
+    vbox -> Add(Submit, FLAG_LEFT);
+
+    Simple::BackButton(&MyFrame::ancient_shop_bianli_book, panel, vbox, this);
+}
