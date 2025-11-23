@@ -50,3 +50,4 @@ void MyFrame::bank_juan_juan(WXBTNEVT&) {
 
     CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>捐献积分: 正常启动");
 }
+
