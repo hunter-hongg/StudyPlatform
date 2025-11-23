@@ -24,11 +24,12 @@ void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
 }
 void MyFrame::bank_juan(WXBTNEVT&) {
     auto ShowString = boost::format("捐献券: %d");
+    auto ShowStringF = (ShowString % (Bank::BankJuanQuan.read_int()));
 
     auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("捐献积分", panel, vbox);
-    Simple::ShowButton(/* ShowString % (Bank::BankJuanQuan.read_int()) */"", panel, vbox);
+    Simple::ShowButton(ShowStringF.str(), panel, vbox);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 
