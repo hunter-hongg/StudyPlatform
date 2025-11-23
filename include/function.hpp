@@ -172,6 +172,7 @@ protected:
     void bank_store(WXBTNEVT&);
     void bank_get(WXBTNEVT&);
     void bank_juan(WXBTNEVT&);
+    void bank_juan_juan(WXBTNEVT&);
 
     void tongy_all(WXBTNEVT&);
     void tongy(WXBTNEVT&);

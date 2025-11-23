@@ -1,5 +1,7 @@
 #pragma once
 #include "glib.h"
+#include <boost/format/format_fwd.hpp>
+#include <boost/format.hpp>
 #include <string>
 #include <cstdlib>
 #include <utils/files/PasswordFile.hpp>
@@ -296,3 +298,8 @@ namespace AncientZhengJi = AncientVar::WenGuan::ZhengJi;
 
 // 常量
 static wxCommandEvent EmptyEvent;
+
+// boost::format 
+static auto ShowFmt = boost::format("%s: %d");
+static auto ShowFmtStr = boost::format("%s: %s");
+

@@ -1,3 +1,4 @@
+#include "clog.h"
 #include "func/simple.hpp"
 #include "headers.hpp"
 #include "mine/MyColour.h"
@@ -28,10 +29,24 @@ void MyFrame::bank_juan(WXBTNEVT&) {
 
     auto vbox = Simple::Init(panel, this);
 
-    Simple::TitleNoSpacer("捐献积分", panel, vbox);
+    Simple::TitleNoSpacer("积分捐献", panel, vbox);
     Simple::ShowButton(ShowStringF.str(), panel, vbox);
+
+    Simple::Button(&MyFrame::bank_juan_juan, "捐献积分", panel, vbox, this);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 
     CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分: 正常启动");
+}
+void MyFrame::bank_juan_juan(WXBTNEVT&) {
+    auto ShowString = ShowFmtStr % "当前存储" % (Bank::BankStore.Read());
+
+    auto vbox = Simple::Init(panel, this);
+
+    Simple::TitleNoSpacer("捐献积分", panel, vbox);
+    Simple::ShowButton(ShowString.str(), panel, vbox);
+
+    Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
+
+    CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>捐献积分: 正常启动");
 }
