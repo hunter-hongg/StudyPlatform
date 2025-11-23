@@ -1,3 +1,4 @@
+#include "func/simple.hpp"
 #include <headers.hpp>
 
 fn MyFrame::tongy_show(WXBTNEVT&) -> void {
@@ -14,6 +15,7 @@ fn MyFrame::bank_square(WXBTNEVT&) -> void {
 
     Simple::Button(&MyFrame::bank_store, "存储积分", panel, vbox, this);
     Simple::Button(&MyFrame::bank_get, "领取积分", panel, vbox, this);
+    Simple::Button(&MyFrame::bank_juan, "捐献积分", panel, vbox, this);
 
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }

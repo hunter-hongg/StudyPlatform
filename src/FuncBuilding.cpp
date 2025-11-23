@@ -21,3 +21,12 @@ void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
 
     CLogger_log(Logfile, CLogger_DEBUG, "便利店铺=>总界面: 正常启动");
 }
+void MyFrame::bank_juan(WXBTNEVT&) {
+    lmut vbox = Simple::Init(panel, this);
+
+    Simple::Title("捐献积分", panel, vbox);
+
+    Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
+
+    CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分: 正常启动");
+}
