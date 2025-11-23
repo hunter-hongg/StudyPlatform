@@ -1,5 +1,7 @@
 #pragma once
 #include "glib.h"
+#include <boost/format/format_fwd.hpp>
+#include <boost/format.hpp>
 #include <string>
 #include <cstdlib>
 #include <utils/files/PasswordFile.hpp>
@@ -275,6 +277,7 @@ static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE")
 }
 namespace Bank {
 static BigIntFile BankStore(FilePathBank+"fhubasr");
+static PasswordFile BankJuanQuan(FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156");
 }
 namespace TongYongReal {
 static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860");
@@ -295,3 +298,8 @@ namespace AncientZhengJi = AncientVar::WenGuan::ZhengJi;
 
 // 常量
 static wxCommandEvent EmptyEvent;
+
+// boost::format 
+static auto ShowFmt = boost::format("%s: %d");
+static auto ShowFmtStr = boost::format("%s: %s");
+

@@ -106,6 +106,7 @@ protected:
     void ancient_shop_bianli_book(WXBTNEVT&);
     void ancient_shop_bianli_book_simple(WXBTNEVT&);
     void ancient_shop_bianli_book_zhengui(WXBTNEVT&);
+    void ancient_shop_bianli_book_diancang(WXBTNEVT&);
     void ancient_shop_nianjiu(WXBTNEVT&);
     void ancient_shop_nianjiu1(WXBTNEVT&);
     void ancient_shop_nianjiu2(WXBTNEVT&);
@@ -170,6 +171,8 @@ protected:
     void bank_square(WXBTNEVT&);
     void bank_store(WXBTNEVT&);
     void bank_get(WXBTNEVT&);
+    void bank_juan(WXBTNEVT&);
+    void bank_juan_juan(WXBTNEVT&);
 
     void tongy_all(WXBTNEVT&);
     void tongy(WXBTNEVT&);

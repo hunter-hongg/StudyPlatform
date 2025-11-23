@@ -102,5 +102,3 @@ using namespace Check;
 namespace cgstdErr = cding::Err;
 namespace cgstdOption = cding::Option;
 
-// lang头文件
-#include <lang/macro.hpp>

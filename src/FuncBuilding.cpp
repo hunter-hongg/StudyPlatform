@@ -4,7 +4,11 @@
 #include "mine/MyColour.h"
 #include "type.hpp"
 #include "var.hpp"
+#include <boost/format/format_fwd.hpp>
+#include <boost/format.hpp>
+#include <wx/gtk/stattext.h>
 #include <wx/sizer.h>
+#include <wx/wx.h>
 
 void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
     wxBoxSizer* vbox = Simple::Init(panel, this);
@@ -21,30 +25,37 @@ void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
 
     CLogger_log(Logfile, CLogger_DEBUG, "便利店铺=>总界面: 正常启动");
 }
-void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
-    wxBoxSizer* vbox = Simple::Init(panel, this);
+void MyFrame::bank_juan(WXBTNEVT&) {
+    auto ShowString = boost::format("捐献券: %d");
+    auto ShowStringF = (ShowString % (Bank::BankJuanQuan.read_int()));
 
-    Simple::Title("书籍便利店铺", panel, vbox);
+    auto vbox = Simple::Init(panel, this);
 
-    wxGridSizer* grid = new wxGridSizer(3, 1, 4, 4);
+    Simple::TitleNoSpacer("积分捐献", panel, vbox);
+    Simple::ShowButton(ShowStringF.str(), panel, vbox);
 
-    auto btn1 = Simple::ShopButton("兑换普通书籍", panel, MyOrange);
-    btn1 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_simple, this);
-    grid -> Add(btn1, FLAG_CENTER);
+    Simple::Button(&MyFrame::bank_juan_juan, "捐献积分", panel, vbox, this);
 
-    auto btn2 = Simple::ShopButton("兑换珍贵书籍", panel, MyOrange);
-    btn2 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_zhengui, this);
-    grid -> Add(btn2, FLAG_CENTER);
+    Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 
-    // auto btn2 = Simple::ShopButton("兑换黄金", panel, MyOrange);
-    // btn2 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_huangjin, this);
-    // grid -> Add(btn2, FLAG_CENTER);
-    //
-    // auto btn3 = Simple::ShopButton("兑换铜钱", panel, MyOrange);
-    // btn3 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_tongbi, this);
-    // grid -> Add(btn3, FLAG_CENTER);
-
-    vbox -> Add(grid, FLAG_CENTER);
-
-    Simple::BackButton(&MyFrame::ancient_shop_bianli_all, panel, vbox, this);
+    CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分: 正常启动");
 }
+void MyFrame::bank_juan_juan(WXBTNEVT&) {
+    auto ShowString = ShowFmtStr % "当前存储" % (Bank::BankStore.Read());
+
+    auto vbox = Simple::Init(panel, this);
+
+    Simple::TitleNoSpacer("捐献积分", panel, vbox);
+    Simple::ShowButton(ShowString.str(), panel, vbox);
+
+    auto Tip1 = new wxStaticText(panel, wxID_ANY, wxT("请输入捐献积分数"));
+    Tip1 -> SetFont(font17);
+
+    auto TextRead = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
+    TextRead->SetFont(font17);
+
+    Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
+
+    CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>捐献积分: 正常启动");
+}
+
