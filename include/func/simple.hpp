@@ -4,20 +4,19 @@
 #include <mine/MyFonts.h>
 #include <mine/MyFlags.h>
 #include <mine/MyColour.h>
-#define fn auto
 namespace Simple{
   // ------------------------------------------------------------------------------
   template<typename T>
-  static fn Button(void(T::*fptr)(WXBTNEVT&), std::string value,
-                   wxPanel* panel, wxBoxSizer* vbox, T* self) -> wxButton* {
+  static wxButton* Button(void(T::*fptr)(WXBTNEVT&), std::string value,
+                   wxPanel* panel, wxBoxSizer* vbox, T* self) {
     auto btn = new wxButton(panel, wxID_ANY, wxString::FromUTF8(value));
     btn -> SetFont(font17); 
     btn -> Bind(wxEVT_BUTTON,fptr,self); 
     vbox -> Add(btn,FLAG_CENTER);
     return btn;
   }
-  static fn ShowButton(std::string showt, wxPanel* panel,
-                       wxBoxSizer* vbox) -> wxButton* {
+  static wxButton* ShowButton(std::string showt, wxPanel* panel,
+                       wxBoxSizer* vbox){
     auto show = new wxButton(panel,wxID_ANY,wxString::FromUTF8(showt)); 
     show->SetFont(font15); 
     show->SetForegroundColour(MyBlue); 
@@ -25,7 +24,7 @@ namespace Simple{
     vbox->AddStretchSpacer();
     return show;
   }
-  static fn ShopButton(std::string value, wxPanel* panel,
+  static auto ShopButton(std::string value, wxPanel* panel,
                        wxColour colour ) -> wxButton* {
     auto btn = new wxButton(panel, wxID_ANY, wxString::FromUTF8(value));
     btn -> SetForegroundColour(colour);
@@ -33,7 +32,7 @@ namespace Simple{
     return btn;
   }
   template<typename T>
-  static fn BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,
+  static auto BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,
                        wxBoxSizer* vbox, T* self) -> void {
     vbox -> AddStretchSpacer(); 
     auto back_button = new wxButton(panel,wxID_ANY,wxT("返回")); 
@@ -46,31 +45,31 @@ namespace Simple{
   }
   // ---------------------------------------------------------------------------------
   template<typename T>
-  static fn Init(wxPanel* panel, T* self) -> wxBoxSizer* {
+  static auto Init(wxPanel* panel, T* self) -> wxBoxSizer* {
     self->clean_panel(); 
     return new wxBoxSizer(wxVERTICAL); 
   }
-  static fn Title(std::string titlea, wxPanel* panel,
+  static auto Title(std::string titlea, wxPanel* panel,
                   wxBoxSizer* vbox) -> void {
     auto title = new wxStaticText(panel,wxID_ANY,wxString::FromUTF8(titlea)); 
     title -> SetFont(font25);
     vbox -> Add(title,FLAG_CENTER); 
     vbox -> AddStretchSpacer();
   }
-  static fn TitleNoSpacer(std::string titlea, wxPanel* panel,
+  static auto TitleNoSpacer(std::string titlea, wxPanel* panel,
                   wxBoxSizer* vbox) -> void {
     auto title = new wxStaticText(panel,wxID_ANY,wxString::FromUTF8(titlea)); 
     title -> SetFont(font25);
     vbox -> Add(title,FLAG_CENTER);
   }
   // -------------------------------------------------------------------------------
-  static fn Message(std::string msg) -> void {
+  static auto Message(std::string msg) -> void {
     wxMessageBox(wxString::FromUTF8(msg));
   }
-  static fn MessageErr(std::string msg) -> void {
+  static auto MessageErr(std::string msg) -> void {
     wxMessageBox(wxString::FromUTF8(msg), "err", wxOK | wxICON_ERROR );
   }
-  static fn MessageQues(std::string msg) -> bool {
+  static auto MessageQues(std::string msg) -> bool {
     return (
         wxMessageBox(wxString::FromUTF8(msg), "question",
                      wxYES_NO | wxICON_QUESTION) == wxYES 
