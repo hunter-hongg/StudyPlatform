@@ -98,13 +98,14 @@ protected:
     void ancient_shop(WXBTNEVT&);
     void ancient_shop_guwan(WXBTNEVT&);
     void ancient_shop_baowu(WXBTNEVT&);
-    void ancient_shop_bianli_all(WXBTNEVT&); // 新总板块
+    void ancient_shop_bianli_all(WXBTNEVT&); // 便利商店最新总板块
     void ancient_shop_bianli(WXBTNEVT&);
     void ancient_shop_bianli_baiyin(WXBTNEVT&);
     void ancient_shop_bianli_huangjin(WXBTNEVT&);
     void ancient_shop_bianli_tongbi(WXBTNEVT&);
     void ancient_shop_bianli_book(WXBTNEVT&);
     void ancient_shop_bianli_book_simple(WXBTNEVT&);
+    void ancient_shop_bianli_book_zhengui(WXBTNEVT&);
     void ancient_shop_nianjiu(WXBTNEVT&);
     void ancient_shop_nianjiu1(WXBTNEVT&);
     void ancient_shop_nianjiu2(WXBTNEVT&);
