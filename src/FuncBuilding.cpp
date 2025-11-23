@@ -37,7 +37,7 @@ void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {
     grid -> Add(btn2, FLAG_CENTER);
 
     auto btn3 = Simple::ShopButton("购买典藏书籍", panel, MyOrange);
-    btn3 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_diancang, this);
+    btn3 -> Bind(wxEVT_BUTTON, &MyFrame::ancient_shop_bianli_book_diancang, this);
     grid -> Add(btn3, FLAG_CENTER);
 
     vbox -> Add(grid, FLAG_CENTER);
