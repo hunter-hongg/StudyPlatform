@@ -2,6 +2,7 @@
 #include "func/simple.hpp"
 #include "headers.hpp"
 #include "mine/MyColour.h"
+#include "mine/MyFlags.h"
 #include "type.hpp"
 #include "var.hpp"
 #include <boost/format/format_fwd.hpp>
@@ -50,9 +51,11 @@ void MyFrame::bank_juan_juan(WXBTNEVT&) {
 
     auto Tip1 = new wxStaticText(panel, wxID_ANY, wxT("请输入捐献积分数"));
     Tip1 -> SetFont(font17);
+    vbox -> Add(Tip1, FLAG_LEFT);
 
     auto TextRead = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
     TextRead->SetFont(font17);
+    vbox -> Add(TextRead, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
 
