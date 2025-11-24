@@ -43,6 +43,11 @@ namespace Simple{
     panel -> SetSizer(vbox); 
     panel -> Layout();
   }
+  static wxButton* BasicButton(std::string value, wxPanel* panel) {
+    auto btn = new wxButton(panel, wxID_ANY, wxString::FromUTF8(value));
+    btn -> SetFont(font17); 
+    return btn;
+  }
   // ---------------------------------------------------------------------------------
   template<typename T>
   static auto Init(wxPanel* panel, T* self) -> wxBoxSizer* {

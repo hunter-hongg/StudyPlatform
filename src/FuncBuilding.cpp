@@ -7,6 +7,7 @@
 #include "var.hpp"
 #include <boost/format/format_fwd.hpp>
 #include <boost/format.hpp>
+#include <wx/event.h>
 #include <wx/gtk/stattext.h>
 #include <wx/sizer.h>
 #include <wx/wx.h>
@@ -56,6 +57,12 @@ void MyFrame::bank_juan_juan(WXBTNEVT&) {
     auto TextRead = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
     TextRead->SetFont(font17);
     vbox -> Add(TextRead, FLAG_LEFT);
+
+    auto Submit = Simple::BasicButton("捐献", panel);
+    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+
+    });
+    vbox -> Add(Submit, FLAG_LEFT);
 
     Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
 
