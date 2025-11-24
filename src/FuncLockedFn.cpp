@@ -1,3 +1,4 @@
+#include "var.hpp"
 #include <headers.hpp>
 
 void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&) {
@@ -105,7 +106,7 @@ auto MyFrame::bank_store(WXBTNEVT&) -> void {
     Simple::TitleNoSpacer("存储积分",panel, vbox);
     Simple::ShowButton(
         "当前积分："+JiFenReader.read_str()+"\n"+
-        "已存积分："+Bank::BankStore.Read(),
+        "已存积分："+Bank::BankStore.read_str(),
         panel, vbox
     );
 
@@ -146,9 +147,7 @@ auto MyFrame::bank_store(WXBTNEVT&) -> void {
             );
             return;
         }
-        auto t = BigInt(Bank::BankStore.Read());
-        t.Add(BigInt(used));
-        Bank::BankStore.Write(t.toString());
+        Bank::BankStore.addnum(used);
         JiFenReader.minusnum(used);
         this -> bank_store(EmptyEvent);
     });
@@ -162,7 +161,7 @@ auto MyFrame::bank_get(WXBTNEVT&) -> void {
     Simple::TitleNoSpacer("领取积分",panel, vbox);
     Simple::ShowButton(
         "当前积分："+JiFenReader.read_str()+"\n"+
-        "已存积分："+Bank::BankStore.Read(),
+        "已存积分："+Bank::BankStore.read_str(),
         panel, vbox
     );
 
@@ -201,7 +200,7 @@ auto MyFrame::bank_get(WXBTNEVT&) -> void {
         }
         cgstdOption::Option<int> bstr;
         try {
-            bstr = cgstdOption::Option(std::stoi(Bank::BankStore.Read()));
+            bstr = cgstdOption::Option(Bank::BankStore.read_int());
         } catch (...) {
             bstr = cgstdOption::Option<int>();
         }
@@ -217,8 +216,7 @@ auto MyFrame::bank_get(WXBTNEVT&) -> void {
             );
             return;
         }
-        auto t = BigInt(bstr.unwrap() - used.unwrap());
-        Bank::BankStore.Write(t.toString());
+        Bank::BankStore.minusnum(used.unwrap());
         JiFenReader.addnum(used.unwrap());
         this -> bank_get(EmptyEvent);
     });

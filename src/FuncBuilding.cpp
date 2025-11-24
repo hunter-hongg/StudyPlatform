@@ -44,12 +44,13 @@ void MyFrame::bank_juan(WXBTNEVT&) {
     CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分: 正常启动");
 }
 void MyFrame::bank_juan_juan(WXBTNEVT&) {
-    auto ShowString = ShowFmtStr % "当前存储" % (Bank::BankStore.Read());
+    auto sfs = ShowFmtStr;
+    auto ShowString = sfs % "当前存储" % (Bank::BankStore.read_str());
 
     auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("捐献积分", panel, vbox);
-    Simple::ShowButton(ShowString.str(), panel, vbox);
+    auto SButton = Simple::ShowButton(ShowString.str(), panel, vbox);
 
     auto Tip1 = new wxStaticText(panel, wxID_ANY, wxT("请输入捐献积分数"));
     Tip1 -> SetFont(font17);
@@ -74,16 +75,13 @@ void MyFrame::bank_juan_juan(WXBTNEVT&) {
             Simple::MessageErr("输入格式错误");
             return;
         }
-        auto now = BigInt(Bank::BankStore.Read());
-        if(now.Comp(BigInt(read_real)) < 0)
+        if(!Bank::BankStore.canminus(read_real))
         {
             Simple::MessageErr("储蓄积分不足");
             return;
         }
-        auto t = BigInt(Bank::BankStore.Read());
-        t.Sub(BigInt(read_real));
-        Bank::BankStore.Write(t.toString());
         Simple::Message("捐献成功");
+        this -> bank_juan_juan(EmptyEvent);
     });
     vbox -> Add(Submit, FLAG_LEFT);
 

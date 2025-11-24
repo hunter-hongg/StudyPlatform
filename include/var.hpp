@@ -276,7 +276,7 @@ static BoolFile XianDanBasic(FilePathLiHeBool+"xdlhsc.cc.sfou", "sdo", "DSfdWE")
 }
 }
 namespace Bank {
-static BigIntFile BankStore(FilePathBank+"fhubasr");
+static PasswordFile BankStore(FilePathBank+"fhubasr", "aoidnrm301");
 static PasswordFile BankJuanQuan(FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156");
 }
 namespace TongYongReal {
@@ -299,7 +299,7 @@ namespace AncientZhengJi = AncientVar::WenGuan::ZhengJi;
 // 常量
 static wxCommandEvent EmptyEvent;
 
-// boost::format 
-static auto ShowFmt = boost::format("%s: %d");
-static auto ShowFmtStr = boost::format("%s: %s");
+// boost::format
+static const auto ShowFmt = boost::format("%s: %d");
+static const auto ShowFmtStr = boost::format("%s: %s");
 
