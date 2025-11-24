@@ -7,6 +7,7 @@
 #include "var.hpp"
 #include <boost/format/format_fwd.hpp>
 #include <boost/format.hpp>
+#include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
 #include <wx/sizer.h>
@@ -59,8 +60,30 @@ void MyFrame::bank_juan_juan(WXBTNEVT&) {
     vbox -> Add(TextRead, FLAG_LEFT);
 
     auto Submit = Simple::BasicButton("捐献", panel);
-    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
-
+    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        std::string read_raw = TextRead->GetValue().ToStdString();
+        int read_real = 0;
+        try {
+            read_real = std::stoi(read_raw);
+        }
+        catch(...) {
+            read_real = 0;
+        }
+        if(read_real <= 0 )
+        {
+            Simple::MessageErr("输入格式错误");
+            return;
+        }
+        auto now = BigInt(Bank::BankStore.Read());
+        if(now.Comp(BigInt(read_real)) < 0)
+        {
+            Simple::MessageErr("储蓄积分不足");
+            return;
+        }
+        auto t = BigInt(Bank::BankStore.Read());
+        t.Sub(BigInt(read_real));
+        Bank::BankStore.Write(t.toString());
+        Simple::Message("捐献成功");
     });
     vbox -> Add(Submit, FLAG_LEFT);
 
