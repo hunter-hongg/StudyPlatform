@@ -11,7 +11,7 @@ auto MyFrame::bank_square(WXBTNEVT&) -> void {
     auto vbox = Simple::Init(panel, this);
 
     Simple::TitleNoSpacer("积分银行", panel, vbox);
-    Simple::ShowButton("已存积分: "+Bank::BankStore.Read(), panel, vbox);
+    Simple::ShowButton("已存积分: "+Bank::BankStore.read_str(), panel, vbox);
 
     Simple::Button(&MyFrame::bank_store, "存储积分", panel, vbox, this);
     Simple::Button(&MyFrame::bank_get, "领取积分", panel, vbox, this);
