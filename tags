@@ -49,6 +49,7 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 2025-10-9	docs/ProjectLog.rst	/^2025-10-9$/;"	s	chapter:项目日志新 25国庆
 2025-11-1	docs/ProjectLog.rst	/^2025-11-1$/;"	s	chapter:项目日志新 25国庆
 2025-11-2	docs/ProjectLog.rst	/^2025-11-2$/;"	s	chapter:项目日志新 25国庆
+2025-11-23	docs/ProjectSpeed.rst	/^2025-11-23$/;"	s	chapter:项目进展速度
 2025-11-3	docs/ProjectLog.rst	/^2025-11-3$/;"	s	chapter:项目日志新 25国庆
 2025-11-4	docs/ProjectLog.rst	/^2025-11-4$/;"	s	chapter:项目日志新 25国庆
 2025-11-5	docs/ProjectLog.rst	/^2025-11-5$/;"	s	chapter:项目日志新 25国庆
@@ -122,9 +123,10 @@ BAOSHICHOUJIANG1_JIFEN	include/ffi/rust/BaoShiChouJiang1/BaoShiChouJiang1Macro.h
 BAOSHICHOUJIANG1_TONGQIAN	include/ffi/rust/BaoShiChouJiang1/BaoShiChouJiang1Macro.hpp	/^#define BAOSHICHOUJIANG1_TONGQIAN /;"	d
 BAOSHICHOUJIANG1_XIANBI	include/ffi/rust/BaoShiChouJiang1/BaoShiChouJiang1Macro.hpp	/^#define BAOSHICHOUJIANG1_XIANBI /;"	d
 BUILD_DIR	Makefile	/^BUILD_DIR = .\/build$/;"	m
-BackButton	include/func/simple.hpp	/^  static fn BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:fn
+BackButton	include/func/simple.hpp	/^  static auto BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
 BaiYinReader	include/var.hpp	/^static PasswordFile BaiYinReader(FilePath+"bay.avc","3ifnyl1042");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
 Bank	include/var.hpp	/^namespace Bank {$/;"	n
+BankJuanQuan	include/var.hpp	/^static PasswordFile BankJuanQuan(FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156");$/;"	v	namespace:Bank	typeref:typename:PasswordFile
 BankStore	include/var.hpp	/^static BigIntFile BankStore(FilePathBank+"fhubasr");$/;"	v	namespace:Bank	typeref:typename:BigIntFile
 BaoShi	include/var.hpp	/^namespace BaoShi$/;"	n	namespace:Files
 BaoShiCheck	include/var.hpp	/^static CheckFile BaoShiCheck(FilePathThingsSquare+"fospbsck.dogck",1127,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
@@ -132,6 +134,7 @@ BaoShiReader	include/var.hpp	/^#define BaoShiReader /;"	d
 BaoWuChaFiles	include/ffi/zig/AncientBaoWuCha/AncientBaoWuCha.h	/^} BaoWuChaFiles;$/;"	t	typeref:struct:__anon2c2e5a920108
 BaoWuChaReader	include/var.hpp	/^static BaoWuChaFiles* BaoWuChaReader = BaoWuChaFiles_Make($/;"	v	namespace:AncientVar	typeref:typename:BaoWuChaFiles *
 BaoWuStruct	include/var.hpp	/^static AncientBaoWuStruct* BaoWuStruct = AncientBaoWuStruct_Create($/;"	v	namespace:AncientVar	typeref:typename:AncientBaoWuStruct *
+BasicButton	include/func/simple.hpp	/^  static wxButton* BasicButton(std::string value, wxPanel* panel) {$/;"	f	namespace:Simple	typeref:typename:wxButton *
 Bi	include/var.hpp	/^static PasswordFile Bi(FilePathXianDan+"bd.c.xdccm.eo4", "fqoeirm124");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 BigIntFile	include/utils/files/BigIntFile.hpp	/^    BigIntFile(std::string f) {$/;"	f	class:BigIntFile
 BigIntFile	include/utils/files/BigIntFile.hpp	/^class BigIntFile {$/;"	c
@@ -147,7 +150,7 @@ BookShelfResult	include/ffi/zig/BookShelf/BookShelf.h	/^} BookShelfResult; $/;"	
 BookShelfResult_Get	include/ffi/zig/BookShelf/BookShelfMacro.hpp	/^#define BookShelfResult_Get(/;"	d
 BoolFile	include/utils/files/BoolFile.h	/^    BoolFile(string file, string start, string end): $/;"	f	class:BoolFile
 BoolFile	include/utils/files/BoolFile.h	/^class BoolFile {$/;"	c
-Button	include/func/simple.hpp	/^  static fn Button(void(T::*fptr)(WXBTNEVT&), std::string value,$/;"	f	namespace:Simple	typeref:typename:fn
+Button	include/func/simple.hpp	/^  static wxButton* Button(void(T::*fptr)(WXBTNEVT&), std::string value,$/;"	f	namespace:Simple	typeref:typename:wxButton *
 CMAKE_AR	build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
 CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/coding\/学习平台Linux\/学习平台\/build$/;"	m
 CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
@@ -440,7 +443,7 @@ Guwan	include/var.hpp	/^namespace Guwan$/;"	n	namespace:AncientVar
 HEX	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 Han1Vec	include/var.hpp	/^static std::vector<std::string> Han1Vec( {$/;"	v	namespace:Card	typeref:typename:std::vector<std::string>
 HuangJinReader	include/var.hpp	/^static PasswordFile HuangJinReader(FilePath+"huaj.avc","dgp395sk10");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
-Init	include/func/simple.hpp	/^  static fn Init(wxPanel* panel, T* self) -> wxBoxSizer* {$/;"	f	namespace:Simple	typeref:typename:fn
+Init	include/func/simple.hpp	/^  static auto Init(wxPanel* panel, T* self) -> wxBoxSizer* {$/;"	f	namespace:Simple	typeref:typename:wxBoxSizer *
 IsOk	include/utils/files/BoolFile.h	/^    bool IsOk() {$/;"	f	class:BoolFile	typeref:typename:bool
 IsUsed	include/var.hpp	/^namespace IsUsed {$/;"	n	namespace:LiHe
 Ji	include/var.hpp	/^static PasswordFile Ji(FilePathXianLu+"xlj.ds.cc.o239", "done20596w");$/;"	v	namespace:Files::Xian::Lu	typeref:typename:PasswordFile
@@ -494,9 +497,9 @@ MYSTRMESSAGE	include/macro.hpp	/^#define MYSTRMESSAGE(/;"	d
 MYTITLE	include/macro.hpp	/^#define MYTITLE(/;"	d
 MYTITLENS	include/macro.hpp	/^#define MYTITLENS(/;"	d
 MYUSE	include/macro.hpp	/^#define MYUSE(/;"	d
-Message	include/func/simple.hpp	/^  static fn Message(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:fn
-MessageErr	include/func/simple.hpp	/^  static fn MessageErr(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:fn
-MessageQues	include/func/simple.hpp	/^  static fn MessageQues(std::string msg) -> bool {$/;"	f	namespace:Simple	typeref:typename:fn
+Message	include/func/simple.hpp	/^  static auto Message(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:void
+MessageErr	include/func/simple.hpp	/^  static auto MessageErr(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:void
+MessageQues	include/func/simple.hpp	/^  static auto MessageQues(std::string msg) -> bool {$/;"	f	namespace:Simple	typeref:typename:bool
 MianSheng	include/var.hpp	/^namespace MianSheng$/;"	n	namespace:AncientVar::WenGuan::ZhengJi
 MingZhu	include/ffi/zig/AncientBaoWu/AncientBaoWu.h	/^    char* MingZhu;$/;"	m	struct:__anon67df359a0108	typeref:typename:char *
 MingZhu	include/ffi/zig/AncientBaoWu/AncientBaoWu.h	/^    int32_t MingZhu;$/;"	m	struct:__anon67df359a0208	typeref:typename:int32_t
@@ -572,8 +575,10 @@ ShenJi	include/var.hpp	/^static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.
 ShenJiMin	include/var.hpp	/^ShenJiMin = 200$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 ShengGuanSpace	include/clibs/ancient/shengguan.hpp	/^namespace ShengGuanSpace$/;"	n
 ShiBeiReader	include/var.hpp	/^static PasswordFile ShiBeiReader(FilePath+"shb.avgwc","sudo1048qp");$/;"	v	namespace:AncientVar::Guwan	typeref:typename:PasswordFile
-ShopButton	include/func/simple.hpp	/^  static fn ShopButton(std::string value, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:fn
-ShowButton	include/func/simple.hpp	/^  static fn ShowButton(std::string showt, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:fn
+ShopButton	include/func/simple.hpp	/^  static auto ShopButton(std::string value, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
+ShowButton	include/func/simple.hpp	/^  static wxButton* ShowButton(std::string showt, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
+ShowFmt	include/var.hpp	/^static auto ShowFmt = boost::format("%s: %d");$/;"	v	typeref:typename:auto
+ShowFmtStr	include/var.hpp	/^static auto ShowFmtStr = boost::format("%s: %s");$/;"	v	typeref:typename:auto
 Silver	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Simple	include/func/simple.hpp	/^namespace Simple{$/;"	n
 SmartArray	include/utils/smartarray.hpp	/^    SmartArray(SmartArray&& other) noexcept$/;"	f	class:SmartArray
@@ -597,8 +602,8 @@ Swords	include/clibs/ancient/sword.hpp	/^#define Swords /;"	d
 TOSTR	include/macro.hpp	/^#define TOSTR(/;"	d
 ThingsSquare	include/var.hpp	/^namespace ThingsSquare$/;"	n
 TimeTimer	include/function.hpp	/^    wxTimer TimeTimer;$/;"	m	class:MyFrame	typeref:typename:wxTimer
-Title	include/func/simple.hpp	/^  static fn Title(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:fn
-TitleNoSpacer	include/func/simple.hpp	/^  static fn TitleNoSpacer(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:fn
+Title	include/func/simple.hpp	/^  static auto Title(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
+TitleNoSpacer	include/func/simple.hpp	/^  static auto TitleNoSpacer(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
 TongBiReader	include/var.hpp	/^static PasswordFile TongBiReader(FilePath+"tb.avc","hifo356sjl");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
 TongQianCheck	include/var.hpp	/^static CheckFile TongQianCheck(FilePathThingsSquare+"tqchk.ck",2212,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
 TongYongReal	include/var.hpp	/^namespace TongYongReal {$/;"	n
@@ -695,6 +700,7 @@ __anon83625a8a0102	src/FuncUsed.cpp	/^    TimeTimer.Bind(wxEVT_TIMER,[this](wxTi
 __anon83625a8a0202	src/FuncUsed.cpp	/^    auto call = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::yinbi_all	file:
 __anon83625a8a0302	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
 __anon83625a8a0402	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
+__anon8605ec070102	src/FuncBuilding.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::bank_juan_juan	file:
 __anon8f823baa0102	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0202	include/func/lambda.hpp	/^static auto anc_wu_bingli_get = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0302	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](int now, int min){$/;"	f	namespace:lambda	file:
@@ -945,9 +951,11 @@ at	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_reference at(size
 at	include/utils/cstyle/cstyle_array.hpp	/^    constexpr reference at(size_type pos)$/;"	f	struct:cstyle::array	typeref:typename:reference
 back	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_reference back() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:const_reference
 back	include/utils/cstyle/cstyle_array.hpp	/^    constexpr reference back() noexcept$/;"	f	struct:cstyle::array	typeref:typename:reference
-bank_get	src/FuncLockedFn.cpp	/^fn MyFrame::bank_get(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:fn
-bank_square	src/FuncCache.cpp	/^fn MyFrame::bank_square(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:fn
-bank_store	src/FuncLockedFn.cpp	/^fn MyFrame::bank_store(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:fn
+bank_get	src/FuncLockedFn.cpp	/^auto MyFrame::bank_get(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
+bank_juan	src/FuncBuilding.cpp	/^void MyFrame::bank_juan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+bank_juan_juan	src/FuncBuilding.cpp	/^void MyFrame::bank_juan_juan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+bank_square	src/FuncCache.cpp	/^auto MyFrame::bank_square(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
+bank_store	src/FuncLockedFn.cpp	/^auto MyFrame::bank_store(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_all	src/FuncSimple.cpp	/^void MyFrame::baoshi_all(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_choujiang	src/FuncSimple.cpp	/^void MyFrame::baoshi_choujiang(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_choujiang1	src/FuncFixed.cpp	/^void MyFrame::baoshi_choujiang1(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1025,7 +1033,6 @@ command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FI
 command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:8
 command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:9
 const_cast_expr	include/utils/cstyle/cstyle_cast.hpp	/^constexpr To const_cast_expr(From value) noexcept$/;"	f	namespace:cstyle	typeref:typename:To
-const_e	include/lang/macro.hpp	/^#define const_e /;"	d
 const_iterator	include/utils/cstyle/cstyle_array.hpp	/^    using const_iterator = const T*;$/;"	t	struct:cstyle::array	typeref:typename:const T *
 const_pointer	include/utils/cstyle/cstyle_array.hpp	/^    using const_pointer = const T*;$/;"	t	struct:cstyle::array	typeref:typename:const T *
 const_reference	include/utils/cstyle/cstyle_array.hpp	/^    using const_reference = const T&;$/;"	t	struct:cstyle::array	typeref:typename:const T &
@@ -1141,8 +1148,6 @@ fill	include/utils/cstyle/cstyle_array.hpp	/^    constexpr void fill(const T& va
 fill	include/utils/cstyle/cstyle_bitset.hpp	/^    void fill(bool val) noexcept$/;"	f	class:cstyle::bitset	typeref:typename:void
 fire	include/clibs/xianbi/sword.hpp	/^enum class SwordEnum { gold,wood,water,fire,soil };$/;"	e	enum:functions::SwordEnum
 flip	include/utils/cstyle/cstyle_bitset.hpp	/^    void flip(size_t pos)$/;"	f	class:cstyle::bitset	typeref:typename:void
-fn	include/func/simple.hpp	/^#define fn /;"	d
-fn	include/lang/macro.hpp	/^#define fn /;"	d
 font12	include/mine/MyFonts.h	/^inline wxFont font12(12, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD);$/;"	v	typeref:typename:wxFont
 font13	include/mine/MyFonts.h	/^inline wxFont font13(13, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD);$/;"	v	typeref:typename:wxFont
 font15	include/mine/MyFonts.h	/^inline wxFont font15(15, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD);$/;"	v	typeref:typename:wxFont
@@ -1199,7 +1204,6 @@ launch	Makefile	/^launch:$/;"	t
 len	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anon2b8a6a530408	typeref:typename:GoInt
 len	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anon75f481fe0308	typeref:typename:GoInt
 len	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;$/;"	m	struct:__anond9b77c320308	typeref:typename:GoInt
-let	include/lang/macro.hpp	/^#define let /;"	d
 lexical_cast	include/utils/cast.hpp	/^inline Target lexical_cast(const char* arg)$/;"	f	typeref:typename:Target
 lexical_cast	include/utils/cast.hpp	/^inline Target lexical_cast(const std::string& arg)$/;"	f	typeref:typename:Target
 lexical_cast	include/utils/cast.hpp	/^inline double lexical_cast<double, std::string>(const std::string& arg)$/;"	f	typeref:typename:double
@@ -1210,7 +1214,6 @@ lexical_cast	include/utils/cast.hpp	/^lexical_cast(const Source& arg)$/;"	f	type
 lihe	src/FuncUsed.cpp	/^void MyFrame::lihe(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 list_install_components	build/Makefile	/^list_install_components:$/;"	t
 list_install_components/fast	build/Makefile	/^list_install_components\/fast: list_install_components$/;"	t
-lmut	include/lang/macro.hpp	/^#define lmut /;"	d
 main	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main_func	include/function.hpp	/^    void main_func(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 make_unique	include/utils/cstyle/cstyle_memory.hpp	/^unique_ptr<T> make_unique(size_t count = 1)$/;"	f	namespace:cstyle	typeref:typename:unique_ptr<T>
@@ -1494,9 +1497,9 @@ throw_system_error	include/utils/cstyle/cstyle_stdio.hpp	/^inline void throw_sys
 time_clock	src/FuncFixed.cpp	/^void MyFrame::time_clock(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 timer	include/utils/new/timer/timer.hpp	/^    timer():is_start(0),how_long(std::chrono::milliseconds(0)) {};$/;"	f	class:timer
 timer	include/utils/new/timer/timer.hpp	/^class timer$/;"	c
-tongy	src/FuncLockedFn.cpp	/^fn MyFrame::tongy(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:fn
-tongy_all	src/FuncCache.cpp	/^fn MyFrame::tongy_all(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:fn
-tongy_show	src/FuncCache.cpp	/^fn MyFrame::tongy_show(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:fn
+tongy	src/FuncLockedFn.cpp	/^auto MyFrame::tongy(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
+tongy_all	src/FuncCache.cpp	/^auto MyFrame::tongy_all(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
+tongy_show	src/FuncCache.cpp	/^auto MyFrame::tongy_show(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
 translateChar	include/utils/old/file_password.h	/^    char translateChar(char c, const std::string& from, const std::string& to)$/;"	f	class:file_password	typeref:typename:char
 trim	include/utils/poly.hpp	/^    void trim()$/;"	f	class:poly	typeref:typename:void
 tsqaure_free_xianbi	src/FuncFixed.cpp	/^void MyFrame::tsqaure_free_xianbi(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1519,9 +1522,9 @@ usr_cho	include/global.hpp	/^static std::vector<WuGuanChuZheng::Choices> usr_cho
 v	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anon2b8a6a530308	typeref:typename:void *
 v	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anon75f481fe0208	typeref:typename:void *
 v	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anond9b77c320208	typeref:typename:void *
-val	include/lang/macro.hpp	/^#define val /;"	d
+v5.41.0	docs/ProjectReleasesLog.rst	/^v5.41.0$/;"	s	chapter:项目发布版本日志
+v5.41.1	docs/ProjectReleasesLog.rst	/^v5.41.1$/;"	s	chapter:项目发布版本日志
 value_type	include/utils/cstyle/cstyle_array.hpp	/^    using value_type = T;$/;"	t	struct:cstyle::array	typeref:typename:T
-var	include/lang/macro.hpp	/^#define var /;"	d
 vformat_input	include/utils/cstyle/cstyle_io.hpp	/^inline int vformat_input(FILE* stream, const char* fmt, va_list args)$/;"	f	namespace:cstyle	typeref:typename:int
 vformat_output	include/utils/cstyle/cstyle_io.hpp	/^inline int vformat_output(FILE* stream, const char* fmt, va_list args)$/;"	f	namespace:cstyle	typeref:typename:int
 water	include/clibs/xianbi/sword.hpp	/^enum class SwordEnum { gold,wood,water,fire,soil };$/;"	e	enum:functions::SwordEnum
@@ -1565,8 +1568,11 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 ~SmartPtr	include/utils/smartptr.hpp	/^    ~SmartPtr()$/;"	f	class:SmartPtr
 ~bitset	include/utils/cstyle/cstyle_bitset.hpp	/^    ~bitset() noexcept$/;"	f	class:cstyle::bitset
 ~string	include/utils/cstyle/cstyle_string.hpp	/^    ~string() noexcept$/;"	f	class:cstyle::string
+主要更新	docs/ProjectReleasesLog.rst	/^主要更新$/;"	S	section:v5.41.0
+主要更新	docs/ProjectReleasesLog.rst	/^主要更新$/;"	S	section:v5.41.1
 作弊算法	note/ProjectNote-20251019-15:45.rst	/^作弊算法$/;"	s	chapter:领兵出征算法
 其他情况	note/ProjectNote-20251012-21:53.rst	/^其他情况$/;"	s	chapter:领兵出征电脑判断算法
+其他更新	docs/ProjectReleasesLog.rst	/^其他更新$/;"	S	section:v5.41.0
 具体安排	todo/day/20251101.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/day/20251105.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/day/20251107.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
@@ -1577,6 +1583,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 具体安排	todo/template.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/week/20251109.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/week/20251116.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/week/20251123.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 失败	note/ProjectNote-20251019-12:08.rst	/^失败$/;"	s	chapter:领兵出征奖惩
 学习平台	README.md	/^# 学习平台$/;"	c
 安装	README.md	/^## 安装$/;"	s	chapter:学习平台
@@ -1590,6 +1597,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 完成时间	todo/template.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/week/20251109.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/week/20251116.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/week/20251123.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 开始规划时间	todo/month/20251105.md	/^## 开始规划时间 $/;"	s	chapter:待办事件列表
 待办事件列表	todo/day/20251101.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251104.md	/^# 待办事件列表$/;"	c
@@ -1602,6 +1610,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 待办事件列表	todo/template.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/week/20251109.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/week/20251116.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/week/20251123.md	/^# 待办事件列表$/;"	c
 敌方-自己兵力<90时	note/ProjectNote-20251012-21:53.rst	/^敌方-自己兵力<90时$/;"	s	chapter:领兵出征电脑判断算法
 注意事项	README.md	/^## 注意事项$/;"	s	chapter:学习平台
 特殊处理	note/ProjectNote-20251019-15:45.rst	/^特殊处理$/;"	s	chapter:领兵出征算法
@@ -1633,13 +1642,16 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 计划时间	todo/template.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/week/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/week/20251116.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/week/20251123.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 许可证	README.md	/^## 许可证$/;"	s	chapter:学习平台
 通用货币兑换 20251006 10:33	note/ProjectNote-20251006-10:33.rst	/^通用货币兑换 20251006 10:33$/;"	c
 项目历史 25国庆	docs/ProjectHistory.rst	/^项目历史 25国庆$/;"	c
+项目发布版本日志	docs/ProjectReleasesLog.rst	/^项目发布版本日志$/;"	c
 项目日志新 25国庆	docs/ProjectLog.rst	/^项目日志新 25国庆$/;"	c
 项目日志新 25国庆	docs/ProjectLog20251007.rst	/^项目日志新 25国庆$/;"	c
 项目说明文档 实际篇	docs/ProjectDocsSimple.rst	/^项目说明文档 实际篇$/;"	c
 项目说明文档 技术篇	docs/ProjectDocsLang.rst	/^项目说明文档 技术篇$/;"	c
+项目进展速度	docs/ProjectSpeed.rst	/^项目进展速度$/;"	c
 领兵出征奖惩	note/ProjectNote-20251019-12:08.rst	/^领兵出征奖惩$/;"	c
 领兵出征方案	note/ProjectNote-20251008-18:15.rst	/^领兵出征方案$/;"	c
 领兵出征方案修正	note/ProjectNote-20251012-22:00.rst	/^领兵出征方案修正$/;"	c
