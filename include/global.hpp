@@ -11,4 +11,7 @@ static int bingl_ot_now = -1;
 static int bingl_sf_now = -1;
 static std::vector<WuGuanChuZheng::Choices> usr_cho({});
 }
+namespace AncientBookstoreJiaomai {
+inline int times = 0;
+}
 }
