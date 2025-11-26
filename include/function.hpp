@@ -149,6 +149,8 @@ protected:
     void ancient_juanzeng_lingqu(WXBTNEVT&);
     void ancient_juanzeng_juanxian(WXBTNEVT&);
 
+    void ancient_bookstore(WXBTNEVT&);
+
     void things_square(WXBTNEVT&);
 
     void tsquare_free(WXBTNEVT&);

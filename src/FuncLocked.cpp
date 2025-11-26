@@ -1,3 +1,4 @@
+#include "macro.hpp"
 #include <headers.hpp>
 
 void MyFrame::start()
@@ -58,7 +59,7 @@ void MyFrame::mine(WXBTNEVT& evt)
     MYBUTTON(button2,&MyFrame::time_clock,"学习计时");
     MYBUTTON(button3,&MyFrame::lihe,"我的礼盒");
     MYBUTTON(button4,&MyFrame::tongy_all, "通用货币");
-    
+
     MYADDSPACER();
 
     MYBACKTOMAIN();
@@ -97,6 +98,7 @@ void MyFrame::ancient_square(WXBTNEVT& evt)
     MYBUTTON(btn3,&MyFrame::ancient_things,"我的物品");
     MYBUTTON(btn4,&MyFrame::ancient_guan,"我的官职");
     MYBUTTON(btn5,&MyFrame::ancient_juanzeng,"我的捐赠");
+    MYBUTTON(btn2,&MyFrame::ancient_bookstore, "卖出书籍");
 
     MYADDSPACER();
 
@@ -173,20 +175,20 @@ void MyFrame::ancient_wenguan_zhengji(WXBTNEVT& _)
 
     MYLAST(&MyFrame::ancient_wenguan);
 }
-void MyFrame::xiandan_he(WXBTNEVT&){
+void MyFrame::xiandan_he(WXBTNEVT&) {
     MYINIT();
-  
+
     MYTITLE("仙丹召鹤");
 
     MYBUTTON(btn1, &MyFrame::xiandan_he_yindan, "银丹召鹤");
     MYBUTTON(btn2, &MyFrame::xiandan_he_jindan, "金丹召鹤");
     MYBUTTON(btn3, &MyFrame::xiandan_he_shendan, "神丹召鹤");
-  
+
     MYADDSPACER();
-  
+
     MYLAST(&MyFrame::xiandan);
 }
-void MyFrame::ancient_wuguan_show(WXBTNEVT&){
+void MyFrame::ancient_wuguan_show(WXBTNEVT&) {
     MYINIT();
 
     MYTITLE("查看士兵");
@@ -194,49 +196,49 @@ void MyFrame::ancient_wuguan_show(WXBTNEVT&){
     auto grid = new wxGridSizer(3,3,5,5);
 
     MYSHOWNSNBM(
-        wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str()+wxT("人"), 
+        wxString(wxT("新兵："))+AncientVar::WuGuan::LiLiang::Xin.read_str()+wxT("人"),
         btn0, MyDarkRed
     );
     grid -> Add(btn0);
 
     MYSHOWNSNBM(
-        wxString(wxT("普通兵："))+AncientVar::WuGuan::LiLiang::PuTong.read_str()+wxT("人"), 
+        wxString(wxT("普通兵："))+AncientVar::WuGuan::LiLiang::PuTong.read_str()+wxT("人"),
         btn1, MyDarkRed
     );
     grid -> Add(btn1);
 
     MYSHOWNSNBM(
-        wxString(wxT("初级兵："))+AncientVar::WuGuan::LiLiang::ChuJi.read_str()+wxT("人"), 
+        wxString(wxT("初级兵："))+AncientVar::WuGuan::LiLiang::ChuJi.read_str()+wxT("人"),
         btn2, MyDarkRed
     );
     grid -> Add(btn2);
 
     MYSHOWNSNBM(
-        wxString(wxT("中级兵："))+AncientVar::WuGuan::LiLiang::ZhongJi.read_str()+wxT("人"), 
+        wxString(wxT("中级兵："))+AncientVar::WuGuan::LiLiang::ZhongJi.read_str()+wxT("人"),
         btn3, MyDarkRed
     );
     grid -> Add(btn3);
 
     MYSHOWNSNBM(
-        wxString(wxT("高级兵："))+AncientVar::WuGuan::LiLiang::GaoJi.read_str()+wxT("人"), 
+        wxString(wxT("高级兵："))+AncientVar::WuGuan::LiLiang::GaoJi.read_str()+wxT("人"),
         btn4, MyDarkRed
     );
     grid -> Add(btn4);
 
     MYSHOWNSNBM(
-        wxString(wxT("精锐兵："))+AncientVar::WuGuan::LiLiang::JingRui.read_str()+wxT("人"), 
+        wxString(wxT("精锐兵："))+AncientVar::WuGuan::LiLiang::JingRui.read_str()+wxT("人"),
         btn5, MyDarkRed
     );
     grid -> Add(btn5);
 
     MYSHOWNSNBM(
-        wxString(wxT("王牌兵："))+AncientVar::WuGuan::LiLiang::WangPai.read_str()+wxT("人"), 
+        wxString(wxT("王牌兵："))+AncientVar::WuGuan::LiLiang::WangPai.read_str()+wxT("人"),
         btn6, MyDarkRed
     );
     grid -> Add(btn6);
 
     MYSHOWNSNBM(
-        wxString(wxT("神级兵："))+AncientVar::WuGuan::LiLiang::ShenJi.read_str()+wxT("人"), 
+        wxString(wxT("神级兵："))+AncientVar::WuGuan::LiLiang::ShenJi.read_str()+wxT("人"),
         btn7, MyDarkRed
     );
     grid -> Add(btn7);
