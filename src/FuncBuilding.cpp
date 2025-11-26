@@ -1,61 +1,44 @@
 #include "clog.h"
 #include "func/simple.hpp"
+#include "global.hpp"
 #include "headers.hpp"
-#include "mine/MyColour.h"
+#include "mine/MyFlags.h"
+#include "signals.hpp"
 #include "type.hpp"
 #include "var.hpp"
-#include <boost/format/format_fwd.hpp>
-#include <boost/format.hpp>
+#include <wx/event.h>
 #include <wx/gtk/stattext.h>
-#include <wx/sizer.h>
 #include <wx/wx.h>
 
-void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {
-    wxBoxSizer* vbox = Simple::Init(panel, this);
-
-    Simple::Title("便利店铺", panel, vbox);
-
-    auto btn1 = Simple::Button(&MyFrame::ancient_shop_bianli, "货币便利店铺", panel, vbox, this);
-    btn1 -> SetForegroundColour(MyDarkRed);
-
-    auto btn2 = Simple::Button(&MyFrame::ancient_shop_bianli_book, "书籍便利店铺", panel, vbox, this);
-    btn2 -> SetForegroundColour(MyDarkRed);
-
-    Simple::BackButton(&MyFrame::ancient_shopa, panel, vbox, this);
-
-    CLogger_log(Logfile, CLogger_DEBUG, "便利店铺=>总界面: 正常启动");
-}
-void MyFrame::bank_juan(WXBTNEVT&) {
-    auto ShowString = boost::format("捐献券: %d");
-    auto ShowStringF = (ShowString % (Bank::BankJuanQuan.read_int()));
+void MyFrame::ancient_bookstore(WXBTNEVT&) {
+    GlobalSignal.AncientBookstoreJiaomai.connect([=]() {
+        CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>卖出书籍=>叫卖: 槽正确接收");
+        this -> ancient_bookstore_jiaomai(EmptyEvent);
+    });
 
     auto vbox = Simple::Init(panel, this);
 
-    Simple::TitleNoSpacer("积分捐献", panel, vbox);
-    Simple::ShowButton(ShowStringF.str(), panel, vbox);
+    Simple::Title("卖出书籍", panel, vbox);
 
-    Simple::Button(&MyFrame::bank_juan_juan, "捐献积分", panel, vbox, this);
+    auto btn1 = Simple::Button("叫卖",panel, vbox);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        GlobalSignal.AncientBookstoreJiaomai.emit();
+    });
 
-    Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
-
-    CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分: 正常启动");
+    Simple::BackButton(&MyFrame::ancient_square, panel, vbox, this);
 }
-void MyFrame::bank_juan_juan(WXBTNEVT&) {
-    auto ShowString = ShowFmtStr % "当前存储" % (Bank::BankStore.Read());
+void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
+    Global::AncientBookstoreJiaomai::times = 0;
 
     auto vbox = Simple::Init(panel, this);
 
-    Simple::TitleNoSpacer("捐献积分", panel, vbox);
-    Simple::ShowButton(ShowString.str(), panel, vbox);
+    Simple::Title("快速叫卖", panel, vbox);
 
-    auto Tip1 = new wxStaticText(panel, wxID_ANY, wxT("请输入捐献积分数"));
-    Tip1 -> SetFont(font17);
+    auto TiShi = new wxStaticText(panel, wxID_ANY, wxT("请快速点击下方按钮叫卖"));
+    TiShi -> SetFont(font17);
+    vbox -> Add(TiShi, FLAG_CENTER);
 
-    auto TextRead = new wxTextCtrl(panel, wxID_ANY, wxT("请输入..."));
-    TextRead->SetFont(font17);
+    auto Submit = Simple::BasicButton("快速点击我", panel);
 
-    Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
-
-    CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>捐献积分: 正常启动");
+    Simple::BackButton(&MyFrame::ancient_bookstore, panel, vbox, this);
 }
-
