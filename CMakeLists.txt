@@ -51,6 +51,13 @@ pkg_check_modules(GLIB REQUIRED glib-2.0 gobject-2.0)
 target_compile_options(studyplatform PRIVATE ${GLIB_CFLAGS})
 target_link_libraries(studyplatform ${GLIB_LIBRARIES})
 
+# libsigc++
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(SIGCXX REQUIRED sigc++-3.0)
+target_include_directories(studyplatform PRIVATE ${SIGCXX_INCLUDE_DIRS})
+target_link_directories(studyplatform PRIVATE ${SIGCXX_LIBRARY_DIRS})
+target_link_libraries(studyplatform ${SIGCXX_LIBRARIES})
+
 # hunter-hongg/clog
 target_include_directories(studyplatform PRIVATE $ENV{HOME}/clog/include)
 target_link_directories(studyplatform PRIVATE $ENV{HOME}/clog/lib/)

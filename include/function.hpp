@@ -150,6 +150,7 @@ protected:
     void ancient_juanzeng_juanxian(WXBTNEVT&);
 
     void ancient_bookstore(WXBTNEVT&);
+    void ancient_bookstore_jiaomai(WXBTNEVT&);
 
     void things_square(WXBTNEVT&);
 
