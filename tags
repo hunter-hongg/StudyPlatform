@@ -127,7 +127,7 @@ BackButton	include/func/simple.hpp	/^  static auto BackButton(void(T::*fptr)(WXB
 BaiYinReader	include/var.hpp	/^static PasswordFile BaiYinReader(FilePath+"bay.avc","3ifnyl1042");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
 Bank	include/var.hpp	/^namespace Bank {$/;"	n
 BankJuanQuan	include/var.hpp	/^static PasswordFile BankJuanQuan(FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156");$/;"	v	namespace:Bank	typeref:typename:PasswordFile
-BankStore	include/var.hpp	/^static BigIntFile BankStore(FilePathBank+"fhubasr");$/;"	v	namespace:Bank	typeref:typename:BigIntFile
+BankStore	include/var.hpp	/^static PasswordFile BankStore(FilePathBank+"fhubasr", "aoidnrm301");$/;"	v	namespace:Bank	typeref:typename:PasswordFile
 BaoShi	include/var.hpp	/^namespace BaoShi$/;"	n	namespace:Files
 BaoShiCheck	include/var.hpp	/^static CheckFile BaoShiCheck(FilePathThingsSquare+"fospbsck.dogck",1127,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
 BaoShiReader	include/var.hpp	/^#define BaoShiReader /;"	d
@@ -577,8 +577,8 @@ ShengGuanSpace	include/clibs/ancient/shengguan.hpp	/^namespace ShengGuanSpace$/;
 ShiBeiReader	include/var.hpp	/^static PasswordFile ShiBeiReader(FilePath+"shb.avgwc","sudo1048qp");$/;"	v	namespace:AncientVar::Guwan	typeref:typename:PasswordFile
 ShopButton	include/func/simple.hpp	/^  static auto ShopButton(std::string value, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
 ShowButton	include/func/simple.hpp	/^  static wxButton* ShowButton(std::string showt, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
-ShowFmt	include/var.hpp	/^static auto ShowFmt = boost::format("%s: %d");$/;"	v	typeref:typename:auto
-ShowFmtStr	include/var.hpp	/^static auto ShowFmtStr = boost::format("%s: %s");$/;"	v	typeref:typename:auto
+ShowFmt	include/var.hpp	/^static const auto ShowFmt = boost::format("%s: %d");$/;"	v	typeref:typename:const auto
+ShowFmtStr	include/var.hpp	/^static const auto ShowFmtStr = boost::format("%s: %s");$/;"	v	typeref:typename:const auto
 Silver	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Simple	include/func/simple.hpp	/^namespace Simple{$/;"	n
 SmartArray	include/utils/smartarray.hpp	/^    SmartArray(SmartArray&& other) noexcept$/;"	f	class:SmartArray
@@ -677,6 +677,7 @@ __anon234a3c9d0b02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WX
 __anon234a3c9d0c02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_book_simple	file:
 __anon234a3c9d0d02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_book_zhengui	file:
 __anon234a3c9d0e02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_shop_bianli_book_diancang	file:
+__anon234a3c9d0f02	src/FuncFixedFn.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::bank_juan_juan	file:
 __anon2b8a6a530108	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	s
 __anon2b8a6a530208	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct {$/;"	s
 __anon2b8a6a530308	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	s
@@ -700,7 +701,6 @@ __anon83625a8a0102	src/FuncUsed.cpp	/^    TimeTimer.Bind(wxEVT_TIMER,[this](wxTi
 __anon83625a8a0202	src/FuncUsed.cpp	/^    auto call = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::yinbi_all	file:
 __anon83625a8a0302	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
 __anon83625a8a0402	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
-__anon8605ec070102	src/FuncBuilding.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::bank_juan_juan	file:
 __anon8f823baa0102	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0202	include/func/lambda.hpp	/^static auto anc_wu_bingli_get = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0302	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](int now, int min){$/;"	f	namespace:lambda	file:
@@ -899,7 +899,7 @@ ancient_juanzeng_lingqu	src/FuncFixed.cpp	/^void MyFrame::ancient_juanzeng_lingq
 ancient_shop	src/FuncFixed.cpp	/^void MyFrame::ancient_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_baowu	src/FuncFixed.cpp	/^void MyFrame::ancient_shop_baowu(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-ancient_shop_bianli_all	src/FuncBuilding.cpp	/^void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_shop_bianli_all	src/FuncCache.cpp	/^void MyFrame::ancient_shop_bianli_all(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_baiyin	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_baiyin(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_book	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_book(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_shop_bianli_book_diancang	src/FuncFixedFn.cpp	/^void MyFrame::ancient_shop_bianli_book_diancang(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
@@ -952,8 +952,8 @@ at	include/utils/cstyle/cstyle_array.hpp	/^    constexpr reference at(size_type 
 back	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_reference back() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:const_reference
 back	include/utils/cstyle/cstyle_array.hpp	/^    constexpr reference back() noexcept$/;"	f	struct:cstyle::array	typeref:typename:reference
 bank_get	src/FuncLockedFn.cpp	/^auto MyFrame::bank_get(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
-bank_juan	src/FuncBuilding.cpp	/^void MyFrame::bank_juan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-bank_juan_juan	src/FuncBuilding.cpp	/^void MyFrame::bank_juan_juan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+bank_juan	src/FuncCache.cpp	/^void MyFrame::bank_juan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+bank_juan_juan	src/FuncFixedFn.cpp	/^void MyFrame::bank_juan_juan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 bank_square	src/FuncCache.cpp	/^auto MyFrame::bank_square(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
 bank_store	src/FuncLockedFn.cpp	/^auto MyFrame::bank_store(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
 baoshi_all	src/FuncSimple.cpp	/^void MyFrame::baoshi_all(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1524,6 +1524,7 @@ v	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *t; void *v;
 v	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anond9b77c320208	typeref:typename:void *
 v5.41.0	docs/ProjectReleasesLog.rst	/^v5.41.0$/;"	s	chapter:项目发布版本日志
 v5.41.1	docs/ProjectReleasesLog.rst	/^v5.41.1$/;"	s	chapter:项目发布版本日志
+v5.42.0 	docs/ProjectReleasesLog.rst	/^v5.42.0 $/;"	s	chapter:项目发布版本日志
 value_type	include/utils/cstyle/cstyle_array.hpp	/^    using value_type = T;$/;"	t	struct:cstyle::array	typeref:typename:T
 vformat_input	include/utils/cstyle/cstyle_io.hpp	/^inline int vformat_input(FILE* stream, const char* fmt, va_list args)$/;"	f	namespace:cstyle	typeref:typename:int
 vformat_output	include/utils/cstyle/cstyle_io.hpp	/^inline int vformat_output(FILE* stream, const char* fmt, va_list args)$/;"	f	namespace:cstyle	typeref:typename:int
@@ -1570,6 +1571,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 ~string	include/utils/cstyle/cstyle_string.hpp	/^    ~string() noexcept$/;"	f	class:cstyle::string
 主要更新	docs/ProjectReleasesLog.rst	/^主要更新$/;"	S	section:v5.41.0
 主要更新	docs/ProjectReleasesLog.rst	/^主要更新$/;"	S	section:v5.41.1
+主要更新	docs/ProjectReleasesLog.rst	/^主要更新$/;"	S	section:v5.42.0 
 作弊算法	note/ProjectNote-20251019-15:45.rst	/^作弊算法$/;"	s	chapter:领兵出征算法
 其他情况	note/ProjectNote-20251012-21:53.rst	/^其他情况$/;"	s	chapter:领兵出征电脑判断算法
 其他更新	docs/ProjectReleasesLog.rst	/^其他更新$/;"	S	section:v5.41.0
@@ -1579,6 +1581,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 具体安排	todo/day/20251108.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/day/20251109.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/day/20251110.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
+具体安排	todo/day/20251125.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/month/20251105.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/template.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
 具体安排	todo/week/20251109.md	/^## 具体安排 $/;"	s	chapter:待办事件列表
@@ -1594,6 +1597,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 完成时间	todo/day/20251108.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251109.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/day/20251110.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
+完成时间	todo/day/20251125.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/template.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/week/20251109.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
 完成时间	todo/week/20251116.md	/^## 完成时间 $/;"	s	chapter:待办事件列表
@@ -1606,6 +1610,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 待办事件列表	todo/day/20251108.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251109.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/day/20251110.md	/^# 待办事件列表$/;"	c
+待办事件列表	todo/day/20251125.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/month/20251105.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/template.md	/^# 待办事件列表$/;"	c
 待办事件列表	todo/week/20251109.md	/^# 待办事件列表$/;"	c
@@ -1613,6 +1618,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 待办事件列表	todo/week/20251123.md	/^# 待办事件列表$/;"	c
 敌方-自己兵力<90时	note/ProjectNote-20251012-21:53.rst	/^敌方-自己兵力<90时$/;"	s	chapter:领兵出征电脑判断算法
 注意事项	README.md	/^## 注意事项$/;"	s	chapter:学习平台
+注意事项	docs/ProjectReleasesLog.rst	/^注意事项$/;"	S	section:v5.42.0 
 特殊处理	note/ProjectNote-20251019-15:45.rst	/^特殊处理$/;"	s	chapter:领兵出征算法
 积分	note/ProjectNote-20251006-10:33.rst	/^积分$/;"	s	chapter:通用货币兑换 20251006 10:33
 第一块	note/ProjectNote-20251008-18:15.rst	/^第一块$/;"	s	chapter:领兵出征方案
@@ -1638,6 +1644,7 @@ ys1User	include/function.hpp	/^    poly ys1User[6] oldblock;$/;"	m	class:MyFrame
 计划时间	todo/day/20251108.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/day/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/day/20251110.md	/^## 计划时间$/;"	s	chapter:待办事件列表
+计划时间	todo/day/20251125.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/month/20251105.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/template.md	/^## 计划时间$/;"	s	chapter:待办事件列表
 计划时间	todo/week/20251109.md	/^## 计划时间$/;"	s	chapter:待办事件列表
