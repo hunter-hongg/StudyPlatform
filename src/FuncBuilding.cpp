@@ -46,7 +46,6 @@ void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
         auto duration_time = Global::AncientBookstoreJiaomai::PushEnd - Global::AncientBookstoreJiaomai::PushStart;
         auto duration_time_ms = std::chrono::duration_cast<std::chrono::milliseconds>(duration_time);
         auto duration_time_ms_real = duration_time_ms.count();
-        Simple::Message(TOSTR(duration_time_ms_real));
     });
 
     auto vbox = Simple::Init(panel, this);
