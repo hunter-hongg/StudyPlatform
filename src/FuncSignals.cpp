@@ -39,7 +39,7 @@ void MyFrame::signals_init() {
             auto y_or_n = Simple::MessageQues("叫卖成功\n"
                                               "购买书籍: "+BookTypeS+"\n"
                                               "购买价格: "+TOSTR(BaiYin)+"两白银");
-            if(y_or_n == wxYES) {
+            if(y_or_n){
 
             } else {
                 CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>书籍叫卖: 叫卖成功 被拒绝 退出");
