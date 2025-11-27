@@ -1,6 +1,5 @@
 #pragma once
 #include <macro.hpp>
-#include <optional>
 #include <vector>
 #include <string>
 #include <global.hpp>
