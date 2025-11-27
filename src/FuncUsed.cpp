@@ -74,6 +74,8 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
     });
     TimeTimer.Start(500);
 
+    this -> signals_init();
+
     AncientVar::Sword.Add(static_cast<Ancient::Sword>(0));
     AncientVar::Pao.Add(static_cast<Ancient::Pao>(0));
 
