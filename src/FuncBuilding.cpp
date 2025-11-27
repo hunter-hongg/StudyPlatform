@@ -1,5 +1,6 @@
 #include "clog.h"
 #include "func/simple.hpp"
+#include "gfunc.hpp"
 #include "global.hpp"
 #include "headers.hpp"
 #include "macro.hpp"
@@ -49,6 +50,16 @@ void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
         auto duration_time_ms_real = duration_time_ms.count();
         int BaiYin = AncientBookstoreJiaomaiGetRes(duration_time_ms_real);
         int BookType = AncientBookstoreJiaomaiGetBookType(BaiYin);
+        std::string BookTypeS = gfunc::AncientBookTrans(BookType);
+        if(BaiYin == 0) {
+            Simple::Message("速度过慢，叫卖失败");
+            return;
+        }
+        else {
+            Simple::MessageQues("叫卖成功\n"
+                                "购买书籍: "+BookTypeS+"\n"
+                                "购买价格: "+TOSTR(BaiYin)+"两白银");
+        }
     });
 
     auto vbox = Simple::Init(panel, this);
