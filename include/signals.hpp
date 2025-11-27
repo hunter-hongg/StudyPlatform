@@ -5,5 +5,6 @@
 struct _GlobalSignal {
     sigc::signal<void()> AncientBookstoreJiaomai;
     sigc::signal<void()> AncientBookstoreJiaomaiPushed;
+    sigc::signal<void()> AncientBookstoreJiaomaiPushedDone;
 };
 inline _GlobalSignal GlobalSignal;

@@ -50,6 +50,7 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 2025-11-1	docs/ProjectLog.rst	/^2025-11-1$/;"	s	chapter:项目日志新 25国庆
 2025-11-2	docs/ProjectLog.rst	/^2025-11-2$/;"	s	chapter:项目日志新 25国庆
 2025-11-23	docs/ProjectSpeed.rst	/^2025-11-23$/;"	s	chapter:项目进展速度
+2025-11-26	docs/ProjectSpeed.rst	/^2025-11-26$/;"	s	chapter:项目进展速度
 2025-11-3	docs/ProjectLog.rst	/^2025-11-3$/;"	s	chapter:项目日志新 25国庆
 2025-11-4	docs/ProjectLog.rst	/^2025-11-4$/;"	s	chapter:项目日志新 25国庆
 2025-11-5	docs/ProjectLog.rst	/^2025-11-5$/;"	s	chapter:项目日志新 25国庆
@@ -102,6 +103,10 @@ AncientBaoWu_ChouDuan	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#defi
 AncientBaoWu_MingZhu	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#define AncientBaoWu_MingZhu /;"	d
 AncientBaoWu_YuBi	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#define AncientBaoWu_YuBi /;"	d
 AncientBaoWu_YuDiao	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#define AncientBaoWu_YuDiao /;"	d
+AncientBookstoreJiaomai	include/global.hpp	/^namespace AncientBookstoreJiaomai {$/;"	n	namespace:Global
+AncientBookstoreJiaomai	include/signals.hpp	/^    sigc::signal<void()> AncientBookstoreJiaomai;$/;"	m	struct:_GlobalSignal	typeref:typename:sigc::signal<void ()>
+AncientBookstoreJiaomaiPushed	include/signals.hpp	/^    sigc::signal<void()> AncientBookstoreJiaomaiPushed;$/;"	m	struct:_GlobalSignal	typeref:typename:sigc::signal<void ()>
+AncientBookstoreJiaomaiPushedDone	include/signals.hpp	/^    sigc::signal<void()> AncientBookstoreJiaomaiPushedDone;$/;"	m	struct:_GlobalSignal	typeref:typename:sigc::signal<void ()>
 AncientGuWanCha_ChaHu	include/ffi/zig/AncientGuWanCha/AncientBaoWuChaMacro.hpp	/^#define AncientGuWanCha_ChaHu /;"	d
 AncientGuWanCha_ChaZhan	include/ffi/zig/AncientGuWanCha/AncientBaoWuChaMacro.hpp	/^#define AncientGuWanCha_ChaZhan /;"	d
 AncientGuWanCha_Get	include/ffi/zig/AncientGuWanCha/AncientBaoWuChaMacro.hpp	/^#define AncientGuWanCha_Get(/;"	d
@@ -123,7 +128,7 @@ BAOSHICHOUJIANG1_JIFEN	include/ffi/rust/BaoShiChouJiang1/BaoShiChouJiang1Macro.h
 BAOSHICHOUJIANG1_TONGQIAN	include/ffi/rust/BaoShiChouJiang1/BaoShiChouJiang1Macro.hpp	/^#define BAOSHICHOUJIANG1_TONGQIAN /;"	d
 BAOSHICHOUJIANG1_XIANBI	include/ffi/rust/BaoShiChouJiang1/BaoShiChouJiang1Macro.hpp	/^#define BAOSHICHOUJIANG1_XIANBI /;"	d
 BUILD_DIR	Makefile	/^BUILD_DIR = .\/build$/;"	m
-BackButton	include/func/simple.hpp	/^  static auto BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
+BackButton	include/func/simple.hpp	/^static auto BackButton(void(T::*fptr)(WXBTNEVT&), wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
 BaiYinReader	include/var.hpp	/^static PasswordFile BaiYinReader(FilePath+"bay.avc","3ifnyl1042");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
 Bank	include/var.hpp	/^namespace Bank {$/;"	n
 BankJuanQuan	include/var.hpp	/^static PasswordFile BankJuanQuan(FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156");$/;"	v	namespace:Bank	typeref:typename:PasswordFile
@@ -134,7 +139,7 @@ BaoShiReader	include/var.hpp	/^#define BaoShiReader /;"	d
 BaoWuChaFiles	include/ffi/zig/AncientBaoWuCha/AncientBaoWuCha.h	/^} BaoWuChaFiles;$/;"	t	typeref:struct:__anon2c2e5a920108
 BaoWuChaReader	include/var.hpp	/^static BaoWuChaFiles* BaoWuChaReader = BaoWuChaFiles_Make($/;"	v	namespace:AncientVar	typeref:typename:BaoWuChaFiles *
 BaoWuStruct	include/var.hpp	/^static AncientBaoWuStruct* BaoWuStruct = AncientBaoWuStruct_Create($/;"	v	namespace:AncientVar	typeref:typename:AncientBaoWuStruct *
-BasicButton	include/func/simple.hpp	/^  static wxButton* BasicButton(std::string value, wxPanel* panel) {$/;"	f	namespace:Simple	typeref:typename:wxButton *
+BasicButton	include/func/simple.hpp	/^static wxButton* BasicButton(std::string value, wxPanel* panel) {$/;"	f	namespace:Simple	typeref:typename:wxButton *
 Bi	include/var.hpp	/^static PasswordFile Bi(FilePathXianDan+"bd.c.xdccm.eo4", "fqoeirm124");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 BigIntFile	include/utils/files/BigIntFile.hpp	/^    BigIntFile(std::string f) {$/;"	f	class:BigIntFile
 BigIntFile	include/utils/files/BigIntFile.hpp	/^class BigIntFile {$/;"	c
@@ -150,7 +155,8 @@ BookShelfResult	include/ffi/zig/BookShelf/BookShelf.h	/^} BookShelfResult; $/;"	
 BookShelfResult_Get	include/ffi/zig/BookShelf/BookShelfMacro.hpp	/^#define BookShelfResult_Get(/;"	d
 BoolFile	include/utils/files/BoolFile.h	/^    BoolFile(string file, string start, string end): $/;"	f	class:BoolFile
 BoolFile	include/utils/files/BoolFile.h	/^class BoolFile {$/;"	c
-Button	include/func/simple.hpp	/^  static wxButton* Button(void(T::*fptr)(WXBTNEVT&), std::string value,$/;"	f	namespace:Simple	typeref:typename:wxButton *
+Button	include/func/simple.hpp	/^static wxButton* Button(std::string value,$/;"	f	namespace:Simple	typeref:typename:wxButton *
+Button	include/func/simple.hpp	/^static wxButton* Button(void(T::*fptr)(WXBTNEVT&), std::string value,$/;"	f	namespace:Simple	typeref:typename:wxButton *
 CMAKE_AR	build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
 CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/coding\/学习平台Linux\/学习平台\/build$/;"	m
 CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
@@ -370,6 +376,7 @@ Get	include/var.hpp	/^static Ancient::WuGuanPinJi Get(FilePathAncientWuGuan+"wgp
 GetFile	include/utils/files/BigIntFile.hpp	/^    std::string GetFile() {$/;"	f	class:BigIntFile	typeref:typename:std::string
 GetRandom	include/utils/rand.hpp	/^static Rand GetRandom;$/;"	v	typeref:typename:Rand
 Global	include/global.hpp	/^namespace Global {$/;"	n
+GlobalSignal	include/signals.hpp	/^inline _GlobalSignal GlobalSignal;$/;"	v	typeref:typename:_GlobalSignal
 GoChan	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef void *GoChan;$/;"	t	typeref:typename:void *
 GoChan	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef void *GoChan;$/;"	t	typeref:typename:void *
 GoChan	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef void *GoChan;$/;"	t	typeref:typename:void *
@@ -443,7 +450,7 @@ Guwan	include/var.hpp	/^namespace Guwan$/;"	n	namespace:AncientVar
 HEX	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 Han1Vec	include/var.hpp	/^static std::vector<std::string> Han1Vec( {$/;"	v	namespace:Card	typeref:typename:std::vector<std::string>
 HuangJinReader	include/var.hpp	/^static PasswordFile HuangJinReader(FilePath+"huaj.avc","dgp395sk10");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
-Init	include/func/simple.hpp	/^  static auto Init(wxPanel* panel, T* self) -> wxBoxSizer* {$/;"	f	namespace:Simple	typeref:typename:wxBoxSizer *
+Init	include/func/simple.hpp	/^static auto Init(wxPanel* panel, T* self) -> wxBoxSizer* {$/;"	f	namespace:Simple	typeref:typename:wxBoxSizer *
 IsOk	include/utils/files/BoolFile.h	/^    bool IsOk() {$/;"	f	class:BoolFile	typeref:typename:bool
 IsUsed	include/var.hpp	/^namespace IsUsed {$/;"	n	namespace:LiHe
 Ji	include/var.hpp	/^static PasswordFile Ji(FilePathXianLu+"xlj.ds.cc.o239", "done20596w");$/;"	v	namespace:Files::Xian::Lu	typeref:typename:PasswordFile
@@ -497,9 +504,9 @@ MYSTRMESSAGE	include/macro.hpp	/^#define MYSTRMESSAGE(/;"	d
 MYTITLE	include/macro.hpp	/^#define MYTITLE(/;"	d
 MYTITLENS	include/macro.hpp	/^#define MYTITLENS(/;"	d
 MYUSE	include/macro.hpp	/^#define MYUSE(/;"	d
-Message	include/func/simple.hpp	/^  static auto Message(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:void
-MessageErr	include/func/simple.hpp	/^  static auto MessageErr(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:void
-MessageQues	include/func/simple.hpp	/^  static auto MessageQues(std::string msg) -> bool {$/;"	f	namespace:Simple	typeref:typename:bool
+Message	include/func/simple.hpp	/^static auto Message(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:void
+MessageErr	include/func/simple.hpp	/^static auto MessageErr(std::string msg) -> void {$/;"	f	namespace:Simple	typeref:typename:void
+MessageQues	include/func/simple.hpp	/^static auto MessageQues(std::string msg) -> bool {$/;"	f	namespace:Simple	typeref:typename:bool
 MianSheng	include/var.hpp	/^namespace MianSheng$/;"	n	namespace:AncientVar::WenGuan::ZhengJi
 MingZhu	include/ffi/zig/AncientBaoWu/AncientBaoWu.h	/^    char* MingZhu;$/;"	m	struct:__anon67df359a0108	typeref:typename:char *
 MingZhu	include/ffi/zig/AncientBaoWu/AncientBaoWu.h	/^    int32_t MingZhu;$/;"	m	struct:__anon67df359a0208	typeref:typename:int32_t
@@ -537,6 +544,8 @@ PuTong	include/var.hpp	/^static PasswordFile PuTong(FilePathXianDan+"pt.cc.xdcc.
 PuTongMin	include/var.hpp	/^PuTongMin = 3,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 Purple	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Purple	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
+PushEnd	include/global.hpp	/^inline std::chrono::steady_clock::time_point PushEnd;$/;"	v	namespace:Global::AncientBookstoreJiaomai	typeref:typename:std::chrono::steady_clock::time_point
+PushStart	include/global.hpp	/^inline std::chrono::steady_clock::time_point PushStart;$/;"	v	namespace:Global::AncientBookstoreJiaomai	typeref:typename:std::chrono::steady_clock::time_point
 Qing	include/var.hpp	/^static PasswordFile Qing(FilePathXianDan+"qd.c.xdcc.ej.e", "fdoiem2401");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
 RANDGEN_HPP	include/utils/old/randgen.hpp	/^#define RANDGEN_HPP$/;"	d
 RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
@@ -575,12 +584,12 @@ ShenJi	include/var.hpp	/^static PasswordFile ShenJi(FilePathAncientWuGuan+"wgll.
 ShenJiMin	include/var.hpp	/^ShenJiMin = 200$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 ShengGuanSpace	include/clibs/ancient/shengguan.hpp	/^namespace ShengGuanSpace$/;"	n
 ShiBeiReader	include/var.hpp	/^static PasswordFile ShiBeiReader(FilePath+"shb.avgwc","sudo1048qp");$/;"	v	namespace:AncientVar::Guwan	typeref:typename:PasswordFile
-ShopButton	include/func/simple.hpp	/^  static auto ShopButton(std::string value, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
-ShowButton	include/func/simple.hpp	/^  static wxButton* ShowButton(std::string showt, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
+ShopButton	include/func/simple.hpp	/^static auto ShopButton(std::string value, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
+ShowButton	include/func/simple.hpp	/^static wxButton* ShowButton(std::string showt, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:wxButton *
 ShowFmt	include/var.hpp	/^static const auto ShowFmt = boost::format("%s: %d");$/;"	v	typeref:typename:const auto
 ShowFmtStr	include/var.hpp	/^static const auto ShowFmtStr = boost::format("%s: %s");$/;"	v	typeref:typename:const auto
 Silver	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
-Simple	include/func/simple.hpp	/^namespace Simple{$/;"	n
+Simple	include/func/simple.hpp	/^namespace Simple {$/;"	n
 SmartArray	include/utils/smartarray.hpp	/^    SmartArray(SmartArray&& other) noexcept$/;"	f	class:SmartArray
 SmartArray	include/utils/smartarray.hpp	/^    explicit SmartArray(int size)$/;"	f	class:SmartArray
 SmartArray	include/utils/smartarray.hpp	/^class SmartArray$/;"	c
@@ -602,8 +611,8 @@ Swords	include/clibs/ancient/sword.hpp	/^#define Swords /;"	d
 TOSTR	include/macro.hpp	/^#define TOSTR(/;"	d
 ThingsSquare	include/var.hpp	/^namespace ThingsSquare$/;"	n
 TimeTimer	include/function.hpp	/^    wxTimer TimeTimer;$/;"	m	class:MyFrame	typeref:typename:wxTimer
-Title	include/func/simple.hpp	/^  static auto Title(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
-TitleNoSpacer	include/func/simple.hpp	/^  static auto TitleNoSpacer(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
+Title	include/func/simple.hpp	/^static auto Title(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
+TitleNoSpacer	include/func/simple.hpp	/^static auto TitleNoSpacer(std::string titlea, wxPanel* panel,$/;"	f	namespace:Simple	typeref:typename:void
 TongBiReader	include/var.hpp	/^static PasswordFile TongBiReader(FilePath+"tb.avc","hifo356sjl");$/;"	v	namespace:AncientVar	typeref:typename:PasswordFile
 TongQianCheck	include/var.hpp	/^static CheckFile TongQianCheck(FilePathThingsSquare+"tqchk.ck",2212,1);$/;"	v	namespace:ThingsSquare	typeref:typename:CheckFile
 TongYongReal	include/var.hpp	/^namespace TongYongReal {$/;"	n
@@ -660,6 +669,7 @@ ZhongJi	include/var.hpp	/^static PasswordFile ZhongJi($/;"	v	namespace:AncientVa
 ZhongJi	include/var.hpp	/^static PasswordFile ZhongJi(FilePathAncientWuGuan+"wgll.eo.zhj.39c.cc", "domt53p210");$/;"	v	namespace:AncientVar::WuGuan::LiLiang	typeref:typename:PasswordFile
 ZhongJiMin	include/var.hpp	/^ZhongJiMin = 10,$/;"	v	namespace:AncientVar::WuGuan::BingLi	typeref:typename:const int
 Zi	include/var.hpp	/^static PasswordFile Zi(FilePathXianDan+"zd.c.xdcc.edos", "zdgofe2405");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
+_GlobalSignal	include/signals.hpp	/^struct _GlobalSignal {$/;"	s
 _GoString_	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	t	typeref:struct:__anon2b8a6a530108
 _GoString_	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	t	typeref:struct:__anon75f481fe0108
 _GoString_	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	t	typeref:struct:__anond9b77c320108
@@ -701,6 +711,10 @@ __anon83625a8a0102	src/FuncUsed.cpp	/^    TimeTimer.Bind(wxEVT_TIMER,[this](wxTi
 __anon83625a8a0202	src/FuncUsed.cpp	/^    auto call = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::yinbi_all	file:
 __anon83625a8a0302	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
 __anon83625a8a0402	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
+__anon8605ec070102	src/FuncBuilding.cpp	/^    GlobalSignal.AncientBookstoreJiaomai.connect([=]() {$/;"	f	function:MyFrame::ancient_bookstore	file:
+__anon8605ec070202	src/FuncBuilding.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_bookstore	file:
+__anon8605ec070302	src/FuncBuilding.cpp	/^    GlobalSignal.AncientBookstoreJiaomaiPushed.connect([=]() {$/;"	f	function:MyFrame::ancient_bookstore_jiaomai	file:
+__anon8605ec070402	src/FuncBuilding.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_bookstore_jiaomai	file:
 __anon8f823baa0102	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0202	include/func/lambda.hpp	/^static auto anc_wu_bingli_get = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0302	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](int now, int min){$/;"	f	namespace:lambda	file:
@@ -876,6 +890,7 @@ _check_for_64_bit_pointer_matching_GoInt	include/ffi/golang/BookShelfShouCang/Bo
 acz_lose	src/FuncLockedFn.cpp	/^void MyFrame::acz_lose() {$/;"	f	class:MyFrame	typeref:typename:void
 acz_win	src/FuncLockedFn.cpp	/^void MyFrame::acz_win() {$/;"	f	class:MyFrame	typeref:typename:void
 add	include/utils/old/file_password.h	/^    std::string add(int num)$/;"	f	class:file_password	typeref:typename:std::string
+add	rust/AncientBookstoreJiaomai/src/lib.rs	/^pub fn add(left: u64, right: u64) -> u64 {$/;"	f
 add_num	include/utils/old/datecheck.h	/^    int add_num;$/;"	m	class:DateCheck	typeref:typename:int
 addnum	include/ffi/zig/AncientWenGuan/AncientWenGuan.h	/^    int32_t addnum;$/;"	m	struct:__anone9bda7e80108	typeref:typename:int32_t
 addnum	include/utils/files/Cards.hpp	/^    int addnum;$/;"	m	class:Cards	typeref:typename:int
@@ -889,6 +904,8 @@ allocate	include/utils/cstyle/cstyle_memory.hpp	/^inline void* allocate(size_t s
 allocate_aligned	include/utils/cstyle/cstyle_memory.hpp	/^inline void* allocate_aligned(size_t size, size_t alignment)$/;"	f	namespace:cstyle	typeref:typename:void *
 anc_wu_bingli_get	include/func/lambda.hpp	/^static auto anc_wu_bingli_get = [](){$/;"	v	namespace:lambda	typeref:typename:auto
 anc_wu_bingp_need	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](int now, int min){$/;"	v	namespace:lambda	typeref:typename:auto
+ancient_bookstore	src/FuncBuilding.cpp	/^void MyFrame::ancient_bookstore(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+ancient_bookstore_jiaomai	src/FuncBuilding.cpp	/^void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_clothes	src/FuncSimple.cpp	/^void MyFrame::ancient_clothes(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_clothes_pao	src/FuncFixed.cpp	/^void MyFrame::ancient_clothes_pao(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_clothes_sword	src/FuncFixed.cpp	/^void MyFrame::ancient_clothes_sword(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
@@ -931,7 +948,7 @@ ancient_wuguan_1	src/FuncSimpleFn.cpp	/^void MyFrame::ancient_wuguan_1(WXBTNEVT&
 ancient_wuguan_bingli	src/FuncSimpleFn.cpp	/^void MyFrame::ancient_wuguan_bingli(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_chuzheng	src/FuncPair1.cpp	/^void MyFrame::ancient_wuguan_chuzheng(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_chuzheng_1	src/FuncPair1.cpp	/^void MyFrame::ancient_wuguan_chuzheng_1(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
-ancient_wuguan_show	src/FuncLocked.cpp	/^void MyFrame::ancient_wuguan_show(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+ancient_wuguan_show	src/FuncLocked.cpp	/^void MyFrame::ancient_wuguan_show(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_wuguan_zhaomu	src/FuncLockedFn.cpp	/^void MyFrame::ancient_wuguan_zhaomu(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_huilu	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_huilu(WXBTNEVT& evt) {$/;"	f	class:MyFrame	typeref:typename:void
 ancient_zhengji_jinjian	src/FuncFixed.cpp	/^void MyFrame::ancient_zhengji_jinjian(WXBTNEVT& _)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1195,6 +1212,7 @@ install/strip/fast	build/Makefile	/^install\/strip\/fast: preinstall\/fast$/;"	t
 interim	include/macro.hpp	/^#define interim$/;"	d
 is_empty	include/utils/smartarray.hpp	/^    bool is_empty() const$/;"	f	class:SmartArray	typeref:typename:bool
 is_start	include/utils/new/timer/timer.hpp	/^    bool is_start;$/;"	m	class:timer	typeref:typename:bool
+it_works	rust/AncientBookstoreJiaomai/src/lib.rs	/^    fn it_works() {$/;"	f	module:tests
 iterator	include/utils/cstyle/cstyle_array.hpp	/^    using iterator = T*;$/;"	t	struct:cstyle::array	typeref:typename:T *
 jifen	include/clibs/jifen/jifen.hpp	/^namespace jifen$/;"	n
 jinjian_H	include/clibs/ancient/jinjian.hpp	/^#define jinjian_H$/;"	d
@@ -1488,6 +1506,7 @@ t	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *t; void *v; 
 t	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anon75f481fe0208	typeref:typename:void *
 t	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anond9b77c320208	typeref:typename:void *
 test	include/utils/cstyle/cstyle_bitset.hpp	/^    bool test(size_t pos) const$/;"	f	class:cstyle::bitset	typeref:typename:bool
+tests	rust/AncientBookstoreJiaomai/src/lib.rs	/^mod tests {$/;"	n
 things_all	src/FuncUsed.cpp	/^void MyFrame::things_all(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 things_other	src/FuncSimple.cpp	/^void MyFrame::things_other(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 things_shop	src/FuncSimple.cpp	/^void MyFrame::things_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1497,6 +1516,7 @@ throw_system_error	include/utils/cstyle/cstyle_stdio.hpp	/^inline void throw_sys
 time_clock	src/FuncFixed.cpp	/^void MyFrame::time_clock(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 timer	include/utils/new/timer/timer.hpp	/^    timer():is_start(0),how_long(std::chrono::milliseconds(0)) {};$/;"	f	class:timer
 timer	include/utils/new/timer/timer.hpp	/^class timer$/;"	c
+times	include/global.hpp	/^inline int times = 0;$/;"	v	namespace:Global::AncientBookstoreJiaomai	typeref:typename:int
 tongy	src/FuncLockedFn.cpp	/^auto MyFrame::tongy(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
 tongy_all	src/FuncCache.cpp	/^auto MyFrame::tongy_all(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
 tongy_show	src/FuncCache.cpp	/^auto MyFrame::tongy_show(WXBTNEVT&) -> void {$/;"	f	class:MyFrame	typeref:typename:void
@@ -1543,7 +1563,7 @@ xianbi_square_1	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_1(WXBTNEVT&){$/;"
 xianbi_square_2	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_2(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xianbi_square_3	src/FuncUsed.cpp	/^void MyFrame::xianbi_square_3(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 xiandan	src/FuncSimple.cpp	/^void MyFrame::xiandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
-xiandan_he	src/FuncLocked.cpp	/^void MyFrame::xiandan_he(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
+xiandan_he	src/FuncLocked.cpp	/^void MyFrame::xiandan_he(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he_jindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_jindan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he_shendan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_shendan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 xiandan_he_yindan	src/FuncFixed.cpp	/^void MyFrame::xiandan_he_yindan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
