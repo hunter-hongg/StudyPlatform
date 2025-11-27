@@ -17,6 +17,7 @@ public:
     MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
 
     void clean_panel();
+    void signals_init();
 
 protected:
 

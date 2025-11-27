@@ -1,4 +1,5 @@
 #pragma once
+#include <chrono>
 #include <vector>
 #include <clibs/ancient/ChuZheng.hpp>
 namespace Global {
@@ -13,5 +14,7 @@ static std::vector<WuGuanChuZheng::Choices> usr_cho({});
 }
 namespace AncientBookstoreJiaomai {
 inline int times = 0;
+inline std::chrono::steady_clock::time_point PushStart;
+inline std::chrono::steady_clock::time_point PushEnd;
 }
 }

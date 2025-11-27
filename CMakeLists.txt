@@ -30,6 +30,7 @@ target_link_directories(studyplatform PRIVATE
     lib/ffi
     lib/other
     lib/utils
+    lib/rust
 )
 
 target_link_libraries(studyplatform
