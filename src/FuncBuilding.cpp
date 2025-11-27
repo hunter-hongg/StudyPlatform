@@ -4,6 +4,7 @@
 #include "headers.hpp"
 #include "macro.hpp"
 #include "mine/MyFlags.h"
+#include "rust/AncientBookstoreJiaomai.hpp"
 #include "signals.hpp"
 #include "type.hpp"
 #include "var.hpp"
@@ -46,6 +47,8 @@ void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
         auto duration_time = Global::AncientBookstoreJiaomai::PushEnd - Global::AncientBookstoreJiaomai::PushStart;
         auto duration_time_ms = std::chrono::duration_cast<std::chrono::milliseconds>(duration_time);
         auto duration_time_ms_real = duration_time_ms.count();
+        int BaiYin = AncientBookstoreJiaomaiGetRes(duration_time_ms_real);
+        int BookType = AncientBookstoreJiaomaiGetBookType(BaiYin);
     });
 
     auto vbox = Simple::Init(panel, this);
