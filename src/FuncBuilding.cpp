@@ -53,6 +53,7 @@ void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
         std::string BookTypeS = gfunc::AncientBookTrans(BookType);
         if(BaiYin == 0) {
             Simple::Message("速度过慢，叫卖失败");
+            Global::AncientBookstoreJiaomai::times = 0;
             this -> ancient_bookstore(EmptyEvent);
             return;
         }
