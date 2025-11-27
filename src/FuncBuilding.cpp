@@ -5,7 +5,6 @@
 #include "headers.hpp"
 #include "macro.hpp"
 #include "mine/MyFlags.h"
-#include "rust/AncientBookstoreJiaomai.hpp"
 #include "signals.hpp"
 #include "type.hpp"
 #include <string>
