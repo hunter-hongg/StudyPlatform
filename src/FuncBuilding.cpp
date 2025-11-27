@@ -8,8 +8,6 @@
 #include "rust/AncientBookstoreJiaomai.hpp"
 #include "signals.hpp"
 #include "type.hpp"
-#include "var.hpp"
-#include <chrono>
 #include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
