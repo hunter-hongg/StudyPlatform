@@ -1,26 +1,15 @@
-#include "clog.h"
 #include "func/simple.hpp"
-#include "gfunc.hpp"
 #include "global.hpp"
 #include "headers.hpp"
-#include "macro.hpp"
 #include "mine/MyFlags.h"
-#include "rust/AncientBookstoreJiaomai.hpp"
 #include "signals.hpp"
 #include "type.hpp"
-#include "var.hpp"
-#include <chrono>
 #include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
 #include <wx/wx.h>
 
 void MyFrame::ancient_bookstore(WXBTNEVT&) {
-    GlobalSignal.AncientBookstoreJiaomai.connect([=]() {
-        CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>卖出书籍=>叫卖: 槽正确接收");
-        this -> ancient_bookstore_jiaomai(EmptyEvent);
-    });
-
     auto vbox = Simple::Init(panel, this);
 
     Simple::Title("卖出书籍", panel, vbox);
@@ -34,33 +23,6 @@ void MyFrame::ancient_bookstore(WXBTNEVT&) {
 }
 void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
     Global::AncientBookstoreJiaomai::times = 0;
-    GlobalSignal.AncientBookstoreJiaomaiPushed.connect([=]() {
-        if(Global::AncientBookstoreJiaomai::times == 0) {
-            Global::AncientBookstoreJiaomai::PushStart = std::chrono::steady_clock::now();
-        }
-        Global::AncientBookstoreJiaomai::times++;
-        if(Global::AncientBookstoreJiaomai::times == 20) {
-            GlobalSignal.AncientBookstoreJiaomaiPushedDone.emit();
-        }
-    });
-    GlobalSignal.AncientBookstoreJiaomaiPushedDone.connect([=]() {
-        Global::AncientBookstoreJiaomai::PushEnd = std::chrono::steady_clock::now();
-        auto duration_time = Global::AncientBookstoreJiaomai::PushEnd - Global::AncientBookstoreJiaomai::PushStart;
-        auto duration_time_ms = std::chrono::duration_cast<std::chrono::milliseconds>(duration_time);
-        auto duration_time_ms_real = duration_time_ms.count();
-        int BaiYin = AncientBookstoreJiaomaiGetRes(duration_time_ms_real);
-        int BookType = AncientBookstoreJiaomaiGetBookType(BaiYin);
-        std::string BookTypeS = gfunc::AncientBookTrans(BookType);
-        if(BaiYin == 0) {
-            Simple::Message("速度过慢，叫卖失败");
-            return;
-        }
-        else {
-            Simple::MessageQues("叫卖成功\n"
-                                "购买书籍: "+BookTypeS+"\n"
-                                "购买价格: "+TOSTR(BaiYin)+"两白银");
-        }
-    });
 
     auto vbox = Simple::Init(panel, this);
 
