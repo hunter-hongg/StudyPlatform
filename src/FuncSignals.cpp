@@ -1,3 +1,6 @@
+#include "clog.h"
+#include "global.hpp"
+#include "var.hpp"
 #include <headers.hpp>
 #include <signals.hpp>
 #include <rust/AncientBookstoreJiaomai.hpp>
@@ -33,9 +36,17 @@ void MyFrame::signals_init() {
             return;
         }
         else {
-            Simple::MessageQues("叫卖成功\n"
-                                "购买书籍: "+BookTypeS+"\n"
-                                "购买价格: "+TOSTR(BaiYin)+"两白银");
+            auto y_or_n = Simple::MessageQues("叫卖成功\n"
+                                              "购买书籍: "+BookTypeS+"\n"
+                                              "购买价格: "+TOSTR(BaiYin)+"两白银");
+            if(y_or_n == wxYES) {
+
+            } else {
+                CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>书籍叫卖: 叫卖成功 被拒绝 退出");
+                Global::AncientBookstoreJiaomai::times = 0;
+                this -> ancient_bookstore(EmptyEvent);
+                return;
+            }
         }
     });
 }
