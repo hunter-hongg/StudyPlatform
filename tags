@@ -18,8 +18,134 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 %	build/Makefile	/^% : s.%$/;"	t
 0	build/compile_commands.json	/^{$/;"	o
 0	compile_commands.json	/^{$/;"	o
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.2
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:local.0.RerunIfChanged.paths
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.2
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:local.0.RerunIfChanged.paths
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.2
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:local.0.RerunIfChanged.paths
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.2
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.1
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:local.0.RerunIfChanged.paths
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a	array:deps
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n	array:deps.0
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	array:local
+0	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	array:local
 1	build/compile_commands.json	/^{$/;"	o
 1	compile_commands.json	/^{$/;"	o
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	array:deps.2
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	array:deps.2
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:local.0.RerunIfChanged.paths
+1	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	array:deps.2
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	array:deps.2
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a	array:deps
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s	array:deps.1
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:deps.0
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	array:local.0.RerunIfChanged.paths
+1	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s	array:deps.0
 10	build/compile_commands.json	/^{$/;"	o
 10	compile_commands.json	/^{$/;"	o
 11	build/compile_commands.json	/^{$/;"	o
@@ -28,8 +154,47 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 12	compile_commands.json	/^{$/;"	o
 13	build/compile_commands.json	/^{$/;"	o
 13	compile_commands.json	/^{$/;"	o
+17747080675513052775	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	o	object:outputs
 2	build/compile_commands.json	/^{$/;"	o
 2	compile_commands.json	/^{$/;"	o
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a	array:deps
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	array:deps.2
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a	array:deps
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	array:deps.2
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a	array:deps
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	array:deps.2
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a	array:deps
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	array:deps.2
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	b	array:deps.1
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	b	array:deps.0
+2	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	b	array:deps.0
 2025-1-28	docs/ProjectHistory.rst	/^2025-1-28$/;"	s	chapter:项目历史 25国庆
 2025-1-29	docs/ProjectHistory.rst	/^2025-1-29$/;"	s	chapter:项目历史 25国庆
 2025-1-30	docs/ProjectHistory.rst	/^2025-1-30$/;"	s	chapter:项目历史 25国庆
@@ -64,14 +229,53 @@ $(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
 2025-5-9	docs/ProjectHistory.rst	/^2025-5-9$/;"	s	chapter:项目历史 25国庆
 3	build/compile_commands.json	/^{$/;"	o
 3	compile_commands.json	/^{$/;"	o
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.2
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.2
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n	array:deps.2
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n	array:deps.2
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n	array:deps.1
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n	array:deps.0
+3	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n	array:deps.0
 4	build/compile_commands.json	/^{$/;"	o
 4	compile_commands.json	/^{$/;"	o
+4	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+4	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
 5	build/compile_commands.json	/^{$/;"	o
 5	compile_commands.json	/^{$/;"	o
+5	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
+5	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	array:local
 6	build/compile_commands.json	/^{$/;"	o
 6	compile_commands.json	/^{$/;"	o
 7	build/compile_commands.json	/^{$/;"	o
 7	compile_commands.json	/^{$/;"	o
+7971740275564407648	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	o	object:outputs
 8	build/compile_commands.json	/^{$/;"	o
 8	compile_commands.json	/^{$/;"	o
 9	build/compile_commands.json	/^{$/;"	o
@@ -103,8 +307,11 @@ AncientBaoWu_ChouDuan	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#defi
 AncientBaoWu_MingZhu	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#define AncientBaoWu_MingZhu /;"	d
 AncientBaoWu_YuBi	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#define AncientBaoWu_YuBi /;"	d
 AncientBaoWu_YuDiao	include/ffi/zig/AncientBaoWu/AncientBaoWuMacro.hpp	/^#define AncientBaoWu_YuDiao /;"	d
+AncientBookTrans	include/gfunc.hpp	/^static std::string AncientBookTrans(int BookType) {$/;"	f	namespace:gfunc	typeref:typename:std::string
 AncientBookstoreJiaomai	include/global.hpp	/^namespace AncientBookstoreJiaomai {$/;"	n	namespace:Global
 AncientBookstoreJiaomai	include/signals.hpp	/^    sigc::signal<void()> AncientBookstoreJiaomai;$/;"	m	struct:_GlobalSignal	typeref:typename:sigc::signal<void ()>
+AncientBookstoreJiaomaiGetBookType	rust/AncientBookstoreJiaomai/src/lib.rs	/^pub unsafe extern "C" fn AncientBookstoreJiaomaiGetBookType(res: c_int) -> c_int {$/;"	f
+AncientBookstoreJiaomaiGetRes	rust/AncientBookstoreJiaomai/src/lib.rs	/^pub unsafe extern "C" fn AncientBookstoreJiaomaiGetRes(mili: c_int) -> c_int {$/;"	f
 AncientBookstoreJiaomaiPushed	include/signals.hpp	/^    sigc::signal<void()> AncientBookstoreJiaomaiPushed;$/;"	m	struct:_GlobalSignal	typeref:typename:sigc::signal<void ()>
 AncientBookstoreJiaomaiPushedDone	include/signals.hpp	/^    sigc::signal<void()> AncientBookstoreJiaomaiPushedDone;$/;"	m	struct:_GlobalSignal	typeref:typename:sigc::signal<void ()>
 AncientGuWanCha_ChaHu	include/ffi/zig/AncientGuWanCha/AncientBaoWuChaMacro.hpp	/^#define AncientGuWanCha_ChaHu /;"	d
@@ -314,6 +521,28 @@ Check	include/var.hpp	/^namespace Check$/;"	n
 Check	include/var.hpp	/^static CheckFile Check(FilePath+"zhejjjchk.chklawgcc",1039,1);$/;"	v	namespace:AncientVar::WenGuan::ZhengJi::JinJian	typeref:typename:CheckFile
 Check	include/var.hpp	/^static CheckFile Check(FilePathAncient+"msmsck.ckawgcc.dsi.1234",2125,1);$/;"	v	namespace:AncientVar::WenGuan::ZhengJi::MianSheng	typeref:typename:CheckFile
 Check	include/var.hpp	/^static CheckFile Check(FilePathAncient+"zjzjck.ckawgcc",4059,1);$/;"	v	namespace:AncientVar::WenGuan::ZhengJi::ZhenJi	typeref:typename:CheckFile
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	object:local.0
+CheckDepInfo	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	o	object:local.0
 CheckFile	include/utils/files/CheckFile.hpp	/^    CheckFile(string file1,int add,int alltimes) : DateCheck(file1,add),all_times(alltimes)$/;"	f	class:CheckFile
 CheckFile	include/utils/files/CheckFile.hpp	/^class CheckFile : protected DateCheck$/;"	c
 CheckOk	include/utils/files/BoolFile.h	/^    bool CheckOk() {$/;"	f	class:BoolFile	typeref:typename:bool
@@ -561,6 +790,20 @@ RealRed	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed
 RealRed	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
 Red	include/clibs/ancient/pao.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue,Silver$/;"	e	enum:Ancient::Pao
 Red	include/clibs/ancient/sword.hpp	/^    Green,Red,Purple,Black,White,RealRed,Blue$/;"	e	enum:Ancient::Sword
+RerunIfChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.0
+RerunIfChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.0
+RerunIfChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.0
+RerunIfChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.0
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.1
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.2
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.3
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.4
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.5
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.1
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.2
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.3
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.4
+RerunIfEnvChanged	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	o	object:local.5
 Rust的函数getrnd与getrnds的使用	docs/ProjectDocsLang.rst	/^Rust的函数getrnd与getrnds的使用$/;"	s	chapter:项目说明文档 技术篇
 SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SIMULATE_ID	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
@@ -633,8 +876,8 @@ Write	include/utils/files/BigIntFile.hpp	/^    void Write(std::string n) {$/;"	f
 Write	include/utils/files/Cards.hpp	/^    int Write(int index)$/;"	f	class:Cards	typeref:typename:int
 WuGuan	include/var.hpp	/^namespace WuGuan$/;"	n	namespace:AncientVar
 WuGuanChuZheng	include/clibs/ancient/ChuZheng.hpp	/^namespace WuGuanChuZheng{$/;"	n
-WuGuanChuZhengFunc	include/gfunc.hpp	/^static std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho, $/;"	f	namespace:gfunc	typeref:typename:std::vector<int>
-WuGuanChuZhengTrans	include/gfunc.hpp	/^static std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t){$/;"	f	namespace:gfunc	typeref:typename:std::string
+WuGuanChuZhengFunc	include/gfunc.hpp	/^static std::vector<int> WuGuanChuZhengFunc(WuGuanChuZheng::Choices cho,$/;"	f	namespace:gfunc	typeref:typename:std::vector<int>
+WuGuanChuZhengTrans	include/gfunc.hpp	/^static std::string WuGuanChuZhengTrans(WuGuanChuZheng::Choices t) {$/;"	f	namespace:gfunc	typeref:typename:std::string
 WuGuanPinJi	include/clibs/ancient/WuGuanPinJi.hpp	/^    WuGuanPinJi(std::string file, std::string pwd): PasswordFile(file, pwd) {}$/;"	f	class:Ancient::WuGuanPinJi
 WuGuanPinJi	include/clibs/ancient/WuGuanPinJi.hpp	/^class WuGuanPinJi : protected PasswordFile {$/;"	c	namespace:Ancient
 WuSe	include/var.hpp	/^static PasswordFile WuSe(FilePathXianDan+"ws.cd.gfgoi.xdcc", "dsoi23w105");$/;"	v	namespace:Files::Xian::Dan	typeref:typename:PasswordFile
@@ -711,10 +954,8 @@ __anon83625a8a0102	src/FuncUsed.cpp	/^    TimeTimer.Bind(wxEVT_TIMER,[this](wxTi
 __anon83625a8a0202	src/FuncUsed.cpp	/^    auto call = [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::yinbi_all	file:
 __anon83625a8a0302	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
 __anon83625a8a0402	src/FuncUsed.cpp	/^            buttonuse1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT& evt){$/;"	f	function:MyFrame::lihe	file:
-__anon8605ec070102	src/FuncBuilding.cpp	/^    GlobalSignal.AncientBookstoreJiaomai.connect([=]() {$/;"	f	function:MyFrame::ancient_bookstore	file:
-__anon8605ec070202	src/FuncBuilding.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_bookstore	file:
-__anon8605ec070302	src/FuncBuilding.cpp	/^    GlobalSignal.AncientBookstoreJiaomaiPushed.connect([=]() {$/;"	f	function:MyFrame::ancient_bookstore_jiaomai	file:
-__anon8605ec070402	src/FuncBuilding.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_bookstore_jiaomai	file:
+__anon8605ec070102	src/FuncBuilding.cpp	/^    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_bookstore	file:
+__anon8605ec070202	src/FuncBuilding.cpp	/^    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {$/;"	f	function:MyFrame::ancient_bookstore_jiaomai	file:
 __anon8f823baa0102	include/func/lambda.hpp	/^static auto xianlu_get_need = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0202	include/func/lambda.hpp	/^static auto anc_wu_bingli_get = [](){$/;"	f	namespace:lambda	file:
 __anon8f823baa0302	include/func/lambda.hpp	/^static auto anc_wu_bingp_need = [](int now, int min){$/;"	f	namespace:lambda	file:
@@ -883,6 +1124,9 @@ __anondedac7630702	src/FuncSimple.cpp	/^    btn2 -> Bind(wxEVT_BUTTON,[this](WXB
 __anondedac7630802	src/FuncSimple.cpp	/^    btn3->Bind(wxEVT_BUTTON,[this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::calcs_shop	file:
 __anondedac7630902	src/FuncSimple.cpp	/^    btn4 -> Bind(wxEVT_BUTTON,[this](WXBTNEVT& evt) {$/;"	f	function:MyFrame::calcs_shop	file:
 __anone9bda7e80108	include/ffi/zig/AncientWenGuan/AncientWenGuan.h	/^typedef struct {$/;"	s
+__anoned1c37ea0102	src/FuncSignals.cpp	/^    GlobalSignal.AncientBookstoreJiaomai.connect([=]() {$/;"	f	function:MyFrame::signals_init	file:
+__anoned1c37ea0202	src/FuncSignals.cpp	/^    GlobalSignal.AncientBookstoreJiaomaiPushed.connect([=]() {$/;"	f	function:MyFrame::signals_init	file:
+__anoned1c37ea0302	src/FuncSignals.cpp	/^    GlobalSignal.AncientBookstoreJiaomaiPushedDone.connect([=]() {$/;"	f	function:MyFrame::signals_init	file:
 __has_include	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
 _check_for_64_bit_pointer_matching_GoInt	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef char _check_for_64_bit_pointer_matching_GoInt[sizeof(void*)==64\/8 ? 1:-1];$/;"	t	typeref:typename:char[sizeof (void *)==64/8?1:-1]
 _check_for_64_bit_pointer_matching_GoInt	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef char _check_for_64_bit_pointer_matching_GoInt[sizeof(void*)==64\/8 ? 1:-1];$/;"	t	typeref:typename:char[sizeof (void *)==64/8?1:-1]
@@ -890,7 +1134,6 @@ _check_for_64_bit_pointer_matching_GoInt	include/ffi/golang/BookShelfShouCang/Bo
 acz_lose	src/FuncLockedFn.cpp	/^void MyFrame::acz_lose() {$/;"	f	class:MyFrame	typeref:typename:void
 acz_win	src/FuncLockedFn.cpp	/^void MyFrame::acz_win() {$/;"	f	class:MyFrame	typeref:typename:void
 add	include/utils/old/file_password.h	/^    std::string add(int num)$/;"	f	class:file_password	typeref:typename:std::string
-add	rust/AncientBookstoreJiaomai/src/lib.rs	/^pub fn add(left: u64, right: u64) -> u64 {$/;"	f
 add_num	include/utils/old/datecheck.h	/^    int add_num;$/;"	m	class:DateCheck	typeref:typename:int
 addnum	include/ffi/zig/AncientWenGuan/AncientWenGuan.h	/^    int32_t addnum;$/;"	m	struct:__anone9bda7e80108	typeref:typename:int32_t
 addnum	include/utils/files/Cards.hpp	/^    int addnum;$/;"	m	class:Cards	typeref:typename:int
@@ -1013,6 +1256,28 @@ cbegin	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_iterator cbeg
 cend	include/utils/cstyle/cstyle_array.hpp	/^    constexpr const_iterator cend() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:const_iterator
 check	include/utils/old/datecheck.h	/^    bool check(int num)$/;"	f	class:DateCheck	typeref:typename:bool
 checkedIndex	include/utils/smartarray.hpp	/^    size_t checkedIndex(int index) const$/;"	f	class:SmartArray	typeref:typename:size_t
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	b	object:local.0.CheckDepInfo
+checksum	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	b	object:local.0.CheckDepInfo
 clean	build/Makefile	/^clean:$/;"	t
 clean/fast	build/Makefile	/^clean\/fast: clean$/;"	t
 clean_panel	src/FuncFixed.cpp	/^void MyFrame::clean_panel()$/;"	f	class:MyFrame	typeref:typename:void
@@ -1020,6 +1285,8 @@ clear	include/utils/cstyle/cstyle_string.hpp	/^    void clear() noexcept$/;"	f	c
 clock	include/utils/new/timer/timer.hpp	/^    typedef std::chrono::high_resolution_clock clock;$/;"	t	class:timer	typeref:typename:std::chrono::high_resolution_clock
 cmake_check_build_system	build/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_force	build/Makefile	/^cmake_force:$/;"	t
+code	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	n	object:outputs.17747080675513052775
+code	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	n	object:outputs.7971740275564407648
 coeffs	include/utils/poly.hpp	/^    std::vector<double> coeffs;$/;"	m	class:poly	typeref:typename:std::vector<double>
 command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:0
 command	build/compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:1
@@ -1049,6 +1316,58 @@ command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FI
 command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:7
 command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:8
 command	compile_commands.json	/^  "command": "\/usr\/bin\/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I\/home\/coding\//;"	s	object:9
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+compile_kind	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+config	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+config	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
 const_cast_expr	include/utils/cstyle/cstyle_cast.hpp	/^constexpr To const_cast_expr(From value) noexcept$/;"	f	namespace:cstyle	typeref:typename:To
 const_iterator	include/utils/cstyle/cstyle_array.hpp	/^    using const_iterator = const T*;$/;"	t	struct:cstyle::array	typeref:typename:const T *
 const_pointer	include/utils/cstyle/cstyle_array.hpp	/^    using const_pointer = const T*;$/;"	t	struct:cstyle::array	typeref:typename:const T *
@@ -1072,9 +1391,83 @@ data_	include/utils/cstyle/cstyle_array.hpp	/^    T data_[N];$/;"	m	struct:cstyl
 data_	include/utils/cstyle/cstyle_bitset.hpp	/^    unsigned char* data_;$/;"	m	class:cstyle::bitset	typeref:typename:unsigned char *
 data_	include/utils/cstyle/cstyle_string.hpp	/^    char* data_;$/;"	m	class:cstyle::string	typeref:typename:char *
 deallocate	include/utils/cstyle/cstyle_memory.hpp	/^inline void deallocate(void* ptr) noexcept$/;"	f	namespace:cstyle	typeref:typename:void
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
+declared_features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
 default_target	build/Makefile	/^default_target: all$/;"	t
 degree	include/utils/poly.hpp	/^    size_t degree() const$/;"	f	class:poly	typeref:typename:size_t
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s	object:local.0.CheckDepInfo
+dep_info	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s	object:local.0.CheckDepInfo
 depend	build/Makefile	/^depend:$/;"	t
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+deps	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+deps	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
 destroy_at	include/utils/cstyle/cstyle_memory.hpp	/^void destroy_at(T* location) noexcept$/;"	f	namespace:cstyle	typeref:typename:void
 difference_type	include/utils/cstyle/cstyle_array.hpp	/^    using difference_type = std::ptrdiff_t;$/;"	t	struct:cstyle::array	typeref:typename:std::ptrdiff_t
 directory	build/compile_commands.json	/^  "directory": "\/home\/coding\/学习平台Linux\/学习平台\/build",$/;"	s	object:0
@@ -1121,6 +1514,32 @@ end	include/utils/cstyle/cstyle_array.hpp	/^    constexpr iterator end() noexcep
 fali	src/FuncSimple.cpp	/^void MyFrame::fali(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 fali_xianbi	src/FuncFixed.cpp	/^void MyFrame::fali_xianbi(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 fali_xiandan	src/FuncFixed.cpp	/^void MyFrame::fali_xiandan(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+features	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
+features	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	s
 file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncBuilding.cpp",$/;"	s	object:0
 file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncCache.cpp",$/;"	s	object:1
 file	build/compile_commands.json	/^  "file": "\/home\/coding\/学习平台Linux\/学习平台\/src\/FuncFixed.cpp",$/;"	s	object:2
@@ -1182,6 +1601,7 @@ generateMulti	include/utils/old/randgen.hpp	/^    std::vector<int> generateMulti
 generateSingle	include/utils/old/randgen.hpp	/^    int generateSingle(int min, int max)$/;"	f	class:RandGen	typeref:typename:int
 get	include/clibs/xianbi/sword.hpp	/^    SwordEnum get()$/;"	f	class:functions::SwordInFile	typeref:typename:SwordEnum
 get	include/utils/smartptr.hpp	/^    T* get() const noexcept$/;"	f	class:SmartPtr	typeref:typename:T *
+getrnd	rust/AncientBookstoreJiaomai/src/lib.rs	/^unsafe fn getrnd(min: c_int, max: c_int) -> c_int {$/;"	f
 gfunc	include/gfunc.hpp	/^namespace gfunc {$/;"	n
 global.hpp使用方法	docs/ProjectDocsSimple.rst	/^global.hpp使用方法$/;"	s	chapter:项目说明文档 实际篇
 gold	include/clibs/xianbi/sword.hpp	/^enum class SwordEnum { gold,wood,water,fire,soil };$/;"	e	enum:functions::SwordEnum
@@ -1212,7 +1632,6 @@ install/strip/fast	build/Makefile	/^install\/strip\/fast: preinstall\/fast$/;"	t
 interim	include/macro.hpp	/^#define interim$/;"	d
 is_empty	include/utils/smartarray.hpp	/^    bool is_empty() const$/;"	f	class:SmartArray	typeref:typename:bool
 is_start	include/utils/new/timer/timer.hpp	/^    bool is_start;$/;"	m	class:timer	typeref:typename:bool
-it_works	rust/AncientBookstoreJiaomai/src/lib.rs	/^    fn it_works() {$/;"	f	module:tests
 iterator	include/utils/cstyle/cstyle_array.hpp	/^    using iterator = T*;$/;"	t	struct:cstyle::array	typeref:typename:T *
 jifen	include/clibs/jifen/jifen.hpp	/^namespace jifen$/;"	n
 jinjian_H	include/clibs/ancient/jinjian.hpp	/^#define jinjian_H$/;"	d
@@ -1232,6 +1651,32 @@ lexical_cast	include/utils/cast.hpp	/^lexical_cast(const Source& arg)$/;"	f	type
 lihe	src/FuncUsed.cpp	/^void MyFrame::lihe(WXBTNEVT&){$/;"	f	class:MyFrame	typeref:typename:void
 list_install_components	build/Makefile	/^list_install_components:$/;"	t
 list_install_components/fast	build/Makefile	/^list_install_components\/fast: list_install_components$/;"	t
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+local	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+local	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
 main	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main_func	include/function.hpp	/^    void main_func(WXBTNEVT&) {$/;"	f	class:MyFrame	typeref:typename:void
 make_unique	include/utils/cstyle/cstyle_memory.hpp	/^unique_ptr<T> make_unique(size_t count = 1)$/;"	f	namespace:cstyle	typeref:typename:unique_ptr<T>
@@ -1329,6 +1774,11 @@ output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/
 output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncUsed.cpp.o"$/;"	s	object:11
 output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/FuncUsedFn.cpp.o"$/;"	s	object:12
 output	compile_commands.json	/^  "output": "CMakeFiles\/studyplatform.dir\/src\/Main.cpp.o"$/;"	s	object:13
+output	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.0.RerunIfChanged
+output	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.0.RerunIfChanged
+output	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.0.RerunIfChanged
+output	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.0.RerunIfChanged
+outputs	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	o
 p	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anon2b8a6a530108	typeref:typename:const char *
 p	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anon75f481fe0108	typeref:typename:const char *
 p	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { const char *p; ptrdiff_t n; } _GoString_;$/;"	m	struct:__anond9b77c320108	typeref:typename:const char *
@@ -1336,6 +1786,36 @@ panel	include/function.hpp	/^    wxPanel* panel;$/;"	m	class:MyFrame	typeref:typ
 paoall	include/clibs/ancient/pao.hpp	/^    std::string paonow,paoall;$/;"	m	class:Ancient::AncientPao	typeref:typename:std::string
 paonow	include/clibs/ancient/pao.hpp	/^    std::string paonow,paoall;$/;"	m	class:Ancient::AncientPao	typeref:typename:std::string
 password	include/utils/old/file_password.h	/^    std::string password;$/;"	m	class:file_password	typeref:typename:std::string
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+path	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+path	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+paths	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	object:local.0.RerunIfChanged
+paths	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	object:local.0.RerunIfChanged
+paths	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	object:local.0.RerunIfChanged
+paths	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a	object:local.0.RerunIfChanged
 point	include/utils/new/timer/timer.hpp	/^    typedef clock::time_point point;$/;"	t	class:timer	typeref:typename:clock::time_point
 pointer	include/utils/cstyle/cstyle_array.hpp	/^    using pointer = T*;$/;"	t	struct:cstyle::array	typeref:typename:T *
 pointer_cast	include/utils/cstyle/cstyle_cast.hpp	/^pointer_cast(From ptr) noexcept$/;"	f	namespace:cstyle	typeref:typename:std::enable_if_t<std::is_pointer_v<To> && std::is_pointer_v<From>,To>
@@ -1347,6 +1827,32 @@ preinstall	build/Makefile	/^preinstall: all$/;"	t
 preinstall/fast	build/Makefile	/^preinstall\/fast:$/;"	t
 printf	include/utils/cstyle/cstyle_io.hpp	/^void printf(FILE* stream, const char* fmt, Args... args)$/;"	f	namespace:cstyle	typeref:typename:void
 printf	include/utils/cstyle/cstyle_stdio.hpp	/^    void printf(const char* fmt, Args... args)$/;"	f	class:cstyle::file	typeref:typename:void
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+profile	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+profile	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
 ptr_	include/utils/smartptr.hpp	/^    T* ptr_;$/;"	m	class:SmartPtr	typeref:typename:T *
 push_back	include/utils/cstyle/cstyle_string.hpp	/^    void push_back(char ch)$/;"	f	class:cstyle::string	typeref:typename:void
 qnxnto	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
@@ -1376,12 +1882,66 @@ reserve	include/utils/cstyle/cstyle_string.hpp	/^    void reserve(size_t new_cap
 reset	include/utils/smartptr.hpp	/^    void reset(T* ptr = nullptr) noexcept$/;"	f	class:SmartPtr	typeref:typename:void
 resize_buffer	include/utils/cstyle/cstyle_string.hpp	/^    void resize_buffer(size_t new_capacity)$/;"	f	class:cstyle::string	typeref:typename:void
 reverse_iterator	include/utils/cstyle/cstyle_array.hpp	/^    using reverse_iterator = std::reverse_iterator<iterator>;$/;"	t	struct:cstyle::array	typeref:typename:std::reverse_iterator<iterator>
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+rustc	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+rustc_fingerprint	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	n
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
+rustflags	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	a
 scanf	include/utils/cstyle/cstyle_io.hpp	/^int scanf(FILE* stream, const char* fmt, Args... args)$/;"	f	namespace:cstyle	typeref:typename:int
 set	include/clibs/xianbi/sword.hpp	/^    int set(const SwordEnum& thing)$/;"	f	class:functions::SwordInFile	typeref:typename:int
 set	include/utils/cstyle/cstyle_bitset.hpp	/^    void set(size_t pos, bool val = true)$/;"	f	class:cstyle::bitset	typeref:typename:void
 set_coeff	include/utils/poly.hpp	/^    void set_coeff(size_t power, double value)$/;"	f	class:poly	typeref:typename:void
 shengguan_H	include/clibs/ancient/shengguan.hpp	/^#define shengguan_H$/;"	d
 showtime	src/FuncFixed.cpp	/^void MyFrame::showtime()$/;"	f	class:MyFrame	typeref:typename:void
+signals_init	src/FuncSignals.cpp	/^void MyFrame::signals_init() {$/;"	f	class:MyFrame	typeref:typename:void
 size	include/utils/cstyle/cstyle_array.hpp	/^    [[nodiscard]] constexpr size_type size() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:size_type
 size	include/utils/cstyle/cstyle_array.hpp	/^    [[nodiscard]] constexpr std::size_t size() const noexcept$/;"	f	struct:cstyle::array	typeref:typename:std::size_t
 size	include/utils/cstyle/cstyle_bitset.hpp	/^    size_t size() const noexcept$/;"	f	class:cstyle::bitset	typeref:typename:size_t
@@ -1483,6 +2043,12 @@ src/Main.s	build/Makefile	/^src\/Main.s: src\/Main.cpp.s$/;"	t
 sscanf	include/utils/cstyle/cstyle_io.hpp	/^int sscanf(const char* str, const char* fmt, Args... args)$/;"	f	namespace:cstyle	typeref:typename:int
 start	src/FuncLocked.cpp	/^void MyFrame::start()$/;"	f	class:MyFrame	typeref:typename:void
 start_time	include/utils/new/timer/timer.hpp	/^    point start_time;$/;"	m	class:timer	typeref:typename:point
+status	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	s	object:outputs.17747080675513052775
+status	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	s	object:outputs.7971740275564407648
+stderr	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	s	object:outputs.17747080675513052775
+stderr	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	s	object:outputs.7971740275564407648
+stdout	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	s	object:outputs.17747080675513052775
+stdout	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	s	object:outputs.7971740275564407648
 stoi函数	docs/ProjectDocsLang.rst	/^stoi函数$/;"	s	chapter:项目说明文档 技术篇
 string	include/utils/cstyle/cstyle_string.hpp	/^    explicit string(const char* str)$/;"	f	class:cstyle::string
 string	include/utils/cstyle/cstyle_string.hpp	/^    string() noexcept : data_(nullptr), size_(0), capacity_(0) {}$/;"	f	class:cstyle::string
@@ -1496,6 +2062,9 @@ study_timer	include/function.hpp	/^    timer study_timer;$/;"	m	class:MyFrame	ty
 studyplatform	CMakeLists.txt	/^add_executable(studyplatform ${SRC_FILES})$/;"	t
 studyplatform	build/Makefile	/^studyplatform: cmake_check_build_system$/;"	t
 studyplatform/fast	build/Makefile	/^studyplatform\/fast:$/;"	t
+success	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	b	object:outputs.17747080675513052775
+success	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	b	object:outputs.7971740275564407648
+successes	rust/AncientBookstoreJiaomai/target/.rustc_info.json	/^{"rustc_fingerprint":7934031511628031169,"outputs":{"17747080675513052775":{"success":true,"stat/;"	o
 swap	include/utils/cstyle/cstyle_array.hpp	/^    constexpr void swap(array& other) noexcept(Swappable<T>)$/;"	f	struct:cstyle::array	typeref:typename:void
 swap	include/utils/cstyle/cstyle_bitset.hpp	/^    void swap(bitset& other) noexcept$/;"	f	class:cstyle::bitset	typeref:typename:void
 swap	include/utils/cstyle/cstyle_string.hpp	/^    void swap(string& other) noexcept$/;"	f	class:cstyle::string	typeref:typename:void
@@ -1505,8 +2074,33 @@ swordnow	include/clibs/ancient/sword.hpp	/^    std::string swordnow,swordall;$/;
 t	.headers_go/libFFI_Go_AncientJinYinZhu.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anon2b8a6a530308	typeref:typename:void *
 t	.headers_go/libFFI_Go_BookShelfShouCang.h	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anon75f481fe0208	typeref:typename:void *
 t	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { void *t; void *v; } GoInterface;$/;"	m	struct:__anond9b77c320208	typeref:typename:void *
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/cfg-if-7f578e9a01bfc487/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/getrandom-fdacd929569c962e/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-8e7defd7efa2f563/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-c92459df03dc1f84/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/ppv-lite86-022dd04b0839394a/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand-023cd9dbc3f88f2d/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_chacha-1a269173be1f9b97/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/rand_core-ab9e7967c1870b8c/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-8a49a8c7765abd4a/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-afbeebacb5c242d8/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+target	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/zerocopy-ea234c346ed0513e/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/AncientBookstoreJiaomai-a1cb1a82c9afd4ef/lib-AncientBookstoreJiaomai.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[]","target":46545933247615200/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/cfg-if-ae2a921db62ab76a/lib-cfg_if.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"core\\", \\"rustc-dep-of-s/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/getrandom-57ef34aef74ab707/lib-getrandom.json	/^{"rustc":8022303366561187541,"features":"[\\"std\\"]","declared_features":"[\\"compiler_builtins/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-84b2601b07834a0d/lib-libc.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-b8f0282f836f926c/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[]","declared_features":"[\\"align\\", \\"const-extern-/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/ppv-lite86-4ec939da0770e974/lib-ppv_lite86.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\", \\"std\\"]","declared_features":"[\\"defau/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand-41cb78ef8e54b180/lib-rand.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"default\\", \\"getrandom\\", \\"libc\\/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_chacha-d5b3aae3b4f51b87/lib-rand_chacha.json	/^{"rustc":8022303366561187541,"features":"[\\"default\\", \\"std\\"]","declared_features":"[\\"de/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/rand_core-3734ffde395455e1/lib-rand_core.json	/^{"rustc":8022303366561187541,"features":"[\\"alloc\\", \\"getrandom\\", \\"std\\"]","declared_fe/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-1c69086d42ef0bb1/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-8c63c14c8317179d/lib-zerocopy.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
+target	rust/AncientBookstoreJiaomai/target/release/.fingerprint/zerocopy-e8c420c53411c540/build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"[\\"simd\\"]","declared_features":"[\\"__internal_use_o/;"	n
 test	include/utils/cstyle/cstyle_bitset.hpp	/^    bool test(size_t pos) const$/;"	f	class:cstyle::bitset	typeref:typename:bool
-tests	rust/AncientBookstoreJiaomai/src/lib.rs	/^mod tests {$/;"	n
 things_all	src/FuncUsed.cpp	/^void MyFrame::things_all(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
 things_other	src/FuncSimple.cpp	/^void MyFrame::things_other(WXBTNEVT&)$/;"	f	class:MyFrame	typeref:typename:void
 things_shop	src/FuncSimple.cpp	/^void MyFrame::things_shop(WXBTNEVT& evt)$/;"	f	class:MyFrame	typeref:typename:void
@@ -1545,7 +2139,27 @@ v	include/ffi/golang/BookShelfShouCang/BookShelfShouCang.hpp	/^typedef struct { 
 v5.41.0	docs/ProjectReleasesLog.rst	/^v5.41.0$/;"	s	chapter:项目发布版本日志
 v5.41.1	docs/ProjectReleasesLog.rst	/^v5.41.1$/;"	s	chapter:项目发布版本日志
 v5.42.0 	docs/ProjectReleasesLog.rst	/^v5.42.0 $/;"	s	chapter:项目发布版本日志
+val	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.1.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.2.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.3.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.4.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.5.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.1.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.2.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.3.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.4.RerunIfEnvChanged
+val	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	z	object:local.5.RerunIfEnvChanged
 value_type	include/utils/cstyle/cstyle_array.hpp	/^    using value_type = T;$/;"	t	struct:cstyle::array	typeref:typename:T
+var	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.1.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.2.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.3.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.4.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/debug/.fingerprint/libc-1fe018301e5f7623/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.5.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.1.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.2.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.3.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.4.RerunIfEnvChanged
+var	rust/AncientBookstoreJiaomai/target/release/.fingerprint/libc-17474e259641f017/run-build-script-build-script-build.json	/^{"rustc":8022303366561187541,"features":"","declared_features":"","target":0,"profile":0,"path":/;"	s	object:local.5.RerunIfEnvChanged
 vformat_input	include/utils/cstyle/cstyle_io.hpp	/^inline int vformat_input(FILE* stream, const char* fmt, va_list args)$/;"	f	namespace:cstyle	typeref:typename:int
 vformat_output	include/utils/cstyle/cstyle_io.hpp	/^inline int vformat_output(FILE* stream, const char* fmt, va_list args)$/;"	f	namespace:cstyle	typeref:typename:int
 water	include/clibs/xianbi/sword.hpp	/^enum class SwordEnum { gold,wood,water,fire,soil };$/;"	e	enum:functions::SwordEnum
