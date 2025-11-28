@@ -1,5 +1,4 @@
 #include "clog.h"
-#include "ffi/zig/BookShelf/BookShelf.h"
 #include "ffi/zig/BookShelf/BookShelfMacro.hpp"
 #include "func/simple.hpp"
 #include "global.hpp"
