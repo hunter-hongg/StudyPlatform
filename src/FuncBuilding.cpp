@@ -1,21 +1,15 @@
-#include "clog.h"
 #include "func/simple.hpp"
 #include "global.hpp"
 #include "headers.hpp"
 #include "mine/MyFlags.h"
 #include "signals.hpp"
 #include "type.hpp"
-#include "var.hpp"
+#include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
 #include <wx/wx.h>
 
 void MyFrame::ancient_bookstore(WXBTNEVT&) {
-    GlobalSignal.AncientBookstoreJiaomai.connect([=]() {
-        CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>卖出书籍=>叫卖: 槽正确接收");
-        this -> ancient_bookstore_jiaomai(EmptyEvent);
-    });
-
     auto vbox = Simple::Init(panel, this);
 
     Simple::Title("卖出书籍", panel, vbox);
@@ -39,6 +33,11 @@ void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
     vbox -> Add(TiShi, FLAG_CENTER);
 
     auto Submit = Simple::BasicButton("快速点击我", panel);
+    Submit -> SetFont(font17);
+    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        GlobalSignal.AncientBookstoreJiaomaiPushed.emit();
+    });
+    vbox -> Add(Submit, FLAG_CENTER);
 
     Simple::BackButton(&MyFrame::ancient_bookstore, panel, vbox, this);
 }
