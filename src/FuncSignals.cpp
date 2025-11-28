@@ -1,5 +1,9 @@
 #include "clog.h"
+#include "ffi/zig/BookShelf/BookShelf.h"
+#include "ffi/zig/BookShelf/BookShelfMacro.hpp"
+#include "func/simple.hpp"
 #include "global.hpp"
+#include "macro.hpp"
 #include "var.hpp"
 #include <headers.hpp>
 #include <signals.hpp>
@@ -39,8 +43,25 @@ void MyFrame::signals_init() {
             auto y_or_n = Simple::MessageQues("叫卖成功\n"
                                               "购买书籍: "+BookTypeS+"\n"
                                               "购买价格: "+TOSTR(BaiYin)+"两白银");
-            if(y_or_n){
-
+            if(y_or_n) {
+                CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>书籍叫卖: 叫卖成功 继续");
+                BookShelfResult_Get(BookShelf::Reader);
+                int NowBook;
+                switch(BookType) {
+                case 1:
+                    NowBook = Level1;
+                    break;
+                case 2:
+                    NowBook = Level2;
+                    break;
+                case 3:
+                    NowBook = Level3;
+                    break;
+                default:
+                    NowBook = 0;
+                    break;
+                }
+                Simple::Message(TOSTR(NowBook));
             } else {
                 CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>书籍叫卖: 叫卖成功 被拒绝 退出");
                 Global::AncientBookstoreJiaomai::times = 0;
