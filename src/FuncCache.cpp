@@ -56,8 +56,22 @@ void MyFrame::bank_juan(WXBTNEVT&) {
     Simple::ShowButton(ShowStringF.str(), panel, vbox);
 
     Simple::Button(&MyFrame::bank_juan_juan, "捐献积分", panel, vbox, this);
+    Simple::Button(&MyFrame::bank_juan_use , "领取奖励", panel, vbox, this);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 
     CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分: 正常启动");
 }
+void MyFrame::ancient_bookstore(WXBTNEVT&) {
+    auto vbox = Simple::Init(panel, this);
+
+    Simple::Title("卖出书籍", panel, vbox);
+
+    auto btn1 = Simple::Button("叫卖书籍",panel, vbox);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        GlobalSignal.AncientBookstoreJiaomai.emit();
+    });
+
+    Simple::BackButton(&MyFrame::ancient_square, panel, vbox, this);
+}
+
