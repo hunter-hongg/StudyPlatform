@@ -1,7 +1,5 @@
 #include "func/simple.hpp"
-#include "global.hpp"
 #include "headers.hpp"
-#include "mine/MyFlags.h"
 #include "signals.hpp"
 #include "type.hpp"
 #include <string>
@@ -20,24 +18,4 @@ void MyFrame::ancient_bookstore(WXBTNEVT&) {
     });
 
     Simple::BackButton(&MyFrame::ancient_square, panel, vbox, this);
-}
-void MyFrame::ancient_bookstore_jiaomai(WXBTNEVT&) {
-    Global::AncientBookstoreJiaomai::times = 0;
-
-    auto vbox = Simple::Init(panel, this);
-
-    Simple::Title("快速叫卖", panel, vbox);
-
-    auto TiShi = new wxStaticText(panel, wxID_ANY, wxT("请快速点击下方按钮叫卖"));
-    TiShi -> SetFont(font17);
-    vbox -> Add(TiShi, FLAG_CENTER);
-
-    auto Submit = Simple::BasicButton("快速点击我", panel);
-    Submit -> SetFont(font17);
-    Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
-        GlobalSignal.AncientBookstoreJiaomaiPushed.emit();
-    });
-    vbox -> Add(Submit, FLAG_CENTER);
-
-    Simple::BackButton(&MyFrame::ancient_bookstore, panel, vbox, this);
 }
