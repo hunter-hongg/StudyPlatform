@@ -94,6 +94,9 @@
 // 类定义
 #include <function.hpp> // 类MyApp以及MyFrame
 
+// 信号定义
+#include <signals.hpp>  // 信号
+
 // namespace
 using namespace ShengGuanSpace;
 using namespace Files;
