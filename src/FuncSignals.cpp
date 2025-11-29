@@ -24,6 +24,12 @@ void MyFrame::signals_init() {
         }
     });
     GlobalSignal.AncientBookstoreJiaomaiPushedDone.connect([=]() {
+        if(!AncientVar::TongBiReader.canminus(5)) {
+            Simple::MessageErr("铜钱不足");
+            Global::AncientBookstoreJiaomai::times = 0;
+            this -> ancient_bookstore(EmptyEvent);
+            return;
+        }
         Global::AncientBookstoreJiaomai::PushEnd = std::chrono::steady_clock::now();
         auto duration_time = Global::AncientBookstoreJiaomai::PushEnd - Global::AncientBookstoreJiaomai::PushStart;
         auto duration_time_ms = std::chrono::duration_cast<std::chrono::milliseconds>(duration_time);
