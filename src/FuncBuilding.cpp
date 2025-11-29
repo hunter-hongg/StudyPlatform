@@ -2,20 +2,20 @@
 #include "headers.hpp"
 #include "signals.hpp"
 #include "type.hpp"
+#include "var.hpp"
 #include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
 #include <wx/wx.h>
 
-void MyFrame::ancient_bookstore(WXBTNEVT&) {
+void MyFrame::bank_juan_use(WXBTNEVT&) {
+    auto sfs = ShowFmt;
+    auto sfsa = sfs % Bank::BankJuanQuan.read_int();
+
     auto vbox = Simple::Init(panel, this);
 
-    Simple::Title("卖出书籍", panel, vbox);
+    Simple::TitleNoSpacer("领取奖励", panel, vbox);
+    Simple::ShowButton(sfsa.str(), panel, vbox);
 
-    auto btn1 = Simple::Button("叫卖书籍",panel, vbox);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
-        GlobalSignal.AncientBookstoreJiaomai.emit();
-    });
-
-    Simple::BackButton(&MyFrame::ancient_square, panel, vbox, this);
+    Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
 }
