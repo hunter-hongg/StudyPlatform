@@ -7,6 +7,7 @@
 #include <headers.hpp>
 #include <signals.hpp>
 #include <rust/AncientBookstoreJiaomai.hpp>
+#include <rust/BankJuanUseJiFenUse.hpp>
 
 void MyFrame::signals_init() {
     GlobalSignal.AncientBookstoreJiaomai.connect([=]() {
@@ -111,5 +112,11 @@ void MyFrame::signals_init() {
     GlobalSignal.BankJuanUseJiFenUse.connect([=](int nd) {
         int Jxq_now = Bank::BankJuanQuan.read_int();
         int Jxq_need = nd;
+        int Result = BankJuanUseJiFenUseGetJiFen(Jxq_now, Jxq_need);
+        if(Result < 0 ) {
+            Simple::Message("兑换积分失败");
+            return;
+        }
+        
     });
 }
