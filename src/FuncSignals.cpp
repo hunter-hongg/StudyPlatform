@@ -104,4 +104,11 @@ void MyFrame::signals_init() {
             }
         }
     });
+    GlobalSignal.BankJuanUseJiFen.connect([=]() {
+        CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>积分捐献=>领取奖励=>积分奖励: 槽正确接收");
+        this -> bank_juan_use_jifen(EmptyEvent);
+    });
+    GlobalSignal.BankJuanUseJiFenUse.connect([=]() {
+
+    });
 }
