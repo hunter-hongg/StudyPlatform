@@ -284,7 +284,7 @@ static PasswordFile Reader(FilePathTongYongReal+"tyrelrd.cc", "qacjf34860");
 }
 
 // 日志文件
-static CLogger* Logfile = CLogger_new_with_logfile(g_string_new(".学习平台.log"));
+static CLogger* Logfile = CLogger_new_with_logfile(g_string_new(".xxpt.log"));
 
 // 简单符号
 

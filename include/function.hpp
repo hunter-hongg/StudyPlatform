@@ -177,6 +177,8 @@ protected:
     void bank_get(WXBTNEVT&);
     void bank_juan(WXBTNEVT&);
     void bank_juan_juan(WXBTNEVT&);
+    void bank_juan_use(WXBTNEVT&);
+    void bank_juan_use_jifen(WXBTNEVT&);
 
     void tongy_all(WXBTNEVT&);
     void tongy(WXBTNEVT&);
