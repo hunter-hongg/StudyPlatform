@@ -40,7 +40,14 @@ void MyFrame::bank_juan_use_jifen(WXBTNEVT&) {
     auto Submit = new wxButton(panel, wxID_ANY, wxT("使用"));
     Submit -> SetFont(font17);
     Submit -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
-        GlobalSignal.BankJuanUseJiFenUse.emit();
+        int nd;
+        std::string rdrt = ReadTo->GetValue().ToStdString();
+        try {
+            nd = std::stoi(rdrt);
+        } catch(...) {
+            nd = 0;
+        }
+        GlobalSignal.BankJuanUseJiFenUse.emit(nd);
     });
     vbox -> Add(Submit, FLAG_LEFT);
 
