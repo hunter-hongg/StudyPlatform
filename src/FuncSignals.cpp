@@ -117,6 +117,9 @@ void MyFrame::signals_init() {
             Simple::Message("兑换积分失败");
             return;
         }
-        
+        Bank::BankJuanQuan.minusnum_if(Jxq_need);
+        JiFenReader.addnum(Result);
+        Simple::Message("兑换积分成功\n此次兑换"+TOSTR(Result)+"积分");
+        CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>领取奖励: 兑换成功");
     });
 }
