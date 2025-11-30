@@ -1,5 +1,6 @@
 #pragma once
 #include <macro.hpp>
+#include <utility>
 #include <vector>
 #include <string>
 #include <global.hpp>
@@ -60,5 +61,16 @@ static std::string AncientBookTrans(int BookType) {
     default:
         return "未知书籍";
     }
+}
+inline std::pair<int,int> SafeStoi(std::string a) {
+    int res,state;
+    try {
+        res = std::stoi(a);
+        state = 1;
+    } catch(...) {
+        res = 0;
+        state = 0;
+    }
+    return std::make_pair(res, state);
 }
 }
