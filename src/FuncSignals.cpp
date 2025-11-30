@@ -7,6 +7,7 @@
 #include <headers.hpp>
 #include <signals.hpp>
 #include <rust/AncientBookstoreJiaomai.hpp>
+#include <rust/BankJuanUseJiFenUse.hpp>
 
 void MyFrame::signals_init() {
     GlobalSignal.AncientBookstoreJiaomai.connect([=]() {
@@ -111,5 +112,14 @@ void MyFrame::signals_init() {
     GlobalSignal.BankJuanUseJiFenUse.connect([=](int nd) {
         int Jxq_now = Bank::BankJuanQuan.read_int();
         int Jxq_need = nd;
+        int Result = BankJuanUseJiFenUseGetJiFen(Jxq_now, Jxq_need);
+        if(Result < 0 ) {
+            Simple::Message("兑换积分失败");
+            return;
+        }
+        Bank::BankJuanQuan.minusnum_if(Jxq_need);
+        JiFenReader.addnum(Result);
+        Simple::Message("兑换积分成功\n此次兑换"+TOSTR(Result)+"积分");
+        CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>领取奖励: 兑换成功");
     });
 }
