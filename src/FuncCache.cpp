@@ -65,7 +65,7 @@ void MyFrame::bank_juan(WXBTNEVT&) {
 void MyFrame::ancient_bookstore(WXBTNEVT&) {
     auto vbox = Simple::Init(panel, this);
 
-    Simple::Title("卖出书籍", panel, vbox);
+    Simple::Title("书籍使用", panel, vbox);
 
     auto btn1 = Simple::Button("叫卖书籍",panel, vbox);
     btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
