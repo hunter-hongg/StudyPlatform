@@ -1,4 +1,6 @@
 #include "func/simple.hpp"
+#include "signals.hpp"
+#include "type.hpp"
 #include <headers.hpp>
 
 auto MyFrame::tongy_show(WXBTNEVT&) -> void {
@@ -56,7 +58,7 @@ void MyFrame::bank_juan(WXBTNEVT&) {
     Simple::ShowButton(ShowStringF.str(), panel, vbox);
 
     Simple::Button(&MyFrame::bank_juan_juan, "捐献积分", panel, vbox, this);
-    Simple::Button(&MyFrame::bank_juan_use , "领取奖励", panel, vbox, this);
+    Simple::Button(&MyFrame::bank_juan_use, "领取奖励", panel, vbox, this);
 
     Simple::BackButton(&MyFrame::bank_square, panel, vbox, this);
 
@@ -72,6 +74,27 @@ void MyFrame::ancient_bookstore(WXBTNEVT&) {
         GlobalSignal.AncientBookstoreJiaomai.emit();
     });
 
+    auto btn2 = Simple::Button("抄录新书", panel, vbox);
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+        GlobalSignal.AncientBookstoreChaoLuAll.emit();
+    });
+
     Simple::BackButton(&MyFrame::ancient_square, panel, vbox, this);
+}
+void MyFrame::bank_juan_use(WXBTNEVT&) {
+    auto sfs = ShowFmt;
+    auto sfsa = sfs % "捐献券" % Bank::BankJuanQuan.read_int();
+
+    auto vbox = Simple::Init(panel, this);
+
+    Simple::TitleNoSpacer("领取奖励", panel, vbox);
+    Simple::ShowButton(sfsa.str(), panel, vbox);
+
+    auto btn1 = Simple::Button("积分奖励", panel, vbox);
+    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
+        GlobalSignal.BankJuanUseJiFen.emit();
+    });
+
+    Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
 }
 
