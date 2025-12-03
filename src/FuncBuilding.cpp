@@ -8,19 +8,11 @@
 #include <wx/gtk/stattext.h>
 #include <wx/wx.h>
 
-void MyFrame::bank_juan_use(WXBTNEVT&) {
-    auto sfs = ShowFmt;
-    auto sfsa = sfs % "捐献券" % Bank::BankJuanQuan.read_int();
-
+void MyFrame::ancient_bookstore_chaolu(WXBTNEVT&) {
     auto vbox = Simple::Init(panel, this);
 
-    Simple::TitleNoSpacer("领取奖励", panel, vbox);
-    Simple::ShowButton(sfsa.str(), panel, vbox);
+    Simple::Title("抄录书籍", panel, vbox);
+    // Simple::ShowButton("", panel, vbox);
 
-    auto btn1 = Simple::Button("积分奖励", panel, vbox);
-    btn1 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
-        GlobalSignal.BankJuanUseJiFen.emit();
-    });
-
-    Simple::BackButton(&MyFrame::bank_juan, panel, vbox, this);
+    Simple::BackButton(&MyFrame::ancient_bookstore, panel, vbox, this);
 }
