@@ -1,3 +1,6 @@
 [submodule "rust"]
 	path = rust
 	url = ./rust/
+[submodule "MarkdownTool"]
+	path = MarkdownTool
+	url = /home/coding/MarkdownTool
