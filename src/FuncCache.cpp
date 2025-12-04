@@ -75,7 +75,7 @@ void MyFrame::ancient_bookstore(WXBTNEVT&) {
     });
 
     auto btn2 = Simple::Button("抄录新书", panel, vbox);
-    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&){
+    btn2 -> Bind(wxEVT_BUTTON, [=](WXBTNEVT&) {
         GlobalSignal.AncientBookstoreChaoLuAll.emit();
     });
 

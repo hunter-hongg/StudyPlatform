@@ -1,3 +1,6 @@
 [submodule "rust"]
 	path = rust
 	url = ./rust/
+[submodule "tools/MarkdownTool"]
+	path = tools/MarkdownTool
+	url = git@github.com:hunter-hongg/markdown_tool
