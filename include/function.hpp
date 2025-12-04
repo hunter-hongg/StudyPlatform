@@ -152,6 +152,8 @@ protected:
 
     void ancient_bookstore(WXBTNEVT&);
     void ancient_bookstore_jiaomai(WXBTNEVT&);
+    void ancient_bookstore_chaolu(WXBTNEVT&);
+    void ancient_bookstore_chaolu_start(WXBTNEVT&);
 
     void things_square(WXBTNEVT&);
 
