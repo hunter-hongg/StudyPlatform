@@ -123,6 +123,7 @@ void MyFrame::signals_init() {
         CLogger_log(Logfile, CLogger_DEBUG, "积分银行=>捐献积分=>领取奖励: 兑换成功");
     });
     GlobalSignal.AncientBookstoreChaoLuAll.connect([=]() {
+        CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>书籍使用=>抄录新书: 正确触发槽");
         this -> ancient_bookstore_chaolu(EmptyEvent);
     });
 }
