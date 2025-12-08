@@ -1,5 +1,7 @@
 #include "macro.hpp"
+#include "mine/MyFlags.h"
 #include <headers.hpp>
+#include <wx/sizer.h>
 
 void MyFrame::start()
 {
@@ -18,6 +20,8 @@ void MyFrame::start()
 
     MYADDSPACER();
 
+    auto grid = new wxGridSizer(5, 2, 7, 7);
+
     MYBUTTON(button2,&MyFrame::mine,"我的主页");
     button2 -> SetFont(font19);
     MYBUTTON(button4,&MyFrame::xianbi_square,"神话传说");
@@ -30,6 +34,8 @@ void MyFrame::start()
     button6 -> SetFont(font19);
     MYBUTTON(button7,&MyFrame::bank_square,"积分银行");
     button7 -> SetFont(font19);
+
+    vbox -> Add(grid, FLAG_CENTER);
 
     MYADDSPACER();
 

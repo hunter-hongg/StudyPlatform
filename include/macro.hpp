@@ -20,6 +20,12 @@ static void emptything() {;}
                 name -> Bind(wxEVT_BUTTON,function,this); \
                 vbox -> Add(name,FLAG_CENTER); \
                 emptything()
+#define MYBUTTONSTART(name,function,show) \
+                auto name = new wxButton(panel,wxID_ANY,wxT(show)); \
+                name -> SetFont(font19); \
+                name -> Bind(wxEVT_BUTTON,function,this); \
+                grid -> Add(name,FLAG_CENTER); \
+                emptything()
 #define MYBUTTONLAMBDA(name,function,show) \
                 auto name = new wxButton(panel,wxID_ANY,wxT(show)); \
                 name -> SetFont(font17); \
