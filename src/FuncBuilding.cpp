@@ -23,3 +23,4 @@ void MyFrame::ancient_bookstore_chaolu_start(WXBTNEVT&) {
 
     Simple::BackButton(&MyFrame::ancient_bookstore_chaolu, panel, vbox, this);
 }
+
