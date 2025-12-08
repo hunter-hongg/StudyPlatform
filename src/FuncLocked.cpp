@@ -22,18 +22,12 @@ void MyFrame::start()
 
     auto grid = new wxGridSizer(5, 2, 7, 7);
 
-    MYBUTTON(button2,&MyFrame::mine,"我的主页");
-    button2 -> SetFont(font19);
-    MYBUTTON(button4,&MyFrame::xianbi_square,"神话传说");
-    button4 -> SetFont(font19);
-    MYBUTTON(button3,&MyFrame::calc_square,"计算广场");
-    button3 -> SetFont(font19);
-    MYBUTTON(button5,&MyFrame::ancient_square,"古代广场");
-    button5 -> SetFont(font19);
-    MYBUTTON(button6,&MyFrame::things_square,"物品领取");
-    button6 -> SetFont(font19);
-    MYBUTTON(button7,&MyFrame::bank_square,"积分银行");
-    button7 -> SetFont(font19);
+    MYBUTTONSTART(button2,&MyFrame::mine,"我的主页");
+    MYBUTTONSTART(button4,&MyFrame::xianbi_square,"神话传说");
+    MYBUTTONSTART(button3,&MyFrame::calc_square,"计算广场");
+    MYBUTTONSTART(button5,&MyFrame::ancient_square,"古代广场");
+    MYBUTTONSTART(button6,&MyFrame::things_square,"物品领取");
+    MYBUTTONSTART(button7,&MyFrame::bank_square,"积分银行");
 
     vbox -> Add(grid, FLAG_CENTER);
 
