@@ -28,7 +28,7 @@ void MyFrame::start()
     MYBUTTONSTART(button5,&MyFrame::ancient_square,"古代广场");
     MYBUTTONSTART(button6,&MyFrame::things_square,"物品领取");
     MYBUTTONSTART(button7,&MyFrame::bank_square,"积分银行");
-    MYBUTTONSTART(button8,&MyFrame::tools_all, "实用工具");
+    MYBUTTONSTART(button8,&MyFrame::tools_all, "各类工具");
     MYBUTTONSTART(button9,&MyFrame::settings_all,"设置页面");
 
     vbox -> Add(grid, FLAG_CENTER);
