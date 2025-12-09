@@ -4,7 +4,7 @@
 #include "global.hpp"
 #include "macro.hpp"
 #include "var.hpp"
-#include <markdowntoolmain.hpp>
+#include <tools/markdowntoolmain.hpp>
 #include <headers.hpp>
 #include <signals.hpp>
 #include <rust/AncientBookstoreJiaomai.hpp>
@@ -129,5 +129,6 @@ void MyFrame::signals_init() {
     });
     GlobalSignal.ToolsMdManagerStart.connect([=]() {
         auto frame = new MarkdownToolMainFrame("学习平台 - 笔记管理", wxDefaultPosition, wxSize(600, 600));
+        frame -> Show(true);
     });
 }
