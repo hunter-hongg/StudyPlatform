@@ -13,7 +13,11 @@ find_package(wxWidgets REQUIRED)
 include(${wxWidgets_USE_FILE})
 
 set(EXECUTABLE_OUTPUT_PATH ../target/)
-add_executable(studyplatform ${SRC_FILES})
+add_executable(studyplatform 
+    ${SRC_FILES}
+    tools/MarkdownTool/MainCode/src/markdowntoolmain.cpp  # Markdown笔记管理工具
+)
+target_compile_options(studyplatform PRIVATE -w)
 
 add_custom_target( AfterAll ALL
     DEPENDS studyplatform 
@@ -64,4 +68,29 @@ target_include_directories(studyplatform PRIVATE $ENV{HOME}/clog/include)
 target_link_directories(studyplatform PRIVATE $ENV{HOME}/clog/lib/)
 target_link_libraries(studyplatform libCLogger.so)
 
-target_compile_options(studyplatform PRIVATE -w)
+# Markdown笔记管理工具
+target_include_directories(studyplatform PRIVATE 
+    tools/MarkdownTool/MainCode/include
+)
+
+# MarkdownTool系列库
+target_include_directories(markdowntool PRIVATE 
+    tools/MarkdownTool/MarkdownParser/include 
+    tools/MarkdownTool/MarkdownSQLite/include 
+    tools/MarkdownTool/MarkdownFile/include 
+)
+target_link_directories(markdowntool PRIVATE 
+    tools/MarkdownTool/MarkdownParser/lib
+    tools/MarkdownTool/MarkdownSQLite/lib
+)
+target_link_libraries(markdowntool 
+    libMdSQLite.a 
+    libMdParser.a 
+)
+
+# 查找 SQLite3 库
+find_package(SQLite3 REQUIRED)
+
+# 链接到你的可执行文件
+target_link_libraries(markdowntool SQLite::SQLite3)
+

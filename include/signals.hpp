@@ -9,5 +9,6 @@ struct _GlobalSignal {
     sigc::signal<void()>         BankJuanUseJiFen;
     sigc::signal<void(int)>      BankJuanUseJiFenUse;
     sigc::signal<void()>         AncientBookstoreChaoLuAll;
+    sigc::signal<void()>         ToolsMdManagerStart;
 };
 inline _GlobalSignal GlobalSignal;
