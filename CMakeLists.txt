@@ -74,16 +74,16 @@ target_include_directories(studyplatform PRIVATE
 )
 
 # MarkdownTool系列库
-target_include_directories(markdowntool PRIVATE 
+target_include_directories(studyplatform PRIVATE 
     tools/MarkdownTool/MarkdownParser/include 
     tools/MarkdownTool/MarkdownSQLite/include 
     tools/MarkdownTool/MarkdownFile/include 
 )
-target_link_directories(markdowntool PRIVATE 
+target_link_directories(studyplatform PRIVATE 
     tools/MarkdownTool/MarkdownParser/lib
     tools/MarkdownTool/MarkdownSQLite/lib
 )
-target_link_libraries(markdowntool 
+target_link_libraries(studyplatform 
     libMdSQLite.a 
     libMdParser.a 
 )
@@ -92,5 +92,5 @@ target_link_libraries(markdowntool
 find_package(SQLite3 REQUIRED)
 
 # 链接到你的可执行文件
-target_link_libraries(markdowntool SQLite::SQLite3)
+target_link_libraries(studyplatform SQLite::SQLite3)
 
