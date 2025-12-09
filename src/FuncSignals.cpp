@@ -126,4 +126,7 @@ void MyFrame::signals_init() {
         CLogger_log(Logfile, CLogger_DEBUG, "古代广场=>书籍使用=>抄录新书: 正确触发槽");
         this -> ancient_bookstore_chaolu(EmptyEvent);
     });
+    GlobalSignal.ToolsMdManagerStart.connect([=]() {
+
+    });
 }

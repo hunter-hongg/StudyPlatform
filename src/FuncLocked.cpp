@@ -1,5 +1,7 @@
 #include "macro.hpp"
+#include "mine/MyFlags.h"
 #include <headers.hpp>
+#include <wx/sizer.h>
 
 void MyFrame::start()
 {
@@ -18,18 +20,18 @@ void MyFrame::start()
 
     MYADDSPACER();
 
-    MYBUTTON(button2,&MyFrame::mine,"我的主页");
-    button2 -> SetFont(font19);
-    MYBUTTON(button4,&MyFrame::xianbi_square,"神话传说");
-    button4 -> SetFont(font19);
-    MYBUTTON(button3,&MyFrame::calc_square,"计算广场");
-    button3 -> SetFont(font19);
-    MYBUTTON(button5,&MyFrame::ancient_square,"古代广场");
-    button5 -> SetFont(font19);
-    MYBUTTON(button6,&MyFrame::things_square,"物品领取");
-    button6 -> SetFont(font19);
-    MYBUTTON(button7,&MyFrame::bank_square,"积分银行");
-    button7 -> SetFont(font19);
+    auto grid = new wxGridSizer(5, 2, 7, 7);
+
+    MYBUTTONSTART(button2,&MyFrame::mine,"我的主页");
+    MYBUTTONSTART(button4,&MyFrame::xianbi_square,"神话传说");
+    MYBUTTONSTART(button3,&MyFrame::calc_square,"计算广场");
+    MYBUTTONSTART(button5,&MyFrame::ancient_square,"古代广场");
+    MYBUTTONSTART(button6,&MyFrame::things_square,"物品领取");
+    MYBUTTONSTART(button7,&MyFrame::bank_square,"积分银行");
+    MYBUTTONSTART(button8,&MyFrame::tools_all, "各类工具");
+    MYBUTTONSTART(button9,&MyFrame::settings_all,"设置页面");
+
+    vbox -> Add(grid, FLAG_CENTER);
 
     MYADDSPACER();
 
