@@ -1,26 +1,24 @@
 #include "func/simple.hpp"
 #include "headers.hpp"
+#include "signals.hpp"
 #include "type.hpp"
 #include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
 #include <wx/wx.h>
 
-void MyFrame::ancient_bookstore_chaolu(WXBTNEVT&) {
+void MyFrame::tools_all(WXBTNEVT&) {
     auto vbox = Simple::Init(panel, this);
 
-    Simple::Title("抄录书籍", panel, vbox);
-    // Simple::ShowButton("", panel, vbox);
+    Simple::Title("各类工具", panel, vbox);
 
-    Simple::Button(&MyFrame::ancient_bookstore_chaolu_start, "开始抄录", panel, vbox, this);
+    auto btn_mdmanage = Simple::Button("笔记管理", panel, vbox);
+    btn_mdmanage -> Bind(wxEVT_BUTTON, [=, this](WXBTNEVT&){
+        GlobalSignal.ToolsMdManagerStart.emit();
+    });
 
-    Simple::BackButton(&MyFrame::ancient_bookstore, panel, vbox, this);
+    Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
-void MyFrame::ancient_bookstore_chaolu_start(WXBTNEVT&) {
-    auto vbox = Simple::Init(panel, this);
+void MyFrame::settings_all(WXBTNEVT&) {
 
-    Simple::Title("开始抄录", panel, vbox);
-
-    Simple::BackButton(&MyFrame::ancient_bookstore_chaolu, panel, vbox, this);
 }
-
