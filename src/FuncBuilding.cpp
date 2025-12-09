@@ -6,3 +6,9 @@
 #include <wx/gtk/stattext.h>
 #include <wx/wx.h>
 
+void MyFrame::tools_all(WXBTNEVT&) {
+
+}
+void MyFrame::settings_all(WXBTNEVT&) {
+
+}

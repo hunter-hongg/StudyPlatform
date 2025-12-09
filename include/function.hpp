@@ -186,6 +186,10 @@ protected:
     void tongy(WXBTNEVT&);
     void tongy_show(WXBTNEVT&);
 
+    void tools_all(WXBTNEVT&);
+
+    void settings_all(WXBTNEVT&);
+
 private:
 
     wxPanel* panel;
