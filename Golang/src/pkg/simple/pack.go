@@ -24,3 +24,12 @@ func HorizonRight(obj fyne.CanvasObject) *fyne.Container {
     
 	return horizontalCenter
 }
+
+func HorizonLeft(obj fyne.CanvasObject) *fyne.Container {
+    horizontalCenter := container.NewHBox(
+        obj,               
+        layout.NewSpacer(),
+    )
+    
+	return horizontalCenter
+}

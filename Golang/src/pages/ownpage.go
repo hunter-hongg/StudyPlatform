@@ -29,9 +29,15 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_MainPage)
 	})
 
+	btnToTimer := widget.NewButton("学习计时", func(){
+		p.router(interfaces.PageID_TimerMainPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
+		simple.HorizonCenter(btnToTimer),
+		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
 	)

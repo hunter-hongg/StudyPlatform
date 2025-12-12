@@ -29,10 +29,17 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_OwnPage)
 	})
 
+	btnToShen := widget.NewButton("神话传说", func(){
+		// p.router(interfaces.PageID_OwnPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
-		simple.HorizonCenter(btnToOwn),
+		container.NewGridWithColumns(2, 
+			simple.HorizonRight(btnToOwn),
+			simple.HorizonLeft(btnToShen),
+		),
 		layout.NewSpacer(),
 	)
 

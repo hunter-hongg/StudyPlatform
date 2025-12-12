@@ -7,6 +7,7 @@ type PageID int
 const (
     PageID_MainPage PageID = iota
     PageID_OwnPage
+	PageID_TimerMainPage
 )
 
 type IPage interface {
