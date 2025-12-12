@@ -1,6 +1,5 @@
 package main
 import (
-
     "fyne.io/fyne/v2"
     "fyne.io/fyne/v2/app"
 
@@ -11,7 +10,7 @@ import (
 func main() {
     a := app.New()
 	a.Settings().SetTheme(&simple.Font{})
-    window := a.NewWindow("双界面Demo")
+    window := a.NewWindow("学习平台")
     
     controller := application.NewApp(window)
     controller.SwitchPage(interfaces.PageID_MainPage)

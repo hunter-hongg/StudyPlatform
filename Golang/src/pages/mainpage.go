@@ -23,7 +23,7 @@ func NewMainPage() *MainPage {
 
 func (p *MainPage) GetContent() fyne.CanvasObject {
 	title := canvas.NewText("欢迎来到学习平台", color.Black)
-	title.TextSize = 30
+	title.TextSize = 35
 
 	btnToOwn := widget.NewButton("个人主页", func(){
 		p.router(interfaces.PageID_OwnPage)
