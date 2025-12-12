@@ -20,7 +20,7 @@ func NewApp(window fyne.Window) *AppController {
     
     // 注册所有页面
     c.registerPage(pages.NewMainPage())
-    c.registerPage(pages.NewSettingsPage())
+    c.registerPage(pages.NewOwnPage())
     
     return c
 }

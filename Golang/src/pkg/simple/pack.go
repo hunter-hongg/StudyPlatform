@@ -15,3 +15,12 @@ func HorizonCenter(obj fyne.CanvasObject) *fyne.Container {
     
 	return horizontalCenter
 }
+
+func HorizonRight(obj fyne.CanvasObject) *fyne.Container {
+    horizontalCenter := container.NewHBox(
+        layout.NewSpacer(),
+        obj,               
+    )
+    
+	return horizontalCenter
+}
