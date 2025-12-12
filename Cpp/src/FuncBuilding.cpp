@@ -5,6 +5,7 @@
 #include <string>
 #include <wx/event.h>
 #include <wx/gtk/stattext.h>
+#include <wx/sizer.h>
 #include <wx/wx.h>
 
 void MyFrame::tools_all(WXBTNEVT&) {
@@ -20,5 +21,6 @@ void MyFrame::tools_all(WXBTNEVT&) {
     Simple::BackButton(&MyFrame::main_func, panel, vbox, this);
 }
 void MyFrame::settings_all(WXBTNEVT&) {
+    auto vbox = Simple::Init(panel, this);
 
 }

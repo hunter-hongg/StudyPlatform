@@ -1,0 +1,17 @@
+package simple
+
+import (
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/layout"
+)
+
+func HorizonCenter(obj fyne.CanvasObject) *fyne.Container {
+    horizontalCenter := container.NewHBox(
+        layout.NewSpacer(), 
+        obj,               
+        layout.NewSpacer(),
+    )
+    
+	return horizontalCenter
+}
