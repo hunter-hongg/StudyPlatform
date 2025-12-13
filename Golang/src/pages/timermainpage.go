@@ -48,6 +48,14 @@ func (p *TimerMainPage) GetContent() fyne.CanvasObject {
 		// fmt.Printf("End, time: %d, jifen: %d\n", seconds, jifen)
 	})
 	btnRule := widget.NewButton("计时规则", func(){
+		rule := ""+
+		"计时规则: \n" + 
+		"1. 计时结束后，取秒数\n"+
+		"2. 学习不足1分钟，+1积分\n"+
+		"3. 学习不足5分钟，每30秒+1积分\n"+
+		"4. 学习不足25分钟，每20秒+1积分\n"+
+		"5. 学习满25分钟，每15秒+1积分"
+		simple.DialogInfo(rule, global.Main_Window)
 	})
 
 	vbox := container.NewVBox(
