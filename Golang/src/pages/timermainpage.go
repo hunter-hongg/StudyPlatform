@@ -5,8 +5,9 @@ import (
 	"StudyPlatform/src/pkg/global"
 	"StudyPlatform/src/pkg/jifen"
 	"StudyPlatform/src/pkg/simple"
+	"strconv"
 
-	_"fmt"
+	_ "fmt"
 	"image/color"
 
 	"fyne.io/fyne/v2"
@@ -44,8 +45,14 @@ func (p *TimerMainPage) GetContent() fyne.CanvasObject {
 		// seconds_real := global.TimerStartPage_Timer.GetMilliseconds()
 		seconds := int(seconds_real)
 		jifenGet := jifen.GetJifenFromSeconds(seconds)
-		_ = jifenGet
+		// _ = jifenGet
 		// fmt.Printf("End, time: %d, jifen: %d\n", seconds, jifen)
+		err := global.File_JiFenReader.AddNum(jifenGet)
+		if err != nil {
+			simple.DialogError(err, global.Main_Window)
+		} else {
+			simple.DialogInfo("恭喜获得"+strconv.Itoa(jifenGet)+"积分",global.Main_Window)
+		}
 	})
 	btnRule := widget.NewButton("计时规则", func(){
 		rule := ""+
