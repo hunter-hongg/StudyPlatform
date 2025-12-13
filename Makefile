@@ -19,3 +19,7 @@ run:
 	Cpp/target/学习平台
 go: 
 	cd Golang && make
+rel: 
+	cd Golang && make build
+grun: 
+	cd Golang && make run
