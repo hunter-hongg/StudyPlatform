@@ -18,9 +18,9 @@ func NewApp(window fyne.Window) *AppController {
         pages:  make(map[interfaces.PageID]interfaces.IPage),
     }
     
-    // 注册所有页面
     c.registerPage(pages.NewMainPage())
     c.registerPage(pages.NewOwnPage())
+	c.registerPage(pages.NewTimerMainPage())
     
     return c
 }
