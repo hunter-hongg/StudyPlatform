@@ -2,8 +2,11 @@ package pages
 
 import (
 	"StudyPlatform/src/interfaces"
+	"StudyPlatform/src/pkg/global"
+	"StudyPlatform/src/pkg/jifen"
 	"StudyPlatform/src/pkg/simple"
 
+	_"fmt"
 	"image/color"
 
 	"fyne.io/fyne/v2"
@@ -30,8 +33,19 @@ func (p *TimerMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnStart := widget.NewButton("开始计时", func(){
+		global.TimerStartPage_Timer.Start()
 	})
 	btnEnd := widget.NewButton("结束计时", func(){
+		if err := global.TimerStartPage_Timer.Stop(); err != nil {
+			simple.DialogError(err, global.Main_Window)
+			return
+		}
+		seconds_real := global.TimerStartPage_Timer.GetSeconds()
+		// seconds_real := global.TimerStartPage_Timer.GetMilliseconds()
+		seconds := int(seconds_real)
+		jifenGet := jifen.GetJifenFromSeconds(seconds)
+		_ = jifenGet
+		// fmt.Printf("End, time: %d, jifen: %d\n", seconds, jifen)
 	})
 	btnRule := widget.NewButton("计时规则", func(){
 	})
