@@ -2,10 +2,10 @@ package pages
 
 import (
 	"StudyPlatform/src/interfaces"
-	_"StudyPlatform/src/pkg/global"
-	_"StudyPlatform/src/pkg/jifen"
+	"StudyPlatform/src/pkg/global"
+	_ "StudyPlatform/src/pkg/jifen"
 	"StudyPlatform/src/pkg/simple"
-	_"strconv"
+	_ "strconv"
 
 	"image/color"
 
@@ -28,10 +28,10 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 	title := canvas.NewText("通用货币", color.Black)
 	title.TextSize = 27
 
-	// showjifen := canvas.NewText(
-	// 	"积分: "+global.File_JiFenReader.ReadStrSafe(),	
-	// simple.Blue)
-	// showjifen.TextSize = 20
+	showtong := canvas.NewText(
+		"通用货币: "+global.File_TongYongReader.ReadStrSafe(),
+	simple.Blue)
+	showtong.TextSize = 20
 	//
 	// showlevel := canvas.NewText(
 	// 	"等级: "+strconv.Itoa(jifen.GetLevelFromJifen(global.File_JiFenReader.ReadIntSafe())),
@@ -53,9 +53,9 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
-		// simple.HorizonCenter(showjifen),
+		simple.HorizonCenter(showtong),
 		// simple.HorizonCenter(showlevel),
-		simple.Spacer(130),
+		simple.Spacer(150),
 		// simple.HorizonCenter(btnToTimer),
 		// simple.HorizonCenter(btnToTongMain),
 		simple.Spacer(100),
