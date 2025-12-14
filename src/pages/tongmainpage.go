@@ -3,9 +3,7 @@ package pages
 import (
 	"StudyPlatform/src/interfaces"
 	"StudyPlatform/src/pkg/global"
-	_ "StudyPlatform/src/pkg/jifen"
 	"StudyPlatform/src/pkg/simple"
-	_ "strconv"
 
 	"image/color"
 
@@ -42,10 +40,13 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_OwnPage)
 	})
 
-	// btnToTimer := widget.NewButton("学习计时", func(){
-	// 	p.router(interfaces.PageID_TimerMainPage)
-	// })
-	//
+	btnRule := widget.NewButton("兑换规则", func(){
+		rule := ""+
+				"通用货币兑换规则: \n"+
+				"1000积分 1通用货币"
+		simple.DialogInfo(rule, global.Main_Window)
+	})
+	// syn.Ignore(btnToTimer)
 	// btnToTongMain := widget.NewButton("通用货币", func(){
 	// 	p.router(interfaces.PageID_TongMainPage)
 	// })
@@ -56,7 +57,7 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showtong),
 		// simple.HorizonCenter(showlevel),
 		simple.Spacer(150),
-		// simple.HorizonCenter(btnToTimer),
+		simple.HorizonCenter(btnRule),
 		// simple.HorizonCenter(btnToTongMain),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
