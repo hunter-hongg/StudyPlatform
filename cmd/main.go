@@ -19,6 +19,8 @@ func main() {
 	os.MkdirAll(global.File_FilePathTongYongReal, 0755)
 	os.MkdirAll(global.File_FilePathAncient, 0755)
 
+	fmt.Println("程序正常启动")
+
     a := app.New()
 	a.Settings().SetTheme(&simple.Font{})
     global.Main_Window = a.NewWindow("学习平台")

@@ -46,6 +46,17 @@ func (p *CalcShopPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_CalcShopPage)
 	})
 
+	btnToTong := widget.NewButton("300计算币=>500铜钱", func(){
+		res, err := global.File_JiSuanBiReader.CanMinus(300)
+		if (!res) || (err != nil) {
+			simple.DialogInfo("取计算币出错", global.Main_Window)
+			return
+		}
+		global.File_TongQianReader.AddNum(500)
+		simple.DialogInfo("兑换成功", global.Main_Window)
+		p.router(interfaces.PageID_CalcShopPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -53,6 +64,7 @@ func (p *CalcShopPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(150),
 		container.NewGridWithColumns(3, 
 			simple.HorizonRight(btnToJi),
+			simple.HorizonCenter(btnToTong),
 		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
