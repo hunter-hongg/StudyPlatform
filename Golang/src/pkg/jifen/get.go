@@ -11,3 +11,13 @@ func GetJifenFromSeconds(seconds int) int {
 		return seconds / 15
 	}
 }
+func GetLevelFromJifen(jifen int) int {
+	level := (jifen - 200) / 150
+	if level < 1 {
+		return 1
+	} else if level > 100 {
+		return 100
+	} else {
+		return level
+	}
+}

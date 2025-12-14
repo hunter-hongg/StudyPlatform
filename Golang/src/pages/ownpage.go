@@ -2,8 +2,10 @@ package pages
 
 import (
 	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/simple"
 	"StudyPlatform/src/pkg/global"
+	"StudyPlatform/src/pkg/jifen"
+	"StudyPlatform/src/pkg/simple"
+	"strconv"
 
 	"image/color"
 
@@ -26,8 +28,15 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 	title := canvas.NewText("个人主页", color.Black)
 	title.TextSize = 27
 
-	showjifen := canvas.NewText("积分: "+global.File_JiFenReader.ReadStrSafe(), simple.Blue)
+	showjifen := canvas.NewText(
+		"积分: "+global.File_JiFenReader.ReadStrSafe(),	
+	simple.Blue)
 	showjifen.TextSize = 20
+
+	showlevel := canvas.NewText(
+		"等级: "+strconv.Itoa(jifen.GetLevelFromJifen(global.File_JiFenReader.ReadIntSafe())),
+	simple.Blue)
+	showlevel.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_MainPage)
@@ -39,7 +48,10 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
-		simple.Spacer(200),
+		simple.Spacer(20),
+		simple.HorizonCenter(showjifen),
+		simple.HorizonCenter(showlevel),
+		simple.Spacer(130),
 		simple.HorizonCenter(btnToTimer),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),

@@ -4,7 +4,9 @@ import (
 	"StudyPlatform/src/interfaces"
 	"StudyPlatform/src/pkg/global"
 	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/src/pkg/jifen"
 
+	"strconv"
 	"image/color"
 
 	"fyne.io/fyne/v2"
@@ -29,6 +31,11 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 	showjifen := canvas.NewText("积分: "+global.File_JiFenReader.ReadStrSafe(), simple.Blue)
 	showjifen.TextSize = 20
 
+	showlevel := canvas.NewText(
+		"等级: "+strconv.Itoa(jifen.GetLevelFromJifen(global.File_JiFenReader.ReadIntSafe())),
+	simple.Blue)
+	showlevel.TextSize = 20
+
 	btnToOwn := widget.NewButton("个人主页", func(){
 		p.router(interfaces.PageID_OwnPage)
 	})
@@ -41,7 +48,8 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
 		simple.HorizonCenter(showjifen),
-		simple.Spacer(150),
+		simple.HorizonCenter(showlevel),
+		simple.Spacer(130),
 		container.NewGridWithColumns(2, 
 			simple.HorizonRight(btnToOwn),
 			simple.HorizonLeft(btnToShen),
