@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"fyne.io/fyne/v2"
@@ -16,6 +17,7 @@ func main() {
 	os.MkdirAll(global.File_FilePath, 0755)
 	os.MkdirAll(global.File_FilePathTongYong, 0755)
 	os.MkdirAll(global.File_FilePathTongYongReal, 0755)
+	os.MkdirAll(global.File_FilePathAncient, 0755)
 
     a := app.New()
 	a.Settings().SetTheme(&simple.Font{})
