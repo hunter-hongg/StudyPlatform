@@ -14,16 +14,16 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-type CalcMainPage struct {
+type CalcShopPage struct {
     router func(interfaces.PageID)
 }
 
-func NewCalcMainPage() *CalcMainPage {
-    return &CalcMainPage{}
+func NewCalcShopPage() *CalcShopPage {
+    return &CalcShopPage{}
 }
 
-func (p *CalcMainPage) GetContent() fyne.CanvasObject {
-	title := canvas.NewText("计算广场", color.Black)
+func (p *CalcShopPage) GetContent() fyne.CanvasObject {
+	title := canvas.NewText("兑换物品", color.Black)
 	title.TextSize = 27
 
 	showjis := canvas.NewText(
@@ -32,15 +32,7 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	showjis.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_MainPage)
-	})
-
-	btnToStart := widget.NewButton("开始计算", func(){
-		// p.router(interfaces.PageID_TimerMainPage)
-	})
-
-	btnToDui := widget.NewButton("兑换物品", func(){
-		p.router(interfaces.PageID_CalcShopPage)
+		p.router(interfaces.PageID_CalcMainPage)
 	})
 
 	vbox := container.NewVBox(
@@ -48,8 +40,6 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(20),
 		simple.HorizonCenter(showjis),
 		simple.Spacer(150),
-		simple.HorizonCenter(btnToStart),
-		simple.HorizonCenter(btnToDui),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
@@ -61,10 +51,10 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	)
 }
 
-func (p *CalcMainPage) GetID() interfaces.PageID {
-    return interfaces.PageID_CalcMainPage
+func (p *CalcShopPage) GetID() interfaces.PageID {
+    return interfaces.PageID_CalcShopPage
 }
 
-func (p *CalcMainPage) SetRouter(fn func(interfaces.PageID)) {
+func (p *CalcShopPage) SetRouter(fn func(interfaces.PageID)) {
     p.router = fn
 }
