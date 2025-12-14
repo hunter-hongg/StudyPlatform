@@ -11,6 +11,8 @@ const (
 	PageID_TongMainPage
 	PageID_TongJifenPage
 	PageID_CalcMainPage
+	PageID_CalcShopPage
+	PageID_AncientMainPage
 )
 
 type IPage interface {
