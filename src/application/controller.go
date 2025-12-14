@@ -26,6 +26,8 @@ func NewApp(window fyne.Window) *AppController {
 	c.registerPage(pages.NewCalcMainPage())
 	c.registerPage(pages.NewCalcShopPage())
 	c.registerPage(pages.NewAncientMainPage())
+	c.registerPage(pages.NewOwnThingMainPage())
+	c.registerPage(pages.NewOwnThingAllPage())
     
     return c
 }
