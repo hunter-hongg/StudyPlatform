@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 
@@ -10,6 +12,11 @@ import (
 	"StudyPlatform/src/pkg/simple"
 )
 func main() {
+	os.MkdirAll(global.File_FilePathBase, 0755)
+	os.MkdirAll(global.File_FilePath, 0755)
+	os.MkdirAll(global.File_FilePathTongYong, 0755)
+	os.MkdirAll(global.File_FilePathTongYongReal, 0755)
+
     a := app.New()
 	a.Settings().SetTheme(&simple.Font{})
     global.Main_Window = a.NewWindow("学习平台")
