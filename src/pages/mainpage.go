@@ -44,6 +44,10 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		// p.router(interfaces.PageID_OwnPage)
 	})
 
+	btnToCalc := widget.NewButton("计算广场", func(){
+		p.router(interfaces.PageID_CalcMainPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -53,6 +57,7 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		container.NewGridWithColumns(2, 
 			simple.HorizonRight(btnToOwn),
 			simple.HorizonLeft(btnToShen),
+			simple.HorizonRight(btnToCalc),
 		),
 		layout.NewSpacer(),
 	)
