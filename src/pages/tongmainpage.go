@@ -46,7 +46,7 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 	btnRule := widget.NewButton("兑换规则", func(){
 		rule := ""+
 				"通用货币兑换规则: \n"+
-				"1000积分 1通用货币"
+				"1000积分 <=> 1通用货币"
 		simple.DialogInfo(rule, global.Main_Window)
 	})
 
