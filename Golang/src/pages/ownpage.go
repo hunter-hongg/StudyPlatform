@@ -46,6 +46,10 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_TimerMainPage)
 	})
 
+	btnToTongMain := widget.NewButton("通用货币", func(){
+		p.router(interfaces.PageID_TongMainPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -53,6 +57,7 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showlevel),
 		simple.Spacer(130),
 		simple.HorizonCenter(btnToTimer),
+		simple.HorizonCenter(btnToTongMain),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),

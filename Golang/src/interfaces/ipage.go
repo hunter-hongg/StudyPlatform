@@ -8,6 +8,7 @@ const (
     PageID_MainPage PageID = iota
     PageID_OwnPage
 	PageID_TimerMainPage
+	PageID_TongMainPage
 )
 
 type IPage interface {
