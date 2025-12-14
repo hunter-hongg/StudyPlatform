@@ -18,5 +18,5 @@ grun:
 	$(TARGETDIR)/$(TARGETFILE2)
 rel: build 
 crun: 
-	$(TARGETDIR)/cpp/$(TARGETFILE2)
+	$(TARGETDIR)/cpp/squashfs-root/AppRun
 
