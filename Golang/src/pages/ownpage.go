@@ -3,6 +3,7 @@ package pages
 import (
 	"StudyPlatform/src/interfaces"
 	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/src/pkg/global"
 
 	"image/color"
 
@@ -24,6 +25,9 @@ func NewOwnPage() *OwnPage {
 func (p *OwnPage) GetContent() fyne.CanvasObject {
 	title := canvas.NewText("个人主页", color.Black)
 	title.TextSize = 27
+
+	showjifen := canvas.NewText("积分: "+global.File_JiFenReader.ReadStrSafe(), simple.Blue)
+	showjifen.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_MainPage)
