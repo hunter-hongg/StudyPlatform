@@ -33,3 +33,11 @@ func HorizonLeft(obj fyne.CanvasObject) *fyne.Container {
     
 	return horizontalCenter
 }
+
+func HorizonLeftHalf(obj fyne.CanvasObject) *fyne.Container {
+	return container.New(
+		layout.NewGridLayoutWithColumns(2),
+		obj,
+		layout.NewSpacer(), 
+	)
+}

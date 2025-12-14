@@ -22,6 +22,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewOwnPage())
 	c.registerPage(pages.NewTimerMainPage())
 	c.registerPage(pages.NewTongMainPage())
+	c.registerPage(pages.NewTongJifenPage())
     
     return c
 }

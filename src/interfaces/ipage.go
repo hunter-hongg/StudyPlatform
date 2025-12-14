@@ -9,6 +9,7 @@ const (
     PageID_OwnPage
 	PageID_TimerMainPage
 	PageID_TongMainPage
+	PageID_TongJifenPage
 )
 
 type IPage interface {
