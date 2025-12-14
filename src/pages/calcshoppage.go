@@ -35,11 +35,25 @@ func (p *CalcShopPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_CalcMainPage)
 	})
 
+	btnToJi := widget.NewButton("200计算币=>10积分", func(){
+		res, err := global.File_JiSuanBiReader.CanMinus(200)
+		if (!res) || (err != nil) {
+			simple.DialogInfo("取计算币出错", global.Main_Window)
+			return
+		}
+		global.File_JiFenReader.AddNum(10)
+		simple.DialogInfo("兑换成功", global.Main_Window)
+		p.router(interfaces.PageID_CalcShopPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
 		simple.HorizonCenter(showjis),
 		simple.Spacer(150),
+		container.NewGridWithColumns(3, 
+			simple.HorizonRight(btnToJi),
+		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
