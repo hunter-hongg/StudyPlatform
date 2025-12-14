@@ -40,6 +40,10 @@ func (p *TongJifenPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_TongMainPage)
 	})
 
+	tishi := canvas.NewText("请输入兑换通用货币数: ", simple.Blue)
+	tishi.TextSize = 20
+	inputTong := widget.NewEntry()
+	inputTong.Text = "请输入..."
 	// btnDuiJifen := widget.NewButton("积分兑换", func(){
 	// 	p.router(interfaces.PageID_TongJifenPage)
 	// })
@@ -56,8 +60,12 @@ func (p *TongJifenPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showjifen),
 		simple.HorizonCenter(showtong),
 		simple.Spacer(130),
-		// simple.HorizonCenter(btnRule),
-		// simple.HorizonCenter(btnDuiJifen),
+		simple.HorizonLeft(tishi),
+		container.New(
+			layout.NewGridLayoutWithColumns(2),
+			inputTong,
+			layout.NewSpacer(), 
+		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
