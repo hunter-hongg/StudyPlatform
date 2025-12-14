@@ -3,9 +3,7 @@ package pages
 import (
 	"StudyPlatform/src/interfaces"
 	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/jifen"
 	"StudyPlatform/src/pkg/simple"
-	"strconv"
 
 	"image/color"
 
@@ -29,7 +27,7 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	title.TextSize = 27
 
 	showjifen := canvas.NewText(
-		"积分: "+global.File_JiFenReader.ReadStrSafe(),	
+		"计算币: "+global.File_JiSuanBiReader.ReadStrSafe(),
 	simple.Blue)
 	showjifen.TextSize = 20
 
