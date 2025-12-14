@@ -44,15 +44,6 @@ func (p *TongJifenPage) GetContent() fyne.CanvasObject {
 	tishi.TextSize = 20
 	inputTong := widget.NewEntry()
 	inputTong.Text = "请输入..."
-	// btnDuiJifen := widget.NewButton("积分兑换", func(){
-	// 	p.router(interfaces.PageID_TongJifenPage)
-	// })
-	// btnRule := widget.NewButton("兑换规则", func(){
-	// 	rule := ""+
-	// 			"通用货币兑换规则: \n"+
-	// 			"1000积分 1通用货币"
-	// 	simple.DialogInfo(rule, global.Main_Window)
-	// })
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
