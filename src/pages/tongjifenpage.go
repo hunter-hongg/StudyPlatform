@@ -61,11 +61,7 @@ func (p *TongJifenPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showtong),
 		simple.Spacer(130),
 		simple.HorizonLeft(tishi),
-		container.New(
-			layout.NewGridLayoutWithColumns(2),
-			inputTong,
-			layout.NewSpacer(), 
-		),
+		simple.HorizonLeftHalf(inputTong),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
