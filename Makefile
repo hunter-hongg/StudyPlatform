@@ -1,25 +1,22 @@
-BUILD_DIR = ./build
-NPROC = `nproc`
+GOCMD = go 
+RUNCMD = run 
+BUILDCMD = build 
+SRCFILE = main.go
+SRCDIR = cmd
+TARGETFILE = StudyPlatform
+TARGETDIR = target
+TARGETFILE2 = 学习平台
 
-# all: 
-# 	@cd $(BUILD_DIR) && make -j$(NPROC) 
-# 	@target/学习平台
-# 	@rm -f log.log
-# fresh: 
-# 	@cd $(BUILD_DIR) && rm -rf * && cmake ..
-# launch:
-# 	@target/学习平台
-# 	@rm -f log.log
-# install:
-# 	cp target/学习平台 /usr/local/bin
-	# 同时复制依赖
-all: go 
-
+all: run 
 run: 
-	Cpp/target/学习平台
-go: 
-	cd Golang && make
-rel: 
-	cd Golang && make build
+	$(GOCMD) $(RUNCMD) $(SRCDIR)/$(SRCFILE)
+build: 
+	mkdir -p $(TARGETDIR)
+	$(GOCMD) $(BUILDCMD) -o $(TARGETDIR)/$(TARGETFILE) $(SRCDIR)/$(SRCFILE)
+	mv $(TARGETDIR)/$(TARGETFILE) $(TARGETDIR)/$(TARGETFILE2)
 grun: 
-	cd Golang && make run
+	$(TARGETDIR)/$(TARGETFILE2)
+rel: build 
+crun: 
+	$(TARGETDIR)/cpp/$(TARGETFILE2)
+
