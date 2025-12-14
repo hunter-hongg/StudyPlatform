@@ -40,16 +40,15 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_OwnPage)
 	})
 
+	btnDuiJifen := widget.NewButton("积分兑换", func(){
+		p.router(interfaces.PageID_TongJifenPage)
+	})
 	btnRule := widget.NewButton("兑换规则", func(){
 		rule := ""+
 				"通用货币兑换规则: \n"+
 				"1000积分 1通用货币"
 		simple.DialogInfo(rule, global.Main_Window)
 	})
-	// syn.Ignore(btnToTimer)
-	// btnToTongMain := widget.NewButton("通用货币", func(){
-	// 	p.router(interfaces.PageID_TongMainPage)
-	// })
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
@@ -58,7 +57,7 @@ func (p *TongMainPage) GetContent() fyne.CanvasObject {
 		// simple.HorizonCenter(showlevel),
 		simple.Spacer(150),
 		simple.HorizonCenter(btnRule),
-		// simple.HorizonCenter(btnToTongMain),
+		simple.HorizonCenter(btnDuiJifen),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
