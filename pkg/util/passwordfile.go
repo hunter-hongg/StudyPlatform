@@ -48,8 +48,8 @@ func validatePassword(password string) string {
 }
 
 // translateChar 字符转换辅助函数
-func translateChar(c byte, from, to string) (byte, error) {
-	index := strings.IndexByte(from, c)
+func translateChar(c rune, from, to string) (byte, error) {
+	index := strings.IndexRune(from, c)
 	if index == -1 {
 		return 0, errors.New("character not found in mapping table")
 	}
@@ -74,8 +74,9 @@ func (fp *FilePassword) ReadPassword() (string, error) {
 	if err != nil {
 		return "", fmt.Errorf("failed to open file: %s", fp.fileName)
 	}
+	content2 := strings.Trim(string(content), "\n")
 
-	return string(content), nil
+	return content2, nil
 }
 
 // ReadReal 将文件中的加密密码转换为真实数字
@@ -87,7 +88,7 @@ func (fp *FilePassword) ReadReal() (string, error) {
 
 	result := ""
 	for _, c := range encrypted {
-		translated, err := translateChar(byte(c), fp.password, original)
+		translated, err := translateChar(c, fp.password, original)
 		if err != nil {
 			return "", errors.New("error in character translation")
 		}
@@ -101,7 +102,7 @@ func (fp *FilePassword) Write(newNum int) error {
 	numStr := strconv.Itoa(newNum)
 	result := ""
 	for _, c := range numStr {
-		translated, err := translateChar(byte(c), original, fp.password)
+		translated, err := translateChar(c, original, fp.password)
 		if err != nil {
 			return errors.New("invalid number format")
 		}

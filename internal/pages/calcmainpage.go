@@ -1,11 +1,9 @@
 package pages
 
 import (
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/jifen"
-	"StudyPlatform/src/pkg/simple"
-	"strconv"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/internal/global"
+	"StudyPlatform/pkg/simple"
 
 	"image/color"
 
@@ -28,15 +26,10 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	title := canvas.NewText("计算广场", color.Black)
 	title.TextSize = 27
 
-	showjifen := canvas.NewText(
-		"积分: "+global.File_JiFenReader.ReadStrSafe(),	
+	showjis := canvas.NewText(
+		"计算币: "+global.File_JiSuanBiReader.ReadStrSafe(),
 	simple.Blue)
-	showjifen.TextSize = 20
-
-	// showlevel := canvas.NewText(
-	// 	"等级: "+strconv.Itoa(jifen.GetLevelFromJifen(global.File_JiFenReader.ReadIntSafe())),
-	// simple.Blue)
-	// showlevel.TextSize = 20
+	showjis.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_MainPage)
@@ -47,13 +40,13 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnToDui := widget.NewButton("兑换物品", func(){
-		// p.router(interfaces.PageID_TongMainPage)
+		p.router(interfaces.PageID_CalcShopPage)
 	})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
-		simple.HorizonCenter(showjifen),
+		simple.HorizonCenter(showjis),
 		simple.Spacer(150),
 		simple.HorizonCenter(btnToStart),
 		simple.HorizonCenter(btnToDui),
