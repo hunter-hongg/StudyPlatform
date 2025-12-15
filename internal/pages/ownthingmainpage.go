@@ -1,8 +1,8 @@
 package pages
 
 import (
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/pkg/simple"
 
 	_ "fmt"
 	"image/color"

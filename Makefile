@@ -4,7 +4,7 @@ BUILDCMD = build
 SRCFILE = main.go
 SRCDIR = cmd
 TARGETFILE = StudyPlatform
-TARGETDIR = target
+TARGETDIR = bin
 TARGETFILE2 = 学习平台
 
 all: run 

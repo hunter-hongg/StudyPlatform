@@ -2,7 +2,7 @@ package global
 
 import (
 	"os"
-	"StudyPlatform/src/pkg/util"
+	"StudyPlatform/pkg/util"
 )
 
 var (

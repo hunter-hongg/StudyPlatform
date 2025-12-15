@@ -1,7 +1,6 @@
 package util
 
 import (
-	"StudyPlatform/src/pkg/syn"
 	"errors"
 	"fmt"
 	"os"
@@ -108,7 +107,6 @@ func (fp *FilePassword) Write(newNum int) error {
 			return errors.New("invalid number format")
 		}
 		result += string(translated)
-		syn.Ignore(c)
 	}
 
 	file, err := os.Create(fp.fileName)

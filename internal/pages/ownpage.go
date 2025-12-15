@@ -1,10 +1,10 @@
 package pages
 
 import (
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/jifen"
-	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/internal/global"
+	"StudyPlatform/internal/jifen"
+	"StudyPlatform/pkg/simple"
 	"strconv"
 
 	"image/color"
