@@ -14,6 +14,7 @@ const (
 	PageID_TongJifenPage
 	PageID_CalcMainPage
 	PageID_CalcShopPage
+	PageID_CalcStartPage
 	PageID_AncientMainPage
 )
 

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
 	"fyne.io/fyne/v2"
@@ -19,7 +18,7 @@ func main() {
 	os.MkdirAll(global.File_FilePathTongYongReal, 0755)
 	os.MkdirAll(global.File_FilePathAncient, 0755)
 
-	fmt.Println("程序正常启动")
+	global.Logger.Info("程序正常启动")
 
     a := app.New()
 	a.Settings().SetTheme(&simple.Font{})
