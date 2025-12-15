@@ -2,8 +2,8 @@ package application
 
 import (
     "fyne.io/fyne/v2"
-    "StudyPlatform/src/interfaces"
-    "StudyPlatform/src/pages"
+    "StudyPlatform/internal/interfaces"
+    "StudyPlatform/internal/pages"
 )
 
 type AppController struct {
@@ -26,6 +26,8 @@ func NewApp(window fyne.Window) *AppController {
 	c.registerPage(pages.NewCalcMainPage())
 	c.registerPage(pages.NewCalcShopPage())
 	c.registerPage(pages.NewAncientMainPage())
+	c.registerPage(pages.NewOwnThingMainPage())
+	c.registerPage(pages.NewOwnThingAllPage())
     
     return c
 }

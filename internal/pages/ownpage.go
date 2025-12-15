@@ -1,10 +1,10 @@
 package pages
 
 import (
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/jifen"
-	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/internal/global"
+	"StudyPlatform/internal/jifen"
+	"StudyPlatform/pkg/simple"
 	"strconv"
 
 	"image/color"
@@ -46,6 +46,10 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_TimerMainPage)
 	})
 
+	btnToThings := widget.NewButton("所有物品", func(){
+		p.router(interfaces.PageID_OwnThingMainPage)
+	})
+
 	btnToTongMain := widget.NewButton("通用货币", func(){
 		p.router(interfaces.PageID_TongMainPage)
 	})
@@ -57,6 +61,7 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showlevel),
 		simple.Spacer(130),
 		simple.HorizonCenter(btnToTimer),
+		simple.HorizonCenter(btnToThings),
 		simple.HorizonCenter(btnToTongMain),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),

@@ -1,9 +1,9 @@
 package pages
 
 import (
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/internal/global"
+	"StudyPlatform/pkg/simple"
 
 	"image/color"
 

@@ -1,7 +1,7 @@
 package global
 
 import (
-	"StudyPlatform/src/pkg/util"
+	"StudyPlatform/pkg/util"
 
 	"fyne.io/fyne/v2"
 )
