@@ -1,9 +1,9 @@
 package pages
 
 import (
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/internal/global"
+	"StudyPlatform/pkg/simple"
 
 	"image/color"
 
@@ -57,6 +57,17 @@ func (p *CalcShopPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_CalcShopPage)
 	})
 
+	btnToJin := widget.NewButton("300计算币=>2金币", func(){
+		res, err := global.File_JiSuanBiReader.CanMinus(300)
+		if (!res) || (err != nil) {
+			simple.DialogInfo("取计算币出错", global.Main_Window)
+			return
+		}
+		global.File_TongQianReader.AddNum(500)
+		simple.DialogInfo("兑换成功", global.Main_Window)
+		p.router(interfaces.PageID_CalcShopPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -65,6 +76,7 @@ func (p *CalcShopPage) GetContent() fyne.CanvasObject {
 		container.NewGridWithColumns(3, 
 			simple.HorizonRight(btnToJi),
 			simple.HorizonCenter(btnToTong),
+			simple.HorizonLeft(btnToJin),
 		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),

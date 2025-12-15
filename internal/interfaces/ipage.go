@@ -7,6 +7,8 @@ type PageID int
 const (
     PageID_MainPage PageID = iota
     PageID_OwnPage
+	PageID_OwnThingMainPage
+	PageID_OwnThingAllPage
 	PageID_TimerMainPage
 	PageID_TongMainPage
 	PageID_TongJifenPage

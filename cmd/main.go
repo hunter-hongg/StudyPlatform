@@ -7,10 +7,10 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 
-	"StudyPlatform/src/application"
-	"StudyPlatform/src/interfaces"
-	"StudyPlatform/src/pkg/global"
-	"StudyPlatform/src/pkg/simple"
+	"StudyPlatform/internal/application"
+	"StudyPlatform/internal/interfaces"
+	"StudyPlatform/internal/global"
+	"StudyPlatform/pkg/simple"
 )
 func main() {
 	os.MkdirAll(global.File_FilePathBase, 0755)
