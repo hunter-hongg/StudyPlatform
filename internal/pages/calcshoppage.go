@@ -58,13 +58,16 @@ func (p *CalcShopPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnToJin := widget.NewButton("300计算币=>2金币", func(){
+		global.Logger.Debug("正常启动")
 		res, err := global.File_JiSuanBiReader.CanMinus(300)
 		if (!res) || (err != nil) {
 			simple.DialogInfo("取计算币出错", global.Main_Window)
+			global.Logger.Warn("取计算币出错")
 			return
 		}
-		global.File_TongQianReader.AddNum(500)
+		global.File_JinBiReader.AddNum(2)
 		simple.DialogInfo("兑换成功", global.Main_Window)
+		global.Logger.Info("兑换成功")
 		p.router(interfaces.PageID_CalcShopPage)
 	})
 
