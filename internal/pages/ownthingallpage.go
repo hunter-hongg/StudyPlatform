@@ -24,6 +24,8 @@ func NewOwnThingAllPage() *OwnThingAllPage {
 }
 
 func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
+	global.Logger.Debug("正常启动")
+
 	title := canvas.NewText("物品查看", color.Black)
 	title.TextSize = 27
 
