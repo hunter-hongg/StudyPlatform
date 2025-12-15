@@ -21,16 +21,16 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-type CalcMainPage struct {
+type CalcStartPage struct {
     router func(interfaces.PageID)
 }
 
-func NewCalcMainPage() *CalcMainPage {
-    return &CalcMainPage{}
+func NewCalcStartPage() *CalcStartPage {
+    return &CalcStartPage{}
 }
 
-func (p *CalcMainPage) GetContent() fyne.CanvasObject {
-	title := canvas.NewText("计算广场", color.Black)
+func (p *CalcStartPage) GetContent() fyne.CanvasObject {
+	title := canvas.NewText("开始计算", color.Black)
 	title.TextSize = 27
 
 	showjis := canvas.NewText(
@@ -39,24 +39,24 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	showjis.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_MainPage)
+		p.router(interfaces.PageID_CalcMainPage)
 	})
 
-	btnToStart := widget.NewButton("开始计算", func(){
-		p.router(interfaces.PageID_CalcStartPage)
-	})
-
-	btnToDui := widget.NewButton("兑换物品", func(){
-		p.router(interfaces.PageID_CalcShopPage)
-	})
+	// btnToStart := widget.NewButton("开始计算", func(){
+	// 	p.router(interfaces.PageID_CalcStartPage)
+	// })
+	//
+	// btnToDui := widget.NewButton("兑换物品", func(){
+	// 	p.router(interfaces.PageID_CalcShopPage)
+	// })
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
 		simple.HorizonCenter(showjis),
 		simple.Spacer(150),
-		simple.HorizonCenter(btnToStart),
-		simple.HorizonCenter(btnToDui),
+		// simple.HorizonCenter(btnToStart),
+		// simple.HorizonCenter(btnToDui),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
@@ -68,10 +68,10 @@ func (p *CalcMainPage) GetContent() fyne.CanvasObject {
 	)
 }
 
-func (p *CalcMainPage) GetID() interfaces.PageID {
-    return interfaces.PageID_CalcMainPage
+func (p *CalcStartPage) GetID() interfaces.PageID {
+    return interfaces.PageID_CalcStartPage
 }
 
-func (p *CalcMainPage) SetRouter(fn func(interfaces.PageID)) {
+func (p *CalcStartPage) SetRouter(fn func(interfaces.PageID)) {
     p.router = fn
 }
