@@ -42,10 +42,10 @@ func (p *CalcStartPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_CalcMainPage)
 	})
 
-	// btnToStart := widget.NewButton("开始计算", func(){
-	// 	p.router(interfaces.PageID_CalcStartPage)
-	// })
-	//
+	btnToAdd := widget.NewButton("加减练习", func(){
+		p.router(interfaces.PageID_CalcStartAddPage)
+	})
+
 	// btnToDui := widget.NewButton("兑换物品", func(){
 	// 	p.router(interfaces.PageID_CalcShopPage)
 	// })
@@ -55,7 +55,7 @@ func (p *CalcStartPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(20),
 		simple.HorizonCenter(showjis),
 		simple.Spacer(150),
-		// simple.HorizonCenter(btnToStart),
+		simple.HorizonCenter(btnToAdd),
 		// simple.HorizonCenter(btnToDui),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
