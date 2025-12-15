@@ -1,5 +1,12 @@
 package pages
 
+/* 
+计算币获得规则: 
+加减练习: 
+限5次，答对+50计算币
+
+*/
+
 import (
 	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/internal/global"
