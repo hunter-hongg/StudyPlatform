@@ -16,6 +16,7 @@ const (
 	PageID_CalcShopPage
 	PageID_CalcStartPage
 	PageID_CalcStartAddPage
+	PageID_CalcStartTimPage
 	PageID_AncientMainPage
 )
 
