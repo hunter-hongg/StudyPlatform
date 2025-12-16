@@ -50,6 +50,10 @@ func (p *CalcStartPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_CalcStartTimPage)
 	})
 
+	btnToDiv := widget.NewButton("除法练习", func(){
+		p.router(interfaces.PageID_CalcStartDivPage)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -57,6 +61,7 @@ func (p *CalcStartPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(150),
 		simple.HorizonCenter(btnToAdd),
 		simple.HorizonCenter(btnToTim),
+		simple.HorizonCenter(btnToDiv),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
