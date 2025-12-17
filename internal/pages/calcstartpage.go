@@ -46,9 +46,13 @@ func (p *CalcStartPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_CalcStartAddPage)
 	})
 
-	// btnToDui := widget.NewButton("兑换物品", func(){
-	// 	p.router(interfaces.PageID_CalcShopPage)
-	// })
+	btnToTim := widget.NewButton("乘法练习", func(){
+		p.router(interfaces.PageID_CalcStartTimPage)
+	})
+
+	btnToDiv := widget.NewButton("除法练习", func(){
+		p.router(interfaces.PageID_CalcStartDivPage)
+	})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
@@ -56,7 +60,8 @@ func (p *CalcStartPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showjis),
 		simple.Spacer(150),
 		simple.HorizonCenter(btnToAdd),
-		// simple.HorizonCenter(btnToDui),
+		simple.HorizonCenter(btnToTim),
+		simple.HorizonCenter(btnToDiv),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
