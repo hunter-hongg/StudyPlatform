@@ -19,10 +19,25 @@ func NewOncefile(filename string) *Oncefile {
 func (of_ Oncefile) CheckTimes() bool {
 	_, err := of_.readFile()
 	if os.IsNotExist(err) {
-		os.Create(of_.file)
 		return true
 	}
 	return false
+}
+
+func (of_ Oncefile) Use() error {
+	_, err := of_.readFile()
+	if os.IsNotExist(err) {
+		fh, err2 := os.Create(of_.file)
+		if err2 != nil {
+			return err2
+		}
+		defer fh.Close()
+		return nil
+	}
+	if err != nil {
+		return err
+	}
+	return nil
 }
 
 func (of_ Oncefile) readFile() (string, error) {

@@ -9,6 +9,7 @@ const (
     PageID_OwnPage
 	PageID_OwnThingMainPage
 	PageID_OwnThingAllPage
+	PageID_LiHePage
 	PageID_TimerMainPage
 	PageID_TongMainPage
 	PageID_TongJifenPage
