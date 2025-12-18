@@ -14,6 +14,7 @@ var (
 	File_FilePathTongYong           string              = File_FilePath + "tyhbdirapbb/";
     File_FilePathTongYongReal       string              = File_FilePathTongYong + "fptyr/";
 	File_FilePathAncient            string              = File_FilePath + "adirspfm/";
+	File_FilePathCard               string              = File_FilePath + "fpcdiralf/";
 )
 
 var (
@@ -47,8 +48,21 @@ var (
 		"张昭","顾雍","阚泽","程秉","虞翻",
 		"张南","冯习","魏延","姜维","邓艾","钟会",
 	}
+
+	File_Han1CardsName              []string            = []string{
+		"刘邦","刘盈","刘恒","刘启","刘彻",
+		"刘询","刘秀","刘庄","刘炟","刘贺",
+		"萧何","韩信","张良","英布","吕后",
+		"周勃","陈平","曹参","卫青","霍光",
+		"王莽","邓禹","寇恂","班超","班固",
+		"班昭","张骞","马援","苏武","李广",
+		"刘安","刘长","刘歆","刘玄","王匡",
+		"王凤","董卓","刘辩","刘协","刘宏",
+		"伏完","董承","杨彪","王允","孔融",
+	}
 )
 
 var (
 	File_SanGuo1Card                *util.Cards         = util.NewCards(File_FilePath+"capsgc1.txt",File_SanGuo1CardsName,9573);
+	File_Han1Card                   *util.Cards         = util.NewCards(File_FilePathCard+"h1cac1.cac",File_Han1CardsName,7184);
 )
