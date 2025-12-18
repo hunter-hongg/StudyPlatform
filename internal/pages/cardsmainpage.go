@@ -33,10 +33,10 @@ func (p *OwnThingCardsMainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_OwnThingPagePage)
 	})
 	
-	btnCards := widget.NewButton("汉朝卡牌1", func() {
-		p.router(interfaces.PageID_OwnThingCardsHan1Page)
+	btnCards := widget.NewButton("三国卡牌1", func() {
+		p.router(interfaces.PageID_OwnThingCardsSanGuo1Page)
 	})
-
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
