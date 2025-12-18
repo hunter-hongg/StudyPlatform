@@ -11,6 +11,7 @@ const (
 	PageID_OwnThingAllPage
 	PageID_OwnThingPagePage
 	PageID_OwnThingCardsMainPage
+	PageID_OwnThingCardsHan1Page
 	PageID_LiHePage
 	PageID_TimerMainPage
 	PageID_TongMainPage

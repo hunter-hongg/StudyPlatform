@@ -34,6 +34,7 @@ func NewApp(window fyne.Window) *AppController {
 	c.registerPage(pages.NewCalcStartDivPage())
     c.registerPage(pages.NewLiHePage())
     c.registerPage(pages.NewOwnThingPagePage())
+    c.registerPage(pages.NewOwnThingCardsMainPage())
     
     return c
 }

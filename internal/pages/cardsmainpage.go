@@ -15,26 +15,26 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-type OwnThingPagePage struct {
+type OwnThingCardsMainPage struct {
     router func(interfaces.PageID)
 }
 
-func NewOwnThingPagePage() *OwnThingPagePage {
-    return &OwnThingPagePage{}
+func NewOwnThingCardsMainPage() *OwnThingCardsMainPage {
+    return &OwnThingCardsMainPage{}
 }
 
-func (p *OwnThingPagePage) GetContent() fyne.CanvasObject {
+func (p *OwnThingCardsMainPage) GetContent() fyne.CanvasObject {
 	global.Logger.Debug("正常启动")
 
-	title := canvas.NewText("物品主页", color.Black)
+	title := canvas.NewText("我的卡牌", color.Black)
 	title.TextSize = 27
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_OwnThingMainPage)
+		p.router(interfaces.PageID_OwnThingPagePage)
 	})
 	
-	btnCards := widget.NewButton("我的卡牌", func() {
-		p.router(interfaces.PageID_OwnThingCardsMainPage)
+	btnCards := widget.NewButton("汉朝卡牌1", func() {
+		p.router(interfaces.PageID_OwnThingCardsHan1Page)
 	})
 
 	vbox := container.NewVBox(
@@ -52,10 +52,10 @@ func (p *OwnThingPagePage) GetContent() fyne.CanvasObject {
 	)
 }
 
-func (p *OwnThingPagePage) GetID() interfaces.PageID {
-    return interfaces.PageID_OwnThingPagePage
+func (p *OwnThingCardsMainPage) GetID() interfaces.PageID {
+    return interfaces.PageID_OwnThingCardsMainPage
 }
 
-func (p *OwnThingPagePage) SetRouter(fn func(interfaces.PageID)) {
+func (p *OwnThingCardsMainPage) SetRouter(fn func(interfaces.PageID)) {
     p.router = fn
 }
