@@ -24,3 +24,31 @@ var (
 	File_TongQianReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
 	File_JinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"rd.conc","apslfnt104")
 )
+
+var (
+	File_CalcAddCheck               *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck1.txt",1049,7)
+	File_CalcTimesCheck             *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck2.txt",305,5)
+	File_CalcDivCheck               *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck3.chkl",302,5)
+)
+
+var (
+	File_BasicLiHeOnce              *util.Oncefile      = util.NewOncefile(File_FilePath+"onfiblho.of.ooo")
+)
+
+var (
+	File_SanGuo1CardsName           []string            = []string{
+		"卧龙","凤雏","曹操","孙权","刘备",
+		"关羽","张飞","马超","黄忠","赵云",
+		"张辽","徐晃","张郃","于禁","乐进",
+		"许褚","典韦","关兴","张苞","曹纯",
+		"周瑜","鲁肃","吕蒙","陆逊","陆抗",
+		"徐盛","丁奉","马忠","潘璋","黄盖",
+		"郭嘉","程昱","荀彧","荀攸","荀谌",
+		"张昭","顾雍","阚泽","程秉","虞翻",
+		"张南","冯习","魏延","姜维","邓艾","钟会",
+	}
+)
+
+var (
+	File_SanGuo1Card                *util.Cards         = util.NewCards(File_FilePath+"capsgc1.txt",File_SanGuo1CardsName,9573);
+)
