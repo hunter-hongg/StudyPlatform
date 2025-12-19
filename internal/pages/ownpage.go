@@ -50,6 +50,10 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_OwnThingMainPage)
 	})
 
+	btnToLihe := widget.NewButton("礼盒查看", func(){
+		p.router(interfaces.PageID_LiHePage)
+	})
+
 	btnToTongMain := widget.NewButton("通用货币", func(){
 		p.router(interfaces.PageID_TongMainPage)
 	})
@@ -59,9 +63,10 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(20),
 		simple.HorizonCenter(showjifen),
 		simple.HorizonCenter(showlevel),
-		simple.Spacer(130),
+		simple.Spacer(100),
 		simple.HorizonCenter(btnToTimer),
 		simple.HorizonCenter(btnToThings),
+		simple.HorizonCenter(btnToLihe),
 		simple.HorizonCenter(btnToTongMain),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
