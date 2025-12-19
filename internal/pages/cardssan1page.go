@@ -15,18 +15,18 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-type OwnThingCardsHan1Page struct {
+type OwnThingCardsSanGuo1Page struct {
     router func(interfaces.PageID)
 }
 
-func NewOwnThingCardsHan1Page() *OwnThingCardsHan1Page {
-    return &OwnThingCardsHan1Page{}
+func NewOwnThingCardsSanGuo1Page() *OwnThingCardsSanGuo1Page {
+    return &OwnThingCardsSanGuo1Page{}
 }
 
-func (p *OwnThingCardsHan1Page) GetContent() fyne.CanvasObject {
+func (p *OwnThingCardsSanGuo1Page) GetContent() fyne.CanvasObject {
 	global.Logger.Debug("正常启动")
 
-	title := canvas.NewText("汉朝卡牌1", color.Black)
+	title := canvas.NewText("三国卡牌1", color.Black)
 	title.TextSize = 27
 
 	btnBack := widget.NewButton("返回", func(){
@@ -35,9 +35,9 @@ func (p *OwnThingCardsHan1Page) GetContent() fyne.CanvasObject {
 
 	var cards []fyne.CanvasObject
 
-	gett := global.File_Han1Card.Get()
+	gett := global.File_SanGuo1Card.Get()
 	for _, i := range gett {
-		cards = append(cards, simple.HorizonCenter(widget.NewButton(i+"\n珍藏", func(){})))
+		cards = append(cards, simple.HorizonCenter(widget.NewButton(i+"\n稀有", func(){})))
 	}
 	
 	vbox := container.NewVBox(
@@ -55,10 +55,10 @@ func (p *OwnThingCardsHan1Page) GetContent() fyne.CanvasObject {
 	)
 }
 
-func (p *OwnThingCardsHan1Page) GetID() interfaces.PageID {
-    return interfaces.PageID_OwnThingCardsHan1Page
+func (p *OwnThingCardsSanGuo1Page) GetID() interfaces.PageID {
+    return interfaces.PageID_OwnThingCardsSanGuo1Page
 }
 
-func (p *OwnThingCardsHan1Page) SetRouter(fn func(interfaces.PageID)) {
+func (p *OwnThingCardsSanGuo1Page) SetRouter(fn func(interfaces.PageID)) {
     p.router = fn
 }
