@@ -1,9 +1,10 @@
 package pages
 
 import (
-	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/internal/global"
+	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/pkg/simple"
+	"strconv"
 
 	_ "fmt"
 	"image/color"
@@ -26,6 +27,9 @@ func NewOwnThingAllPage() *OwnThingAllPage {
 func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
 	global.Logger.Debug("正常启动")
 
+	cardCount := len(global.File_Han1Card.Get()) +
+				 len(global.File_SanGuo1Card.Get())
+
 	title := canvas.NewText("物品查看", color.Black)
 	title.TextSize = 27
 
@@ -35,6 +39,7 @@ func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
 
 	btnJifen := widget.NewButton("积分: "+global.File_JiFenReader.ReadStrSafe(), func(){})
 	btnJinbi := widget.NewButton("金币: "+global.File_JinBiReader.ReadStrSafe(), func(){})
+	btnCards := widget.NewButton("卡牌: "+strconv.Itoa(cardCount)+"张", func(){})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
@@ -42,7 +47,7 @@ func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
 		container.NewGridWithColumns(3, 
 			btnJifen, layout.NewSpacer(), layout.NewSpacer(),
 			layout.NewSpacer(), btnJinbi, layout.NewSpacer(), 
-			layout.NewSpacer(), layout.NewSpacer(), layout.NewSpacer(), 
+			layout.NewSpacer(), btnCards, layout.NewSpacer(), 
 		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
