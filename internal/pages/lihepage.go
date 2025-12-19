@@ -29,7 +29,7 @@ func (p *LiHePage) GetContent() fyne.CanvasObject {
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_OwnPage)
 	})
-
+	
 	btnBasic := widget.NewButton("初始基础礼盒", func(){})
 	var btnBasicStatus fyne.CanvasObject
 	switch global.File_BasicLiHeOnce.CheckTimes() {
