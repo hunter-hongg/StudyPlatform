@@ -8,10 +8,12 @@ const (
     PageID_MainPage PageID = iota
     PageID_OwnPage
 	PageID_OwnThingMainPage
+	PageID_OwnThingShopPage
 	PageID_OwnThingAllPage
 	PageID_OwnThingPagePage
 	PageID_OwnThingCardsMainPage
 	PageID_OwnThingCardsSanGuo1Page
+	PageID_OwnThingCardsHan1Page
 	PageID_LiHePage
 	PageID_TimerMainPage
 	PageID_TongMainPage

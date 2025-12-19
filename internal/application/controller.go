@@ -36,6 +36,8 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewOwnThingPagePage())
     c.registerPage(pages.NewOwnThingCardsMainPage())
     c.registerPage(pages.NewOwnThingCardsSanGuo1Page())
+    c.registerPage(pages.NewOwnThingCardsHan1Page())
+    c.registerPage(pages.NewOwnThingShopPage())
     
     return c
 }
