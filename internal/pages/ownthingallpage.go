@@ -38,6 +38,7 @@ func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnJifen := widget.NewButton("积分: "+global.File_JiFenReader.ReadStrSafe(), func(){})
+	btnXianbi := widget.NewButton("仙币: "+global.File_XianBiReader.ReadStrSafe(), func() {})
 	btnJinbi := widget.NewButton("金币: "+global.File_JinBiReader.ReadStrSafe(), func(){})
 	btnCards := widget.NewButton("卡牌: "+strconv.Itoa(cardCount)+"张", func(){})
 
@@ -45,7 +46,7 @@ func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
 		container.NewGridWithColumns(3, 
-			btnJifen, layout.NewSpacer(), layout.NewSpacer(),
+			btnJifen, btnXianbi, layout.NewSpacer(),
 			layout.NewSpacer(), btnJinbi, layout.NewSpacer(), 
 			layout.NewSpacer(), btnCards, layout.NewSpacer(), 
 		),

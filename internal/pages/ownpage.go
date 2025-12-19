@@ -63,7 +63,7 @@ func (p *OwnPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(20),
 		simple.HorizonCenter(showjifen),
 		simple.HorizonCenter(showlevel),
-		simple.Spacer(130),
+		simple.Spacer(100),
 		simple.HorizonCenter(btnToTimer),
 		simple.HorizonCenter(btnToThings),
 		simple.HorizonCenter(btnToLihe),
