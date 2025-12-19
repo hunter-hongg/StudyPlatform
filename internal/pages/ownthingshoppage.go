@@ -71,7 +71,22 @@ func (p *OwnThingShopPage) GetContent() fyne.CanvasObject {
 		}
 		global.File_XianBiReader.AddNum(40)
 		simple.DialogInfo("购买成功", global.Main_Window)
-		return
+	})
+	btnSold3 := widget.NewButton("200积分 => 175铜钱", func(){
+		if res, err := global.File_JiFenReader.CanMinus(200); (!res) || (err != nil) {
+			simple.DialogInfo("取出积分失败", global.Main_Window)
+			return
+		}
+		global.File_TongQianReader.AddNum(175)
+		simple.DialogInfo("购买成功", global.Main_Window)
+	})
+	btnSold4 := widget.NewButton("400积分 => 5金币", func() {
+		if res, err := global.File_JiFenReader.CanMinus(400); (!res) || (err != nil) {
+			simple.DialogInfo("取出积分失败", global.Main_Window)
+			return
+		}
+		global.File_JinBiReader.AddNum(5)
+		simple.DialogInfo("购买成功", global.Main_Window)
 	})
 
 	vbox := container.NewVBox(
@@ -80,6 +95,8 @@ func (p *OwnThingShopPage) GetContent() fyne.CanvasObject {
 		container.NewGridWithColumns(3, 
 			simple.HorizonRight(btnSold1),
 			simple.HorizonCenter(btnSold2),
+			simple.HorizonLeft(btnSold3),
+			simple.HorizonRight(btnSold4),
 		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
