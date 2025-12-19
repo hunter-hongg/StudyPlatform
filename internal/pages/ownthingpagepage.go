@@ -36,10 +36,14 @@ func (p *OwnThingPagePage) GetContent() fyne.CanvasObject {
 	btnCards := widget.NewButton("我的卡牌", func() {
 		p.router(interfaces.PageID_OwnThingCardsMainPage)
 	})
+	btnYinbi := widget.NewButton("我的银币", func() {
+		p.router(interfaces.PageID_OwnThingYinbiPage)
+	})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
+		simple.HorizonCenter(btnYinbi),
 		simple.HorizonCenter(btnCards),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
