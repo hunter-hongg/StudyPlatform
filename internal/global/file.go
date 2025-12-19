@@ -25,6 +25,7 @@ var (
 	File_TongQianReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
 	File_XianBiReader               *util.FilePassword  = util.NewFilePassword(File_FilePath+"xianbc.conc","woapf20sl1");
 	File_JinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"rd.conc","apslfnt104")
+	File_YinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"yb.conc.sdpg.1659", "apfjr12409");
 )
 
 var (
