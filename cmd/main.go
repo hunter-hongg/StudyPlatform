@@ -7,9 +7,10 @@ import (
 	"fyne.io/fyne/v2/app"
 
 	"StudyPlatform/internal/application"
-	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/internal/global"
+	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/pkg/simple"
+	"StudyPlatform/pkg/util"
 )
 func main() {
 	os.MkdirAll(global.File_FilePathBase, 0755)
@@ -18,6 +19,7 @@ func main() {
 	os.MkdirAll(global.File_FilePathTongYongReal, 0755)
 	os.MkdirAll(global.File_FilePathAncient, 0755)
 
+	global.Logger.SetLevel(util.LevelInfo)
 	global.Logger.Info("程序正常启动")
 
     a := app.New()
