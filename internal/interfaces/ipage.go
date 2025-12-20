@@ -31,6 +31,7 @@ const (
 	PageID_CalcStartDivPage
 	PageID_AncientMainPage
 	PageID_ToolsPage
+	PageID_BankMainPage
 )
 
 type IPage interface {
