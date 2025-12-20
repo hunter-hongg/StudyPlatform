@@ -15,32 +15,29 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-type OwnThingBaoshiPage struct {
+type OwnThingBaoshiChouAllPage struct {
     router func(interfaces.PageID)
 }
 
-func NewOwnThingBaoshiPage() *OwnThingBaoshiPage {
-    return &OwnThingBaoshiPage{}
+func NewOwnThingBaoshiChouAllPage() *OwnThingBaoshiChouAllPage {
+    return &OwnThingBaoshiChouAllPage{}
 }
 
-func (p *OwnThingBaoshiPage) GetContent() fyne.CanvasObject {
+func (p *OwnThingBaoshiChouAllPage) GetContent() fyne.CanvasObject {
 	global.Logger.Debug("正常启动")
 
-	title := canvas.NewText("我的宝石", color.Black)
+	title := canvas.NewText("宝石抽奖", color.Black)
 	title.TextSize = 27
 
 	showbaoshi := canvas.NewText("宝石: "+global.File_BaoshiReader.ReadStrSafe(), simple.Blue)
 	showbaoshi.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_OwnThingPagePage)
+		p.router(interfaces.PageID_OwnThingBaoshiPage)
 	})
 	
-	btnGet := widget.NewButton("获取宝石", func() {
-		p.router(interfaces.PageID_OwnThingBaoshiShopPage)
-	})
-	btnChou := widget.NewButton("宝石抽奖", func() {
-		p.router(interfaces.PageID_OwnThingBaoshiChouAllPage)
+	btnChou1 := widget.NewButton("宝石抽奖1", func() {
+		p.router(interfaces.PageID_OwnThingBaoshiChou1Page)
 	})
 
 	vbox := container.NewVBox(
@@ -48,8 +45,7 @@ func (p *OwnThingBaoshiPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(20),
 		simple.HorizonCenter(showbaoshi),
 		simple.Spacer(130),
-		simple.HorizonCenter(btnGet),
-		simple.HorizonCenter(btnChou),
+		simple.HorizonCenter(btnChou1),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
@@ -61,10 +57,10 @@ func (p *OwnThingBaoshiPage) GetContent() fyne.CanvasObject {
 	)
 }
 
-func (p *OwnThingBaoshiPage) GetID() interfaces.PageID {
-    return interfaces.PageID_OwnThingBaoshiPage
+func (p *OwnThingBaoshiChouAllPage) GetID() interfaces.PageID {
+    return interfaces.PageID_OwnThingBaoshiChouAllPage
 }
 
-func (p *OwnThingBaoshiPage) SetRouter(fn func(interfaces.PageID)) {
+func (p *OwnThingBaoshiChouAllPage) SetRouter(fn func(interfaces.PageID)) {
     p.router = fn
 }
