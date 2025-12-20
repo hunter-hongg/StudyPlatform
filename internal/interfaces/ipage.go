@@ -32,6 +32,7 @@ const (
 	PageID_AncientMainPage
 	PageID_ToolsPage
 	PageID_BankMainPage
+	PageID_BankCunPage
 )
 
 type IPage interface {

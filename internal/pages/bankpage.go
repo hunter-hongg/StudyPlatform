@@ -36,7 +36,7 @@ func (p *BankMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnCun := widget.NewButton("存储积分", func(){
-		// p.router(interfaces.PageID_TimerMainPage)
+		p.router(interfaces.PageID_BankCunPage)
 	})
 
 	btnGet := widget.NewButton("领取积分", func(){
