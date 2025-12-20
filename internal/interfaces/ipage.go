@@ -16,6 +16,8 @@ const (
 	PageID_OwnThingCardsHan1Page
 	PageID_OwnThingYinbiPage
 	PageID_OwnThingBaoshiPage
+	PageID_OwnThingBaoshiShopPage
+	PageID_OwnThingBaoshiChouAllPage
 	PageID_LiHePage
 	PageID_TimerMainPage
 	PageID_TongMainPage
