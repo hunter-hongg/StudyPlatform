@@ -37,7 +37,7 @@ func (p *OwnThingBaoshiPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btnGet := widget.NewButton("获取宝石", func() {
-		// p.router(interfaces.PageID_OwnThingCardsMainPage)
+		p.router(interfaces.PageID_OwnThingBaoshiShopPage)
 	})
 	btnChou := widget.NewButton("宝石抽奖", func() {
 		// p.router(interfaces.PageID_OwnThingYinbiPage)
