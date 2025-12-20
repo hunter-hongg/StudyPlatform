@@ -46,6 +46,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewToolsPage())
     c.registerPage(pages.NewBankMainPage())
     c.registerPage(pages.NewBankCunPage())
+    c.registerPage(pages.NewBankGetPage())
     
     return c
 }

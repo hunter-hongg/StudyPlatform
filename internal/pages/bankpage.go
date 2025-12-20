@@ -40,7 +40,7 @@ func (p *BankMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnGet := widget.NewButton("领取积分", func(){
-		// p.router(interfaces.PageID_OwnThingMainPage)
+		p.router(interfaces.PageID_BankGetPage)
 	})
 
 	btnJuan := widget.NewButton("捐献积分", func(){
