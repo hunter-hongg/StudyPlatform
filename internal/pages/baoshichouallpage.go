@@ -37,7 +37,7 @@ func (p *OwnThingBaoshiChouAllPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btnChou1 := widget.NewButton("宝石抽奖1", func() {
-		// p.router(interfaces.PageID_OwnThingBaoshiChouAllPage)
+		p.router(interfaces.PageID_OwnThingBaoshiChou1Page)
 	})
 
 	vbox := container.NewVBox(

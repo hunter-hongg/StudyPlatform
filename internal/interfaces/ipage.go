@@ -18,6 +18,7 @@ const (
 	PageID_OwnThingBaoshiPage
 	PageID_OwnThingBaoshiShopPage
 	PageID_OwnThingBaoshiChouAllPage
+	PageID_OwnThingBaoshiChou1Page
 	PageID_LiHePage
 	PageID_TimerMainPage
 	PageID_TongMainPage
@@ -29,6 +30,8 @@ const (
 	PageID_CalcStartTimPage
 	PageID_CalcStartDivPage
 	PageID_AncientMainPage
+	PageID_ToolsPage
+	PageID_BankMainPage
 )
 
 type IPage interface {
