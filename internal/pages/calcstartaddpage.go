@@ -71,7 +71,7 @@ func (p *CalcStartAddPage) GetContent() fyne.CanvasObject {
 	global.CalcNumber1_CalcAdd = int(rndv1)
 	global.CalcNumber2_CalcAdd = int(rndv2)
 	global.CalcOp_CalcAdd      = int(op)
-
+	
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_CalcStartPage)
 	})

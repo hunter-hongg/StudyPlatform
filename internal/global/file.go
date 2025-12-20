@@ -15,6 +15,7 @@ var (
     File_FilePathTongYongReal       string              = File_FilePathTongYong + "fptyr/";
 	File_FilePathAncient            string              = File_FilePath + "adirspfm/";
 	File_FilePathCard               string              = File_FilePath + "fpcdiralf/";
+	File_FilePathBaoShi             string              = File_FilePath + "baosdirfos/";
 )
 
 var (
@@ -25,6 +26,8 @@ var (
 	File_TongQianReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
 	File_XianBiReader               *util.FilePassword  = util.NewFilePassword(File_FilePath+"xianbc.conc","woapf20sl1");
 	File_JinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"rd.conc","apslfnt104")
+	File_YinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"yb.conc.sdpg.1659", "apfjr12409");
+	File_BaoshiReader               *util.FilePassword  = util.NewFilePassword(File_FilePathBaoShi+"mbsc.conc","rosl3510dm");
 )
 
 var (
