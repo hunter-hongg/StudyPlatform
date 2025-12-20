@@ -18,6 +18,9 @@ func main() {
 	os.MkdirAll(global.File_FilePathTongYong, 0755)
 	os.MkdirAll(global.File_FilePathTongYongReal, 0755)
 	os.MkdirAll(global.File_FilePathAncient, 0755)
+	os.MkdirAll(global.File_FilePathCard, 0755)
+	os.MkdirAll(global.File_FilePathBaoShi, 0755)
+	os.MkdirAll(global.File_FilePathBank, 0755)
 
 	global.Logger.SetLevel(util.LevelInfo)
 	global.Logger.Info("程序正常启动")
