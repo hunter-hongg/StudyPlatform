@@ -11,11 +11,12 @@ var (
 	File_FilePathBase               string              = Home+"/.store/"
 
 	File_FilePath                   string              = File_FilePathBase + "学习平台储存/"
-	File_FilePathTongYong           string              = File_FilePath + "tyhbdirapbb/";
-    File_FilePathTongYongReal       string              = File_FilePathTongYong + "fptyr/";
-	File_FilePathAncient            string              = File_FilePath + "adirspfm/";
-	File_FilePathCard               string              = File_FilePath + "fpcdiralf/";
-	File_FilePathBaoShi             string              = File_FilePath + "baosdirfos/";
+	File_FilePathTongYong           string              = File_FilePath + "tyhbdirapbb/"
+    File_FilePathTongYongReal       string              = File_FilePathTongYong + "fptyr/"
+	File_FilePathAncient            string              = File_FilePath + "adirspfm/"
+	File_FilePathCard               string              = File_FilePath + "fpcdiralf/"
+	File_FilePathBaoShi             string              = File_FilePath + "baosdirfos/"
+	File_FilePathBank               string              = File_FilePath + "cc.bnkaac.c.io/"
 )
 
 var (
@@ -24,10 +25,15 @@ var (
 																File_FilePathTongYongReal+"tyrelrd.cc", "qacjf34860")
 	File_JiSuanBiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"jsbc.txt","woda2fj341")
 	File_TongQianReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
-	File_XianBiReader               *util.FilePassword  = util.NewFilePassword(File_FilePath+"xianbc.conc","woapf20sl1");
-	File_JinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"rd.conc","apslfnt104")
-	File_YinBiReader                *util.FilePassword  = util.NewFilePassword(File_FilePathTongYong+"yb.conc.sdpg.1659", "apfjr12409");
-	File_BaoshiReader               *util.FilePassword  = util.NewFilePassword(File_FilePathBaoShi+"mbsc.conc","rosl3510dm");
+	File_XianBiReader               *util.FilePassword  = util.NewFilePassword(
+																File_FilePath+"xianbc.conc","woapf20sl1")
+	File_JinBiReader                *util.FilePassword  = util.NewFilePassword(
+																File_FilePathTongYong+"rd.conc","apslfnt104")
+	File_YinBiReader                *util.FilePassword  = util.NewFilePassword(
+																File_FilePathTongYong+"yb.conc.sdpg.1659", 
+																"apfjr12409")
+	File_BaoshiReader               *util.FilePassword  = util.NewFilePassword(
+																File_FilePathBaoShi+"mbsc.conc","rosl3510dm")
 )
 
 var (
@@ -67,6 +73,10 @@ var (
 )
 
 var (
-	File_SanGuo1Card                *util.Cards         = util.NewCards(File_FilePath+"capsgc1.txt",File_SanGuo1CardsName,9573);
-	File_Han1Card                   *util.Cards         = util.NewCards(File_FilePathCard+"h1cac1.cac",File_Han1CardsName,7184);
+	File_SanGuo1Card                *util.Cards         = util.NewCards(
+																File_FilePath+"capsgc1.txt",
+																File_SanGuo1CardsName,9573)
+	File_Han1Card                   *util.Cards         = util.NewCards(
+																File_FilePathCard+"h1cac1.cac",
+																File_Han1CardsName,7184)
 )
