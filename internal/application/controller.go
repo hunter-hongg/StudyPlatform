@@ -44,6 +44,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewOwnThingBaoshiChouAllPage())
     c.registerPage(pages.NewOwnThingBaoshiChou1Page())
     c.registerPage(pages.NewToolsPage())
+    c.registerPage(pages.NewBankMainPage())
     
     return c
 }

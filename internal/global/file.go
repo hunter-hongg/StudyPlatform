@@ -34,6 +34,8 @@ var (
 																"apfjr12409")
 	File_BaoshiReader               *util.FilePassword  = util.NewFilePassword(
 																File_FilePathBaoShi+"mbsc.conc","rosl3510dm")
+	File_BankStoreReader            *util.FilePassword  = util.NewFilePassword(
+																File_FilePathBank+"fhubasr", "aoidnrm301")
 )
 
 var (
