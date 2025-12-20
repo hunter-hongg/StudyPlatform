@@ -88,7 +88,7 @@ func (p *OwnThingShopPage) GetContent() fyne.CanvasObject {
 		global.File_JinBiReader.AddNum(5)
 		simple.DialogInfo("购买成功", global.Main_Window)
 	})
-
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
