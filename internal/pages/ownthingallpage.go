@@ -41,13 +41,14 @@ func (p *OwnThingAllPage) GetContent() fyne.CanvasObject {
 	btnXianbi := widget.NewButton("仙币: "+global.File_XianBiReader.ReadStrSafe(), func() {})
 	btnJinbi := widget.NewButton("金币: "+global.File_JinBiReader.ReadStrSafe(), func(){})
 	btnYinbi := widget.NewButton("银币: "+global.File_YinBiReader.ReadStrSafe(), func(){})
+	btnBaoshi := widget.NewButton("宝石: "+global.File_BaoshiReader.ReadStrSafe()+"颗", func(){})
 	btnCards := widget.NewButton("卡牌: "+strconv.Itoa(cardCount)+"张", func(){})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
 		container.NewGridWithColumns(3, 
-			btnJifen, btnXianbi, layout.NewSpacer(),
+			btnJifen, btnXianbi, btnBaoshi,
 			btnYinbi, btnJinbi, layout.NewSpacer(), 
 			layout.NewSpacer(), btnCards, layout.NewSpacer(), 
 		),
