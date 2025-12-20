@@ -30,6 +30,7 @@ const (
 	PageID_CalcStartTimPage
 	PageID_CalcStartDivPage
 	PageID_AncientMainPage
+	PageID_ToolsPage
 )
 
 type IPage interface {
