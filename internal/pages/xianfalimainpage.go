@@ -53,6 +53,10 @@ func (p *XianFaliMainPage) GetContent() fyne.CanvasObject {
 		}
 		simple.DialogQuestion("是否使用10金币增强70法力?", global.Main_Window, deal, func(){})
 	})
+	
+	btnf := widget.NewButton("法力炼丹", func() {
+		p.router(interfaces.PageID_XianFaliDanPage)
+	})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
@@ -60,6 +64,7 @@ func (p *XianFaliMainPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showx),
 		simple.Spacer(140),
 		simple.HorizonCenter(btnp),
+		simple.HorizonCenter(btnf),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),

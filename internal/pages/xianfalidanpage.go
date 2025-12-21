@@ -41,6 +41,7 @@ func (p *XianFaliDanPage) GetContent() fyne.CanvasObject {
 			return
 		}
 		fp.AddNum(1)
+		simple.DialogInfo("炼制成功", global.Main_Window)
 		p.router(interfaces.PageID_XianFaliDanPage)
 	}
 	syn.Ignore(deal)
@@ -55,6 +56,24 @@ func (p *XianFaliDanPage) GetContent() fyne.CanvasObject {
 	})
 
 	btn1 := widget.NewButton("炼制普通丹", func(){
+		dealb := func(){
+			deal(15, global.File_XianPuTongDanReader)
+		}
+		simple.DialogQuestion("是否耗费15法力炼制1普通丹?", global.Main_Window, dealb, func(){})
+	})
+
+	btn2 := widget.NewButton("炼制碧丹", func(){
+		dealb := func(){
+			deal(35, global.File_XianBiDanReader)
+		}
+		simple.DialogQuestion("是否耗费35法力炼制1碧丹?", global.Main_Window, dealb, func(){})
+	})
+
+	btn3 := widget.NewButton("炼制青丹", func(){
+		dealb := func(){
+			deal(80, global.File_XianQingDanReader)
+		}
+		simple.DialogQuestion("是否耗费80法力炼制1青丹?", global.Main_Window, dealb, func(){})
 	})
 
 	vbox := container.NewVBox(
@@ -63,6 +82,8 @@ func (p *XianFaliDanPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showx),
 		simple.Spacer(140),
 		simple.HorizonCenter(btn1),
+		simple.HorizonCenter(btn2), 
+		simple.HorizonCenter(btn3),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
