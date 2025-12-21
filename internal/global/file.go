@@ -42,6 +42,7 @@ var (
 																File_FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156")
 	File_XianLuPinJi                *util.FilePassword  = util.NewFilePassword(
 																File_FilePathXianLu+"xlj.ds.cc.o239", "done20596w")
+	File_XianFaLiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"falc.conc","fjmep20kl1")
 )
 
 var (
@@ -53,7 +54,7 @@ var (
 	File_ThingSquareTongQianCheck   *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"tqchk.ck",2212,1)
 	File_ThingSquareBaoShiCheck     *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"fospbsck.dogck",1127,1)
 	File_ThingSquareJinBiCheck      *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"sdogh.dogck",2035,1)
-	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1);
+	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1)
 )
 
 var (
