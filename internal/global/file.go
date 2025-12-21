@@ -19,9 +19,10 @@ var (
 	File_FilePathBank               string              = File_FilePath + "cc.bnkaac.c.io/"
 	File_FilePathThingsSquare       string              = File_FilePath + "tssqudirdpg/"
 	File_FilePathXianLu             string              = File_FilePath + "xlccf.gfd.ew0/"
+	File_FilePathXianDan            string              = File_FilePath + "xdccdir.fdso.so12/"
 )
 
-var (
+var ( // 普通数据存储
     File_JiFenReader                *util.FilePassword  = util.NewFilePassword(File_FilePath+"jifc.txt","hsiep10475")  
 	File_TongYongReader             *util.FilePassword  = util.NewFilePassword(
 																File_FilePathTongYongReal+"tyrelrd.cc", "qacjf34860")
@@ -45,7 +46,18 @@ var (
 	File_XianFaLiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"falc.conc","fjmep20kl1")
 )
 
-var (
+var ( // 仙丹存储
+	File_XianPuTongDanReader        *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"pt.cc.xdcc.1304", "sdpf24j109")
+	File_XianBiDanReader            *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"bd.c.xdccm.eo4", "fqoeirm124")
+	File_XianQingDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"qd.c.xdcc.ej.e", "fdoiem2401")
+	File_XianZiDanReader            *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"zd.c.xdcc.edos", "zdgofe2405")
+	File_XianWuSeDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"ws.cd.gfgoi.xdcc", "dsoi23w105")
+	File_XianYinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214")
+	File_XianJinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"jd.cc.xdcc.23dsj", "adogfn2104")
+	File_XianShenDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810")
+)
+
+var ( // 每日限次数据存储
 	File_CalcAddCheck               *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck1.txt",1049,7)
 	File_CalcTimesCheck             *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck2.txt",305,5)
 	File_CalcDivCheck               *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck3.chkl",302,5)
@@ -57,11 +69,11 @@ var (
 	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1)
 )
 
-var (
+var ( // 单次数据存储
 	File_BasicLiHeOnce              *util.Oncefile      = util.NewOncefile(File_FilePath+"onfiblho.of.ooo")
 )
 
-var (
+var ( // 切片数据存储
 	File_SanGuo1CardsName           []string            = []string{
 		"卧龙","凤雏","曹操","孙权","刘备",
 		"关羽","张飞","马超","黄忠","赵云",
@@ -87,7 +99,7 @@ var (
 	}
 )
 
-var (
+var ( // 卡牌数据存储
 	File_SanGuo1Card                *util.Cards         = util.NewCards(
 																File_FilePath+"capsgc1.txt",
 																File_SanGuo1CardsName,9573)

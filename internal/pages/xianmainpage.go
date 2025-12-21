@@ -38,7 +38,7 @@ func (p *XianMainPage) GetContent() fyne.CanvasObject {
 	btnT := widget.NewButton("我的物品", func(){
 		// p.router(interfaces.PageID_TimerMainPage)
 	})
-
+	
 	btnN := widget.NewButton("我的能力", func(){
 		p.router(interfaces.PageID_XianSkillMainPage)
 	})
@@ -46,7 +46,7 @@ func (p *XianMainPage) GetContent() fyne.CanvasObject {
 	btnD := widget.NewButton("我的待遇", func(){
 		p.router(interfaces.PageID_XianLuMainPage)
 	})
-
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
