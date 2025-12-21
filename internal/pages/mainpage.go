@@ -41,7 +41,7 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnToShen := widget.NewButton("神话传说", func(){
-		// p.router(interfaces.PageID_OwnPage)
+		p.router(interfaces.PageID_XianMainPage)
 	})
 
 	btnToCalc := widget.NewButton("计算广场", func(){
