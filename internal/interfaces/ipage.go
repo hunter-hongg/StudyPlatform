@@ -36,6 +36,16 @@ const (
 	PageID_BankGetPage
 	PageID_BankJuanMainPage
 	PageID_BankJuanRealPage
+	PageID_BankJuanGetMainPage
+	PageID_BankJuanGetJifenPage
+	PageID_ThingSquareMainPage
+	PageID_ThingSquareFreeMainPage
+	PageID_ThingSquareJinMainPage
+	PageID_ThingSquareMangMainPage
+	PageID_XianMainPage
+	PageID_XianLuMainPage
+	PageID_XianSkillMainPage
+	PageID_XianFaliMainPage
 )
 
 type IPage interface {

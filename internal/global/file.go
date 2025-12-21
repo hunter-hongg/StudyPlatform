@@ -17,6 +17,8 @@ var (
 	File_FilePathCard               string              = File_FilePath + "fpcdiralf/"
 	File_FilePathBaoShi             string              = File_FilePath + "baosdirfos/"
 	File_FilePathBank               string              = File_FilePath + "cc.bnkaac.c.io/"
+	File_FilePathThingsSquare       string              = File_FilePath + "tssqudirdpg/"
+	File_FilePathXianLu             string              = File_FilePath + "xlccf.gfd.ew0/"
 )
 
 var (
@@ -38,12 +40,21 @@ var (
 																File_FilePathBank+"fhubasr", "aoidnrm301")
 	File_BankJuanQuanReader         *util.FilePassword  = util.NewFilePassword(
 																File_FilePathBank+"bjq.cc.ssdiowei_", "asoirm2156")
+	File_XianLuPinJi                *util.FilePassword  = util.NewFilePassword(
+																File_FilePathXianLu+"xlj.ds.cc.o239", "done20596w")
+	File_XianFaLiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"falc.conc","fjmep20kl1")
 )
 
 var (
 	File_CalcAddCheck               *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck1.txt",1049,7)
 	File_CalcTimesCheck             *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck2.txt",305,5)
 	File_CalcDivCheck               *util.CheckFile     = util.NewCheckFile(File_FilePath+"jisbck3.chkl",302,5)
+	File_ThingSquareJiFenCheck      *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"tsjfcc.ck",6402,1)
+	File_ThingSquareXianBiCheck     *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"tsxbcc.ck",2202,1)
+	File_ThingSquareTongQianCheck   *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"tqchk.ck",2212,1)
+	File_ThingSquareBaoShiCheck     *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"fospbsck.dogck",1127,1)
+	File_ThingSquareJinBiCheck      *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"sdogh.dogck",2035,1)
+	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1)
 )
 
 var (
