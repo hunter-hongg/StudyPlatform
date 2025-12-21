@@ -56,6 +56,9 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_BankMainPage)
 	})
 
+	btnTs := widget.NewButton("物品领取", func() {
+		p.router(interfaces.PageID_ThingSquareMainPage)
+	})
 	btnToTools := widget.NewButton("工具页面", func() {
 		p.router(interfaces.PageID_ToolsPage)
 	})
@@ -66,13 +69,13 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(20),
 		simple.HorizonCenter(showjifen),
 		simple.HorizonCenter(showlevel),
-		simple.Spacer(130),
+		simple.Spacer(100),
 		container.NewGridWithColumns(2, 
 			simple.HorizonRight(btnToOwn),
 			simple.HorizonLeft(btnToShen),
 			simple.HorizonRight(btnToCalc),
 			simple.HorizonLeft(btnToAncient),
-			layout.NewSpacer(),
+			simple.HorizonRight(btnTs),
 			simple.HorizonLeft(btnBank),
 			simple.HorizonRight(btnToTools),
 			simple.HorizonLeft(btnToSetting),

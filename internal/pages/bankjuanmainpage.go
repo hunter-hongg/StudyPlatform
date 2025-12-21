@@ -40,7 +40,7 @@ func (p *BankJuanMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnJiang := widget.NewButton("领取奖励", func(){
-		// p.router(interfaces.PageID_BankGetPage)
+		p.router(interfaces.PageID_BankJuanGetMainPage)
 	})
 
 	vbox := container.NewVBox(
