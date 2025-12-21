@@ -54,6 +54,10 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewThingSquareMainPage())
     c.registerPage(pages.NewThingSquareFreeMainPage())
     c.registerPage(pages.NewThingSquareJinMainPage())
+    c.registerPage(pages.NewThingSquareMangMainPage())
+    c.registerPage(pages.NewXianMainPage())
+    c.registerPage(pages.NewXianLuMainPage())
+    c.registerPage(pages.NewXianSkillMainPage())
     
     return c
 }

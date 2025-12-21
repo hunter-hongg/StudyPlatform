@@ -25,7 +25,7 @@ func NewToolsPage() *ToolsPage {
 }
 
 func (p *ToolsPage) GetContent() fyne.CanvasObject {
-	title := canvas.NewText("个人主页", color.Black)
+	title := canvas.NewText("各类工具", color.Black)
 	title.TextSize = 27
 
 	btnBack := widget.NewButton("返回", func(){

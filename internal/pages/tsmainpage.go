@@ -38,7 +38,7 @@ func (p *ThingSquareMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnMang := widget.NewButton("金币盲盒", func(){
-		// p.router(interfaces.PageID_LiHePage)
+		p.router(interfaces.PageID_ThingSquareMangMainPage)
 	})
 
 	vbox := container.NewVBox(
