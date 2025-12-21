@@ -40,7 +40,7 @@ func (p *XianMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnN := widget.NewButton("我的能力", func(){
-		// p.router(interfaces.PageID_OwnThingMainPage)
+		p.router(interfaces.PageID_XianSkillMainPage)
 	})
 
 	btnD := widget.NewButton("我的待遇", func(){
