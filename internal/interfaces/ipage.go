@@ -35,6 +35,7 @@ const (
 	PageID_BankCunPage
 	PageID_BankGetPage
 	PageID_BankJuanMainPage
+	PageID_BankJuanRealPage
 )
 
 type IPage interface {
