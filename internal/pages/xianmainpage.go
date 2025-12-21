@@ -36,7 +36,7 @@ func (p *XianMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnT := widget.NewButton("我的物品", func(){
-		// p.router(interfaces.PageID_TimerMainPage)
+		p.router(interfaces.PageID_XianThingMainPage)
 	})
 	
 	btnN := widget.NewButton("我的能力", func(){
