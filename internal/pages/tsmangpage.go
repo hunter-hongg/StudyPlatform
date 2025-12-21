@@ -51,6 +51,16 @@ func (p *ThingSquareMangMainPage) GetContent() fyne.CanvasObject {
 		simple.DialogInfo("恭喜获得: \n"+strconv.Itoa(addji)+"积分\n"+strconv.Itoa(addba)+"宝石\n"+strconv.Itoa(addxi)+"仙币", global.Main_Window)
 		p.router(interfaces.PageID_ThingSquareMangMainPage)
 	}
+	dealA := func(bei int) {
+		if res, err := global.File_JinBiReader.CanMinus(bei * 5); (!res) || (err != nil) {
+			simple.DialogInfo("取出金币失败", global.Main_Window)
+			return
+		}
+		addt := bei * 500 + cgo.GetRnd(-200, 400)
+		global.File_TongQianReader.AddNum(addt)
+		simple.DialogInfo("恭喜获得"+strconv.Itoa(addt)+"铜钱", global.Main_Window)
+		p.router(interfaces.PageID_ThingSquareMangMainPage)
+	}
 
 	btnS1 := widget.NewButton("5金币盲盒", func(){
 		dealS(1)
@@ -64,15 +74,30 @@ func (p *ThingSquareMangMainPage) GetContent() fyne.CanvasObject {
 		dealS(3)
 	})
 
+	btnA1 := widget.NewButton("5金币古代盲盒", func(){
+		dealA(1)
+	})
+
+	btnA2 := widget.NewButton("10金币古代盲盒", func(){
+		dealA(2)
+	})
+
+	btnA3 := widget.NewButton("15金币古代盲盒", func(){
+		dealA(3)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
 		simple.HorizonCenter(showji),
 		simple.Spacer(140),
 		container.NewGridWithColumns(3, 
-			simple.HorizonRight(btnS1),
-			simple.HorizonCenter(btnS2),
-			simple.HorizonLeft(btnS3),
+			btnS1,
+			btnS2,
+			btnS3,
+			btnA1,
+			btnA2,
+			btnA3,
 		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
