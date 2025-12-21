@@ -41,6 +41,9 @@ const (
 	PageID_ThingSquareMainPage
 	PageID_ThingSquareFreeMainPage
 	PageID_ThingSquareJinMainPage
+	PageID_ThingSquareMangMainPage
+	PageID_XianMainPage
+	PageID_XianLuMainPage
 )
 
 type IPage interface {
