@@ -38,6 +38,8 @@ const (
 	PageID_BankJuanRealPage
 	PageID_BankJuanGetMainPage
 	PageID_BankJuanGetJifenPage
+	PageID_ThingSquareMainPage
+	PageID_ThingSquareFreeMainPage
 )
 
 type IPage interface {
