@@ -1,5 +1,12 @@
 package pages
 
+/*
+法力炼丹基准数额
+20 => 1普通丹 to 15 => 1普通丹 
+45 => 1碧丹   to 35 => 1碧丹
+100 => 1青丹  to 80 => 1青丹
+*/
+
 import (
 	"StudyPlatform/internal/global"
 	"StudyPlatform/internal/interfaces"
