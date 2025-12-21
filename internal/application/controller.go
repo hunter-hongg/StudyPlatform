@@ -53,6 +53,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewBankJuanGetJifenPage())
     c.registerPage(pages.NewThingSquareMainPage())
     c.registerPage(pages.NewThingSquareFreeMainPage())
+    c.registerPage(pages.NewThingSquareJinMainPage())
     
     return c
 }

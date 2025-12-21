@@ -40,6 +40,7 @@ const (
 	PageID_BankJuanGetJifenPage
 	PageID_ThingSquareMainPage
 	PageID_ThingSquareFreeMainPage
+	PageID_ThingSquareJinMainPage
 )
 
 type IPage interface {

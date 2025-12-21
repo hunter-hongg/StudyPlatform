@@ -34,7 +34,7 @@ func (p *ThingSquareMainPage) GetContent() fyne.CanvasObject {
 	})
 
 	btnJin := widget.NewButton("金币领取", func(){
-		// p.router(interfaces.PageID_OwnThingMainPage)
+		p.router(interfaces.PageID_ThingSquareJinMainPage)
 	})
 
 	btnMang := widget.NewButton("金币盲盒", func(){
