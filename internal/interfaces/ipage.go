@@ -46,6 +46,10 @@ const (
 	PageID_XianLuMainPage
 	PageID_XianSkillMainPage
 	PageID_XianFaliMainPage
+	PageID_XianFaliDanPage
+	PageID_XianThingMainPage
+	PageID_XianDanMainPage
+	PageID_XianDanShowPage
 )
 
 type IPage interface {
