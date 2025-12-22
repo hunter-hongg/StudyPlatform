@@ -53,6 +53,8 @@ func (p *XianDanLianPage) GetContent() fyne.CanvasObject {
 	level1 := []string{"普通丹", "碧丹", "青丹", "紫丹", "五色丹", "银丹"}
 	level1f := []*util.FilePassword{global.File_XianPuTongDanReader, global.File_XianBiDanReader, global.File_XianQingDanReader,
 									global.File_XianZiDanReader, global.File_XianWuSeDanReader, global.File_XianYinDanReader}
+	level2 := []string{"银丹", "金丹", "神丹"}
+	level2f := []*util.FilePassword{global.File_XianYinDanReader, global.File_XianJinDanReader, global.File_XianShenDanReader}
 	var btns []fyne.CanvasObject
 
 	for i := 1; i < len(level1); i++ {
@@ -60,6 +62,15 @@ func (p *XianDanLianPage) GetContent() fyne.CanvasObject {
 			widget.NewButton(
 				strconv.Itoa(i * 5 + 5)+"仙器法力=>1"+level1[i], func() {
 					deal(level1f[i-1], level1f[i], global.File_XianQiFaLiReader, i * 5 + 5)
+				},
+			),
+		)
+	}
+	for i := 1; i < 3; i++ {
+		btns = append(btns, 
+			widget.NewButton(
+				strconv.Itoa(i * 10)+"仙籍=>1"+level2[i], func() {
+					deal(level2f[i-1], level2f[i], global.File_XianJiReader, i * 10)
 				},
 			),
 		)
