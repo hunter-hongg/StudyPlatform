@@ -4,6 +4,7 @@ import (
 	"StudyPlatform/internal/global"
 	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/pkg/simple"
+	"StudyPlatform/pkg/util"
 
 	"image/color"
 
@@ -26,13 +27,23 @@ func (p *XianJiMainPage) GetContent() fyne.CanvasObject {
 	title := canvas.NewText("我的仙籍", color.Black)
 	title.TextSize = 27
 
+	dealUp := func(fp *util.FilePassword, an int) {
+		if res, err := global.File_XianJiReader.CanMinus(10) ; (!res) || (err != nil) {
+			simple.DialogInfo("取出仙籍失败", global.Main_Window)
+			return
+		}
+		fp.AddNum(an)
+		simple.DialogInfo("使用成功", global.Main_Window)
+		p.router(interfaces.PageID_XianJiMainPage)
+	}
+
 	showx := canvas.NewText(
 		"仙籍: "+global.File_XianJiReader.ReadStrSafe(),	
 	simple.Blue)
 	showx.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_XianMainPage)
+		p.router(interfaces.PageID_XianThingMainPage)
 	})
 
 	btnT := widget.NewButton("购买仙籍", func(){
@@ -50,11 +61,23 @@ func (p *XianJiMainPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btnN := widget.NewButton("增强法力", func(){
-		// p.router(interfaces.PageID_XianSkillMainPage)
+		// 10仙籍 => 100法力
+		simple.DialogQuestion(
+			"是否使用10仙籍获得100法力?", global.Main_Window, 
+			func() {
+				dealUp(global.File_XianFaLiReader, 100)
+			}, func(){},
+		)
 	})
 
 	btnD := widget.NewButton("增强仙器", func(){
-		// p.router(interfaces.PageID_XianDanMainPage)
+		// 10仙籍 => 90法力
+		simple.DialogQuestion(
+			"是否使用10仙籍获得90仙器法力?", global.Main_Window, 
+			func() {
+				dealUp(global.File_XianQiFaLiReader, 90)
+			}, func(){},
+		)
 	})
 	
 	vbox := container.NewVBox(

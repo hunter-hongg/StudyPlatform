@@ -21,6 +21,7 @@ var (
 	File_FilePathXianLu             string              = File_FilePath + "xlccf.gfd.ew0/"
 	File_FilePathXianDan            string              = File_FilePath + "xdccdir.fdso.so12/"
 	File_FilePathXianJi             string              = File_FilePath + "xjccdir.fjdo/"
+	File_FilePathXianQi             string              = File_FilePath + "xqptdir/"
 )
 
 var ( // 普通数据存储
@@ -47,6 +48,8 @@ var ( // 普通数据存储
 	File_XianFaLiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"falc.conc","fjmep20kl1")
 	File_XianJiReader               *util.FilePassword  = util.NewFilePassword(
 																File_FilePathXianJi+"xjrd.dso.349fern.cc", "sdoih14853")
+	File_XianQiFaLiReader           *util.FilePassword  = util.NewFilePassword(
+																File_FilePathXianQi+"xqfl.conc","hjq40tp586")
 )
 
 var ( // 仙丹存储
