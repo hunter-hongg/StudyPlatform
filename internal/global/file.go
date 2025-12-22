@@ -1,8 +1,9 @@
 package global
 
 import (
-	"os"
+	"StudyPlatform/internal/xiansword"
 	"StudyPlatform/pkg/util"
+	"os"
 )
 
 var (
@@ -20,6 +21,8 @@ var (
 	File_FilePathThingsSquare       string              = File_FilePath + "tssqudirdpg/"
 	File_FilePathXianLu             string              = File_FilePath + "xlccf.gfd.ew0/"
 	File_FilePathXianDan            string              = File_FilePath + "xdccdir.fdso.so12/"
+	File_FilePathXianJi             string              = File_FilePath + "xjccdir.fjdo/"
+	File_FilePathXianQi             string              = File_FilePath + "xqptdir/"
 )
 
 var ( // 普通数据存储
@@ -44,6 +47,10 @@ var ( // 普通数据存储
 	File_XianLuPinJi                *util.FilePassword  = util.NewFilePassword(
 																File_FilePathXianLu+"xlj.ds.cc.o239", "done20596w")
 	File_XianFaLiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"falc.conc","fjmep20kl1")
+	File_XianJiReader               *util.FilePassword  = util.NewFilePassword(
+																File_FilePathXianJi+"xjrd.dso.349fern.cc", "sdoih14853")
+	File_XianQiFaLiReader           *util.FilePassword  = util.NewFilePassword(
+																File_FilePathXianQi+"xqfl.conc","hjq40tp586")
 )
 
 var ( // 仙丹存储
@@ -55,6 +62,10 @@ var ( // 仙丹存储
 	File_XianYinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214")
 	File_XianJinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"jd.cc.xdcc.23dsj", "adogfn2104")
 	File_XianShenDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810")
+)
+
+var ( // 仙器存储
+	File_XianSword              *xiansword.SwordInFile  = xiansword.NewSwordInFile(File_FilePath+"swdif.conc")
 )
 
 var ( // 每日限次数据存储
