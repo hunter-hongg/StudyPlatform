@@ -51,6 +51,9 @@ var ( // 普通数据存储
 																File_FilePathXianJi+"xjrd.dso.349fern.cc", "sdoih14853")
 	File_XianQiFaLiReader           *util.FilePassword  = util.NewFilePassword(
 																File_FilePathXianQi+"xqfl.conc","hjq40tp586")
+	File_AncientTongQianReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
+	File_AncientBaiYinReader        *util.FilePassword  = util.NewFilePassword(File_FilePath+"bay.avc","3ifnyl1042")
+	File_AncientHuangJinReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"huaj.avc","dgp395sk10")
 )
 
 var ( // 仙丹存储
