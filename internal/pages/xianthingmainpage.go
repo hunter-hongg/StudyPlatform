@@ -34,7 +34,7 @@ func (p *XianThingMainPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btnN := widget.NewButton("我的仙籍", func(){
-		// p.router(interfaces.PageID_XianSkillMainPage)
+		p.router(interfaces.PageID_XianJiMainPage)
 	})
 
 	btnD := widget.NewButton("我的仙丹", func(){
