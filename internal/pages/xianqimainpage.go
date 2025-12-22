@@ -31,11 +31,17 @@ func (p *XianQiMainPage) GetContent() fyne.CanvasObject {
 	simple.Blue)
 	showx.TextSize = 20
 
+	showt := canvas.NewText(
+		"当前仙器: "+global.File_XianSword.Get().String(),
+	simple.Blue)
+	showt.TextSize = 20
+
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_XianThingMainPage)
 	})
 
 	btnT := widget.NewButton("更换仙器", func(){
+		p.router(interfaces.PageID_XianQiChangePage)
 	})
 	
 	btnN := widget.NewButton("增强法力", func(){
@@ -45,6 +51,7 @@ func (p *XianQiMainPage) GetContent() fyne.CanvasObject {
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
+		simple.HorizonCenter(showt),
 		simple.HorizonCenter(showx),
 		simple.Spacer(100),
 		simple.HorizonCenter(btnT),

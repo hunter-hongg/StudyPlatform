@@ -1,8 +1,9 @@
 package global
 
 import (
-	"os"
+	"StudyPlatform/internal/xiansword"
 	"StudyPlatform/pkg/util"
+	"os"
 )
 
 var (
@@ -61,6 +62,10 @@ var ( // 仙丹存储
 	File_XianYinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214")
 	File_XianJinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"jd.cc.xdcc.23dsj", "adogfn2104")
 	File_XianShenDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810")
+)
+
+var ( // 仙器存储
+	File_XianSword              *xiansword.SwordInFile  = xiansword.NewSwordInFile(File_FilePath+"swdif.conc")
 )
 
 var ( // 每日限次数据存储
