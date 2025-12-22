@@ -34,11 +34,11 @@ func (p *XianDanMainPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btnN := widget.NewButton("炼制仙丹", func(){
-		// p.router(interfaces.PageID_XianSkillMainPage)
+		p.router(interfaces.PageID_XianDanLianPage)
 	})
 
 	btnD := widget.NewButton("仙丹召鹤", func(){
-		// p.router(interfaces.PageID_XianDanMainPage)
+		p.router(interfaces.PageID_XianDanZhaoPage)
 	})
 	
 	vbox := container.NewVBox(

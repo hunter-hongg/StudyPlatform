@@ -28,7 +28,7 @@ func (p *XianDanShowPage) GetContent() fyne.CanvasObject {
 	title.TextSize = 27
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_XianThingMainPage)
+		p.router(interfaces.PageID_XianDanMainPage)
 	})
 
 	var btns []fyne.CanvasObject

@@ -57,7 +57,7 @@ func (p *XianFaliMainPage) GetContent() fyne.CanvasObject {
 	btnf := widget.NewButton("法力炼丹", func() {
 		p.router(interfaces.PageID_XianFaliDanPage)
 	})
-
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
