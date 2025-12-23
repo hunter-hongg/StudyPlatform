@@ -55,11 +55,16 @@ var ( // 普通数据存储
 	File_AncientTongQianReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
 	File_AncientBaiYinReader        *util.FilePassword  = util.NewFilePassword(File_FilePath+"bay.avc","3ifnyl1042")
 	File_AncientHuangJinReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"huaj.avc","dgp395sk10")
+	File_AncientCiQiReader          *util.FilePassword  = util.NewFilePassword(File_FilePath+"cq.avgwc","so3pfm10a2")
+	File_AncientBeiKeReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"shb.avgwc","sudo1048qp")
+	File_AncientYuPeiReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"yup.avgwc","sofp194327")
 )
 
 var ( // 加法文件存储
 	File_AncientLvYuReader          *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"jzcc.conc", 1657)
 	File_AncientBaiYuReader         *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"yzcc.conc", 1657)
+	File_AncientGuwanChaHu          *util.AddFile       = util.NewAddFile(File_FilePathAncient+"apdfn.gwcc1.conc", 2353)
+	File_AncientGuwanChaZhan        *util.AddFile       = util.NewAddFile(File_FilePathAncient+"asofn.gwcc2.conc", 2353)
 )
 
 var ( // 仙丹存储
