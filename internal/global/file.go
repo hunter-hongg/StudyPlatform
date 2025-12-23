@@ -65,6 +65,13 @@ var ( // 加法文件存储
 	File_AncientBaiYuReader         *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"yzcc.conc", 1657)
 	File_AncientGuwanChaHu          *util.AddFile       = util.NewAddFile(File_FilePathAncient+"apdfn.gwcc1.conc", 2353)
 	File_AncientGuwanChaZhan        *util.AddFile       = util.NewAddFile(File_FilePathAncient+"asofn.gwcc2.conc", 2353)
+	File_AncientBaoMingZhu                              = util.NewAddFile(File_FilePathBaoWu+"baoyemz.bacc", 2109)
+	File_AncientBaoYuDiao                               = util.NewAddFile(File_FilePathBaoWu+"yudc.bacc", 2109)
+	File_AncientBaoYuBi                                 = util.NewAddFile(File_FilePathBaoWu+"byubc.bacc", 2109)
+	File_AncientBaoChouDuan                             = util.NewAddFile(File_FilePathBaoWu+"baochoc.bacc", 2109)
+    File_AncientBaoYuzhan                               = util.NewAddFile(File_FilePathBaoWu+"baoyzex.bacce", 2024)
+	File_AncientBaoHu                                   = util.NewAddFile(File_FilePathBaoWu+"bwcrdc1.onc", 2017)
+	File_AncientBaoZhan                                 = util.NewAddFile(File_FilePathBaoWu+"bwcrd2.onc", 2017)
 )
 
 var ( // 仙丹存储
