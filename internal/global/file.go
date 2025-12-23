@@ -23,6 +23,7 @@ var (
 	File_FilePathXianDan            string              = File_FilePath + "xdccdir.fdso.so12/"
 	File_FilePathXianJi             string              = File_FilePath + "xjccdir.fjdo/"
 	File_FilePathXianQi             string              = File_FilePath + "xqptdir/"
+	File_FilePathBaoWu              string              = File_FilePath + "baocdiran/"
 )
 
 var ( // 普通数据存储
@@ -54,6 +55,11 @@ var ( // 普通数据存储
 	File_AncientTongQianReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
 	File_AncientBaiYinReader        *util.FilePassword  = util.NewFilePassword(File_FilePath+"bay.avc","3ifnyl1042")
 	File_AncientHuangJinReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"huaj.avc","dgp395sk10")
+)
+
+var ( // 加法文件存储
+	File_AncientLvYuReader          *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"jzcc.conc", 1657)
+	File_AncientBaiYuReader         *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"yzcc.conc", 1657)
 )
 
 var ( // 仙丹存储

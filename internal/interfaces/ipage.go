@@ -30,6 +30,8 @@ const (
 	PageID_CalcStartTimPage
 	PageID_CalcStartDivPage
 	PageID_AncientMainPage
+	PageID_AncientThingMainPage
+	PageID_AncientThingCaiPage
 	PageID_ToolsPage
 	PageID_BankMainPage
 	PageID_BankCunPage

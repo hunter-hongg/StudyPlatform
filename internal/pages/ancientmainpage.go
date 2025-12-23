@@ -45,14 +45,10 @@ func (p *AncientMainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_MainPage)
 	})
 
-	// btnToTimer := widget.NewButton("学习计时", func(){
-	// 	p.router(interfaces.PageID_TimerMainPage)
-	// })
-	//
-	// btnToTongMain := widget.NewButton("通用货币", func(){
-	// 	p.router(interfaces.PageID_TongMainPage)
-	// })
-
+	btn0 := widget.NewButton("我的物品", func(){
+		p.router(interfaces.PageID_AncientThingMainPage)
+	})
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -60,8 +56,7 @@ func (p *AncientMainPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showb),
 		simple.HorizonCenter(showj),
 		simple.Spacer(70),
-		// simple.HorizonCenter(btnToTimer),
-		// simple.HorizonCenter(btnToTongMain),
+		simple.HorizonCenter(btn0),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
