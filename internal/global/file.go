@@ -1,8 +1,9 @@
 package global
 
 import (
-	"os"
+	"StudyPlatform/internal/xiansword"
 	"StudyPlatform/pkg/util"
+	"os"
 )
 
 var (
@@ -20,6 +21,10 @@ var (
 	File_FilePathThingsSquare       string              = File_FilePath + "tssqudirdpg/"
 	File_FilePathXianLu             string              = File_FilePath + "xlccf.gfd.ew0/"
 	File_FilePathXianDan            string              = File_FilePath + "xdccdir.fdso.so12/"
+	File_FilePathXianJi             string              = File_FilePath + "xjccdir.fjdo/"
+	File_FilePathXianQi             string              = File_FilePath + "xqptdir/"
+	File_FilePathBaoWu              string              = File_FilePath + "baocdiran/"
+	File_FilePathBookShelf                              = File_FilePath + "sjdirspf/"
 )
 
 var ( // 普通数据存储
@@ -44,6 +49,33 @@ var ( // 普通数据存储
 	File_XianLuPinJi                *util.FilePassword  = util.NewFilePassword(
 																File_FilePathXianLu+"xlj.ds.cc.o239", "done20596w")
 	File_XianFaLiReader             *util.FilePassword  = util.NewFilePassword(File_FilePath+"falc.conc","fjmep20kl1")
+	File_XianJiReader               *util.FilePassword  = util.NewFilePassword(
+																File_FilePathXianJi+"xjrd.dso.349fern.cc", "sdoih14853")
+	File_XianQiFaLiReader           *util.FilePassword  = util.NewFilePassword(
+																File_FilePathXianQi+"xqfl.conc","hjq40tp586")
+	File_AncientTongQianReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"tb.avc","hifo356sjl")
+	File_AncientBaiYinReader        *util.FilePassword  = util.NewFilePassword(File_FilePath+"bay.avc","3ifnyl1042")
+	File_AncientHuangJinReader      *util.FilePassword  = util.NewFilePassword(File_FilePath+"huaj.avc","dgp395sk10")
+	File_AncientCiQiReader          *util.FilePassword  = util.NewFilePassword(File_FilePath+"cq.avgwc","so3pfm10a2")
+	File_AncientBeiKeReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"shb.avgwc","sudo1048qp")
+	File_AncientYuPeiReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"yup.avgwc","sofp194327")
+)
+
+var ( // 加法文件存储
+	File_AncientLvYuReader          *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"jzcc.conc", 1657)
+	File_AncientBaiYuReader         *util.AddFile       = util.NewAddFile(File_FilePathBaoWu+"yzcc.conc", 1657)
+	File_AncientGuwanChaHu          *util.AddFile       = util.NewAddFile(File_FilePathAncient+"apdfn.gwcc1.conc", 2353)
+	File_AncientGuwanChaZhan        *util.AddFile       = util.NewAddFile(File_FilePathAncient+"asofn.gwcc2.conc", 2353)
+	File_AncientBaoMingZhu                              = util.NewAddFile(File_FilePathBaoWu+"baoyemz.bacc", 2109)
+	File_AncientBaoYuDiao                               = util.NewAddFile(File_FilePathBaoWu+"yudc.bacc", 2109)
+	File_AncientBaoYuBi                                 = util.NewAddFile(File_FilePathBaoWu+"byubc.bacc", 2109)
+	File_AncientBaoChouDuan                             = util.NewAddFile(File_FilePathBaoWu+"baochoc.bacc", 2109)
+    File_AncientBaoYuzhan                               = util.NewAddFile(File_FilePathBaoWu+"baoyzex.bacce", 2024)
+	File_AncientBaoHu                                   = util.NewAddFile(File_FilePathBaoWu+"bwcrdc1.onc", 2017)
+	File_AncientBaoZhan                                 = util.NewAddFile(File_FilePathBaoWu+"bwcrd2.onc", 2017)
+	File_AncientBook1                                   = util.NewAddFile(File_FilePathBookShelf+"lv1cc.conc", 3406)
+	File_AncientBook2                                   = util.NewAddFile(File_FilePathBookShelf+"lv2cc.conc", 3406)
+	File_AncientBook3                                   = util.NewAddFile(File_FilePathBookShelf+"lv3cc.conc", 3406)
 )
 
 var ( // 仙丹存储
@@ -55,6 +87,10 @@ var ( // 仙丹存储
 	File_XianYinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"yd.c.xdcc.fdor", "sdognf3214")
 	File_XianJinDanReader           *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"jd.cc.xdcc.23dsj", "adogfn2104")
 	File_XianShenDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810")
+)
+
+var ( // 仙器存储
+	File_XianSword              *xiansword.SwordInFile  = xiansword.NewSwordInFile(File_FilePath+"swdif.conc")
 )
 
 var ( // 每日限次数据存储

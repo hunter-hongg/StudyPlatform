@@ -30,6 +30,15 @@ const (
 	PageID_CalcStartTimPage
 	PageID_CalcStartDivPage
 	PageID_AncientMainPage
+	PageID_AncientThingMainPage
+	PageID_AncientThingCaiPage
+	PageID_AncientThingGuwanPage
+	PageID_AncientThingBaowuPage
+	PageID_AncientThingShujiPage
+	PageID_AncientThingWearPage
+	PageID_AncientThingSwordPage
+	PageID_AncientThingPaoPage
+	PageID_AncientThingBookPage
 	PageID_ToolsPage
 	PageID_BankMainPage
 	PageID_BankCunPage
@@ -48,8 +57,13 @@ const (
 	PageID_XianFaliMainPage
 	PageID_XianFaliDanPage
 	PageID_XianThingMainPage
+	PageID_XianJiMainPage
+	PageID_XianQiMainPage
+	PageID_XianQiChangePage
 	PageID_XianDanMainPage
 	PageID_XianDanShowPage
+	PageID_XianDanLianPage
+	PageID_XianDanZhaoPage
 )
 
 type IPage interface {
