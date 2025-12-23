@@ -1,6 +1,8 @@
 package global
 
 import (
+	"StudyPlatform/internal/apao"
+	"StudyPlatform/internal/asword"
 	"StudyPlatform/internal/xiansword"
 	"StudyPlatform/pkg/util"
 	"os"
@@ -25,6 +27,7 @@ var (
 	File_FilePathXianQi             string              = File_FilePath + "xqptdir/"
 	File_FilePathBaoWu              string              = File_FilePath + "baocdiran/"
 	File_FilePathBookShelf                              = File_FilePath + "sjdirspf/"
+	File_FilePathPao                                    = File_FilePath + "apcdir/"
 )
 
 var ( // 普通数据存储
@@ -89,8 +92,10 @@ var ( // 仙丹存储
 	File_XianShenDanReader          *util.FilePassword  = util.NewFilePassword(File_FilePathXianDan+"sd.cc.xdcc.239fh", "sdonv29810")
 )
 
-var ( // 仙器存储
+var ( // 特殊物品存储
 	File_XianSword              *xiansword.SwordInFile  = xiansword.NewSwordInFile(File_FilePath+"swdif.conc")
+	File_AncientSword                                   = asword.NewAncientSword(File_FilePath+"avswd.avc",File_FilePath+"avswa.avc")
+	File_AncientPao                                     = apao.NewAncientPao(File_FilePathPao+"paon.paoc",File_FilePathPao+"paoa.paoac")
 )
 
 var ( // 每日限次数据存储
