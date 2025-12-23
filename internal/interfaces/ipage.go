@@ -38,6 +38,7 @@ const (
 	PageID_AncientThingWearPage
 	PageID_AncientThingSwordPage
 	PageID_AncientThingPaoPage
+	PageID_AncientThingBookPage
 	PageID_ToolsPage
 	PageID_BankMainPage
 	PageID_BankCunPage

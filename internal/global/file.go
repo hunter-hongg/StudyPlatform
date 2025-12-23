@@ -24,6 +24,7 @@ var (
 	File_FilePathXianJi             string              = File_FilePath + "xjccdir.fjdo/"
 	File_FilePathXianQi             string              = File_FilePath + "xqptdir/"
 	File_FilePathBaoWu              string              = File_FilePath + "baocdiran/"
+	File_FilePathBookShelf                              = File_FilePath + "sjdirspf/"
 )
 
 var ( // 普通数据存储
@@ -72,6 +73,9 @@ var ( // 加法文件存储
     File_AncientBaoYuzhan                               = util.NewAddFile(File_FilePathBaoWu+"baoyzex.bacce", 2024)
 	File_AncientBaoHu                                   = util.NewAddFile(File_FilePathBaoWu+"bwcrdc1.onc", 2017)
 	File_AncientBaoZhan                                 = util.NewAddFile(File_FilePathBaoWu+"bwcrd2.onc", 2017)
+	File_AncientBook1                                   = util.NewAddFile(File_FilePathBookShelf+"lv1cc.conc", 3406)
+	File_AncientBook2                                   = util.NewAddFile(File_FilePathBookShelf+"lv2cc.conc", 3406)
+	File_AncientBook3                                   = util.NewAddFile(File_FilePathBookShelf+"lv3cc.conc", 3406)
 )
 
 var ( // 仙丹存储
