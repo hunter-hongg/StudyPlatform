@@ -45,7 +45,7 @@ func (p *XianJiMainPage) GetContent() fyne.CanvasObject {
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_XianThingMainPage)
 	})
-
+	
 	btnT := widget.NewButton("购买仙籍", func(){
 		/* 20本仙籍 5仙币 */
 		deal := func(){

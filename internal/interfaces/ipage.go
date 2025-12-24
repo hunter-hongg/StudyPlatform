@@ -39,6 +39,12 @@ const (
 	PageID_AncientThingSwordPage
 	PageID_AncientThingPaoPage
 	PageID_AncientThingBookPage
+	PageID_AncientShopMainPage
+	PageID_AncientShopSimplePage
+	PageID_AncientShopEasyPage
+	PageID_AncientShopEasyTongPage
+	PageID_AncientShopEasyYinPage
+	PageID_AncientShopEasyJinPage
 	PageID_ToolsPage
 	PageID_BankMainPage
 	PageID_BankCunPage
