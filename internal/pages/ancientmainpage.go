@@ -31,26 +31,37 @@ func (p *AncientMainPage) GetContent() fyne.CanvasObject {
 	simple.Blue)
 	showtong.TextSize = 20
 
+	showb := canvas.NewText(
+		"白银: "+global.File_AncientBaiYinReader.ReadStrSafe(),
+	simple.Blue)
+	showb.TextSize = 20
+
+	showj := canvas.NewText(
+		"黄金: "+global.File_AncientHuangJinReader.ReadStrSafe(),
+	simple.Blue)
+	showj.TextSize = 20
+
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_MainPage)
 	})
 
-	// btnToTimer := widget.NewButton("学习计时", func(){
-	// 	p.router(interfaces.PageID_TimerMainPage)
-	// })
-	//
-	// btnToTongMain := widget.NewButton("通用货币", func(){
-	// 	p.router(interfaces.PageID_TongMainPage)
-	// })
-
+	btn0 := widget.NewButton("我的物品", func(){
+		p.router(interfaces.PageID_AncientThingMainPage)
+	})
+	
+	btn1 := widget.NewButton("古代店铺", func(){
+		p.router(interfaces.PageID_AncientShopMainPage)
+	})
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
 		simple.HorizonCenter(showtong),
-		// simple.HorizonCenter(showlevel),
-		simple.Spacer(130),
-		// simple.HorizonCenter(btnToTimer),
-		// simple.HorizonCenter(btnToTongMain),
+		simple.HorizonCenter(showb),
+		simple.HorizonCenter(showj),
+		simple.Spacer(70),
+		simple.HorizonCenter(btn0),
+		simple.HorizonCenter(btn1),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
