@@ -49,6 +49,10 @@ func (p *AncientMainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_AncientThingMainPage)
 	})
 	
+	btn1 := widget.NewButton("古代店铺", func(){
+		p.router(interfaces.PageID_AncientShopMainPage)
+	})
+	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -57,6 +61,7 @@ func (p *AncientMainPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(showj),
 		simple.Spacer(70),
 		simple.HorizonCenter(btn0),
+		simple.HorizonCenter(btn1),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
