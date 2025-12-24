@@ -82,6 +82,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewAncientShopEasyYinPage())
     c.registerPage(pages.NewAncientShopEasyJinPage())
     c.registerPage(pages.NewAncientShopEasyTongPage())
+    c.registerPage(pages.NewAncientShopBaowuPage())
     
     return c
 }
