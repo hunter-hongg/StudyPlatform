@@ -49,3 +49,26 @@ func (of_ AddFile) ReadInt() int {
 func (of_ AddFile) ReadStr() string {
 	return strconv.Itoa(of_.ReadInt())
 }
+
+func (of_ AddFile) Write(written string) error {
+	fptr, err := os.Create(of_.file)
+	if err != nil { return err }
+	_, err = fptr.WriteString(written)
+	return err
+}
+
+func (of_ AddFile) AddNum(an int) error {
+	res := of_.ReadInt() + an + of_.addnum
+	rest := strconv.Itoa(res)
+	return of_.Write(rest)
+}
+
+func (of_ AddFile) CanMinus(an int) bool {
+	ri := of_.ReadInt()
+	if ri < an {
+		return false
+	}
+	ann := -an
+	of_.AddNum(ann)
+	return true
+}

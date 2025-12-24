@@ -33,6 +33,10 @@ func (p *AncientThingMainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_AncientThingCaiPage)
 	})
 
+	btn1 := widget.NewButton("我的衣着", func(){
+		p.router(interfaces.PageID_AncientThingWearPage)
+	})
+
 	btn2 := widget.NewButton("我的古玩", func() {
 		p.router(interfaces.PageID_AncientThingGuwanPage)
 	})
@@ -49,6 +53,7 @@ func (p *AncientThingMainPage) GetContent() fyne.CanvasObject {
 		simple.HorizonCenter(title),
 		simple.Spacer(150),
 		simple.HorizonCenter(btn0),
+		simple.HorizonCenter(btn1),
 		simple.HorizonCenter(btn2),
 		simple.HorizonCenter(btn3),
 		simple.HorizonCenter(btn4),
