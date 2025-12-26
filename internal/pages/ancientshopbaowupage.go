@@ -45,7 +45,7 @@ func (p *AncientShopBaowuPage) GetContent() fyne.CanvasObject {
 	showj.TextSize = 20
 
 	btnBack := widget.NewButton("返回", func(){
-		p.router(interfaces.PageID_AncientMainPage)
+		p.router(interfaces.PageID_AncientShopMainPage)
 	})
 
 	var btns []fyne.CanvasObject
