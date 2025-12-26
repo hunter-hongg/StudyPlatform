@@ -230,3 +230,10 @@ func (fp *FilePassword) ReadIntSafe() int {
 	inte, _ := fp.ReadInt()
 	return inte
 }
+func (fp *FilePassword) CanMinusSafe(an int) bool {
+	res , err := fp.CanMinus(an)
+	if err != nil {
+		return false
+	}
+	return res
+}
