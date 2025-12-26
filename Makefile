@@ -7,7 +7,8 @@ TARGETFILE = StudyPlatform
 TARGETDIR = bin
 TARGETFILE2 = 学习平台
 
-all: run 
+all: build
+	$(TARGETDIR)/$(TARGETFILE2)
 run: 
 	$(GOCMD) $(RUNCMD) $(SRCDIR)/$(SRCFILE)
 build: 

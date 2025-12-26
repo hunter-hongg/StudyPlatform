@@ -62,6 +62,7 @@ var ( // 普通数据存储
 	File_AncientCiQiReader          *util.FilePassword  = util.NewFilePassword(File_FilePath+"cq.avgwc","so3pfm10a2")
 	File_AncientBeiKeReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"shb.avgwc","sudo1048qp")
 	File_AncientYuPeiReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"yup.avgwc","sofp194327")
+	File_AncientJuanReader                              = util.NewFilePassword(File_FilePathAncient+"jzrd.conc","dfpwm13058")
 )
 
 var ( // 加法文件存储
@@ -108,6 +109,7 @@ var ( // 每日限次数据存储
 	File_ThingSquareBaoShiCheck     *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"fospbsck.dogck",1127,1)
 	File_ThingSquareJinBiCheck      *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"sdogh.dogck",2035,1)
 	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1)
+	File_AncientJuanCheck                               = util.NewCheckFile(File_FilePathAncient+"jzrd.conc.lqck.conc",1250,1)
 )
 
 var ( // 单次数据存储
