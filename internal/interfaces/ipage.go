@@ -45,6 +45,8 @@ const (
 	PageID_AncientShopEasyTongPage
 	PageID_AncientShopEasyYinPage
 	PageID_AncientShopEasyJinPage
+	PageID_AncientShopBaowuPage
+	PageID_AncientShopGuwanPage
 	PageID_ToolsPage
 	PageID_BankMainPage
 	PageID_BankCunPage
