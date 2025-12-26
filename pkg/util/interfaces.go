@@ -4,6 +4,9 @@ type AddAble interface {
 	AddNum(an int) error
 }
 type ReadAble interface {
-	ReadStr() (string, error)
-	ReadInt() (int, error)
+	ReadStrSafe() int
+	ReadIntSafe() string
+}
+type MinusAble interface {
+	CanMinusSafe(an int) bool
 }
