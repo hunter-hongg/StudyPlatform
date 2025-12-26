@@ -47,6 +47,17 @@ func (p *AncientJuanMainPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btn1 := widget.NewButton("领取奖励", func(){
+		if !global.File_AncientJuanCheck.CheckTimes() {
+			simple.DialogInfo("今日已领取", global.Main_Window)
+			return
+		}
+		res := gfunc.JuanGetHuangjin(
+			gfunc.JuanGetLevel(
+				global.File_AncientJuanReader.ReadIntSafe(),
+			),
+		)
+		global.File_AncientHuangJinReader.AddNum(res)
+		simple.DialogInfo("领取成功，获得"+strconv.Itoa(res)+"两黄金",global.Main_Window)
 	})
 	
 	vbox := container.NewVBox(

@@ -16,3 +16,22 @@ func JuanGetLevel(zhi int) int {
 		return 0
 	}
 }
+
+func JuanGetHuangjin(lev int) int {
+	switch lev {
+	case 0:
+		return 0
+	case 1:
+		return 10
+	case 2:
+		return 20
+	case 3:
+		return 35
+	case 4:
+		return 40
+	case 5:
+		return 55
+	default:
+		return 10
+	}
+}
