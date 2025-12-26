@@ -72,3 +72,15 @@ func (of_ AddFile) CanMinus(an int) bool {
 	of_.AddNum(ann)
 	return true
 }
+
+func (of AddFile) CanMinusSafe(an int) bool {
+	return of.CanMinus(an)
+}
+
+func (f AddFile) ReadIntSafe() int {
+	return f.ReadInt()
+}
+
+func (f AddFile) ReadStrSafe() string {
+	return f.ReadStr()
+}
