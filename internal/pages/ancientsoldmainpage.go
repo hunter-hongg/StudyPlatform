@@ -73,7 +73,7 @@ func (p *AncientSoldMainPage) GetContent() fyne.CanvasObject {
 	
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
-		simple.Spacer(200),
+		simple.Spacer(170),
 		simple.HorizonCenter(btn0),
 		simple.HorizonCenter(btn1),
 		simple.Spacer(100),
