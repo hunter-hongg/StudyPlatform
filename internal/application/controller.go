@@ -94,6 +94,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewAncientGuanWuMainPage())
     c.registerPage(pages.NewAncientGuanWuZhaobingPage())
     c.registerPage(pages.NewAncientGuanWuZengbingPage())
+    c.registerPage(pages.NewAncientGuanWuChuzhengPage())
     
     return c
 }
