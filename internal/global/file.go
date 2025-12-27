@@ -128,6 +128,49 @@ var ( // 武官数据存储
 	File_AncientWuJingRuiLr                             = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.emf.ro.jingr.di.cc", "1094nfmwl2")
 	File_AncientWuWangPaiLr                             = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.od.wap.cc..e", "efoidm2590")
 	File_AncientWuShenJiLr                              = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt3960")
+	File_AncientWuXinIr                                 = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"wgllbl.regio.xb.cc..x", "2309fj4i5p", 
+																File_AncientWuBinglXinMin,
+														  )
+	File_AncientWuPuTongIr                              = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"wgllbl.ptcc.eoi..xdd", "doirm19840", 
+																File_AncientWuBinglPuTongMin,
+														  )
+	File_AncientWuChuJiIr                               = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"wgllbl.dsoi.cjcc..do", "sdoi4960al", 
+																File_AncientWuBinglChuJiMin, 
+														  )
+	File_AncientWuZhongJiIr                             = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"e.wgllbl.dso.cjcc.zj..d", "sdoim39501", 
+																File_AncientWuBinglZhongJiMin, 
+														  )
+	File_AncientWuGaoJiIr                               = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"r.wgllbl.d.dui.gj.dc", "sdiu38901l", 
+																File_AncientWuBinglGaoJiMin, 
+														  )
+	File_AncientWuJingRuiIr                             = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"wgllbl.df.d.jrcc.c.d", "dsorm28901", 
+																File_AncientWuBinglJingRuiMin, 
+														  )
+	File_AncientWuWangPaiIr                             = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"wgllbl.eo.eo.wp.d", "12984jfrkw", 
+																File_AncientWuBinglWangPaiMin, 
+														  )
+	File_AncientWuShenJiIr                              = util.NewFilePasswordWithDefault(
+																File_FilePathAncientWuGuan+"wgllbl.eo.df.shjcc.", "eufmrl3029", 
+																File_AncientWuBinglShenJiMin, 
+														  )
+)
+
+const ( // 武官不可变数据存储
+	File_AncientWuBinglXinMin                            = 1
+	File_AncientWuBinglPuTongMin                         = 3
+	File_AncientWuBinglChuJiMin                          = 6
+	File_AncientWuBinglZhongJiMin                        = 10
+	File_AncientWuBinglGaoJiMin                          = 20
+	File_AncientWuBinglJingRuiMin                        = 40
+	File_AncientWuBinglWangPaiMin                        = 90
+	File_AncientWuBinglShenJiMin                         = 20
 )
 
 var ( // 单次数据存储
