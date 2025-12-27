@@ -3,6 +3,7 @@ package global
 import (
 	"StudyPlatform/internal/apao"
 	"StudyPlatform/internal/asword"
+	"StudyPlatform/internal/awenguan"
 	"StudyPlatform/internal/xiansword"
 	"StudyPlatform/pkg/util"
 	"os"
@@ -63,6 +64,7 @@ var ( // 普通数据存储
 	File_AncientBeiKeReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"shb.avgwc","sudo1048qp")
 	File_AncientYuPeiReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"yup.avgwc","sofp194327")
 	File_AncientJuanReader                              = util.NewFilePassword(File_FilePathAncient+"jzrd.conc","dfpwm13058")
+	File_AncientWenZhengjiReader                        = util.NewFilePassword(File_FilePath+"zhejrder.awgcc","eso1pam360");
 )
 
 var ( // 加法文件存储
@@ -94,9 +96,10 @@ var ( // 仙丹存储
 )
 
 var ( // 特殊物品存储
-	File_XianSword              *xiansword.SwordInFile  = xiansword.NewSwordInFile(File_FilePath+"swdif.conc")
+	File_XianSword                                      = xiansword.NewSwordInFile(File_FilePath+"swdif.conc")
 	File_AncientSword                                   = asword.NewAncientSword(File_FilePath+"avswd.avc",File_FilePath+"avswa.avc")
 	File_AncientPao                                     = apao.NewAncientPao(File_FilePathPao+"paon.paoc",File_FilePathPao+"paoa.paoac")
+	File_AncientWenGuan                                 = awenguan.NewAncientWenGuanConfig(File_FilePath+"awcfg.awgcc",1052)
 )
 
 var ( // 每日限次数据存储
@@ -110,6 +113,9 @@ var ( // 每日限次数据存储
 	File_ThingSquareJinBiCheck      *util.CheckFile     = util.NewCheckFile(File_FilePathThingsSquare+"sdogh.dogck",2035,1)
 	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1)
 	File_AncientJuanCheck                               = util.NewCheckFile(File_FilePathAncient+"jzrd.conc.lqck.conc",1250,1)
+	File_AncientWenFengCheck                            = util.NewCheckFile(File_FilePath+"flchk.awgcc",4034,1)
+	File_AncientWenZhengjiCheck                         = util.NewCheckFile(File_FilePathAncient+"zjzjck.ckawgcc",4059,1)
+	File_AncientWenZhengshCheck                         = util.NewCheckFile(File_FilePathAncient+"msmsck.ckawgcc.dsi.1234",2125,1)
 )
 
 var ( // 单次数据存储
