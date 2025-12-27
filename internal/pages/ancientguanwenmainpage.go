@@ -33,7 +33,7 @@ func (p *AncientGuanWenMainPage) GetContent() fyne.CanvasObject {
 	showtong.TextSize = 20
 
 	showb := canvas.NewText(
-		"品级: "+strconv.Itoa(global.File_AncientWenGuan.ReadLevel())+"级",
+		"品级: "+strconv.Itoa(global.File_AncientWenGuan.ReadLevel())+"品",
 	simple.Blue)
 	showb.TextSize = 20
 

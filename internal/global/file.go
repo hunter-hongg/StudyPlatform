@@ -29,6 +29,7 @@ var (
 	File_FilePathBaoWu              string              = File_FilePath + "baocdiran/"
 	File_FilePathBookShelf                              = File_FilePath + "sjdirspf/"
 	File_FilePathPao                                    = File_FilePath + "apcdir/"
+	File_FilePathAncientWuGuan                          = File_FilePathAncient+"fpawg.4of/"
 )
 
 var ( // 普通数据存储
@@ -116,6 +117,17 @@ var ( // 每日限次数据存储
 	File_AncientWenFengCheck                            = util.NewCheckFile(File_FilePath+"flchk.awgcc",4034,1)
 	File_AncientWenZhengjiCheck                         = util.NewCheckFile(File_FilePathAncient+"zjzjck.ckawgcc",4059,1)
 	File_AncientWenZhengshCheck                         = util.NewCheckFile(File_FilePathAncient+"msmsck.ckawgcc.dsi.1234",2125,1)
+)
+
+var ( // 武官数据存储
+	File_AncientWuXinLr                                 = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.xawg.cc.43", "fm5o3kd104")
+	File_AncientWuPuTongLr                              = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.pt.cc.ro3", "fivn310694")
+	File_AncientWuChuJiLr                               = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.eo.cj.cc.30", "form30296l")
+	File_AncientWuZhongJiLr                             = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.eo.zhj.39c.cc", "domt53p210")
+	File_AncientWuGaoJiLr                               = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.em.gaoj.do3.cc", "dmei45103k")
+	File_AncientWuJingRuiLr                             = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.emf.ro.jingr.di.cc", "1094nfmwl2")
+	File_AncientWuWangPaiLr                             = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.od.wap.cc..e", "efoidm2590")
+	File_AncientWuShenJiLr                              = util.NewFilePassword(File_FilePathAncientWuGuan+"wgll.shj.dfo.cc..", "eogfmt3960")
 )
 
 var ( // 单次数据存储
