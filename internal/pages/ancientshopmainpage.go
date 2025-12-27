@@ -28,7 +28,7 @@ func (p *AncientShopMainPage) GetContent() fyne.CanvasObject {
 	btnBack := widget.NewButton("返回", func(){
 		p.router(interfaces.PageID_AncientMainPage)
 	})
-
+	
 	btn0 := widget.NewButton("普通店铺", func(){
 		p.router(interfaces.PageID_AncientShopSimplePage)
 	})
