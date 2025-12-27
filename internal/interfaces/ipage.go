@@ -51,6 +51,13 @@ const (
 	PageID_AncientJuanRealPage
 	PageID_AncientSoldMainPage
 	PageID_AncientSoldBaowuPage
+	PageID_AncientGuanMainPage
+	PageID_AncientGuanWenMainPage
+	PageID_AncientGuanWenZhengPage
+	PageID_AncientGuanWuMainPage
+	PageID_AncientGuanWuZhaobingPage
+	PageID_AncientGuanWuZengbingPage
+	PageID_AncientGuanWuChuzhengPage
 	PageID_ToolsPage
 	PageID_BankMainPage
 	PageID_BankCunPage
