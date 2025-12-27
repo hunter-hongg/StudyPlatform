@@ -26,7 +26,7 @@ func main() {
 	os.MkdirAll(global.File_FilePathXianDan, 0755)
 	os.MkdirAll(global.File_FilePathXianJi, 0755)
 	os.MkdirAll(global.File_FilePathXianQi, 0755)
-	mkdirs := []string{global.File_FilePathBaoWu, global.File_FilePathBookShelf, global.File_FilePathPao}
+	mkdirs := []string{global.File_FilePathBaoWu, global.File_FilePathBookShelf, global.File_FilePathPao, global.File_FilePathAncientWuGuan}
 	for _, i := range mkdirs {
 		os.MkdirAll(i, 0755)
 	}
