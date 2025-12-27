@@ -52,7 +52,7 @@ func (p *AncientGuanWenMainPage) GetContent() fyne.CanvasObject {
 	})
 	
 	btn1 := widget.NewButton("我的政绩", func(){
-		p.router(interfaces.PageID_AncientGuanWuMainPage)
+		p.router(interfaces.PageID_AncientGuanWenZhengPage)
 	})
 	
 	vbox := container.NewVBox(

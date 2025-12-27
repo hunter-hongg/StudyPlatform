@@ -64,6 +64,7 @@ var ( // 普通数据存储
 	File_AncientBeiKeReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"shb.avgwc","sudo1048qp")
 	File_AncientYuPeiReader         *util.FilePassword  = util.NewFilePassword(File_FilePath+"yup.avgwc","sofp194327")
 	File_AncientJuanReader                              = util.NewFilePassword(File_FilePathAncient+"jzrd.conc","dfpwm13058")
+	File_AncientWenZhengjiReader                        = util.NewFilePassword(File_FilePath+"zhejrder.awgcc","eso1pam360");
 )
 
 var ( // 加法文件存储
@@ -113,6 +114,8 @@ var ( // 每日限次数据存储
 	File_XianLuOk                   *util.CheckFile     = util.NewCheckFile(File_FilePathXianLu+"ck.clq.cc.3", 4091, 1)
 	File_AncientJuanCheck                               = util.NewCheckFile(File_FilePathAncient+"jzrd.conc.lqck.conc",1250,1)
 	File_AncientWenFengCheck                            = util.NewCheckFile(File_FilePath+"flchk.awgcc",4034,1)
+	File_AncientWenZhengjiCheck                         = util.NewCheckFile(File_FilePathAncient+"zjzjck.ckawgcc",4059,1)
+	File_AncientWenZhengshCheck                         = util.NewCheckFile(File_FilePathAncient+"msmsck.ckawgcc.dsi.1234",2125,1)
 )
 
 var ( // 单次数据存储

@@ -36,7 +36,7 @@ func (p *AncientShopMainPage) GetContent() fyne.CanvasObject {
 	btn1 := widget.NewButton("便利店铺", func(){
 		p.router(interfaces.PageID_AncientShopEasyPage)
 	})
-	asdio
+	
 	btn2 := widget.NewButton("宝物店铺", func(){
 		p.router(interfaces.PageID_AncientShopBaowuPage)
 	})
