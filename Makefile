@@ -17,7 +17,8 @@ build:
 	mv $(TARGETDIR)/$(TARGETFILE) $(TARGETDIR)/$(TARGETFILE2)
 grun: 
 	$(TARGETDIR)/$(TARGETFILE2)
-rel: build 
+rel: build
+	@script/release $(VERSION)
 crun: 
 	$(TARGETDIR)/cpp/学习平台
 
