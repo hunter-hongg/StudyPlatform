@@ -41,6 +41,8 @@ github.com/hack-pad/safejs v0.1.0 h1:qPS6vjreAqh2amUqj4WNG1zIw7qlRQJ9K10eDKMCnE8
 github.com/hack-pad/safejs v0.1.0/go.mod h1:HdS+bKF1NrE72VoXZeWzxFOVQVUSqZJAG0xNCnb+Tio=
 github.com/hunter-hongg/GoPlus v1.2.0 h1:B5z38tjSHSakGUBEQ6iHh4WOiR9E/89stmUHUv6Yzak=
 github.com/hunter-hongg/GoPlus v1.2.0/go.mod h1:rPEK1RihZHNP4F1xDGBH4VhXjlIZ0isxk1Or2+3Vnlo=
+github.com/hunter-hongg/GoPlus v1.3.0 h1:cqjfV4tlNZK2lDzE/85jBG7zWa5lGbM4TeI0pVHWlak=
+github.com/hunter-hongg/GoPlus v1.3.0/go.mod h1:rPEK1RihZHNP4F1xDGBH4VhXjlIZ0isxk1Or2+3Vnlo=
 github.com/jeandeaual/go-locale v0.0.0-20250612000132-0ef82f21eade h1:FmusiCI1wHw+XQbvL9M+1r/C3SPqKrmBaIOYwVfQoDE=
 github.com/jeandeaual/go-locale v0.0.0-20250612000132-0ef82f21eade/go.mod h1:ZDXo8KHryOWSIqnsb/CiDq7hQUYryCgdVnxbj8tDG7o=
 github.com/jsummers/gobmp v0.0.0-20230614200233-a9de23ed2e25 h1:YLvr1eE6cdCqjOe972w/cYF+FjW34v27+9Vo5106B4M=
