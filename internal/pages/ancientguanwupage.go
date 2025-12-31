@@ -29,7 +29,7 @@ func (p *AncientGuanWuMainPage) GetContent() fyne.CanvasObject {
 		"官职类型: 武官",
 	simple.Blue)
 	showtong.TextSize = 20
-
+	
 	// showb := canvas.NewText(
 	// 	"品级: "+strconv.Itoa(global.File_AncientWenGuan.ReadLevel())+"级",
 	// simple.Blue)
