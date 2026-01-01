@@ -43,6 +43,16 @@ func (p *SettingMainPage) GetContent() fyne.CanvasObject {
 	hasc := global.File_SettingThemeDark.GetState(false)
 	btnTheme.SetChecked(hasc)
 
+	btnUt := widget.NewCheck("启用工具", func(checked bool){ 
+		if checked {
+			global.File_SettingEnableUtil.SwitchTo(true)
+		} else {
+			global.File_SettingEnableUtil.SwitchTo(false)
+		}
+	})
+	hasc2 := global.File_SettingEnableUtil.GetState(false)
+	btnUt.SetChecked(hasc2)
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(20),
@@ -50,6 +60,7 @@ func (p *SettingMainPage) GetContent() fyne.CanvasObject {
 		simple.Spacer(130),
 		container.NewGridWithColumns(2, 
 			simple.HorizonRight(btnTheme), 
+			simple.HorizonLeft(btnUt),
 		),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),

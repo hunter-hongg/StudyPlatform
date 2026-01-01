@@ -176,6 +176,7 @@ const ( // 武官不可变数据存储
 
 var (
 	File_SettingThemeDark                                = util.NewTFFile(File_FilePathSetting+"theme.setting")
+	File_SettingEnableUtil                               = util.NewTFFile(File_FilePathSetting+"util.setting")
 )
 
 var ( // 单次数据存储

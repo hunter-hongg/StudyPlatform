@@ -60,7 +60,11 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 		p.router(interfaces.PageID_ThingSquareMainPage)
 	})
 	btnToTools := widget.NewButton("工具页面", func() {
-		p.router(interfaces.PageID_ToolsPage)
+		if global.File_SettingEnableUtil.GetState(true){
+			p.router(interfaces.PageID_ToolsPage)
+		} else {
+			simple.DialogInfo("工具已禁用 请前往设置开启", global.Main_Window)
+		}
 	})
 	btnToSetting := widget.NewButton("设置界面", func(){
 		p.router(interfaces.PageID_SettingMainPage)
