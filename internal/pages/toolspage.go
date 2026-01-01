@@ -1,6 +1,7 @@
 package pages
 
 import (
+	"StudyPlatform/internal/global"
 	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/pkg/simple"
 	"os"
@@ -40,10 +41,24 @@ func (p *ToolsPage) GetContent() fyne.CanvasObject {
 		cmdr.Wait()
 	})
 
+	btn2 := widget.NewButton("太空保卫", func(){
+		simple.DialogQuestion(
+			"即将启动太空保卫 关闭窗口后请按Esc退出", global.Main_Window, 
+			func() {
+				dirnamee, _ := os.Executable()
+				dirnamee = filepath.Dir(dirnamee)
+				cmdr := exec.Command(dirnamee+"/util/SpaceGo")
+				cmdr.Start()
+				cmdr.Wait()
+			}, func(){},
+		)
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
 		simple.HorizonCenter(btnNote),
+		simple.HorizonCenter(btn2),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),

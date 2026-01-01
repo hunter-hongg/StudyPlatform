@@ -62,7 +62,9 @@ func (p *MainPage) GetContent() fyne.CanvasObject {
 	btnToTools := widget.NewButton("工具页面", func() {
 		p.router(interfaces.PageID_ToolsPage)
 	})
-	btnToSetting := widget.NewButton("设置界面", func(){})
+	btnToSetting := widget.NewButton("设置界面", func(){
+		p.router(interfaces.PageID_SettingMainPage)
+	})
 
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),

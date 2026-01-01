@@ -26,7 +26,11 @@ func main() {
 	os.MkdirAll(global.File_FilePathXianDan, 0755)
 	os.MkdirAll(global.File_FilePathXianJi, 0755)
 	os.MkdirAll(global.File_FilePathXianQi, 0755)
-	mkdirs := []string{global.File_FilePathBaoWu, global.File_FilePathBookShelf, global.File_FilePathPao, global.File_FilePathAncientWuGuan}
+	mkdirs := []string{
+		global.File_FilePathBaoWu, global.File_FilePathBookShelf, 
+		global.File_FilePathPao, global.File_FilePathAncientWuGuan, 
+		global.File_FilePathSetting,
+	}
 	for _, i := range mkdirs {
 		os.MkdirAll(i, 0755)
 	}
@@ -35,7 +39,13 @@ func main() {
 	global.Logger.Info("程序正常启动")
 
     a := app.New()
-	a.Settings().SetTheme(&simple.Font{})
+	var v fyne.ThemeVariant
+	if global.File_SettingThemeDark.GetState(false) {
+		v = 0
+	} else {
+		v = 1
+	}
+	a.Settings().SetTheme(simple.NewMyTheme(v))
     global.Main_Window = a.NewWindow("学习平台")
     
     controller := application.NewApp(global.Main_Window)
