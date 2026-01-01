@@ -40,10 +40,19 @@ func (p *ToolsPage) GetContent() fyne.CanvasObject {
 		cmdr.Wait()
 	})
 
+	btn2 := widget.NewButton("太空保卫", func(){
+		dirnamee, _ := os.Executable()
+		dirnamee = filepath.Dir(dirnamee)
+		cmdr := exec.Command(dirnamee+"/util/SpaceGo")
+		cmdr.Start()
+		cmdr.Wait()
+	})
+
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(200),
 		simple.HorizonCenter(btnNote),
+		simple.HorizonCenter(btn2),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
