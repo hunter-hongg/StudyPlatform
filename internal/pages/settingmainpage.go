@@ -50,7 +50,7 @@ func (p *SettingMainPage) GetContent() fyne.CanvasObject {
 			global.File_SettingEnableUtil.SwitchTo(false)
 		}
 	})
-	hasc2 := global.File_SettingEnableUtil.GetState(false)
+	hasc2 := global.File_SettingEnableUtil.GetState(true)
 	btnUt.SetChecked(hasc2)
 
 	vbox := container.NewVBox(
