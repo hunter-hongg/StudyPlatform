@@ -30,6 +30,7 @@ var (
 	File_FilePathBookShelf                              = File_FilePath + "sjdirspf/"
 	File_FilePathPao                                    = File_FilePath + "apcdir/"
 	File_FilePathAncientWuGuan                          = File_FilePathAncient+"fpawg.4of/"
+	File_FilePathSetting                                = File_FilePath + "settings/"
 )
 
 var ( // 普通数据存储
@@ -171,6 +172,10 @@ const ( // 武官不可变数据存储
 	File_AncientWuBinglJingRuiMin                        = 40
 	File_AncientWuBinglWangPaiMin                        = 90
 	File_AncientWuBinglShenJiMin                         = 20
+)
+
+var (
+	File_SettingThemeDark                                = util.NewTFFile(File_FilePathSetting+"theme.setting")
 )
 
 var ( // 单次数据存储

@@ -83,6 +83,7 @@ const (
 	PageID_XianDanShowPage
 	PageID_XianDanLianPage
 	PageID_XianDanZhaoPage
+	PageID_SettingMainPage
 )
 
 type IPage interface {
