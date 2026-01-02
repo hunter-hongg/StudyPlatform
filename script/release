@@ -2,6 +2,7 @@
 cd ~/sbuild
 cp ~/学习平台/bin/学习平台 .
 rm -r AppDir -f
+rm 学习平台*AppImage
 mkdir -p AppDir/usr/share/doc/StudyPlatform/
 cp ~/学习平台/LICENSE AppDir/usr/share/doc/StudyPlatform/ 
 mkdir -p AppDir/usr/bin/
