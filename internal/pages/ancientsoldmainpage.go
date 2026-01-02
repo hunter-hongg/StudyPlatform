@@ -28,7 +28,7 @@ func NewAncientSoldMainPage() *AncientSoldMainPage {
 }
 
 func (p *AncientSoldMainPage) GetContent() fyne.CanvasObject {
-	title := canvas.NewText("物品卖出", color.Black)
+	title := canvas.NewText("物品使用", color.Black)
 	title.TextSize = 27
 
 	btnBack := widget.NewButton("返回", func(){
