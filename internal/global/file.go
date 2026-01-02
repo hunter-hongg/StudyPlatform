@@ -84,6 +84,11 @@ var ( // 加法文件存储
 	File_AncientBook1                                   = util.NewAddFile(File_FilePathBookShelf+"lv1cc.conc", 3406)
 	File_AncientBook2                                   = util.NewAddFile(File_FilePathBookShelf+"lv2cc.conc", 3406)
 	File_AncientBook3                                   = util.NewAddFile(File_FilePathBookShelf+"lv3cc.conc", 3406)
+	File_AncientBookc1                                  = util.NewAddFile(File_FilePathBookShelf+"lvc1cc", 2390)
+	File_AncientBookc2                                  = util.NewAddFile(File_FilePathBookShelf+"lvc2cc", 2990)
+	File_AncientBookc3                                  = util.NewAddFile(File_FilePathBookShelf+"lvc3cc", 2690)
+	File_AncientBookc4                                  = util.NewAddFile(File_FilePathBookShelf+"lvc4cc", 2300)
+	File_AncientBookc5                                  = util.NewAddFile(File_FilePathBookShelf+"lvc5cc", 2310)
 )
 
 var ( // 仙丹存储

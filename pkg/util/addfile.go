@@ -73,6 +73,11 @@ func (of_ AddFile) CanMinus(an int) bool {
 	return true
 }
 
+func (of_ AddFile) High(an int) bool {
+	ri := of_.ReadInt()
+	return ri >= an
+}
+
 func (of AddFile) CanMinusSafe(an int) bool {
 	return of.CanMinus(an)
 }

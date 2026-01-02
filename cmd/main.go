@@ -46,7 +46,7 @@ func main() {
 		v = 1
 	}
 	a.Settings().SetTheme(simple.NewMyTheme(v))
-    global.Main_Window = a.NewWindow("学习平台")
+    global.Main_Window = a.NewWindow("多重平台")
     
     controller := application.NewApp(global.Main_Window)
     controller.SwitchPage(interfaces.PageID_MainPage)
