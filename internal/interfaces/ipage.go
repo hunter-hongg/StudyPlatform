@@ -47,6 +47,7 @@ const (
 	PageID_AncientShopEasyJinPage
 	PageID_AncientShopBaowuPage
 	PageID_AncientShopGuwanPage
+	PageID_AncientShopBookPage
 	PageID_AncientJuanMainPage
 	PageID_AncientJuanRealPage
 	PageID_AncientSoldMainPage
