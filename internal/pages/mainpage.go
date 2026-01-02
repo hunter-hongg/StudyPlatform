@@ -25,7 +25,7 @@ func NewMainPage() *MainPage {
 }
 
 func (p *MainPage) GetContent() fyne.CanvasObject {
-	title := canvas.NewText("欢迎"+global.User+"来到学习平台", color.Black)
+	title := canvas.NewText("欢迎"+global.User+"来到多重平台", color.Black)
 	title.TextSize = 35
 
 	showjifen := canvas.NewText("积分: "+global.File_JiFenReader.ReadStrSafe(), simple.Blue)

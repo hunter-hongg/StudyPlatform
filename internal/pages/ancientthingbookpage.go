@@ -4,6 +4,8 @@ import (
 	"StudyPlatform/internal/global"
 	"StudyPlatform/internal/interfaces"
 	"StudyPlatform/pkg/simple"
+	"StudyPlatform/pkg/util"
+	"strconv"
 
 	"image/color"
 
@@ -34,13 +36,23 @@ func (p *AncientThingBookPage) GetContent() fyne.CanvasObject {
 	var things = []string{"普通书籍", "珍稀书籍", "典藏书籍"}
 	var files = []string{global.File_AncientBook1.ReadStr(), global.File_AncientBook2.ReadStr(),
 		global.File_AncientBook3.ReadStr()}
+	var t2f = []*util.AddFile{
+		global.File_AncientBookc1, global.File_AncientBookc2, global.File_AncientBookc3, 
+		global.File_AncientBookc4, global.File_AncientBookc5,
+	}
 
 	for i := 0; i < 3; i++ {
 		btns = append(btns,
-			simple.HorizonCenter(
-				widget.NewButton(
-					things[i]+": "+files[i]+"本", func() {},
-				),
+			widget.NewButton(
+				things[i]+": "+files[i]+"本", func() {},
+			),
+		)
+	}
+
+	for i, j := range t2f {
+		btns = append(btns, 
+			widget.NewButton(
+				"抄录书籍"+strconv.Itoa(i+1)+"级: "+j.ReadStr()+"本", func(){},
 			),
 		)
 	}
@@ -48,7 +60,7 @@ func (p *AncientThingBookPage) GetContent() fyne.CanvasObject {
 	vbox := container.NewVBox(
 		simple.HorizonCenter(title),
 		simple.Spacer(170),
-		btns[0], btns[1], btns[2],
+		container.NewGridWithColumns(2, btns...),
 		simple.Spacer(100),
 		simple.HorizonRight(btnBack),
 		layout.NewSpacer(),
