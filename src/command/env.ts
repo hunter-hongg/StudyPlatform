@@ -10,4 +10,13 @@ export namespace env {
             return ""
         }
     }
+    export async function get_std(): Promise<string> {
+        try {
+            let result = await invoke<string>("env_get_std");
+            return result
+        } catch(err) {
+            // TODO: 实现错误处理
+            return ""
+        }
+    }
 }
