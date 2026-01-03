@@ -19,7 +19,7 @@
 1. **禁止使用`any`类型**，特殊情况需在SPECIAL.md声明
 2. **组件必须使用`<script setup lang="ts">`语法**
 3. **状态管理统一使用Pinia**，禁止组件间直接传递复杂状态
-4. **Tauri命令调用必须封装为组合式函数**（如`useTauriCommand`）
+4. **Tauri命令调用必须封装为函数**
 5. **样式方案统一使用UnoCSS**，禁止混用CSS方案
 6. **每个Vue组件必须包含**: 
    - Props类型定义
