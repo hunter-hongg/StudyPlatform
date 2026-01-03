@@ -96,6 +96,7 @@ func NewApp(window fyne.Window) *AppController {
     c.registerPage(pages.NewAncientGuanWuZengbingPage())
     c.registerPage(pages.NewAncientGuanWuChuzhengPage())
     c.registerPage(pages.NewSettingMainPage())
+    c.registerPage(pages.NewAncientShopBookPage())
     
     return c
 }
