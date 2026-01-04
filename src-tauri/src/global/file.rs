@@ -1,7 +1,8 @@
-use crate::util::PasswordFile;
+//! 全局文件变量
 
-const jifenreader_filepath = "jifc.txt"
-const jifenreader_filepwd = "hsiep10475"
-pub fn JiFenReader() -> PasswordFile {
-    fdso
+use crate::{env::get_std, util::PasswordFile, error::Result};
+
+pub fn jifen_reader() -> Result<PasswordFile> {
+    let std = get_std()?;
+    Ok(PasswordFile::new(&(std+"jifc.txt"), "hsiep10475"))
 }

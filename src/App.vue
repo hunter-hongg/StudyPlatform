@@ -2,7 +2,7 @@
 import { ref, onMounted, } from 'vue';
 import { env } from './command/env';
 
-const user = ref('测试用户')
+const user = ref('')
 
 onMounted(async () => {
   user.value = await env.get_user()
