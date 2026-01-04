@@ -223,3 +223,54 @@ impl FilePassword {
         self.can_minus(an).unwrap_or(false)
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn create_test_fp() -> FilePassword {
+        FilePassword::new("hello", "012345678x")
+    }
+    
+    #[test]
+    fn test_write_and_read() {
+        // 执行本测试前请清空文件
+        let x = create_test_fp();
+        match x.add_num(9) {
+            Ok(_) => {}, 
+            Err(e) => panic!("{}", e),
+        }
+        match x.read_str() {
+            Ok(val) => assert_eq!(val, "9"), 
+            Err(e) => panic!("{}", e),
+        }
+        match x.read_int() {
+            Ok(val) => assert_eq!(val, 9),
+            Err(e) => panic!("{}", e),
+        }
+        match x.high(7) {
+            Ok(val) => assert_eq!(val, true),
+            Err(e) => panic!("{}", e),
+        }
+        match x.high(9) {
+            Ok(val) => assert_eq!(val, true),
+            Err(e) => panic!("{}", e),
+        }
+        match x.can_minus(4) {
+            Ok(val) => assert_eq!(val, true),
+            Err(e) => panic!("{}", e),
+        }
+        match x.read_int() {
+            Ok(val) => assert_eq!(val, 5),
+            Err(e) => panic!("{}", e),
+        }
+        match x.can_minus(999) {
+            Ok(val) => assert_eq!(val, false),
+            Err(e) => panic!("{}", e),
+        }
+        match x.read_str() {
+            Ok(val) => assert_eq!(val, "5"),
+            Err(e) => panic!("{}", e),
+        }
+    }
+}

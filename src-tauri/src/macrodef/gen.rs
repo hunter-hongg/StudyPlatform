@@ -1,5 +1,10 @@
 //! 生成对应函数绑定
 
+/// - 生成**FilePassword**的函数绑定
+/// - 使用方法：`bind_filepassword![a, b];`
+/// - 注意事项：
+///   1. `a`对应的函数为`crate::global::f::a_reader()`
+///   2. 生成函数为`a_readint()` `a_readstr()` `a_addnum`，均**自动导出**为tauri命令
 #[macro_export]
 macro_rules! bind_filepassword {
     // 批量生成版本
