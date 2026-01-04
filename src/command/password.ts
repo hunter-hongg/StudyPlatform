@@ -21,6 +21,6 @@ export namespace password {
         }
     }
     export async function jifen_reader(): Promise<reader> {
-        return new reader("jifen_get_int", "jifen_get_str", "jifen_add")
+        return new reader("jifen_readint", "jifen_readstr", "jifen_addnum")
     }
 }

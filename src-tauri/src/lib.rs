@@ -1,5 +1,3 @@
-use crate::{error::Result, util::PasswordFile};
-
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 pub mod env;   // 环境变量相关定义
 pub mod error; // 错误相关类别

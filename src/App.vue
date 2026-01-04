@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { ref, onMounted, } from 'vue';
 import { env } from './command/env';
+import { password } from './command/password';
 
 const user = ref('')
+const jifen = ref('')
 
 onMounted(async () => {
   user.value = await env.get_user()
+  jifen.value = await (await password.jifen_reader()).Str()
 })
 
 </script>
@@ -13,6 +16,7 @@ onMounted(async () => {
 <template>
   <main class="container">
     <h1>欢迎{{user}}来到学习平台</h1>
+    <h3>积分: {{ jifen }}</h3>
   </main>
 </template>
 
@@ -54,6 +58,13 @@ a:hover {
 
 h1 {
   text-align: center;
+}
+
+h3 {
+  color: #646cff;
+  text-align: center;
+  margin-top: 0em;      /* 上间距 */
+  margin-bottom: 0em;   /* 下间距 */
 }
 
 input,
