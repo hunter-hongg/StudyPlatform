@@ -4,6 +4,7 @@ pub mod error; // 错误相关类别
 pub mod util; // 工具模块
 pub mod global; // 全局变量
 pub mod macrodef; // 宏定义
+pub mod domain; // 具体业务逻辑
 
 bind_filepassword![jifen];
 
@@ -17,8 +18,8 @@ pub fn run() {
                 env::get_user, 
                 env::get_std,
                 jifen_addnum, 
-                jifen_readint,
-                jifen_readstr,
+                jifen_readint, 
+                jifen_readstr, 
             ], 
         )
         .run(tauri::generate_context!())
