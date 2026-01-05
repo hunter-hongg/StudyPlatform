@@ -3,7 +3,6 @@ name: CI
 on:
   push:
     # 任何分支推送都会触发clippy和test
-    tags: [ 'v*' ]
   pull_request:
     # 任何PR都会触发
   schedule:

@@ -249,15 +249,15 @@ mod tests {
             Err(e) => panic!("{}", e),
         }
         match x.high(7) {
-            Ok(val) => assert_eq!(val, true),
+            Ok(val) => assert!(val),
             Err(e) => panic!("{}", e),
         }
         match x.high(9) {
-            Ok(val) => assert_eq!(val, true),
+            Ok(val) => assert!(val),
             Err(e) => panic!("{}", e),
         }
         match x.can_minus(4) {
-            Ok(val) => assert_eq!(val, true),
+            Ok(val) => assert!(val),
             Err(e) => panic!("{}", e),
         }
         match x.read_int() {
@@ -265,7 +265,7 @@ mod tests {
             Err(e) => panic!("{}", e),
         }
         match x.can_minus(999) {
-            Ok(val) => assert_eq!(val, false),
+            Ok(val) => assert!(!val),
             Err(e) => panic!("{}", e),
         }
         match x.read_str() {
