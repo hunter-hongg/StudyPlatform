@@ -38,6 +38,7 @@ pub fn get_std() -> Result<String> {
 mod tests {
     use super::*;
     #[test]
+    #[ignore = "环境不一致"]
     fn test_get_user() {
         // 本测试依赖用户名称
         // 我的用户名称为coding，故此处使用coding测试
@@ -47,6 +48,7 @@ mod tests {
         }
     }
     #[test]
+    #[ignore = "环境不一致"]
     fn test_bad_get_user() {
         // 条件同上
         match get_user() {
@@ -55,6 +57,7 @@ mod tests {
         }
     }
     #[test]
+    #[ignore = "环境不一致"]
     fn test_get_std(){
         // 测试条件同上
         match get_std() {
