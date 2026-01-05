@@ -2,13 +2,18 @@
 import { ref, onMounted, } from 'vue';
 import { env } from './command/env';
 import { password } from './command/password';
+import { domain } from './command/domain/jifen';
 
 const user = ref('')
 const jifen = ref('')
+const dengj = ref('')
 
 onMounted(async () => {
   user.value = await env.get_user()
-  jifen.value = await (await password.jifen_reader()).Str()
+  let jifenreader = await password.jifen_reader()
+  jifen.value = await jifenreader.Str()
+  let jifenlevel = await domain.jifen.get_level(await jifenreader.Int())
+  dengj.value = jifenlevel.toString()
 })
 
 </script>
@@ -17,6 +22,7 @@ onMounted(async () => {
   <main class="container">
     <h1>欢迎{{user}}来到学习平台</h1>
     <h3>积分: {{ jifen }}</h3>
+    <h3>等级: {{ dengj }}</h3>
   </main>
 </template>
 
