@@ -16,6 +16,10 @@ pub fn jifen_getlevel(jif: i32) -> Result<i32> {
 	}
 }
 
+fn bad(a: i32) {
+
+}
+
 #[cfg(test)]
 mod tests {
 
