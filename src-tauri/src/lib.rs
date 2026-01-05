@@ -20,6 +20,7 @@ pub fn run() {
                 jifen_addnum, 
                 jifen_readint, 
                 jifen_readstr, 
+                domain::jifen::jifen_getlevel,
             ], 
         )
         .run(tauri::generate_context!())
