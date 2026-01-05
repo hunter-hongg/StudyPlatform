@@ -23,11 +23,11 @@ mod tests {
 	#[test]
 	fn test_getlevel() {
 		match jifen_getlevel(0) {
-			Ok(val) => assert_eq!(val, 0),
+			Ok(val) => assert_eq!(val, 1),
 			Err(e) => panic!("{}", e),
 		}
-		match jifen_getlevel(400) {
-			Ok(val) => assert_eq!(val, 1),
+		match jifen_getlevel(500) {
+			Ok(val) => assert_eq!(val, 2),
 			Err(e) => panic!("{}", e),
 		}
 		match jifen_getlevel(100000) {
