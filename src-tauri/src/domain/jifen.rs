@@ -18,5 +18,21 @@ pub fn jifen_getlevel(jif: i32) -> Result<i32> {
 
 #[cfg(test)]
 mod tests {
+	use super::*;
 
+	#[test]
+	fn test_getlevel() {
+		match jifen_getlevel(0) {
+			Ok(val) => assert_eq!(val, 0),
+			Err(e) => panic!("{}", e),
+		}
+		match jifen_getlevel(400) {
+			Ok(val) => assert_eq!(val, 1),
+			Err(e) => panic!("{}", e),
+		}
+		match jifen_getlevel(100000) {
+			Ok(val) => assert_eq!(val, 100),
+			Err(e) => panic!("{}", e),
+		}
+	}
 }
