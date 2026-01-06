@@ -2,254 +2,161 @@ name: CI
 
 on:
   push:
-    # 任何分支推送都会触发clippy和test
+    branches: ['**']  # 任何分支推送触发
   pull_request:
-    # 任何PR都会触发
+    branches: ['main'] # 针对main的PR触发
   schedule:
-    # 每天格林尼治时间0点运行（北京时间8点）
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # 每日UTC 0点（北京时间8点）定时构建
+  workflow_dispatch:     # 支持手动触发
 
 env:
-  CARGO_TERM_COLOR: always
-  TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
-  TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
-  PNPM_VERSION: "8"
+  FLUTTER_VERSION: '3.16.0'  # 指定Flutter版本
 
 jobs:
-  clippy-and-test:
+  analyze-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          version: ${{ env.PNPM_VERSION }}
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'pnpm'
-
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          components: clippy
-          targets: wasm32-unknown-unknown
-
-      - name: Cache dependencies
+      - name: Cache Flutter dependencies
         uses: actions/cache@v3
         with:
           path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-            ~/.local/share/pnpm/store
-          key: ${{ runner.os }}-deps-${{ hashFiles('**/Cargo.lock', '**/pnpm-lock.yaml') }}
+            /opt/hostedtoolcache/flutter
+            ${{ runner.temp }}/.pub-cache
+            ${{ github.workspace }}/.dart_tool
+          key: ${{ runner.os }}-flutter-${{ hashFiles('pubspec.lock') }}
 
-      - name: Install system dependencies (Ubuntu)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev \
-            build-essential \
-            curl \
-            wget \
-            file \
-            libssl-dev \
-            libgtk-3-dev \
-            libayatana-appindicator3-dev \
-            librsvg2-dev
+      - name: Get dependencies
+        run: flutter pub get
 
-      - name: Install frontend dependencies
-        run: pnpm install 
+      - name: Static Analysis (dart analyze)
+        run: dart analyze --fatal-infos
 
-      - name: Run clippy
-        run: cd src-tauri && cargo clippy --all-targets --all-features -- -D warnings || exit 1
+      - name: Format Check (dart format)
+        run: dart format --output=none --set-exit-if-changed .
 
-      - name: Run tests
-        run: cd src-tauri && cargo test --all-features
+      - name: Run Tests
+        run: flutter test --coverage
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage/lcov.info
 
   build-release:
-    # 只在打标签时运行
-    if: startsWith(github.ref, 'refs/tags/v')
-    needs: clippy-and-test
+    if: startsWith(github.ref, 'refs/tags/v')  # 只在打标签时运行
+    needs: analyze-and-test
     strategy:
       fail-fast: false
       matrix:
         include:
-          - platform: 'ubuntu-20.04'
-            target: 'x86_64-unknown-linux-gnu'
-            arch: 'x64'
-            os: 'linux'
+          - platform: 'ubuntu-latest'
+            target: 'linux'
+            build-cmd: 'flutter build linux --release'
+            artifact-path: 'build/linux/**/*'
             
-          - platform: 'macos-12'
-            target: 'x86_64-apple-darwin'
-            arch: 'x64'
-            os: 'macos'
+          - platform: 'macos-latest'
+            target: 'macos'
+            build-cmd: 'flutter build macos --release'
+            artifact-path: 'build/macos/**/*.app'
             
           - platform: 'windows-latest'
-            target: 'x86_64-pc-windows-msvc'
-            arch: 'x64'
-            os: 'windows'
+            target: 'windows'
+            build-cmd: 'flutter build windows --release'
+            artifact-path: 'build/windows/**/*.exe'
 
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          version: ${{ env.PNPM_VERSION }}
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'pnpm'
-
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.target }}
-
-      - name: Cache dependencies
+      - name: Cache Flutter dependencies
         uses: actions/cache@v3
         with:
           path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-            ~/.local/share/pnpm/store
-          key: ${{ runner.os }}-deps-${{ hashFiles('**/Cargo.lock', '**/pnpm-lock.yaml') }}
+            /opt/hostedtoolcache/flutter
+            ${{ runner.temp }}/.pub-cache
+            ${{ github.workspace }}/.dart_tool
+          key: ${{ runner.os }}-flutter-${{ hashFiles('pubspec.lock') }}
 
-      - name: Install system dependencies
-        shell: bash
-        run: |
-          if [[ "${{ matrix.os }}" == "linux" ]]; then
-            sudo apt-get update
-            sudo apt-get install -y libwebkit2gtk-4.1-dev \
-              build-essential \
-              curl \
-              wget \
-              file \
-              libssl-dev \
-              libgtk-3-dev \
-              libayatana-appindicator3-dev \
-              librsvg2-dev
-          fi
+      - name: Get dependencies
+        run: flutter pub get
 
-      - name: Install frontend dependencies
-        run: pnpm install
-
-      - name: Install Tauri CLI
-        run: pnpm add @tauri-apps/cli
-
-      - name: Build Tauri App
-        run: pnpm tauri build
+      - name: Build Release
+        run: ${{ matrix.build-cmd }}
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.os }}-${{ matrix.arch }}-release
-          path: |
-            src-tauri/target/release/bundle/**/*.appimage
-            src-tauri/target/release/bundle/**/*.dmg
-            src-tauri/target/release/bundle/**/*.zip
-            src-tauri/target/release/bundle/**/*.exe
-            src-tauri/target/release/bundle/**/*.msi
+          name: ${{ matrix.target }}-release
+          path: ${{ matrix.artifact-path }}
           if-no-files-found: error
 
   build-nightly:
-    # 只在定时任务时运行
-    if: github.event_name == 'schedule'
-    needs: clippy-and-test
+    if: github.event_name == 'schedule'  # 只在定时任务时运行
+    needs: analyze-and-test
     strategy:
       fail-fast: false
       matrix:
         include:
-          - platform: 'ubuntu-20.04'
-            target: 'x86_64-unknown-linux-gnu'
-            arch: 'x64'
-            os: 'linux'
+          - platform: 'ubuntu-latest'
+            target: 'linux'
+            build-cmd: 'flutter build linux --debug'
+            artifact-path: 'build/linux/**/*'
             
-          - platform: 'macos-12'
-            target: 'x86_64-apple-darwin'
-            arch: 'x64'
-            os: 'macos'
+          - platform: 'macos-latest'
+            target: 'macos'
+            build-cmd: 'flutter build macos --debug'
+            artifact-path: 'build/macos/**/*.app'
             
           - platform: 'windows-latest'
-            target: 'x86_64-pc-windows-msvc'
-            arch: 'x64'
-            os: 'windows'
+            target: 'windows'
+            build-cmd: 'flutter build windows --debug'
+            artifact-path: 'build/windows/**/*.exe'
 
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          version: ${{ env.PNPM_VERSION }}
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'pnpm'
-
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.target }}
-
-      - name: Cache dependencies
+      - name: Cache Flutter dependencies
         uses: actions/cache@v3
         with:
           path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-            ~/.local/share/pnpm/store
-          key: ${{ runner.os }}-deps-${{ hashFiles('**/Cargo.lock', '**/pnpm-lock.yaml') }}
+            /opt/hostedtoolcache/flutter
+            ${{ runner.temp }}/.pub-cache
+            ${{ github.workspace }}/.dart_tool
+          key: ${{ runner.os }}-flutter-${{ hashFiles('pubspec.lock') }}
 
-      - name: Install system dependencies
-        shell: bash
-        run: |
-          if [[ "${{ matrix.os }}" == "linux" ]]; then
-            sudo apt-get update
-            sudo apt-get install -y libwebkit2gtk-4.1-dev \
-              build-essential \
-              curl \
-              wget \
-              file \
-              libssl-dev \
-              libgtk-3-dev \
-              libayatana-appindicator3-dev \
-              librsvg2-dev
-          fi
+      - name: Get dependencies
+        run: flutter pub get
 
-      - name: Install frontend dependencies
-        run: pnpm install 
-
-      - name: Install Tauri CLI
-        run: pnpm add @tauri-apps/cli
-
-      - name: Build Tauri App (Nightly)
-        run: pnpm tauri build -- --debug
+      - name: Build Nightly (Debug)
+        run: ${{ matrix.build-cmd }}
 
       - name: Upload nightly artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: nightly-${{ matrix.os }}-${{ matrix.arch }}
-          path: |
-            src-tauri/target/debug/bundle/**/*.appimage
-            src-tauri/target/debug/bundle/**/*.dmg
-            src-tauri/target/debug/bundle/**/*.zip
-            src-tauri/target/debug/bundle/**/*.exe
-            src-tauri/target/debug/bundle/**/*.msi
+          name: nightly-${{ matrix.target }}
+          path: ${{ matrix.artifact-path }}
           if-no-files-found: error
