@@ -6,10 +6,10 @@ void main() {
   // 我的用户名为coding，因此这是测试环境
   // test("Test Env Mod", () {
   //   var user = EnvMod.getUser();
-  //   expect("coding", user);
+  //   expect(user, "coding")
   //   var home = EnvMod.getHome();
-  //   expect("/home/coding", home);
+  //   expect(home, "/home/coding");
   //   var stdp = EnvMod.getStdpath();
-  //   expect("/home/coding/.store/学习平台储存/", stdp);
+  //   expect(stdp, "/home/coding/.store/学习平台储存/");
   // });
 }
