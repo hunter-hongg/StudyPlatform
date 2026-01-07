@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope( // Riverpod全局容器
       child: MaterialApp(
-        title: 'Minimal Counter',
+        title: '学习平台',
         home: HomePage(),
       ),
     );
