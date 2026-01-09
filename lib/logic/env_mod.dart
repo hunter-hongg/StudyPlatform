@@ -6,8 +6,8 @@ class EnvMod {
   }
 
   static String getHome() {
-    var usr = getUser();
-    return Platform.environment["HOME"] ?? "/home/$usr";
+    var user = getUser();
+    return Platform.environment["HOME"] ?? "/home/$user";
   }
 
   static String getStdpath() {
