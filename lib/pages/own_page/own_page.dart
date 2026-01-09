@@ -8,7 +8,7 @@ final user = EnvMod.getUser();
 final jifenStr = Files.jiFenReader().readStrSafeSync();
 
 class OwnPage extends ConsumerWidget {
-  const OwnPage ({super.key});
+  const OwnPage({super.key});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
@@ -20,9 +20,23 @@ class OwnPage extends ConsumerWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 5,),
-            Text('积分: $jifenStr',
-                style: Styles.showstrStyle())
+            SizedBox(
+              height: 5,
+            ),
+            Text('积分: $jifenStr', style: Styles.showstrStyle()),
+            SizedBox(
+              height: 110,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ownpage/timepage');
+                },
+                style: Styles.buttonSimpleStyle(),
+                child: Text(
+                  "学习计时",
+                  style: Styles.simpleTextStyle(),
+                ), 
+            )
           ],
         ),
       ),
