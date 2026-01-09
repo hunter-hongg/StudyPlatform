@@ -38,7 +38,7 @@ class Styles {
       foregroundColor: Colors.black,      // 文字/图标色
       backgroundColor: Colors.white,
       elevation: 5,                       // 阴影深度
-      padding: EdgeInsets.symmetric(horizontal: 32, vertical: 15),
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 15),
       textStyle: simpleTextStyle(),
       shape: BeveledRectangleBorder(),
     ); 
