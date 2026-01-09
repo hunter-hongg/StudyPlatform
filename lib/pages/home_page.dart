@@ -13,11 +13,13 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final jifenStr = Files.jiFenReader().readStrSafeSync();
-    
+
     // 左边列的项目
     final List<Widget> leftColumnItems = [
       ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/ownpage');
+        },
         style: Styles.buttonSimpleStyle(),
         child: const Text("个人主页"),
       ),
@@ -27,11 +29,11 @@ class HomePage extends ConsumerWidget {
         child: const Text("计算广场"),
       ),
     ];
-    
+
     // 右边列的项目
     final List<Widget> rightColumnItems = [
       ElevatedButton(
-        onPressed: () {},
+        onPressed: () { },
         style: Styles.buttonSimpleStyle(),
         child: const Text("神话传说"),
       ),
@@ -54,19 +56,20 @@ class HomePage extends ConsumerWidget {
           Text('积分: $jifenStr', style: Styles.showstrStyle()),
           SizedBox(height: 80),
           Center(
-            child: Row(
-              spacing: 20,
-            )
-          ),
+              child: Row(
+            spacing: 20,
+          )),
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 20,
             children: [
-              leftColumnItems[0], 
+              leftColumnItems[0],
               rightColumnItems[0],
             ],
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 20,
