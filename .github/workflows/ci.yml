@@ -2,16 +2,15 @@ name: Flutter CI/CD
 
 on:
   push:
-    branches: [ '**' ]  # 所有分支都触发
+    branches: [ '**' ]
   pull_request:
     branches: [ main, master, develop ]
   schedule:
-    # 每天格林尼治时间 0 点运行（UTC 0）
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 0 * * *'  # UTC 0点
+  workflow_dispatch:
 
 env:
-  FLUTTER_VERSION: '3.38.6'  # 指定 Flutter 版本
+  FLUTTER_VERSION: '3.38.6'
 
 jobs:
   analyze-test:
@@ -40,11 +39,25 @@ jobs:
     - name: Run tests
       run: flutter test
 
-  nightly-build:
-    name: Nightly Build
-    runs-on: ubuntu-latest
+  nightly-desktop-build:
+    name: Nightly Desktop Build
+    runs-on: ${{ matrix.os }}
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            platform: linux
+            artifact-name: linux-build
+          - os: windows-latest
+            platform: windows
+            artifact-name: windows-build
+          - os: macos-latest
+            platform: macos
+            artifact-name: macos-build
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -61,22 +74,27 @@ jobs:
     - name: Get packages
       run: flutter pub get
 
-    - name: Build for Android
-      run: flutter build apk --release --split-per-abi
-      
-    - name: Build for Web
-      run: flutter build web --release
+    - name: Enable desktop support
+      run: flutter config --enable-${{ matrix.platform }}-desktop
 
-    - name: Upload Android artifacts
+    - name: Build for ${{ matrix.platform }}
+      run: |
+        if [ "${{ matrix.platform }}" = "linux" ]; then
+          flutter build linux --release
+        elif [ "${{ matrix.platform }}" = "windows" ]; then
+          flutter build windows --release
+        elif [ "${{ matrix.platform }}" = "macos" ]; then
+          flutter build macos --release
+        fi
+
+    - name: Upload ${{ matrix.platform }} artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: nightly-android-build
-        path: build/app/outputs/flutter-apk/
+        name: ${{ matrix.artifact-name }}-nightly
+        path: |
+          ${{ matrix.platform == 'linux' && 'build/linux/release/bundle/' || '' }}
+          ${{ matrix.platform == 'windows' && 'build/windows/runner/Release/' || '' }}
+          ${{ matrix.platform == 'macos' && 'build/macos/Build/Products/Release/' || '' }}
         if-no-files-found: error
-
-    - name: Upload Web artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: nightly-web-build
-        path: build/web/
-        if-no-files-found: error
+        retention-days: 7  # 只保留7天，节省空间
+        
