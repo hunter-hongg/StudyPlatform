@@ -51,12 +51,12 @@ jobs:
           - os: ubuntu-latest
             platform: linux
             artifact-name: linux-build
-          - os: windows-latest
-            platform: windows
-            artifact-name: windows-build
-          - os: macos-latest
-            platform: macos
-            artifact-name: macos-build
+          # - os: windows-latest
+          #   platform: windows
+          #   artifact-name: windows-build
+          # - os: macos-latest
+          #   platform: macos
+          #   artifact-name: macos-build
 
     steps:
     - name: Checkout code
@@ -80,6 +80,7 @@ jobs:
     - name: Build for ${{ matrix.platform }}
       run: |
         if [ "${{ matrix.platform }}" = "linux" ]; then
+          sudo apt install -y gtk-3.0
           flutter build linux --release
         elif [ "${{ matrix.platform }}" = "windows" ]; then
           flutter build windows --release
