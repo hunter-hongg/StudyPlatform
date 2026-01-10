@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
 import 'package:study_platform/logic/jifen.dart';
+import 'package:study_platform/logic/time_end.dart';
 import 'package:study_platform/tool/stopwatch.dart';
 import 'package:study_platform/vars/backbutton.dart';
 import 'package:study_platform/vars/dialog.dart';
@@ -54,15 +55,10 @@ class TimePage extends ConsumerWidget {
                         builder: (context) => Dialogs.dialogAlert("未开始计时"));
                   } else {
                     jiFenTimer.pause();
-                    final scd = jiFenTimer.elapsed.inMilliseconds;
-                    final min = (scd / 60).toInt();
-                    final get = Jifen.getJifenFromSec(scd);
-                    Files.jiFenReader().addNumSync(get);
+                    final showStr = TimeEnd.dealTimeEnd();
                     showDialog(
                         context: context,
-                        builder: (context) => Dialogs.dialogInfo("计时结束\n"
-                            "本次共计$scd秒，合$min分钟\n"
-                            "获得$get积分\n"));
+                        builder: (context) => Dialogs.dialogInfo(showStr));
                   }
                 },
                 style: Styles.buttonSimpleStyle(),
