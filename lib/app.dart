@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:study_platform/pages/own_page/time_page/time_page.dart';
+import 'package:study_platform/pages/own_page/time_page.dart';
 import 'pages/home_page.dart';
 import 'pages/own_page/own_page.dart'; 
 
