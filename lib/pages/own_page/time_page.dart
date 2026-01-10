@@ -6,6 +6,7 @@ import 'package:study_platform/tool/stopwatch.dart';
 import 'package:study_platform/vars/backbutton.dart';
 import 'package:study_platform/vars/dialog.dart';
 import 'package:study_platform/vars/files.dart';
+import 'package:study_platform/vars/rule.dart';
 import 'package:study_platform/vars/styles.dart';
 import 'package:study_platform/vars/timers.dart';
 
@@ -61,7 +62,18 @@ class TimePage extends ConsumerWidget {
                   }
                 },
                 style: Styles.buttonSimpleStyle(),
-                child: Text("停止计时", style: Styles.simpleTextStyle()))
+                child: Text("停止计时", style: Styles.simpleTextStyle())),
+            SizedBox(height: 20,),
+            ElevatedButton(
+              onPressed: (){
+                showDialog(
+                  context: context, 
+                  builder: (context) => Dialogs.dialogInfo(Rule.timeRule()),
+                );
+              },
+              style: Styles.buttonSimpleStyle(),
+              child: Text("计时规则", style: Styles.simpleTextStyle(),)
+            )
           ],
         ),
       ),
