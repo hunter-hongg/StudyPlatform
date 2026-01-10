@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
+import 'package:study_platform/logic/jifen.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/styles.dart';
 
@@ -13,6 +14,8 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final jifenStr = Files.jiFenReader().readStrSafeSync();
+    final jifenInt = Files.jiFenReader().readIntSafeSync();
+    final jifenLev = Jifen.getLevel(jifenInt);
 
     // 左边列的项目
     final List<Widget> leftColumnItems = [
@@ -49,12 +52,14 @@ class HomePage extends ConsumerWidget {
         title: Text('欢迎$user来到学习平台'),
         centerTitle: true,
         titleTextStyle: Styles.titleStyle(),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         children: [
           SizedBox(height: 10),
           Text('积分: $jifenStr', style: Styles.showstrStyle()),
-          SizedBox(height: 80),
+          Text('等级: $jifenLev', style: Styles.showstrStyle()),
+          SizedBox(height: 95),
           Center(
               child: Row(
             spacing: 20,
