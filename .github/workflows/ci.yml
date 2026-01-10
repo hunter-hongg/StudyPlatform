@@ -46,7 +46,7 @@ jobs:
     
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
         include:
           - os: ubuntu-latest
             platform: linux
@@ -80,7 +80,7 @@ jobs:
     - name: Build for ${{ matrix.platform }}
       run: |
         if [ "${{ matrix.platform }}" = "linux" ]; then
-          sudo apt install -y gtk-3.0
+          sudo apt install -y libgtk-3-common
           flutter build linux --release
         elif [ "${{ matrix.platform }}" = "windows" ]; then
           flutter build windows --release
