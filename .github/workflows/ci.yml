@@ -106,7 +106,7 @@ jobs:
       with:
         name: ${{ matrix.artifact-name }}-nightly
         path: |
-          ${{ matrix.platform == 'linux' && 'build/linux/release/bundle/' || '' }}
+          ${{ matrix.platform == 'linux' && 'build/linux/x64/release/bundle/' || '' }}
           ${{ matrix.platform == 'windows' && 'build/windows/runner/Release/' || '' }}
           ${{ matrix.platform == 'macos' && 'build/macos/Build/Products/Release/' || '' }}
         if-no-files-found: error
