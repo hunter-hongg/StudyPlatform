@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
-import 'package:study_platform/logic/jifen.dart';
 import 'package:study_platform/logic/time_end.dart';
 import 'package:study_platform/tool/stopwatch.dart';
 import 'package:study_platform/vars/backbutton.dart';
