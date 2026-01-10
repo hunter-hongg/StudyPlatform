@@ -35,9 +35,9 @@ class Styles {
   
   static ButtonStyle buttonSimpleStyle() {
    return ElevatedButton.styleFrom(
-      foregroundColor: Colors.black,      // 文字/图标色
+      foregroundColor: Colors.black,  
       backgroundColor: Colors.white,
-      elevation: 5,                       // 阴影深度
+      elevation: 5,    
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 15),
       textStyle: simpleTextStyle(),
       shape: BeveledRectangleBorder(),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:study_platform/pages/own_page/time_page.dart';
 import 'pages/home_page.dart';
-import 'pages/own_page.dart'; // 导入其他页面
+import 'pages/own_page/own_page.dart'; 
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => HomePage(),
           '/ownpage': (context) => OwnPage(),
+          '/ownpage/timepage': (context) => TimePage(),
         },
       ),
     );
