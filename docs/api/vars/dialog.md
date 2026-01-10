@@ -8,3 +8,8 @@
 - 警告对话框
 - 入参为**显示内容**
 - 标题固定为**警告**
+
+## `static SimpleDialog dialogInfo(String text)`
+- 普通对话框
+- 入参为**显示内容**
+- 标题固定为**信息**

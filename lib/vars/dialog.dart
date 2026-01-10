@@ -20,4 +20,22 @@ class Dialogs {
       ],
     );
   }
+  static SimpleDialog dialogInfo(String text) {
+    return SimpleDialog(
+      title: Center(
+        child: Text(
+          "信息",
+          style: Styles.titleDownStyle(),
+        )
+      ),
+      children: [
+        Center(
+          child: Text(
+            text,
+            style: Styles.simpleTextStyle(),
+          ),
+        ),
+      ],
+    );
+  }
 }
