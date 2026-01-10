@@ -9,4 +9,16 @@ class Jifen {
       return level;
     }
   }
+
+  static int getJifenFromSec(int seconds) {
+    if (seconds < 60) {
+      return 1;
+    } else if (seconds < 300) {
+      return (seconds / 30).toInt();
+    } else if (seconds < 1500) {
+      return (seconds / 20).toInt();
+    } else {
+      return (seconds / 15).toInt();
+    }
+  }
 }

@@ -52,6 +52,7 @@ class HomePage extends ConsumerWidget {
         title: Text('欢迎$user来到学习平台'),
         centerTitle: true,
         titleTextStyle: Styles.titleStyle(),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         children: [

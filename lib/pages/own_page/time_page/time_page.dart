@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
+import 'package:study_platform/logic/jifen.dart';
 import 'package:study_platform/tool/stopwatch.dart';
-import 'package:study_platform/tool/timer.dart';
+import 'package:study_platform/vars/backbutton.dart';
 import 'package:study_platform/vars/dialog.dart';
 import 'package:study_platform/vars/files.dart';
-import 'package:study_platform/vars/logger.dart';
 import 'package:study_platform/vars/styles.dart';
 import 'package:study_platform/vars/timers.dart';
 
@@ -21,6 +21,8 @@ class TimePage extends ConsumerWidget {
         title: Text('学习计时'),
         centerTitle: true,
         titleTextStyle: Styles.titleDownStyle(),
+        leading: BackButtons.backButton(context, '/ownpage'),
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Column(
@@ -54,10 +56,13 @@ class TimePage extends ConsumerWidget {
                     jiFenTimer.pause();
                     final scd = jiFenTimer.elapsed.inMilliseconds;
                     final min = (scd / 60).toInt();
+                    final get = Jifen.getJifenFromSec(scd);
+                    Files.jiFenReader().addNumSync(get);
                     showDialog(
                         context: context,
                         builder: (context) => Dialogs.dialogInfo("计时结束\n"
-                            "本次共计$scd秒，$min分钟\n"));
+                            "本次共计$scd秒，合$min分钟\n"
+                            "获得$get积分\n"));
                   }
                 },
                 style: Styles.buttonSimpleStyle(),
