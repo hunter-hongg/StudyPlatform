@@ -5,11 +5,10 @@ class Dialogs {
   static SimpleDialog dialogAlert(String text) {
     return SimpleDialog(
       title: Center(
-        child: Text(
-          "警告",
-          style: Styles.titleDownStyle(),
-        )
-      ),
+          child: Text(
+        "警告",
+        style: Styles.titleDownStyle(),
+      )),
       children: [
         Center(
           child: Text(
@@ -20,14 +19,14 @@ class Dialogs {
       ],
     );
   }
+
   static SimpleDialog dialogInfo(String text) {
     return SimpleDialog(
       title: Center(
-        child: Text(
-          "信息",
-          style: Styles.titleDownStyle(),
-        )
-      ),
+          child: Text(
+        "信息",
+        style: Styles.titleDownStyle(),
+      )),
       children: [
         Center(
           child: Text(

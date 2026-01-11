@@ -23,15 +23,15 @@ class FilePassword {
     // 先检查文件是否存在，避免触发不必要的文件创建
     final file = File(filename);
     final fileExists = file.existsSync();
-    
+
     // 创建实例
     final fp = FilePassword._(filename, _validatePassword(password));
-    
+
     // 如果文件不存在，写入默认值
     if (!fileExists) {
       fp.writeSync(defaultValue);
     }
-    
+
     return fp;
   }
 
