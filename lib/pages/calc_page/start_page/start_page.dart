@@ -18,25 +18,23 @@ class CalcStartPage extends ConsumerWidget {
         child: Column(
           children: [
             const SizedBox(height: 5),
-            Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}', style: Styles.showstrStyle()),
+            Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}',
+                style: Styles.showstrStyle()),
             const SizedBox(height: 110),
-            Simple.simpleClick(
-              func: (){},
-              show: "加减练习"
-            ), 
+            Simple.simpleClick(func: () {}, show: "加减练习"),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: (){},
+              func: () {},
               show: "乘法练习",
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: (){},
+              func: () {},
               show: "除法练习",
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: (){},
+              func: () {},
               show: "因式分解",
             ),
           ],

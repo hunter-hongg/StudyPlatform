@@ -8,7 +8,6 @@ class ThingShowPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     return Scaffold(
       appBar: Simple.simpleBar(
         title: '物品查看',
@@ -18,30 +17,44 @@ class ThingShowPage extends ConsumerWidget {
         child: Column(
           children: [
             const SizedBox(height: 150),
-            Simple.nullSpace(), 
+            Simple.nullSpace(),
             Wrap(
               alignment: WrapAlignment.center,
               children: [
-                Simple.simpleClick(func: (){}, show: "积分: ${Files.jiFenReader().readStrSafeSync()}"),
-                const SizedBox(width: 30,),
-                Simple.simpleClick(func: (){}, show: "仙币: 0"),
-                const SizedBox(width: 30,),
-                Simple.simpleClick(func: (){}, show: "宝石: 0"),
+                Simple.simpleClick(
+                    func: () {},
+                    show: "积分: ${Files.jiFenReader().readStrSafeSync()}"),
+                const SizedBox(
+                  width: 30,
+                ),
+                Simple.simpleClick(func: () {}, show: "仙币: 0"),
+                const SizedBox(
+                  width: 30,
+                ),
+                Simple.simpleClick(func: () {}, show: "宝石: 0"),
               ],
             ),
             Simple.simpleSpace(),
             Wrap(
               alignment: WrapAlignment.center,
               children: [
-                Simple.simpleClick(func: (){}, show: "银币: 0"),
-                const SizedBox(width: 30,),
-                Simple.simpleClick(func: (){}, show: "金币: ${Files.jinBiReader().readStrSafeSync()}"),
-                const SizedBox(width: 30,),
-                Simple.simpleClick(func: (){}, show: "计算币: ${Files.jiSuanBiReader().readStrSafeSync()}"),
+                Simple.simpleClick(func: () {}, show: "银币: 0"),
+                const SizedBox(
+                  width: 30,
+                ),
+                Simple.simpleClick(
+                    func: () {},
+                    show: "金币: ${Files.jinBiReader().readStrSafeSync()}"),
+                const SizedBox(
+                  width: 30,
+                ),
+                Simple.simpleClick(
+                    func: () {},
+                    show: "计算币: ${Files.jiSuanBiReader().readStrSafeSync()}"),
               ],
             ),
             Simple.simpleSpace(),
-            Simple.simpleClick(func: (){}, show: "卡牌: 0")
+            Simple.simpleClick(func: () {}, show: "卡牌: 0")
           ],
         ),
       ),

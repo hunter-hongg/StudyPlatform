@@ -4,15 +4,15 @@ import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 
-class CalcPage extends ConsumerWidget {
-  const CalcPage({super.key});
+class CalcShopPage extends ConsumerWidget {
+  const CalcShopPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: Simple.simpleBar(
-        title: '计算广场',
-        back: Simple.backButton(context: context, route: '/'),
+        title: '兑换物品',
+        back: Simple.backButton(context: context, route: '/calcpage'),
       ),
       body: Center(
         child: Column(
@@ -20,19 +20,7 @@ class CalcPage extends ConsumerWidget {
             const SizedBox(height: 5),
             Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}',
                 style: Styles.showstrStyle()),
-            const SizedBox(height: 140),
-            Simple.simpleClick(
-                func: () {
-                  Navigator.pushNamed(context, '/calcpage/startpage');
-                },
-                show: "开始计算"),
-            Simple.simpleSpace(),
-            Simple.simpleClick(
-              func: () {
-                Navigator.pushNamed(context, '/calcpage/shoppage');
-              },
-              show: "兑换物品",
-            ),
+            const SizedBox(height: 130),
           ],
         ),
       ),

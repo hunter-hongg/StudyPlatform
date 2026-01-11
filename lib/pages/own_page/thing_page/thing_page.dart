@@ -19,7 +19,7 @@ class ThingPage extends ConsumerWidget {
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/ownpage/thingpage/showpage');
-              }, 
+              },
               show: "物品查看",
             )
           ],
