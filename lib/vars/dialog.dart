@@ -37,4 +37,11 @@ class Dialogs {
       ],
     );
   }
+
+  static void dialogShow(SimpleDialog x, BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => x,
+    );
+  }
 }
