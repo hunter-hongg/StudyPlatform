@@ -24,7 +24,7 @@ class Styles {
       color: Colors.blue,
     );
   }
-  
+
   static TextStyle simpleTextStyle() {
     return TextStyle(
       fontSize: 25,
@@ -32,15 +32,15 @@ class Styles {
       color: Colors.black,
     );
   }
-  
+
   static ButtonStyle buttonSimpleStyle() {
-   return ElevatedButton.styleFrom(
-      foregroundColor: Colors.black,  
+    return ElevatedButton.styleFrom(
+      foregroundColor: Colors.black,
       backgroundColor: Colors.white,
-      elevation: 5,    
+      elevation: 5,
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 15),
       textStyle: simpleTextStyle(),
       shape: BeveledRectangleBorder(),
-    ); 
+    );
   }
 }

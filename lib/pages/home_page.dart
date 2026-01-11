@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
 import 'package:study_platform/logic/jifen.dart';
 import 'package:study_platform/vars/files.dart';
+import 'package:study_platform/vars/logger.dart';
+import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 
 final counterProvider = StateProvider<int>((ref) => 0);
@@ -13,46 +15,40 @@ class HomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    globalLogger.trace("主页面成功加载");
     final jifenStr = Files.jiFenReader().readStrSafeSync();
     final jifenInt = Files.jiFenReader().readIntSafeSync();
     final jifenLev = Jifen.getLevel(jifenInt);
 
     // 左边列的项目
     final List<Widget> leftColumnItems = [
-      ElevatedButton(
-        onPressed: () {
+      Simple.simpleClick(
+        func: () {
           Navigator.pushNamed(context, '/ownpage');
         },
-        style: Styles.buttonSimpleStyle(),
-        child: const Text("个人主页"),
+        show: "个人主页",
       ),
-      ElevatedButton(
-        onPressed: () {},
-        style: Styles.buttonSimpleStyle(),
-        child: const Text("计算广场"),
+      Simple.simpleClick(
+        func: () {},
+        show: "计算广场",
       ),
     ];
 
     // 右边列的项目
     final List<Widget> rightColumnItems = [
-      ElevatedButton(
-        onPressed: () { },
-        style: Styles.buttonSimpleStyle(),
-        child: const Text("神话传说"),
+      Simple.simpleClick(
+        func: () {},
+        show: "神话传说",
       ),
-      ElevatedButton(
-        onPressed: () {},
-        style: Styles.buttonSimpleStyle(),
-        child: const Text("古代广场"),
+      Simple.simpleClick(
+        func: () {},
+        show: "计算广场",
       ),
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('欢迎$user来到学习平台'),
-        centerTitle: true,
-        titleTextStyle: Styles.titleStyle(),
-        automaticallyImplyLeading: false,
+      appBar: Simple.simpleBar(
+        title: "欢迎$user来到学习平台",
       ),
       body: Column(
         children: [
@@ -60,10 +56,7 @@ class HomePage extends ConsumerWidget {
           Text('积分: $jifenStr', style: Styles.showstrStyle()),
           Text('等级: $jifenLev', style: Styles.showstrStyle()),
           SizedBox(height: 95),
-          Center(
-              child: Row(
-            spacing: 20,
-          )),
+          Simple.nullSpace(),
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 20,
@@ -72,9 +65,7 @@ class HomePage extends ConsumerWidget {
               rightColumnItems[0],
             ],
           ),
-          SizedBox(
-            height: 20,
-          ),
+          Simple.simpleSpace(),
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 20,

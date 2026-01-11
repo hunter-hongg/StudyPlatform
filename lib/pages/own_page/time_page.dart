@@ -3,9 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
 import 'package:study_platform/logic/time_end.dart';
 import 'package:study_platform/tool/stopwatch.dart';
-import 'package:study_platform/vars/backbutton.dart';
 import 'package:study_platform/vars/dialog.dart';
 import 'package:study_platform/vars/files.dart';
+import 'package:study_platform/vars/rule.dart';
+import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 import 'package:study_platform/vars/timers.dart';
 
@@ -17,19 +18,16 @@ class TimePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('学习计时'),
-        centerTitle: true,
-        titleTextStyle: Styles.titleDownStyle(),
-        leading: BackButtons.backButton(context, '/ownpage'),
-        automaticallyImplyLeading: false,
+      appBar: Simple.simpleBar(
+        title: '学习计时',
+        back: Simple.backButton(context: context, route: '/ownpage'),
       ),
       body: Center(
         child: Column(
           children: [
             SizedBox(height: 140),
-            ElevatedButton(
-              onPressed: () {
+            Simple.simpleClick(
+              func: () {
                 if (jiFenTimer.status == StopWatchStatus.running) {
                   showDialog(
                     context: context,
@@ -40,28 +38,35 @@ class TimePage extends ConsumerWidget {
                   jiFenTimer.start();
                 }
               },
-              style: Styles.buttonSimpleStyle(),
-              child: Text("开始计时", style: Styles.simpleTextStyle()),
+              show: "开始计时",
             ),
-            SizedBox(
-              height: 20,
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                if (jiFenTimer.status != StopWatchStatus.running) {
+                  showDialog(
+                      context: context,
+                      builder: (context) => Dialogs.dialogAlert("未开始计时"));
+                } else {
+                  jiFenTimer.pause();
+                  final showStr = TimeEnd.dealTimeEnd();
+                  showDialog(
+                      context: context,
+                      builder: (context) => Dialogs.dialogInfo(showStr));
+                }
+              },
+              show: "停止计时",
             ),
-            ElevatedButton(
-                onPressed: () {
-                  if (jiFenTimer.status != StopWatchStatus.running) {
-                    showDialog(
-                        context: context,
-                        builder: (context) => Dialogs.dialogAlert("未开始计时"));
-                  } else {
-                    jiFenTimer.pause();
-                    final showStr = TimeEnd.dealTimeEnd();
-                    showDialog(
-                        context: context,
-                        builder: (context) => Dialogs.dialogInfo(showStr));
-                  }
-                },
-                style: Styles.buttonSimpleStyle(),
-                child: Text("停止计时", style: Styles.simpleTextStyle()))
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                showDialog(
+                  context: context,
+                  builder: (context) => Dialogs.dialogInfo(Rule.timeRule()),
+                );
+              },
+              show: "计时规则",
+            )
           ],
         ),
       ),
