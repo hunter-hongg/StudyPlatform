@@ -1,3 +1,3 @@
-import 'package:logging/logging.dart';
+import 'package:study_platform/tool/logger.dart';
 
-Logger? globalLogger;
+var globalLogger = Logger.newLogger();
