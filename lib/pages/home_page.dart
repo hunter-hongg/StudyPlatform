@@ -29,7 +29,9 @@ class HomePage extends ConsumerWidget {
         show: "个人主页",
       ),
       Simple.simpleClick(
-        func: () {},
+        func: () {
+          Navigator.pushNamed(context, '/calcpage');
+        },
         show: "计算广场",
       ),
     ];

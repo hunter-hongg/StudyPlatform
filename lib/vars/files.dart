@@ -11,6 +11,10 @@ class Files {
   static FilePassword jinBiReader() {
     return FilePassword("${Dirs.filePathTongy()}rd.conc", "apslfnt104");
   }
+
+  static FilePassword jiSuanBiReader() {
+    return FilePassword("${Dirs.filePath()}jsbc.txt", "woda2fj341");
+  }
 }
 
 class LiheFiles {
