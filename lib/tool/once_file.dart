@@ -54,7 +54,7 @@ class OnceFile {
         _file.writeAsStringSync(_content!);
         return true;
       }
-      
+
       // 文件已存在，更新访问时间
       _file.setLastModifiedSync(DateTime.now());
       return false;
@@ -91,7 +91,7 @@ class OnceFile {
   bool isOlderThanDays(int days) {
     final time = executionTime;
     if (time == null) return true;
-    
+
     final now = DateTime.now();
     final difference = now.difference(time);
     return difference.inDays >= days;
@@ -185,7 +185,7 @@ class JsonOnceFile<T> extends OnceFile {
         'timestamp': DateTime.now().toIso8601String(),
         'data': data,
       });
-      
+
       if (!_file.existsSync()) {
         _file.parent.createSync(recursive: true);
         _file.writeAsStringSync(jsonData);
