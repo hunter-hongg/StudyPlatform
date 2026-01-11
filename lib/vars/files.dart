@@ -7,6 +7,10 @@ class Files {
     var fp = Dirs.filePath();
     return FilePassword("${fp}jifc.txt", "hsiep10475");
   }
+
+  static FilePassword jinBiReader() {
+    return FilePassword("${Dirs.filePathTongy()}rd.conc", "apslfnt104");
+  }
 }
 
 class LiheFiles {
