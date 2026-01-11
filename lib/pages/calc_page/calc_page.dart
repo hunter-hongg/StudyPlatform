@@ -18,8 +18,19 @@ class CalcPage extends ConsumerWidget {
         child: Column(
           children: [
             const SizedBox(height: 5),
-            Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}', style: Styles.showstrStyle()),
-            const SizedBox(height: 110),
+            Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}',
+                style: Styles.showstrStyle()),
+            const SizedBox(height: 140),
+            Simple.simpleClick(
+                func: () {
+                  Navigator.pushNamed(context, '/calcpage/startpage');
+                },
+                show: "开始计算"),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {},
+              show: "兑换物品",
+            ),
           ],
         ),
       ),

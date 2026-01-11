@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/pages/calc_page/calc_page.dart';
+import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 import 'package:study_platform/pages/own_page/lihe_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/show_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/thing_page.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => HomePage(),
           '/calcpage': (context) => CalcPage(),
+          '/calcpage/startpage': (context) => CalcStartPage(),
           '/ownpage': (context) => OwnPage(),
           '/ownpage/lihepage': (context) => LihePage(),
           '/ownpage/thingpage': (context) => ThingPage(),
