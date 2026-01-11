@@ -7,7 +7,6 @@ class ThingPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     return Scaffold(
       appBar: Simple.simpleBar(
         title: '我的物品',
@@ -16,7 +15,13 @@ class ThingPage extends ConsumerWidget {
       body: Center(
         child: Column(
           children: [
-            const SizedBox(height: 110),
+            const SizedBox(height: 150),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/ownpage/thingpage/showpage');
+              }, 
+              show: "物品查看",
+            )
           ],
         ),
       ),
