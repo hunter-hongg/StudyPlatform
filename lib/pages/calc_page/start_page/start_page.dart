@@ -21,7 +21,12 @@ class CalcStartPage extends ConsumerWidget {
             Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}',
                 style: Styles.showstrStyle()),
             const SizedBox(height: 110),
-            Simple.simpleClick(func: () {}, show: "加减练习"),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/calcpage/startpage/addsubpage');
+              },
+              show: "加减练习",
+            ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {},

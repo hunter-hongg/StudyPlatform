@@ -1,8 +1,10 @@
-default: flutter-run
+default: run
 
-flutter-run:
+run:
 	flutter run
-flutter-build:
+build:
 	flutter build linux
-go-run:
+test:
+    flutter test
+go:
 	./go/bin/学习平台
