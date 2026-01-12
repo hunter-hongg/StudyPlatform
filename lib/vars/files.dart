@@ -27,9 +27,25 @@ class LiheFiles {
 class CheckFiles {
   static CheckFile calcAddsubCheck() {
     return CheckFile(
-      filePath:"${Dirs.filePath()}jisbck1.txt", 
-      addNum: 1049, 
-      allTimes: 7, 
+      filePath: "${Dirs.filePath()}jisbck1.txt",
+      addNum: 1049,
+      allTimes: 7,
+    );
+  }
+
+  static CheckFile calcTimeCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePath()}jisbck2.txt",
+      addNum: 305,
+      allTimes: 5,
+    );
+  }
+
+  static CheckFile calcDivCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePath()}jisbck3.chkl",
+      addNum: 302,
+      allTimes: 5,
     );
   }
 }
