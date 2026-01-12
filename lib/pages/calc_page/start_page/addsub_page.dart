@@ -47,6 +47,11 @@ class CalcAddsubPage extends ConsumerWidget {
                     globalLogger.warn("加减法页面解析失败$input");
                     return;
                   }
+                  if (!CheckFiles.calcAddsubCheck().checkTimesSync()) {
+                    Dialogs.dialogShow(
+                        Dialogs.dialogAlert("今日次数使用完毕"), context);
+                    return;
+                  }
                   Navigator.pushNamed(
                       context, '/calcpage/startpage/addsubpage');
                   if (realRes == pres) {
