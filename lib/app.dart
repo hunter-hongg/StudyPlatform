@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:study_platform/pages/calc_page/calc_page.dart';
+import 'package:study_platform/pages/calc_page/shop_page.dart';
+import 'package:study_platform/pages/calc_page/start_page/addsub_page.dart';
+import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
+import 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 import 'package:study_platform/pages/own_page/lihe_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/show_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/thing_page.dart';
 import 'package:study_platform/pages/own_page/time_page.dart';
 import 'pages/home_page.dart';
 import 'pages/own_page/own_page.dart';
@@ -19,9 +26,16 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => HomePage(),
+          '/calcpage': (context) => CalcPage(),
+          '/calcpage/shoppage': (context) => CalcShopPage(),
+          '/calcpage/startpage': (context) => CalcStartPage(),
+          '/calcpage/startpage/addsubpage': (context) => CalcAddsubPage(),
+          '/calcpage/startpage/timpage': (context) => CalcTimPage(),
           '/ownpage': (context) => OwnPage(),
-          '/ownpage/timepage': (context) => TimePage(),
           '/ownpage/lihepage': (context) => LihePage(),
+          '/ownpage/thingpage': (context) => ThingPage(),
+          '/ownpage/thingpage/showpage': (context) => ThingShowPage(),
+          '/ownpage/timepage': (context) => TimePage(),
         },
       ),
     );

@@ -234,8 +234,6 @@ class Logger {
       case LogLevel.fatal:
       case LogLevel.panic:
         return 31; // red
-      default:
-        return 37; // white
     }
   }
 
@@ -272,8 +270,7 @@ class Logger {
           message = message.replaceFirst('%s', arg?.toString() ?? 'null');
           message =
               message.replaceFirst('%d', (arg as num?)?.toString() ?? '0');
-          message =
-              message.replaceFirst('%f', (arg as num?)?.toString() ?? '0.0');
+          message = message.replaceFirst('%f', (arg)?.toString() ?? '0.0');
         }
       }
 

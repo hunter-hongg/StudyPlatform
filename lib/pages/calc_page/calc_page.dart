@@ -4,42 +4,34 @@ import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 
-class OwnPage extends ConsumerWidget {
-  const OwnPage({super.key});
+class CalcPage extends ConsumerWidget {
+  const CalcPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jifenStr = Files.jiFenReader().readStrSync();
-
     return Scaffold(
       appBar: Simple.simpleBar(
-        title: '个人主页',
+        title: '计算广场',
         back: Simple.backButton(context: context, route: '/'),
       ),
       body: Center(
         child: Column(
           children: [
             const SizedBox(height: 5),
-            Text('积分: $jifenStr', style: Styles.showstrStyle()),
-            const SizedBox(height: 110),
-            Simple.simpleClick(
-              func: () {
-                Navigator.pushNamed(context, '/ownpage/timepage');
-              },
-              show: "学习计时",
-            ),
-            Simple.simpleSpace(),
+            Text('计算币: ${Files.jiSuanBiReader().readStrSafeSync()}',
+                style: Styles.showstrStyle()),
+            const SizedBox(height: 140),
             Simple.simpleClick(
                 func: () {
-                  Navigator.pushNamed(context, '/ownpage/thingpage');
+                  Navigator.pushNamed(context, '/calcpage/startpage');
                 },
-                show: "我的物品"),
+                show: "开始计算"),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/ownpage/lihepage');
+                Navigator.pushNamed(context, '/calcpage/shoppage');
               },
-              show: "我的礼盒",
+              show: "兑换物品",
             ),
           ],
         ),
