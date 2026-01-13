@@ -36,7 +36,9 @@ class CalcStartPage extends ConsumerWidget {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: () {},
+              func: () {
+                Navigator.pushNamed(context, '/calcpage/startpage/divpage');
+              },
               show: "除法练习",
             ),
             Simple.simpleSpace(),

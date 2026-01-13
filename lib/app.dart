@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/pages/calc_page/calc_page.dart';
 import 'package:study_platform/pages/calc_page/shop_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/addsub_page.dart';
+import 'package:study_platform/pages/calc_page/start_page/div_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 import 'package:study_platform/pages/own_page/lihe_page.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
           '/calcpage/shoppage': (context) => CalcShopPage(),
           '/calcpage/startpage': (context) => CalcStartPage(),
           '/calcpage/startpage/addsubpage': (context) => CalcAddsubPage(),
+          '/calcpage/startpage/divpage': (context) => CalcDivPage(),
           '/calcpage/startpage/timpage': (context) => CalcTimPage(),
           '/ownpage': (context) => OwnPage(),
           '/ownpage/lihepage': (context) => LihePage(),
