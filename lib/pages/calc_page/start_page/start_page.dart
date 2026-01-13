@@ -29,7 +29,9 @@ class CalcStartPage extends ConsumerWidget {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: () {},
+              func: () {
+                Navigator.pushNamed(context, '/calcpage/startpage/timpage');
+              },
               show: "乘法练习",
             ),
             Simple.simpleSpace(),
