@@ -48,4 +48,12 @@ class CheckFiles {
       allTimes: 5,
     );
   }
+  
+  static CheckFile calcPolyCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePath()}jisbck92.chkl",
+      addNum: 3259,
+      allTimes: 5,
+    );
+  }
 }

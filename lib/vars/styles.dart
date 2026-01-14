@@ -32,7 +32,7 @@ class Styles {
       color: Colors.black,
     );
   }
-  
+
   static TextStyle simpleTextUpStyle() {
     return TextStyle(
       fontSize: 28,
@@ -40,7 +40,7 @@ class Styles {
       color: Colors.black,
     );
   }
-  
+
   static ButtonStyle buttonSimpleStyle() {
     return ElevatedButton.styleFrom(
       foregroundColor: Colors.black,

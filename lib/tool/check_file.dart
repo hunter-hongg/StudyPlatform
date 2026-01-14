@@ -37,27 +37,27 @@ class CheckFile {
     try {
       // 确保文件存在
       await _ensureFileExistsAsync();
-      
+
       // 读取文件内容
       final content = await _readFileAsync();
-      
+
       // 解析日期列表
       final dates = _split(content);
-      
+
       // 获取目标日期
       final targetDate = _getTargetDate();
-      
+
       // 统计出现次数
       final count = _countOccurrences(dates, targetDate);
-      
+
       // 检查是否达到限制
       if (count >= num) {
         return false;
       }
-      
+
       // 追加新日期记录
       await _appendDateAsync(targetDate);
-      
+
       return true;
     } catch (e) {
       // 发生任何错误都返回 false，避免意外继续
@@ -77,7 +77,7 @@ class CheckFile {
   /// 异步读取文件内容
   Future<String> _readFileAsync() async {
     final file = File(filePath);
-    
+
     try {
       return await file.readAsString();
     } on FileSystemException {
@@ -89,7 +89,7 @@ class CheckFile {
   Future<void> _appendDateAsync(int date) async {
     final file = File(filePath);
     final exists = await file.exists();
-    
+
     await file.writeAsString(
       exists ? '&$date' : '$date',
       mode: FileMode.append,
@@ -112,27 +112,27 @@ class CheckFile {
     try {
       // 确保文件存在
       _ensureFileExistsSync();
-      
+
       // 读取文件内容
       final content = _readFileSync();
-      
+
       // 解析日期列表
       final dates = _split(content);
-      
+
       // 获取目标日期
       final targetDate = _getTargetDate();
-      
+
       // 统计出现次数
       final count = _countOccurrences(dates, targetDate);
-      
+
       // 检查是否达到限制
       if (count >= num) {
         return false;
       }
-      
+
       // 追加新日期记录
       _appendDateSync(targetDate);
-      
+
       return true;
     } catch (e) {
       // 发生任何错误都返回 false
@@ -152,7 +152,7 @@ class CheckFile {
   /// 同步读取文件内容
   String _readFileSync() {
     final file = File(filePath);
-    
+
     try {
       return file.readAsStringSync();
     } on FileSystemException {
@@ -164,7 +164,7 @@ class CheckFile {
   void _appendDateSync(int date) {
     final file = File(filePath);
     final exists = file.existsSync();
-    
+
     final sink = file.openSync(mode: FileMode.append);
     try {
       final content = exists ? '&$date' : '$date';
@@ -183,10 +183,10 @@ class CheckFile {
     if (content.isEmpty) {
       return [];
     }
-    
+
     final parts = content.split('&');
     final result = <int>[];
-    
+
     for (final part in parts) {
       if (part.isNotEmpty) {
         final parsedValue = int.tryParse(part);
@@ -195,7 +195,7 @@ class CheckFile {
         }
       }
     }
-    
+
     return result;
   }
 
@@ -203,11 +203,11 @@ class CheckFile {
   int _getTargetDate() {
     final now = DateTime.now();
     final targetDate = now.add(Duration(days: addNum));
-    
+
     final year = targetDate.year;
     final month = targetDate.month;
     final day = targetDate.day;
-    
+
     return year * 10000 + month * 100 + day;
   }
 
