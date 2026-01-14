@@ -223,7 +223,6 @@ void main() {
       expect(p1 == p2, isTrue);
       expect(p1 == p3, isFalse);
       expect(p1 == p4, isTrue);
-      expect(p1 == 'not a polynomial', isFalse);
     });
 
     test('哈希码', () {

@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/calc_poly.dart';
 import 'package:study_platform/tool/poly.dart';
-import 'package:study_platform/tool/random.dart';
 import 'package:study_platform/vars/dialog.dart';
 import 'package:study_platform/vars/files.dart';
-import 'package:study_platform/vars/logger.dart';
 import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 
@@ -14,8 +12,8 @@ class CalcPolyPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final TextEditingController _zerocon = TextEditingController();
-    final TextEditingController _onecon = TextEditingController();
+    final TextEditingController zerocon = TextEditingController();
+    final TextEditingController onecon = TextEditingController();
     var pl = CalcPoly.getRandomPoly();
     String pls = pl.toStringBetter();
     return Scaffold(
@@ -35,7 +33,7 @@ class CalcPolyPage extends ConsumerWidget {
             FractionallySizedBox(
               widthFactor: 0.3,
               child: TextField(
-                controller: _zerocon,
+                controller: zerocon,
                 decoration: InputDecoration(
                   labelText: '请输入零次项',
                   hintText: '请输入零次项',
@@ -47,7 +45,7 @@ class CalcPolyPage extends ConsumerWidget {
             FractionallySizedBox(
               widthFactor: 0.3,
               child: TextField(
-                controller: _onecon,
+                controller: onecon,
                 decoration: InputDecoration(
                   labelText: '请输入一次项',
                   hintText: '请输入一次项',
@@ -58,8 +56,8 @@ class CalcPolyPage extends ConsumerWidget {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                var intzero = int.tryParse(_zerocon.text);
-                var intone = int.tryParse(_onecon.text);
+                var intzero = int.tryParse(zerocon.text);
+                var intone = int.tryParse(onecon.text);
                 if ((intzero == null) || (intone == null)) {
                   Dialogs.dialogShow(Dialogs.dialogAlert("数字解析失败"), context);
                   return;
