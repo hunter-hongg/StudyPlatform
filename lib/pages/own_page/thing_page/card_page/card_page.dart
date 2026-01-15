@@ -25,9 +25,9 @@ class ThingMainCardPage extends ConsumerWidget {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                // Navigator.pushNamed(context, '/ownpage/thingpage/mainpage');
+                Navigator.pushNamed(context, '/ownpage/thingpage/mainpage/cardpage/han1page');
               },
-              show: "未知物品",
+              show: "汉朝卡牌1",
             )
           ],
         ),

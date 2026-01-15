@@ -9,6 +9,7 @@ import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 import 'package:study_platform/pages/own_page/lihe_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/card_page/card_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/card_page/han1_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/card_page/sang1_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/main_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/show_page.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
           '/ownpage/thingpage': (context) => ThingPage(),
           '/ownpage/thingpage/mainpage': (context) => ThingMainPage(),
           '/ownpage/thingpage/mainpage/cardpage': (context) => ThingMainCardPage(),
+          '/ownpage/thingpage/mainpage/cardpage/han1page': (context) => ThingMainCardHan1Page(),
           '/ownpage/thingpage/mainpage/cardpage/sang1page': (context) => ThingMainCardSang1Page(),
           '/ownpage/thingpage/showpage': (context) => ThingShowPage(),
           '/ownpage/timepage': (context) => TimePage(),
