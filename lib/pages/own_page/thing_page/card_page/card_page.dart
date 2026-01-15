@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/vars/simple.dart';
 
-class ThingPage extends ConsumerWidget {
-  const ThingPage({super.key});
+class ThingMainCardPage extends ConsumerWidget {
+  const ThingMainCardPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: Simple.simpleBar(
-        title: '我的物品',
-        back: Simple.backButton(context: context, route: '/ownpage'),
+        title: '我的卡牌',
+        back: Simple.backButton(context: context, route: '/ownpage/thingpage/mainpage'),
       ),
       body: Center(
         child: Column(
@@ -18,16 +18,16 @@ class ThingPage extends ConsumerWidget {
             const SizedBox(height: 150),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/ownpage/thingpage/showpage');
+                Navigator.pushNamed(context, '/ownpage/thingpage/mainpage/cardpage/sang1page');
               },
-              show: "物品查看",
+              show: "三国卡牌1",
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/ownpage/thingpage/mainpage');
+                // Navigator.pushNamed(context, '/ownpage/thingpage/mainpage');
               },
-              show: "物品主页",
+              show: "未知物品",
             )
           ],
         ),

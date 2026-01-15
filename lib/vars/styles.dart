@@ -41,6 +41,14 @@ class Styles {
     );
   }
 
+  static TextStyle simpleTextDownStyle() {
+    return TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.normal,
+      color: Colors.black,
+    );
+  }
+
   static ButtonStyle buttonSimpleStyle() {
     return ElevatedButton.styleFrom(
       foregroundColor: Colors.black,
