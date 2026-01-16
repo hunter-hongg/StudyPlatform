@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/exec.dart';
-import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 
 class UtilPage extends ConsumerWidget {
@@ -9,8 +8,6 @@ class UtilPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jifenStr = Files.jiFenReader().readStrSync();
-
     return Scaffold(
       appBar: Simple.simpleBar(
         title: '各种工具',
