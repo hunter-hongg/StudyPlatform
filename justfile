@@ -1,11 +1,15 @@
 default: run
 
+format:
+    dart format .
 run:
 	flutter run
 build:
 	flutter build linux
 test:
     flutter test
+check: 
+    flutter analyze
 go:
 	./go/bin/学习平台
 rel version:

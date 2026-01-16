@@ -9,6 +9,10 @@ class Dirs {
     return "${filePath()}tyhbdirapbb/";
   }
 
+  static String filePathCard() {
+    return "${filePath()}fpcdiralf/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),

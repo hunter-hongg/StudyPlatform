@@ -13,6 +13,27 @@ final user = EnvMod.getUser();
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});
 
+  List<Widget> buildGrid(
+      BuildContext context, List<Widget> left, List<Widget> right) {
+    var wid = <Widget>[];
+    if (left.length != right.length) return wid;
+    for (int i = 0; i < left.length; ++i) {
+      wid += [
+        Wrap(
+          alignment: WrapAlignment.center,
+          spacing: 20,
+          children: [
+            left[i],
+            right[i],
+          ],
+        ),
+        Simple.simpleSpace(),
+      ];
+    }
+    wid.removeLast();
+    return wid;
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     globalLogger.trace("主页面成功加载");
@@ -34,6 +55,16 @@ class HomePage extends ConsumerWidget {
         },
         show: "计算广场",
       ),
+      Simple.simpleClick(
+        func: () {},
+        show: "物品领取",
+      ),
+      Simple.simpleClick(
+        func: () {
+          Navigator.pushNamed(context, '/utilpage');
+        },
+        show: "工具页面",
+      ),
     ];
 
     // 右边列的项目
@@ -43,8 +74,18 @@ class HomePage extends ConsumerWidget {
         show: "神话传说",
       ),
       Simple.simpleClick(
+        func: () {
+          Navigator.pushNamed(context, '/apage');
+        },
+        show: "古代广场",
+      ),
+      Simple.simpleClick(
         func: () {},
-        show: "计算广场",
+        show: "积分银行",
+      ),
+      Simple.simpleClick(
+        func: () {},
+        show: "设置页面",
       ),
     ];
 
@@ -59,23 +100,7 @@ class HomePage extends ConsumerWidget {
           Text('等级: $jifenLev', style: Styles.showstrStyle()),
           SizedBox(height: 95),
           Simple.nullSpace(),
-          Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 20,
-            children: [
-              leftColumnItems[0],
-              rightColumnItems[0],
-            ],
-          ),
-          Simple.simpleSpace(),
-          Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 20,
-            children: [
-              leftColumnItems[1],
-              rightColumnItems[1],
-            ],
-          )
+          ...buildGrid(context, leftColumnItems, rightColumnItems),
         ],
       ),
     );

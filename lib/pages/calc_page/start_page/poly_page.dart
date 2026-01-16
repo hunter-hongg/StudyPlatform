@@ -70,7 +70,8 @@ class CalcPolyPage extends ConsumerWidget {
                 }
                 Navigator.pushNamed(context, '/calcpage/startpage/polypage');
                 if (res) {
-                  Dialogs.dialogShow(Dialogs.dialogInfo("计算正确 +180计算币"), context);
+                  Dialogs.dialogShow(
+                      Dialogs.dialogInfo("计算正确 +180计算币"), context);
                   Files.jiSuanBiReader().addNum(180);
                 } else {
                   Dialogs.dialogShow(Dialogs.dialogInfo("计算错误"), context);
