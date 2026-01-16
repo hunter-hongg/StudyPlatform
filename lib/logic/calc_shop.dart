@@ -19,5 +19,4 @@ class CalcShop {
       show: "兑换成功",
     );
   }
-
 }

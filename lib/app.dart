@@ -16,6 +16,7 @@ import 'package:study_platform/pages/own_page/thing_page/main_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/show_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/thing_page.dart';
 import 'package:study_platform/pages/own_page/time_page.dart';
+import 'package:study_platform/pages/util_page/util_page.dart';
 import 'pages/home_page.dart';
 import 'pages/own_page/own_page.dart';
 
@@ -53,6 +54,7 @@ class MyApp extends StatelessWidget {
               ThingMainCardSang1Page(),
           '/ownpage/thingpage/showpage': (context) => ThingShowPage(),
           '/ownpage/timepage': (context) => TimePage(),
+          '/utilpage': (context) => UtilPage(),
         },
       ),
     );
