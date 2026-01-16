@@ -43,8 +43,10 @@ class HomePage extends ConsumerWidget {
         show: "神话传说",
       ),
       Simple.simpleClick(
-        func: () {},
-        show: "计算广场",
+        func: () {
+          Navigator.pushNamed(context, '/apage');
+        },
+        show: "古代广场",
       ),
     ];
 

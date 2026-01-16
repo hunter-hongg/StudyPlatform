@@ -10,7 +10,8 @@ class ThingMainCardPage extends ConsumerWidget {
     return Scaffold(
       appBar: Simple.simpleBar(
         title: '我的卡牌',
-        back: Simple.backButton(context: context, route: '/ownpage/thingpage/mainpage'),
+        back: Simple.backButton(
+            context: context, route: '/ownpage/thingpage/mainpage'),
       ),
       body: Center(
         child: Column(
@@ -18,14 +19,16 @@ class ThingMainCardPage extends ConsumerWidget {
             const SizedBox(height: 150),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/ownpage/thingpage/mainpage/cardpage/sang1page');
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/cardpage/sang1page');
               },
               show: "三国卡牌1",
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/ownpage/thingpage/mainpage/cardpage/han1page');
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/cardpage/han1page');
               },
               show: "汉朝卡牌1",
             )

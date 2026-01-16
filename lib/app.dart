@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:study_platform/pages/ancient_page/ancient_page.dart';
 import 'package:study_platform/pages/calc_page/calc_page.dart';
 import 'package:study_platform/pages/calc_page/shop_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/addsub_page.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => HomePage(),
+          '/apage': (context) => APage(),
           '/calcpage': (context) => CalcPage(),
           '/calcpage/shoppage': (context) => CalcShopPage(),
           '/calcpage/startpage': (context) => CalcStartPage(),
@@ -43,9 +45,12 @@ class MyApp extends StatelessWidget {
           '/ownpage/lihepage': (context) => LihePage(),
           '/ownpage/thingpage': (context) => ThingPage(),
           '/ownpage/thingpage/mainpage': (context) => ThingMainPage(),
-          '/ownpage/thingpage/mainpage/cardpage': (context) => ThingMainCardPage(),
-          '/ownpage/thingpage/mainpage/cardpage/han1page': (context) => ThingMainCardHan1Page(),
-          '/ownpage/thingpage/mainpage/cardpage/sang1page': (context) => ThingMainCardSang1Page(),
+          '/ownpage/thingpage/mainpage/cardpage': (context) =>
+              ThingMainCardPage(),
+          '/ownpage/thingpage/mainpage/cardpage/han1page': (context) =>
+              ThingMainCardHan1Page(),
+          '/ownpage/thingpage/mainpage/cardpage/sang1page': (context) =>
+              ThingMainCardSang1Page(),
           '/ownpage/thingpage/showpage': (context) => ThingShowPage(),
           '/ownpage/timepage': (context) => TimePage(),
         },

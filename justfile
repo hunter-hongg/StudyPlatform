@@ -6,6 +6,8 @@ build:
 	flutter build linux
 test:
     flutter test
+format:
+    dart format .
 go:
 	./go/bin/学习平台
 rel version:

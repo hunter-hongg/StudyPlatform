@@ -18,6 +18,10 @@ class Files {
   static FilePassword jiSuanBiReader() {
     return FilePassword("${Dirs.filePath()}jsbc.txt", "woda2fj341");
   }
+
+  static FilePassword aTongQianReader() {
+    return FilePassword("${Dirs.filePath()}tb.avc", "hifo356sjl");
+  }
 }
 
 class LiheFiles {

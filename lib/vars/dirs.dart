@@ -8,9 +8,9 @@ class Dirs {
   static String filePathTongy() {
     return "${filePath()}tyhbdirapbb/";
   }
-  
+
   static String filePathCard() {
-    return  "${filePath()}fpcdiralf/";
+    return "${filePath()}fpcdiralf/";
   }
 
   static List<String> dirs() {

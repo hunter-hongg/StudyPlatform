@@ -11,27 +11,27 @@ class ThingMainCardSang1Page extends ConsumerWidget {
     var wid = <Widget>[];
     for (var i = 0; i <= cards.length ~/ 16; ++i) {
       var limit = ((cards.length < (i + 1) * 16) ? cards.length : (i + 1) * 16);
-        var widj = <Widget>[];
-        for (var j = i * 16; j < limit; ++j) {
-          widj += [
-            ElevatedButton(
-              onPressed: (){},
-              style: Styles.buttonSimpleStyle(),
-              child: Text(
-                "${cards[j]}\n稀有",
-                style: Styles.simpleTextDownStyle(),
-              ),
-            )
-          ];
-        }
-        wid += [
-          Simple.simpleSpace(),
-          Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 15,
-            children: widj,
+      var widj = <Widget>[];
+      for (var j = i * 16; j < limit; ++j) {
+        widj += [
+          ElevatedButton(
+            onPressed: () {},
+            style: Styles.buttonSimpleStyle(),
+            child: Text(
+              "${cards[j]}\n稀有",
+              style: Styles.simpleTextDownStyle(),
+            ),
           )
         ];
+      }
+      wid += [
+        Simple.simpleSpace(),
+        Wrap(
+          alignment: WrapAlignment.center,
+          spacing: 15,
+          children: widj,
+        )
+      ];
     }
     return wid;
   }

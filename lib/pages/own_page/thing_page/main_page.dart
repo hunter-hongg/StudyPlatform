@@ -18,7 +18,8 @@ class ThingMainPage extends ConsumerWidget {
             const SizedBox(height: 150),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/ownpage/thingpage/mainpage/cardpage');
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/cardpage');
               },
               show: "我的卡牌",
             ),

@@ -74,7 +74,8 @@ void main() {
       expect(Polynomial([1, 2, 3]).toString(), equals('3.0x^2 + 2.0x + 1.0'));
       expect(Polynomial([-1, 2, -3]).toString(), equals('-3.0x^2 + 2.0x -1.0'));
       expect(Polynomial([0, 0, 1]).toString(), equals('x^2')); // x²
-      expect(Polynomial([9, 1, 0, 5, -1]).toStringBetter(), equals("- x^4 + 5x^3 + x + 9"));
+      expect(Polynomial([9, 1, 0, 5, -1]).toStringBetter(),
+          equals("- x^4 + 5x^3 + x + 9"));
     });
   });
 
