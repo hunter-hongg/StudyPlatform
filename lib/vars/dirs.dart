@@ -17,6 +17,7 @@ class Dirs {
     return [
       filePath(),
       filePathTongy(),
+      filePathCard(),
     ];
   }
 }

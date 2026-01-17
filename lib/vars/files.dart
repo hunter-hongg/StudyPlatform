@@ -19,6 +19,10 @@ class Files {
     return FilePassword("${Dirs.filePath()}jsbc.txt", "woda2fj341");
   }
 
+  static FilePassword xianBiReader() {
+    return FilePassword("${Dirs.filePath()}xianbc.conc", "woapf20sl1");
+  }
+
   static FilePassword aTongQianReader() {
     return FilePassword("${Dirs.filePath()}tb.avc", "hifo356sjl");
   }

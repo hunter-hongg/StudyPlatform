@@ -6,6 +6,18 @@ import 'package:study_platform/vars/simple.dart';
 class ThingShowPage extends ConsumerWidget {
   const ThingShowPage({super.key});
 
+  int getCardsNum() {
+    var cards = [
+      CardStore.sanGuo1(),
+      CardStore.han1(),
+    ];
+    int sum = 0;
+    for (int i = 0; i < cards.length; ++i) {
+      sum += cards[i].get().length;
+    }
+    return sum;
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
@@ -27,7 +39,7 @@ class ThingShowPage extends ConsumerWidget {
                 const SizedBox(
                   width: 30,
                 ),
-                Simple.simpleClick(func: () {}, show: "仙币: 0"),
+                Simple.simpleClick(func: () {}, show: "仙币: ${Files.xianBiReader().readStrSafeSync()}"),
                 const SizedBox(
                   width: 30,
                 ),
@@ -54,7 +66,7 @@ class ThingShowPage extends ConsumerWidget {
               ],
             ),
             Simple.simpleSpace(),
-            Simple.simpleClick(func: () {}, show: "卡牌: 0")
+            Simple.simpleClick(func: () {}, show: "卡牌: ${getCardsNum()}"),
           ],
         ),
       ),
