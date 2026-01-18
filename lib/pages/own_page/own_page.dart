@@ -30,16 +30,24 @@ class OwnPage extends ConsumerWidget {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-                func: () {
-                  Navigator.pushNamed(context, '/ownpage/thingpage');
-                },
-                show: "我的物品"),
+              func: () {
+                Navigator.pushNamed(context, '/ownpage/thingpage');
+              },
+              show: "我的物品",
+            ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/ownpage/lihepage');
               },
               show: "我的礼盒",
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/ownpage/tongypage');
+              },
+              show: "通用货币",
             ),
           ],
         ),

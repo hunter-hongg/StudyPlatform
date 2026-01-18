@@ -39,7 +39,9 @@ class ThingShowPage extends ConsumerWidget {
                 const SizedBox(
                   width: 30,
                 ),
-                Simple.simpleClick(func: () {}, show: "仙币: ${Files.xianBiReader().readStrSafeSync()}"),
+                Simple.simpleClick(
+                    func: () {},
+                    show: "仙币: ${Files.xianBiReader().readStrSafeSync()}"),
                 const SizedBox(
                   width: 30,
                 ),

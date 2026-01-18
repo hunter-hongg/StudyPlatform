@@ -13,11 +13,16 @@ class Dirs {
     return "${filePath()}fpcdiralf/";
   }
 
+  static String filePathTongyReal() {
+    return "${filePathTongy()}fptyr/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
       filePathTongy(),
       filePathCard(),
+      filePathTongyReal(),
     ];
   }
 }

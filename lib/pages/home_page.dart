@@ -100,7 +100,11 @@ class HomePage extends ConsumerWidget {
           Text('等级: $jifenLev', style: Styles.showstrStyle()),
           SizedBox(height: 95),
           Simple.nullSpace(),
-          ...buildGrid(context, leftColumnItems, rightColumnItems,),
+          ...buildGrid(
+            context,
+            leftColumnItems,
+            rightColumnItems,
+          ),
         ],
       ),
     );

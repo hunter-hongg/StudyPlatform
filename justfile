@@ -10,6 +10,8 @@ test:
     flutter test
 check: 
     flutter analyze
+clean: 
+    flutter clean
 go:
 	./go/bin/学习平台
 rel version:

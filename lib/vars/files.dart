@@ -26,6 +26,10 @@ class Files {
   static FilePassword aTongQianReader() {
     return FilePassword("${Dirs.filePath()}tb.avc", "hifo356sjl");
   }
+
+  static FilePassword tongYongReader() {
+    return FilePassword("${Dirs.filePathTongyReal()}tyrelrd.cc", "qacjf34860");
+  }
 }
 
 class LiheFiles {
