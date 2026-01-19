@@ -81,4 +81,11 @@ class Simple {
       style: Styles.simpleTextStyle(),
     );
   }
+
+  static Widget simpleShowText({required String show}) {
+    return Text(
+      show,
+      style: Styles.showstrStyle(),
+    );
+  }
 }

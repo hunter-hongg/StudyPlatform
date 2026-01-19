@@ -9,10 +9,11 @@ import 'package:study_platform/pages/calc_page/start_page/poly_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 import 'package:study_platform/pages/own_page/lihe_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/card_page/card_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/card_page/han1_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/card_page/sang1_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/card_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/han1_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/sang1_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/main_page/main_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/main_page/yinbi_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/shop_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/show_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/thing_page.dart';
@@ -55,6 +56,8 @@ class MyApp extends StatelessWidget {
               ThingMainCardHan1Page(),
           '/ownpage/thingpage/mainpage/cardpage/sang1page': (context) =>
               ThingMainCardSang1Page(),
+          '/ownpage/thingpage/mainpage/yinbipage': (context) =>
+              ThingMainYinbiPage(),
           '/ownpage/thingpage/shoppage': (context) => ThingShopPage(),
           '/ownpage/thingpage/showpage': (context) => ThingShowPage(),
           '/ownpage/timepage': (context) => TimePage(),

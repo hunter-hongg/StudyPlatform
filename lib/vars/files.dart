@@ -30,6 +30,11 @@ class Files {
   static FilePassword tongYongReader() {
     return FilePassword("${Dirs.filePathTongyReal()}tyrelrd.cc", "qacjf34860");
   }
+
+  static FilePassword yinBiReader() {
+    return FilePassword(
+        "${Dirs.filePathTongy()}yb.conc.sdpg.1659", "apfjr12409");
+  }
 }
 
 class LiheFiles {

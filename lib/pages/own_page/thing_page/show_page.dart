@@ -52,7 +52,9 @@ class ThingShowPage extends ConsumerWidget {
             Wrap(
               alignment: WrapAlignment.center,
               children: [
-                Simple.simpleClick(func: () {}, show: "银币: 0"),
+                Simple.simpleClick(
+                    func: () {},
+                    show: "银币: ${Files.yinBiReader().readStrSafeSync()}"),
                 const SizedBox(
                   width: 30,
                 ),
