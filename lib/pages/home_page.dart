@@ -91,7 +91,7 @@ class HomePage extends ConsumerWidget {
 
     return Scaffold(
       appBar: Simple.simpleBar(
-        title: "欢迎$user来到学习平台",
+        title: "欢迎$user 来到学习平台",
       ),
       body: Column(
         children: [
@@ -100,7 +100,11 @@ class HomePage extends ConsumerWidget {
           Text('等级: $jifenLev', style: Styles.showstrStyle()),
           SizedBox(height: 95),
           Simple.nullSpace(),
-          ...buildGrid(context, leftColumnItems, rightColumnItems),
+          ...buildGrid(
+            context,
+            leftColumnItems,
+            rightColumnItems,
+          ),
         ],
       ),
     );

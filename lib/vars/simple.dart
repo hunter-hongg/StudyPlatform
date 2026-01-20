@@ -57,4 +57,35 @@ class Simple {
       {required BuildContext context, required String show}) {
     Dialogs.dialogShow(Dialogs.dialogInfo(show), context);
   }
+
+  static Widget simpleInput(
+      {required TextEditingController controller,
+      required String label,
+      required String hint}) {
+    return FractionallySizedBox(
+      widthFactor: 0.3,
+      child: TextField(
+        controller: controller,
+        decoration: InputDecoration(
+          labelText: label,
+          hintText: hint,
+          border: OutlineInputBorder(),
+        ),
+      ),
+    );
+  }
+
+  static Widget simpleText({required String show}) {
+    return Text(
+      show,
+      style: Styles.simpleTextStyle(),
+    );
+  }
+
+  static Widget simpleShowText({required String show}) {
+    return Text(
+      show,
+      style: Styles.showstrStyle(),
+    );
+  }
 }

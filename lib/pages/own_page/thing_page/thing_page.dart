@@ -28,6 +28,13 @@ class ThingPage extends ConsumerWidget {
                 Navigator.pushNamed(context, '/ownpage/thingpage/mainpage');
               },
               show: "物品主页",
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/ownpage/thingpage/shoppage');
+              },
+              show: "物品商城",
             )
           ],
         ),

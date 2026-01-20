@@ -26,9 +26,18 @@ class ThingMainPage extends ConsumerWidget {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                // Navigator.pushNamed(context, '/ownpage/thingpage/mainpage');
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/yinbipage');
               },
-              show: "未知物品",
+              show: "我的银币",
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/baoshipage');
+              },
+              show: "我的宝石",
             )
           ],
         ),
