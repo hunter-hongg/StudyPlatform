@@ -35,6 +35,10 @@ class Files {
     return FilePassword(
         "${Dirs.filePathTongy()}yb.conc.sdpg.1659", "apfjr12409");
   }
+
+  static FilePassword baoShiReader() {
+    return FilePassword("${Dirs.filePathBaoShi()}mbsc.conc", "rosl3510dm");
+  }
 }
 
 class LiheFiles {

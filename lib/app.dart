@@ -9,6 +9,8 @@ import 'package:study_platform/pages/calc_page/start_page/poly_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 import 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 import 'package:study_platform/pages/own_page/lihe_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/baoshi_page.dart';
+import 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/get_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/card_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/han1_page.dart';
 import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/sang1_page.dart';
@@ -50,6 +52,10 @@ class MyApp extends StatelessWidget {
           '/ownpage/lihepage': (context) => LihePage(),
           '/ownpage/thingpage': (context) => ThingPage(),
           '/ownpage/thingpage/mainpage': (context) => ThingMainPage(),
+          '/ownpage/thingpage/mainpage/baoshipage': (context) =>
+              ThingMainBaoshiPage(),
+          '/ownpage/thingpage/mainpage/baoshipage/getpage': (context) =>
+              ThingMainBaoshiGetPage(),
           '/ownpage/thingpage/mainpage/cardpage': (context) =>
               ThingMainCardPage(),
           '/ownpage/thingpage/mainpage/cardpage/han1page': (context) =>

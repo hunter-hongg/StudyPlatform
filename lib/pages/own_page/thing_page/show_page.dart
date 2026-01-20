@@ -45,7 +45,9 @@ class ThingShowPage extends ConsumerWidget {
                 const SizedBox(
                   width: 30,
                 ),
-                Simple.simpleClick(func: () {}, show: "宝石: 0"),
+                Simple.simpleClick(
+                    func: () {},
+                    show: "宝石: ${Files.baoShiReader().readStrSafeSync()}"),
               ],
             ),
             Simple.simpleSpace(),

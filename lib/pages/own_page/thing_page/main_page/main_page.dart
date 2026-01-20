@@ -30,6 +30,14 @@ class ThingMainPage extends ConsumerWidget {
                     context, '/ownpage/thingpage/mainpage/yinbipage');
               },
               show: "我的银币",
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/baoshipage');
+              },
+              show: "我的宝石",
             )
           ],
         ),

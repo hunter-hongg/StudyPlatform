@@ -17,6 +17,10 @@ class Dirs {
     return "${filePathTongy()}fptyr/";
   }
 
+  static String filePathBaoShi() {
+    return "${filePath()}baosdirfos/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
