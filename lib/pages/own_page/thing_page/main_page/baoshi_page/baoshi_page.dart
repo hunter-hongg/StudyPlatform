@@ -26,7 +26,10 @@ class ThingMainBaoshiPage extends ConsumerWidget {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: () {},
+              func: () {
+                Navigator.pushNamed(
+                    context, '/ownpage/thingpage/mainpage/baoshipage/cpage');
+              },
               show: '宝石抽奖',
             )
           ],

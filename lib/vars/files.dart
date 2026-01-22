@@ -7,8 +7,7 @@ import 'package:study_platform/vars/dirs.dart';
 
 class Files {
   static FilePassword jiFenReader() {
-    var fp = Dirs.filePath();
-    return FilePassword("${fp}jifc.txt", "hsiep10475");
+    return FilePassword("${Dirs.filePath()}jifc.txt", "hsiep10475");
   }
 
   static FilePassword jinBiReader() {
