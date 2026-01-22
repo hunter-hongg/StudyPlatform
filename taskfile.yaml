@@ -47,8 +47,8 @@ tasks:
       - |
         if [ -z "{{.CLI_ARGS}}" ]; then
           echo "错误：请指定版本号"
-          echo "用法：task rel -- <版本号>"
-          echo "示例：task rel -- 1.0.0"
+          echo "用法task rel -- <版本号>"
+          echo "示例task rel -- 1.0.0"
           exit 1
         fi
         VERSION={{.CLI_ARGS}}
@@ -56,5 +56,5 @@ tasks:
         mkdir -p release/raw
         cp -rv build/linux/x64/release/bundle "release/v${VERSION}"
         tar cavf "release/StudyPlatformv${VERSION}.tar.xz" "release/v${VERSION}"
-        chattr +i "release/StudyPlatformv${VERSION}.tar.xz"
+        sudo chattr +i "release/StudyPlatformv${VERSION}.tar.xz"
         mv "release/v${VERSION}" "release/raw/v${VERSION}"
