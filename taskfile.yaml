@@ -1,0 +1,60 @@
+version: '3'
+
+tasks:
+  default:
+    desc: 默认运行开发服务器
+    cmds:
+      - task: run
+
+  format:
+    desc: 格式化 Dart 代码
+    cmds:
+      - dart format .
+
+  run:
+    desc: 运行 Flutter 应用
+    cmds:
+      - flutter run
+
+  build:
+    desc: 构建 Linux 应用
+    cmds:
+      - flutter build linux
+
+  test:
+    desc: 运行测试
+    cmds:
+      - flutter test
+
+  check:
+    desc: 代码分析
+    cmds:
+      - flutter analyze
+
+  clean:
+    desc: 清理构建文件
+    cmds:
+      - flutter clean
+
+  go:
+    desc: 运行 Go 可执行文件
+    cmds:
+      - ./go/bin/学习平台
+
+  rel:
+    desc: 构建发布版本（需要指定版本号参数）
+    cmds:
+      - |
+        if [ -z "{{.CLI_ARGS}}" ]; then
+          echo "错误：请指定版本号"
+          echo "用法task rel -- <版本号>"
+          echo "示例task rel -- 1.0.0"
+          exit 1
+        fi
+        VERSION={{.CLI_ARGS}}
+        flutter build linux --release
+        mkdir -p release/raw
+        cp -rv build/linux/x64/release/bundle "release/v${VERSION}"
+        tar cavf "release/StudyPlatformv${VERSION}.tar.xz" "release/v${VERSION}"
+        sudo chattr +i "release/StudyPlatformv${VERSION}.tar.xz"
+        mv "release/v${VERSION}" "release/raw/v${VERSION}"
