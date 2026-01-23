@@ -58,3 +58,26 @@ tasks:
         tar cavf "release/StudyPlatformv${VERSION}.tar.xz" "release/v${VERSION}"
         sudo chattr +i "release/StudyPlatformv${VERSION}.tar.xz"
         mv "release/v${VERSION}" "release/raw/v${VERSION}"
+        gh release create v$VERSION
+  
+  upl: 
+    desc: 上传版本到指定release
+    cmds: 
+      - |
+        if [ -z "{{.CLI_ARGS}}" ]; then
+          echo "错误：请指定版本号"
+          exit 1
+        fi
+        VERSION={{.CLI_ARGS}}
+        gh release upload v$VERSION release/StudyPlatformv$VERSION.tar.xz
+  
+  viewrel: 
+    desc: 查看指定版本release
+    cmds: 
+      - |
+        if [ -z "{{.CLI_ARGS}}" ]; then
+          echo "错误：请指定版本号"
+          exit 1
+        fi
+        VERSION={{.CLI_ARGS}}
+        gh release view v$VERSION
