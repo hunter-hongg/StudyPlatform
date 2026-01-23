@@ -80,7 +80,9 @@ class HomePage extends ConsumerWidget {
         show: "古代广场",
       ),
       Simple.simpleClick(
-        func: () {},
+        func: () {
+          Navigator.pushNamed(context, '/bankpage');
+        },
         show: "积分银行",
       ),
       Simple.simpleClick(

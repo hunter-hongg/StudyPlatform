@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:study_platform/tool/logger.dart';
 import 'package:study_platform/vars/dirs.dart';
