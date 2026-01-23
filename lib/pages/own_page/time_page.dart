@@ -7,7 +7,6 @@ import 'package:study_platform/vars/dialog.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/rule.dart';
 import 'package:study_platform/vars/simple.dart';
-import 'package:study_platform/vars/styles.dart';
 import 'package:study_platform/vars/timers.dart';
 
 final user = EnvMod.getUser();

@@ -9,10 +9,30 @@ class Dirs {
     return "${filePath()}tyhbdirapbb/";
   }
 
+  static String filePathCard() {
+    return "${filePath()}fpcdiralf/";
+  }
+
+  static String filePathTongyReal() {
+    return "${filePathTongy()}fptyr/";
+  }
+
+  static String filePathBaoShi() {
+    return "${filePath()}baosdirfos/";
+  }
+
+  static String filePathBank() {
+    return "${filePath()}cc.bnkaac.c.io/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
       filePathTongy(),
+      filePathCard(),
+      filePathTongyReal(),
+      filePathBaoShi(),
+      filePathBank(),
     ];
   }
 }
