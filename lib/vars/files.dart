@@ -38,6 +38,10 @@ class Files {
   static FilePassword baoShiReader() {
     return FilePassword("${Dirs.filePathBaoShi()}mbsc.conc", "rosl3510dm");
   }
+
+  static FilePassword bankSReader() {
+    return FilePassword("${Dirs.filePathBank()}fhubasr", "aoidnrm301");
+  }
 }
 
 class LiheFiles {

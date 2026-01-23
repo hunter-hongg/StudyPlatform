@@ -21,12 +21,18 @@ class Dirs {
     return "${filePath()}baosdirfos/";
   }
 
+  static String filePathBank() {
+    return "${filePath()}cc.bnkaac.c.io/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
       filePathTongy(),
       filePathCard(),
       filePathTongyReal(),
+      filePathBaoShi(),
+      filePathBank(),
     ];
   }
 }
