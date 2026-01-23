@@ -3,6 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/pages/ancient_page/ancient_page.dart';
 import 'package:study_platform/pages/bank_page/bank_page.dart';
 import 'package:study_platform/pages/bank_page/get_page.dart';
+import 'package:study_platform/pages/bank_page/juan_page/jiang_page/jiang_page.dart';
+import 'package:study_platform/pages/bank_page/juan_page/jiang_page/jifen_page.dart';
+import 'package:study_platform/pages/bank_page/juan_page/juan_page.dart';
+import 'package:study_platform/pages/bank_page/juan_page/real_page.dart';
 import 'package:study_platform/pages/bank_page/store_page.dart';
 import 'package:study_platform/pages/calc_page/calc_page.dart';
 import 'package:study_platform/pages/calc_page/shop_page.dart';
@@ -39,7 +43,11 @@ class MyApp extends StatelessWidget {
       '/',
       '/apage',
       '/bankpage',
-      '/bankpage/getpage'
+      '/bankpage/getpage',
+      '/bankpage/juanpage',
+      '/bankpage/juanpage/jiangpage',
+      '/bankpage/juanpage/jiangpage/jifenpage',
+      '/bankpage/juanpage/realpage',
       '/bankpage/storepage',
       '/calcpage',
       '/calcpage/shoppage',
@@ -83,6 +91,11 @@ class MyApp extends StatelessWidget {
           '/apage': (context) => APage(),
           '/bankpage': (context) => BankPage(),
           '/bankpage/getpage': (context) => BankGetPage(),
+          '/bankpage/juanpage': (context) => BankJuanPage(),
+          '/bankpage/juanpage/jiangpage': (context) => BankJuanJiangPage(),
+          '/bankpage/juanpage/jiangpage/jifenpage': (context) =>
+              BankJuanJiangJifPage(),
+          '/bankpage/juanpage/realpage': (context) => BankJuanRealPage(),
           '/bankpage/storepage': (context) => BankStorePage(),
           '/calcpage': (context) => CalcPage(),
           '/calcpage/shoppage': (context) => CalcShopPage(),

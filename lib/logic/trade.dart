@@ -3,8 +3,17 @@ import 'package:study_platform/tool/file_password.dart';
 import 'package:study_platform/vars/simple.dart';
 
 class Trade {
-  static void trade(BuildContext context, FilePassword fp1, FilePassword fp2,
-      String thing1s, int thing1min, int thing2add, String? route) {
+  static void trade(
+      BuildContext context,
+      FilePassword fp1,
+      FilePassword fp2,
+      String thing1s,
+      int thing1min,
+      int thing2add,
+      {
+      String? route,
+      String? customMessage,
+      }) {
     if (!fp1.canMinusSafeSync(thing1min)) {
       Simple.simpleInfo(
         context: context,
@@ -18,7 +27,7 @@ class Trade {
     }
     Simple.simpleInfo(
       context: context,
-      show: "兑换成功",
+      show: customMessage ?? "兑换成功",
     );
   }
 }

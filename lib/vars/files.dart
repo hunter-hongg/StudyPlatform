@@ -42,6 +42,10 @@ class Files {
   static FilePassword bankSReader() {
     return FilePassword("${Dirs.filePathBank()}fhubasr", "aoidnrm301");
   }
+
+  static FilePassword bankJReader() {
+    return FilePassword("${Dirs.filePathBank()}bjq.cc.ssdiowei_", "asoirm2156");
+  }
 }
 
 class LiheFiles {
