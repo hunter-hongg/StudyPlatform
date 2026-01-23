@@ -149,13 +149,10 @@ class OnceFile {
 
 /// 带JSON支持的高级一次性文件
 class JsonOnceFile<T> extends OnceFile {
-  final T? _initialData;
-
-  JsonOnceFile(
-    String filePath, {
+  JsonOnceFile({
+    required String filePath,
     T? initialData,
-  })  : _initialData = initialData,
-        super(
+  }) : super(
           filePath,
           content: initialData != null
               ? jsonEncode(initialData)

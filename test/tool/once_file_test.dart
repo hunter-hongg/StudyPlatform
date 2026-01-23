@@ -126,7 +126,7 @@ void main() {
     test('使用初始数据创建 JsonOnceFile', () {
       final initialData = {'version': '1.0.0'};
       final jsonFile = JsonOnceFile<Map<String, dynamic>>(
-        testFile,
+        filePath: testFile,
         initialData: initialData,
       );
 
