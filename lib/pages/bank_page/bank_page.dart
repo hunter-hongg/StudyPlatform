@@ -30,7 +30,7 @@ class BankPage extends ConsumerWidget {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                // Navigator.pushNamed(context, '/ownpage/thingpage');
+                Navigator.pushNamed(context, '/bankpage/getpage');
               },
               show: "取出积分",
             ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/pages/ancient_page/ancient_page.dart';
 import 'package:study_platform/pages/bank_page/bank_page.dart';
+import 'package:study_platform/pages/bank_page/get_page.dart';
 import 'package:study_platform/pages/bank_page/store_page.dart';
 import 'package:study_platform/pages/calc_page/calc_page.dart';
 import 'package:study_platform/pages/calc_page/shop_page.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
       '/',
       '/apage',
       '/bankpage',
+      '/bankpage/getpage'
       '/bankpage/storepage',
       '/calcpage',
       '/calcpage/shoppage',
@@ -80,6 +82,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => HomePage(),
           '/apage': (context) => APage(),
           '/bankpage': (context) => BankPage(),
+          '/bankpage/getpage': (context) => BankGetPage(),
           '/bankpage/storepage': (context) => BankStorePage(),
           '/calcpage': (context) => CalcPage(),
           '/calcpage/shoppage': (context) => CalcShopPage(),
