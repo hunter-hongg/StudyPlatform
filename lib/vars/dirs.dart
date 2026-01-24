@@ -25,6 +25,10 @@ class Dirs {
     return "${filePath()}cc.bnkaac.c.io/";
   }
 
+  static String filePathSetting() {
+    return "${filePath()}settings/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),

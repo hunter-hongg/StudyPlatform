@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/logic/env_mod.dart';
 import 'package:study_platform/logic/jifen.dart';
+import 'package:study_platform/logic/state.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/logger.dart';
 import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 
-final counterProvider = StateProvider<int>((ref) => 0);
 final user = EnvMod.getUser();
 
 class HomePage extends ConsumerWidget {
@@ -61,7 +61,15 @@ class HomePage extends ConsumerWidget {
       ),
       Simple.simpleClick(
         func: () {
-          Navigator.pushNamed(context, '/utilpage');
+          StateDealing.dealState(
+            context,
+            Setting.enableUtil(),
+            true,
+            () {
+              Navigator.pushNamed(context, '/utilpage');
+            },
+            "工具未开启, 请前往设置开启",
+          );
         },
         show: "工具页面",
       ),
@@ -86,7 +94,9 @@ class HomePage extends ConsumerWidget {
         show: "积分银行",
       ),
       Simple.simpleClick(
-        func: () {},
+        func: () {
+          Navigator.pushNamed(context, '/settingpage');
+        },
         show: "设置页面",
       ),
     ];

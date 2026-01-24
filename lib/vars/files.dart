@@ -2,6 +2,7 @@ import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
 import 'package:study_platform/tool/file_password.dart';
 import 'package:study_platform/tool/once_file.dart';
+import 'package:study_platform/tool/statefile.dart';
 import 'package:study_platform/vars/cards.dart';
 import 'package:study_platform/vars/dirs.dart';
 
@@ -103,5 +104,11 @@ class CardStore {
       cardname: CardList.han1(),
       addnum: 7184,
     );
+  }
+}
+
+class Setting {
+  static StateFile enableUtil() {
+    return StateFile("${Dirs.filePathSetting()}util.setting");
   }
 }

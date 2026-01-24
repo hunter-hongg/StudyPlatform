@@ -71,7 +71,7 @@ tasks:
         VERSION={{.CLI_ARGS}}
         gh release upload v$VERSION release/StudyPlatformv$VERSION.tar.xz
   
-  viewrel: 
+  view: 
     desc: 查看指定版本release
     cmds: 
       - |
@@ -81,3 +81,14 @@ tasks:
         fi
         VERSION={{.CLI_ARGS}}
         gh release view v$VERSION
+  
+  analyze: 
+    desc: 分析代码
+    cmds: 
+      - flutter analyze
+  
+  get: 
+    desc: 获取依赖
+    cmds: 
+      - flutter pub get
+  
