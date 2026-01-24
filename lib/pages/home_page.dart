@@ -56,7 +56,9 @@ class HomePage extends ConsumerWidget {
         show: "计算广场",
       ),
       Simple.simpleClick(
-        func: () {},
+        func: () {
+          Navigator.pushNamed(context, '/thingpage');
+        },
         show: "物品领取",
       ),
       Simple.simpleClick(
