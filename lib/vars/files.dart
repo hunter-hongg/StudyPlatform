@@ -87,6 +87,46 @@ class CheckFiles {
       allTimes: 5,
     );
   }
+
+  static CheckFile tsJifenCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}tsjfcc.ck",
+      addNum: 1049,
+      allTimes: 7,
+    );
+  }
+
+  static CheckFile tsXianbiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}tsxbcc.ck",
+      addNum: 2202,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile tsTongqianCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}tqchk.ck",
+      addNum: 2212,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile tsBaoshiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}fospbsck.dogck",
+      addNum: 1127,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile tsJinbiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}sdogh.dogck",
+      addNum: 2035,
+      allTimes: 1,
+    );
+  }
 }
 
 class CardStore {
