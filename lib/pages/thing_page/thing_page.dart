@@ -24,7 +24,9 @@ class TSPage extends ConsumerWidget {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: () {},
+              func: () {
+                Navigator.pushNamed(context, '/thingpage/jinpage');
+              },
               show: '金币领取',
             ),
             Simple.simpleSpace(),

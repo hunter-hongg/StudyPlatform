@@ -33,6 +33,7 @@ import 'package:study_platform/pages/own_page/tongy_page/jifen_page.dart';
 import 'package:study_platform/pages/own_page/tongy_page/tongy_page.dart';
 import 'package:study_platform/pages/setting_page/setting_page.dart';
 import 'package:study_platform/pages/thing_page/free_page.dart';
+import 'package:study_platform/pages/thing_page/jinbi_page.dart';
 import 'package:study_platform/pages/thing_page/thing_page.dart';
 import 'package:study_platform/pages/util_page/util_page.dart';
 import 'pages/home_page.dart';
@@ -78,6 +79,8 @@ class MyApp extends StatelessWidget {
       '/ownpage/tongypage/jifenpage',
       '/settingpage',
       '/thingpage',
+      '/thingpage/freepage',
+      '/thingpage/jinpage',
       '/utilpage',
     ];
   }
@@ -137,6 +140,7 @@ class MyApp extends StatelessWidget {
           '/settingpage' : (context) => SettingPage(),
           '/thingpage': (context) => TSPage(),
           '/thingpage/freepage': (context) => TSFreePage(),
+          '/thingpage/jinpage': (context) => TSJinPage(),
           '/utilpage': (context) => UtilPage(),
         },
       ),
