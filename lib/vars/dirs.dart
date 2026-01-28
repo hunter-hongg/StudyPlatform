@@ -25,6 +25,14 @@ class Dirs {
     return "${filePath()}cc.bnkaac.c.io/";
   }
 
+  static String filePathSetting() {
+    return "${filePath()}settings/";
+  }
+
+  static String filePathTS() {
+    return "${filePath()}tssqudirdpg/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
@@ -33,6 +41,7 @@ class Dirs {
       filePathTongyReal(),
       filePathBaoShi(),
       filePathBank(),
+      filePathTS(),
     ];
   }
 }
