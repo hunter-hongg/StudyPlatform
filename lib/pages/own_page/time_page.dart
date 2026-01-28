@@ -9,7 +9,7 @@ import 'package:study_platform/vars/rule.dart';
 import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/timers.dart';
 
-final user = EnvMod.getUser();
+final timePageUser = EnvMod.getUser();
 final jifenStr = Files.jiFenReader().readStrSafeSync();
 
 class TimePage extends ConsumerWidget {

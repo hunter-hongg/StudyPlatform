@@ -88,4 +88,16 @@ class Simple {
       style: Styles.showstrStyle(),
     );
   }
+
+  static List<Widget> simpleCheck(
+      {required String show, required bool def, required void Function(bool?) func}) {
+    return [
+      Checkbox(
+        value: def,
+        onChanged: (v) => {func(v)},
+      ),
+      SizedBox(width: 10,),
+      simpleText(show: show),
+    ];
+  }
 }
