@@ -1,0 +1,50 @@
+// 银行页面库
+export 'package:study_platform/pages/bank_page/bank_page.dart';
+export 'package:study_platform/pages/bank_page/get_page.dart';
+export 'package:study_platform/pages/bank_page/juan_page/jiang_page/jiang_page.dart';
+export 'package:study_platform/pages/bank_page/juan_page/jiang_page/jifen_page.dart';
+export 'package:study_platform/pages/bank_page/juan_page/juan_page.dart';
+export 'package:study_platform/pages/bank_page/juan_page/real_page.dart';
+export 'package:study_platform/pages/bank_page/store_page.dart';
+
+// 计算页面库
+export 'package:study_platform/pages/calc_page/calc_page.dart';
+export 'package:study_platform/pages/calc_page/shop_page.dart';
+export 'package:study_platform/pages/calc_page/start_page/addsub_page.dart';
+export 'package:study_platform/pages/calc_page/start_page/div_page.dart';
+export 'package:study_platform/pages/calc_page/start_page/poly_page.dart';
+export 'package:study_platform/pages/calc_page/start_page/start_page.dart';
+export 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
+
+// 古典页面库
+export 'package:study_platform/pages/ancient_page/ancient_page.dart';
+
+// 主要页面库
+export 'package:study_platform/pages/home_page.dart';
+export 'package:study_platform/pages/setting_page/setting_page.dart';
+export 'package:study_platform/pages/util_page/util_page.dart';
+
+// 拥有页面库
+export 'package:study_platform/pages/own_page/lihe_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/baoshi_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/chou_page/c1_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/chou_page/chou_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/get_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/card_page/card_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/card_page/han1_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/card_page/sang1_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/main_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/main_page/yinbi_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/shop_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/show_page.dart';
+export 'package:study_platform/pages/own_page/thing_page/thing_page.dart';
+export 'package:study_platform/pages/own_page/own_page.dart';
+export 'package:study_platform/pages/own_page/time_page.dart';
+export 'package:study_platform/pages/own_page/tongy_page/jifen_page.dart';
+export 'package:study_platform/pages/own_page/tongy_page/tongy_page.dart';
+
+// 物品页面库
+export 'package:study_platform/pages/thing_page/free_page.dart';
+export 'package:study_platform/pages/thing_page/jinbi_page.dart';
+export 'package:study_platform/pages/thing_page/mang_page.dart';
+export 'package:study_platform/pages/thing_page/thing_page.dart';

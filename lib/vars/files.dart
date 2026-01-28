@@ -2,6 +2,7 @@ import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
 import 'package:study_platform/tool/file_password.dart';
 import 'package:study_platform/tool/once_file.dart';
+import 'package:study_platform/tool/statefile.dart';
 import 'package:study_platform/vars/cards.dart';
 import 'package:study_platform/vars/dirs.dart';
 
@@ -86,6 +87,46 @@ class CheckFiles {
       allTimes: 5,
     );
   }
+
+  static CheckFile tsJifenCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}tsjfcc.ck",
+      addNum: 1049,
+      allTimes: 7,
+    );
+  }
+
+  static CheckFile tsXianbiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}tsxbcc.ck",
+      addNum: 2202,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile tsTongqianCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}tqchk.ck",
+      addNum: 2212,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile tsBaoshiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}fospbsck.dogck",
+      addNum: 1127,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile tsJinbiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathTS()}sdogh.dogck",
+      addNum: 2035,
+      allTimes: 1,
+    );
+  }
 }
 
 class CardStore {
@@ -103,5 +144,11 @@ class CardStore {
       cardname: CardList.han1(),
       addnum: 7184,
     );
+  }
+}
+
+class Setting {
+  static StateFile enableUtil() {
+    return StateFile("${Dirs.filePathSetting()}util.setting");
   }
 }
