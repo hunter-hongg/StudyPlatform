@@ -176,18 +176,28 @@ class Logger {
       final lines = stackTrace.toString().split('\n');
 
       if (lines.length > skip) {
-        final line = lines[skip].trim();
-        // 解析格式如: #2   Logger._getCallerInfo (file:///path/to/file.dart:10:11)
-        final regex = RegExp(r'#\d+\s+([^(]+)\(([^:]+):(\d+):\d+\)');
-        final match = regex.firstMatch(line);
+        // 查找包含文件路径的那一行
+        for (int i = skip; i < lines.length; i++) {
+          final line = lines[i].trim();
+          // 解析格式如: #3      Logger._log (file:///path/to/file.dart:20:5)
+          final regex = RegExp(r'#\d+\s+([^ ]+)\s+\(([^:]+):(\d+):\d+\)');
+          final match = regex.firstMatch(line);
 
-        if (match != null) {
-          final function = match.group(1)?.trim() ?? 'unknown';
-          final fullPath = match.group(2) ?? 'unknown';
-          final fileName = fullPath.split('/').last;
-          final lineNumber = int.tryParse(match.group(3) ?? '0') ?? 0;
+          if (match != null) {
+            final function = match.group(1)?.trim() ?? 'unknown';
+            final fullPath = match.group(2) ?? 'unknown';
+            final fileName = fullPath.split('/').last;
+            final lineNumber = int.tryParse(match.group(3) ?? '0') ?? 0;
 
-          return (fileName, function, lineNumber);
+            // 移除函数名前的类名前缀，例如 "Logger."
+            String cleanFunction = function;
+            int lastDotIndex = function.lastIndexOf('.');
+            if (lastDotIndex != -1 && lastDotIndex < function.length - 1) {
+              cleanFunction = function.substring(lastDotIndex + 1);
+            }
+
+            return (fileName, cleanFunction, lineNumber);
+          }
         }
       }
     } catch (e) {
