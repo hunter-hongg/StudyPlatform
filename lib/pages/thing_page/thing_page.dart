@@ -31,7 +31,9 @@ class TSPage extends ConsumerWidget {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: () {},
+              func: () {
+                Navigator.pushNamed(context, '/thingpage/mangpage');
+              },
               show: '金币盲盒',
             ),
           ],

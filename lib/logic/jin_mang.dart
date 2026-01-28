@@ -24,7 +24,7 @@ class JinMang {
     Files.baoShiReader().addNumSync(addba);
     Files.xianBiReader().addNumSync(addxi);
 
-    Navigator.pushNamed(context, '/thingpage');
+    Navigator.pushNamed(context, '/thingpage/mangpage');
 
     // 显示奖励信息
     Simple.simpleInfo(
@@ -49,7 +49,7 @@ class JinMang {
     // 添加铜钱奖励
     Files.aTongQianReader().addNumSync(addt);
 
-    Navigator.pushNamed(context, '/thingpage');
+    Navigator.pushNamed(context, '/thingpage/mangpage');
 
     // 显示奖励信息
     Simple.simpleInfo(

@@ -1,43 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:study_platform/pages/ancient_page/ancient_page.dart';
-import 'package:study_platform/pages/bank_page/bank_page.dart';
-import 'package:study_platform/pages/bank_page/get_page.dart';
-import 'package:study_platform/pages/bank_page/juan_page/jiang_page/jiang_page.dart';
-import 'package:study_platform/pages/bank_page/juan_page/jiang_page/jifen_page.dart';
-import 'package:study_platform/pages/bank_page/juan_page/juan_page.dart';
-import 'package:study_platform/pages/bank_page/juan_page/real_page.dart';
-import 'package:study_platform/pages/bank_page/store_page.dart';
-import 'package:study_platform/pages/calc_page/calc_page.dart';
-import 'package:study_platform/pages/calc_page/shop_page.dart';
-import 'package:study_platform/pages/calc_page/start_page/addsub_page.dart';
-import 'package:study_platform/pages/calc_page/start_page/div_page.dart';
-import 'package:study_platform/pages/calc_page/start_page/poly_page.dart';
-import 'package:study_platform/pages/calc_page/start_page/start_page.dart';
-import 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
-import 'package:study_platform/pages/own_page/lihe_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/baoshi_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/chou_page/c1_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/chou_page/chou_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/baoshi_page/get_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/card_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/han1_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/card_page/sang1_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/main_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/main_page/yinbi_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/shop_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/show_page.dart';
-import 'package:study_platform/pages/own_page/thing_page/thing_page.dart';
-import 'package:study_platform/pages/own_page/time_page.dart';
-import 'package:study_platform/pages/own_page/tongy_page/jifen_page.dart';
-import 'package:study_platform/pages/own_page/tongy_page/tongy_page.dart';
-import 'package:study_platform/pages/setting_page/setting_page.dart';
-import 'package:study_platform/pages/thing_page/free_page.dart';
-import 'package:study_platform/pages/thing_page/jinbi_page.dart';
-import 'package:study_platform/pages/thing_page/thing_page.dart';
-import 'package:study_platform/pages/util_page/util_page.dart';
-import 'pages/home_page.dart';
-import 'pages/own_page/own_page.dart';
+import 'package:study_platform/pages/pages.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -81,6 +44,7 @@ class MyApp extends StatelessWidget {
       '/thingpage',
       '/thingpage/freepage',
       '/thingpage/jinpage',
+      '/thingpage/mangpage',
       '/utilpage',
     ];
   }
@@ -137,10 +101,11 @@ class MyApp extends StatelessWidget {
           '/ownpage/timepage': (context) => TimePage(),
           '/ownpage/tongypage': (context) => TongyPage(),
           '/ownpage/tongypage/jifenpage': (context) => TongyJifenPage(),
-          '/settingpage' : (context) => SettingPage(),
+          '/settingpage': (context) => SettingPage(),
           '/thingpage': (context) => TSPage(),
           '/thingpage/freepage': (context) => TSFreePage(),
           '/thingpage/jinpage': (context) => TSJinPage(),
+          '/thingpage/mangpage': (context) => TSMangPage(),
           '/utilpage': (context) => UtilPage(),
         },
       ),
