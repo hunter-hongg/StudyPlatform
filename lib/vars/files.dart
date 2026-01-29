@@ -27,6 +27,14 @@ class Files {
     return FilePassword("${Dirs.filePath()}tb.avc", "hifo356sjl");
   }
 
+  static FilePassword aBaiYinReader() {
+    return FilePassword("${Dirs.filePath()}bay.avc", "3ifnyl1042");
+  }
+
+  static FilePassword aHuangJinReader() {
+    return FilePassword("${Dirs.filePath()}huaj.avc", "dgp395sk10");
+  }
+
   static FilePassword tongYongReader() {
     return FilePassword("${Dirs.filePathTongyReal()}tyrelrd.cc", "qacjf34860");
   }
