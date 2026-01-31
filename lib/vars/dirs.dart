@@ -37,6 +37,10 @@ class Dirs {
     return "${filePath()}baocdiran/";
   }
 
+  static String filePathAncient() {
+    return "${filePath()}adirspfm/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
@@ -47,6 +51,7 @@ class Dirs {
       filePathBank(),
       filePathTS(),
       filePathBaowu(),
+      filePathAncient(),
     ];
   }
 }

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 
-class AThingCaiPage extends StatefulWidget {
-  const AThingCaiPage({super.key});
+class AThingGuwanPage extends StatefulWidget {
+  const AThingGuwanPage({super.key});
 
   @override
-  State<AThingCaiPage> createState() => _AThingCaiPageState();
+  State<AThingGuwanPage> createState() => _AThingGuwanPageState();
 }
 
-class _AThingCaiPageState extends State<AThingCaiPage> {
+class _AThingGuwanPageState extends State<AThingGuwanPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,19 +28,19 @@ class _AThingCaiPageState extends State<AThingCaiPage> {
                   func: () {
                     setState(() {});
                   },
-                  show: "铜钱: ${Files.aTongQianReader().readStrSafeSync()}枚",
+                  show: "瓷器: ${Files.aCiQiReader().readStrSafeSync()}件",
                 ),
                 Simple.simpleClick(
                   func: () {
                     setState(() {});
                   },
-                  show: "白银: ${Files.aBaiYinReader().readStrSafeSync()}两",
+                  show: "碑刻: ${Files.aBeiKeReader().readStrSafeSync()}块",
                 ),
                 Simple.simpleClick(
                   func: () {
                     setState(() {});
                   },
-                  show: "黄金: ${Files.aHuangJinReader().readStrSafeSync()}两",
+                  show: "玉佩: ${Files.aYuPeiReader().readStrSafeSync()}件",
                 ),
               ],
             ),
@@ -51,13 +51,13 @@ class _AThingCaiPageState extends State<AThingCaiPage> {
                   func: () {
                     setState(() {});
                   },
-                  show: "绿玉: ${AddFiles.aLvYuReader().readStrSafe()}块",
+                  show: "茶壶: ${AddFiles.aGuwanChaHu().readStrSafe()}件",
                 ),
                 Simple.simpleClick(
                   func: () {
                     setState(() {});
                   },
-                  show: "白玉: ${AddFiles.aBaiYuReader().readStrSafe()}块",
+                  show: "茶盏: ${AddFiles.aGuwanChaZhan().readStrSafe()}件",
                 ),
               ],
             )

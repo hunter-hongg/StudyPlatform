@@ -56,6 +56,18 @@ class Files {
   static FilePassword bankJReader() {
     return FilePassword("${Dirs.filePathBank()}bjq.cc.ssdiowei_", "asoirm2156");
   }
+
+  static FilePassword aCiQiReader() {
+    return FilePassword("${Dirs.filePath()}cq.avgwc", "so3pfm10a2");
+  }
+
+  static FilePassword aBeiKeReader() {
+    return FilePassword("${Dirs.filePath()}shb.avgwc", "sudo1048qp");
+  }
+
+  static FilePassword aYuPeiReader() {
+    return FilePassword("${Dirs.filePath()}yup.avgwc", "sofp194327");
+  }
 }
 
 class LiheFiles {
@@ -169,5 +181,13 @@ class AddFiles {
 
   static AddFile aBaiYuReader() {
     return AddFile("${Dirs.filePathBaowu()}yzcc.conc", 1657);
+  }
+
+  static AddFile aGuwanChaHu() {
+    return AddFile("${Dirs.filePathAncient()}apdfn.gwcc1.conc", 2353);
+  }
+
+  static AddFile aGuwanChaZhan() {
+    return AddFile("${Dirs.filePathAncient()}asofn.gwcc2.conc", 2353);
   }
 }

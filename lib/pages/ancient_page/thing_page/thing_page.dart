@@ -22,6 +22,13 @@ class AThingPage extends ConsumerWidget {
               },
               show: '我的财物',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/thingpage/guwanpage');
+              },
+              show: '我的古玩',
+            ),
           ],
         ),
       ),
