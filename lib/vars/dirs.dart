@@ -33,6 +33,10 @@ class Dirs {
     return "${filePath()}tssqudirdpg/";
   }
 
+  static String filePathBaowu() {
+    return "${filePath()}baocdiran/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
@@ -42,6 +46,7 @@ class Dirs {
       filePathBaoShi(),
       filePathBank(),
       filePathTS(),
+      filePathBaowu(),
     ];
   }
 }

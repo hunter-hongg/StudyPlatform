@@ -16,6 +16,7 @@ export 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 
 export 'package:study_platform/pages/ancient_page/ancient_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/thing_page.dart';
+export 'package:study_platform/pages/ancient_page/thing_page/cai_page.dart';
 
 export 'package:study_platform/pages/home_page.dart';
 export 'package:study_platform/pages/setting_page/setting_page.dart';

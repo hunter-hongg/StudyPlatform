@@ -1,3 +1,4 @@
+import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
 import 'package:study_platform/tool/file_password.dart';
@@ -158,5 +159,15 @@ class CardStore {
 class Setting {
   static StateFile enableUtil() {
     return StateFile("${Dirs.filePathSetting()}util.setting");
+  }
+}
+
+class AddFiles {
+  static AddFile aLvYuReader() {
+    return AddFile("${Dirs.filePathBaowu()}jzcc.conc", 1657);
+  }
+
+  static AddFile aBaiYuReader() {
+    return AddFile("${Dirs.filePathBaowu()}yzcc.conc", 1657);
   }
 }

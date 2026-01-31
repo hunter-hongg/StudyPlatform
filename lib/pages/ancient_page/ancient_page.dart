@@ -24,7 +24,13 @@ class APage extends ConsumerWidget {
               '黄金: ${Files.aHuangJinReader().readStrSafeSync()}',
               style: Styles.showstrStyle(),
             ),
-            const SizedBox(height: 110),
+            const SizedBox(height: 70),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/thingpage');
+              },
+              show: "我的物品",
+            ),
           ],
         ),
       ),
