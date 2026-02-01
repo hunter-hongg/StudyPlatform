@@ -29,6 +29,13 @@ class AThingPage extends ConsumerWidget {
               },
               show: '我的古玩',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/thingpage/baowupage');
+              },
+              show: '我的宝物',
+            ),
           ],
         ),
       ),

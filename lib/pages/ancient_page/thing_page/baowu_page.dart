@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 
-class AThingGuwanPage extends StatefulWidget {
-  const AThingGuwanPage({super.key});
+class AThingBaowuPage extends StatefulWidget {
+  const AThingBaowuPage({super.key});
 
   @override
-  State<AThingGuwanPage> createState() => _AThingGuwanPageState();
+  State<AThingBaowuPage> createState() => _AThingBaowuPageState();
 }
 
-class _AThingGuwanPageState extends State<AThingGuwanPage> {
+class _AThingBaowuPageState extends State<AThingBaowuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Simple.simpleBar(
-        title: '我的古玩',
+        title: '我的宝物',
         back: Simple.backButton(context: context, route: '/apage/thingpage'),
       ),
       body: Center(
@@ -28,19 +28,19 @@ class _AThingGuwanPageState extends State<AThingGuwanPage> {
                   func: () {
                     setState(() {});
                   },
-                  show: "瓷器: ${Files.aCiQiReader().readStrSafeSync()}件",
+                  show: "明珠: ${AddFiles.aBaowuMingZhu().readStrSafe()}件",
                 ),
                 Simple.simpleClick(
                   func: () {
                     setState(() {});
                   },
-                  show: "碑刻: ${Files.aBeiKeReader().readStrSafeSync()}块",
+                  show: "玉雕: ${AddFiles.aBaowuYuDiao().readStrSafe()}块",
                 ),
                 Simple.simpleClick(
                   func: () {
                     setState(() {});
                   },
-                  show: "玉佩: ${Files.aYuPeiReader().readStrSafeSync()}件",
+                  show: "玉璧: ${AddFiles.aBaowuYuBi().readStrSafe()}件",
                 ),
               ],
             ),
@@ -51,16 +51,33 @@ class _AThingGuwanPageState extends State<AThingGuwanPage> {
                   func: () {
                     setState(() {});
                   },
-                  show: "茶壶: ${AddFiles.aGuwanChaHu().readStrSafe()}件",
+                  show: "绸缎: ${AddFiles.aBaowuChouDuan().readStrSafe()}件",
                 ),
                 Simple.simpleClick(
                   func: () {
                     setState(() {});
                   },
-                  show: "茶盏: ${AddFiles.aGuwanChaZhan().readStrSafe()}件",
+                  show: "玉盏: ${AddFiles.aBaowuYuzhan().readStrSafe()}件",
+                ),
+                Simple.simpleClick(
+                  func: () {
+                    setState(() {});
+                  },
+                  show: "玉壶: ${AddFiles.aBaowuHu().readStrSafe()}件",
                 ),
               ],
-            )
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleRow(
+              widgets: [
+                Simple.simpleClick(
+                  func: () {
+                    setState(() {});
+                  },
+                  show: "玉杯: ${AddFiles.aBaowuZhan().readStrSafe()}件",
+                ),
+              ],
+            ),
           ],
         ),
       ),

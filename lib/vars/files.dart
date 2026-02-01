@@ -190,4 +190,32 @@ class AddFiles {
   static AddFile aGuwanChaZhan() {
     return AddFile("${Dirs.filePathAncient()}asofn.gwcc2.conc", 2353);
   }
+
+  static AddFile aBaowuMingZhu() {
+    return AddFile("${Dirs.filePathBaowu()}baoyemz.bacc", 2109);
+  }
+
+  static AddFile aBaowuYuDiao() {
+    return AddFile("${Dirs.filePathBaowu()}yudc.bacc", 2109);
+  }
+
+  static AddFile aBaowuYuBi() {
+    return AddFile("${Dirs.filePathBaowu()}byubc.bacc", 2109);
+  }
+
+  static AddFile aBaowuChouDuan() {
+    return AddFile("${Dirs.filePathBaowu()}baochoc.bacc", 2109);
+  }
+
+  static AddFile aBaowuYuzhan() {
+    return AddFile("${Dirs.filePathBaowu()}baoyzex.bacce", 2024);
+  }
+
+  static AddFile aBaowuHu() {
+    return AddFile("${Dirs.filePathBaowu()}bwcrdc1.onc", 2017);
+  }
+
+  static AddFile aBaowuZhan() {
+    return AddFile("${Dirs.filePathBaowu()}bwcrd2.onc", 2017);
+  }
 }
