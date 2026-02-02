@@ -18,9 +18,19 @@ class APage extends ConsumerWidget {
         child: Column(
           children: [
             const SizedBox(height: 5),
-            Text('铜钱: ${Files.aTongQianReader().readStrSafeSync()}',
-                style: Styles.showstrStyle()),
-            const SizedBox(height: 110),
+            Text(
+              '铜钱: ${Files.aTongQianReader().readStrSafeSync()}\n'
+              '白银: ${Files.aBaiYinReader().readStrSafeSync()}\n'
+              '黄金: ${Files.aHuangJinReader().readStrSafeSync()}',
+              style: Styles.showstrStyle(),
+            ),
+            const SizedBox(height: 70),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/thingpage');
+              },
+              show: "我的物品",
+            ),
           ],
         ),
       ),

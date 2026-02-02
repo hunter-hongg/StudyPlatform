@@ -11,7 +11,11 @@ class EnvMod {
   }
 
   static String getStdpath() {
-    var home = getHome();
-    return "$home/.store/学习平台储存/";
+    if (Platform.isWindows) {
+      return "D:/_store/学习平台储存/";
+    } else {
+      var home = getHome();
+      return "$home/.store/学习平台储存/";
+    }
   }
 }

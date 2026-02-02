@@ -59,6 +59,7 @@ tasks:
         sudo chattr +i "release/StudyPlatformv${VERSION}.tar.xz"
         mv "release/v${VERSION}" "release/raw/v${VERSION}"
         gh release create v$VERSION
+        gh release upload v$VERSION release/StudyPlatformv$VERSION.tar.xz
   
   upl: 
     desc: 上传版本到指定release
