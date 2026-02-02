@@ -33,14 +33,35 @@ class Dirs {
     return "${filePath()}tssqudirdpg/";
   }
 
+  static String filePathBaowu() {
+    return "${filePath()}baocdiran/";
+  }
+
+  static String filePathAncient() {
+    return "${filePath()}adirspfm/";
+  }
+
+  static String filePathBook() {
+    return "${filePath()}sjdirspf/";
+  }
+
+  static String filePathPao() {
+    return "${filePath()}apcdir/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
-      filePathTongy(),
-      filePathCard(),
-      filePathTongyReal(),
-      filePathBaoShi(),
+      filePathAncient(),
       filePathBank(),
+      filePathBaoShi(),
+      filePathBaowu(),
+      filePathBook(),
+      filePathCard(),
+      filePathPao(),
+      filePathSetting(),
+      filePathTongy(),
+      filePathTongyReal(),
       filePathTS(),
     ];
   }
