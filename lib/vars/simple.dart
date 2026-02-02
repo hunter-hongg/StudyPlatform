@@ -90,14 +90,26 @@ class Simple {
   }
 
   static List<Widget> simpleCheck(
-      {required String show, required bool def, required void Function(bool?) func}) {
+      {required String show,
+      required bool def,
+      required void Function(bool?) func}) {
     return [
       Checkbox(
         value: def,
         onChanged: (v) => {func(v)},
       ),
-      SizedBox(width: 10,),
+      SizedBox(
+        width: 10,
+      ),
       simpleText(show: show),
     ];
+  }
+
+  static Widget simpleRow({required List<Widget> widgets}) {
+    return Wrap(
+      alignment: WrapAlignment.center,
+      spacing: 20,
+      children: widgets,
+    );
   }
 }
