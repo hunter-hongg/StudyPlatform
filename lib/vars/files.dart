@@ -1,3 +1,6 @@
+import 'package:study_platform/logic/apao.dart';
+import 'package:study_platform/logic/asword.dart';
+import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
 import 'package:study_platform/tool/file_password.dart';
@@ -27,6 +30,14 @@ class Files {
     return FilePassword("${Dirs.filePath()}tb.avc", "hifo356sjl");
   }
 
+  static FilePassword aBaiYinReader() {
+    return FilePassword("${Dirs.filePath()}bay.avc", "3ifnyl1042");
+  }
+
+  static FilePassword aHuangJinReader() {
+    return FilePassword("${Dirs.filePath()}huaj.avc", "dgp395sk10");
+  }
+
   static FilePassword tongYongReader() {
     return FilePassword("${Dirs.filePathTongyReal()}tyrelrd.cc", "qacjf34860");
   }
@@ -46,6 +57,18 @@ class Files {
 
   static FilePassword bankJReader() {
     return FilePassword("${Dirs.filePathBank()}bjq.cc.ssdiowei_", "asoirm2156");
+  }
+
+  static FilePassword aCiQiReader() {
+    return FilePassword("${Dirs.filePath()}cq.avgwc", "so3pfm10a2");
+  }
+
+  static FilePassword aBeiKeReader() {
+    return FilePassword("${Dirs.filePath()}shb.avgwc", "sudo1048qp");
+  }
+
+  static FilePassword aYuPeiReader() {
+    return FilePassword("${Dirs.filePath()}yup.avgwc", "sofp194327");
   }
 }
 
@@ -150,5 +173,99 @@ class CardStore {
 class Setting {
   static StateFile enableUtil() {
     return StateFile("${Dirs.filePathSetting()}util.setting");
+  }
+}
+
+class AddFiles {
+  static AddFile aLvYuReader() {
+    return AddFile("${Dirs.filePathBaowu()}jzcc.conc", 1657);
+  }
+
+  static AddFile aBaiYuReader() {
+    return AddFile("${Dirs.filePathBaowu()}yzcc.conc", 1657);
+  }
+
+  static AddFile aGuwanChaHu() {
+    return AddFile("${Dirs.filePathAncient()}apdfn.gwcc1.conc", 2353);
+  }
+
+  static AddFile aGuwanChaZhan() {
+    return AddFile("${Dirs.filePathAncient()}asofn.gwcc2.conc", 2353);
+  }
+
+  static AddFile aBaowuMingZhu() {
+    return AddFile("${Dirs.filePathBaowu()}baoyemz.bacc", 2109);
+  }
+
+  static AddFile aBaowuYuDiao() {
+    return AddFile("${Dirs.filePathBaowu()}yudc.bacc", 2109);
+  }
+
+  static AddFile aBaowuYuBi() {
+    return AddFile("${Dirs.filePathBaowu()}byubc.bacc", 2109);
+  }
+
+  static AddFile aBaowuChouDuan() {
+    return AddFile("${Dirs.filePathBaowu()}baochoc.bacc", 2109);
+  }
+
+  static AddFile aBaowuYuzhan() {
+    return AddFile("${Dirs.filePathBaowu()}baoyzex.bacce", 2024);
+  }
+
+  static AddFile aBaowuHu() {
+    return AddFile("${Dirs.filePathBaowu()}bwcrdc1.onc", 2017);
+  }
+
+  static AddFile aBaowuZhan() {
+    return AddFile("${Dirs.filePathBaowu()}bwcrd2.onc", 2017);
+  }
+
+  static AddFile aBook1() {
+    return AddFile("${Dirs.filePathBook()}lv1cc.conc", 3406);
+  }
+
+  static AddFile aBook2() {
+    return AddFile("${Dirs.filePathBook()}lv2cc.conc", 3406);
+  }
+
+  static AddFile aBook3() {
+    return AddFile("${Dirs.filePathBook()}lv3cc.conc", 3406);
+  }
+
+  static AddFile aBookC1() {
+    return AddFile("${Dirs.filePathBook()}lvc1cc", 2390);
+  }
+
+  static AddFile aBookC2() {
+    return AddFile("${Dirs.filePathBook()}lvc2cc", 2990);
+  }
+
+  static AddFile aBookC3() {
+    return AddFile("${Dirs.filePathBook()}lvc3cc", 2690);
+  }
+
+  static AddFile aBookC4() {
+    return AddFile("${Dirs.filePathBook()}lvc4cc", 2300);
+  }
+
+  static AddFile aBookC5() {
+    return AddFile("${Dirs.filePathBook()}lvc5cc", 2310);
+  }
+}
+
+class Special {
+  static AncientSword aSword() {
+    return AncientSword(
+      "${Dirs.filePath()}avswd.avc",
+      "${Dirs.filePath()}avswa.avc",
+    );
+  }
+
+  static AncientPao aPao() {
+    return AncientPao(
+      "${Dirs.filePathPao()}paon.paoc",
+      "${Dirs.filePathPao()}paoa.paoac",
+    );
   }
 }
