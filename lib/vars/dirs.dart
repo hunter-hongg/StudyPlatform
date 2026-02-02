@@ -45,6 +45,10 @@ class Dirs {
     return "${filePath()}sjdirspf/";
   }
 
+  static String filePathPao() {
+    return "${filePath()}apcdir/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
@@ -54,6 +58,7 @@ class Dirs {
       filePathBaowu(),
       filePathBook(),
       filePathCard(),
+      filePathPao(),
       filePathSetting(),
       filePathTongy(),
       filePathTongyReal(),

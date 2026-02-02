@@ -22,14 +22,16 @@ class _AThingDressPageState extends State<AThingDressPage> {
             const SizedBox(height: 140),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/apage/thingpage/dresspage/swordpage');
+                Navigator.pushNamed(
+                    context, '/apage/thingpage/dresspage/swordpage');
               },
               show: '我的佩剑',
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/apage/thingpage/dresspage/paopage');
+                Navigator.pushNamed(
+                    context, '/apage/thingpage/dresspage/paopage');
               },
               show: '我的锦袍',
             ),

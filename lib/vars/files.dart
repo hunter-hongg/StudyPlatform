@@ -1,3 +1,5 @@
+import 'package:study_platform/logic/apao.dart';
+import 'package:study_platform/logic/asword.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
@@ -249,5 +251,21 @@ class AddFiles {
 
   static AddFile aBookC5() {
     return AddFile("${Dirs.filePathBook()}lvc5cc", 2310);
+  }
+}
+
+class Special {
+  static AncientSword aSword() {
+    return AncientSword(
+      "${Dirs.filePath()}avswd.avc",
+      "${Dirs.filePath()}avswa.avc",
+    );
+  }
+
+  static AncientPao aPao() {
+    return AncientPao(
+      "${Dirs.filePathPao()}paon.paoc",
+      "${Dirs.filePathPao()}paoa.paoac",
+    );
   }
 }

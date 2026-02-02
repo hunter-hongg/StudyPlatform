@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
       '/apage/thingpage/bookpage',
       '/apage/thingpage/caipage',
       '/apage/thingpage/dresspage',
+      '/apage/thingpage/dresspage/paopage',
+      '/apage/thingpage/dresspage/swordpage',
       '/apage/thingpage/guwanpage',
       '/bankpage',
       '/bankpage/getpage',
@@ -72,6 +74,9 @@ class MyApp extends StatelessWidget {
           '/apage/thingpage/bookpage': (context) => AThingBookPage(),
           '/apage/thingpage/caipage': (context) => AThingCaiPage(),
           '/apage/thingpage/dresspage': (context) => AThingDressPage(),
+          '/apage/thingpage/dresspage/paopage': (context) => AThingDressPaoPage(),
+          '/apage/thingpage/dresspage/swordpage': (context) =>
+              AThingDressSwordPage(),
           '/apage/thingpage/guwanpage': (context) => AThingGuwanPage(),
           '/bankpage': (context) => BankPage(),
           '/bankpage/getpage': (context) => BankGetPage(),
