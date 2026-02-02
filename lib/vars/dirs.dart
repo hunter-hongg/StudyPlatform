@@ -41,17 +41,23 @@ class Dirs {
     return "${filePath()}adirspfm/";
   }
 
+  static String filePathBook() {
+    return "${filePath()}sjdirspf/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
-      filePathTongy(),
-      filePathCard(),
-      filePathTongyReal(),
-      filePathBaoShi(),
-      filePathBank(),
-      filePathTS(),
-      filePathBaowu(),
       filePathAncient(),
+      filePathBank(),
+      filePathBaoShi(),
+      filePathBaowu(),
+      filePathBook(),
+      filePathCard(),
+      filePathSetting(),
+      filePathTongy(),
+      filePathTongyReal(),
+      filePathTS(),
     ];
   }
 }

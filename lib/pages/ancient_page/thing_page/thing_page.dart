@@ -36,6 +36,13 @@ class AThingPage extends ConsumerWidget {
               },
               show: '我的宝物',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/thingpage/bookpage');
+              },
+              show: '我的书籍',
+            ),
           ],
         ),
       ),

@@ -218,4 +218,36 @@ class AddFiles {
   static AddFile aBaowuZhan() {
     return AddFile("${Dirs.filePathBaowu()}bwcrd2.onc", 2017);
   }
+
+  static AddFile aBook1() {
+    return AddFile("${Dirs.filePathBook()}lv1cc.conc", 3406);
+  }
+
+  static AddFile aBook2() {
+    return AddFile("${Dirs.filePathBook()}lv2cc.conc", 3406);
+  }
+
+  static AddFile aBook3() {
+    return AddFile("${Dirs.filePathBook()}lv3cc.conc", 3406);
+  }
+
+  static AddFile aBookC1() {
+    return AddFile("${Dirs.filePathBook()}lvc1cc", 2390);
+  }
+
+  static AddFile aBookC2() {
+    return AddFile("${Dirs.filePathBook()}lvc2cc", 2990);
+  }
+
+  static AddFile aBookC3() {
+    return AddFile("${Dirs.filePathBook()}lvc3cc", 2690);
+  }
+
+  static AddFile aBookC4() {
+    return AddFile("${Dirs.filePathBook()}lvc4cc", 2300);
+  }
+
+  static AddFile aBookC5() {
+    return AddFile("${Dirs.filePathBook()}lvc5cc", 2310);
+  }
 }
