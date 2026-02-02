@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:study_platform/logic/apao.dart';
-import 'package:study_platform/logic/apao.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 
