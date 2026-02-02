@@ -20,6 +20,7 @@ export 'package:study_platform/pages/ancient_page/thing_page/cai_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/guwan_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/baowu_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/book_page.dart';
+export 'package:study_platform/pages/ancient_page/thing_page/dress_page/dress_page.dart';
 
 export 'package:study_platform/pages/home_page.dart';
 export 'package:study_platform/pages/setting_page/setting_page.dart';

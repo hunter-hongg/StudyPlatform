@@ -15,12 +15,19 @@ class AThingPage extends ConsumerWidget {
       body: Center(
         child: Column(
           children: [
-            const SizedBox(height: 140),
+            const SizedBox(height: 110),
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/apage/thingpage/caipage');
               },
               show: '我的财物',
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/thingpage/dresspage');
+              },
+              show: '我的衣着',
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
