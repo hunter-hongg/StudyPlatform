@@ -9,6 +9,8 @@ class MyApp extends StatelessWidget {
     return [
       '/',
       '/apage',
+      '/apage/shoppage',
+      '/apage/shoppage/simplepage',
       '/apage/thingpage',
       '/apage/thingpage/baowupage',
       '/apage/thingpage/bookpage',
@@ -69,12 +71,15 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => HomePage(),
           '/apage': (context) => APage(),
+          '/apage/shoppage': (context) => AShopPage(),
+          '/apage/shoppage/simplepage': (context) => AShopSimplePage(),
           '/apage/thingpage': (context) => AThingPage(),
           '/apage/thingpage/baowupage': (context) => AThingBaowuPage(),
           '/apage/thingpage/bookpage': (context) => AThingBookPage(),
           '/apage/thingpage/caipage': (context) => AThingCaiPage(),
           '/apage/thingpage/dresspage': (context) => AThingDressPage(),
-          '/apage/thingpage/dresspage/paopage': (context) => AThingDressPaoPage(),
+          '/apage/thingpage/dresspage/paopage': (context) =>
+              AThingDressPaoPage(),
           '/apage/thingpage/dresspage/swordpage': (context) =>
               AThingDressSwordPage(),
           '/apage/thingpage/guwanpage': (context) => AThingGuwanPage(),
