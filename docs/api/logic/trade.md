@@ -69,3 +69,35 @@ static void tradeFunc(
 - `thing1s`为减少物品的**名称**，在**物品不足**时会使用
 - `thing1min`为减少物品减少的**数量**
 - `func`为自定义的**处理函数**
+
+## `static void tradeAdd`
+```dart
+static void tradeAdd(
+  BuildContext context,
+  FilePassword fp1,
+  AddFile fp2,
+  String thing1s,
+  int thing1min,
+  int thing2add, {
+  String? route,
+  String? customMessage,
+}) 
+```
+- 一对一**交易流程**，增加物品为`AddFile`
+- 参数与`trade`一致
+
+## `static void tradePAdd`
+```dart
+static void tradePAdd(
+  BuildContext context,
+  AddFile fp1,
+  FilePassword fp2,
+  String thing1s,
+  int thing1min,
+  int thing2add, {
+  String? route,
+  String? customMessage,
+}) 
+```
+- 一对一**交易流程**，减少物品为`AddFile`
+- 参数与`trade`一致

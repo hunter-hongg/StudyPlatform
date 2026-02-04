@@ -19,7 +19,7 @@ class _AShopPageState extends State<AShopPage> {
       body: Center(
         child: Column(
           children: [
-            const SizedBox(height: 140),
+            const SizedBox(height: 110),
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/apage/shoppage/simplepage');
@@ -46,6 +46,13 @@ class _AShopPageState extends State<AShopPage> {
                 Navigator.pushNamed(context, '/apage/shoppage/gupage');
               },
               show: '古玩店铺',
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/shoppage/bookpage');
+              },
+              show: '书籍店铺',
             ),
           ],
         ),

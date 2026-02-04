@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:study_platform/logic/shopbao.dart';
 import 'package:study_platform/logic/shopgu.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/file_password.dart';

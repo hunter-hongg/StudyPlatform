@@ -100,4 +100,31 @@ class Trade {
       show: customMessage ?? "兑换成功",
     );
   }
+
+  static void tradePAdd(
+    BuildContext context,
+    AddFile fp1,
+    FilePassword fp2,
+    String thing1s,
+    int thing1min,
+    int thing2add, {
+    String? route,
+    String? customMessage,
+  }) {
+    if (!fp1.canMinus(thing1min)) {
+      Simple.simpleInfo(
+        context: context,
+        show: "$thing1s 不足",
+      );
+      return;
+    }
+    fp2.addNumSync(thing2add);
+    if (route != null) {
+      Navigator.pushNamed(context, route);
+    }
+    Simple.simpleInfo(
+      context: context,
+      show: customMessage ?? "兑换成功",
+    );
+  }
 }
