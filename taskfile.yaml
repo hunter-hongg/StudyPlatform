@@ -55,11 +55,12 @@ tasks:
         flutter build linux --release
         mkdir -p release/raw
         cp -rv build/linux/x64/release/bundle "release/v${VERSION}"
-        tar cavf "release/StudyPlatformv${VERSION}.tar.xz" "release/v${VERSION}"
-        sudo chattr +i "release/StudyPlatformv${VERSION}.tar.xz"
+        mkdir -p "release/StudyPlatformv${VERSION}"
+        tar cavf "release/StudyPlatformv${VERSION}/Linux.tar.xz" "release/v${VERSION}"
+        sudo chattr +i "release/StudyPlatformv${VERSION}/Linux.tar.xz"
         mv "release/v${VERSION}" "release/raw/v${VERSION}"
         gh release create v$VERSION
-        gh release upload v$VERSION release/StudyPlatformv$VERSION.tar.xz
+        gh release upload v$VERSION release/StudyPlatformv$VERSION/Linux.tar.xz
   
   upl: 
     desc: 上传版本到指定release

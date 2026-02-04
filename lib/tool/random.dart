@@ -7,10 +7,12 @@ class RandomGet {
     return _secureRandom;
   }
 
+  /// 左闭右开
   static int getIntClosed(int min, int max) {
     return min + getRandomDevice().nextInt(max - min);
   }
 
+  /// 全闭
   static int getIntClose(int min, int max) {
     return getIntClosed(min, max + 1);
   }
