@@ -40,6 +40,13 @@ class _AShopPageState extends State<AShopPage> {
               },
               show: '宝物店铺',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/shoppage/gupage');
+              },
+              show: '古玩店铺',
+            ),
           ],
         ),
       ),
