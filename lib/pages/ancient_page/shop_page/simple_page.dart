@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:study_platform/logic/asword.dart';
 import 'package:study_platform/logic/apao.dart';
 import 'package:study_platform/logic/trade.dart';
-import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/random.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';

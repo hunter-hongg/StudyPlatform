@@ -22,18 +22,23 @@ class _AShopPageState extends State<AShopPage> {
             const SizedBox(height: 140),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(
-                    context, '/apage/shoppage/simplepage');
+                Navigator.pushNamed(context, '/apage/shoppage/simplepage');
               },
               show: '普通店铺',
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(
-                    context, '/apage/shoppage/easypage');
+                Navigator.pushNamed(context, '/apage/shoppage/easypage');
               },
               show: '便利店铺',
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/shoppage/baopage');
+              },
+              show: '宝物店铺',
             ),
           ],
         ),
