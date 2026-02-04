@@ -15,6 +15,15 @@ export 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 export 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 
 export 'package:study_platform/pages/ancient_page/ancient_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/shop_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/bao_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/book_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/easy_page/easy_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/easy_page/bai_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/easy_page/jin_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/easy_page/tong_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/gu_page.dart';
+export 'package:study_platform/pages/ancient_page/shop_page/simple_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/thing_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/cai_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/guwan_page.dart';
