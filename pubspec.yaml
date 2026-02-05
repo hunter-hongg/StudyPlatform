@@ -1,7 +1,7 @@
 name: study_platform
 description: "Flutter写的学习平台"
 publish_to: 'none'
-version: 7.8.0
+version: 7.9.0
 environment:
   sdk: '>=3.0.0 <4.0.0'
 dependencies:
