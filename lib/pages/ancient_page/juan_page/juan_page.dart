@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:study_platform/logic/ajuan.dart';
+import 'package:study_platform/logic/trade.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 
@@ -38,7 +39,18 @@ class _AJuanPageState extends State<AJuanPage> {
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
-              func: () {},
+              func: () {
+                var hj = Ajuan.getHuangj(
+                  Ajuan.getLevel(Files.aJuanZhiReader().readIntSafeSync()),
+                );
+                Trade.tradeCheck(
+                  context,
+                  Files.aHuangJinReader(),
+                  CheckFiles.aJuanCheck(),
+                  hj,
+                  customMessage: "成功领取$hj两黄金",
+                );
+              },
               show: '领取资助',
             ),
           ],

@@ -154,6 +154,14 @@ class CheckFiles {
       allTimes: 1,
     );
   }
+
+  static CheckFile aJuanCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathAncient()}jzrd.conc.lqck.conc",
+      addNum: 1250,
+      allTimes: 1,
+    );
+  }
 }
 
 class CardStore {
