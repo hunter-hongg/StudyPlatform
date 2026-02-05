@@ -34,6 +34,8 @@ export 'package:study_platform/pages/ancient_page/thing_page/book_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/dress_page/dress_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/dress_page/sword_page.dart';
 export 'package:study_platform/pages/ancient_page/thing_page/dress_page/pao_page.dart';
+export 'package:study_platform/pages/ancient_page/use_page/use_page.dart';
+export 'package:study_platform/pages/ancient_page/use_page/bao_page.dart';
 
 export 'package:study_platform/pages/home_page.dart';
 export 'package:study_platform/pages/setting_page/setting_page.dart';
