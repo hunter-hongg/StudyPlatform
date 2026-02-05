@@ -70,6 +70,10 @@ class Files {
   static FilePassword aYuPeiReader() {
     return FilePassword("${Dirs.filePath()}yup.avgwc", "sofp194327");
   }
+
+  static FilePassword aJuanZhiReader() {
+    return FilePassword("${Dirs.filePathAncient()}jzrd.conc", "dfpwm13058");
+  }
 }
 
 class LiheFiles {
@@ -147,6 +151,14 @@ class CheckFiles {
     return CheckFile(
       filePath: "${Dirs.filePathTS()}sdogh.dogck",
       addNum: 2035,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile aJuanCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathAncient()}jzrd.conc.lqck.conc",
+      addNum: 1250,
       allTimes: 1,
     );
   }

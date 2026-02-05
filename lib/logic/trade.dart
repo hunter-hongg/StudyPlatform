@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/check_file.dart';
 import 'package:study_platform/tool/file_password.dart';
+import 'package:study_platform/tool/fileinter.dart';
 import 'package:study_platform/vars/simple.dart';
 
 class Trade {
@@ -126,5 +127,49 @@ class Trade {
       context: context,
       show: customMessage ?? "兑换成功",
     );
+  }
+
+  static void tradeF<T extends MinusAble, U extends AddAble>(
+    BuildContext context,
+    T fp1,
+    U fp2,
+    String thing1s,
+    int thing1min,
+    int thing2add, {
+    String? route,
+    String? customMessage,
+  }) {
+    if (!fp1.canMinusSync(thing1min)) {
+      Simple.simpleInfo(
+        context: context,
+        show: "$thing1s 不足",
+      );
+      return;
+    }
+    fp2.addNumSync(thing2add);
+    if (route != null) {
+      Navigator.pushNamed(context, route);
+    }
+    Simple.simpleInfo(
+      context: context,
+      show: customMessage ?? "兑换成功",
+    );
+  }
+
+  static void tradeFFunc<T extends MinusAble>(
+    BuildContext context,
+    T fp1,
+    String thing1s,
+    int thing1min,
+    void Function() func,
+  ) {
+    if (!fp1.canMinusSync(thing1min)) {
+      Simple.simpleInfo(
+        context: context,
+        show: "$thing1s 不足",
+      );
+      return;
+    }
+    func();
   }
 }

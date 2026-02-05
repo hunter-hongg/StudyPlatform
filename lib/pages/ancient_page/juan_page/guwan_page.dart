@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:study_platform/logic/shopbook.dart';
-import 'package:study_platform/tool/addfile.dart';
+import 'package:study_platform/logic/ajuan.dart';
+import 'package:study_platform/tool/fileinter.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 
-class AShopBookPage extends StatefulWidget {
-  const AShopBookPage({super.key});
+class AJuanGuwanPage extends StatefulWidget {
+  const AJuanGuwanPage({super.key});
 
   @override
-  State<AShopBookPage> createState() => _AShopBookPageState();
+  State<AJuanGuwanPage> createState() => _AJuanGuwanPageState();
 }
 
-class _AShopBookPageState extends State<AShopBookPage> {
-  int baiy = 0;
+class _AJuanGuwanPageState extends State<AJuanGuwanPage> {
+  int juanz = 0;
 
   void update() {
-    baiy = Files.aBaiYinReader().readIntSafeSync();
+    juanz = Files.aJuanZhiReader().readIntSafeSync();
   }
 
-  List<Widget> buildUI(List<(int, AddFile, int)> list) {
+  List<Widget> buildUI(List<(int, int, MinusAble, String)> list) {
     var wid = <Widget>[], tmpWid = <Widget>[];
     for (var i = 0; i < list.length; i++) {
       var item = list[i];
       tmpWid.add(Simple.simpleClick(
         func: () {
-          Shopbook.sell(context, item.$1, item.$2, item.$3);
+          Ajuan.dealGuwan(context, item.$1, item.$2, item.$4, item.$3);
           setState(() {
             update();
           });
         },
-        show: "抄录书籍${item.$3}级\n${item.$1}白银",
+        show: "1${item.$4}\n${item.$1}白银+${item.$2}捐献值",
       ));
       if (i % 3 == 2) {
         wid.add(Simple.simpleRow(widgets: tmpWid));
@@ -43,13 +43,13 @@ class _AShopBookPageState extends State<AShopBookPage> {
     return wid;
   }
 
-  List<(int, AddFile, int)> buildList() {
+  List<(int, int, MinusAble, String)> buildList() {
     return [
-      (90, AddFiles.aBookC1(), 1),
-      (150, AddFiles.aBookC2(), 2),
-      (200, AddFiles.aBookC3(), 3),
-      (350, AddFiles.aBookC4(), 4),
-      (675, AddFiles.aBookC5(), 5),
+      (30, 20, Files.aCiQiReader(), "瓷器"),
+      (35, 25, Files.aBeiKeReader(), "碑刻"),
+      (30, 20, Files.aYuPeiReader(), "玉佩"),
+      (45, 40, AddFiles.aGuwanChaHu(), "茶壶"),
+      (35, 30, AddFiles.aGuwanChaZhan(), "茶盏"),
     ];
   }
 
@@ -58,14 +58,14 @@ class _AShopBookPageState extends State<AShopBookPage> {
     update();
     return Scaffold(
       appBar: Simple.simpleBar(
-        title: '书籍店铺',
-        back: Simple.backButton(context: context, route: '/apage/shoppage'),
+        title: '古玩捐献',
+        back: Simple.backButton(context: context, route: '/apage/juanpage'),
       ),
       body: Center(
         child: Column(
           children: [
             const SizedBox(height: 5),
-            Simple.simpleShowText(show: "白银: $baiy"),
+            Simple.simpleShowText(show: "捐献值: $juanz"),
             const SizedBox(height: 120),
             Simple.nullSpace(),
             ...buildUI(buildList()),
