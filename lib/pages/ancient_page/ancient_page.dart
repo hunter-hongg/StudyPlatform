@@ -38,6 +38,13 @@ class APage extends ConsumerWidget {
               },
               show: '古代店铺',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/juanpage');
+              },
+              show: '我的捐献',
+            ),
           ],
         ),
       ),

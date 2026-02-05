@@ -1,7 +1,9 @@
 import 'dart:io';
 
+import 'package:study_platform/tool/fileinter.dart';
+
 /// AddFile 类用于处理文件中的数字值，支持增加、减少和比较操作
-class AddFile {
+class AddFile implements AddAble, MinusAble {
   final String file;
   final int addnum;
 
@@ -104,12 +106,14 @@ class AddFile {
   }
   
   /// 同步版本的addNum方法
+  @override
   void addNumSync(int an) {
     int res = readInt() + an + addnum;
     File(file).writeAsStringSync(res.toString());
   }
   
   /// 同步版本的canMinus方法
+  @override
   bool canMinusSync(int an) {
     int ri = readInt();
     if (ri < an) {

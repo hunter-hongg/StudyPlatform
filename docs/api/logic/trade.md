@@ -101,3 +101,43 @@ static void tradePAdd(
 ```
 - 一对一**交易流程**，减少物品为`AddFile`
 - 参数与`trade`一致
+
+## `static void tradeF`
+```dart
+static void tradeF<T extends MinusAble, U extends AddAble>(
+  BuildContext context,
+  T fp1,
+  U fp2,
+  String thing1s,
+  int thing1min,
+  int thing2add, {
+  String? route,
+  String? customMessage,
+})
+```
+- 泛型**交易流程**，支持任意减法和加法类型
+- `context`为构建时的`context`
+- `fp1`为减少物品的对象，需实现`MinusAble`接口
+- `fp2`为增加物品的对象，需实现`AddAble`接口
+- `thing1s`为减少物品的**名称**，在**物品不足**时会使用
+- `thing1min`为减少物品减少的**数量**
+- `thing2add`为增加物品增加的**数量**
+- `route`为可选的**路由名称**，交易成功自动`Navigator.pushNamed`该路由
+- `customMessage`为可选的**消息显示**，默认为`"兑换成功"`
+
+## `static void tradeFFunc`
+```dart
+static void tradeFFunc<T extends MinusAble>(
+  BuildContext context,
+  T fp1,
+  String thing1s,
+  int thing1min,
+  void Function() func,
+)
+```
+- 泛型**交易流程**，**自定义函数**，支持任意减法类型
+- `context`为构建时的`context`
+- `fp1`为减少物品的对象，需实现`MinusAble`接口
+- `thing1s`为减少物品的**名称**，在**物品不足**时会使用
+- `thing1min`为减少物品减少的**数量**
+- `func`为自定义的**处理函数**
