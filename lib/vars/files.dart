@@ -70,6 +70,10 @@ class Files {
   static FilePassword aYuPeiReader() {
     return FilePassword("${Dirs.filePath()}yup.avgwc", "sofp194327");
   }
+
+  static FilePassword aJuanZhiReader() {
+    return FilePassword("${Dirs.filePathAncient()}jzrd.conc", "dfpwm13058");
+  }
 }
 
 class LiheFiles {

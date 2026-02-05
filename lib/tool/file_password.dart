@@ -1,9 +1,10 @@
 import 'dart:io';
-// import 'dart:convert';
+
+import 'package:study_platform/tool/fileinter.dart';
 
 const String original = "0123456789";
 
-class FilePassword {
+class FilePassword implements AddAble, MinusAble {
   final String fileName;
   final String password;
 
@@ -246,6 +247,7 @@ class FilePassword {
   }
 
   /// 增加存储数字（只处理非负数，同步版本）
+  @override
   void addNumSync(int a) {
     if (a < 0) return;
     addSync(a);
@@ -312,6 +314,7 @@ class FilePassword {
   }
 
   /// 判断是否大于等于指定数字，若满足则减去，不满足则不变（同步版本）
+  @override
   bool canMinusSync(int a) {
     if (a < 0) return false;
 
