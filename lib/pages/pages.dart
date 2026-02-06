@@ -15,6 +15,8 @@ export 'package:study_platform/pages/calc_page/start_page/start_page.dart';
 export 'package:study_platform/pages/calc_page/start_page/tim_page.dart';
 
 export 'package:study_platform/pages/ancient_page/ancient_page.dart';
+export 'package:study_platform/pages/ancient_page/guan_page/guan_page.dart';
+export 'package:study_platform/pages/ancient_page/guan_page/wen_page/wen_page.dart';
 export 'package:study_platform/pages/ancient_page/juan_page/juan_page.dart';
 export 'package:study_platform/pages/ancient_page/juan_page/guwan_page.dart';
 export 'package:study_platform/pages/ancient_page/shop_page/shop_page.dart';

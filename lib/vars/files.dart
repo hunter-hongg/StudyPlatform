@@ -163,6 +163,14 @@ class CheckFiles {
       allTimes: 1,
     );
   }
+
+  static CheckFile aWenFengCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePath()}flchk.awgcc",
+      addNum: 4034,
+      allTimes: 1,
+    );
+  }
 }
 
 class CardStore {
