@@ -45,6 +45,13 @@ class APage extends ConsumerWidget {
               },
               show: '我的捐献',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/usepage');
+              },
+              show: '物品使用',
+            ),
           ],
         ),
       ),
