@@ -1,5 +1,6 @@
 import 'package:study_platform/logic/apao.dart';
 import 'package:study_platform/logic/asword.dart';
+import 'package:study_platform/logic/awenguan.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
@@ -278,6 +279,13 @@ class Special {
     return AncientPao(
       "${Dirs.filePathPao()}paon.paoc",
       "${Dirs.filePathPao()}paoa.paoac",
+    );
+  }
+
+  static AncientWenGuanConfig aWenGuanConfig() {
+    return AncientWenGuanConfig(
+      file: "${Dirs.filePath()}awcfg.awgcc",
+      addNum: 1052,
     );
   }
 }
