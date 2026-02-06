@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_platform/logic/ausebookc.dart';
 import 'package:study_platform/logic/ausebooks.dart';
 import 'package:study_platform/vars/simple.dart';
 
@@ -37,7 +38,7 @@ class _AUsePageState extends State<AUsePage> {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/apage/usepage/bookcpage');
+                AUseBookc.deal(context);
               },
               show: '抄录新书',
             ),
