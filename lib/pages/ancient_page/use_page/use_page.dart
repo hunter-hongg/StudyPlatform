@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_platform/logic/ausebooks.dart';
 import 'package:study_platform/vars/simple.dart';
 
 class AUsePage extends StatefulWidget {
@@ -29,7 +30,7 @@ class _AUsePageState extends State<AUsePage> {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/apage/usepage/bookspage');
+                AUseBooks.deal(context);
               },
               show: '叫卖书籍',
             ),
