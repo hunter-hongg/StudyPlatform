@@ -172,4 +172,36 @@ class Trade {
     }
     func();
   }
+
+  static void tradeFMinusCheck<T extends MinusAble, U extends AddAble>(
+    BuildContext context,
+    T fp1,
+    U fp2,
+    CheckFile fp3,
+    int thing1min,
+    int thing2add,
+    String thing1s, {
+    String customMessage = "兑换成功",
+  }) {
+    if (!fp1.highSync(thing1min)){
+      Simple.simpleInfo(
+        context: context,
+        show: "$thing1s 不足",
+      );
+      return;
+    }
+    if (!fp3.checkTimesSync()) {
+      Simple.simpleInfo(
+        context: context,
+        show: "今日次数使用完毕",
+      );
+      return;
+    }
+    fp1.canMinusSync(thing1min);
+    fp2.addNumSync(thing2add);
+    Simple.simpleInfo(
+      context: context,
+      show: customMessage,
+    );
+  }
 }

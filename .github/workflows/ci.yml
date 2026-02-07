@@ -51,12 +51,12 @@ jobs:
           - os: ubuntu-latest
             platform: linux
             artifact-name: linux-build
-          # - os: windows-latest
-          #   platform: windows
-          #   artifact-name: windows-build
-          # - os: macos-latest
-          #   platform: macos
-          #   artifact-name: macos-build
+          - os: windows-latest
+            platform: windows
+            artifact-name: windows-build
+          - os: macos-latest
+            platform: macos
+            artifact-name: macos-build
 
     steps:
     - name: Checkout code

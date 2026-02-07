@@ -4,4 +4,6 @@ abstract class AddAble {
 
 abstract class MinusAble {
   bool canMinusSync(int a);
+  bool highSync(int a);
+
 }

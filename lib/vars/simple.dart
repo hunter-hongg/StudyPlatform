@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/vars/dialog.dart';
 import 'package:study_platform/vars/styles.dart';
 
@@ -110,6 +111,39 @@ class Simple {
       alignment: WrapAlignment.center,
       spacing: 20,
       children: widgets,
+    );
+  }
+
+  static Widget simpleButtonAsync({
+    required String show,
+    required Future<void> Function() func,
+    required StateProvider<bool> loading,
+    required WidgetRef ref,
+  }) {
+    return ElevatedButton(
+      onPressed: () async {
+        if (ref.read(loading)) return;
+
+        ref.read(loading.notifier).state = true;
+
+        try {
+          await func();
+        } finally {
+          ref.read(loading.notifier).state = false;
+        }
+      },
+      style: Styles.buttonSimpleStyle(),
+      child: Consumer(
+        builder: (context, ref, child) {
+          final isLoading = ref.watch(loading);
+          return isLoading
+              ? CircularProgressIndicator() // 加载时显示进度指示器
+              : Text(
+                  show,
+                  style: Styles.simpleTextStyle(),
+                );
+        },
+      ),
     );
   }
 }

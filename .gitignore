@@ -82,3 +82,5 @@ app.*.map.json
 /android/app/release
 
 release/
+
+.marscode/

@@ -296,6 +296,7 @@ class FilePassword implements AddAble, MinusAble {
   }
 
   /// 判断是否大于等于指定数字（同步版本）
+  @override
   bool highSync(int a) {
     final current = readIntSync();
     return current >= a;
