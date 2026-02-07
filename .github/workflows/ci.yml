@@ -91,6 +91,7 @@ jobs:
       run: flutter config --enable-${{ matrix.platform }}-desktop
 
     - name: Build for ${{ matrix.platform }}
+      shell: bash
       run: |
         if [ "${{ matrix.platform }}" = "linux" ]; then
           sudo apt install -y libgtk-3-common
@@ -111,4 +112,3 @@ jobs:
           ${{ matrix.platform == 'macos' && 'build/macos/Build/Products/Release/' || '' }}
         if-no-files-found: error
         retention-days: 7  # 只保留7天，节省空间
-        
