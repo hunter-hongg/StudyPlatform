@@ -42,7 +42,7 @@ class _AGWenPageState extends State<AGWenPage> {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/apage/gpage/wupage/zhengpage');
+                Navigator.pushNamed(context, '/apage/gpage/wenpage/zhengpage');
               },
               show: '我的政绩',
             ),

@@ -75,6 +75,10 @@ class Files {
   static FilePassword aJuanZhiReader() {
     return FilePassword("${Dirs.filePathAncient()}jzrd.conc", "dfpwm13058");
   }
+
+  static FilePassword aWenZhengjReader() {
+    return FilePassword("${Dirs.filePath()}zhejrder.awgcc", "eso1pam360");
+  }
 }
 
 class LiheFiles {
@@ -168,6 +172,22 @@ class CheckFiles {
     return CheckFile(
       filePath: "${Dirs.filePath()}flchk.awgcc",
       addNum: 4034,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile aWenZhengJiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathAncient()}zjzjck.ckawgcc",
+      addNum: 4059,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile aWenZhengShCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathAncient()}msmsck.ckawgcc.dsi.1234",
+      addNum: 2125,
       allTimes: 1,
     );
   }

@@ -141,3 +141,27 @@ static void tradeFFunc<T extends MinusAble>(
 - `thing1s`为减少物品的**名称**，在**物品不足**时会使用
 - `thing1min`为减少物品减少的**数量**
 - `func`为自定义的**处理函数**
+
+
+## `static void tradeFMinusCheck`
+```dart
+static void tradeFMinusCheck<T extends MinusAble, U extends AddAble>(
+  BuildContext context,
+  T fp1,
+  U fp2,
+  CheckFile fp3,
+  int thing1min,
+  int thing2add,
+  String thing1s, {
+  String customMessage = "兑换成功",
+}) 
+```
+- 泛型**交易流程**，**自定义检查**，支持任意减法和加法类型
+- `context`为构建时的`context`
+- `fp1`为减少物品的对象，需实现`MinusAble`接口
+- `fp2`为增加物品的对象，需实现`AddAble`接口
+- `fp3`为自定义的**检查函数**，需实现`CheckFile`接口
+- `thing1s`为减少物品的**名称**，在**物品不足**时会使用
+- `thing1min`为减少物品减少的**数量**
+- `thing2add`为增加物品增加的**数量**
+- `customMessage`为可选的**消息显示**，默认为`"兑换成功"`

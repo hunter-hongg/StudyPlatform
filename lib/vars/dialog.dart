@@ -44,4 +44,46 @@ class Dialogs {
       builder: (context) => x,
     );
   }
+
+  static Future<bool> dialogConfirm(
+    BuildContext context,
+    String show,
+  ) async {
+    return await showDialog<bool>(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: Text(
+                "确认",
+                style: Styles.titleDownStyle(),
+              ),
+              content: Text(
+                show,
+                style: Styles.simpleTextStyle(),
+              ),
+              actions: <Widget>[
+                TextButton(
+                  child: Text(
+                    '取消',
+                    style: Styles.simpleTextDownStyle(),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pop(false); // 返回 false
+                  },
+                ),
+                TextButton(
+                  child: Text(
+                    '确定',
+                    style: Styles.simpleTextDownStyle(),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pop(true); // 返回 true
+                  },
+                ),
+              ],
+            );
+          },
+        ) ??
+        false; // 防止返回 null
+  }
 }
