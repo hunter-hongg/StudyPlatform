@@ -34,7 +34,7 @@ class AddFile implements AddAble, MinusAble {
     if (raw == null) {
       return 0;
     }
-    
+
     try {
       int res = int.parse(raw.trim());
       return res - addnum;
@@ -104,14 +104,14 @@ class AddFile implements AddAble, MinusAble {
   String readStrSafe() {
     return readStr();
   }
-  
+
   /// 同步版本的addNum方法
   @override
   void addNumSync(int an) {
     int res = readInt() + an + addnum;
     File(file).writeAsStringSync(res.toString());
   }
-  
+
   /// 同步版本的canMinus方法
   @override
   bool canMinusSync(int an) {
@@ -123,4 +123,10 @@ class AddFile implements AddAble, MinusAble {
     addNumSync(ann);
     return true;
   }
+
+  @override
+  bool highSync(int an) {
+    return high(an);
+  }
+
 }

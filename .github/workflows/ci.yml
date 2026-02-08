@@ -51,12 +51,12 @@ jobs:
           - os: ubuntu-latest
             platform: linux
             artifact-name: linux-build
-          # - os: windows-latest
-          #   platform: windows
-          #   artifact-name: windows-build
-          # - os: macos-latest
-          #   platform: macos
-          #   artifact-name: macos-build
+          - os: windows-latest
+            platform: windows
+            artifact-name: windows-build
+          - os: macos-latest
+            platform: macos
+            artifact-name: macos-build
 
     steps:
     - name: Checkout code
@@ -90,16 +90,20 @@ jobs:
     - name: Enable desktop support
       run: flutter config --enable-${{ matrix.platform }}-desktop
 
-    - name: Build for ${{ matrix.platform }}
+    - name: Build for Windows
+      if: matrix.platform == 'windows'
+      run: flutter build windows --release
+
+    - name: Build for Linux
+      if: matrix.platform == 'linux'
+      shell: bash
       run: |
-        if [ "${{ matrix.platform }}" = "linux" ]; then
-          sudo apt install -y libgtk-3-common
-          flutter build linux --release
-        elif [ "${{ matrix.platform }}" = "windows" ]; then
-          flutter build windows --release
-        elif [ "${{ matrix.platform }}" = "macos" ]; then
-          flutter build macos --release
-        fi
+        sudo apt install -y libgtk-3-common
+        flutter build linux --release
+
+    - name: Build for macOS
+      if: matrix.platform == 'macos'
+      run: flutter build macos --release
 
     - name: Upload ${{ matrix.platform }} artifacts
       uses: actions/upload-artifact@v4
@@ -107,8 +111,7 @@ jobs:
         name: ${{ matrix.artifact-name }}-nightly
         path: |
           ${{ matrix.platform == 'linux' && 'build/linux/x64/release/bundle/' || '' }}
-          ${{ matrix.platform == 'windows' && 'build/windows/runner/Release/' || '' }}
+          ${{ matrix.platform == 'windows' && 'build\windows\x64\runner\Release\' || '' }}
           ${{ matrix.platform == 'macos' && 'build/macos/Build/Products/Release/' || '' }}
         if-no-files-found: error
         retention-days: 7  # 只保留7天，节省空间
-        

@@ -1,5 +1,6 @@
 import 'package:study_platform/logic/apao.dart';
 import 'package:study_platform/logic/asword.dart';
+import 'package:study_platform/logic/awenguan.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
@@ -73,6 +74,10 @@ class Files {
 
   static FilePassword aJuanZhiReader() {
     return FilePassword("${Dirs.filePathAncient()}jzrd.conc", "dfpwm13058");
+  }
+
+  static FilePassword aWenZhengjReader() {
+    return FilePassword("${Dirs.filePath()}zhejrder.awgcc", "eso1pam360");
   }
 }
 
@@ -159,6 +164,30 @@ class CheckFiles {
     return CheckFile(
       filePath: "${Dirs.filePathAncient()}jzrd.conc.lqck.conc",
       addNum: 1250,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile aWenFengCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePath()}flchk.awgcc",
+      addNum: 4034,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile aWenZhengJiCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathAncient()}zjzjck.ckawgcc",
+      addNum: 4059,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile aWenZhengShCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathAncient()}msmsck.ckawgcc.dsi.1234",
+      addNum: 2125,
       allTimes: 1,
     );
   }
@@ -278,6 +307,13 @@ class Special {
     return AncientPao(
       "${Dirs.filePathPao()}paon.paoc",
       "${Dirs.filePathPao()}paoa.paoac",
+    );
+  }
+
+  static AncientWenGuanConfig aWenGuanConfig() {
+    return AncientWenGuanConfig(
+      file: "${Dirs.filePath()}awcfg.awgcc",
+      addNum: 1052,
     );
   }
 }

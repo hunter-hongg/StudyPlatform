@@ -52,15 +52,16 @@ tasks:
           exit 1
         fi
         VERSION={{.CLI_ARGS}}
+        mkdir -p "release/StudyPlatformv${VERSION}"
+        bash -c "read -n 1 -p \"请把macOS与Windows构建zip放入release/StudyPlatformv${VERSION}后按任意键继续...\" -s"
+        echo
         flutter build linux --release
         mkdir -p release/raw
         cp -rv build/linux/x64/release/bundle "release/v${VERSION}"
-        mkdir -p "release/StudyPlatformv${VERSION}"
-        tar cavf "release/StudyPlatformv${VERSION}/Linux.tar.xz" "release/v${VERSION}"
-        sudo chattr +i "release/StudyPlatformv${VERSION}/Linux.tar.xz"
+        tar cavf "release/StudyPlatformv${VERSION}/linux.tar.zst" "release/v${VERSION}"
         mv "release/v${VERSION}" "release/raw/v${VERSION}"
         gh release create v$VERSION
-        gh release upload v$VERSION release/StudyPlatformv$VERSION/Linux.tar.xz
+        gh release upload v$VERSION release/StudyPlatformv$VERSION/*
   
   upl: 
     desc: 上传版本到指定release
