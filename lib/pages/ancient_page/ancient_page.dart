@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
 import 'package:study_platform/vars/styles.dart';
 
-class APage extends ConsumerWidget {
+class APage extends StatefulWidget {
   const APage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  State<APage> createState() => _APageState();
+}
+
+class _APageState extends State<APage> {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: Simple.simpleBar(
         title: '古代广场',
@@ -24,7 +28,7 @@ class APage extends ConsumerWidget {
               '黄金: ${Files.aHuangJinReader().readStrSafeSync()}',
               style: Styles.showstrStyle(),
             ),
-            const SizedBox(height: 70),
+            const SizedBox(height: 50),
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/apage/thingpage');
@@ -44,6 +48,13 @@ class APage extends ConsumerWidget {
                 Navigator.pushNamed(context, '/apage/juanpage');
               },
               show: '我的捐献',
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/apage/gpage');
+              },
+              show: '我的官职',
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
