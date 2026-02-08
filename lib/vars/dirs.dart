@@ -49,10 +49,15 @@ class Dirs {
     return "${filePath()}apcdir/";
   }
 
+  static String filePathAWuGuan() {
+    return "${filePathAncient()}fpawg.4of/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
       filePathAncient(),
+      filePathAWuGuan(),
       filePathBank(),
       filePathBaoShi(),
       filePathBaowu(),
