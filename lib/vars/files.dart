@@ -327,6 +327,9 @@ class WuConst {
   static int jingRuiMin = 40;
   static int wangPaiMin = 90;
   static int shenJiMin = 20;
+	static List<int> zhaoPrice = [
+		1, 10, 30, 60, 150, 350, 700, 900, 
+	];
 }
 
 class WuVar {

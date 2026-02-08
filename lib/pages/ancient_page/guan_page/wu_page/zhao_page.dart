@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_platform/logic/trade.dart';
 import 'package:study_platform/tool/file_password.dart';
 import 'package:study_platform/vars/files.dart';
 import 'package:study_platform/vars/simple.dart';
@@ -17,12 +18,23 @@ class _AGWuZhaoPageState extends State<AGWuZhaoPage> {
     baiyin = Files.aBaiYinReader().readIntSafeSync();
   }
 
-  List<Widget> buildUI(List<(String, FilePassword)> list) {
+  List<Widget> buildUI(List<(String, FilePassword, int)> list) {
     var wid = <Widget>[], tmpWid = <Widget>[];
     for (var i = 0; i < list.length; i++) {
       tmpWid.add(Simple.simpleClick(
         func: () {
-          // ...
+          Trade.trade(
+            context,
+            Files.aBaiYinReader(),
+            list[i].$2,
+            "白银",
+            list[i].$3,
+            1,
+            customMessage: "征召成功",
+          );
+          setState(() {
+            update();
+          });
         },
         show: '${list[i].$1}: ${list[i].$2.readIntSafeSync()}名',
       ));
@@ -42,16 +54,23 @@ class _AGWuZhaoPageState extends State<AGWuZhaoPage> {
     return wid;
   }
 
-  List<(String, FilePassword)> get list => [
-        ('新兵', WuVar.xinLr()),
-        ('普通兵', WuVar.puTongLr()),
-        ('初级兵', WuVar.chuJiLr()),
-        ('中级兵', WuVar.zhongJiLr()),
-        ('高级兵', WuVar.gaoJiLr()),
-        ('精锐兵', WuVar.jingRuiLr()),
-        ('王牌兵', WuVar.wangPaiLr()),
-        ('神级兵', WuVar.shenJiLr()),
-      ];
+  List<(String, FilePassword, int)> list() {
+    var tmpVar = [
+      ('新兵', WuVar.xinLr()),
+      ('普通兵', WuVar.puTongLr()),
+      ('初级兵', WuVar.chuJiLr()),
+      ('中级兵', WuVar.zhongJiLr()),
+      ('高级兵', WuVar.gaoJiLr()),
+      ('精锐兵', WuVar.jingRuiLr()),
+      ('王牌兵', WuVar.wangPaiLr()),
+      ('神级兵', WuVar.shenJiLr()),
+    ];
+    List<(String, FilePassword, int)> res = [];
+    for (var i = 0; i < tmpVar.length; i++) {
+      res.add((tmpVar[i].$1, tmpVar[i].$2, WuConst.zhaoPrice[i]));
+    }
+    return res;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +87,7 @@ class _AGWuZhaoPageState extends State<AGWuZhaoPage> {
             Simple.simpleShowText(show: "白银: $baiyin"),
             const SizedBox(height: 125),
             Simple.nullSpace(),
-            ...buildUI(list),
+            ...buildUI(list()),
           ],
         ),
       ),
