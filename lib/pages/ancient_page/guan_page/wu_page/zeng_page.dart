@@ -81,8 +81,11 @@ class _AGWuZengPageState extends State<AGWuZengPage> {
         child: Column(
           children: [
             const SizedBox(height: 10),
-            Simple.simpleShowText(show: "白银: $baiyin"),
-            const SizedBox(height: 125),
+            Simple.simpleShowText(
+              show: "白银: $baiyin\n"
+                  "兵力: ${AWuBing.bingSum()}",
+            ),
+            const SizedBox(height: 115),
             Simple.nullSpace(),
             ...buildUI(list()),
           ],
