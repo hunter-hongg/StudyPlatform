@@ -21,6 +21,7 @@ export 'package:study_platform/pages/ancient_page/guan_page/wen_page/zheng_page.
 export 'package:study_platform/pages/ancient_page/guan_page/wu_page/wu_page.dart';
 export 'package:study_platform/pages/ancient_page/guan_page/wu_page/zeng_page.dart';
 export 'package:study_platform/pages/ancient_page/guan_page/wu_page/zhao_page.dart';
+export 'package:study_platform/pages/ancient_page/guan_page/wu_page/zheng_page.dart';
 export 'package:study_platform/pages/ancient_page/juan_page/juan_page.dart';
 export 'package:study_platform/pages/ancient_page/juan_page/guwan_page.dart';
 export 'package:study_platform/pages/ancient_page/shop_page/shop_page.dart';
