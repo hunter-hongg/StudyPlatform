@@ -79,6 +79,11 @@ class Files {
   static FilePassword aWenZhengjReader() {
     return FilePassword("${Dirs.filePath()}zhejrder.awgcc", "eso1pam360");
   }
+
+  static FilePassword xXianLuPinReader() {
+    return FilePassword(
+        '${Dirs.filePathXXianLu()}xlj.ds.cc.o239', "done20596w");
+  }
 }
 
 class LiheFiles {
@@ -188,6 +193,14 @@ class CheckFiles {
     return CheckFile(
       filePath: "${Dirs.filePathAncient()}msmsck.ckawgcc.dsi.1234",
       addNum: 2125,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile xXianLuOkCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathXXianLu()}ck.clq.cc.3",
+      addNum: 4091,
       allTimes: 1,
     );
   }
@@ -327,9 +340,16 @@ class WuConst {
   static int jingRuiMin = 40;
   static int wangPaiMin = 90;
   static int shenJiMin = 20;
-	static List<int> zhaoPrice = [
-		1, 10, 30, 60, 150, 350, 700, 900, 
-	];
+  static List<int> zhaoPrice = [
+    1,
+    10,
+    30,
+    60,
+    150,
+    350,
+    700,
+    900,
+  ];
 }
 
 class WuVar {

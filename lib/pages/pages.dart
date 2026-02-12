@@ -70,3 +70,6 @@ export 'package:study_platform/pages/thing_page/free_page.dart';
 export 'package:study_platform/pages/thing_page/jinbi_page.dart';
 export 'package:study_platform/pages/thing_page/mang_page.dart';
 export 'package:study_platform/pages/thing_page/thing_page.dart';
+
+export 'package:study_platform/pages/xian_page/xian_page.dart';
+export 'package:study_platform/pages/xian_page/lu_page.dart';

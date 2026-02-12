@@ -53,6 +53,10 @@ class Dirs {
     return "${filePathAncient()}fpawg.4of/";
   }
 
+  static String filePathXXianLu() {
+    return "${filePath()}xlccf.gfd.ew0/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
@@ -68,6 +72,7 @@ class Dirs {
       filePathTongy(),
       filePathTongyReal(),
       filePathTS(),
+      filePathXXianLu(),
     ];
   }
 }

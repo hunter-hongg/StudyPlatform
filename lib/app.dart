@@ -74,6 +74,8 @@ class MyApp extends StatelessWidget {
       '/thingpage/jinpage',
       '/thingpage/mangpage',
       '/utilpage',
+      '/xianpage',
+      '/xianpage/lupage',
     ];
   }
 
@@ -165,6 +167,8 @@ class MyApp extends StatelessWidget {
           '/thingpage/jinpage': (context) => TSJinPage(),
           '/thingpage/mangpage': (context) => TSMangPage(),
           '/utilpage': (context) => UtilPage(),
+          '/xianpage': (context) => XianPage(),
+          '/xianpage/lupage': (context) => XianLuPage(),
         },
       ),
     );
