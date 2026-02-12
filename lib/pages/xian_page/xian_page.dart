@@ -31,6 +31,13 @@ class _XianPageState extends State<XianPage> {
               },
               show: '我的待遇',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/xianpage/fapage');
+              },
+              show: '我的法力',
+            ),
           ],
         ),
       ),

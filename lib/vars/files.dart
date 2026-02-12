@@ -84,6 +84,10 @@ class Files {
     return FilePassword(
         '${Dirs.filePathXXianLu()}xlj.ds.cc.o239', "done20596w");
   }
+
+  static FilePassword xFaLiReader() {
+    return FilePassword("${Dirs.filePath()}falc.conc", "fjmep20kl1");
+  }
 }
 
 class LiheFiles {
