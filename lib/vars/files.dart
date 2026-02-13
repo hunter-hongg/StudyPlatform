@@ -461,3 +461,61 @@ class WuVar {
     );
   }
 }
+
+class XianDan {
+  static FilePassword puTongDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}pt.cc.xdcc.1304",
+      "sdpf24j109",
+    );
+  }
+
+  static FilePassword biDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}bd.c.xdccm.eo4",
+      "fqoeirm124",
+    );
+  }
+
+  static FilePassword qingDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}qd.c.xdcc.ej.e",
+      "fdoiem2401",
+    );
+  }
+
+  static FilePassword ziDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}zd.c.xdcc.edos",
+      "zdgofe2405",
+    );
+  }
+
+  static FilePassword wuSeDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}ws.cd.gfgoi.xdcc",
+      "dsoi23w105",
+    );
+  }
+
+  static FilePassword yinDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}yd.c.xdcc.fdor",
+      "sdognf3214",
+    );
+  }
+
+  static FilePassword jinDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}jd.cc.xdcc.23dsj",
+      "adogfn2104",
+    );
+  }
+
+  static FilePassword shenDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}sd.cc.xdcc.239fh",
+      "sdonv29810",
+    );
+  }
+}
