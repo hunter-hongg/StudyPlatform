@@ -74,3 +74,7 @@ export 'package:study_platform/pages/thing_page/thing_page.dart';
 export 'package:study_platform/pages/xian_page/xian_page.dart';
 export 'package:study_platform/pages/xian_page/lu_page.dart';
 export 'package:study_platform/pages/xian_page/fa_page/fa_page.dart';
+export 'package:study_platform/pages/xian_page/fa_page/ldan_page.dart';
+export 'package:study_platform/pages/xian_page/thing_page/thing_page.dart';
+export 'package:study_platform/pages/xian_page/thing_page/dan_page/dan_page.dart';
+export 'package:study_platform/pages/xian_page/thing_page/dan_page/show_page.dart';

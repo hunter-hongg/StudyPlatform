@@ -24,7 +24,7 @@ class _XianPageState extends State<XianPage> {
             const SizedBox(height: 5),
             Text('仙币: ${Files.xianBiReader().readStrSafeSync()}',
                 style: Styles.showstrStyle()),
-            const SizedBox(height: 140),
+            const SizedBox(height: 120),
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/xianpage/lupage');
@@ -37,6 +37,13 @@ class _XianPageState extends State<XianPage> {
                 Navigator.pushNamed(context, '/xianpage/fapage');
               },
               show: '我的法力',
+            ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/xianpage/thingpage');
+              },
+              show: '我的物品',
             ),
           ],
         ),

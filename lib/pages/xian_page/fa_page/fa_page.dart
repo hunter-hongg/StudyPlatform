@@ -31,8 +31,8 @@ class _XianFaPageState extends State<XianFaPage> {
         child: Column(
           children: [
             const SizedBox(height: 5),
-            Text('法力值: $fali', style: Styles.showstrStyle()),
-            const SizedBox(height: 140),
+            Text('法力: $fali', style: Styles.showstrStyle()),
+            const SizedBox(height: 130),
             Simple.simpleClick(
               func: () {
                 /* 10 -> 70 */
@@ -64,9 +64,9 @@ class _XianFaPageState extends State<XianFaPage> {
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/xianpage/fapage');
+                Navigator.pushNamed(context, '/xianpage/fapage/ldanpage');
               },
-              show: '我的法力',
+              show: '法力炼丹',
             ),
           ],
         ),
