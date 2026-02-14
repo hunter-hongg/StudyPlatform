@@ -80,3 +80,4 @@ export 'package:study_platform/pages/xian_page/thing_page/dan_page/dan_page.dart
 export 'package:study_platform/pages/xian_page/thing_page/dan_page/show_page.dart';
 export 'package:study_platform/pages/xian_page/thing_page/qi_page/qi_page.dart';
 export 'package:study_platform/pages/xian_page/thing_page/qi_page/ch_page.dart';
+export 'package:study_platform/pages/xian_page/thing_page/ji_page.dart';

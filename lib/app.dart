@@ -81,6 +81,7 @@ class MyApp extends StatelessWidget {
       '/xianpage/thingpage',
       '/xianpage/thingpage/danpage',
       '/xianpage/thingpage/danpage/showpage',
+      '/xianpage/thingpage/jipage',
       '/xianpage/thingpage/qipage',
       '/xianpage/thingpage/qipage/chpage',
     ];
@@ -182,6 +183,7 @@ class MyApp extends StatelessWidget {
           '/xianpage/thingpage/danpage': (context) => XianThingDanPage(),
           '/xianpage/thingpage/danpage/showpage': (context) =>
               XianThingDanShowPage(),
+          '/xianpage/thingpage/jipage': (context) => XianThingJiPage(),
           '/xianpage/thingpage/qipage': (context) => XianThingQiPage(),
           '/xianpage/thingpage/qipage/chpage': (context) => XianThingQiChPage(),
         },

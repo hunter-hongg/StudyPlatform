@@ -33,6 +33,13 @@ class _XianThingPageState extends State<XianThingPage> {
               },
               show: '我的仙器',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(context, '/xianpage/thingpage/jipage');
+              },
+              show: '我的仙籍',
+            ),
           ],
         ),
       ),

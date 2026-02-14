@@ -93,6 +93,11 @@ class Files {
   static FilePassword xQiFaLiReader() {
     return FilePassword("${Dirs.filePathXXianQi()}xqfl.conc", "hjq40tp586");
   }
+
+  static FilePassword xJiReader() {
+    return FilePassword(
+        "${Dirs.filePathXXianJi()}xjrd.dso.349fern.cc", "sdoih14853");
+  }
 }
 
 class LiheFiles {
