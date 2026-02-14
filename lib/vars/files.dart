@@ -1,6 +1,7 @@
 import 'package:study_platform/logic/apao.dart';
 import 'package:study_platform/logic/asword.dart';
 import 'package:study_platform/logic/awenguan.dart';
+import 'package:study_platform/logic/xiansword.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
@@ -332,6 +333,10 @@ class Special {
       file: "${Dirs.filePath()}awcfg.awgcc",
       addNum: 1052,
     );
+  }
+
+  static SwordInFile xianSword() {
+    return SwordInFile("${Dirs.filePath()}swdif.conc");
   }
 }
 

@@ -61,6 +61,10 @@ class Dirs {
     return "${filePath()}xdccdir.fdso.so12/";
   }
 
+  static String filePathXXianQi() {
+		return "${filePath()}xqptdir/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
@@ -78,6 +82,7 @@ class Dirs {
       filePathTS(),
       filePathXXianDan(),
       filePathXXianLu(),
+      filePathXXianQi(),
     ];
   }
 }
