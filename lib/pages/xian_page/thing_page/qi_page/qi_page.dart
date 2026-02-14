@@ -22,20 +22,23 @@ class _XianThingQiPageState extends State<XianThingQiPage> {
           children: [
             const SizedBox(height: 5),
             Simple.simpleShowText(
-                show: "当前仙器: ${Special.xianSword().get().toString()}"),
-            const SizedBox(height: 140),
+              show: "当前仙器: ${Special.xianSword().get().toString()}\n"
+                  "仙器法力: ${Files.xQiFaLiReader().readStrSafeSync()}",
+            ),
+            const SizedBox(height: 120),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/xianpage/thingpage/danpage');
+                Navigator.pushNamed(
+                    context, '/xianpage/thingpage/qipage/chpage');
               },
-              show: '我的仙丹',
+              show: '更换仙器',
             ),
             Simple.simpleSpace(),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/xianpage/thingpage/qipage');
+                Simple.simpleInfo(context: context, show: '请使用仙籍增强仙器法力');
               },
-              show: '我的仙器',
+              show: '增强仙器',
             ),
           ],
         ),
