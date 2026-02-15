@@ -115,3 +115,74 @@ jobs:
           ${{ matrix.platform == 'macos' && 'build/macos/Build/Products/Release/' || '' }}
         if-no-files-found: error
         retention-days: 7  # 只保留7天，节省空间
+
+  publish-release:
+    name: Publish Release
+    needs: nightly-desktop-build
+    runs-on: ubuntu-latest
+    # Only run on v* tags (e.g. v1.0.0)
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: Package Windows bundle into ZIP
+        run: |
+          mkdir -p release-assets
+          if [ -d "artifacts/windows-build" ] && [ -n "$(ls -A artifacts/windows-build)" ]; then
+            # Find the .exe to get app name
+            EXE_FILE=$(find artifacts/windows-build -name "*.exe" | head -n1)
+            if [ -n "$EXE_FILE" ]; then
+              APP_NAME=$(basename "$EXE_FILE" .exe)
+            else
+              APP_NAME="app"
+            fi
+            cd artifacts/windows-build
+            zip -r "../../release-assets/${APP_NAME}-windows.zip" .
+          else
+            echo "⚠️ No Windows build found"
+          fi
+
+      - name: Package macOS .app into ZIP
+        run: |
+          if [ -d "artifacts/macos-build" ] && [ -n "$(ls -A artifacts/macos-build)" ]; then
+            cd artifacts/macos-build
+            APP_DIR=$(find . -name "*.app" -type d | head -n1)
+            if [ -n "$APP_DIR" ]; then
+              APP_NAME=$(basename "$APP_DIR" .app)
+              zip -r "../../../release-assets/${APP_NAME}-macos.zip" "$APP_DIR"
+            else
+              echo "⚠️ No .app found in macOS build"
+            fi
+          else
+            echo "⚠️ No macOS build found"
+          fi
+
+      - name: Package Linux bundle (as tar.gz or directory)
+        run: |
+          mkdir -p release-assets
+          if [ -d "artifacts/linux-build" ] && [ -n "$(ls -A artifacts/linux-build)" ]; then
+            cd artifacts/linux-build
+            tar -czf "../../release-assets/app-linux.tar.gz" .
+          else
+            echo "⚠️ No Linux build found"
+          fi
+
+      - name: List final release assets
+        run: ls -la release-assets/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          files: |
+            release-assets/*.zip
+            release-assets/*.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
