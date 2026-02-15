@@ -35,6 +35,14 @@ class _XianThingDanPageState extends State<XianThingDanPage> {
               },
               show: '仙丹召鹤',
             ),
+            Simple.simpleSpace(),
+            Simple.simpleClick(
+              func: () {
+                Navigator.pushNamed(
+                    context, '/xianpage/thingpage/danpage/lianpage');
+              },
+              show: '炼制仙丹',
+            ),
           ],
         ),
       ),
