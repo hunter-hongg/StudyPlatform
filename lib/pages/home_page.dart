@@ -80,7 +80,9 @@ class HomePage extends ConsumerWidget {
     // 右边列的项目
     final List<Widget> rightColumnItems = [
       Simple.simpleClick(
-        func: () {},
+        func: () {
+          Navigator.pushNamed(context, '/xianpage');
+        },
         show: "神话传说",
       ),
       Simple.simpleClick(

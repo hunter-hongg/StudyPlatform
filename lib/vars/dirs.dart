@@ -49,10 +49,31 @@ class Dirs {
     return "${filePath()}apcdir/";
   }
 
+  static String filePathAWuGuan() {
+    return "${filePathAncient()}fpawg.4of/";
+  }
+
+  static String filePathXXianLu() {
+    return "${filePath()}xlccf.gfd.ew0/";
+  }
+
+  static String filePathXXianDan() {
+    return "${filePath()}xdccdir.fdso.so12/";
+  }
+
+  static String filePathXXianQi() {
+    return "${filePath()}xqptdir/";
+  }
+
+  static String filePathXXianJi() {
+    return "${filePath()}xjccdir.fjdo/";
+  }
+
   static List<String> dirs() {
     return [
       filePath(),
       filePathAncient(),
+      filePathAWuGuan(),
       filePathBank(),
       filePathBaoShi(),
       filePathBaowu(),
@@ -63,6 +84,10 @@ class Dirs {
       filePathTongy(),
       filePathTongyReal(),
       filePathTS(),
+      filePathXXianDan(),
+      filePathXXianJi(),
+      filePathXXianLu(),
+      filePathXXianQi(),
     ];
   }
 }

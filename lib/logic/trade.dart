@@ -183,7 +183,7 @@ class Trade {
     String thing1s, {
     String customMessage = "兑换成功",
   }) {
-    if (!fp1.highSync(thing1min)){
+    if (!fp1.highSync(thing1min)) {
       Simple.simpleInfo(
         context: context,
         show: "$thing1s 不足",
@@ -202,6 +202,41 @@ class Trade {
     Simple.simpleInfo(
       context: context,
       show: customMessage,
+    );
+  }
+
+  static void tradeF2to1<T extends MinusAble, U extends AddAble>(
+    BuildContext context,
+    T fp1,
+    T fp2,
+    U fp3,
+    String thing1s,
+    String thing2s,
+    int thing1min,
+    int thing2min,
+    int thing3add, {
+    String? customMessage,
+  }) {
+    if (!fp1.highSync(thing1min)) {
+      Simple.simpleInfo(
+        context: context,
+        show: "$thing1s 不足",
+      );
+      return;
+    }
+    if (!fp2.highSync(thing2min)) {
+      Simple.simpleInfo(
+        context: context,
+        show: "$thing2s 不足",
+      );
+      return;
+    }
+    fp1.canMinusSync(thing1min);
+    fp2.canMinusSync(thing2min);
+    fp3.addNumSync(thing3add);
+    Simple.simpleInfo(
+      context: context,
+      show: customMessage ?? "兑换成功",
     );
   }
 }
