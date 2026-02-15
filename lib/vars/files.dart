@@ -1,6 +1,7 @@
 import 'package:study_platform/logic/apao.dart';
 import 'package:study_platform/logic/asword.dart';
 import 'package:study_platform/logic/awenguan.dart';
+import 'package:study_platform/logic/xiansword.dart';
 import 'package:study_platform/tool/addfile.dart';
 import 'package:study_platform/tool/cards.dart';
 import 'package:study_platform/tool/check_file.dart';
@@ -78,6 +79,24 @@ class Files {
 
   static FilePassword aWenZhengjReader() {
     return FilePassword("${Dirs.filePath()}zhejrder.awgcc", "eso1pam360");
+  }
+
+  static FilePassword xXianLuPinReader() {
+    return FilePassword(
+        '${Dirs.filePathXXianLu()}xlj.ds.cc.o239', "done20596w");
+  }
+
+  static FilePassword xFaLiReader() {
+    return FilePassword("${Dirs.filePath()}falc.conc", "fjmep20kl1");
+  }
+
+  static FilePassword xQiFaLiReader() {
+    return FilePassword("${Dirs.filePathXXianQi()}xqfl.conc", "hjq40tp586");
+  }
+
+  static FilePassword xJiReader() {
+    return FilePassword(
+        "${Dirs.filePathXXianJi()}xjrd.dso.349fern.cc", "sdoih14853");
   }
 }
 
@@ -188,6 +207,14 @@ class CheckFiles {
     return CheckFile(
       filePath: "${Dirs.filePathAncient()}msmsck.ckawgcc.dsi.1234",
       addNum: 2125,
+      allTimes: 1,
+    );
+  }
+
+  static CheckFile xXianLuOkCheck() {
+    return CheckFile(
+      filePath: "${Dirs.filePathXXianLu()}ck.clq.cc.3",
+      addNum: 4091,
       allTimes: 1,
     );
   }
@@ -314,6 +341,195 @@ class Special {
     return AncientWenGuanConfig(
       file: "${Dirs.filePath()}awcfg.awgcc",
       addNum: 1052,
+    );
+  }
+
+  static SwordInFile xianSword() {
+    return SwordInFile("${Dirs.filePath()}swdif.conc");
+  }
+}
+
+class WuConst {
+  static int puTongMin = 3;
+  static int chuJiMin = 6;
+  static int xinMin = 1;
+  static int zhongJiMin = 10;
+  static int gaoJiMin = 20;
+  static int jingRuiMin = 40;
+  static int wangPaiMin = 90;
+  static int shenJiMin = 20;
+  static List<int> zhaoPrice = [
+    1,
+    10,
+    30,
+    60,
+    150,
+    350,
+    700,
+    900,
+  ];
+}
+
+class WuVar {
+  static FilePassword xinLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.xawg.cc.43", "fm5o3kd104");
+  }
+
+  static FilePassword xinIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}wgllbl.regio.xb.cc..x",
+      "2309fj4i5p",
+      WuConst.xinMin,
+    );
+  }
+
+  static FilePassword puTongLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.pt.cc.ro3", "fivn310694");
+  }
+
+  static FilePassword chuJiLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.eo.cj.cc.30", "form30296l");
+  }
+
+  static FilePassword zhongJiLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.eo.zhj.39c.cc", "domt53p210");
+  }
+
+  static FilePassword gaoJiLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.em.gaoj.do3.cc", "dmei45103k");
+  }
+
+  static FilePassword jingRuiLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.emf.ro.jingr.di.cc", "1094nfmwl2");
+  }
+
+  static FilePassword wangPaiLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.od.wap.cc..e", "efoidm2590");
+  }
+
+  static FilePassword shenJiLr() {
+    return FilePassword(
+        "${Dirs.filePathAWuGuan()}wgll.shj.dfo.cc..", "eogfmt3960");
+  }
+
+  static FilePassword puTongIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}wgllbl.ptcc.eoi..xdd",
+      "doirm19840",
+      WuConst.puTongMin,
+    );
+  }
+
+  static FilePassword chuJiIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}wgllbl.dsoi.cjcc..do",
+      "sdoi4960al",
+      WuConst.chuJiMin,
+    );
+  }
+
+  static FilePassword zhongJiIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}e.wgllbl.dso.cjcc.zj..d",
+      "sdoim39501",
+      WuConst.zhongJiMin,
+    );
+  }
+
+  static FilePassword gaoJiIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}r.wgllbl.d.dui.gj.dc",
+      "sdiu38901l",
+      WuConst.gaoJiMin,
+    );
+  }
+
+  static FilePassword jingRuiIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}wgllbl.df.d.jrcc.c.d",
+      "dsorm28901",
+      WuConst.jingRuiMin,
+    );
+  }
+
+  static FilePassword wangPaiIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}wgllbl.eo.eo.wp.d",
+      "12984jfrkw",
+      WuConst.wangPaiMin,
+    );
+  }
+
+  static FilePassword shenJiIr() {
+    return FilePassword.withDefault(
+      "${Dirs.filePathAWuGuan()}wgllbl.eo.df.shjcc.",
+      "eufmrl3029",
+      WuConst.shenJiMin,
+    );
+  }
+}
+
+class XianDan {
+  static FilePassword puTongDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}pt.cc.xdcc.1304",
+      "sdpf24j109",
+    );
+  }
+
+  static FilePassword biDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}bd.c.xdccm.eo4",
+      "fqoeirm124",
+    );
+  }
+
+  static FilePassword qingDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}qd.c.xdcc.ej.e",
+      "fdoiem2401",
+    );
+  }
+
+  static FilePassword ziDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}zd.c.xdcc.edos",
+      "zdgofe2405",
+    );
+  }
+
+  static FilePassword wuSeDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}ws.cd.gfgoi.xdcc",
+      "dsoi23w105",
+    );
+  }
+
+  static FilePassword yinDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}yd.c.xdcc.fdor",
+      "sdognf3214",
+    );
+  }
+
+  static FilePassword jinDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}jd.cc.xdcc.23dsj",
+      "adogfn2104",
+    );
+  }
+
+  static FilePassword shenDan() {
+    return FilePassword(
+      "${Dirs.filePathXXianDan()}sd.cc.xdcc.239fh",
+      "sdonv29810",
     );
   }
 }

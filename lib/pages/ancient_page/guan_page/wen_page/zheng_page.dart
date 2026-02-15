@@ -74,6 +74,7 @@ class _AGWenZhengPageState extends ConsumerState<AGWenZhengPage> {
                         "绿玉",
                         need,
                         40,
+                        customMessage: "贿赂成功\n政绩+40",
                       );
                       setState(() {
                         update();
