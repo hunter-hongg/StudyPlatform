@@ -19,7 +19,7 @@ class _AGPageState extends State<AGPage> {
       body: Center(
         child: Column(
           children: [
-            const SizedBox(height: 150),
+            const SizedBox(height: 160),
             Simple.simpleClick(
               func: () {
                 Navigator.pushNamed(context, '/apage/gpage/wenpage');

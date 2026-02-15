@@ -16,7 +16,7 @@ var (
 
 	File_FilePath                   string              = File_FilePathBase + "学习平台储存/"
 	File_FilePathTongYong           string              = File_FilePath + "tyhbdirapbb/"
-    File_FilePathTongYongReal       string              = File_FilePathTongYong + "fptyr/"
+	File_FilePathTongYongReal       string              = File_FilePathTongYong + "fptyr/"
 	File_FilePathAncient            string              = File_FilePath + "adirspfm/"
 	File_FilePathCard               string              = File_FilePath + "fpcdiralf/"
 	File_FilePathBaoShi             string              = File_FilePath + "baosdirfos/"
