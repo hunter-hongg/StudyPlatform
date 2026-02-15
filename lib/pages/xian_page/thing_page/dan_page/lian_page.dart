@@ -43,6 +43,7 @@ class _XianThingDanLiPageState extends State<XianThingDanLiPage> {
               price[i],
               2,
               1,
+              customMessage: "炼制成功",
             );
           },
           show: '${price[i]}${needsStr[i]}\n1${dans[i]}',
